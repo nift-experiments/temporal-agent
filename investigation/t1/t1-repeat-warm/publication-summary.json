@@ -1,0 +1,24 @@
+{
+  "publication": "reference/t1-repeat-warm",
+  "files": 3984,
+  "bytes": 265647255,
+  "category_counts": {
+    "ancillary": 111,
+    "html": 962,
+    "markdown": 806,
+    "llm": 24,
+    "asset": 1289,
+    "og": 792
+  },
+  "category_bytes": {
+    "ancillary": 10629169,
+    "html": 78469441,
+    "markdown": 8081962,
+    "llm": 7952300,
+    "asset": 116884287,
+    "og": 43630096
+  },
+  "html_routes": 962,
+  "sha256_manifest": "bd8071becd7f1fe6fc4917b918e3304fc4a0b4cb2da3499d5fdc4e437a0ded77",
+  "note": "HTML routes include generated tags, search and 404; authored primary routes must be reconciled separately. Deployment redirect rules are not counted as HTML."
+}

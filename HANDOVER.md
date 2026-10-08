@@ -327,3 +327,7 @@ No telemetry, feedback, search uploads or private API calls. No Nift core change
 Next: complete T1 upstream baseline; then parity contract and representative architecture proof before corpus scaling. Full campaign authorized through T9, with exceptional stop policy from the user brief.
 
 T1 audit recorded in `investigation/T1-SOURCE-AUDIT.md`; preserved baseline tooling/evidence lives in sibling `temporal-baseline`. Current sessions are full-history clone and frozen-lockfile dependency installation. No source translation.
+
+## T1 complete
+
+The full unchanged production baseline and its warm reproduction succeeded. `investigation/BASELINE.md` and `investigation/t1/` contain complete accounting, byte manifests, logs, versions, timings/RSS and exact upstream source/archive pins. Only the operational OG stats sidecar varies. Original immutable reference lives in sibling `temporal-baseline/reference/t1-complete-history`; clean source reference is `temporal-upstream`. Next T2 freezes browser/local-transport fixtures; T3 must prove architecture and incremental/full equality before corpus translation.

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "yarn",
+    "build"
+  ],
+  "cwd": "build-work",
+  "timestamp_utc": "2026-10-08T12:43:54.116321+00:00",
+  "exit_code": 0,
+  "wall_seconds": 34.35983016388491,
+  "max_child_process_rss_mib": 6878.16796875,
+  "rss_scope": "maximum individual descendant process, not aggregate simultaneous tree RSS",
+  "cookbook_placeholder": false,
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "lockfile_sha256": "1aa614887e64a228f0cf54cf5ce37117082c00225a95502b09e78b0c77400863"
+}

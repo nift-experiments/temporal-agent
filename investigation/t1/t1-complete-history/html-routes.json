@@ -1,0 +1,3850 @@
+[
+  {
+    "path": "404.html",
+    "route": "/404.html"
+  },
+  {
+    "path": "activities/index.html",
+    "route": "/activities"
+  },
+  {
+    "path": "activity-definition/index.html",
+    "route": "/activity-definition"
+  },
+  {
+    "path": "activity-execution/index.html",
+    "route": "/activity-execution"
+  },
+  {
+    "path": "activity-operations/delete/index.html",
+    "route": "/activity-operations/delete"
+  },
+  {
+    "path": "activity-operations/index.html",
+    "route": "/activity-operations"
+  },
+  {
+    "path": "activity-operations/pause/index.html",
+    "route": "/activity-operations/pause"
+  },
+  {
+    "path": "activity-operations/request-cancel/index.html",
+    "route": "/activity-operations/request-cancel"
+  },
+  {
+    "path": "activity-operations/reset/index.html",
+    "route": "/activity-operations/reset"
+  },
+  {
+    "path": "activity-operations/terminate/index.html",
+    "route": "/activity-operations/terminate"
+  },
+  {
+    "path": "activity-operations/unpause/index.html",
+    "route": "/activity-operations/unpause"
+  },
+  {
+    "path": "activity-operations/update-options/index.html",
+    "route": "/activity-operations/update-options"
+  },
+  {
+    "path": "ai/cookbook/agentic-loop-tool-call-claude-python/index.html",
+    "route": "/ai/cookbook/agentic-loop-tool-call-claude-python"
+  },
+  {
+    "path": "ai/cookbook/agentic-loop-tool-call-openai-python/index.html",
+    "route": "/ai/cookbook/agentic-loop-tool-call-openai-python"
+  },
+  {
+    "path": "ai/cookbook/ai-sdk-by-vercel-typescript/index.html",
+    "route": "/ai/cookbook/ai-sdk-by-vercel-typescript"
+  },
+  {
+    "path": "ai/cookbook/basic-openai-python/index.html",
+    "route": "/ai/cookbook/basic-openai-python"
+  },
+  {
+    "path": "ai/cookbook/claim-check-pattern-python/index.html",
+    "route": "/ai/cookbook/claim-check-pattern-python"
+  },
+  {
+    "path": "ai/cookbook/guardrails-hard-rules-python/index.html",
+    "route": "/ai/cookbook/guardrails-hard-rules-python"
+  },
+  {
+    "path": "ai/cookbook/hello-world-durable-mcp-server/index.html",
+    "route": "/ai/cookbook/hello-world-durable-mcp-server"
+  },
+  {
+    "path": "ai/cookbook/hello-world-litellm-python/index.html",
+    "route": "/ai/cookbook/hello-world-litellm-python"
+  },
+  {
+    "path": "ai/cookbook/hello-world-openai-responses-python/index.html",
+    "route": "/ai/cookbook/hello-world-openai-responses-python"
+  },
+  {
+    "path": "ai/cookbook/http-retry-enhancement-python/index.html",
+    "route": "/ai/cookbook/http-retry-enhancement-python"
+  },
+  {
+    "path": "ai/cookbook/human-in-the-loop-python/index.html",
+    "route": "/ai/cookbook/human-in-the-loop-python"
+  },
+  {
+    "path": "ai/cookbook/index.html",
+    "route": "/ai/cookbook"
+  },
+  {
+    "path": "ai/cookbook/multi-agent-adk-python/index.html",
+    "route": "/ai/cookbook/multi-agent-adk-python"
+  },
+  {
+    "path": "ai/cookbook/openai-agents-sdk-python/index.html",
+    "route": "/ai/cookbook/openai-agents-sdk-python"
+  },
+  {
+    "path": "ai/cookbook/strands-agents-python/index.html",
+    "route": "/ai/cookbook/strands-agents-python"
+  },
+  {
+    "path": "ai/cookbook/structured-output-openai-responses-python/index.html",
+    "route": "/ai/cookbook/structured-output-openai-responses-python"
+  },
+  {
+    "path": "ai/cookbook/tags/agents/index.html",
+    "route": "/ai/cookbook/tags/agents"
+  },
+  {
+    "path": "ai/cookbook/tags/anthropic/index.html",
+    "route": "/ai/cookbook/tags/anthropic"
+  },
+  {
+    "path": "ai/cookbook/tags/bedrock/index.html",
+    "route": "/ai/cookbook/tags/bedrock"
+  },
+  {
+    "path": "ai/cookbook/tags/claim-check/index.html",
+    "route": "/ai/cookbook/tags/claim-check"
+  },
+  {
+    "path": "ai/cookbook/tags/claude/index.html",
+    "route": "/ai/cookbook/tags/claude"
+  },
+  {
+    "path": "ai/cookbook/tags/foundations/index.html",
+    "route": "/ai/cookbook/tags/foundations"
+  },
+  {
+    "path": "ai/cookbook/tags/gemini/index.html",
+    "route": "/ai/cookbook/tags/gemini"
+  },
+  {
+    "path": "ai/cookbook/tags/google-adk/index.html",
+    "route": "/ai/cookbook/tags/google-adk"
+  },
+  {
+    "path": "ai/cookbook/tags/index.html",
+    "route": "/ai/cookbook/tags"
+  },
+  {
+    "path": "ai/cookbook/tags/litellm/index.html",
+    "route": "/ai/cookbook/tags/litellm"
+  },
+  {
+    "path": "ai/cookbook/tags/mcp/index.html",
+    "route": "/ai/cookbook/tags/mcp"
+  },
+  {
+    "path": "ai/cookbook/tags/openai/index.html",
+    "route": "/ai/cookbook/tags/openai"
+  },
+  {
+    "path": "ai/cookbook/tags/python/index.html",
+    "route": "/ai/cookbook/tags/python"
+  },
+  {
+    "path": "ai/cookbook/tags/s-3/index.html",
+    "route": "/ai/cookbook/tags/s-3"
+  },
+  {
+    "path": "ai/cookbook/tags/typescript/index.html",
+    "route": "/ai/cookbook/tags/typescript"
+  },
+  {
+    "path": "ai/cookbook/tags/workflows/index.html",
+    "route": "/ai/cookbook/tags/workflows"
+  },
+  {
+    "path": "ai/cookbook/tool-call-openai-python/index.html",
+    "route": "/ai/cookbook/tool-call-openai-python"
+  },
+  {
+    "path": "ai/index.html",
+    "route": "/ai"
+  },
+  {
+    "path": "best-practices/cloud-access-control/index.html",
+    "route": "/best-practices/cloud-access-control"
+  },
+  {
+    "path": "best-practices/cost-governance/index.html",
+    "route": "/best-practices/cost-governance"
+  },
+  {
+    "path": "best-practices/cost-optimization/index.html",
+    "route": "/best-practices/cost-optimization"
+  },
+  {
+    "path": "best-practices/error-handling/index.html",
+    "route": "/best-practices/error-handling"
+  },
+  {
+    "path": "best-practices/index.html",
+    "route": "/best-practices"
+  },
+  {
+    "path": "best-practices/knowledge-hub/index.html",
+    "route": "/best-practices/knowledge-hub"
+  },
+  {
+    "path": "best-practices/managing-aps-limits/index.html",
+    "route": "/best-practices/managing-aps-limits"
+  },
+  {
+    "path": "best-practices/managing-namespace/index.html",
+    "route": "/best-practices/managing-namespace"
+  },
+  {
+    "path": "best-practices/multi-tenant-patterns/index.html",
+    "route": "/best-practices/multi-tenant-patterns"
+  },
+  {
+    "path": "best-practices/pre-production-testing/index.html",
+    "route": "/best-practices/pre-production-testing"
+  },
+  {
+    "path": "best-practices/security-controls/index.html",
+    "route": "/best-practices/security-controls"
+  },
+  {
+    "path": "best-practices/worker/index.html",
+    "route": "/best-practices/worker"
+  },
+  {
+    "path": "best-practices/worker-alerting/index.html",
+    "route": "/best-practices/worker-alerting"
+  },
+  {
+    "path": "blog/index.html",
+    "route": "/blog"
+  },
+  {
+    "path": "child-workflows/index.html",
+    "route": "/child-workflows"
+  },
+  {
+    "path": "cli/cloud/index.html",
+    "route": "/cli/cloud"
+  },
+  {
+    "path": "cli/command-reference/activity/index.html",
+    "route": "/cli/command-reference/activity"
+  },
+  {
+    "path": "cli/command-reference/batch/index.html",
+    "route": "/cli/command-reference/batch"
+  },
+  {
+    "path": "cli/command-reference/cloud/account/index.html",
+    "route": "/cli/command-reference/cloud/account"
+  },
+  {
+    "path": "cli/command-reference/cloud/apikey/index.html",
+    "route": "/cli/command-reference/cloud/apikey"
+  },
+  {
+    "path": "cli/command-reference/cloud/async-operation/index.html",
+    "route": "/cli/command-reference/cloud/async-operation"
+  },
+  {
+    "path": "cli/command-reference/cloud/connectivity/index.html",
+    "route": "/cli/command-reference/cloud/connectivity"
+  },
+  {
+    "path": "cli/command-reference/cloud/custom-role/index.html",
+    "route": "/cli/command-reference/cloud/custom-role"
+  },
+  {
+    "path": "cli/command-reference/cloud/index.html",
+    "route": "/cli/command-reference/cloud"
+  },
+  {
+    "path": "cli/command-reference/cloud/login/index.html",
+    "route": "/cli/command-reference/cloud/login"
+  },
+  {
+    "path": "cli/command-reference/cloud/logout/index.html",
+    "route": "/cli/command-reference/cloud/logout"
+  },
+  {
+    "path": "cli/command-reference/cloud/namespace/index.html",
+    "route": "/cli/command-reference/cloud/namespace"
+  },
+  {
+    "path": "cli/command-reference/cloud/nexus/index.html",
+    "route": "/cli/command-reference/cloud/nexus"
+  },
+  {
+    "path": "cli/command-reference/cloud/project/index.html",
+    "route": "/cli/command-reference/cloud/project"
+  },
+  {
+    "path": "cli/command-reference/cloud/region/index.html",
+    "route": "/cli/command-reference/cloud/region"
+  },
+  {
+    "path": "cli/command-reference/cloud/service-account/index.html",
+    "route": "/cli/command-reference/cloud/service-account"
+  },
+  {
+    "path": "cli/command-reference/cloud/user/index.html",
+    "route": "/cli/command-reference/cloud/user"
+  },
+  {
+    "path": "cli/command-reference/cloud/user-group/index.html",
+    "route": "/cli/command-reference/cloud/user-group"
+  },
+  {
+    "path": "cli/command-reference/cloud/whoami/index.html",
+    "route": "/cli/command-reference/cloud/whoami"
+  },
+  {
+    "path": "cli/command-reference/config/index.html",
+    "route": "/cli/command-reference/config"
+  },
+  {
+    "path": "cli/command-reference/env/index.html",
+    "route": "/cli/command-reference/env"
+  },
+  {
+    "path": "cli/command-reference/index.html",
+    "route": "/cli/command-reference"
+  },
+  {
+    "path": "cli/command-reference/nexus/index.html",
+    "route": "/cli/command-reference/nexus"
+  },
+  {
+    "path": "cli/command-reference/operator/index.html",
+    "route": "/cli/command-reference/operator"
+  },
+  {
+    "path": "cli/command-reference/schedule/index.html",
+    "route": "/cli/command-reference/schedule"
+  },
+  {
+    "path": "cli/command-reference/server/index.html",
+    "route": "/cli/command-reference/server"
+  },
+  {
+    "path": "cli/command-reference/task-queue/index.html",
+    "route": "/cli/command-reference/task-queue"
+  },
+  {
+    "path": "cli/command-reference/worker/index.html",
+    "route": "/cli/command-reference/worker"
+  },
+  {
+    "path": "cli/command-reference/workflow/index.html",
+    "route": "/cli/command-reference/workflow"
+  },
+  {
+    "path": "cli/common-operations/index.html",
+    "route": "/cli/common-operations"
+  },
+  {
+    "path": "cli/index.html",
+    "route": "/cli"
+  },
+  {
+    "path": "cli/setup-cli/index.html",
+    "route": "/cli/setup-cli"
+  },
+  {
+    "path": "cloud/actions-usage/index.html",
+    "route": "/cloud/actions-usage"
+  },
+  {
+    "path": "cloud/api-keys/index.html",
+    "route": "/cloud/api-keys"
+  },
+  {
+    "path": "cloud/audit-logs/index.html",
+    "route": "/cloud/audit-logs"
+  },
+  {
+    "path": "cloud/audit-logs-aws/index.html",
+    "route": "/cloud/audit-logs-aws"
+  },
+  {
+    "path": "cloud/audit-logs-gcp/index.html",
+    "route": "/cloud/audit-logs-gcp"
+  },
+  {
+    "path": "cloud/billing/index.html",
+    "route": "/cloud/billing"
+  },
+  {
+    "path": "cloud/billing-and-usage/index.html",
+    "route": "/cloud/billing-and-usage"
+  },
+  {
+    "path": "cloud/billing-api/index.html",
+    "route": "/cloud/billing-api"
+  },
+  {
+    "path": "cloud/capacity-modes/index.html",
+    "route": "/cloud/capacity-modes"
+  },
+  {
+    "path": "cloud/certificates/index.html",
+    "route": "/cloud/certificates"
+  },
+  {
+    "path": "cloud/connectivity/aws-connectivity/index.html",
+    "route": "/cloud/connectivity/aws-connectivity"
+  },
+  {
+    "path": "cloud/connectivity/gcp-connectivity/index.html",
+    "route": "/cloud/connectivity/gcp-connectivity"
+  },
+  {
+    "path": "cloud/connectivity/index.html",
+    "route": "/cloud/connectivity"
+  },
+  {
+    "path": "cloud/connectivity/ip-addresses/index.html",
+    "route": "/cloud/connectivity/ip-addresses"
+  },
+  {
+    "path": "cloud/export/aws-export-s3/index.html",
+    "route": "/cloud/export/aws-export-s3"
+  },
+  {
+    "path": "cloud/export/gcp-export-gcs/index.html",
+    "route": "/cloud/export/gcp-export-gcs"
+  },
+  {
+    "path": "cloud/export/index.html",
+    "route": "/cloud/export"
+  },
+  {
+    "path": "cloud/get-started/index.html",
+    "route": "/cloud/get-started"
+  },
+  {
+    "path": "cloud/get-started/users-invite/index.html",
+    "route": "/cloud/get-started/users-invite"
+  },
+  {
+    "path": "cloud/high-availability/architecture-patterns/index.html",
+    "route": "/cloud/high-availability/architecture-patterns"
+  },
+  {
+    "path": "cloud/high-availability/enable/index.html",
+    "route": "/cloud/high-availability/enable"
+  },
+  {
+    "path": "cloud/high-availability/failovers/index.html",
+    "route": "/cloud/high-availability/failovers"
+  },
+  {
+    "path": "cloud/high-availability/failovers/manage/index.html",
+    "route": "/cloud/high-availability/failovers/manage"
+  },
+  {
+    "path": "cloud/high-availability/ha-connectivity/index.html",
+    "route": "/cloud/high-availability/ha-connectivity"
+  },
+  {
+    "path": "cloud/high-availability/index.html",
+    "route": "/cloud/high-availability"
+  },
+  {
+    "path": "cloud/high-availability/monitoring/index.html",
+    "route": "/cloud/high-availability/monitoring"
+  },
+  {
+    "path": "cloud/index.html",
+    "route": "/cloud"
+  },
+  {
+    "path": "cloud/manage-access/custom-roles/index.html",
+    "route": "/cloud/manage-access/custom-roles"
+  },
+  {
+    "path": "cloud/manage-access/index.html",
+    "route": "/cloud/manage-access"
+  },
+  {
+    "path": "cloud/manage-access/permissions-reference/index.html",
+    "route": "/cloud/manage-access/permissions-reference"
+  },
+  {
+    "path": "cloud/manage-access/roles-and-permissions/index.html",
+    "route": "/cloud/manage-access/roles-and-permissions"
+  },
+  {
+    "path": "cloud/manage-access/saml/index.html",
+    "route": "/cloud/manage-access/saml"
+  },
+  {
+    "path": "cloud/manage-access/scim/index.html",
+    "route": "/cloud/manage-access/scim"
+  },
+  {
+    "path": "cloud/manage-access/service-accounts/index.html",
+    "route": "/cloud/manage-access/service-accounts"
+  },
+  {
+    "path": "cloud/manage-access/user-groups/index.html",
+    "route": "/cloud/manage-access/user-groups"
+  },
+  {
+    "path": "cloud/manage-access/users/index.html",
+    "route": "/cloud/manage-access/users"
+  },
+  {
+    "path": "cloud/metrics/openmetrics/api-reference/index.html",
+    "route": "/cloud/metrics/openmetrics/api-reference"
+  },
+  {
+    "path": "cloud/metrics/openmetrics/faq/index.html",
+    "route": "/cloud/metrics/openmetrics/faq"
+  },
+  {
+    "path": "cloud/metrics/openmetrics/index.html",
+    "route": "/cloud/metrics/openmetrics"
+  },
+  {
+    "path": "cloud/metrics/openmetrics/metrics-integrations/index.html",
+    "route": "/cloud/metrics/openmetrics/metrics-integrations"
+  },
+  {
+    "path": "cloud/metrics/openmetrics/metrics-reference/index.html",
+    "route": "/cloud/metrics/openmetrics/metrics-reference"
+  },
+  {
+    "path": "cloud/metrics/sdk-metrics-setup/index.html",
+    "route": "/cloud/metrics/sdk-metrics-setup"
+  },
+  {
+    "path": "cloud/migrate/automated/index.html",
+    "route": "/cloud/migrate/automated"
+  },
+  {
+    "path": "cloud/migrate/estimate-actions/index.html",
+    "route": "/cloud/migrate/estimate-actions"
+  },
+  {
+    "path": "cloud/migrate/index.html",
+    "route": "/cloud/migrate"
+  },
+  {
+    "path": "cloud/migrate/manual/index.html",
+    "route": "/cloud/migrate/manual"
+  },
+  {
+    "path": "cloud/migrate/migrate-within-cloud/index.html",
+    "route": "/cloud/migrate/migrate-within-cloud"
+  },
+  {
+    "path": "cloud/monitor/index.html",
+    "route": "/cloud/monitor"
+  },
+  {
+    "path": "cloud/namespaces/index.html",
+    "route": "/cloud/namespaces"
+  },
+  {
+    "path": "cloud/nexus/index.html",
+    "route": "/cloud/nexus"
+  },
+  {
+    "path": "cloud/nexus/latency-availability/index.html",
+    "route": "/cloud/nexus/latency-availability"
+  },
+  {
+    "path": "cloud/nexus/limits/index.html",
+    "route": "/cloud/nexus/limits"
+  },
+  {
+    "path": "cloud/nexus/observability/index.html",
+    "route": "/cloud/nexus/observability"
+  },
+  {
+    "path": "cloud/nexus/pricing/index.html",
+    "route": "/cloud/nexus/pricing"
+  },
+  {
+    "path": "cloud/nexus/security/index.html",
+    "route": "/cloud/nexus/security"
+  },
+  {
+    "path": "cloud/notifications/index.html",
+    "route": "/cloud/notifications"
+  },
+  {
+    "path": "cloud/pricing/index.html",
+    "route": "/cloud/pricing"
+  },
+  {
+    "path": "cloud/projects/index.html",
+    "route": "/cloud/projects"
+  },
+  {
+    "path": "cloud/references/regions/awsregions/index.html",
+    "route": "/cloud/references/regions/awsregions"
+  },
+  {
+    "path": "cloud/references/regions/gcpregions/index.html",
+    "route": "/cloud/references/regions/gcpregions"
+  },
+  {
+    "path": "cloud/references/regions/private-service/index.html",
+    "route": "/cloud/references/regions/private-service"
+  },
+  {
+    "path": "cloud/rpo-rto/index.html",
+    "route": "/cloud/rpo-rto"
+  },
+  {
+    "path": "cloud/service-health/index.html",
+    "route": "/cloud/service-health"
+  },
+  {
+    "path": "cloud/slo/index.html",
+    "route": "/cloud/slo"
+  },
+  {
+    "path": "cloud/tcld/account/index.html",
+    "route": "/cloud/tcld/account"
+  },
+  {
+    "path": "cloud/tcld/apikey/index.html",
+    "route": "/cloud/tcld/apikey"
+  },
+  {
+    "path": "cloud/tcld/connectivity-rule/index.html",
+    "route": "/cloud/tcld/connectivity-rule"
+  },
+  {
+    "path": "cloud/tcld/feature/index.html",
+    "route": "/cloud/tcld/feature"
+  },
+  {
+    "path": "cloud/tcld/generate-certificates/index.html",
+    "route": "/cloud/tcld/generate-certificates"
+  },
+  {
+    "path": "cloud/tcld/index.html",
+    "route": "/cloud/tcld"
+  },
+  {
+    "path": "cloud/tcld/login/index.html",
+    "route": "/cloud/tcld/login"
+  },
+  {
+    "path": "cloud/tcld/logout/index.html",
+    "route": "/cloud/tcld/logout"
+  },
+  {
+    "path": "cloud/tcld/migration/index.html",
+    "route": "/cloud/tcld/migration"
+  },
+  {
+    "path": "cloud/tcld/namespace/index.html",
+    "route": "/cloud/tcld/namespace"
+  },
+  {
+    "path": "cloud/tcld/nexus/index.html",
+    "route": "/cloud/tcld/nexus"
+  },
+  {
+    "path": "cloud/tcld/request/index.html",
+    "route": "/cloud/tcld/request"
+  },
+  {
+    "path": "cloud/tcld/service-account/index.html",
+    "route": "/cloud/tcld/service-account"
+  },
+  {
+    "path": "cloud/tcld/user/index.html",
+    "route": "/cloud/tcld/user"
+  },
+  {
+    "path": "cloud/tcld/user-group/index.html",
+    "route": "/cloud/tcld/user-group"
+  },
+  {
+    "path": "cloud/tcld/version/index.html",
+    "route": "/cloud/tcld/version"
+  },
+  {
+    "path": "cloud/terraform-provider/index.html",
+    "route": "/cloud/terraform-provider"
+  },
+  {
+    "path": "cloud/worker-health/index.html",
+    "route": "/cloud/worker-health"
+  },
+  {
+    "path": "codec-server/index.html",
+    "route": "/codec-server"
+  },
+  {
+    "path": "cron-job/index.html",
+    "route": "/cron-job"
+  },
+  {
+    "path": "dataconversion/index.html",
+    "route": "/dataconversion"
+  },
+  {
+    "path": "default-custom-data-converters/index.html",
+    "route": "/default-custom-data-converters"
+  },
+  {
+    "path": "demos/activity-retry-simulator/index.html",
+    "route": "/demos/activity-retry-simulator"
+  },
+  {
+    "path": "demos/priority-fairness-walkthrough/index.html",
+    "route": "/demos/priority-fairness-walkthrough"
+  },
+  {
+    "path": "demos/serverless-workers/index.html",
+    "route": "/demos/serverless-workers"
+  },
+  {
+    "path": "demos/standalone-activities/index.html",
+    "route": "/demos/standalone-activities"
+  },
+  {
+    "path": "design-patterns/activity-dependency-injection/index.html",
+    "route": "/design-patterns/activity-dependency-injection"
+  },
+  {
+    "path": "design-patterns/approval/index.html",
+    "route": "/design-patterns/approval"
+  },
+  {
+    "path": "design-patterns/batch-iterator/index.html",
+    "route": "/design-patterns/batch-iterator"
+  },
+  {
+    "path": "design-patterns/batch-processing-patterns/index.html",
+    "route": "/design-patterns/batch-processing-patterns"
+  },
+  {
+    "path": "design-patterns/child-workflows/index.html",
+    "route": "/design-patterns/child-workflows"
+  },
+  {
+    "path": "design-patterns/continue-as-new/index.html",
+    "route": "/design-patterns/continue-as-new"
+  },
+  {
+    "path": "design-patterns/delayed-callback/index.html",
+    "route": "/design-patterns/delayed-callback"
+  },
+  {
+    "path": "design-patterns/delayed-retry/index.html",
+    "route": "/design-patterns/delayed-retry"
+  },
+  {
+    "path": "design-patterns/delayed-start/index.html",
+    "route": "/design-patterns/delayed-start"
+  },
+  {
+    "path": "design-patterns/distributed-transaction-patterns/index.html",
+    "route": "/design-patterns/distributed-transaction-patterns"
+  },
+  {
+    "path": "design-patterns/downstream-rate-limiting/index.html",
+    "route": "/design-patterns/downstream-rate-limiting"
+  },
+  {
+    "path": "design-patterns/eager-workflow-start/index.html",
+    "route": "/design-patterns/eager-workflow-start"
+  },
+  {
+    "path": "design-patterns/early-return/index.html",
+    "route": "/design-patterns/early-return"
+  },
+  {
+    "path": "design-patterns/early-return-local-activities/index.html",
+    "route": "/design-patterns/early-return-local-activities"
+  },
+  {
+    "path": "design-patterns/entity-lifecycle-patterns/index.html",
+    "route": "/design-patterns/entity-lifecycle-patterns"
+  },
+  {
+    "path": "design-patterns/entity-workflow/index.html",
+    "route": "/design-patterns/entity-workflow"
+  },
+  {
+    "path": "design-patterns/error-handling-patterns/index.html",
+    "route": "/design-patterns/error-handling-patterns"
+  },
+  {
+    "path": "design-patterns/event-accumulator/index.html",
+    "route": "/design-patterns/event-accumulator"
+  },
+  {
+    "path": "design-patterns/external-interaction-patterns/index.html",
+    "route": "/design-patterns/external-interaction-patterns"
+  },
+  {
+    "path": "design-patterns/fairness/index.html",
+    "route": "/design-patterns/fairness"
+  },
+  {
+    "path": "design-patterns/fanout-child-workflows/index.html",
+    "route": "/design-patterns/fanout-child-workflows"
+  },
+  {
+    "path": "design-patterns/fast-slow-retries/index.html",
+    "route": "/design-patterns/fast-slow-retries"
+  },
+  {
+    "path": "design-patterns/fixed-count-retries/index.html",
+    "route": "/design-patterns/fixed-count-retries"
+  },
+  {
+    "path": "design-patterns/fixed-wall-time-retries/index.html",
+    "route": "/design-patterns/fixed-wall-time-retries"
+  },
+  {
+    "path": "design-patterns/index.html",
+    "route": "/design-patterns"
+  },
+  {
+    "path": "design-patterns/local-activities/index.html",
+    "route": "/design-patterns/local-activities"
+  },
+  {
+    "path": "design-patterns/long-running-activity/index.html",
+    "route": "/design-patterns/long-running-activity"
+  },
+  {
+    "path": "design-patterns/mapreduce-tree/index.html",
+    "route": "/design-patterns/mapreduce-tree"
+  },
+  {
+    "path": "design-patterns/non-retryable-errors/index.html",
+    "route": "/design-patterns/non-retryable-errors"
+  },
+  {
+    "path": "design-patterns/parallel-execution/index.html",
+    "route": "/design-patterns/parallel-execution"
+  },
+  {
+    "path": "design-patterns/performance-latency-patterns/index.html",
+    "route": "/design-patterns/performance-latency-patterns"
+  },
+  {
+    "path": "design-patterns/pick-first/index.html",
+    "route": "/design-patterns/pick-first"
+  },
+  {
+    "path": "design-patterns/polling/index.html",
+    "route": "/design-patterns/polling"
+  },
+  {
+    "path": "design-patterns/priority-task-queues/index.html",
+    "route": "/design-patterns/priority-task-queues"
+  },
+  {
+    "path": "design-patterns/qos-throughput-patterns/index.html",
+    "route": "/design-patterns/qos-throughput-patterns"
+  },
+  {
+    "path": "design-patterns/request-response-via-updates/index.html",
+    "route": "/design-patterns/request-response-via-updates"
+  },
+  {
+    "path": "design-patterns/resumable-activity/index.html",
+    "route": "/design-patterns/resumable-activity"
+  },
+  {
+    "path": "design-patterns/retry-metrics/index.html",
+    "route": "/design-patterns/retry-metrics"
+  },
+  {
+    "path": "design-patterns/saga-pattern/index.html",
+    "route": "/design-patterns/saga-pattern"
+  },
+  {
+    "path": "design-patterns/signal-with-start/index.html",
+    "route": "/design-patterns/signal-with-start"
+  },
+  {
+    "path": "design-patterns/sliding-window/index.html",
+    "route": "/design-patterns/sliding-window"
+  },
+  {
+    "path": "design-patterns/task-orchestration-patterns/index.html",
+    "route": "/design-patterns/task-orchestration-patterns"
+  },
+  {
+    "path": "design-patterns/updatable-timer/index.html",
+    "route": "/design-patterns/updatable-timer"
+  },
+  {
+    "path": "design-patterns/worker-configuration-patterns/index.html",
+    "route": "/design-patterns/worker-configuration-patterns"
+  },
+  {
+    "path": "design-patterns/worker-specific-taskqueue/index.html",
+    "route": "/design-patterns/worker-specific-taskqueue"
+  },
+  {
+    "path": "design-patterns/workflow-messaging-patterns/index.html",
+    "route": "/design-patterns/workflow-messaging-patterns"
+  },
+  {
+    "path": "develop/dotnet/activities/asynchronous-activity/index.html",
+    "route": "/develop/dotnet/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/dotnet/activities/basics/index.html",
+    "route": "/develop/dotnet/activities/basics"
+  },
+  {
+    "path": "develop/dotnet/activities/benign-exceptions/index.html",
+    "route": "/develop/dotnet/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/dotnet/activities/dynamic-activity/index.html",
+    "route": "/develop/dotnet/activities/dynamic-activity"
+  },
+  {
+    "path": "develop/dotnet/activities/execution/index.html",
+    "route": "/develop/dotnet/activities/execution"
+  },
+  {
+    "path": "develop/dotnet/activities/index.html",
+    "route": "/develop/dotnet/activities"
+  },
+  {
+    "path": "develop/dotnet/activities/standalone-activities/index.html",
+    "route": "/develop/dotnet/activities/standalone-activities"
+  },
+  {
+    "path": "develop/dotnet/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/dotnet/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/dotnet/activities/timeouts/index.html",
+    "route": "/develop/dotnet/activities/timeouts"
+  },
+  {
+    "path": "develop/dotnet/best-practices/data-handling/data-conversion/index.html",
+    "route": "/develop/dotnet/best-practices/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/dotnet/best-practices/data-handling/data-encryption/index.html",
+    "route": "/develop/dotnet/best-practices/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/dotnet/best-practices/data-handling/index.html",
+    "route": "/develop/dotnet/best-practices/data-handling"
+  },
+  {
+    "path": "develop/dotnet/best-practices/debugging/index.html",
+    "route": "/develop/dotnet/best-practices/debugging"
+  },
+  {
+    "path": "develop/dotnet/best-practices/error-handling/index.html",
+    "route": "/develop/dotnet/best-practices/error-handling"
+  },
+  {
+    "path": "develop/dotnet/best-practices/index.html",
+    "route": "/develop/dotnet/best-practices"
+  },
+  {
+    "path": "develop/dotnet/best-practices/testing-suite/index.html",
+    "route": "/develop/dotnet/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/dotnet/client/index.html",
+    "route": "/develop/dotnet/client"
+  },
+  {
+    "path": "develop/dotnet/client/temporal-client/index.html",
+    "route": "/develop/dotnet/client/temporal-client"
+  },
+  {
+    "path": "develop/dotnet/index.html",
+    "route": "/develop/dotnet"
+  },
+  {
+    "path": "develop/dotnet/nexus/feature-guide/index.html",
+    "route": "/develop/dotnet/nexus/feature-guide"
+  },
+  {
+    "path": "develop/dotnet/nexus/index.html",
+    "route": "/develop/dotnet/nexus"
+  },
+  {
+    "path": "develop/dotnet/nexus/quickstart/index.html",
+    "route": "/develop/dotnet/nexus/quickstart"
+  },
+  {
+    "path": "develop/dotnet/nexus/standalone-operations/index.html",
+    "route": "/develop/dotnet/nexus/standalone-operations"
+  },
+  {
+    "path": "develop/dotnet/platform/enriching-ui/index.html",
+    "route": "/develop/dotnet/platform/enriching-ui"
+  },
+  {
+    "path": "develop/dotnet/platform/index.html",
+    "route": "/develop/dotnet/platform"
+  },
+  {
+    "path": "develop/dotnet/platform/observability/index.html",
+    "route": "/develop/dotnet/platform/observability"
+  },
+  {
+    "path": "develop/dotnet/set-up-your-local-dotnet/index.html",
+    "route": "/develop/dotnet/set-up-your-local-dotnet"
+  },
+  {
+    "path": "develop/dotnet/workers/index.html",
+    "route": "/develop/dotnet/workers"
+  },
+  {
+    "path": "develop/dotnet/workers/interceptors/index.html",
+    "route": "/develop/dotnet/workers/interceptors"
+  },
+  {
+    "path": "develop/dotnet/workers/run-worker-process/index.html",
+    "route": "/develop/dotnet/workers/run-worker-process"
+  },
+  {
+    "path": "develop/dotnet/workers/serverless-workers/aws-lambda/index.html",
+    "route": "/develop/dotnet/workers/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "develop/dotnet/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/dotnet/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/dotnet/workers/serverless-workers/index.html",
+    "route": "/develop/dotnet/workers/serverless-workers"
+  },
+  {
+    "path": "develop/dotnet/workflows/basics/index.html",
+    "route": "/develop/dotnet/workflows/basics"
+  },
+  {
+    "path": "develop/dotnet/workflows/cancellation/index.html",
+    "route": "/develop/dotnet/workflows/cancellation"
+  },
+  {
+    "path": "develop/dotnet/workflows/child-workflows/index.html",
+    "route": "/develop/dotnet/workflows/child-workflows"
+  },
+  {
+    "path": "develop/dotnet/workflows/continue-as-new/index.html",
+    "route": "/develop/dotnet/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/dotnet/workflows/dynamic-workflow/index.html",
+    "route": "/develop/dotnet/workflows/dynamic-workflow"
+  },
+  {
+    "path": "develop/dotnet/workflows/index.html",
+    "route": "/develop/dotnet/workflows"
+  },
+  {
+    "path": "develop/dotnet/workflows/message-passing/index.html",
+    "route": "/develop/dotnet/workflows/message-passing"
+  },
+  {
+    "path": "develop/dotnet/workflows/schedules/index.html",
+    "route": "/develop/dotnet/workflows/schedules"
+  },
+  {
+    "path": "develop/dotnet/workflows/timeouts/index.html",
+    "route": "/develop/dotnet/workflows/timeouts"
+  },
+  {
+    "path": "develop/dotnet/workflows/timers/index.html",
+    "route": "/develop/dotnet/workflows/timers"
+  },
+  {
+    "path": "develop/dotnet/workflows/versioning/index.html",
+    "route": "/develop/dotnet/workflows/versioning"
+  },
+  {
+    "path": "develop/dotnet/workflows/workflow-streams/index.html",
+    "route": "/develop/dotnet/workflows/workflow-streams"
+  },
+  {
+    "path": "develop/environment-configuration/index.html",
+    "route": "/develop/environment-configuration"
+  },
+  {
+    "path": "develop/go/activities/asynchronous-activity/index.html",
+    "route": "/develop/go/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/go/activities/basics/index.html",
+    "route": "/develop/go/activities/basics"
+  },
+  {
+    "path": "develop/go/activities/benign-exceptions/index.html",
+    "route": "/develop/go/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/go/activities/dynamic-activity/index.html",
+    "route": "/develop/go/activities/dynamic-activity"
+  },
+  {
+    "path": "develop/go/activities/execution/index.html",
+    "route": "/develop/go/activities/execution"
+  },
+  {
+    "path": "develop/go/activities/index.html",
+    "route": "/develop/go/activities"
+  },
+  {
+    "path": "develop/go/activities/standalone-activities/index.html",
+    "route": "/develop/go/activities/standalone-activities"
+  },
+  {
+    "path": "develop/go/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/go/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/go/activities/timeouts/index.html",
+    "route": "/develop/go/activities/timeouts"
+  },
+  {
+    "path": "develop/go/best-practices/context-propagation/index.html",
+    "route": "/develop/go/best-practices/context-propagation"
+  },
+  {
+    "path": "develop/go/best-practices/debugging/index.html",
+    "route": "/develop/go/best-practices/debugging"
+  },
+  {
+    "path": "develop/go/best-practices/error-handling/index.html",
+    "route": "/develop/go/best-practices/error-handling"
+  },
+  {
+    "path": "develop/go/best-practices/index.html",
+    "route": "/develop/go/best-practices"
+  },
+  {
+    "path": "develop/go/best-practices/multithreading/index.html",
+    "route": "/develop/go/best-practices/multithreading"
+  },
+  {
+    "path": "develop/go/best-practices/testing-suite/index.html",
+    "route": "/develop/go/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/go/client/index.html",
+    "route": "/develop/go/client"
+  },
+  {
+    "path": "develop/go/client/namespaces/index.html",
+    "route": "/develop/go/client/namespaces"
+  },
+  {
+    "path": "develop/go/client/temporal-client/index.html",
+    "route": "/develop/go/client/temporal-client"
+  },
+  {
+    "path": "develop/go/data-handling/data-conversion/index.html",
+    "route": "/develop/go/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/go/data-handling/data-encryption/index.html",
+    "route": "/develop/go/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/go/data-handling/external-storage/index.html",
+    "route": "/develop/go/data-handling/external-storage"
+  },
+  {
+    "path": "develop/go/data-handling/index.html",
+    "route": "/develop/go/data-handling"
+  },
+  {
+    "path": "develop/go/index.html",
+    "route": "/develop/go"
+  },
+  {
+    "path": "develop/go/integrations/google-adk/index.html",
+    "route": "/develop/go/integrations/google-adk"
+  },
+  {
+    "path": "develop/go/integrations/index.html",
+    "route": "/develop/go/integrations"
+  },
+  {
+    "path": "develop/go/integrations/opentelemetry-v2/index.html",
+    "route": "/develop/go/integrations/opentelemetry-v2"
+  },
+  {
+    "path": "develop/go/nexus/feature-guide/index.html",
+    "route": "/develop/go/nexus/feature-guide"
+  },
+  {
+    "path": "develop/go/nexus/index.html",
+    "route": "/develop/go/nexus"
+  },
+  {
+    "path": "develop/go/nexus/quickstart/index.html",
+    "route": "/develop/go/nexus/quickstart"
+  },
+  {
+    "path": "develop/go/nexus/standalone-operations/index.html",
+    "route": "/develop/go/nexus/standalone-operations"
+  },
+  {
+    "path": "develop/go/platform/enriching-ui/index.html",
+    "route": "/develop/go/platform/enriching-ui"
+  },
+  {
+    "path": "develop/go/platform/index.html",
+    "route": "/develop/go/platform"
+  },
+  {
+    "path": "develop/go/platform/observability/index.html",
+    "route": "/develop/go/platform/observability"
+  },
+  {
+    "path": "develop/go/set-up-your-local-go/index.html",
+    "route": "/develop/go/set-up-your-local-go"
+  },
+  {
+    "path": "develop/go/worker-versioning-legacy/index.html",
+    "route": "/develop/go/worker-versioning-legacy"
+  },
+  {
+    "path": "develop/go/workers/index.html",
+    "route": "/develop/go/workers"
+  },
+  {
+    "path": "develop/go/workers/interceptors/index.html",
+    "route": "/develop/go/workers/interceptors"
+  },
+  {
+    "path": "develop/go/workers/run-worker-process/index.html",
+    "route": "/develop/go/workers/run-worker-process"
+  },
+  {
+    "path": "develop/go/workers/serverless-workers/aws-lambda/index.html",
+    "route": "/develop/go/workers/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "develop/go/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/go/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/go/workers/serverless-workers/index.html",
+    "route": "/develop/go/workers/serverless-workers"
+  },
+  {
+    "path": "develop/go/workers/sessions/index.html",
+    "route": "/develop/go/workers/sessions"
+  },
+  {
+    "path": "develop/go/workflows/basics/index.html",
+    "route": "/develop/go/workflows/basics"
+  },
+  {
+    "path": "develop/go/workflows/cancellation/index.html",
+    "route": "/develop/go/workflows/cancellation"
+  },
+  {
+    "path": "develop/go/workflows/child-workflows/index.html",
+    "route": "/develop/go/workflows/child-workflows"
+  },
+  {
+    "path": "develop/go/workflows/continue-as-new/index.html",
+    "route": "/develop/go/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/go/workflows/dynamic-workflow/index.html",
+    "route": "/develop/go/workflows/dynamic-workflow"
+  },
+  {
+    "path": "develop/go/workflows/index.html",
+    "route": "/develop/go/workflows"
+  },
+  {
+    "path": "develop/go/workflows/message-passing/index.html",
+    "route": "/develop/go/workflows/message-passing"
+  },
+  {
+    "path": "develop/go/workflows/schedules/index.html",
+    "route": "/develop/go/workflows/schedules"
+  },
+  {
+    "path": "develop/go/workflows/selectors/index.html",
+    "route": "/develop/go/workflows/selectors"
+  },
+  {
+    "path": "develop/go/workflows/side-effects/index.html",
+    "route": "/develop/go/workflows/side-effects"
+  },
+  {
+    "path": "develop/go/workflows/timeouts/index.html",
+    "route": "/develop/go/workflows/timeouts"
+  },
+  {
+    "path": "develop/go/workflows/timers/index.html",
+    "route": "/develop/go/workflows/timers"
+  },
+  {
+    "path": "develop/go/workflows/versioning/index.html",
+    "route": "/develop/go/workflows/versioning"
+  },
+  {
+    "path": "develop/go/workflows/workflow-streams/index.html",
+    "route": "/develop/go/workflows/workflow-streams"
+  },
+  {
+    "path": "develop/index.html",
+    "route": "/develop"
+  },
+  {
+    "path": "develop/java/activities/asynchronous-activity/index.html",
+    "route": "/develop/java/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/java/activities/basics/index.html",
+    "route": "/develop/java/activities/basics"
+  },
+  {
+    "path": "develop/java/activities/benign-exceptions/index.html",
+    "route": "/develop/java/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/java/activities/execution/index.html",
+    "route": "/develop/java/activities/execution"
+  },
+  {
+    "path": "develop/java/activities/index.html",
+    "route": "/develop/java/activities"
+  },
+  {
+    "path": "develop/java/activities/standalone-activities/index.html",
+    "route": "/develop/java/activities/standalone-activities"
+  },
+  {
+    "path": "develop/java/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/java/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/java/activities/timeouts/index.html",
+    "route": "/develop/java/activities/timeouts"
+  },
+  {
+    "path": "develop/java/best-practices/data-handling/data-conversion/index.html",
+    "route": "/develop/java/best-practices/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/java/best-practices/data-handling/data-encryption/index.html",
+    "route": "/develop/java/best-practices/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/java/best-practices/data-handling/index.html",
+    "route": "/develop/java/best-practices/data-handling"
+  },
+  {
+    "path": "develop/java/best-practices/debugging/index.html",
+    "route": "/develop/java/best-practices/debugging"
+  },
+  {
+    "path": "develop/java/best-practices/error-handling/index.html",
+    "route": "/develop/java/best-practices/error-handling"
+  },
+  {
+    "path": "develop/java/best-practices/index.html",
+    "route": "/develop/java/best-practices"
+  },
+  {
+    "path": "develop/java/best-practices/testing-suite/index.html",
+    "route": "/develop/java/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/java/client/index.html",
+    "route": "/develop/java/client"
+  },
+  {
+    "path": "develop/java/client/namespaces/index.html",
+    "route": "/develop/java/client/namespaces"
+  },
+  {
+    "path": "develop/java/client/temporal-client/index.html",
+    "route": "/develop/java/client/temporal-client"
+  },
+  {
+    "path": "develop/java/data-handling/external-storage/index.html",
+    "route": "/develop/java/data-handling/external-storage"
+  },
+  {
+    "path": "develop/java/index.html",
+    "route": "/develop/java"
+  },
+  {
+    "path": "develop/java/integrations/index.html",
+    "route": "/develop/java/integrations"
+  },
+  {
+    "path": "develop/java/integrations/spring-ai/index.html",
+    "route": "/develop/java/integrations/spring-ai"
+  },
+  {
+    "path": "develop/java/integrations/spring-boot-integration/index.html",
+    "route": "/develop/java/integrations/spring-boot-integration"
+  },
+  {
+    "path": "develop/java/nexus/feature-guide/index.html",
+    "route": "/develop/java/nexus/feature-guide"
+  },
+  {
+    "path": "develop/java/nexus/index.html",
+    "route": "/develop/java/nexus"
+  },
+  {
+    "path": "develop/java/nexus/quickstart/index.html",
+    "route": "/develop/java/nexus/quickstart"
+  },
+  {
+    "path": "develop/java/nexus/standalone-operations/index.html",
+    "route": "/develop/java/nexus/standalone-operations"
+  },
+  {
+    "path": "develop/java/platform/enriching-ui/index.html",
+    "route": "/develop/java/platform/enriching-ui"
+  },
+  {
+    "path": "develop/java/platform/index.html",
+    "route": "/develop/java/platform"
+  },
+  {
+    "path": "develop/java/platform/observability/index.html",
+    "route": "/develop/java/platform/observability"
+  },
+  {
+    "path": "develop/java/set-up-your-local-java/index.html",
+    "route": "/develop/java/set-up-your-local-java"
+  },
+  {
+    "path": "develop/java/worker-versioning-legacy/index.html",
+    "route": "/develop/java/worker-versioning-legacy"
+  },
+  {
+    "path": "develop/java/workers/index.html",
+    "route": "/develop/java/workers"
+  },
+  {
+    "path": "develop/java/workers/interceptors/index.html",
+    "route": "/develop/java/workers/interceptors"
+  },
+  {
+    "path": "develop/java/workers/run-worker-process/index.html",
+    "route": "/develop/java/workers/run-worker-process"
+  },
+  {
+    "path": "develop/java/workers/serverless-workers/aws-lambda/index.html",
+    "route": "/develop/java/workers/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "develop/java/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/java/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/java/workers/serverless-workers/index.html",
+    "route": "/develop/java/workers/serverless-workers"
+  },
+  {
+    "path": "develop/java/workflows/basics/index.html",
+    "route": "/develop/java/workflows/basics"
+  },
+  {
+    "path": "develop/java/workflows/cancellation/index.html",
+    "route": "/develop/java/workflows/cancellation"
+  },
+  {
+    "path": "develop/java/workflows/child-workflows/index.html",
+    "route": "/develop/java/workflows/child-workflows"
+  },
+  {
+    "path": "develop/java/workflows/continue-as-new/index.html",
+    "route": "/develop/java/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/java/workflows/index.html",
+    "route": "/develop/java/workflows"
+  },
+  {
+    "path": "develop/java/workflows/message-passing/index.html",
+    "route": "/develop/java/workflows/message-passing"
+  },
+  {
+    "path": "develop/java/workflows/schedules/index.html",
+    "route": "/develop/java/workflows/schedules"
+  },
+  {
+    "path": "develop/java/workflows/side-effects/index.html",
+    "route": "/develop/java/workflows/side-effects"
+  },
+  {
+    "path": "develop/java/workflows/timeouts/index.html",
+    "route": "/develop/java/workflows/timeouts"
+  },
+  {
+    "path": "develop/java/workflows/timers/index.html",
+    "route": "/develop/java/workflows/timers"
+  },
+  {
+    "path": "develop/java/workflows/versioning/index.html",
+    "route": "/develop/java/workflows/versioning"
+  },
+  {
+    "path": "develop/java/workflows/workflow-streams/index.html",
+    "route": "/develop/java/workflows/workflow-streams"
+  },
+  {
+    "path": "develop/php/activities/asynchronous-activity/index.html",
+    "route": "/develop/php/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/php/activities/basics/index.html",
+    "route": "/develop/php/activities/basics"
+  },
+  {
+    "path": "develop/php/activities/execution/index.html",
+    "route": "/develop/php/activities/execution"
+  },
+  {
+    "path": "develop/php/activities/index.html",
+    "route": "/develop/php/activities"
+  },
+  {
+    "path": "develop/php/activities/timeouts/index.html",
+    "route": "/develop/php/activities/timeouts"
+  },
+  {
+    "path": "develop/php/best-practices/debugging/index.html",
+    "route": "/develop/php/best-practices/debugging"
+  },
+  {
+    "path": "develop/php/best-practices/index.html",
+    "route": "/develop/php/best-practices"
+  },
+  {
+    "path": "develop/php/best-practices/testing-suite/index.html",
+    "route": "/develop/php/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/php/client/index.html",
+    "route": "/develop/php/client"
+  },
+  {
+    "path": "develop/php/client/temporal-client/index.html",
+    "route": "/develop/php/client/temporal-client"
+  },
+  {
+    "path": "develop/php/index.html",
+    "route": "/develop/php"
+  },
+  {
+    "path": "develop/php/platform/enriching-ui/index.html",
+    "route": "/develop/php/platform/enriching-ui"
+  },
+  {
+    "path": "develop/php/platform/index.html",
+    "route": "/develop/php/platform"
+  },
+  {
+    "path": "develop/php/platform/observability/index.html",
+    "route": "/develop/php/platform/observability"
+  },
+  {
+    "path": "develop/php/set-up-your-local-php/index.html",
+    "route": "/develop/php/set-up-your-local-php"
+  },
+  {
+    "path": "develop/php/workers/index.html",
+    "route": "/develop/php/workers"
+  },
+  {
+    "path": "develop/php/workers/run-worker-process/index.html",
+    "route": "/develop/php/workers/run-worker-process"
+  },
+  {
+    "path": "develop/php/workflows/basics/index.html",
+    "route": "/develop/php/workflows/basics"
+  },
+  {
+    "path": "develop/php/workflows/cancellation/index.html",
+    "route": "/develop/php/workflows/cancellation"
+  },
+  {
+    "path": "develop/php/workflows/child-workflows/index.html",
+    "route": "/develop/php/workflows/child-workflows"
+  },
+  {
+    "path": "develop/php/workflows/continue-as-new/index.html",
+    "route": "/develop/php/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/php/workflows/index.html",
+    "route": "/develop/php/workflows"
+  },
+  {
+    "path": "develop/php/workflows/message-passing/index.html",
+    "route": "/develop/php/workflows/message-passing"
+  },
+  {
+    "path": "develop/php/workflows/schedules/index.html",
+    "route": "/develop/php/workflows/schedules"
+  },
+  {
+    "path": "develop/php/workflows/side-effects/index.html",
+    "route": "/develop/php/workflows/side-effects"
+  },
+  {
+    "path": "develop/php/workflows/timeouts/index.html",
+    "route": "/develop/php/workflows/timeouts"
+  },
+  {
+    "path": "develop/php/workflows/timers/index.html",
+    "route": "/develop/php/workflows/timers"
+  },
+  {
+    "path": "develop/php/workflows/versioning/index.html",
+    "route": "/develop/php/workflows/versioning"
+  },
+  {
+    "path": "develop/plugins-guide/index.html",
+    "route": "/develop/plugins-guide"
+  },
+  {
+    "path": "develop/python/activities/asynchronous-activity/index.html",
+    "route": "/develop/python/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/python/activities/basics/index.html",
+    "route": "/develop/python/activities/basics"
+  },
+  {
+    "path": "develop/python/activities/benign-exceptions/index.html",
+    "route": "/develop/python/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/python/activities/execution/index.html",
+    "route": "/develop/python/activities/execution"
+  },
+  {
+    "path": "develop/python/activities/index.html",
+    "route": "/develop/python/activities"
+  },
+  {
+    "path": "develop/python/activities/standalone-activities/index.html",
+    "route": "/develop/python/activities/standalone-activities"
+  },
+  {
+    "path": "develop/python/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/python/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/python/activities/timeouts/index.html",
+    "route": "/develop/python/activities/timeouts"
+  },
+  {
+    "path": "develop/python/best-practices/debugging/index.html",
+    "route": "/develop/python/best-practices/debugging"
+  },
+  {
+    "path": "develop/python/best-practices/error-handling/index.html",
+    "route": "/develop/python/best-practices/error-handling"
+  },
+  {
+    "path": "develop/python/best-practices/index.html",
+    "route": "/develop/python/best-practices"
+  },
+  {
+    "path": "develop/python/best-practices/python-sdk-sandbox/index.html",
+    "route": "/develop/python/best-practices/python-sdk-sandbox"
+  },
+  {
+    "path": "develop/python/best-practices/python-sdk-sync-vs-async/index.html",
+    "route": "/develop/python/best-practices/python-sdk-sync-vs-async"
+  },
+  {
+    "path": "develop/python/best-practices/testing-suite/index.html",
+    "route": "/develop/python/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/python/client/index.html",
+    "route": "/develop/python/client"
+  },
+  {
+    "path": "develop/python/client/temporal-client/index.html",
+    "route": "/develop/python/client/temporal-client"
+  },
+  {
+    "path": "develop/python/data-handling/data-conversion/index.html",
+    "route": "/develop/python/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/python/data-handling/data-encryption/index.html",
+    "route": "/develop/python/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/python/data-handling/external-storage/index.html",
+    "route": "/develop/python/data-handling/external-storage"
+  },
+  {
+    "path": "develop/python/data-handling/index.html",
+    "route": "/develop/python/data-handling"
+  },
+  {
+    "path": "develop/python/index.html",
+    "route": "/develop/python"
+  },
+  {
+    "path": "develop/python/integrations/deepagents/index.html",
+    "route": "/develop/python/integrations/deepagents"
+  },
+  {
+    "path": "develop/python/integrations/google-adk/index.html",
+    "route": "/develop/python/integrations/google-adk"
+  },
+  {
+    "path": "develop/python/integrations/google-genai/index.html",
+    "route": "/develop/python/integrations/google-genai"
+  },
+  {
+    "path": "develop/python/integrations/index.html",
+    "route": "/develop/python/integrations"
+  },
+  {
+    "path": "develop/python/integrations/langgraph/index.html",
+    "route": "/develop/python/integrations/langgraph"
+  },
+  {
+    "path": "develop/python/integrations/langsmith/index.html",
+    "route": "/develop/python/integrations/langsmith"
+  },
+  {
+    "path": "develop/python/integrations/openai-agents/index.html",
+    "route": "/develop/python/integrations/openai-agents"
+  },
+  {
+    "path": "develop/python/integrations/strands-agents/index.html",
+    "route": "/develop/python/integrations/strands-agents"
+  },
+  {
+    "path": "develop/python/nexus/feature-guide/index.html",
+    "route": "/develop/python/nexus/feature-guide"
+  },
+  {
+    "path": "develop/python/nexus/index.html",
+    "route": "/develop/python/nexus"
+  },
+  {
+    "path": "develop/python/nexus/quickstart/index.html",
+    "route": "/develop/python/nexus/quickstart"
+  },
+  {
+    "path": "develop/python/nexus/standalone-operations/index.html",
+    "route": "/develop/python/nexus/standalone-operations"
+  },
+  {
+    "path": "develop/python/platform/enriching-ui/index.html",
+    "route": "/develop/python/platform/enriching-ui"
+  },
+  {
+    "path": "develop/python/platform/index.html",
+    "route": "/develop/python/platform"
+  },
+  {
+    "path": "develop/python/platform/observability/index.html",
+    "route": "/develop/python/platform/observability"
+  },
+  {
+    "path": "develop/python/set-up-your-local-python/index.html",
+    "route": "/develop/python/set-up-your-local-python"
+  },
+  {
+    "path": "develop/python/workers/index.html",
+    "route": "/develop/python/workers"
+  },
+  {
+    "path": "develop/python/workers/interceptors/index.html",
+    "route": "/develop/python/workers/interceptors"
+  },
+  {
+    "path": "develop/python/workers/run-worker-process/index.html",
+    "route": "/develop/python/workers/run-worker-process"
+  },
+  {
+    "path": "develop/python/workers/serverless-workers/agentcore/index.html",
+    "route": "/develop/python/workers/serverless-workers/agentcore"
+  },
+  {
+    "path": "develop/python/workers/serverless-workers/aws-lambda/index.html",
+    "route": "/develop/python/workers/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "develop/python/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/python/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/python/workers/serverless-workers/index.html",
+    "route": "/develop/python/workers/serverless-workers"
+  },
+  {
+    "path": "develop/python/workflows/basics/index.html",
+    "route": "/develop/python/workflows/basics"
+  },
+  {
+    "path": "develop/python/workflows/cancellation/index.html",
+    "route": "/develop/python/workflows/cancellation"
+  },
+  {
+    "path": "develop/python/workflows/child-workflows/index.html",
+    "route": "/develop/python/workflows/child-workflows"
+  },
+  {
+    "path": "develop/python/workflows/continue-as-new/index.html",
+    "route": "/develop/python/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/python/workflows/index.html",
+    "route": "/develop/python/workflows"
+  },
+  {
+    "path": "develop/python/workflows/message-passing/index.html",
+    "route": "/develop/python/workflows/message-passing"
+  },
+  {
+    "path": "develop/python/workflows/schedules/index.html",
+    "route": "/develop/python/workflows/schedules"
+  },
+  {
+    "path": "develop/python/workflows/timeouts/index.html",
+    "route": "/develop/python/workflows/timeouts"
+  },
+  {
+    "path": "develop/python/workflows/timers/index.html",
+    "route": "/develop/python/workflows/timers"
+  },
+  {
+    "path": "develop/python/workflows/versioning/index.html",
+    "route": "/develop/python/workflows/versioning"
+  },
+  {
+    "path": "develop/python/workflows/worker-versioning-legacy/index.html",
+    "route": "/develop/python/workflows/worker-versioning-legacy"
+  },
+  {
+    "path": "develop/python/workflows/workflow-streams/index.html",
+    "route": "/develop/python/workflows/workflow-streams"
+  },
+  {
+    "path": "develop/ruby/activities/asynchronous-activity/index.html",
+    "route": "/develop/ruby/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/ruby/activities/basics/index.html",
+    "route": "/develop/ruby/activities/basics"
+  },
+  {
+    "path": "develop/ruby/activities/benign-exceptions/index.html",
+    "route": "/develop/ruby/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/ruby/activities/dynamic-activity/index.html",
+    "route": "/develop/ruby/activities/dynamic-activity"
+  },
+  {
+    "path": "develop/ruby/activities/execution/index.html",
+    "route": "/develop/ruby/activities/execution"
+  },
+  {
+    "path": "develop/ruby/activities/index.html",
+    "route": "/develop/ruby/activities"
+  },
+  {
+    "path": "develop/ruby/activities/standalone-activities/index.html",
+    "route": "/develop/ruby/activities/standalone-activities"
+  },
+  {
+    "path": "develop/ruby/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/ruby/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/ruby/activities/timeouts/index.html",
+    "route": "/develop/ruby/activities/timeouts"
+  },
+  {
+    "path": "develop/ruby/best-practices/data-handling/data-conversion/index.html",
+    "route": "/develop/ruby/best-practices/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/ruby/best-practices/data-handling/data-encryption/index.html",
+    "route": "/develop/ruby/best-practices/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/ruby/best-practices/data-handling/index.html",
+    "route": "/develop/ruby/best-practices/data-handling"
+  },
+  {
+    "path": "develop/ruby/best-practices/debugging/index.html",
+    "route": "/develop/ruby/best-practices/debugging"
+  },
+  {
+    "path": "develop/ruby/best-practices/error-handling/index.html",
+    "route": "/develop/ruby/best-practices/error-handling"
+  },
+  {
+    "path": "develop/ruby/best-practices/index.html",
+    "route": "/develop/ruby/best-practices"
+  },
+  {
+    "path": "develop/ruby/best-practices/testing-suite/index.html",
+    "route": "/develop/ruby/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/ruby/client/index.html",
+    "route": "/develop/ruby/client"
+  },
+  {
+    "path": "develop/ruby/client/temporal-client/index.html",
+    "route": "/develop/ruby/client/temporal-client"
+  },
+  {
+    "path": "develop/ruby/index.html",
+    "route": "/develop/ruby"
+  },
+  {
+    "path": "develop/ruby/integrations/index.html",
+    "route": "/develop/ruby/integrations"
+  },
+  {
+    "path": "develop/ruby/integrations/rails-integration/index.html",
+    "route": "/develop/ruby/integrations/rails-integration"
+  },
+  {
+    "path": "develop/ruby/platform/enriching-ui/index.html",
+    "route": "/develop/ruby/platform/enriching-ui"
+  },
+  {
+    "path": "develop/ruby/platform/index.html",
+    "route": "/develop/ruby/platform"
+  },
+  {
+    "path": "develop/ruby/platform/observability/index.html",
+    "route": "/develop/ruby/platform/observability"
+  },
+  {
+    "path": "develop/ruby/set-up-local-ruby/index.html",
+    "route": "/develop/ruby/set-up-local-ruby"
+  },
+  {
+    "path": "develop/ruby/workers/index.html",
+    "route": "/develop/ruby/workers"
+  },
+  {
+    "path": "develop/ruby/workers/run-worker-process/index.html",
+    "route": "/develop/ruby/workers/run-worker-process"
+  },
+  {
+    "path": "develop/ruby/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/ruby/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/ruby/workers/serverless-workers/index.html",
+    "route": "/develop/ruby/workers/serverless-workers"
+  },
+  {
+    "path": "develop/ruby/workflows/basics/index.html",
+    "route": "/develop/ruby/workflows/basics"
+  },
+  {
+    "path": "develop/ruby/workflows/cancellation/index.html",
+    "route": "/develop/ruby/workflows/cancellation"
+  },
+  {
+    "path": "develop/ruby/workflows/child-workflows/index.html",
+    "route": "/develop/ruby/workflows/child-workflows"
+  },
+  {
+    "path": "develop/ruby/workflows/continue-as-new/index.html",
+    "route": "/develop/ruby/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/ruby/workflows/dynamic-workflow/index.html",
+    "route": "/develop/ruby/workflows/dynamic-workflow"
+  },
+  {
+    "path": "develop/ruby/workflows/futures/index.html",
+    "route": "/develop/ruby/workflows/futures"
+  },
+  {
+    "path": "develop/ruby/workflows/index.html",
+    "route": "/develop/ruby/workflows"
+  },
+  {
+    "path": "develop/ruby/workflows/message-passing/index.html",
+    "route": "/develop/ruby/workflows/message-passing"
+  },
+  {
+    "path": "develop/ruby/workflows/schedules/index.html",
+    "route": "/develop/ruby/workflows/schedules"
+  },
+  {
+    "path": "develop/ruby/workflows/timeouts/index.html",
+    "route": "/develop/ruby/workflows/timeouts"
+  },
+  {
+    "path": "develop/ruby/workflows/timers/index.html",
+    "route": "/develop/ruby/workflows/timers"
+  },
+  {
+    "path": "develop/ruby/workflows/versioning/index.html",
+    "route": "/develop/ruby/workflows/versioning"
+  },
+  {
+    "path": "develop/run-a-development-server/index.html",
+    "route": "/develop/run-a-development-server"
+  },
+  {
+    "path": "develop/rust/activities/basics/index.html",
+    "route": "/develop/rust/activities/basics"
+  },
+  {
+    "path": "develop/rust/activities/execution/index.html",
+    "route": "/develop/rust/activities/execution"
+  },
+  {
+    "path": "develop/rust/activities/index.html",
+    "route": "/develop/rust/activities"
+  },
+  {
+    "path": "develop/rust/activities/standalone-activities/index.html",
+    "route": "/develop/rust/activities/standalone-activities"
+  },
+  {
+    "path": "develop/rust/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/rust/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/rust/activities/timeouts/index.html",
+    "route": "/develop/rust/activities/timeouts"
+  },
+  {
+    "path": "develop/rust/client/index.html",
+    "route": "/develop/rust/client"
+  },
+  {
+    "path": "develop/rust/client/temporal-client/index.html",
+    "route": "/develop/rust/client/temporal-client"
+  },
+  {
+    "path": "develop/rust/index.html",
+    "route": "/develop/rust"
+  },
+  {
+    "path": "develop/rust/nexus/feature-guide/index.html",
+    "route": "/develop/rust/nexus/feature-guide"
+  },
+  {
+    "path": "develop/rust/nexus/index.html",
+    "route": "/develop/rust/nexus"
+  },
+  {
+    "path": "develop/rust/quickstart/index.html",
+    "route": "/develop/rust/quickstart"
+  },
+  {
+    "path": "develop/rust/workers/index.html",
+    "route": "/develop/rust/workers"
+  },
+  {
+    "path": "develop/rust/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/rust/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/rust/workers/serverless-workers/index.html",
+    "route": "/develop/rust/workers/serverless-workers"
+  },
+  {
+    "path": "develop/rust/workers/worker-process/index.html",
+    "route": "/develop/rust/workers/worker-process"
+  },
+  {
+    "path": "develop/rust/workflows/basics/index.html",
+    "route": "/develop/rust/workflows/basics"
+  },
+  {
+    "path": "develop/rust/workflows/cancellation/index.html",
+    "route": "/develop/rust/workflows/cancellation"
+  },
+  {
+    "path": "develop/rust/workflows/child-workflows/index.html",
+    "route": "/develop/rust/workflows/child-workflows"
+  },
+  {
+    "path": "develop/rust/workflows/continue-as-new/index.html",
+    "route": "/develop/rust/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/rust/workflows/index.html",
+    "route": "/develop/rust/workflows"
+  },
+  {
+    "path": "develop/rust/workflows/message-passing/index.html",
+    "route": "/develop/rust/workflows/message-passing"
+  },
+  {
+    "path": "develop/rust/workflows/timeouts/index.html",
+    "route": "/develop/rust/workflows/timeouts"
+  },
+  {
+    "path": "develop/rust/workflows/timers/index.html",
+    "route": "/develop/rust/workflows/timers"
+  },
+  {
+    "path": "develop/safe-deployments/index.html",
+    "route": "/develop/safe-deployments"
+  },
+  {
+    "path": "develop/task-queue-priority-fairness/index.html",
+    "route": "/develop/task-queue-priority-fairness"
+  },
+  {
+    "path": "develop/typescript/activities/asynchronous-activity/index.html",
+    "route": "/develop/typescript/activities/asynchronous-activity"
+  },
+  {
+    "path": "develop/typescript/activities/basics/index.html",
+    "route": "/develop/typescript/activities/basics"
+  },
+  {
+    "path": "develop/typescript/activities/benign-exceptions/index.html",
+    "route": "/develop/typescript/activities/benign-exceptions"
+  },
+  {
+    "path": "develop/typescript/activities/execution/index.html",
+    "route": "/develop/typescript/activities/execution"
+  },
+  {
+    "path": "develop/typescript/activities/index.html",
+    "route": "/develop/typescript/activities"
+  },
+  {
+    "path": "develop/typescript/activities/standalone-activities/index.html",
+    "route": "/develop/typescript/activities/standalone-activities"
+  },
+  {
+    "path": "develop/typescript/activities/standalone-activities-quickstart/index.html",
+    "route": "/develop/typescript/activities/standalone-activities-quickstart"
+  },
+  {
+    "path": "develop/typescript/activities/timeouts/index.html",
+    "route": "/develop/typescript/activities/timeouts"
+  },
+  {
+    "path": "develop/typescript/best-practices/data-handling/data-conversion/index.html",
+    "route": "/develop/typescript/best-practices/data-handling/data-conversion"
+  },
+  {
+    "path": "develop/typescript/best-practices/data-handling/data-encryption/index.html",
+    "route": "/develop/typescript/best-practices/data-handling/data-encryption"
+  },
+  {
+    "path": "develop/typescript/best-practices/data-handling/external-storage/index.html",
+    "route": "/develop/typescript/best-practices/data-handling/external-storage"
+  },
+  {
+    "path": "develop/typescript/best-practices/data-handling/index.html",
+    "route": "/develop/typescript/best-practices/data-handling"
+  },
+  {
+    "path": "develop/typescript/best-practices/debugging/index.html",
+    "route": "/develop/typescript/best-practices/debugging"
+  },
+  {
+    "path": "develop/typescript/best-practices/entity-pattern/index.html",
+    "route": "/develop/typescript/best-practices/entity-pattern"
+  },
+  {
+    "path": "develop/typescript/best-practices/index.html",
+    "route": "/develop/typescript/best-practices"
+  },
+  {
+    "path": "develop/typescript/best-practices/testing-suite/index.html",
+    "route": "/develop/typescript/best-practices/testing-suite"
+  },
+  {
+    "path": "develop/typescript/client/index.html",
+    "route": "/develop/typescript/client"
+  },
+  {
+    "path": "develop/typescript/client/namespaces/index.html",
+    "route": "/develop/typescript/client/namespaces"
+  },
+  {
+    "path": "develop/typescript/client/temporal-client/index.html",
+    "route": "/develop/typescript/client/temporal-client"
+  },
+  {
+    "path": "develop/typescript/index.html",
+    "route": "/develop/typescript"
+  },
+  {
+    "path": "develop/typescript/install-typescript-sdk/index.html",
+    "route": "/develop/typescript/install-typescript-sdk"
+  },
+  {
+    "path": "develop/typescript/integrations/ai-sdk/index.html",
+    "route": "/develop/typescript/integrations/ai-sdk"
+  },
+  {
+    "path": "develop/typescript/integrations/google-adk-agents/index.html",
+    "route": "/develop/typescript/integrations/google-adk-agents"
+  },
+  {
+    "path": "develop/typescript/integrations/index.html",
+    "route": "/develop/typescript/integrations"
+  },
+  {
+    "path": "develop/typescript/integrations/langsmith/index.html",
+    "route": "/develop/typescript/integrations/langsmith"
+  },
+  {
+    "path": "develop/typescript/integrations/openai-agents/index.html",
+    "route": "/develop/typescript/integrations/openai-agents"
+  },
+  {
+    "path": "develop/typescript/integrations/strands-agents/index.html",
+    "route": "/develop/typescript/integrations/strands-agents"
+  },
+  {
+    "path": "develop/typescript/nexus/feature-guide/index.html",
+    "route": "/develop/typescript/nexus/feature-guide"
+  },
+  {
+    "path": "develop/typescript/nexus/index.html",
+    "route": "/develop/typescript/nexus"
+  },
+  {
+    "path": "develop/typescript/nexus/quickstart/index.html",
+    "route": "/develop/typescript/nexus/quickstart"
+  },
+  {
+    "path": "develop/typescript/nexus/standalone-operations/index.html",
+    "route": "/develop/typescript/nexus/standalone-operations"
+  },
+  {
+    "path": "develop/typescript/platform/enriching-ui/index.html",
+    "route": "/develop/typescript/platform/enriching-ui"
+  },
+  {
+    "path": "develop/typescript/platform/index.html",
+    "route": "/develop/typescript/platform"
+  },
+  {
+    "path": "develop/typescript/platform/observability/index.html",
+    "route": "/develop/typescript/platform/observability"
+  },
+  {
+    "path": "develop/typescript/set-up-your-local-typescript/index.html",
+    "route": "/develop/typescript/set-up-your-local-typescript"
+  },
+  {
+    "path": "develop/typescript/worker-versioning-legacy/index.html",
+    "route": "/develop/typescript/worker-versioning-legacy"
+  },
+  {
+    "path": "develop/typescript/workers/index.html",
+    "route": "/develop/typescript/workers"
+  },
+  {
+    "path": "develop/typescript/workers/interceptors/index.html",
+    "route": "/develop/typescript/workers/interceptors"
+  },
+  {
+    "path": "develop/typescript/workers/run-worker-process/index.html",
+    "route": "/develop/typescript/workers/run-worker-process"
+  },
+  {
+    "path": "develop/typescript/workers/serverless-workers/aws-lambda/index.html",
+    "route": "/develop/typescript/workers/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "develop/typescript/workers/serverless-workers/cloud-run/index.html",
+    "route": "/develop/typescript/workers/serverless-workers/cloud-run"
+  },
+  {
+    "path": "develop/typescript/workers/serverless-workers/index.html",
+    "route": "/develop/typescript/workers/serverless-workers"
+  },
+  {
+    "path": "develop/typescript/workflows/basics/index.html",
+    "route": "/develop/typescript/workflows/basics"
+  },
+  {
+    "path": "develop/typescript/workflows/cancellation/index.html",
+    "route": "/develop/typescript/workflows/cancellation"
+  },
+  {
+    "path": "develop/typescript/workflows/cancellation-scopes/index.html",
+    "route": "/develop/typescript/workflows/cancellation-scopes"
+  },
+  {
+    "path": "develop/typescript/workflows/child-workflows/index.html",
+    "route": "/develop/typescript/workflows/child-workflows"
+  },
+  {
+    "path": "develop/typescript/workflows/continue-as-new/index.html",
+    "route": "/develop/typescript/workflows/continue-as-new"
+  },
+  {
+    "path": "develop/typescript/workflows/index.html",
+    "route": "/develop/typescript/workflows"
+  },
+  {
+    "path": "develop/typescript/workflows/message-passing/index.html",
+    "route": "/develop/typescript/workflows/message-passing"
+  },
+  {
+    "path": "develop/typescript/workflows/schedules/index.html",
+    "route": "/develop/typescript/workflows/schedules"
+  },
+  {
+    "path": "develop/typescript/workflows/timeouts/index.html",
+    "route": "/develop/typescript/workflows/timeouts"
+  },
+  {
+    "path": "develop/typescript/workflows/timers/index.html",
+    "route": "/develop/typescript/workflows/timers"
+  },
+  {
+    "path": "develop/typescript/workflows/versioning/index.html",
+    "route": "/develop/typescript/workflows/versioning"
+  },
+  {
+    "path": "develop/typescript/workflows/workflow-streams/index.html",
+    "route": "/develop/typescript/workflows/workflow-streams"
+  },
+  {
+    "path": "develop/worker-performance/configuration/index.html",
+    "route": "/develop/worker-performance/configuration"
+  },
+  {
+    "path": "develop/worker-performance/index.html",
+    "route": "/develop/worker-performance"
+  },
+  {
+    "path": "develop/worker-performance/metrics/index.html",
+    "route": "/develop/worker-performance/metrics"
+  },
+  {
+    "path": "develop/worker-performance/runtime-tuning/index.html",
+    "route": "/develop/worker-performance/runtime-tuning"
+  },
+  {
+    "path": "develop/worker-performance/task-queues/index.html",
+    "route": "/develop/worker-performance/task-queues"
+  },
+  {
+    "path": "develop/worker-performance/workflow-cache/index.html",
+    "route": "/develop/worker-performance/workflow-cache"
+  },
+  {
+    "path": "develop/worker-tuning-reference/index.html",
+    "route": "/develop/worker-tuning-reference"
+  },
+  {
+    "path": "dual-visibility/index.html",
+    "route": "/dual-visibility"
+  },
+  {
+    "path": "dynamic-handler/index.html",
+    "route": "/dynamic-handler"
+  },
+  {
+    "path": "encyclopedia/application-failures/index.html",
+    "route": "/encyclopedia/application-failures"
+  },
+  {
+    "path": "encyclopedia/architecture/how-temporal-works/index.html",
+    "route": "/encyclopedia/architecture/how-temporal-works"
+  },
+  {
+    "path": "encyclopedia/architecture/temporal-architecture/index.html",
+    "route": "/encyclopedia/architecture/temporal-architecture"
+  },
+  {
+    "path": "encyclopedia/architecture/temporal-sdks/index.html",
+    "route": "/encyclopedia/architecture/temporal-sdks"
+  },
+  {
+    "path": "encyclopedia/context-propagation/index.html",
+    "route": "/encyclopedia/context-propagation"
+  },
+  {
+    "path": "encyclopedia/detecting-activity-failures/index.html",
+    "route": "/encyclopedia/detecting-activity-failures"
+  },
+  {
+    "path": "encyclopedia/detecting-workflow-failures/index.html",
+    "route": "/encyclopedia/detecting-workflow-failures"
+  },
+  {
+    "path": "encyclopedia/event-history/event-history-dotnet/index.html",
+    "route": "/encyclopedia/event-history/event-history-dotnet"
+  },
+  {
+    "path": "encyclopedia/event-history/event-history-go/index.html",
+    "route": "/encyclopedia/event-history/event-history-go"
+  },
+  {
+    "path": "encyclopedia/event-history/event-history-java/index.html",
+    "route": "/encyclopedia/event-history/event-history-java"
+  },
+  {
+    "path": "encyclopedia/event-history/event-history-python/index.html",
+    "route": "/encyclopedia/event-history/event-history-python"
+  },
+  {
+    "path": "encyclopedia/event-history/event-history-typescript/index.html",
+    "route": "/encyclopedia/event-history/event-history-typescript"
+  },
+  {
+    "path": "encyclopedia/event-history/index.html",
+    "route": "/encyclopedia/event-history"
+  },
+  {
+    "path": "encyclopedia/extensibility/index.html",
+    "route": "/encyclopedia/extensibility"
+  },
+  {
+    "path": "encyclopedia/failures-and-error-handling/index.html",
+    "route": "/encyclopedia/failures-and-error-handling"
+  },
+  {
+    "path": "encyclopedia/index.html",
+    "route": "/encyclopedia"
+  },
+  {
+    "path": "encyclopedia/interceptors/index.html",
+    "route": "/encyclopedia/interceptors"
+  },
+  {
+    "path": "encyclopedia/plugins/index.html",
+    "route": "/encyclopedia/plugins"
+  },
+  {
+    "path": "encyclopedia/retry-policies/index.html",
+    "route": "/encyclopedia/retry-policies"
+  },
+  {
+    "path": "encyclopedia/temporal-client/index.html",
+    "route": "/encyclopedia/temporal-client"
+  },
+  {
+    "path": "encyclopedia/worker-versioning-legacy/index.html",
+    "route": "/encyclopedia/worker-versioning-legacy"
+  },
+  {
+    "path": "encyclopedia/workers/worker-shutdown/index.html",
+    "route": "/encyclopedia/workers/worker-shutdown"
+  },
+  {
+    "path": "encyclopedia/workflow/cancellation-and-termination/index.html",
+    "route": "/encyclopedia/workflow/cancellation-and-termination"
+  },
+  {
+    "path": "encyclopedia/workflow/workflow-pause/index.html",
+    "route": "/encyclopedia/workflow/workflow-pause"
+  },
+  {
+    "path": "encyclopedia/workflow-message-passing/index.html",
+    "route": "/encyclopedia/workflow-message-passing"
+  },
+  {
+    "path": "evaluate/cloud/actions/index.html",
+    "route": "/evaluate/cloud/actions"
+  },
+  {
+    "path": "evaluate/cloud/index.html",
+    "route": "/evaluate/cloud"
+  },
+  {
+    "path": "evaluate/cloud/limits/index.html",
+    "route": "/evaluate/cloud/limits"
+  },
+  {
+    "path": "evaluate/cloud/regions/index.html",
+    "route": "/evaluate/cloud/regions"
+  },
+  {
+    "path": "evaluate/cloud/security/index.html",
+    "route": "/evaluate/cloud/security"
+  },
+  {
+    "path": "evaluate/cloud/support/index.html",
+    "route": "/evaluate/cloud/support"
+  },
+  {
+    "path": "evaluate/features/cancellation-and-termination/index.html",
+    "route": "/evaluate/features/cancellation-and-termination"
+  },
+  {
+    "path": "evaluate/features/child-workflows/index.html",
+    "route": "/evaluate/features/child-workflows"
+  },
+  {
+    "path": "evaluate/features/cloud-vs-self-hosted-features/index.html",
+    "route": "/evaluate/features/cloud-vs-self-hosted-features"
+  },
+  {
+    "path": "evaluate/features/core-primitives/index.html",
+    "route": "/evaluate/features/core-primitives"
+  },
+  {
+    "path": "evaluate/features/data-encryption/index.html",
+    "route": "/evaluate/features/data-encryption"
+  },
+  {
+    "path": "evaluate/features/index.html",
+    "route": "/evaluate/features"
+  },
+  {
+    "path": "evaluate/features/job-queue/index.html",
+    "route": "/evaluate/features/job-queue"
+  },
+  {
+    "path": "evaluate/features/nexus/index.html",
+    "route": "/evaluate/features/nexus"
+  },
+  {
+    "path": "evaluate/features/observability/index.html",
+    "route": "/evaluate/features/observability"
+  },
+  {
+    "path": "evaluate/features/schedules/index.html",
+    "route": "/evaluate/features/schedules"
+  },
+  {
+    "path": "evaluate/features/serverless-workers/index.html",
+    "route": "/evaluate/features/serverless-workers"
+  },
+  {
+    "path": "evaluate/features/timeouts-and-retries/index.html",
+    "route": "/evaluate/features/timeouts-and-retries"
+  },
+  {
+    "path": "evaluate/features/workflow-message-passing/index.html",
+    "route": "/evaluate/features/workflow-message-passing"
+  },
+  {
+    "path": "evaluate/index.html",
+    "route": "/evaluate"
+  },
+  {
+    "path": "evaluate/product-release-stages/index.html",
+    "route": "/evaluate/product-release-stages"
+  },
+  {
+    "path": "evaluate/understanding-temporal/index.html",
+    "route": "/evaluate/understanding-temporal"
+  },
+  {
+    "path": "evaluate/use-cases-design-patterns/index.html",
+    "route": "/evaluate/use-cases-design-patterns"
+  },
+  {
+    "path": "evaluate/why-temporal/index.html",
+    "route": "/evaluate/why-temporal"
+  },
+  {
+    "path": "external-storage/index.html",
+    "route": "/external-storage"
+  },
+  {
+    "path": "failure-converter/index.html",
+    "route": "/failure-converter"
+  },
+  {
+    "path": "global-namespace/index.html",
+    "route": "/global-namespace"
+  },
+  {
+    "path": "glossary/index.html",
+    "route": "/glossary"
+  },
+  {
+    "path": "guides/celery-to-standalone-activity/index.html",
+    "route": "/guides/celery-to-standalone-activity"
+  },
+  {
+    "path": "guides/durable-agent-on-agentcore/index.html",
+    "route": "/guides/durable-agent-on-agentcore"
+  },
+  {
+    "path": "guides/durable-gaming-sessions/index.html",
+    "route": "/guides/durable-gaming-sessions"
+  },
+  {
+    "path": "guides/entity-pattern-loyalty-points/index.html",
+    "route": "/guides/entity-pattern-loyalty-points"
+  },
+  {
+    "path": "guides/index.html",
+    "route": "/guides"
+  },
+  {
+    "path": "guides/lock-shared-resources/index.html",
+    "route": "/guides/lock-shared-resources"
+  },
+  {
+    "path": "guides/rate-limit-downstream-apis/index.html",
+    "route": "/guides/rate-limit-downstream-apis"
+  },
+  {
+    "path": "guides/recover-without-restart/index.html",
+    "route": "/guides/recover-without-restart"
+  },
+  {
+    "path": "guides/reliable-document-approvals/index.html",
+    "route": "/guides/reliable-document-approvals"
+  },
+  {
+    "path": "guides/route-specialized-workloads/index.html",
+    "route": "/guides/route-specialized-workloads"
+  },
+  {
+    "path": "guides/temporary-rate-limit-increases/index.html",
+    "route": "/guides/temporary-rate-limit-increases"
+  },
+  {
+    "path": "guides/worker-execution-affinity/index.html",
+    "route": "/guides/worker-execution-affinity"
+  },
+  {
+    "path": "handling-messages/index.html",
+    "route": "/handling-messages"
+  },
+  {
+    "path": "index.html",
+    "route": "/"
+  },
+  {
+    "path": "integrations/index.html",
+    "route": "/integrations"
+  },
+  {
+    "path": "key-management/index.html",
+    "route": "/key-management"
+  },
+  {
+    "path": "list-filter/index.html",
+    "route": "/list-filter"
+  },
+  {
+    "path": "local-activity/index.html",
+    "route": "/local-activity"
+  },
+  {
+    "path": "namespaces/index.html",
+    "route": "/namespaces"
+  },
+  {
+    "path": "nexus/endpoints/index.html",
+    "route": "/nexus/endpoints"
+  },
+  {
+    "path": "nexus/error-handling/index.html",
+    "route": "/nexus/error-handling"
+  },
+  {
+    "path": "nexus/execution-debugging/index.html",
+    "route": "/nexus/execution-debugging"
+  },
+  {
+    "path": "nexus/index.html",
+    "route": "/nexus"
+  },
+  {
+    "path": "nexus/metrics/index.html",
+    "route": "/nexus/metrics"
+  },
+  {
+    "path": "nexus/nexgen/index.html",
+    "route": "/nexus/nexgen"
+  },
+  {
+    "path": "nexus/operations/index.html",
+    "route": "/nexus/operations"
+  },
+  {
+    "path": "nexus/patterns/index.html",
+    "route": "/nexus/patterns"
+  },
+  {
+    "path": "nexus/registry/index.html",
+    "route": "/nexus/registry"
+  },
+  {
+    "path": "nexus/security/index.html",
+    "route": "/nexus/security"
+  },
+  {
+    "path": "nexus/services/index.html",
+    "route": "/nexus/services"
+  },
+  {
+    "path": "nexus/standalone-activity/index.html",
+    "route": "/nexus/standalone-activity"
+  },
+  {
+    "path": "nexus/temporal-operation-handler/index.html",
+    "route": "/nexus/temporal-operation-handler"
+  },
+  {
+    "path": "ops/index.html",
+    "route": "/ops"
+  },
+  {
+    "path": "parent-close-policy/index.html",
+    "route": "/parent-close-policy"
+  },
+  {
+    "path": "patching/index.html",
+    "route": "/patching"
+  },
+  {
+    "path": "payload-codec/index.html",
+    "route": "/payload-codec"
+  },
+  {
+    "path": "payload-converter/index.html",
+    "route": "/payload-converter"
+  },
+  {
+    "path": "production-deployment/data-encryption/index.html",
+    "route": "/production-deployment/data-encryption"
+  },
+  {
+    "path": "production-deployment/index.html",
+    "route": "/production-deployment"
+  },
+  {
+    "path": "production-deployment/self-hosted-guide/nexus/index.html",
+    "route": "/production-deployment/self-hosted-guide/nexus"
+  },
+  {
+    "path": "production-deployment/temporal-proxy/configure/index.html",
+    "route": "/production-deployment/temporal-proxy/configure"
+  },
+  {
+    "path": "production-deployment/temporal-proxy/deploy-kubernetes/index.html",
+    "route": "/production-deployment/temporal-proxy/deploy-kubernetes"
+  },
+  {
+    "path": "production-deployment/temporal-proxy/encrypt-payloads/index.html",
+    "route": "/production-deployment/temporal-proxy/encrypt-payloads"
+  },
+  {
+    "path": "production-deployment/temporal-proxy/index.html",
+    "route": "/production-deployment/temporal-proxy"
+  },
+  {
+    "path": "production-deployment/worker-deployments/deploy-workers-to-aws-eks/index.html",
+    "route": "/production-deployment/worker-deployments/deploy-workers-to-aws-eks"
+  },
+  {
+    "path": "production-deployment/worker-deployments/index.html",
+    "route": "/production-deployment/worker-deployments"
+  },
+  {
+    "path": "production-deployment/worker-deployments/kubernetes-controller/index.html",
+    "route": "/production-deployment/worker-deployments/kubernetes-controller"
+  },
+  {
+    "path": "production-deployment/worker-deployments/recover-pinned-workflows/index.html",
+    "route": "/production-deployment/worker-deployments/recover-pinned-workflows"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/agentcore/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/agentcore"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/aws-lambda/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/cloud-run/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/cloud-run"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup"
+  },
+  {
+    "path": "production-deployment/worker-deployments/serverless-workers/index.html",
+    "route": "/production-deployment/worker-deployments/serverless-workers"
+  },
+  {
+    "path": "production-deployment/worker-deployments/unversioned-to-versioned-migration/index.html",
+    "route": "/production-deployment/worker-deployments/unversioned-to-versioned-migration"
+  },
+  {
+    "path": "production-deployment/worker-deployments/worker-versioning/configure-worker/index.html",
+    "route": "/production-deployment/worker-deployments/worker-versioning/configure-worker"
+  },
+  {
+    "path": "production-deployment/worker-deployments/worker-versioning/index.html",
+    "route": "/production-deployment/worker-deployments/worker-versioning"
+  },
+  {
+    "path": "production-deployment/worker-deployments/worker-versioning/roll-out-and-pin/index.html",
+    "route": "/production-deployment/worker-deployments/worker-versioning/roll-out-and-pin"
+  },
+  {
+    "path": "production-deployment/worker-deployments/worker-versioning/sunset-and-gc/index.html",
+    "route": "/production-deployment/worker-deployments/worker-versioning/sunset-and-gc"
+  },
+  {
+    "path": "production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new/index.html",
+    "route": "/production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new"
+  },
+  {
+    "path": "quickstarts/index.html",
+    "route": "/quickstarts"
+  },
+  {
+    "path": "references/api-reference/index.html",
+    "route": "/references/api-reference"
+  },
+  {
+    "path": "references/client-environment-configuration/index.html",
+    "route": "/references/client-environment-configuration"
+  },
+  {
+    "path": "references/commands/index.html",
+    "route": "/references/commands"
+  },
+  {
+    "path": "references/dynamic-configuration/index.html",
+    "route": "/references/dynamic-configuration"
+  },
+  {
+    "path": "references/events/index.html",
+    "route": "/references/events"
+  },
+  {
+    "path": "references/failures/index.html",
+    "route": "/references/failures"
+  },
+  {
+    "path": "references/index.html",
+    "route": "/references"
+  },
+  {
+    "path": "references/operation-list/index.html",
+    "route": "/references/operation-list"
+  },
+  {
+    "path": "references/sdk-metrics/index.html",
+    "route": "/references/sdk-metrics"
+  },
+  {
+    "path": "references/server-options/index.html",
+    "route": "/references/server-options"
+  },
+  {
+    "path": "references/service-configuration/index.html",
+    "route": "/references/service-configuration"
+  },
+  {
+    "path": "references/service-metrics/index.html",
+    "route": "/references/service-metrics"
+  },
+  {
+    "path": "references/web-ui-configuration/index.html",
+    "route": "/references/web-ui-configuration"
+  },
+  {
+    "path": "references/web-ui-environment-variables/index.html",
+    "route": "/references/web-ui-environment-variables"
+  },
+  {
+    "path": "references/workflow-task-errors/index.html",
+    "route": "/references/workflow-task-errors"
+  },
+  {
+    "path": "remote-data-encoding/index.html",
+    "route": "/remote-data-encoding"
+  },
+  {
+    "path": "schedule/index.html",
+    "route": "/schedule"
+  },
+  {
+    "path": "search/index.html",
+    "route": "/search"
+  },
+  {
+    "path": "search-attribute/index.html",
+    "route": "/search-attribute"
+  },
+  {
+    "path": "security/index.html",
+    "route": "/security"
+  },
+  {
+    "path": "self-hosted-guide/archival/index.html",
+    "route": "/self-hosted-guide/archival"
+  },
+  {
+    "path": "self-hosted-guide/defaults/index.html",
+    "route": "/self-hosted-guide/defaults"
+  },
+  {
+    "path": "self-hosted-guide/deployment/index.html",
+    "route": "/self-hosted-guide/deployment"
+  },
+  {
+    "path": "self-hosted-guide/embedded-server/index.html",
+    "route": "/self-hosted-guide/embedded-server"
+  },
+  {
+    "path": "self-hosted-guide/index.html",
+    "route": "/self-hosted-guide"
+  },
+  {
+    "path": "self-hosted-guide/monitoring/index.html",
+    "route": "/self-hosted-guide/monitoring"
+  },
+  {
+    "path": "self-hosted-guide/multi-cluster-replication/index.html",
+    "route": "/self-hosted-guide/multi-cluster-replication"
+  },
+  {
+    "path": "self-hosted-guide/namespaces/index.html",
+    "route": "/self-hosted-guide/namespaces"
+  },
+  {
+    "path": "self-hosted-guide/production-checklist/index.html",
+    "route": "/self-hosted-guide/production-checklist"
+  },
+  {
+    "path": "self-hosted-guide/security/index.html",
+    "route": "/self-hosted-guide/security"
+  },
+  {
+    "path": "self-hosted-guide/server-frontend-api-reference/index.html",
+    "route": "/self-hosted-guide/server-frontend-api-reference"
+  },
+  {
+    "path": "self-hosted-guide/upgrade-server/index.html",
+    "route": "/self-hosted-guide/upgrade-server"
+  },
+  {
+    "path": "self-hosted-guide/visibility/custom-search-attributes/index.html",
+    "route": "/self-hosted-guide/visibility/custom-search-attributes"
+  },
+  {
+    "path": "self-hosted-guide/visibility/dual-visibility/index.html",
+    "route": "/self-hosted-guide/visibility/dual-visibility"
+  },
+  {
+    "path": "self-hosted-guide/visibility/elasticsearch/index.html",
+    "route": "/self-hosted-guide/visibility/elasticsearch"
+  },
+  {
+    "path": "self-hosted-guide/visibility/index.html",
+    "route": "/self-hosted-guide/visibility"
+  },
+  {
+    "path": "self-hosted-guide/visibility/legacy-standard/index.html",
+    "route": "/self-hosted-guide/visibility/legacy-standard"
+  },
+  {
+    "path": "self-hosted-guide/visibility/migrate/index.html",
+    "route": "/self-hosted-guide/visibility/migrate"
+  },
+  {
+    "path": "self-hosted-guide/visibility/mysql/index.html",
+    "route": "/self-hosted-guide/visibility/mysql"
+  },
+  {
+    "path": "self-hosted-guide/visibility/postgresql/index.html",
+    "route": "/self-hosted-guide/visibility/postgresql"
+  },
+  {
+    "path": "self-hosted-guide/visibility/sqlite/index.html",
+    "route": "/self-hosted-guide/visibility/sqlite"
+  },
+  {
+    "path": "sending-messages/index.html",
+    "route": "/sending-messages"
+  },
+  {
+    "path": "serverless-workers/agentcore/index.html",
+    "route": "/serverless-workers/agentcore"
+  },
+  {
+    "path": "serverless-workers/aws-lambda/index.html",
+    "route": "/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "serverless-workers/cloud-run/index.html",
+    "route": "/serverless-workers/cloud-run"
+  },
+  {
+    "path": "serverless-workers/index.html",
+    "route": "/serverless-workers"
+  },
+  {
+    "path": "standalone-activity/index.html",
+    "route": "/standalone-activity"
+  },
+  {
+    "path": "standalone-nexus-operation/index.html",
+    "route": "/standalone-nexus-operation"
+  },
+  {
+    "path": "sticky-execution/index.html",
+    "route": "/sticky-execution"
+  },
+  {
+    "path": "tags/account/index.html",
+    "route": "/tags/account"
+  },
+  {
+    "path": "tags/actions/index.html",
+    "route": "/tags/actions"
+  },
+  {
+    "path": "tags/activities/index.html",
+    "route": "/tags/activities"
+  },
+  {
+    "path": "tags/agent-frameworks/index.html",
+    "route": "/tags/agent-frameworks"
+  },
+  {
+    "path": "tags/ai-agents/index.html",
+    "route": "/tags/ai-agents"
+  },
+  {
+    "path": "tags/ai-frameworks/index.html",
+    "route": "/tags/ai-frameworks"
+  },
+  {
+    "path": "tags/ai-sdk/index.html",
+    "route": "/tags/ai-sdk"
+  },
+  {
+    "path": "tags/amazon-bedrock-agent-core/index.html",
+    "route": "/tags/amazon-bedrock-agent-core"
+  },
+  {
+    "path": "tags/api/index.html",
+    "route": "/tags/api"
+  },
+  {
+    "path": "tags/api-keys/index.html",
+    "route": "/tags/api-keys"
+  },
+  {
+    "path": "tags/apikeys/index.html",
+    "route": "/tags/apikeys"
+  },
+  {
+    "path": "tags/architecture/index.html",
+    "route": "/tags/architecture"
+  },
+  {
+    "path": "tags/async-operations/index.html",
+    "route": "/tags/async-operations"
+  },
+  {
+    "path": "tags/authentication/index.html",
+    "route": "/tags/authentication"
+  },
+  {
+    "path": "tags/aws/index.html",
+    "route": "/tags/aws"
+  },
+  {
+    "path": "tags/aws-lambda/index.html",
+    "route": "/tags/aws-lambda"
+  },
+  {
+    "path": "tags/best-practices/index.html",
+    "route": "/tags/best-practices"
+  },
+  {
+    "path": "tags/billing/index.html",
+    "route": "/tags/billing"
+  },
+  {
+    "path": "tags/capacity-modes/index.html",
+    "route": "/tags/capacity-modes"
+  },
+  {
+    "path": "tags/certificates/index.html",
+    "route": "/tags/certificates"
+  },
+  {
+    "path": "tags/child-workflows/index.html",
+    "route": "/tags/child-workflows"
+  },
+  {
+    "path": "tags/codec-server/index.html",
+    "route": "/tags/codec-server"
+  },
+  {
+    "path": "tags/concepts/index.html",
+    "route": "/tags/concepts"
+  },
+  {
+    "path": "tags/configuration/index.html",
+    "route": "/tags/configuration"
+  },
+  {
+    "path": "tags/connectivity/index.html",
+    "route": "/tags/connectivity"
+  },
+  {
+    "path": "tags/context-propagation/index.html",
+    "route": "/tags/context-propagation"
+  },
+  {
+    "path": "tags/continue-as-new/index.html",
+    "route": "/tags/continue-as-new"
+  },
+  {
+    "path": "tags/custom-roles/index.html",
+    "route": "/tags/custom-roles"
+  },
+  {
+    "path": "tags/data-converters/index.html",
+    "route": "/tags/data-converters"
+  },
+  {
+    "path": "tags/debugging/index.html",
+    "route": "/tags/debugging"
+  },
+  {
+    "path": "tags/deep-agents/index.html",
+    "route": "/tags/deep-agents"
+  },
+  {
+    "path": "tags/deploy/index.html",
+    "route": "/tags/deploy"
+  },
+  {
+    "path": "tags/deployment/index.html",
+    "route": "/tags/deployment"
+  },
+  {
+    "path": "tags/deprecated/index.html",
+    "route": "/tags/deprecated"
+  },
+  {
+    "path": "tags/design-patterns/index.html",
+    "route": "/tags/design-patterns"
+  },
+  {
+    "path": "tags/developer-guide/index.html",
+    "route": "/tags/developer-guide"
+  },
+  {
+    "path": "tags/development-server/index.html",
+    "route": "/tags/development-server"
+  },
+  {
+    "path": "tags/disaster-recovery/index.html",
+    "route": "/tags/disaster-recovery"
+  },
+  {
+    "path": "tags/durable-execution/index.html",
+    "route": "/tags/durable-execution"
+  },
+  {
+    "path": "tags/durable-timers/index.html",
+    "route": "/tags/durable-timers"
+  },
+  {
+    "path": "tags/enable-nexus/index.html",
+    "route": "/tags/enable-nexus"
+  },
+  {
+    "path": "tags/encryption/index.html",
+    "route": "/tags/encryption"
+  },
+  {
+    "path": "tags/environment-variables/index.html",
+    "route": "/tags/environment-variables"
+  },
+  {
+    "path": "tags/error-handling/index.html",
+    "route": "/tags/error-handling"
+  },
+  {
+    "path": "tags/errors/index.html",
+    "route": "/tags/errors"
+  },
+  {
+    "path": "tags/event-history/index.html",
+    "route": "/tags/event-history"
+  },
+  {
+    "path": "tags/export-workflow-history/index.html",
+    "route": "/tags/export-workflow-history"
+  },
+  {
+    "path": "tags/failures/index.html",
+    "route": "/tags/failures"
+  },
+  {
+    "path": "tags/gcp/index.html",
+    "route": "/tags/gcp"
+  },
+  {
+    "path": "tags/gcp-cloud-run/index.html",
+    "route": "/tags/gcp-cloud-run"
+  },
+  {
+    "path": "tags/getting-started/index.html",
+    "route": "/tags/getting-started"
+  },
+  {
+    "path": "tags/go-sdk/index.html",
+    "route": "/tags/go-sdk"
+  },
+  {
+    "path": "tags/google-adk/index.html",
+    "route": "/tags/google-adk"
+  },
+  {
+    "path": "tags/google-genai/index.html",
+    "route": "/tags/google-genai"
+  },
+  {
+    "path": "tags/gpu-computing/index.html",
+    "route": "/tags/gpu-computing"
+  },
+  {
+    "path": "tags/heartbeat/index.html",
+    "route": "/tags/heartbeat"
+  },
+  {
+    "path": "tags/high-availability/index.html",
+    "route": "/tags/high-availability"
+  },
+  {
+    "path": "tags/index.html",
+    "route": "/tags"
+  },
+  {
+    "path": "tags/integrations/index.html",
+    "route": "/tags/integrations"
+  },
+  {
+    "path": "tags/interceptors/index.html",
+    "route": "/tags/interceptors"
+  },
+  {
+    "path": "tags/java-sdk/index.html",
+    "route": "/tags/java-sdk"
+  },
+  {
+    "path": "tags/job-queue/index.html",
+    "route": "/tags/job-queue"
+  },
+  {
+    "path": "tags/kubernetes/index.html",
+    "route": "/tags/kubernetes"
+  },
+  {
+    "path": "tags/langgraph/index.html",
+    "route": "/tags/langgraph"
+  },
+  {
+    "path": "tags/langsmith/index.html",
+    "route": "/tags/langsmith"
+  },
+  {
+    "path": "tags/limits/index.html",
+    "route": "/tags/limits"
+  },
+  {
+    "path": "tags/logging/index.html",
+    "route": "/tags/logging"
+  },
+  {
+    "path": "tags/login/index.html",
+    "route": "/tags/login"
+  },
+  {
+    "path": "tags/logs/index.html",
+    "route": "/tags/logs"
+  },
+  {
+    "path": "tags/messages/index.html",
+    "route": "/tags/messages"
+  },
+  {
+    "path": "tags/metrics/index.html",
+    "route": "/tags/metrics"
+  },
+  {
+    "path": "tags/migration/index.html",
+    "route": "/tags/migration"
+  },
+  {
+    "path": "tags/multi-cluster-replication/index.html",
+    "route": "/tags/multi-cluster-replication"
+  },
+  {
+    "path": "tags/multitenancy/index.html",
+    "route": "/tags/multitenancy"
+  },
+  {
+    "path": "tags/namespaces/index.html",
+    "route": "/tags/namespaces"
+  },
+  {
+    "path": "tags/net-sdk/index.html",
+    "route": "/tags/net-sdk"
+  },
+  {
+    "path": "tags/nexus/index.html",
+    "route": "/tags/nexus"
+  },
+  {
+    "path": "tags/nexus-endpoints/index.html",
+    "route": "/tags/nexus-endpoints"
+  },
+  {
+    "path": "tags/notification/index.html",
+    "route": "/tags/notification"
+  },
+  {
+    "path": "tags/observability/index.html",
+    "route": "/tags/observability"
+  },
+  {
+    "path": "tags/on-demand-capacity/index.html",
+    "route": "/tags/on-demand-capacity"
+  },
+  {
+    "path": "tags/openai-agents-sdk/index.html",
+    "route": "/tags/openai-agents-sdk"
+  },
+  {
+    "path": "tags/openmetrics/index.html",
+    "route": "/tags/openmetrics"
+  },
+  {
+    "path": "tags/parent-close-policy/index.html",
+    "route": "/tags/parent-close-policy"
+  },
+  {
+    "path": "tags/patching/index.html",
+    "route": "/tags/patching"
+  },
+  {
+    "path": "tags/performance/index.html",
+    "route": "/tags/performance"
+  },
+  {
+    "path": "tags/php-sdk/index.html",
+    "route": "/tags/php-sdk"
+  },
+  {
+    "path": "tags/pricing/index.html",
+    "route": "/tags/pricing"
+  },
+  {
+    "path": "tags/priority-and-fairness/index.html",
+    "route": "/tags/priority-and-fairness"
+  },
+  {
+    "path": "tags/production/index.html",
+    "route": "/tags/production"
+  },
+  {
+    "path": "tags/projects/index.html",
+    "route": "/tags/projects"
+  },
+  {
+    "path": "tags/provisioned-capacity/index.html",
+    "route": "/tags/provisioned-capacity"
+  },
+  {
+    "path": "tags/python-sdk/index.html",
+    "route": "/tags/python-sdk"
+  },
+  {
+    "path": "tags/queries/index.html",
+    "route": "/tags/queries"
+  },
+  {
+    "path": "tags/rate-limiting/index.html",
+    "route": "/tags/rate-limiting"
+  },
+  {
+    "path": "tags/recovery-point-objective/index.html",
+    "route": "/tags/recovery-point-objective"
+  },
+  {
+    "path": "tags/recovery-time-objective/index.html",
+    "route": "/tags/recovery-time-objective"
+  },
+  {
+    "path": "tags/reference/index.html",
+    "route": "/tags/reference"
+  },
+  {
+    "path": "tags/region/index.html",
+    "route": "/tags/region"
+  },
+  {
+    "path": "tags/replay/index.html",
+    "route": "/tags/replay"
+  },
+  {
+    "path": "tags/resource-requirements/index.html",
+    "route": "/tags/resource-requirements"
+  },
+  {
+    "path": "tags/retries/index.html",
+    "route": "/tags/retries"
+  },
+  {
+    "path": "tags/retry-policies/index.html",
+    "route": "/tags/retry-policies"
+  },
+  {
+    "path": "tags/routing/index.html",
+    "route": "/tags/routing"
+  },
+  {
+    "path": "tags/ruby-sdk/index.html",
+    "route": "/tags/ruby-sdk"
+  },
+  {
+    "path": "tags/rust-sdk/index.html",
+    "route": "/tags/rust-sdk"
+  },
+  {
+    "path": "tags/saga-pattern/index.html",
+    "route": "/tags/saga-pattern"
+  },
+  {
+    "path": "tags/schedules/index.html",
+    "route": "/tags/schedules"
+  },
+  {
+    "path": "tags/sdk/index.html",
+    "route": "/tags/sdk"
+  },
+  {
+    "path": "tags/search-attributes/index.html",
+    "route": "/tags/search-attributes"
+  },
+  {
+    "path": "tags/security/index.html",
+    "route": "/tags/security"
+  },
+  {
+    "path": "tags/self-hosting/index.html",
+    "route": "/tags/self-hosting"
+  },
+  {
+    "path": "tags/serverless/index.html",
+    "route": "/tags/serverless"
+  },
+  {
+    "path": "tags/service-accounts/index.html",
+    "route": "/tags/service-accounts"
+  },
+  {
+    "path": "tags/setup/index.html",
+    "route": "/tags/setup"
+  },
+  {
+    "path": "tags/side-effects/index.html",
+    "route": "/tags/side-effects"
+  },
+  {
+    "path": "tags/signals/index.html",
+    "route": "/tags/signals"
+  },
+  {
+    "path": "tags/spring-ai/index.html",
+    "route": "/tags/spring-ai"
+  },
+  {
+    "path": "tags/spring-boot/index.html",
+    "route": "/tags/spring-boot"
+  },
+  {
+    "path": "tags/standalone-activities/index.html",
+    "route": "/tags/standalone-activities"
+  },
+  {
+    "path": "tags/strands-agents/index.html",
+    "route": "/tags/strands-agents"
+  },
+  {
+    "path": "tags/streaming/index.html",
+    "route": "/tags/streaming"
+  },
+  {
+    "path": "tags/support/index.html",
+    "route": "/tags/support"
+  },
+  {
+    "path": "tags/task-queues/index.html",
+    "route": "/tags/task-queues"
+  },
+  {
+    "path": "tags/tasks/index.html",
+    "route": "/tags/tasks"
+  },
+  {
+    "path": "tags/tcld/index.html",
+    "route": "/tags/tcld"
+  },
+  {
+    "path": "tags/temporal/index.html",
+    "route": "/tags/temporal"
+  },
+  {
+    "path": "tags/temporal-cli/index.html",
+    "route": "/tags/temporal-cli"
+  },
+  {
+    "path": "tags/temporal-client/index.html",
+    "route": "/tags/temporal-client"
+  },
+  {
+    "path": "tags/temporal-cloud/index.html",
+    "route": "/tags/temporal-cloud"
+  },
+  {
+    "path": "tags/temporal-sdks/index.html",
+    "route": "/tags/temporal-sdks"
+  },
+  {
+    "path": "tags/temporal-service/index.html",
+    "route": "/tags/temporal-service"
+  },
+  {
+    "path": "tags/temporal-web-ui/index.html",
+    "route": "/tags/temporal-web-ui"
+  },
+  {
+    "path": "tags/terraform/index.html",
+    "route": "/tags/terraform"
+  },
+  {
+    "path": "tags/testing/index.html",
+    "route": "/tags/testing"
+  },
+  {
+    "path": "tags/timeouts/index.html",
+    "route": "/tags/timeouts"
+  },
+  {
+    "path": "tags/timers/index.html",
+    "route": "/tags/timers"
+  },
+  {
+    "path": "tags/toml/index.html",
+    "route": "/tags/toml"
+  },
+  {
+    "path": "tags/troubleshooting/index.html",
+    "route": "/tags/troubleshooting"
+  },
+  {
+    "path": "tags/trus/index.html",
+    "route": "/tags/trus"
+  },
+  {
+    "path": "tags/typescript-sdk/index.html",
+    "route": "/tags/typescript-sdk"
+  },
+  {
+    "path": "tags/ui-enrichment/index.html",
+    "route": "/tags/ui-enrichment"
+  },
+  {
+    "path": "tags/updates/index.html",
+    "route": "/tags/updates"
+  },
+  {
+    "path": "tags/user-groups/index.html",
+    "route": "/tags/user-groups"
+  },
+  {
+    "path": "tags/user-management/index.html",
+    "route": "/tags/user-management"
+  },
+  {
+    "path": "tags/users/index.html",
+    "route": "/tags/users"
+  },
+  {
+    "path": "tags/versioning/index.html",
+    "route": "/tags/versioning"
+  },
+  {
+    "path": "tags/visibility/index.html",
+    "route": "/tags/visibility"
+  },
+  {
+    "path": "tags/workers/index.html",
+    "route": "/tags/workers"
+  },
+  {
+    "path": "tags/workflows/index.html",
+    "route": "/tags/workflows"
+  },
+  {
+    "path": "task-queue/index.html",
+    "route": "/task-queue"
+  },
+  {
+    "path": "task-queue/naming/index.html",
+    "route": "/task-queue/naming"
+  },
+  {
+    "path": "task-routing/index.html",
+    "route": "/task-routing"
+  },
+  {
+    "path": "tasks/index.html",
+    "route": "/tasks"
+  },
+  {
+    "path": "tctl-v1/activity/index.html",
+    "route": "/tctl-v1/activity"
+  },
+  {
+    "path": "tctl-v1/admin/index.html",
+    "route": "/tctl-v1/admin"
+  },
+  {
+    "path": "tctl-v1/batch/index.html",
+    "route": "/tctl-v1/batch"
+  },
+  {
+    "path": "tctl-v1/cluster/index.html",
+    "route": "/tctl-v1/cluster"
+  },
+  {
+    "path": "tctl-v1/dataconverter/index.html",
+    "route": "/tctl-v1/dataconverter"
+  },
+  {
+    "path": "tctl-v1/index.html",
+    "route": "/tctl-v1"
+  },
+  {
+    "path": "tctl-v1/namespace/index.html",
+    "route": "/tctl-v1/namespace"
+  },
+  {
+    "path": "tctl-v1/schedule/index.html",
+    "route": "/tctl-v1/schedule"
+  },
+  {
+    "path": "tctl-v1/taskqueue/index.html",
+    "route": "/tctl-v1/taskqueue"
+  },
+  {
+    "path": "tctl-v1/workflow/index.html",
+    "route": "/tctl-v1/workflow"
+  },
+  {
+    "path": "temporal/index.html",
+    "route": "/temporal"
+  },
+  {
+    "path": "temporal-service/archival/index.html",
+    "route": "/temporal-service/archival"
+  },
+  {
+    "path": "temporal-service/configuration/index.html",
+    "route": "/temporal-service/configuration"
+  },
+  {
+    "path": "temporal-service/index.html",
+    "route": "/temporal-service"
+  },
+  {
+    "path": "temporal-service/multi-cluster-replication/index.html",
+    "route": "/temporal-service/multi-cluster-replication"
+  },
+  {
+    "path": "temporal-service/persistence/index.html",
+    "route": "/temporal-service/persistence"
+  },
+  {
+    "path": "temporal-service/temporal-server/index.html",
+    "route": "/temporal-service/temporal-server"
+  },
+  {
+    "path": "temporal-service/visibility/index.html",
+    "route": "/temporal-service/visibility"
+  },
+  {
+    "path": "troubleshooting/blob-size-limit-error/index.html",
+    "route": "/troubleshooting/blob-size-limit-error"
+  },
+  {
+    "path": "troubleshooting/deadline-exceeded-error/index.html",
+    "route": "/troubleshooting/deadline-exceeded-error"
+  },
+  {
+    "path": "troubleshooting/execution-failures/index.html",
+    "route": "/troubleshooting/execution-failures"
+  },
+  {
+    "path": "troubleshooting/index.html",
+    "route": "/troubleshooting"
+  },
+  {
+    "path": "troubleshooting/last-connection-error/index.html",
+    "route": "/troubleshooting/last-connection-error"
+  },
+  {
+    "path": "troubleshooting/performance-bottlenecks/index.html",
+    "route": "/troubleshooting/performance-bottlenecks"
+  },
+  {
+    "path": "troubleshooting/request-failures/index.html",
+    "route": "/troubleshooting/request-failures"
+  },
+  {
+    "path": "troubleshooting/schedule-missed-actions/index.html",
+    "route": "/troubleshooting/schedule-missed-actions"
+  },
+  {
+    "path": "troubleshooting/serverless-workers/aws-lambda/index.html",
+    "route": "/troubleshooting/serverless-workers/aws-lambda"
+  },
+  {
+    "path": "troubleshooting/serverless-workers/cloud-run/index.html",
+    "route": "/troubleshooting/serverless-workers/cloud-run"
+  },
+  {
+    "path": "troubleshooting/serverless-workers/index.html",
+    "route": "/troubleshooting/serverless-workers"
+  },
+  {
+    "path": "troubleshooting/worker-capacity/index.html",
+    "route": "/troubleshooting/worker-capacity"
+  },
+  {
+    "path": "visibility/index.html",
+    "route": "/visibility"
+  },
+  {
+    "path": "web-ui/index.html",
+    "route": "/web-ui"
+  },
+  {
+    "path": "with-ai/index.html",
+    "route": "/with-ai"
+  },
+  {
+    "path": "worker-versioning/index.html",
+    "route": "/worker-versioning"
+  },
+  {
+    "path": "workers/index.html",
+    "route": "/workers"
+  },
+  {
+    "path": "workflow-activity/index.html",
+    "route": "/workflow-activity"
+  },
+  {
+    "path": "workflow-definition/index.html",
+    "route": "/workflow-definition"
+  },
+  {
+    "path": "workflow-execution/continue-as-new/index.html",
+    "route": "/workflow-execution/continue-as-new"
+  },
+  {
+    "path": "workflow-execution/event/index.html",
+    "route": "/workflow-execution/event"
+  },
+  {
+    "path": "workflow-execution/index.html",
+    "route": "/workflow-execution"
+  },
+  {
+    "path": "workflow-execution/limits/index.html",
+    "route": "/workflow-execution/limits"
+  },
+  {
+    "path": "workflow-execution/timers-delays/index.html",
+    "route": "/workflow-execution/timers-delays"
+  },
+  {
+    "path": "workflow-execution/workflowid-runid/index.html",
+    "route": "/workflow-execution/workflowid-runid"
+  },
+  {
+    "path": "workflow-streams/index.html",
+    "route": "/workflow-streams"
+  },
+  {
+    "path": "workflows/index.html",
+    "route": "/workflows"
+  }
+]

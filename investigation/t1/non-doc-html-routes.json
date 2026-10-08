@@ -1,0 +1,678 @@
+[
+  {
+    "file": "404.html",
+    "route": "/404"
+  },
+  {
+    "file": "ai/cookbook/tags/agents/index.html",
+    "route": "/ai/cookbook/tags/agents"
+  },
+  {
+    "file": "ai/cookbook/tags/anthropic/index.html",
+    "route": "/ai/cookbook/tags/anthropic"
+  },
+  {
+    "file": "ai/cookbook/tags/bedrock/index.html",
+    "route": "/ai/cookbook/tags/bedrock"
+  },
+  {
+    "file": "ai/cookbook/tags/claim-check/index.html",
+    "route": "/ai/cookbook/tags/claim-check"
+  },
+  {
+    "file": "ai/cookbook/tags/claude/index.html",
+    "route": "/ai/cookbook/tags/claude"
+  },
+  {
+    "file": "ai/cookbook/tags/foundations/index.html",
+    "route": "/ai/cookbook/tags/foundations"
+  },
+  {
+    "file": "ai/cookbook/tags/gemini/index.html",
+    "route": "/ai/cookbook/tags/gemini"
+  },
+  {
+    "file": "ai/cookbook/tags/google-adk/index.html",
+    "route": "/ai/cookbook/tags/google-adk"
+  },
+  {
+    "file": "ai/cookbook/tags/index.html",
+    "route": "/ai/cookbook/tags"
+  },
+  {
+    "file": "ai/cookbook/tags/litellm/index.html",
+    "route": "/ai/cookbook/tags/litellm"
+  },
+  {
+    "file": "ai/cookbook/tags/mcp/index.html",
+    "route": "/ai/cookbook/tags/mcp"
+  },
+  {
+    "file": "ai/cookbook/tags/openai/index.html",
+    "route": "/ai/cookbook/tags/openai"
+  },
+  {
+    "file": "ai/cookbook/tags/python/index.html",
+    "route": "/ai/cookbook/tags/python"
+  },
+  {
+    "file": "ai/cookbook/tags/s-3/index.html",
+    "route": "/ai/cookbook/tags/s-3"
+  },
+  {
+    "file": "ai/cookbook/tags/typescript/index.html",
+    "route": "/ai/cookbook/tags/typescript"
+  },
+  {
+    "file": "ai/cookbook/tags/workflows/index.html",
+    "route": "/ai/cookbook/tags/workflows"
+  },
+  {
+    "file": "blog/index.html",
+    "route": "/blog"
+  },
+  {
+    "file": "search/index.html",
+    "route": "/search"
+  },
+  {
+    "file": "tags/account/index.html",
+    "route": "/tags/account"
+  },
+  {
+    "file": "tags/actions/index.html",
+    "route": "/tags/actions"
+  },
+  {
+    "file": "tags/activities/index.html",
+    "route": "/tags/activities"
+  },
+  {
+    "file": "tags/agent-frameworks/index.html",
+    "route": "/tags/agent-frameworks"
+  },
+  {
+    "file": "tags/ai-agents/index.html",
+    "route": "/tags/ai-agents"
+  },
+  {
+    "file": "tags/ai-frameworks/index.html",
+    "route": "/tags/ai-frameworks"
+  },
+  {
+    "file": "tags/ai-sdk/index.html",
+    "route": "/tags/ai-sdk"
+  },
+  {
+    "file": "tags/amazon-bedrock-agent-core/index.html",
+    "route": "/tags/amazon-bedrock-agent-core"
+  },
+  {
+    "file": "tags/api/index.html",
+    "route": "/tags/api"
+  },
+  {
+    "file": "tags/api-keys/index.html",
+    "route": "/tags/api-keys"
+  },
+  {
+    "file": "tags/apikeys/index.html",
+    "route": "/tags/apikeys"
+  },
+  {
+    "file": "tags/architecture/index.html",
+    "route": "/tags/architecture"
+  },
+  {
+    "file": "tags/async-operations/index.html",
+    "route": "/tags/async-operations"
+  },
+  {
+    "file": "tags/authentication/index.html",
+    "route": "/tags/authentication"
+  },
+  {
+    "file": "tags/aws/index.html",
+    "route": "/tags/aws"
+  },
+  {
+    "file": "tags/aws-lambda/index.html",
+    "route": "/tags/aws-lambda"
+  },
+  {
+    "file": "tags/best-practices/index.html",
+    "route": "/tags/best-practices"
+  },
+  {
+    "file": "tags/billing/index.html",
+    "route": "/tags/billing"
+  },
+  {
+    "file": "tags/capacity-modes/index.html",
+    "route": "/tags/capacity-modes"
+  },
+  {
+    "file": "tags/certificates/index.html",
+    "route": "/tags/certificates"
+  },
+  {
+    "file": "tags/child-workflows/index.html",
+    "route": "/tags/child-workflows"
+  },
+  {
+    "file": "tags/codec-server/index.html",
+    "route": "/tags/codec-server"
+  },
+  {
+    "file": "tags/concepts/index.html",
+    "route": "/tags/concepts"
+  },
+  {
+    "file": "tags/configuration/index.html",
+    "route": "/tags/configuration"
+  },
+  {
+    "file": "tags/connectivity/index.html",
+    "route": "/tags/connectivity"
+  },
+  {
+    "file": "tags/context-propagation/index.html",
+    "route": "/tags/context-propagation"
+  },
+  {
+    "file": "tags/continue-as-new/index.html",
+    "route": "/tags/continue-as-new"
+  },
+  {
+    "file": "tags/custom-roles/index.html",
+    "route": "/tags/custom-roles"
+  },
+  {
+    "file": "tags/data-converters/index.html",
+    "route": "/tags/data-converters"
+  },
+  {
+    "file": "tags/debugging/index.html",
+    "route": "/tags/debugging"
+  },
+  {
+    "file": "tags/deep-agents/index.html",
+    "route": "/tags/deep-agents"
+  },
+  {
+    "file": "tags/deploy/index.html",
+    "route": "/tags/deploy"
+  },
+  {
+    "file": "tags/deployment/index.html",
+    "route": "/tags/deployment"
+  },
+  {
+    "file": "tags/deprecated/index.html",
+    "route": "/tags/deprecated"
+  },
+  {
+    "file": "tags/design-patterns/index.html",
+    "route": "/tags/design-patterns"
+  },
+  {
+    "file": "tags/developer-guide/index.html",
+    "route": "/tags/developer-guide"
+  },
+  {
+    "file": "tags/development-server/index.html",
+    "route": "/tags/development-server"
+  },
+  {
+    "file": "tags/disaster-recovery/index.html",
+    "route": "/tags/disaster-recovery"
+  },
+  {
+    "file": "tags/durable-execution/index.html",
+    "route": "/tags/durable-execution"
+  },
+  {
+    "file": "tags/durable-timers/index.html",
+    "route": "/tags/durable-timers"
+  },
+  {
+    "file": "tags/enable-nexus/index.html",
+    "route": "/tags/enable-nexus"
+  },
+  {
+    "file": "tags/encryption/index.html",
+    "route": "/tags/encryption"
+  },
+  {
+    "file": "tags/environment-variables/index.html",
+    "route": "/tags/environment-variables"
+  },
+  {
+    "file": "tags/error-handling/index.html",
+    "route": "/tags/error-handling"
+  },
+  {
+    "file": "tags/errors/index.html",
+    "route": "/tags/errors"
+  },
+  {
+    "file": "tags/event-history/index.html",
+    "route": "/tags/event-history"
+  },
+  {
+    "file": "tags/export-workflow-history/index.html",
+    "route": "/tags/export-workflow-history"
+  },
+  {
+    "file": "tags/failures/index.html",
+    "route": "/tags/failures"
+  },
+  {
+    "file": "tags/gcp/index.html",
+    "route": "/tags/gcp"
+  },
+  {
+    "file": "tags/gcp-cloud-run/index.html",
+    "route": "/tags/gcp-cloud-run"
+  },
+  {
+    "file": "tags/getting-started/index.html",
+    "route": "/tags/getting-started"
+  },
+  {
+    "file": "tags/go-sdk/index.html",
+    "route": "/tags/go-sdk"
+  },
+  {
+    "file": "tags/google-adk/index.html",
+    "route": "/tags/google-adk"
+  },
+  {
+    "file": "tags/google-genai/index.html",
+    "route": "/tags/google-genai"
+  },
+  {
+    "file": "tags/gpu-computing/index.html",
+    "route": "/tags/gpu-computing"
+  },
+  {
+    "file": "tags/heartbeat/index.html",
+    "route": "/tags/heartbeat"
+  },
+  {
+    "file": "tags/high-availability/index.html",
+    "route": "/tags/high-availability"
+  },
+  {
+    "file": "tags/index.html",
+    "route": "/tags"
+  },
+  {
+    "file": "tags/integrations/index.html",
+    "route": "/tags/integrations"
+  },
+  {
+    "file": "tags/interceptors/index.html",
+    "route": "/tags/interceptors"
+  },
+  {
+    "file": "tags/java-sdk/index.html",
+    "route": "/tags/java-sdk"
+  },
+  {
+    "file": "tags/job-queue/index.html",
+    "route": "/tags/job-queue"
+  },
+  {
+    "file": "tags/kubernetes/index.html",
+    "route": "/tags/kubernetes"
+  },
+  {
+    "file": "tags/langgraph/index.html",
+    "route": "/tags/langgraph"
+  },
+  {
+    "file": "tags/langsmith/index.html",
+    "route": "/tags/langsmith"
+  },
+  {
+    "file": "tags/limits/index.html",
+    "route": "/tags/limits"
+  },
+  {
+    "file": "tags/logging/index.html",
+    "route": "/tags/logging"
+  },
+  {
+    "file": "tags/login/index.html",
+    "route": "/tags/login"
+  },
+  {
+    "file": "tags/logs/index.html",
+    "route": "/tags/logs"
+  },
+  {
+    "file": "tags/messages/index.html",
+    "route": "/tags/messages"
+  },
+  {
+    "file": "tags/metrics/index.html",
+    "route": "/tags/metrics"
+  },
+  {
+    "file": "tags/migration/index.html",
+    "route": "/tags/migration"
+  },
+  {
+    "file": "tags/multi-cluster-replication/index.html",
+    "route": "/tags/multi-cluster-replication"
+  },
+  {
+    "file": "tags/multitenancy/index.html",
+    "route": "/tags/multitenancy"
+  },
+  {
+    "file": "tags/namespaces/index.html",
+    "route": "/tags/namespaces"
+  },
+  {
+    "file": "tags/net-sdk/index.html",
+    "route": "/tags/net-sdk"
+  },
+  {
+    "file": "tags/nexus/index.html",
+    "route": "/tags/nexus"
+  },
+  {
+    "file": "tags/nexus-endpoints/index.html",
+    "route": "/tags/nexus-endpoints"
+  },
+  {
+    "file": "tags/notification/index.html",
+    "route": "/tags/notification"
+  },
+  {
+    "file": "tags/observability/index.html",
+    "route": "/tags/observability"
+  },
+  {
+    "file": "tags/on-demand-capacity/index.html",
+    "route": "/tags/on-demand-capacity"
+  },
+  {
+    "file": "tags/openai-agents-sdk/index.html",
+    "route": "/tags/openai-agents-sdk"
+  },
+  {
+    "file": "tags/openmetrics/index.html",
+    "route": "/tags/openmetrics"
+  },
+  {
+    "file": "tags/parent-close-policy/index.html",
+    "route": "/tags/parent-close-policy"
+  },
+  {
+    "file": "tags/patching/index.html",
+    "route": "/tags/patching"
+  },
+  {
+    "file": "tags/performance/index.html",
+    "route": "/tags/performance"
+  },
+  {
+    "file": "tags/php-sdk/index.html",
+    "route": "/tags/php-sdk"
+  },
+  {
+    "file": "tags/pricing/index.html",
+    "route": "/tags/pricing"
+  },
+  {
+    "file": "tags/priority-and-fairness/index.html",
+    "route": "/tags/priority-and-fairness"
+  },
+  {
+    "file": "tags/production/index.html",
+    "route": "/tags/production"
+  },
+  {
+    "file": "tags/projects/index.html",
+    "route": "/tags/projects"
+  },
+  {
+    "file": "tags/provisioned-capacity/index.html",
+    "route": "/tags/provisioned-capacity"
+  },
+  {
+    "file": "tags/python-sdk/index.html",
+    "route": "/tags/python-sdk"
+  },
+  {
+    "file": "tags/queries/index.html",
+    "route": "/tags/queries"
+  },
+  {
+    "file": "tags/rate-limiting/index.html",
+    "route": "/tags/rate-limiting"
+  },
+  {
+    "file": "tags/recovery-point-objective/index.html",
+    "route": "/tags/recovery-point-objective"
+  },
+  {
+    "file": "tags/recovery-time-objective/index.html",
+    "route": "/tags/recovery-time-objective"
+  },
+  {
+    "file": "tags/reference/index.html",
+    "route": "/tags/reference"
+  },
+  {
+    "file": "tags/region/index.html",
+    "route": "/tags/region"
+  },
+  {
+    "file": "tags/replay/index.html",
+    "route": "/tags/replay"
+  },
+  {
+    "file": "tags/resource-requirements/index.html",
+    "route": "/tags/resource-requirements"
+  },
+  {
+    "file": "tags/retries/index.html",
+    "route": "/tags/retries"
+  },
+  {
+    "file": "tags/retry-policies/index.html",
+    "route": "/tags/retry-policies"
+  },
+  {
+    "file": "tags/routing/index.html",
+    "route": "/tags/routing"
+  },
+  {
+    "file": "tags/ruby-sdk/index.html",
+    "route": "/tags/ruby-sdk"
+  },
+  {
+    "file": "tags/rust-sdk/index.html",
+    "route": "/tags/rust-sdk"
+  },
+  {
+    "file": "tags/saga-pattern/index.html",
+    "route": "/tags/saga-pattern"
+  },
+  {
+    "file": "tags/schedules/index.html",
+    "route": "/tags/schedules"
+  },
+  {
+    "file": "tags/sdk/index.html",
+    "route": "/tags/sdk"
+  },
+  {
+    "file": "tags/search-attributes/index.html",
+    "route": "/tags/search-attributes"
+  },
+  {
+    "file": "tags/security/index.html",
+    "route": "/tags/security"
+  },
+  {
+    "file": "tags/self-hosting/index.html",
+    "route": "/tags/self-hosting"
+  },
+  {
+    "file": "tags/serverless/index.html",
+    "route": "/tags/serverless"
+  },
+  {
+    "file": "tags/service-accounts/index.html",
+    "route": "/tags/service-accounts"
+  },
+  {
+    "file": "tags/setup/index.html",
+    "route": "/tags/setup"
+  },
+  {
+    "file": "tags/side-effects/index.html",
+    "route": "/tags/side-effects"
+  },
+  {
+    "file": "tags/signals/index.html",
+    "route": "/tags/signals"
+  },
+  {
+    "file": "tags/spring-ai/index.html",
+    "route": "/tags/spring-ai"
+  },
+  {
+    "file": "tags/spring-boot/index.html",
+    "route": "/tags/spring-boot"
+  },
+  {
+    "file": "tags/standalone-activities/index.html",
+    "route": "/tags/standalone-activities"
+  },
+  {
+    "file": "tags/strands-agents/index.html",
+    "route": "/tags/strands-agents"
+  },
+  {
+    "file": "tags/streaming/index.html",
+    "route": "/tags/streaming"
+  },
+  {
+    "file": "tags/support/index.html",
+    "route": "/tags/support"
+  },
+  {
+    "file": "tags/task-queues/index.html",
+    "route": "/tags/task-queues"
+  },
+  {
+    "file": "tags/tasks/index.html",
+    "route": "/tags/tasks"
+  },
+  {
+    "file": "tags/tcld/index.html",
+    "route": "/tags/tcld"
+  },
+  {
+    "file": "tags/temporal/index.html",
+    "route": "/tags/temporal"
+  },
+  {
+    "file": "tags/temporal-cli/index.html",
+    "route": "/tags/temporal-cli"
+  },
+  {
+    "file": "tags/temporal-client/index.html",
+    "route": "/tags/temporal-client"
+  },
+  {
+    "file": "tags/temporal-cloud/index.html",
+    "route": "/tags/temporal-cloud"
+  },
+  {
+    "file": "tags/temporal-sdks/index.html",
+    "route": "/tags/temporal-sdks"
+  },
+  {
+    "file": "tags/temporal-service/index.html",
+    "route": "/tags/temporal-service"
+  },
+  {
+    "file": "tags/temporal-web-ui/index.html",
+    "route": "/tags/temporal-web-ui"
+  },
+  {
+    "file": "tags/terraform/index.html",
+    "route": "/tags/terraform"
+  },
+  {
+    "file": "tags/testing/index.html",
+    "route": "/tags/testing"
+  },
+  {
+    "file": "tags/timeouts/index.html",
+    "route": "/tags/timeouts"
+  },
+  {
+    "file": "tags/timers/index.html",
+    "route": "/tags/timers"
+  },
+  {
+    "file": "tags/toml/index.html",
+    "route": "/tags/toml"
+  },
+  {
+    "file": "tags/troubleshooting/index.html",
+    "route": "/tags/troubleshooting"
+  },
+  {
+    "file": "tags/trus/index.html",
+    "route": "/tags/trus"
+  },
+  {
+    "file": "tags/typescript-sdk/index.html",
+    "route": "/tags/typescript-sdk"
+  },
+  {
+    "file": "tags/ui-enrichment/index.html",
+    "route": "/tags/ui-enrichment"
+  },
+  {
+    "file": "tags/updates/index.html",
+    "route": "/tags/updates"
+  },
+  {
+    "file": "tags/user-groups/index.html",
+    "route": "/tags/user-groups"
+  },
+  {
+    "file": "tags/user-management/index.html",
+    "route": "/tags/user-management"
+  },
+  {
+    "file": "tags/users/index.html",
+    "route": "/tags/users"
+  },
+  {
+    "file": "tags/versioning/index.html",
+    "route": "/tags/versioning"
+  },
+  {
+    "file": "tags/visibility/index.html",
+    "route": "/tags/visibility"
+  },
+  {
+    "file": "tags/workers/index.html",
+    "route": "/tags/workers"
+  },
+  {
+    "file": "tags/workflows/index.html",
+    "route": "/tags/workflows"
+  }
+]

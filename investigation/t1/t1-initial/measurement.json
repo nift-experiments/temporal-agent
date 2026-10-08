@@ -1,0 +1,18 @@
+{
+  "command": [
+    "yarn",
+    "build"
+  ],
+  "cwd": "build-work",
+  "timestamp_utc": "2026-10-08T12:37:28.554441+00:00",
+  "exit_code": 1,
+  "wall_seconds": 97.01011437107809,
+  "max_child_process_rss_mib": 359.359375,
+  "rss_scope": "maximum individual descendant process, not aggregate simultaneous tree RSS",
+  "cookbook_placeholder": false,
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "lockfile_sha256": "1aa614887e64a228f0cf54cf5ce37117082c00225a95502b09e78b0c77400863",
+  "classification": "Setup attempt interrupted: filtered Git eager VCS unexpectedly fetched historical blobs. No publication or benchmark acceptance; rerun with complete unfiltered local history."
+}

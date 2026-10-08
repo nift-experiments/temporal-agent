@@ -1,0 +1,24 @@
+{
+  "publication": "reference/t1-complete-history",
+  "files": 3984,
+  "bytes": 265647260,
+  "category_counts": {
+    "ancillary": 111,
+    "html": 962,
+    "markdown": 806,
+    "llm": 24,
+    "asset": 1289,
+    "og": 792
+  },
+  "category_bytes": {
+    "ancillary": 10629174,
+    "html": 78469441,
+    "markdown": 8081962,
+    "llm": 7952300,
+    "asset": 116884287,
+    "og": 43630096
+  },
+  "html_routes": 962,
+  "sha256_manifest": "5035223fbf37bb45ac5076f2e3b1a1a19c2492f85cf64bf42548c1de6df8884b",
+  "note": "HTML routes include generated tags, search and 404; authored primary routes must be reconciled separately. Deployment redirect rules are not counted as HTML."
+}

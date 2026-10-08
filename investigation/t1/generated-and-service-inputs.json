@@ -1,0 +1,230 @@
+{
+  "families": {
+    "generated_cli": [
+      {
+        "path": "docs/cli/command-reference/activity.mdx",
+        "bytes": 36127,
+        "sha256": "7df526b1ca58d260493631901577924eb9eb010fcabfca45c117d034315e36d5"
+      },
+      {
+        "path": "docs/cli/command-reference/batch.mdx",
+        "bytes": 5324,
+        "sha256": "05281c3ca0647c411b8c144c2fe6f13208d0444c58074cc2d91c80ff06015958"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/account.mdx",
+        "bytes": 20592,
+        "sha256": "534d0603a686995d328f0c048780e674ac73db2b9c9c0f1770703d20dfd8e104"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/apikey.mdx",
+        "bytes": 16588,
+        "sha256": "cb6319f8b31f8df2d9ff1a8493b226c6fd16db3554b5f5584ea184daf9ecc4d0"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/async-operation.mdx",
+        "bytes": 3590,
+        "sha256": "d595b7bad6af64355427323622cd53fa70f552d45f1a76ca59b58c93cff4e271"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/connectivity.mdx",
+        "bytes": 9207,
+        "sha256": "4f8bd9d36ee3a8c2b9ac429436d54e3eac87641165ae6b7f7e49504a73bad258"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/custom-role.mdx",
+        "bytes": 12682,
+        "sha256": "056b3aee7acbeba8783e3a41702e6c5b37627efdc3ecb2ec1e13cbe40439b432"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/index.mdx",
+        "bytes": 1210,
+        "sha256": "24b5b20cf2ca15e35348e28d4096cef0b67cadd4e937a061e62a263444c7946e"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/login.mdx",
+        "bytes": 2430,
+        "sha256": "3f14da60910f050ab856ef952e19c2eebde7b397ffc99f4e60782a0b9e75cc43"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/logout.mdx",
+        "bytes": 1844,
+        "sha256": "882c1569ea6163481d0876358aca0a1783fc4b006286b942a9ea53f73b6837f9"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/namespace.mdx",
+        "bytes": 111068,
+        "sha256": "ed285b787c7666c74d33b38c7e5c4cbe83a305de2ac6b9cefcfcb056732e55e3"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/nexus.mdx",
+        "bytes": 16123,
+        "sha256": "e69061a1e06e73536df5cb07c112810350d6bce412644e463a87dffdfd3fd1df"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/project.mdx",
+        "bytes": 15668,
+        "sha256": "b2cc9b97dadf0b287f2fb46451b32161d4c7c22692dbfcf6136e5efaf9ddb719"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/region.mdx",
+        "bytes": 3035,
+        "sha256": "0a5154158d8142c041efcfd1dd2d81ba3a938c86ccf8e36b11468592396beeea"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/service-account.mdx",
+        "bytes": 23859,
+        "sha256": "9fe33d3363ba6af5db4e96ebcf198b52fb35d2e4088292dd7aab21b8ff04d7ad"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/user-group.mdx",
+        "bytes": 34670,
+        "sha256": "d028117fdac6bca8fbfb476c98211c5c0b3c9680213e3702837c4deaf99e1384"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/user.mdx",
+        "bytes": 23326,
+        "sha256": "015678a3841ab3cf60431097df0e5f47aafb8699efa69a89a523b931d5404c6d"
+      },
+      {
+        "path": "docs/cli/command-reference/cloud/whoami.mdx",
+        "bytes": 2136,
+        "sha256": "46c1a08e10e0ba3aeccbd92657f3ddb58a832cef5d4136362b86ac650297e992"
+      },
+      {
+        "path": "docs/cli/command-reference/config.mdx",
+        "bytes": 5651,
+        "sha256": "8db56405f06a02af8976b7916cce26a270b9e056b7fb28afe3f12dc8665091f4"
+      },
+      {
+        "path": "docs/cli/command-reference/env.mdx",
+        "bytes": 6131,
+        "sha256": "a59cf2f73d8780c28fae99d868c30e199e66f1ad5a37642550a82814d7460384"
+      },
+      {
+        "path": "docs/cli/command-reference/index.mdx",
+        "bytes": 885,
+        "sha256": "d6a8b5113575b383abeb7a48797a0db82231bbffaf937fd98dc48ec7d6db5091"
+      },
+      {
+        "path": "docs/cli/command-reference/nexus.mdx",
+        "bytes": 12995,
+        "sha256": "9f67a6b2e7ab2e057585d8151768100a5c4ad0cf5a53f53e238b2308b5b2db9a"
+      },
+      {
+        "path": "docs/cli/command-reference/operator.mdx",
+        "bytes": 19560,
+        "sha256": "f610fbbc7b8253f020175703294161b66e75f9f757ac2ecccc099f6e735e763f"
+      },
+      {
+        "path": "docs/cli/command-reference/schedule.mdx",
+        "bytes": 21037,
+        "sha256": "af8ba6612895437d0fb91a0756fad4ec3115d48ace31b4860f8b6bdf24a82e4c"
+      },
+      {
+        "path": "docs/cli/command-reference/server.mdx",
+        "bytes": 7114,
+        "sha256": "5d48f835b1a2e7696e266616b1cc00e59cdf16fcac505dc76add8d2163ae64e8"
+      },
+      {
+        "path": "docs/cli/command-reference/task-queue.mdx",
+        "bytes": 31332,
+        "sha256": "c610f1ec51495a9db9511fdb2bc925efc93f9a478c72edbfc2db7db2c7715073"
+      },
+      {
+        "path": "docs/cli/command-reference/worker.mdx",
+        "bytes": 37911,
+        "sha256": "bc4c1ee0d24abebc98e6ee7e1c617adf18ff15e826adcac2ce36ceea0197d1ed"
+      },
+      {
+        "path": "docs/cli/command-reference/workflow.mdx",
+        "bytes": 57868,
+        "sha256": "40c2dddc33f6aa39f5647555870f910603f42d5c6e98b9deaeee8e07443b15f9"
+      }
+    ],
+    "generated_permissions": [
+      {
+        "path": "docs/cloud/manage-access/_custom_role_permissions_table.mdx",
+        "bytes": 11573,
+        "sha256": "b2d2552da322decdcff72cfc4441b0c64b5c090497e443dbcccca92d01316e19"
+      }
+    ],
+    "generated_sdk_versions": [
+      {
+        "path": "src/data/sdk-versions.json",
+        "bytes": 245,
+        "sha256": "8fd3b8b72add5b71b9cc9c28827ab5fc8133daa88b4724afed677ba9d8533164"
+      }
+    ],
+    "structured_static_json": [
+      {
+        "path": "static/json/privatelink_aws.json",
+        "bytes": 1806,
+        "sha256": "77591ad182fb914b8bddc51c1d6ac4c8b8cbb67931c2426d44c387de40365f7f"
+      },
+      {
+        "path": "static/json/privatelink_gcp.json",
+        "bytes": 652,
+        "sha256": "8de769fbc07420aa8c4a44162d583dccb42f69156e7a759f602df77f9e01b9a0"
+      },
+      {
+        "path": "static/json/privatelink_services_aws.json",
+        "bytes": 1286,
+        "sha256": "f33e1d1d54a6ea8cec4ed0720c0edbae3dc1eb16360b78c7c9518240149f31fe"
+      },
+      {
+        "path": "static/json/stable-ip-ranges-prod.json",
+        "bytes": 4781,
+        "sha256": "e7f75bc07c10c3a2a67a5a1fc606c7533aa0890a3e08440c368f5000ea2bbafb"
+      },
+      {
+        "path": "static/json/stable-ip-ranges-test.json",
+        "bytes": 1201,
+        "sha256": "084e91dfd75e4aa20cf4cfb7a47274736b20c128204bfbcb9cc5020e0b1b3c60"
+      }
+    ],
+    "browser_fixtures": [
+      {
+        "path": "tests/playwright/cookbook-home.spec.ts",
+        "bytes": 3246,
+        "sha256": "c7295236154f0450c6cf174576aabbc4fc918c7e1a2e3dc38d1d45c0fee1b2bf"
+      },
+      {
+        "path": "tests/playwright/exclude.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": "tests/playwright/fixtures.ts",
+        "bytes": 1198,
+        "sha256": "3730e32057063a6db2dba052a6ea8addaaa6296db8279fe218b52235f8743184"
+      },
+      {
+        "path": "tests/playwright/screenshot.doc.spec.ts",
+        "bytes": 1815,
+        "sha256": "fe62b3ef668890467b6e1f972740d1432edf0d39592decaffa051b8b1724d2b2"
+      },
+      {
+        "path": "tests/playwright/utils.ts",
+        "bytes": 1324,
+        "sha256": "ee01bdafdb777ec96e21195df426ec278814f12ed7943258bc9a79969a443fd4"
+      }
+    ],
+    "remote_ui_constants": [
+      {
+        "path": "src/constants/algolia.js",
+        "bytes": 377,
+        "sha256": "ef6d339a6e07e2ecdd9bf680c23aaca0f9b4da7f3598bf6e42a358b0edeeb8d8"
+      }
+    ],
+    "snipsync_config": [
+      {
+        "path": "snipsync.config.yaml",
+        "bytes": 1462,
+        "sha256": "00ae61622da1476fca4469fc8d010f9d264d6cb102c8cd43f9dd7312fb7cb16f"
+      }
+    ]
+  },
+  "private_generation_boundary": "Custom permissions update workflow reads a private repo, but the required generated table is committed at the pinned docs revision. This campaign preserves the public committed table; no private access or refresh is required.",
+  "search_records": "Live Algolia records/crawler configuration not versioned in repository; no live extraction/upload. Deterministic fixture records are tested locally and must not be described as live backend parity."
+}
