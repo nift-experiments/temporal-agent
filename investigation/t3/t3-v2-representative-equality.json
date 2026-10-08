@@ -1,0 +1,37 @@
+[
+  {
+    "project": "temporal",
+    "case": "body",
+    "incremental_equals_clean_public_forced": true,
+    "files": 1230,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "case": "include",
+    "incremental_equals_clean_public_forced": true,
+    "files": 1230,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "case": "route-shell",
+    "incremental_equals_clean_public_forced": true,
+    "files": 1230,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "case": "body",
+    "incremental_equals_clean_public_forced": true,
+    "files": 1230,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "case": "route-shell",
+    "incremental_equals_clean_public_forced": true,
+    "files": 1230,
+    "differences": []
+  }
+]

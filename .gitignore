@@ -1,1 +1,9 @@
 .nift/.lock
+
+node_modules/
+.cache/
+public/
+
+.nift/public/
+
+node_modules

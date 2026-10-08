@@ -1,0 +1,1123 @@
+{
+  "scope": "Representative interactions; local fixture transports and clipboard, no remote/backend verification",
+  "base": "http://127.0.0.1:4393",
+  "cases": [
+    {
+      "name": "desktop theme switch",
+      "theme": "dark",
+      "choice": "system"
+    },
+    {
+      "name": "desktop tabs click",
+      "tabs": [
+        {
+          "label": "macOS",
+          "selected": "false"
+        },
+        {
+          "label": "Linux",
+          "selected": "true"
+        },
+        {
+          "label": "Windows",
+          "selected": "false"
+        },
+        {
+          "label": "Docker",
+          "selected": "false"
+        }
+      ]
+    },
+    {
+      "name": "desktop tabs keyboard",
+      "focused": "Windows",
+      "selected": [
+        "Linux"
+      ]
+    },
+    {
+      "name": "desktop Markdown copy",
+      "bytes": 8099,
+      "matchesPublication": true
+    },
+    {
+      "name": "desktop code copy",
+      "copied": "brew install temporal"
+    },
+    {
+      "name": "desktop annotated code",
+      "active": "true"
+    },
+    {
+      "name": "desktop SDK tabs",
+      "selected": [
+        "Local + Prod with Cloud API key",
+        "Python",
+        "Python"
+      ]
+    },
+    {
+      "name": "desktop accordion open",
+      "open": true,
+      "text": "Earlier measurements\n\nJanuary 2026\n\nOperation\tp50\tp90\tp99\nStartWorkflowExecution\t14ms\t21ms\t69ms\nSignalWorkflowExecution\t11ms\t19ms\t46ms\nSignalWithStartWorkflowExecution\t19ms\t37ms\t95ms\n\nMarch 2024\n\nOperation\tp90\tp99\nStartWorkflowExecution\t24ms\t54ms\nSignalWorkflowExecution\t14ms\t40ms\nSignalWithStartWorkflowExecution\t24ms\t61ms"
+    },
+    {
+      "name": "desktop accordion closed",
+      "open": false
+    },
+    {
+      "name": "desktop retry island",
+      "numberInputsBefore": 9,
+      "numberInputsAfter": 10,
+      "canvas": 1
+    },
+    {
+      "name": "desktop diagram zoom",
+      "svgCount": 1,
+      "dialogs": 1
+    },
+    {
+      "name": "desktop search local hit",
+      "text": "Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"
+    },
+    {
+      "name": "desktop search navigate",
+      "url": "http://127.0.0.1:4393/develop/python/workflows"
+    },
+    {
+      "name": "desktop assistant delegation",
+      "calls": [
+        null
+      ],
+      "backend": "not exercised"
+    },
+    {
+      "name": "desktop feedback open",
+      "text": "Feedback\nPowered by PushFeedback\nWas this page helpful?\nAdd a screenshot\nSend",
+      "widgets": 1,
+      "backend": "not exercised; form not submitted"
+    },
+    {
+      "name": "mobile theme switch",
+      "theme": "dark",
+      "choice": "system"
+    },
+    {
+      "name": "mobile navigation open",
+      "visible": true
+    },
+    {
+      "name": "mobile tabs click",
+      "tabs": [
+        {
+          "label": "macOS",
+          "selected": "false"
+        },
+        {
+          "label": "Linux",
+          "selected": "true"
+        },
+        {
+          "label": "Windows",
+          "selected": "false"
+        },
+        {
+          "label": "Docker",
+          "selected": "false"
+        }
+      ]
+    },
+    {
+      "name": "mobile tabs keyboard",
+      "focused": "Windows",
+      "selected": [
+        "Linux"
+      ]
+    },
+    {
+      "name": "mobile Markdown copy",
+      "bytes": 8099,
+      "matchesPublication": true
+    },
+    {
+      "name": "mobile code copy",
+      "copied": "brew install temporal"
+    },
+    {
+      "name": "mobile annotated code",
+      "active": "true"
+    },
+    {
+      "name": "mobile SDK tabs",
+      "selected": [
+        "Local + Prod with Cloud API key",
+        "Python",
+        "Python"
+      ]
+    },
+    {
+      "name": "mobile accordion open",
+      "open": true,
+      "text": "Earlier measurements\n\nJanuary 2026\n\nOperation\tp50\tp90\tp99\nStartWorkflowExecution\t14ms\t21ms\t69ms\nSignalWorkflowExecution\t11ms\t19ms\t46ms\nSignalWithStartWorkflowExecution\t19ms\t37ms\t95ms\n\nMarch 2024\n\nOperation\tp90\tp99\nStartWorkflowExecution\t24ms\t54ms\nSignalWorkflowExecution\t14ms\t40ms\nSignalWithStartWorkflowExecution\t24ms\t61ms"
+    },
+    {
+      "name": "mobile accordion closed",
+      "open": false
+    },
+    {
+      "name": "mobile retry island",
+      "numberInputsBefore": 9,
+      "numberInputsAfter": 10,
+      "canvas": 1
+    },
+    {
+      "name": "mobile diagram zoom",
+      "svgCount": 0,
+      "dialogs": 0
+    },
+    {
+      "name": "mobile search local hit",
+      "text": "Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"
+    },
+    {
+      "name": "mobile search navigate",
+      "url": "http://127.0.0.1:4393/develop/python/workflows"
+    },
+    {
+      "name": "mobile assistant delegation",
+      "calls": [
+        null
+      ],
+      "backend": "not exercised"
+    },
+    {
+      "name": "mobile feedback open",
+      "text": "Feedback\nPowered by PushFeedback\nWas this page helpful?\nSend",
+      "widgets": 1,
+      "backend": "not exercised; form not submitted"
+    }
+  ],
+  "externalAttempts": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=wGe56COGVKF",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=SNh1hGUL0Tc",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=2WuThiUMzaF",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=pVZFJcvUXPz",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=Yv2vfeelQ3t",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=komiNJFaadr",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    }
+  ],
+  "errors": []
+}

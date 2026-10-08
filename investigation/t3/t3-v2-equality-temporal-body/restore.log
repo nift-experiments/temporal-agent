@@ -1,0 +1,17 @@
+markdown_mdx 0.729s { compiled: 8 }
+errors [] warnings 2
+browser_bundle 1.856s
+errors [] warnings 0
+retained_components_server_bundle 1.221s
+react_ssr_or_html_source 0.182s
+shell_and_dependencies 0.004s
+static_and_browser_publication 0.131s
+Inherited Markdown warnings docs/develop/python/workflows/index.mdx 2
+📦 7 files built successfully
+time taken: 0.02084 seconds
+nift_composition 0.032s
+complete 4.242s
+(node:213) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

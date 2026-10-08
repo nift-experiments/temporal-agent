@@ -1,0 +1,61 @@
+import React from 'react';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { isExternalHref } from '@site/src/utils/links';
+import SdkSvg from '@site/src/components/elements/SdkSvgs/SdkSvg';
+
+type PatternCardItem = {
+  href: string;
+  title: string;
+  description: string;
+  icon?: string;
+  /** SDK logo block name from `SdkSvg.js` (for example, `pythonBlock`). Renders the same logo as the /develop page. */
+  sdkIcon?: string;
+};
+
+type PatternCardsProps = {
+  items: PatternCardItem[];
+  /** Extra class on the grid container, e.g. for a one-off visual variant. */
+  className?: string;
+};
+
+const ICON_BASE = '/img/design-patterns/icons/';
+
+function CardIcon({ icon, title }: { icon: string; title: string }) {
+  const src = useBaseUrl(icon.startsWith('/') ? icon : `${ICON_BASE}${icon}`);
+  return <img src={src} alt={title} />;
+}
+
+export default function PatternCards({ items, className }: PatternCardsProps) {
+  return (
+    <div className={className ? `pattern-grid ${className}` : 'pattern-grid'}>
+      {items.map((item) => (
+        <Link
+          key={item.href}
+          to={item.href}
+          className="pattern-card"
+          target={isExternalHref(item.href) ? '_blank' : undefined}
+          rel={isExternalHref(item.href) ? 'noopener noreferrer' : undefined}
+        >
+          <div className="pattern-content">
+            {item.sdkIcon || item.icon ? (
+              <div className="pattern-card-header">
+                {item.sdkIcon ? (
+                  <span className="pattern-card-sdk-icon">
+                    <SdkSvg name={item.sdkIcon} title={item.title} />
+                  </span>
+                ) : (
+                  <CardIcon icon={item.icon} title={item.title} />
+                )}
+                <h3>{item.title}</h3>
+              </div>
+            ) : (
+              <h3>{item.title}</h3>
+            )}
+            <p>{item.description}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}

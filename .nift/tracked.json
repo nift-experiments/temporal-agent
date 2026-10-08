@@ -1,9 +1,39 @@
 {
   "tracked": [
     {
-      "name": "/",
-      "title": "index",
-      "template": "templates/template.html"
+      "name": "cli/setup-cli/index",
+      "title": "Install and configure the CLI",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/connectivity/aws-connectivity/index",
+      "title": "AWS PrivateLink connectivity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "demos/activity-retry-simulator/index",
+      "title": "Visualize an Activity Retry Policy with timeouts",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/environment-configuration/index",
+      "title": "Environment configuration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/workflow/index",
+      "title": "Temporal CLI workflow command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/index",
+      "title": "Workflows - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/slo/index",
+      "title": "Uptime, latency, and SLOs",
+      "template": "templates/raw.html"
     }
   ]
 }

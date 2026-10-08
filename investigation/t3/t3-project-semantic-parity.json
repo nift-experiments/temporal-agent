@@ -1,0 +1,86 @@
+[
+  {
+    "project": "temporal",
+    "route": "/cli/setup-cli",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/cloud/connectivity/aws-connectivity",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/demos/activity-retry-simulator",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/develop/environment-configuration",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/cli/command-reference/workflow",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/develop/python/workflows/",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal",
+    "route": "/cloud/slo",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/cli/setup-cli",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/cloud/connectivity/aws-connectivity",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/demos/activity-retry-simulator",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/develop/environment-configuration",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/cli/command-reference/workflow",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/develop/python/workflows/",
+    "identical": true,
+    "diff": {}
+  },
+  {
+    "project": "temporal-agent",
+    "route": "/cloud/slo",
+    "identical": true,
+    "diff": {}
+  }
+]

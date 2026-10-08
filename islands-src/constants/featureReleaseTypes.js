@@ -1,0 +1,11 @@
+// ⚠️ LLM MARKDOWN PIPELINE: also consumed by scripts/mdx-to-md.mjs for
+// ReleaseNoteHeader label resolution. Keep in sync when adding feature mappings.
+export const FEATURE_RELEASE_TYPES = {
+  cloudCli: "publicPreview",
+  standaloneNexusOperation: "prerelease",
+  workflowStreams: "publicPreview",
+  serverlessWorkersLambda: "publicPreview",
+  serverlessWorkersCloudRun: "publicPreview",
+  externalStorage: "publicPreview",
+  projects: "prerelease",
+};

@@ -1,0 +1,272 @@
+[
+  {
+    "key": "cli",
+    "route": "/cli/setup-cli",
+    "body": "html/cli/setup-cli.html",
+    "metadata": {
+      "id": "cli/setup-cli",
+      "title": "Install and configure the CLI",
+      "description": "Install the Temporal CLI, run a local development server, and configure your environment.",
+      "sourceDirName": "cli",
+      "slug": "/cli/setup-cli",
+      "permalink": "/cli/setup-cli",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/cli/setup-cli.mdx",
+      "tags": [],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Temporal CLI",
+        "permalink": "/cli"
+      },
+      "next": {
+        "title": "Use with Temporal Cloud",
+        "permalink": "/cli/cloud"
+      }
+    }
+  },
+  {
+    "key": "diagram",
+    "route": "/cloud/connectivity/aws-connectivity",
+    "body": "html/cloud/connectivity/aws-connectivity.html",
+    "metadata": {
+      "id": "cloud/connectivity/aws-connectivity",
+      "title": "AWS PrivateLink connectivity",
+      "description": "Connect to Temporal Cloud using AWS PrivateLink",
+      "sourceDirName": "cloud/connectivity",
+      "slug": "/cloud/connectivity/aws-connectivity",
+      "permalink": "/cloud/connectivity/aws-connectivity",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/cloud/connectivity/aws-connectivity.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "AWS",
+          "permalink": "/tags/aws"
+        },
+        {
+          "inline": true,
+          "label": "Connectivity",
+          "permalink": "/tags/connectivity"
+        },
+        {
+          "inline": true,
+          "label": "Production",
+          "permalink": "/tags/production"
+        },
+        {
+          "inline": true,
+          "label": "Temporal Cloud",
+          "permalink": "/tags/temporal-cloud"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Connectivity",
+        "permalink": "/cloud/connectivity"
+      },
+      "next": {
+        "title": "GCP Private Connect",
+        "permalink": "/cloud/connectivity/gcp-connectivity"
+      }
+    }
+  },
+  {
+    "key": "retry",
+    "route": "/demos/activity-retry-simulator",
+    "body": "html/demos/activity-retry-simulator.html",
+    "metadata": {
+      "id": "demos/activity-retry-simulator",
+      "title": "Visualize an Activity Retry Policy with timeouts",
+      "description": "Visualize Activity Execution times, experiment with timeouts, Retry Policies, and simulate scenarios with our tool. Configure retries and see their impact on success or failure.",
+      "sourceDirName": "demos",
+      "slug": "/demos/activity-retry-simulator",
+      "permalink": "/demos/activity-retry-simulator",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/demos/activity-retry-simulator.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "Activities",
+          "permalink": "/tags/activities"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Serverless Workers",
+        "permalink": "/demos/serverless-workers"
+      },
+      "next": {
+        "title": "Priority and Fairness",
+        "permalink": "/demos/priority-fairness-walkthrough"
+      }
+    }
+  },
+  {
+    "key": "sdk-tabs",
+    "route": "/develop/environment-configuration",
+    "body": "html/develop/environment-configuration.html",
+    "metadata": {
+      "id": "develop/environment-configuration",
+      "title": "Environment configuration",
+      "description": "Configure Temporal Clients using environment variables and TOML configuration files",
+      "sourceDirName": "develop",
+      "slug": "/develop/environment-configuration",
+      "permalink": "/develop/environment-configuration",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/develop/environment-configuration.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "Temporal Client",
+          "permalink": "/tags/temporal-client"
+        },
+        {
+          "inline": true,
+          "label": "Configuration",
+          "permalink": "/tags/configuration"
+        },
+        {
+          "inline": true,
+          "label": "Environment Variables",
+          "permalink": "/tags/environment-variables"
+        },
+        {
+          "inline": true,
+          "label": "TOML",
+          "permalink": "/tags/toml"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Strands Agents",
+        "permalink": "/develop/typescript/integrations/strands-agents"
+      },
+      "next": {
+        "title": "Worker performance",
+        "permalink": "/develop/worker-performance/"
+      }
+    }
+  },
+  {
+    "key": "generated-cli",
+    "route": "/cli/command-reference/workflow",
+    "body": "html/cli/command-reference/workflow.html",
+    "metadata": {
+      "id": "cli/command-reference/workflow",
+      "title": "Temporal CLI workflow command reference",
+      "description": "Temporal Workflow commands enable operations on Workflow Executions, such as cancel, count, delete, describe, execute, list, update-options, query, reset, reset-batch, show, signal, stack, start, terminate, trace, and update, enhancing efficiency and control.",
+      "sourceDirName": "cli/command-reference",
+      "slug": "/cli/command-reference/workflow",
+      "permalink": "/cli/command-reference/workflow",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/cli/command-reference/workflow.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "Temporal CLI",
+          "permalink": "/tags/temporal-cli"
+        },
+        {
+          "inline": true,
+          "label": "Workflows",
+          "permalink": "/tags/workflows"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "worker",
+        "permalink": "/cli/command-reference/worker"
+      },
+      "next": {
+        "title": "Design Patterns",
+        "permalink": "/design-patterns"
+      }
+    }
+  },
+  {
+    "key": "sdk-workflows",
+    "route": "/develop/python/workflows/",
+    "body": "html/develop/python/workflows/index.html",
+    "metadata": {
+      "id": "develop/python/workflows/index",
+      "title": "Workflows - Python SDK",
+      "description": "This section explains how to implement Workflows with the Python SDK",
+      "sourceDirName": "develop/python/workflows",
+      "slug": "/develop/python/workflows/",
+      "permalink": "/develop/python/workflows/",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/develop/python/workflows/index.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "Workflows",
+          "permalink": "/tags/workflows"
+        },
+        {
+          "inline": true,
+          "label": "Python SDK",
+          "permalink": "/tags/python-sdk"
+        },
+        {
+          "inline": false,
+          "label": "Temporal SDKs",
+          "permalink": "/tags/temporal-sdks"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Quickstart",
+        "permalink": "/develop/python/set-up-your-local-python"
+      },
+      "next": {
+        "title": "Workflow basics",
+        "permalink": "/develop/python/workflows/basics"
+      }
+    }
+  },
+  {
+    "key": "accordion",
+    "route": "/cloud/slo",
+    "body": "html/cloud/slo.html",
+    "metadata": {
+      "id": "cloud/slo",
+      "title": "Uptime, latency, and SLOs",
+      "description": "Temporal Cloud's 99.99% uptime objective, the 200ms p99 latency SLO, Visibility availability, and measured latency for starting and signaling Workflows.",
+      "sourceDirName": "cloud",
+      "slug": "/cloud/slo",
+      "permalink": "/cloud/slo",
+      "draft": false,
+      "unlisted": false,
+      "editUrl": "https://github.com/temporalio/documentation/blob/main/docs/cloud/slo.mdx",
+      "tags": [
+        {
+          "inline": true,
+          "label": "Temporal Cloud",
+          "permalink": "/tags/temporal-cloud"
+        }
+      ],
+      "version": "current",
+      "sidebar": "documentation",
+      "previous": {
+        "title": "Connectivity for High Availability",
+        "permalink": "/cloud/high-availability/ha-connectivity"
+      },
+      "next": {
+        "title": "Outages and Recovery Objectives (RTO / RPO)",
+        "permalink": "/cloud/rpo-rto"
+      }
+    }
+  }
+]

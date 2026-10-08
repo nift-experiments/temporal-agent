@@ -1,0 +1,4211 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "ai/index",
+              "path": "/ai",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/cloud-access-control",
+              "path": "/best-practices/cloud-access-control",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/cost-governance",
+              "path": "/best-practices/cost-governance",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/cost-optimization",
+              "path": "/best-practices/cost-optimization",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/error-handling",
+              "path": "/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/index",
+              "path": "/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/knowledge-hub",
+              "path": "/best-practices/knowledge-hub",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/managing-aps-limits",
+              "path": "/best-practices/managing-aps-limits",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/managing-namespace",
+              "path": "/best-practices/managing-namespace",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/multi-tenant-patterns",
+              "path": "/best-practices/multi-tenant-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/pre-production-testing",
+              "path": "/best-practices/pre-production-testing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/security-controls",
+              "path": "/best-practices/security-controls",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/worker",
+              "path": "/best-practices/worker",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "best-practices/worker-alerting",
+              "path": "/best-practices/worker-alerting",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/cli-basics",
+              "path": "/cli/common-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/cloud",
+              "path": "/cli/cloud",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/activity",
+              "path": "/cli/command-reference/activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/batch",
+              "path": "/cli/command-reference/batch",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/account",
+              "path": "/cli/command-reference/cloud/account",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/apikey",
+              "path": "/cli/command-reference/cloud/apikey",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/async-operation",
+              "path": "/cli/command-reference/cloud/async-operation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/connectivity",
+              "path": "/cli/command-reference/cloud/connectivity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/custom-role",
+              "path": "/cli/command-reference/cloud/custom-role",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/index",
+              "path": "/cli/command-reference/cloud",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/login",
+              "path": "/cli/command-reference/cloud/login",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/logout",
+              "path": "/cli/command-reference/cloud/logout",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/namespace",
+              "path": "/cli/command-reference/cloud/namespace",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/nexus",
+              "path": "/cli/command-reference/cloud/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/project",
+              "path": "/cli/command-reference/cloud/project",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/region",
+              "path": "/cli/command-reference/cloud/region",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/service-account",
+              "path": "/cli/command-reference/cloud/service-account",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/user",
+              "path": "/cli/command-reference/cloud/user",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/user-group",
+              "path": "/cli/command-reference/cloud/user-group",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/cloud/whoami",
+              "path": "/cli/command-reference/cloud/whoami",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/config",
+              "path": "/cli/command-reference/config",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/env",
+              "path": "/cli/command-reference/env",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/index",
+              "path": "/cli/command-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/nexus",
+              "path": "/cli/command-reference/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/operator",
+              "path": "/cli/command-reference/operator",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/schedule",
+              "path": "/cli/command-reference/schedule",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/server",
+              "path": "/cli/command-reference/server",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/task-queue",
+              "path": "/cli/command-reference/task-queue",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/worker",
+              "path": "/cli/command-reference/worker",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/command-reference/workflow",
+              "path": "/cli/command-reference/workflow",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/index",
+              "path": "/cli",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cli/setup-cli",
+              "path": "/cli/setup-cli",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/audit-logs",
+              "path": "/cloud/audit-logs",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/audit-logs-aws",
+              "path": "/cloud/audit-logs-aws",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/audit-logs-gcp",
+              "path": "/cloud/audit-logs-gcp",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/aws-export-s3",
+              "path": "/cloud/export/aws-export-s3",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/billing-and-usage/actions-usage",
+              "path": "/cloud/actions-usage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/billing-and-usage/billing",
+              "path": "/cloud/billing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/billing-and-usage/billing-api",
+              "path": "/cloud/billing-api",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/billing-and-usage/index",
+              "path": "/cloud/billing-and-usage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/capacity-modes",
+              "path": "/cloud/capacity-modes",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/connectivity/aws-connectivity",
+              "path": "/cloud/connectivity/aws-connectivity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/connectivity/gcp-connectivity",
+              "path": "/cloud/connectivity/gcp-connectivity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/connectivity/index",
+              "path": "/cloud/connectivity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/connectivity/ip-addresses",
+              "path": "/cloud/connectivity/ip-addresses",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/export",
+              "path": "/cloud/export",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/gcp-export-gcs",
+              "path": "/cloud/export/gcp-export-gcs",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/get-started/api-keys",
+              "path": "/cloud/api-keys",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/get-started/certificates",
+              "path": "/cloud/certificates",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/get-started/index",
+              "path": "/cloud/get-started/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/get-started/namespaces",
+              "path": "/cloud/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/get-started/users-invite",
+              "path": "/cloud/get-started/users-invite"
+            },
+            {
+              "id": "cloud/high-availability/architecture-patterns",
+              "path": "/cloud/high-availability/architecture-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/enable",
+              "path": "/cloud/high-availability/enable",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/failovers/failovers",
+              "path": "/cloud/high-availability/failovers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/failovers/manage-failovers",
+              "path": "/cloud/high-availability/failovers/manage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/ha-connectivity",
+              "path": "/cloud/high-availability/ha-connectivity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/index",
+              "path": "/cloud/high-availability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/high-availability/monitoring",
+              "path": "/cloud/high-availability/monitoring",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/index",
+              "path": "/cloud",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/custom-roles",
+              "path": "/cloud/manage-access/custom-roles",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/index",
+              "path": "/cloud/manage-access/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/permissions-reference",
+              "path": "/cloud/manage-access/permissions-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/roles-and-permissions",
+              "path": "/cloud/manage-access/roles-and-permissions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/saml",
+              "path": "/cloud/manage-access/saml",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/scim",
+              "path": "/cloud/manage-access/scim",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/service-accounts",
+              "path": "/cloud/manage-access/service-accounts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/user-groups",
+              "path": "/cloud/manage-access/user-groups",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/manage-access/users",
+              "path": "/cloud/manage-access/users",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/openmetrics/api-reference",
+              "path": "/cloud/metrics/openmetrics/api-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/openmetrics/faq",
+              "path": "/cloud/metrics/openmetrics/faq",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/openmetrics/index",
+              "path": "/cloud/metrics/openmetrics/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/openmetrics/metrics-integrations",
+              "path": "/cloud/metrics/openmetrics/metrics-integrations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/openmetrics/metrics-reference",
+              "path": "/cloud/metrics/openmetrics/metrics-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/metrics/sdk-metrics-setup",
+              "path": "/cloud/metrics/sdk-metrics-setup",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/migrate/automated",
+              "path": "/cloud/migrate/automated",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/migrate/estimate-actions",
+              "path": "/cloud/migrate/estimate-actions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/migrate/index",
+              "path": "/cloud/migrate",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/migrate/manual",
+              "path": "/cloud/migrate/manual",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/migrate/migrate-within-cloud",
+              "path": "/cloud/migrate/migrate-within-cloud",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/monitor/index",
+              "path": "/cloud/monitor",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/index",
+              "path": "/cloud/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/latency-availability",
+              "path": "/cloud/nexus/latency-availability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/limits",
+              "path": "/cloud/nexus/limits",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/observability",
+              "path": "/cloud/nexus/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/pricing",
+              "path": "/cloud/nexus/pricing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/nexus/security",
+              "path": "/cloud/nexus/security",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/notifications",
+              "path": "/cloud/notifications",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/operation-api",
+              "path": "/ops",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/projects",
+              "path": "/cloud/projects",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/references/regions/awsregions",
+              "path": "/cloud/references/regions/awsregions"
+            },
+            {
+              "id": "cloud/references/regions/gcpregions",
+              "path": "/cloud/references/regions/gcpregions"
+            },
+            {
+              "id": "cloud/references/regions/private-service",
+              "path": "/cloud/references/regions/private-service"
+            },
+            {
+              "id": "cloud/rpo-rto",
+              "path": "/cloud/rpo-rto",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/service-health",
+              "path": "/cloud/service-health",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/slo",
+              "path": "/cloud/slo",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/account",
+              "path": "/cloud/tcld/account",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/apikey",
+              "path": "/cloud/tcld/apikey",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/connectivity-rule",
+              "path": "/cloud/tcld/connectivity-rule",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/feature",
+              "path": "/cloud/tcld/feature",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/generate-certificates",
+              "path": "/cloud/tcld/generate-certificates",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/index",
+              "path": "/cloud/tcld",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/login",
+              "path": "/cloud/tcld/login",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/logout",
+              "path": "/cloud/tcld/logout",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/migration",
+              "path": "/cloud/tcld/migration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/namespace",
+              "path": "/cloud/tcld/namespace",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/nexus",
+              "path": "/cloud/tcld/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/request",
+              "path": "/cloud/tcld/request",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/service-account",
+              "path": "/cloud/tcld/service-account",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/user",
+              "path": "/cloud/tcld/user",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/user-group",
+              "path": "/cloud/tcld/user-group",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/tcld/version",
+              "path": "/cloud/tcld/version",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/terraform-provider",
+              "path": "/cloud/terraform-provider",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "cloud/worker-health",
+              "path": "/cloud/worker-health",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "demos/activity-retry-simulator",
+              "path": "/demos/activity-retry-simulator",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "demos/priority-fairness-walkthrough",
+              "path": "/demos/priority-fairness-walkthrough",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "demos/serverless-workers",
+              "path": "/demos/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "demos/standalone-activities",
+              "path": "/demos/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/activity-dependency-injection",
+              "path": "/design-patterns/activity-dependency-injection",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/approval",
+              "path": "/design-patterns/approval",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/batch-iterator",
+              "path": "/design-patterns/batch-iterator",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/batch-processing-patterns",
+              "path": "/design-patterns/batch-processing-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/child-workflows",
+              "path": "/design-patterns/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/continue-as-new",
+              "path": "/design-patterns/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/delayed-callback",
+              "path": "/design-patterns/delayed-callback",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/delayed-retry",
+              "path": "/design-patterns/delayed-retry",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/delayed-start",
+              "path": "/design-patterns/delayed-start",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/distributed-transaction-patterns",
+              "path": "/design-patterns/distributed-transaction-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/downstream-rate-limiting",
+              "path": "/design-patterns/downstream-rate-limiting",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/eager-workflow-start",
+              "path": "/design-patterns/eager-workflow-start",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/early-return",
+              "path": "/design-patterns/early-return",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/early-return-local-activities",
+              "path": "/design-patterns/early-return-local-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/entity-lifecycle-patterns",
+              "path": "/design-patterns/entity-lifecycle-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/entity-workflow",
+              "path": "/design-patterns/entity-workflow",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/error-handling-patterns",
+              "path": "/design-patterns/error-handling-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/event-accumulator",
+              "path": "/design-patterns/event-accumulator",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/external-interaction-patterns",
+              "path": "/design-patterns/external-interaction-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/fairness",
+              "path": "/design-patterns/fairness",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/fanout-child-workflows",
+              "path": "/design-patterns/fanout-child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/fast-slow-retries",
+              "path": "/design-patterns/fast-slow-retries",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/fixed-count-retries",
+              "path": "/design-patterns/fixed-count-retries",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/fixed-wall-time-retries",
+              "path": "/design-patterns/fixed-wall-time-retries",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/index",
+              "path": "/design-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/local-activities",
+              "path": "/design-patterns/local-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/long-running-activity",
+              "path": "/design-patterns/long-running-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/mapreduce-tree",
+              "path": "/design-patterns/mapreduce-tree",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/non-retryable-errors",
+              "path": "/design-patterns/non-retryable-errors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/parallel-execution",
+              "path": "/design-patterns/parallel-execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/performance-latency-patterns",
+              "path": "/design-patterns/performance-latency-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/pick-first",
+              "path": "/design-patterns/pick-first",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/polling",
+              "path": "/design-patterns/polling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/priority-task-queues",
+              "path": "/design-patterns/priority-task-queues",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/qos-throughput-patterns",
+              "path": "/design-patterns/qos-throughput-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/request-response-via-updates",
+              "path": "/design-patterns/request-response-via-updates",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/resumable-activity",
+              "path": "/design-patterns/resumable-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/retry-metrics",
+              "path": "/design-patterns/retry-metrics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/saga-pattern",
+              "path": "/design-patterns/saga-pattern",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/signal-with-start",
+              "path": "/design-patterns/signal-with-start",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/sliding-window",
+              "path": "/design-patterns/sliding-window",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/task-orchestration-patterns",
+              "path": "/design-patterns/task-orchestration-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/updatable-timer",
+              "path": "/design-patterns/updatable-timer",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/worker-configuration-patterns",
+              "path": "/design-patterns/worker-configuration-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/worker-specific-taskqueue",
+              "path": "/design-patterns/worker-specific-taskqueue",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "design-patterns/workflow-messaging-patterns",
+              "path": "/design-patterns/workflow-messaging-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/asynchronous-activity",
+              "path": "/develop/dotnet/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/basics",
+              "path": "/develop/dotnet/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/benign-exceptions",
+              "path": "/develop/dotnet/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/dynamic-activity",
+              "path": "/develop/dotnet/activities/dynamic-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/execution",
+              "path": "/develop/dotnet/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/index",
+              "path": "/develop/dotnet/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/standalone-activities",
+              "path": "/develop/dotnet/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/standalone-activities-quickstart",
+              "path": "/develop/dotnet/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/activities/timeouts",
+              "path": "/develop/dotnet/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/data-handling/data-conversion",
+              "path": "/develop/dotnet/best-practices/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/data-handling/data-encryption",
+              "path": "/develop/dotnet/best-practices/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/data-handling/data-handling",
+              "path": "/develop/dotnet/best-practices/data-handling/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/debugging",
+              "path": "/develop/dotnet/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/error-handling",
+              "path": "/develop/dotnet/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/index",
+              "path": "/develop/dotnet/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/best-practices/testing-suite",
+              "path": "/develop/dotnet/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/client/index",
+              "path": "/develop/dotnet/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/client/temporal-client",
+              "path": "/develop/dotnet/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/index",
+              "path": "/develop/dotnet/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/nexus/feature-guide",
+              "path": "/develop/dotnet/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/nexus/index",
+              "path": "/develop/dotnet/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/nexus/quickstart",
+              "path": "/develop/dotnet/nexus/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/nexus/standalone-operations",
+              "path": "/develop/dotnet/nexus/standalone-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/platform/enriching-ui",
+              "path": "/develop/dotnet/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/platform/index",
+              "path": "/develop/dotnet/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/platform/observability",
+              "path": "/develop/dotnet/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/set-up-your-local-dotnet",
+              "path": "/develop/dotnet/set-up-your-local-dotnet",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/index",
+              "path": "/develop/dotnet/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/interceptors",
+              "path": "/develop/dotnet/workers/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/run-worker-process",
+              "path": "/develop/dotnet/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/serverless-workers/aws-lambda",
+              "path": "/develop/dotnet/workers/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/serverless-workers/cloud-run",
+              "path": "/develop/dotnet/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workers/serverless-workers/index",
+              "path": "/develop/dotnet/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/basics",
+              "path": "/develop/dotnet/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/cancellation",
+              "path": "/develop/dotnet/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/child-workflows",
+              "path": "/develop/dotnet/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/continue-as-new",
+              "path": "/develop/dotnet/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/dynamic-workflow",
+              "path": "/develop/dotnet/workflows/dynamic-workflow",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/index",
+              "path": "/develop/dotnet/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/message-passing",
+              "path": "/develop/dotnet/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/schedules",
+              "path": "/develop/dotnet/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/timeouts",
+              "path": "/develop/dotnet/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/timers",
+              "path": "/develop/dotnet/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/versioning",
+              "path": "/develop/dotnet/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/dotnet/workflows/workflow-streams",
+              "path": "/develop/dotnet/workflows/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/environment-configuration",
+              "path": "/develop/environment-configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/asynchronous-activity",
+              "path": "/develop/go/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/basics",
+              "path": "/develop/go/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/benign-exceptions",
+              "path": "/develop/go/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/dynamic-activity",
+              "path": "/develop/go/activities/dynamic-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/execution",
+              "path": "/develop/go/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/index",
+              "path": "/develop/go/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/standalone-activities",
+              "path": "/develop/go/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/standalone-activities-quickstart",
+              "path": "/develop/go/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/activities/timeouts",
+              "path": "/develop/go/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/context-propagation",
+              "path": "/develop/go/best-practices/context-propagation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/data-handling/data-conversion",
+              "path": "/develop/go/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/data-handling/data-encryption",
+              "path": "/develop/go/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/data-handling/data-handling",
+              "path": "/develop/go/data-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/data-handling/external-storage",
+              "path": "/develop/go/data-handling/external-storage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/debugging",
+              "path": "/develop/go/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/error-handling",
+              "path": "/develop/go/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/index",
+              "path": "/develop/go/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/multithreading",
+              "path": "/develop/go/best-practices/multithreading",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/best-practices/testing-suite",
+              "path": "/develop/go/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/client/index",
+              "path": "/develop/go/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/client/namespaces",
+              "path": "/develop/go/client/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/client/temporal-client",
+              "path": "/develop/go/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/index",
+              "path": "/develop/go/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/integrations/google-adk",
+              "path": "/develop/go/integrations/google-adk",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/integrations/index",
+              "path": "/develop/go/integrations/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/integrations/opentelemetry-v2",
+              "path": "/develop/go/integrations/opentelemetry-v2",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/nexus/feature-guide",
+              "path": "/develop/go/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/nexus/index",
+              "path": "/develop/go/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/nexus/quickstart",
+              "path": "/develop/go/nexus/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/nexus/standalone-operations",
+              "path": "/develop/go/nexus/standalone-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/platform/enriching-ui",
+              "path": "/develop/go/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/platform/index",
+              "path": "/develop/go/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/platform/observability",
+              "path": "/develop/go/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/set-up-your-local-go",
+              "path": "/develop/go/set-up-your-local-go",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/worker-versioning-legacy",
+              "path": "/develop/go/worker-versioning-legacy"
+            },
+            {
+              "id": "develop/go/workers/index",
+              "path": "/develop/go/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/interceptors",
+              "path": "/develop/go/workers/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/run-worker-process",
+              "path": "/develop/go/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/serverless-workers/aws-lambda",
+              "path": "/develop/go/workers/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/serverless-workers/cloud-run",
+              "path": "/develop/go/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/serverless-workers/index",
+              "path": "/develop/go/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workers/sessions",
+              "path": "/develop/go/workers/sessions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/basics",
+              "path": "/develop/go/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/cancellation",
+              "path": "/develop/go/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/child-workflows",
+              "path": "/develop/go/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/continue-as-new",
+              "path": "/develop/go/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/dynamic-workflow",
+              "path": "/develop/go/workflows/dynamic-workflow",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/index",
+              "path": "/develop/go/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/message-passing",
+              "path": "/develop/go/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/schedules",
+              "path": "/develop/go/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/selectors",
+              "path": "/develop/go/workflows/selectors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/side-effects",
+              "path": "/develop/go/workflows/side-effects",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/timeouts",
+              "path": "/develop/go/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/timers",
+              "path": "/develop/go/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/versioning",
+              "path": "/develop/go/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/go/workflows/workflow-streams",
+              "path": "/develop/go/workflows/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/index",
+              "path": "/develop/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/asynchronous-activity",
+              "path": "/develop/java/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/basics",
+              "path": "/develop/java/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/benign-exceptions",
+              "path": "/develop/java/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/execution",
+              "path": "/develop/java/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/index",
+              "path": "/develop/java/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/standalone-activities",
+              "path": "/develop/java/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/standalone-activities-quickstart",
+              "path": "/develop/java/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/activities/timeouts",
+              "path": "/develop/java/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/data-handling/data-conversion",
+              "path": "/develop/java/best-practices/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/data-handling/data-encryption",
+              "path": "/develop/java/best-practices/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/data-handling/data-handling",
+              "path": "/develop/java/best-practices/data-handling/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/data-handling/external-storage",
+              "path": "/develop/java/data-handling/external-storage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/debugging",
+              "path": "/develop/java/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/error-handling",
+              "path": "/develop/java/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/index",
+              "path": "/develop/java/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/best-practices/testing-suite",
+              "path": "/develop/java/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/client/index",
+              "path": "/develop/java/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/client/namespaces",
+              "path": "/develop/java/client/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/client/temporal-client",
+              "path": "/develop/java/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/index",
+              "path": "/develop/java/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/integrations/index",
+              "path": "/develop/java/integrations/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/integrations/spring-ai",
+              "path": "/develop/java/integrations/spring-ai",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/integrations/spring-boot",
+              "path": "/develop/java/integrations/spring-boot-integration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/nexus/feature-guide",
+              "path": "/develop/java/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/nexus/index",
+              "path": "/develop/java/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/nexus/quickstart",
+              "path": "/develop/java/nexus/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/nexus/standalone-operations",
+              "path": "/develop/java/nexus/standalone-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/platform/enriching-ui",
+              "path": "/develop/java/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/platform/index",
+              "path": "/develop/java/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/platform/observability",
+              "path": "/develop/java/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/set-up-your-local-java",
+              "path": "/develop/java/set-up-your-local-java",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/worker-versioning-legacy",
+              "path": "/develop/java/worker-versioning-legacy"
+            },
+            {
+              "id": "develop/java/workers/index",
+              "path": "/develop/java/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workers/interceptors",
+              "path": "/develop/java/workers/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workers/run-worker-process",
+              "path": "/develop/java/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workers/serverless-workers/aws-lambda",
+              "path": "/develop/java/workers/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workers/serverless-workers/cloud-run",
+              "path": "/develop/java/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workers/serverless-workers/index",
+              "path": "/develop/java/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/basics",
+              "path": "/develop/java/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/cancellation",
+              "path": "/develop/java/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/child-workflows",
+              "path": "/develop/java/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/continue-as-new",
+              "path": "/develop/java/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/index",
+              "path": "/develop/java/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/message-passing",
+              "path": "/develop/java/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/schedules",
+              "path": "/develop/java/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/side-effects",
+              "path": "/develop/java/workflows/side-effects",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/timeouts",
+              "path": "/develop/java/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/timers",
+              "path": "/develop/java/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/versioning",
+              "path": "/develop/java/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/java/workflows/workflow-streams",
+              "path": "/develop/java/workflows/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/activities/asynchronous-activity",
+              "path": "/develop/php/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/activities/basics",
+              "path": "/develop/php/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/activities/execution",
+              "path": "/develop/php/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/activities/index",
+              "path": "/develop/php/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/activities/timeouts",
+              "path": "/develop/php/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/best-practices/debugging",
+              "path": "/develop/php/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/best-practices/index",
+              "path": "/develop/php/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/best-practices/testing-suite",
+              "path": "/develop/php/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/client/index",
+              "path": "/develop/php/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/client/temporal-client",
+              "path": "/develop/php/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/index",
+              "path": "/develop/php/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/platform/enriching-ui",
+              "path": "/develop/php/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/platform/index",
+              "path": "/develop/php/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/platform/observability",
+              "path": "/develop/php/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/set-up-your-local-php",
+              "path": "/develop/php/set-up-your-local-php",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workers/index",
+              "path": "/develop/php/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workers/run-worker-process",
+              "path": "/develop/php/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/basics",
+              "path": "/develop/php/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/cancellation",
+              "path": "/develop/php/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/child-workflows",
+              "path": "/develop/php/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/continue-as-new",
+              "path": "/develop/php/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/index",
+              "path": "/develop/php/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/message-passing",
+              "path": "/develop/php/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/schedules",
+              "path": "/develop/php/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/side-effects",
+              "path": "/develop/php/workflows/side-effects",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/timeouts",
+              "path": "/develop/php/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/timers",
+              "path": "/develop/php/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/php/workflows/versioning",
+              "path": "/develop/php/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/plugins-guide",
+              "path": "/develop/plugins-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/asynchronous-activity",
+              "path": "/develop/python/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/basics",
+              "path": "/develop/python/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/benign-exceptions",
+              "path": "/develop/python/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/execution",
+              "path": "/develop/python/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/index",
+              "path": "/develop/python/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/standalone-activities",
+              "path": "/develop/python/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/standalone-activities-quickstart",
+              "path": "/develop/python/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/activities/timeouts",
+              "path": "/develop/python/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/data-handling/data-conversion",
+              "path": "/develop/python/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/data-handling/data-encryption",
+              "path": "/develop/python/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/data-handling/data-handling",
+              "path": "/develop/python/data-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/data-handling/external-storage",
+              "path": "/develop/python/data-handling/external-storage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/debugging",
+              "path": "/develop/python/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/error-handling",
+              "path": "/develop/python/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/index",
+              "path": "/develop/python/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/python-sdk-sandbox",
+              "path": "/develop/python/best-practices/python-sdk-sandbox",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/python-sdk-sync-vs-async",
+              "path": "/develop/python/best-practices/python-sdk-sync-vs-async",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/best-practices/testing-suite",
+              "path": "/develop/python/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/client/index",
+              "path": "/develop/python/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/client/temporal-client",
+              "path": "/develop/python/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/index",
+              "path": "/develop/python/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/deepagents",
+              "path": "/develop/python/integrations/deepagents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/google-adk",
+              "path": "/develop/python/integrations/google-adk",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/google-genai",
+              "path": "/develop/python/integrations/google-genai",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/index",
+              "path": "/develop/python/integrations/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/langgraph",
+              "path": "/develop/python/integrations/langgraph",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/langsmith",
+              "path": "/develop/python/integrations/langsmith",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/openai-agents",
+              "path": "/develop/python/integrations/openai-agents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/integrations/strands-agents",
+              "path": "/develop/python/integrations/strands-agents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/nexus/feature-guide",
+              "path": "/develop/python/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/nexus/index",
+              "path": "/develop/python/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/nexus/quickstart",
+              "path": "/develop/python/nexus/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/nexus/standalone-operations",
+              "path": "/develop/python/nexus/standalone-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/platform/enriching-ui",
+              "path": "/develop/python/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/platform/index",
+              "path": "/develop/python/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/platform/observability",
+              "path": "/develop/python/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/set-up-your-local-python",
+              "path": "/develop/python/set-up-your-local-python",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/index",
+              "path": "/develop/python/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/interceptors",
+              "path": "/develop/python/workers/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/run-worker-process",
+              "path": "/develop/python/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/serverless-workers/agentcore",
+              "path": "/develop/python/workers/serverless-workers/agentcore",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/serverless-workers/aws-lambda",
+              "path": "/develop/python/workers/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/serverless-workers/cloud-run",
+              "path": "/develop/python/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workers/serverless-workers/index",
+              "path": "/develop/python/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/basics",
+              "path": "/develop/python/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/cancellation",
+              "path": "/develop/python/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/child-workflows",
+              "path": "/develop/python/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/continue-as-new",
+              "path": "/develop/python/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/index",
+              "path": "/develop/python/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/message-passing",
+              "path": "/develop/python/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/schedules",
+              "path": "/develop/python/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/timeouts",
+              "path": "/develop/python/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/timers",
+              "path": "/develop/python/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/versioning",
+              "path": "/develop/python/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/python/workflows/worker-versioning-legacy",
+              "path": "/develop/python/workflows/worker-versioning-legacy"
+            },
+            {
+              "id": "develop/python/workflows/workflow-streams",
+              "path": "/develop/python/workflows/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/asynchronous-activity",
+              "path": "/develop/ruby/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/basics",
+              "path": "/develop/ruby/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/benign-exceptions",
+              "path": "/develop/ruby/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/dynamic-activity",
+              "path": "/develop/ruby/activities/dynamic-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/execution",
+              "path": "/develop/ruby/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/index",
+              "path": "/develop/ruby/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/standalone-activities",
+              "path": "/develop/ruby/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/standalone-activities-quickstart",
+              "path": "/develop/ruby/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/activities/timeouts",
+              "path": "/develop/ruby/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/data-handling/data-conversion",
+              "path": "/develop/ruby/best-practices/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/data-handling/data-encryption",
+              "path": "/develop/ruby/best-practices/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/data-handling/data-handling",
+              "path": "/develop/ruby/best-practices/data-handling/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/debugging",
+              "path": "/develop/ruby/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/error-handling",
+              "path": "/develop/ruby/best-practices/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/index",
+              "path": "/develop/ruby/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/best-practices/testing-suite",
+              "path": "/develop/ruby/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/client/index",
+              "path": "/develop/ruby/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/client/temporal-client",
+              "path": "/develop/ruby/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/index",
+              "path": "/develop/ruby/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/integrations/index",
+              "path": "/develop/ruby/integrations/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/integrations/rails-integration",
+              "path": "/develop/ruby/integrations/rails-integration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/platform/enriching-ui",
+              "path": "/develop/ruby/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/platform/index",
+              "path": "/develop/ruby/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/platform/observability",
+              "path": "/develop/ruby/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/set-up-local-ruby",
+              "path": "/develop/ruby/set-up-local-ruby",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workers/index",
+              "path": "/develop/ruby/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workers/run-worker-process",
+              "path": "/develop/ruby/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workers/serverless-workers/cloud-run",
+              "path": "/develop/ruby/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workers/serverless-workers/index",
+              "path": "/develop/ruby/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/basics",
+              "path": "/develop/ruby/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/cancellation",
+              "path": "/develop/ruby/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/child-workflows",
+              "path": "/develop/ruby/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/continue-as-new",
+              "path": "/develop/ruby/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/dynamic-workflow",
+              "path": "/develop/ruby/workflows/dynamic-workflow",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/futures",
+              "path": "/develop/ruby/workflows/futures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/index",
+              "path": "/develop/ruby/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/message-passing",
+              "path": "/develop/ruby/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/schedules",
+              "path": "/develop/ruby/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/timeouts",
+              "path": "/develop/ruby/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/timers",
+              "path": "/develop/ruby/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/ruby/workflows/versioning",
+              "path": "/develop/ruby/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/run-a-development-server",
+              "path": "/develop/run-a-development-server"
+            },
+            {
+              "id": "develop/rust/activities/basics",
+              "path": "/develop/rust/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/activities/execution",
+              "path": "/develop/rust/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/activities/index",
+              "path": "/develop/rust/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/activities/standalone-activities",
+              "path": "/develop/rust/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/activities/standalone-activities-quickstart",
+              "path": "/develop/rust/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/activities/timeouts",
+              "path": "/develop/rust/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/client/index",
+              "path": "/develop/rust/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/client/temporal-client",
+              "path": "/develop/rust/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/index",
+              "path": "/develop/rust/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/nexus/feature-guide",
+              "path": "/develop/rust/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/nexus/index",
+              "path": "/develop/rust/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/quickstart",
+              "path": "/develop/rust/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workers/index",
+              "path": "/develop/rust/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workers/serverless-workers/cloud-run",
+              "path": "/develop/rust/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workers/serverless-workers/index",
+              "path": "/develop/rust/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workers/worker-process",
+              "path": "/develop/rust/workers/worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/basics",
+              "path": "/develop/rust/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/cancellation",
+              "path": "/develop/rust/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/child-workflows",
+              "path": "/develop/rust/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/continue-as-new",
+              "path": "/develop/rust/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/index",
+              "path": "/develop/rust/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/message-passing",
+              "path": "/develop/rust/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/timeouts",
+              "path": "/develop/rust/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/rust/workflows/timers",
+              "path": "/develop/rust/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/safe-deployments",
+              "path": "/develop/safe-deployments",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/task-queue-priority-fairness",
+              "path": "/develop/task-queue-priority-fairness",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/asynchronous-activity",
+              "path": "/develop/typescript/activities/asynchronous-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/basics",
+              "path": "/develop/typescript/activities/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/benign-exceptions",
+              "path": "/develop/typescript/activities/benign-exceptions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/execution",
+              "path": "/develop/typescript/activities/execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/index",
+              "path": "/develop/typescript/activities/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/standalone-activities",
+              "path": "/develop/typescript/activities/standalone-activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/standalone-activities-quickstart",
+              "path": "/develop/typescript/activities/standalone-activities-quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/activities/timeouts",
+              "path": "/develop/typescript/activities/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/data-handling/data-conversion",
+              "path": "/develop/typescript/best-practices/data-handling/data-conversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/data-handling/data-encryption",
+              "path": "/develop/typescript/best-practices/data-handling/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/data-handling/data-handling",
+              "path": "/develop/typescript/best-practices/data-handling/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/data-handling/external-storage",
+              "path": "/develop/typescript/best-practices/data-handling/external-storage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/debugging",
+              "path": "/develop/typescript/best-practices/debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/entity-pattern",
+              "path": "/develop/typescript/best-practices/entity-pattern",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/index",
+              "path": "/develop/typescript/best-practices/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/best-practices/testing-suite",
+              "path": "/develop/typescript/best-practices/testing-suite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/client/index",
+              "path": "/develop/typescript/client/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/client/namespaces",
+              "path": "/develop/typescript/client/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/client/temporal-client",
+              "path": "/develop/typescript/client/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/index",
+              "path": "/develop/typescript/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/install-typescript-sdk",
+              "path": "/develop/typescript/install-typescript-sdk"
+            },
+            {
+              "id": "develop/typescript/integrations/ai-sdk",
+              "path": "/develop/typescript/integrations/ai-sdk",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/integrations/google-adk-agents",
+              "path": "/develop/typescript/integrations/google-adk-agents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/integrations/index",
+              "path": "/develop/typescript/integrations/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/integrations/langsmith",
+              "path": "/develop/typescript/integrations/langsmith",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/integrations/openai-agents",
+              "path": "/develop/typescript/integrations/openai-agents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/integrations/strands-agents",
+              "path": "/develop/typescript/integrations/strands-agents",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/nexus/feature-guide",
+              "path": "/develop/typescript/nexus/feature-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/nexus/index",
+              "path": "/develop/typescript/nexus/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/nexus/quickstart",
+              "path": "/develop/typescript/nexus/quickstart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/nexus/standalone-operations",
+              "path": "/develop/typescript/nexus/standalone-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/platform/enriching-ui",
+              "path": "/develop/typescript/platform/enriching-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/platform/index",
+              "path": "/develop/typescript/platform/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/platform/observability",
+              "path": "/develop/typescript/platform/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/set-up-your-local-typescript",
+              "path": "/develop/typescript/set-up-your-local-typescript",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/worker-versioning-legacy",
+              "path": "/develop/typescript/worker-versioning-legacy"
+            },
+            {
+              "id": "develop/typescript/workers/index",
+              "path": "/develop/typescript/workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workers/interceptors",
+              "path": "/develop/typescript/workers/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workers/run-worker-process",
+              "path": "/develop/typescript/workers/run-worker-process",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workers/serverless-workers/aws-lambda",
+              "path": "/develop/typescript/workers/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workers/serverless-workers/cloud-run",
+              "path": "/develop/typescript/workers/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workers/serverless-workers/index",
+              "path": "/develop/typescript/workers/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/basics",
+              "path": "/develop/typescript/workflows/basics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/cancellation",
+              "path": "/develop/typescript/workflows/cancellation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/cancellation-scopes",
+              "path": "/develop/typescript/workflows/cancellation-scopes",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/child-workflows",
+              "path": "/develop/typescript/workflows/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/continue-as-new",
+              "path": "/develop/typescript/workflows/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/index",
+              "path": "/develop/typescript/workflows/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/message-passing",
+              "path": "/develop/typescript/workflows/message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/schedules",
+              "path": "/develop/typescript/workflows/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/timeouts",
+              "path": "/develop/typescript/workflows/timeouts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/timers",
+              "path": "/develop/typescript/workflows/timers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/versioning",
+              "path": "/develop/typescript/workflows/versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/typescript/workflows/workflow-streams",
+              "path": "/develop/typescript/workflows/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/configuration",
+              "path": "/develop/worker-performance/configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/index",
+              "path": "/develop/worker-performance/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/metrics",
+              "path": "/develop/worker-performance/metrics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/runtime-tuning",
+              "path": "/develop/worker-performance/runtime-tuning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/task-queues",
+              "path": "/develop/worker-performance/task-queues",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-performance/workflow-cache",
+              "path": "/develop/worker-performance/workflow-cache",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "develop/worker-tuning-reference",
+              "path": "/develop/worker-tuning-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activities",
+              "path": "/activities",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-definition",
+              "path": "/activity-definition",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-execution",
+              "path": "/activity-execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/delete",
+              "path": "/activity-operations/delete",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/index",
+              "path": "/activity-operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/pause",
+              "path": "/activity-operations/pause",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/request-cancel",
+              "path": "/activity-operations/request-cancel",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/reset",
+              "path": "/activity-operations/reset",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/terminate",
+              "path": "/activity-operations/terminate",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/unpause",
+              "path": "/activity-operations/unpause",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/activity-operations/update-options",
+              "path": "/activity-operations/update-options",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/local-activity",
+              "path": "/local-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/standalone-activity",
+              "path": "/standalone-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/activities/workflow-activity",
+              "path": "/workflow-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/application-failures",
+              "path": "/encyclopedia/application-failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/architecture/how-temporal-works",
+              "path": "/encyclopedia/architecture/how-temporal-works",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/architecture/temporal-architecture",
+              "path": "/encyclopedia/architecture/temporal-architecture",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/architecture/temporal-sdks",
+              "path": "/encyclopedia/architecture/temporal-sdks",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/child-workflows/child-workflows",
+              "path": "/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/child-workflows/parent-close-policy",
+              "path": "/parent-close-policy",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/context-propagation",
+              "path": "/encyclopedia/context-propagation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/codec-server",
+              "path": "/codec-server",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/dataconversion",
+              "path": "/dataconversion",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/default-custom-data-converters",
+              "path": "/default-custom-data-converters",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/external-storage",
+              "path": "/external-storage",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/failure-converter",
+              "path": "/failure-converter",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/key-management",
+              "path": "/key-management",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/payload-codec",
+              "path": "/payload-codec",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/payload-converter",
+              "path": "/payload-converter",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/data-conversion/remote-data-encoding",
+              "path": "/remote-data-encoding",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/detecting-activity-failures",
+              "path": "/encyclopedia/detecting-activity-failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/detecting-workflow-failures",
+              "path": "/encyclopedia/detecting-workflow-failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history",
+              "path": "/encyclopedia/event-history/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history-dotnet",
+              "path": "/encyclopedia/event-history/event-history-dotnet",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history-go",
+              "path": "/encyclopedia/event-history/event-history-go",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history-java",
+              "path": "/encyclopedia/event-history/event-history-java",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history-python",
+              "path": "/encyclopedia/event-history/event-history-python",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/event-history/event-history-typescript",
+              "path": "/encyclopedia/event-history/event-history-typescript",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/extensibility",
+              "path": "/encyclopedia/extensibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/failures-and-error-handling",
+              "path": "/encyclopedia/failures-and-error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/index",
+              "path": "/encyclopedia/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/interceptors",
+              "path": "/encyclopedia/interceptors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/namespaces/global-namespaces",
+              "path": "/global-namespace",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/namespaces/namespaces",
+              "path": "/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexgen",
+              "path": "/nexus/nexgen",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus",
+              "path": "/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-endpoints",
+              "path": "/nexus/endpoints",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-error-handling",
+              "path": "/nexus/error-handling",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-execution-debugging",
+              "path": "/nexus/execution-debugging",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-metrics",
+              "path": "/nexus/metrics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-operations",
+              "path": "/nexus/operations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-patterns",
+              "path": "/nexus/patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-registry",
+              "path": "/nexus/registry",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-security",
+              "path": "/nexus/security",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-services",
+              "path": "/nexus/services",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/nexus-standalone-activity",
+              "path": "/nexus/standalone-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/standalone-nexus-operation",
+              "path": "/standalone-nexus-operation",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/nexus/temporal-operation-handler",
+              "path": "/nexus/temporal-operation-handler",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/plugins",
+              "path": "/encyclopedia/plugins",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/retry-policies",
+              "path": "/encyclopedia/retry-policies",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal",
+              "path": "/temporal",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-client",
+              "path": "/encyclopedia/temporal-client",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/archival",
+              "path": "/temporal-service/archival",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/multi-cluster-replication",
+              "path": "/temporal-service/multi-cluster-replication",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/persistence",
+              "path": "/temporal-service/persistence",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/temporal-server",
+              "path": "/temporal-service/temporal-server",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/temporal-service",
+              "path": "/temporal-service",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/temporal-service-configuration",
+              "path": "/temporal-service/configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/temporal-service/visibility",
+              "path": "/temporal-service/visibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/visibility/dual-visibility",
+              "path": "/dual-visibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/visibility/list-filter",
+              "path": "/list-filter",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/visibility/search-attribute",
+              "path": "/search-attribute",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/visibility/visibility",
+              "path": "/visibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/worker-versioning-legacy",
+              "path": "/encyclopedia/worker-versioning-legacy"
+            },
+            {
+              "id": "encyclopedia/workers/serverless-workers/serverless-workers",
+              "path": "/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/serverless-workers/serverless-workers-agentcore",
+              "path": "/serverless-workers/agentcore",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/serverless-workers/serverless-workers-aws-lambda",
+              "path": "/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/serverless-workers/serverless-workers-cloud-run",
+              "path": "/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/sticky-execution",
+              "path": "/sticky-execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/task-queue-naming",
+              "path": "/task-queue/naming",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/task-queues",
+              "path": "/task-queue",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/task-routing-worker-sessions",
+              "path": "/task-routing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/tasks",
+              "path": "/tasks",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/worker-shutdown",
+              "path": "/encyclopedia/workers/worker-shutdown",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/worker-versioning",
+              "path": "/worker-versioning",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workers/workers",
+              "path": "/workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow-message-passing/handling-messages",
+              "path": "/handling-messages",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow-message-passing/sending-messages",
+              "path": "/sending-messages",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow-message-passing/workflow-message-passing",
+              "path": "/encyclopedia/workflow-message-passing/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow-message-passing/workflow-streams",
+              "path": "/workflow-streams",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/cancellation-and-termination",
+              "path": "/encyclopedia/workflow/cancellation-and-termination",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/cron-job",
+              "path": "/cron-job",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/dynamic-handler",
+              "path": "/dynamic-handler",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/patching",
+              "path": "/patching",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-definition",
+              "path": "/workflow-definition",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/continue-as-new",
+              "path": "/workflow-execution/continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/event",
+              "path": "/workflow-execution/event",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/limits",
+              "path": "/workflow-execution/limits",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/timers-delays",
+              "path": "/workflow-execution/timers-delays",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/workflow-execution",
+              "path": "/workflow-execution",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-execution/workflowid-runid",
+              "path": "/workflow-execution/workflowid-runid",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-overview",
+              "path": "/workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-pause",
+              "path": "/encyclopedia/workflow/workflow-pause",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "encyclopedia/workflow/workflow-schedule",
+              "path": "/schedule",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/actions",
+              "path": "/evaluate/cloud/actions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/index",
+              "path": "/evaluate/cloud/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/limits",
+              "path": "/evaluate/cloud/limits",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/pricing",
+              "path": "/cloud/pricing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/regions",
+              "path": "/evaluate/cloud/regions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/security",
+              "path": "/evaluate/cloud/security",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/cloud/support",
+              "path": "/evaluate/cloud/support",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/cancellation-and-termination",
+              "path": "/evaluate/features/cancellation-and-termination",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/child-workflows",
+              "path": "/evaluate/features/child-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/cloud-vs-self-hosted-features",
+              "path": "/evaluate/features/cloud-vs-self-hosted-features"
+            },
+            {
+              "id": "evaluate/features/core-primitives",
+              "path": "/evaluate/features/core-primitives",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/data-encryption",
+              "path": "/evaluate/features/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/index",
+              "path": "/evaluate/features/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/job-queue",
+              "path": "/evaluate/features/job-queue",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/nexus",
+              "path": "/evaluate/features/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/observability",
+              "path": "/evaluate/features/observability",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/schedules",
+              "path": "/evaluate/features/schedules",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/serverless-workers/index",
+              "path": "/evaluate/features/serverless-workers/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/timeouts-and-retries",
+              "path": "/evaluate/features/timeouts-and-retries",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/features/workflow-message-passing",
+              "path": "/evaluate/features/workflow-message-passing",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/index",
+              "path": "/evaluate/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/product-release-stages",
+              "path": "/evaluate/product-release-stages",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/understanding-temporal",
+              "path": "/evaluate/understanding-temporal",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/use-cases-design-patterns",
+              "path": "/evaluate/use-cases-design-patterns",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "evaluate/why-temporal",
+              "path": "/evaluate/why-temporal",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "glossary",
+              "path": "/glossary",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/celery-to-standalone-activity",
+              "path": "/guides/celery-to-standalone-activity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/durable-agent-on-agentcore",
+              "path": "/guides/durable-agent-on-agentcore",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/durable-gaming-sessions",
+              "path": "/guides/durable-gaming-sessions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/entity-pattern-loyalty-points",
+              "path": "/guides/entity-pattern-loyalty-points",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/index",
+              "path": "/guides",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/lock-shared-resources",
+              "path": "/guides/lock-shared-resources",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/rate-limit-downstream-apis",
+              "path": "/guides/rate-limit-downstream-apis",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/recover-without-restart",
+              "path": "/guides/recover-without-restart",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/reliable-document-approvals",
+              "path": "/guides/reliable-document-approvals",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/route-specialized-workloads",
+              "path": "/guides/route-specialized-workloads",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/temporary-rate-limit-increases",
+              "path": "/guides/temporary-rate-limit-increases",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "guides/worker-execution-affinity",
+              "path": "/guides/worker-execution-affinity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "index",
+              "path": "/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "integrations",
+              "path": "/integrations",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/data-encryption",
+              "path": "/production-deployment/data-encryption",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/index",
+              "path": "/production-deployment",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/archival",
+              "path": "/self-hosted-guide/archival",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/checklist",
+              "path": "/self-hosted-guide/production-checklist",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/defaults",
+              "path": "/self-hosted-guide/defaults",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/deployment",
+              "path": "/self-hosted-guide/deployment",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/embedded-server",
+              "path": "/self-hosted-guide/embedded-server",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/index",
+              "path": "/self-hosted-guide",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/monitoring",
+              "path": "/self-hosted-guide/monitoring",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/multi-cluster-replication",
+              "path": "/self-hosted-guide/multi-cluster-replication",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/namespaces",
+              "path": "/self-hosted-guide/namespaces",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/nexus",
+              "path": "/production-deployment/self-hosted-guide/nexus",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/security",
+              "path": "/self-hosted-guide/security",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/server-frontend-api-reference",
+              "path": "/self-hosted-guide/server-frontend-api-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/upgrade-server",
+              "path": "/self-hosted-guide/upgrade-server",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/custom-search-attributes",
+              "path": "/self-hosted-guide/visibility/custom-search-attributes",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/dual-visibility",
+              "path": "/self-hosted-guide/visibility/dual-visibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/elasticsearch",
+              "path": "/self-hosted-guide/visibility/elasticsearch",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/index",
+              "path": "/self-hosted-guide/visibility",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/legacy-standard",
+              "path": "/self-hosted-guide/visibility/legacy-standard",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/migrate",
+              "path": "/self-hosted-guide/visibility/migrate",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/mysql",
+              "path": "/self-hosted-guide/visibility/mysql",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/postgresql",
+              "path": "/self-hosted-guide/visibility/postgresql",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/self-hosted-guide/visibility/sqlite",
+              "path": "/self-hosted-guide/visibility/sqlite",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/temporal-proxy/configure",
+              "path": "/production-deployment/temporal-proxy/configure",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/temporal-proxy/deploy-kubernetes",
+              "path": "/production-deployment/temporal-proxy/deploy-kubernetes",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/temporal-proxy/encrypt-payloads",
+              "path": "/production-deployment/temporal-proxy/encrypt-payloads",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/temporal-proxy/index",
+              "path": "/production-deployment/temporal-proxy/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/deploy-workers-to-aws-eks",
+              "path": "/production-deployment/worker-deployments/deploy-workers-to-aws-eks",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/index",
+              "path": "/production-deployment/worker-deployments",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/kubernetes-controller",
+              "path": "/production-deployment/worker-deployments/kubernetes-controller",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/recover-pinned-workflows",
+              "path": "/production-deployment/worker-deployments/recover-pinned-workflows",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/agentcore",
+              "path": "/production-deployment/worker-deployments/serverless-workers/agentcore",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/agentcore-self-hosted-setup",
+              "path": "/production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/aws-lambda/index",
+              "path": "/production-deployment/worker-deployments/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development",
+              "path": "/production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup",
+              "path": "/production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/cloud-run/index",
+              "path": "/production-deployment/worker-deployments/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup",
+              "path": "/production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/serverless-workers/index",
+              "path": "/production-deployment/worker-deployments/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/unversioned-to-versioned-migration",
+              "path": "/production-deployment/worker-deployments/unversioned-to-versioned-migration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/worker-versioning/configure-worker",
+              "path": "/production-deployment/worker-deployments/worker-versioning/configure-worker",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/worker-versioning/index",
+              "path": "/production-deployment/worker-deployments/worker-versioning/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/worker-versioning/roll-out-and-pin",
+              "path": "/production-deployment/worker-deployments/worker-versioning/roll-out-and-pin",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/worker-versioning/sunset-and-gc",
+              "path": "/production-deployment/worker-deployments/worker-versioning/sunset-and-gc",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new",
+              "path": "/production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "quickstarts",
+              "path": "/quickstarts",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/api-reference",
+              "path": "/references/api-reference",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/client-environment-configuration",
+              "path": "/references/client-environment-configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/commands",
+              "path": "/references/commands",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/dynamic-configuration",
+              "path": "/references/dynamic-configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/events",
+              "path": "/references/events",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/failures",
+              "path": "/references/failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/index",
+              "path": "/references/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/operation-list",
+              "path": "/references/operation-list",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/sdk-metrics",
+              "path": "/references/sdk-metrics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/server-options",
+              "path": "/references/server-options",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/service-configuration",
+              "path": "/references/service-configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/service-metrics",
+              "path": "/references/service-metrics",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/web-ui-configuration",
+              "path": "/references/web-ui-configuration",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/web-ui-environment-variables",
+              "path": "/references/web-ui-environment-variables",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "references/workflow-task-errors",
+              "path": "/references/workflow-task-errors",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "security",
+              "path": "/security",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "tctl-v1/activity",
+              "path": "/tctl-v1/activity",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/admin",
+              "path": "/tctl-v1/admin",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/batch",
+              "path": "/tctl-v1/batch",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/cluster",
+              "path": "/tctl-v1/cluster",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/dataconverter",
+              "path": "/tctl-v1/dataconverter",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/index",
+              "path": "/tctl-v1",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/namespace",
+              "path": "/tctl-v1/namespace",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/schedule",
+              "path": "/tctl-v1/schedule",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/taskqueue",
+              "path": "/tctl-v1/taskqueue",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "tctl-v1/workflow",
+              "path": "/tctl-v1/workflow",
+              "sidebar": "tctl"
+            },
+            {
+              "id": "troubleshooting/blob-size-limit-error",
+              "path": "/troubleshooting/blob-size-limit-error",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/deadline-exceeded-error",
+              "path": "/troubleshooting/deadline-exceeded-error",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/execution-failures",
+              "path": "/troubleshooting/execution-failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/index",
+              "path": "/troubleshooting/",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/last-connection-error",
+              "path": "/troubleshooting/last-connection-error",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/performance-bottlenecks",
+              "path": "/troubleshooting/performance-bottlenecks",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/request-failures",
+              "path": "/troubleshooting/request-failures",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/schedule-missed-actions",
+              "path": "/troubleshooting/schedule-missed-actions",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/serverless-workers/aws-lambda",
+              "path": "/troubleshooting/serverless-workers/aws-lambda",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/serverless-workers/cloud-run",
+              "path": "/troubleshooting/serverless-workers/cloud-run",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/serverless-workers/index",
+              "path": "/troubleshooting/serverless-workers",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "troubleshooting/worker-capacity",
+              "path": "/troubleshooting/worker-capacity",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "web-ui",
+              "path": "/web-ui",
+              "sidebar": "documentation"
+            },
+            {
+              "id": "with-ai",
+              "path": "/with-ai",
+              "sidebar": "documentation"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "documentation": {
+              "link": {
+                "path": "/",
+                "label": "index"
+              }
+            },
+            "tctl": {
+              "link": {
+                "path": "/tctl-v1",
+                "label": "tctl-v1/index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    },
+    "ai-cookbook": {
+      "path": "/ai/cookbook",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/ai/cookbook",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "agentic-loop-tool-call-claude-python",
+              "path": "/ai/cookbook/agentic-loop-tool-call-claude-python"
+            },
+            {
+              "id": "agentic-loop-tool-call-openai-python",
+              "path": "/ai/cookbook/agentic-loop-tool-call-openai-python"
+            },
+            {
+              "id": "ai-sdk-by-vercel-typescript",
+              "path": "/ai/cookbook/ai-sdk-by-vercel-typescript"
+            },
+            {
+              "id": "basic-openai-python",
+              "path": "/ai/cookbook/basic-openai-python"
+            },
+            {
+              "id": "claim-check-pattern-python",
+              "path": "/ai/cookbook/claim-check-pattern-python"
+            },
+            {
+              "id": "guardrails-hard-rules-python",
+              "path": "/ai/cookbook/guardrails-hard-rules-python"
+            },
+            {
+              "id": "hello-world-durable-mcp-server",
+              "path": "/ai/cookbook/hello-world-durable-mcp-server"
+            },
+            {
+              "id": "hello-world-litellm-python",
+              "path": "/ai/cookbook/hello-world-litellm-python"
+            },
+            {
+              "id": "hello-world-openai-responses-python",
+              "path": "/ai/cookbook/hello-world-openai-responses-python"
+            },
+            {
+              "id": "http-retry-enhancement-python",
+              "path": "/ai/cookbook/http-retry-enhancement-python"
+            },
+            {
+              "id": "human-in-the-loop-python",
+              "path": "/ai/cookbook/human-in-the-loop-python"
+            },
+            {
+              "id": "index",
+              "path": "/ai/cookbook/"
+            },
+            {
+              "id": "multi-agent-adk-python",
+              "path": "/ai/cookbook/multi-agent-adk-python"
+            },
+            {
+              "id": "openai-agents-sdk-python",
+              "path": "/ai/cookbook/openai-agents-sdk-python"
+            },
+            {
+              "id": "strands-agents-python",
+              "path": "/ai/cookbook/strands-agents-python"
+            },
+            {
+              "id": "structured-output-openai-responses-python",
+              "path": "/ai/cookbook/structured-output-openai-responses-python"
+            },
+            {
+              "id": "tool-call-openai-python",
+              "path": "/ai/cookbook/tool-call-openai-python"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {}
+        }
+      ],
+      "breadcrumbs": true
+    }
+  },
+  "cloud-region-counts": {
+    "default": {
+      "counts": {
+        "aws": 14,
+        "gcp": 6
+      }
+    }
+  },
+  "cookbook-index": {
+    "default": {
+      "items": [
+        {
+          "id": "agentic-loop-tool-call-claude-python",
+          "title": "Basic agentic loop with Claude and tool calling",
+          "description": "Build a durable agentic loop in Python with Claude tool calling and Temporal.",
+          "tags": [
+            "agents",
+            "python",
+            "claude"
+          ],
+          "permalink": "/ai/cookbook/agentic-loop-tool-call-claude-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/agentic_loop_tool_call_claude_python",
+          "priority": 775
+        },
+        {
+          "id": "agentic-loop-tool-call-openai-python",
+          "title": "Basic agentic loop with OpenAI and tool calling",
+          "description": "Build a durable agentic loop in Python that calls a dynamic set of tools with Temporal and the OpenAI Responses API.",
+          "tags": [
+            "agents",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/agentic-loop-tool-call-openai-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/agentic_loop_tool_call_openai_python",
+          "priority": 775
+        },
+        {
+          "id": "ai-sdk-by-vercel-typescript",
+          "title": "Durable agent with tools using the AI SDK by Vercel",
+          "description": "Build a durable AI agent with the AI SDK by Vercel and Temporal that chooses tools to answer user questions.",
+          "tags": [
+            "agents",
+            "typescript",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/ai-sdk-by-vercel-typescript",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/ai_sdk_by_vercel_typescript",
+          "priority": 980
+        },
+        {
+          "id": "basic-openai-python",
+          "title": "Deep research",
+          "description": "Build a multi-agent deep research system in Python with Temporal and the OpenAI Responses API.",
+          "tags": [
+            "agents",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/basic-openai-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/deep_research/basic_openai_python",
+          "priority": 399
+        },
+        {
+          "id": "claim-check-pattern-python",
+          "title": "Claim check pattern with Temporal",
+          "description": "Use the Claim Check pattern with Temporal to keep large payloads out of Event History by offloading them to S3.",
+          "tags": [
+            "foundations",
+            "python",
+            "s3",
+            "claim-check"
+          ],
+          "permalink": "/ai/cookbook/claim-check-pattern-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/foundations/claim_check_pattern_python",
+          "priority": 400
+        },
+        {
+          "id": "guardrails-hard-rules-python",
+          "title": "Post-LLM guardrail with hard-rule overrides",
+          "description": "Build a durable content-moderation guardrail in Python with Temporal and Claude that layers deterministic hard rules over an LLM's verdict for auditable overrides.",
+          "tags": [
+            "agents",
+            "python",
+            "anthropic"
+          ],
+          "permalink": "/ai/cookbook/guardrails-hard-rules-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/guardrails_hard_rules_python",
+          "priority": 500
+        },
+        {
+          "id": "hello-world-durable-mcp-server",
+          "title": "Durable MCP weather server",
+          "description": "Build a durable MCP server in Python that runs weather tools reliably with Temporal Workflows.",
+          "tags": [
+            "mcp",
+            "python",
+            "workflows"
+          ],
+          "permalink": "/ai/cookbook/hello-world-durable-mcp-server",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/mcp/hello_world_durable_mcp_server",
+          "priority": 775
+        },
+        {
+          "id": "hello-world-litellm-python",
+          "title": "Hello world with LiteLLM",
+          "description": "Integrate LiteLLM into a durable Temporal Workflow in Python to call and switch between LLM providers.",
+          "tags": [
+            "foundations",
+            "python",
+            "litellm"
+          ],
+          "permalink": "/ai/cookbook/hello-world-litellm-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/foundations/hello_world_litellm_python",
+          "priority": 990
+        },
+        {
+          "id": "hello-world-openai-responses-python",
+          "title": "Hello world",
+          "description": "Call an LLM from a durable Temporal Workflow in Python using the OpenAI API library.",
+          "tags": [
+            "foundations",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/hello-world-openai-responses-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/foundations/hello_world_openai_responses_python",
+          "priority": 999
+        },
+        {
+          "id": "http-retry-enhancement-python",
+          "title": "Retry policy from HTTP responses",
+          "description": "Extract retry information from HTTP response headers and pass it to Temporal's retry mechanisms in Python.",
+          "tags": [
+            "foundations",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/http-retry-enhancement-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/foundations/http_retry_enhancement_python",
+          "priority": 920
+        },
+        {
+          "id": "human-in-the-loop-python",
+          "title": "Human-in-the-loop AI agent",
+          "description": "Add human-in-the-loop approval to a durable AI agent using Temporal Signals in Python.",
+          "tags": [
+            "agents",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/human-in-the-loop-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/human_in_the_loop_python",
+          "priority": 750
+        },
+        {
+          "id": "multi-agent-adk-python",
+          "title": "Multi-Agent Orchestration — Google ADK + Temporal",
+          "description": "Build a multi-agent pipeline (parallel + sequential) with Google ADK on Temporal — every LLM call and every I/O tool call runs as a durable activity.",
+          "tags": [
+            "agents",
+            "python",
+            "gemini",
+            "google-adk"
+          ],
+          "permalink": "/ai/cookbook/multi-agent-adk-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/multi_agent_adk_python",
+          "priority": 750
+        },
+        {
+          "id": "openai-agents-sdk-python",
+          "title": "Durable agent with tools using the OpenAI Agents SDK",
+          "description": "Build a durable AI agent with the OpenAI Agents SDK and Temporal that chooses tools to answer user questions.",
+          "tags": [
+            "agents",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/openai-agents-sdk-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/openai_agents_sdk_python",
+          "priority": 750
+        },
+        {
+          "id": "strands-agents-python",
+          "title": "Durable agent with MCP and Activity-backed tools using the Strands Agents SDK",
+          "description": "Build a durable AI agent in Python with Temporal and the Strands Agents SDK plugin, combining an MCP server tool with an Activity-backed tool that calls a live HTTP feed.",
+          "tags": [
+            "agents",
+            "python",
+            "bedrock"
+          ],
+          "permalink": "/ai/cookbook/strands-agents-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/strands_agents_python",
+          "priority": 750
+        },
+        {
+          "id": "structured-output-openai-responses-python",
+          "title": "Structured outputs with Temporal and OpenAI",
+          "description": "Use Temporal and the OpenAI Responses API to reliably request output conforming to a specific data structure.",
+          "tags": [
+            "foundations",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/structured-output-openai-responses-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/foundations/structured_output_openai_responses_python",
+          "priority": 980
+        },
+        {
+          "id": "tool-call-openai-python",
+          "title": "Tool calling agent",
+          "description": "Build a simple, non-looping Python agent that lets the LLM choose tools and then invokes the chosen tools with Temporal and OpenAI.",
+          "tags": [
+            "agents",
+            "python",
+            "openai"
+          ],
+          "permalink": "/ai/cookbook/tool-call-openai-python",
+          "source": "https://github.com/temporalio/ai-cookbook/blob/main/agents/tool_call_openai_python",
+          "priority": 775
+        }
+      ]
+    }
+  }
+}

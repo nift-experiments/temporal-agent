@@ -343,3 +343,9 @@ The full unchanged production baseline and its warm reproduction succeeded. `inv
 ## T2 parity contract frozen
 
 126 reference states, 25 interaction observations across both viewports, 563 concrete redirect samples, Markdown negotiation/missing-route checks, and complete upstream OG validation are preserved under `investigation/t2`. Remote transport and inherited limitations are explicit in `investigation/PARITY-CONTRACT.md`. T2 complete; T3 architecture proof is next. No migrated corpus or performance claim yet.
+
+## T3 representative proof complete
+
+Seven real routes in each source model pass all body semantics, 42 browser states per migration, 31 desktop/mobile interaction observations, and five incremental-versus-clean publication mutation checks. Retained sidebar positioning additionally verified visually. Evidence: investigation/t3 and T3-ARCHITECTURE.md. Temporary baseline dependency symlink is ignored; final fresh-clone gate still pending.
+
+Next T4: scale ordinary corpus and factor shared shells/navigation with authoritative authored inputs. T5 generated/special, T6 whole-site parity, T7 initial benchmarks/lifecycle, T8 profiling, T9 final campaign remain required. No whole-site parity or benchmark conclusion yet. Full campaign continues automatically; no current exceptional blocker.
