@@ -1,0 +1,79 @@
+[
+  {
+    "project": "temporal",
+    "fault": "body",
+    "injected_file": ".cache/rendered/cli.html",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "fault": "shell",
+    "injected_file": ".cache/shell/cli.prefix.html",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "fault": "browser",
+    "injected_file": ".cache/bundle/browser/client-5728133c06c6a036.js",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "fault": "server",
+    "injected_file": ".cache/bundle/server/server.cjs",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "fault": "download",
+    "injected_file": "public/cli/setup-cli.md",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal",
+    "fault": "compiled-mdx",
+    "injected_file": ".cache/mdx/docs/cli/setup-cli.mdx.jsx",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "fault": "body",
+    "injected_file": ".cache/rendered/cli.html",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "fault": "shell",
+    "injected_file": ".cache/shell/cli.prefix.html",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "fault": "browser",
+    "injected_file": ".cache/bundle/browser/client-d6301fef8c0b3bca.js",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "fault": "server",
+    "injected_file": ".cache/bundle/server/server.cjs",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  },
+  {
+    "project": "temporal-agent",
+    "fault": "download",
+    "injected_file": "public/cli/setup-cli.md",
+    "normal_repaired_to_independent_publication": true,
+    "differences": []
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "project": "temporal",
+  "case": "generated-synced",
+  "incremental_seconds": 5.616482995916158,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 5.616482995916158,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": false,
+    "stages": {
+      "local_cookbook_inputs": 0.079824252,
+      "markdown_mdx": 0.37868850299999995,
+      "browser_bundle": 9.596699999997327e-05,
+      "retained_components_server_bundle": 2.357887974,
+      "react_ssr_or_html_source": 0.21815157099999988,
+      "shell_and_dependencies": 0.18634387700000024,
+      "static_and_browser_publication": 0.11930234900000004,
+      "markdown_downloads_or_static": 1.666311945,
+      "sitemap": 0.03986585300000024,
+      "nift_composition": 0.08394286899999952,
+      "complete": 5.5017734449999995
+    },
+    "files": 2996,
+    "bytes": 220843278,
+    "scope": "Complete production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}

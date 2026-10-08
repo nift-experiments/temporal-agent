@@ -1,0 +1,152 @@
+{
+  "project": "temporal",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs",
+    "--force"
+  ],
+  "timestamp_utc": "2026-10-08T18:05:08.395168+00:00",
+  "exit_code": 0,
+  "wall_seconds": 27.453806208912283,
+  "maximum_individual_descendant_rss_mib": 1025.30859375,
+  "sampled_descendant_rss_sum_peak_mib": 1448.5859375,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": true,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": true,
+    "stages": {
+      "local_cookbook_inputs": 0.07245223399999999,
+      "markdown_mdx": 10.642007223999999,
+      "browser_bundle": 2.0811237569999994,
+      "retained_components_server_bundle": 2.408383212000001,
+      "react_ssr_or_html_source": 2.8633681209999975,
+      "shell_and_dependencies": 6.741902482000001,
+      "static_and_browser_publication": 0.13550834499999836,
+      "markdown_downloads_or_static": 1.5361754559999972,
+      "sitemap": 0.040495867000001455,
+      "nift_composition": 0.34248331699999834,
+      "complete": 27.260476894
+    },
+    "files": 2996,
+    "bytes": 220842371,
+    "scope": "Complete production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}
+{
+  "project": "temporal",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs"
+  ],
+  "timestamp_utc": "2026-10-08T18:05:11.748583+00:00",
+  "exit_code": 0,
+  "wall_seconds": 3.0755859459750354,
+  "maximum_individual_descendant_rss_mib": 462.6015625,
+  "sampled_descendant_rss_sum_peak_mib": 456.9453125,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": false,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": false,
+    "stages": {
+      "local_cookbook_inputs": 0.08083443700000001,
+      "markdown_mdx": 0.22874819500000002,
+      "browser_bundle": 3.5061000000041534e-05,
+      "retained_components_server_bundle": 0.16714303700000005,
+      "react_ssr_or_html_source": 0.16331028400000003,
+      "shell_and_dependencies": 0.1781658830000001,
+      "static_and_browser_publication": 0.10710945300000003,
+      "markdown_downloads_or_static": 1.5748947730000002,
+      "sitemap": 0.037435618000000434,
+      "nift_composition": 0.08621908299999996,
+      "complete": 2.972591621
+    },
+    "files": 2996,
+    "bytes": 220842371,
+    "scope": "Complete production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}
+{'project': 'temporal', 'unchanged_equals_independent_forced': True, 'differences': []}
+{
+  "project": "temporal-agent",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs",
+    "--force"
+  ],
+  "timestamp_utc": "2026-10-08T18:05:23.078036+00:00",
+  "exit_code": 0,
+  "wall_seconds": 11.052541222888976,
+  "maximum_individual_descendant_rss_mib": 774.65234375,
+  "sampled_descendant_rss_sum_peak_mib": 856.41015625,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": true,
+  "components": {
+    "sourceModel": "maintained HTML",
+    "force": true,
+    "stages": {
+      "browser_bundle": 2.048849389,
+      "retained_components_server_bundle": 0.9071415479999996,
+      "react_ssr_or_html_source": 0.5715924610000002,
+      "shell_and_dependencies": 6.784228938,
+      "static_and_browser_publication": 0.1284449829999994,
+      "markdown_downloads_or_static": 0.028981652999998914,
+      "sitemap": 0.03783654200000092,
+      "nift_composition": 0.342660656,
+      "complete": 10.905530162000002
+    },
+    "files": 2996,
+    "bytes": 220532933,
+    "scope": "Complete maintained-HTML production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}
+{
+  "project": "temporal-agent",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs"
+  ],
+  "timestamp_utc": "2026-10-08T18:05:24.328756+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.958452652906999,
+  "maximum_individual_descendant_rss_mib": 154.33984375,
+  "sampled_descendant_rss_sum_peak_mib": 156.1171875,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": false,
+  "components": {
+    "sourceModel": "maintained HTML",
+    "force": false,
+    "stages": {
+      "browser_bundle": 1.2610999999999705e-05,
+      "retained_components_server_bundle": 3.197599999999312e-05,
+      "react_ssr_or_html_source": 0.358253066,
+      "shell_and_dependencies": 0.16283611199999995,
+      "static_and_browser_publication": 0.14708031600000004,
+      "markdown_downloads_or_static": 0.03408583199999998,
+      "sitemap": 0.04331211300000007,
+      "nift_composition": 0.05558278500000006,
+      "complete": 0.877987132
+    },
+    "files": 2996,
+    "bytes": 220532933,
+    "scope": "Complete maintained-HTML production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}
+{'project': 'temporal-agent', 'unchanged_equals_independent_forced': True, 'differences': []}

@@ -1,0 +1,14 @@
+errors [] warnings 2
+browser_bundle 2.459s
+errors [] warnings 0
+retained_components_server_bundle 0.829s
+Error: OG metadata needs explicit maintenance: node tools/refresh-og.cjs --route /tags/account
+    at /home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:13:274
+    at Object.<anonymous> (/home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:19:705)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47

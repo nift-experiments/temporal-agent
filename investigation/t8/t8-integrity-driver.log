@@ -1,0 +1,14 @@
+{'derived_aws_count_before': 14, 'derived_aws_count_after': 15, 'incremental_equals_independent_forced': False, 'differences': ['cloud/connectivity/aws-connectivity/index.html', 'evaluate/cloud/regions/index.html']}
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/region-input-equality.py", line 10, in <module>
+    if diff:raise RuntimeError('Included reference invalidation failed')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Included reference invalidation failed
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/t8-integrity-driver.py", line 5, in <module>
+    subprocess.run(['python3',str(root/'tools'/script)],check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['python3', '/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/region-input-equality.py']' returned non-zero exit status 1.

@@ -1,0 +1,17 @@
+browser_bundle 0.000s
+retained_components_server_bundle 0.021s
+react_ssr_or_html_source 0.378s
+shell_and_dependencies 0.428s
+static_and_browser_publication 0.130s
+markdown_downloads_or_static 0.104s
+sitemap 0.047s
+built cli/setup-cli/index
+    ↳ tracked title changed
+    ↳ dependency changed: .cache/rendered/cli.html
+    ↳ dependency changed: .cache/shell/cli.prefix.html
+    ↳ dependency changed: .cache/shell/cli.suffix.html
+    ↳ dependency changed: html/cli/setup-cli.html
+📦 1 file rebuilt successfully
+time taken: 0.083725 seconds
+nift_composition 0.096s
+complete 1.287s

@@ -1,0 +1,590 @@
+[
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop theme switch",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop tabs click",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop tabs keyboard",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop Markdown copy",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop code copy",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop annotated code",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop SDK tabs",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop accordion open",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop accordion closed",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop retry island",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop diagram zoom",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop search local hit",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop search navigate",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop assistant delegation",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "desktop feedback open",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile theme switch",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile navigation open",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile tabs click",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile tabs keyboard",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile Markdown copy",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile code copy",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile annotated code",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile SDK tabs",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile accordion open",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile accordion closed",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile retry island",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile diagram zoom",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile search local hit",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile search navigate",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile assistant delegation",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "interactions",
+    "case": "mobile feedback open",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "desktop event-history next",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "desktop event-history previous",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "desktop event-history expanded",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "desktop event-history close",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "mobile event-history next",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "mobile event-history previous",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "mobile event-history expanded",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "special",
+    "case": "mobile event-history close",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "desktop integration filter",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "desktop priority SDK section",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "desktop priority simulator section",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "desktop search SDK filter",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "desktop search SDK clear",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "mobile integration filter",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "mobile priority SDK section",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "mobile priority simulator section",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "mobile search SDK filter",
+    "identical": true
+  },
+  {
+    "project": "authored",
+    "family": "supplemental",
+    "case": "mobile search SDK clear",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop theme switch",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop tabs click",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop tabs keyboard",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop Markdown copy",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop code copy",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop annotated code",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop SDK tabs",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop accordion open",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop accordion closed",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop retry island",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop diagram zoom",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop search local hit",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop search navigate",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop assistant delegation",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "desktop feedback open",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile theme switch",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile navigation open",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile tabs click",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile tabs keyboard",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile Markdown copy",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile code copy",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile annotated code",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile SDK tabs",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile accordion open",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile accordion closed",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile retry island",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile diagram zoom",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile search local hit",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile search navigate",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile assistant delegation",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "interactions",
+    "case": "mobile feedback open",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "desktop event-history next",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "desktop event-history previous",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "desktop event-history expanded",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "desktop event-history close",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "mobile event-history next",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "mobile event-history previous",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "mobile event-history expanded",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "special",
+    "case": "mobile event-history close",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "desktop integration filter",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "desktop priority SDK section",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "desktop priority simulator section",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "desktop search SDK filter",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "desktop search SDK clear",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "mobile integration filter",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "mobile priority SDK section",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "mobile priority simulator section",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "mobile search SDK filter",
+    "identical": true
+  },
+  {
+    "project": "agent",
+    "family": "supplemental",
+    "case": "mobile search SDK clear",
+    "identical": true
+  }
+]

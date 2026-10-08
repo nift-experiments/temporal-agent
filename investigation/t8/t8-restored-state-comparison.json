@@ -1,0 +1,2642 @@
+[
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-authored",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "dark",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "light",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "desktop",
+      "system",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "dark",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "light",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cli/setup-cli"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/environment-configuration"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/python/set-up-your-local-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/best-practices/cost-governance"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cli/command-reference/workflow"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/manage-access/permissions-reference"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/develop/python/workflows/"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/connectivity/aws-connectivity"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/activity-retry-simulator"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/serverless-workers"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/standalone-activities"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/demos/priority-fairness-walkthrough"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/encyclopedia/architecture/how-temporal-works"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/encyclopedia/event-history/event-history-python"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/ai"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/integrations"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/ai/cookbook/ai-sdk-by-vercel-typescript"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/high-availability"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/search"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/404.html"
+    ],
+    "identical": true,
+    "differences": {}
+  },
+  {
+    "label": "t8-full-agent",
+    "state": [
+      "mobile",
+      "system",
+      "/cloud/slo"
+    ],
+    "identical": true,
+    "differences": {}
+  }
+]

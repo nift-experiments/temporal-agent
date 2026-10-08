@@ -1,0 +1,3 @@
+// Route descriptors for the two pinned, unversioned documentation groups.
+// Authored rows come from MDX/frontmatter; rendered rows are explicit metadata.
+exports.prepare=function(data,rows){const groups=data['docusaurus-plugin-content-docs'];for(const [key,value] of Object.entries(groups)){if(value.versions.length!==1)throw Error('Only pinned single-version groups are supported');value.versions[0].docs=rows.filter(r=>(r.source||!r.kind)&&r.metadata.id&&((r.route.startsWith('/ai/cookbook'))===(key==='ai-cookbook'))).map(r=>({id:r.metadata.id,path:r.route,...(r.metadata.sidebar?{sidebar:r.metadata.sidebar}:{})}));}return data;};

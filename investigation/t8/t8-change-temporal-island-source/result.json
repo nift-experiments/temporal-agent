@@ -1,0 +1,31 @@
+{
+  "project": "temporal",
+  "case": "island-source",
+  "incremental_seconds": 17.710884031141177,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 17.710884031141177,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": false,
+    "stages": {
+      "local_cookbook_inputs": 0.08175581900000001,
+      "markdown_mdx": 0.22150107700000007,
+      "browser_bundle": 2.25858843,
+      "retained_components_server_bundle": 2.073737582,
+      "react_ssr_or_html_source": 3.3710305089999992,
+      "shell_and_dependencies": 6.8915915949999995,
+      "static_and_browser_publication": 0.144955962,
+      "markdown_downloads_or_static": 1.7059006530000007,
+      "sitemap": 0.04437062299999889,
+      "nift_composition": 0.3816557350000003,
+      "complete": 17.535232652999998
+    },
+    "files": 2996,
+    "bytes": 220842423,
+    "scope": "Complete production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}

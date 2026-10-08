@@ -1,0 +1,28 @@
+{
+  "scope": "All published HTML references; pinned redirects recognized; external services not exercised",
+  "results": [
+    {
+      "project": "reference",
+      "htmlRoutes": 962,
+      "internalEdges": 75887,
+      "missing": [],
+      "redirected": []
+    },
+    {
+      "project": "temporal",
+      "htmlRoutes": 962,
+      "internalEdges": 112470,
+      "missing": [],
+      "redirected": [],
+      "newMissing": []
+    },
+    {
+      "project": "temporal-agent",
+      "htmlRoutes": 962,
+      "internalEdges": 112470,
+      "missing": [],
+      "redirected": [],
+      "newMissing": []
+    }
+  ]
+}

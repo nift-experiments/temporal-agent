@@ -1,0 +1,122 @@
+[
+  {
+    "elapsed_seconds": 0.0012944668997079134,
+    "rss_sum_mib": 0.6171875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.05179600301198661,
+    "rss_sum_mib": 70.4140625,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.10221729893237352,
+    "rss_sum_mib": 83.0390625,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.1528930130880326,
+    "rss_sum_mib": 78.34375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.20334130409173667,
+    "rss_sum_mib": 81.328125,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.2538484400138259,
+    "rss_sum_mib": 84.73046875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.30435891007073224,
+    "rss_sum_mib": 86.87109375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.3548245399724692,
+    "rss_sum_mib": 83.96875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.40526102599687874,
+    "rss_sum_mib": 90.09375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.45579125196672976,
+    "rss_sum_mib": 88.5703125,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.5062297040130943,
+    "rss_sum_mib": 95.328125,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.5566467910539359,
+    "rss_sum_mib": 89.1875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.6070864810608327,
+    "rss_sum_mib": 91.7734375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.6576916119083762,
+    "rss_sum_mib": 93.31640625,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.7081178498920053,
+    "rss_sum_mib": 93.79296875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.7586674059275538,
+    "rss_sum_mib": 95.75,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.8091645170934498,
+    "rss_sum_mib": 148.75,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.859667229000479,
+    "rss_sum_mib": 106.99609375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.9102326319552958,
+    "rss_sum_mib": 109.23046875,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 0.9606673601083457,
+    "rss_sum_mib": 123.34375,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 1.0110799740068614,
+    "rss_sum_mib": 110.65625,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 1.061592672020197,
+    "rss_sum_mib": 126.80078125,
+    "processes": 1
+  },
+  {
+    "elapsed_seconds": 1.1121702580712736,
+    "rss_sum_mib": 134.75,
+    "processes": 2
+  },
+  {
+    "elapsed_seconds": 1.1626378779765218,
+    "rss_sum_mib": 126.9453125,
+    "processes": 1
+  }
+]

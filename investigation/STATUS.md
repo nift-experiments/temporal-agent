@@ -84,3 +84,6 @@ T6 accepted: whole-site static/link/token audits plus representative visual/brow
 
 
 T7 accepted: initial five-sample warm-full evidence, unchanged/upstream production edits, 26 exact lifecycle/change checks and restored whole-site/browser parity. See investigation/T7-INITIAL-PROFILING.md. T8–T9 remain; full campaign continues automatically.
+
+
+T8 accepted: content-verified MDX/bundle/body/shell/projection caches, transitive included-MDX TOC invalidation, 20 changed-input + six lifecycle equality checks, 11 corruption repairs, included region-reference equality and whole-site/browser revalidation. See investigation/T8-OPTIMIZATION.md. T9 final campaign and public clean-clone gate remain; continue automatically.

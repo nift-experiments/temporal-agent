@@ -1,0 +1,9 @@
+{
+  "project": "temporal",
+  "case": "route-delete",
+  "incremental_seconds": 28.616889993892983,
+  "files": 2997,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

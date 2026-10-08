@@ -1,0 +1,9 @@
+{
+  "project": "temporal",
+  "case": "route-rename",
+  "incremental_seconds": 28.506655392004177,
+  "files": 3000,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

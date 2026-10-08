@@ -1,0 +1,29 @@
+{
+  "project": "temporal-agent",
+  "case": "body-1",
+  "incremental_seconds": 11.007853362010792,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 11.007853362010792,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true,
+  "components": {
+    "sourceModel": "maintained HTML",
+    "force": false,
+    "stages": {
+      "browser_bundle": 2.12100463,
+      "retained_components_server_bundle": 0.8924648390000002,
+      "react_ssr_or_html_source": 0.6313630829999998,
+      "shell_and_dependencies": 6.833271997,
+      "static_and_browser_publication": 0.13427467499999876,
+      "markdown_downloads_or_static": 0.09000727000000006,
+      "sitemap": 0.03834093699999903,
+      "nift_composition": 0.05735714600000028,
+      "complete": 10.891789076
+    },
+    "files": 2996,
+    "bytes": 220533001,
+    "scope": "Complete maintained-HTML production publication; T6 parity accepted; lifecycle and final benchmark campaign in progress"
+  }
+}

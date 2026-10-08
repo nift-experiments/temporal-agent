@@ -1,0 +1,18 @@
+{'derived_aws_count_before': 14, 'derived_aws_count_after': 15, 'incremental_equals_independent_forced': True, 'differences': []}
+{'project': 'temporal', 'fault': 'body', 'injected_file': '.cache/rendered/cli.html', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal', 'fault': 'shell', 'injected_file': '.cache/shell/cli.prefix.html', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal', 'fault': 'browser', 'injected_file': '.cache/bundle/browser/client-5728133c06c6a036.js', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal', 'fault': 'server', 'injected_file': '.cache/bundle/server/server.cjs', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal', 'fault': 'download', 'injected_file': 'public/cli/setup-cli.md', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal', 'fault': 'compiled-mdx', 'injected_file': '.cache/mdx/docs/cli/setup-cli.mdx.jsx', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal-agent', 'fault': 'body', 'injected_file': '.cache/rendered/cli.html', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal-agent', 'fault': 'shell', 'injected_file': '.cache/shell/cli.prefix.html', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal-agent', 'fault': 'browser', 'injected_file': '.cache/bundle/browser/client-d6301fef8c0b3bca.js', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal-agent', 'fault': 'server', 'injected_file': '.cache/bundle/server/server.cjs', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{'project': 'temporal-agent', 'fault': 'download', 'injected_file': 'public/cli/setup-cli.md', 'normal_repaired_to_independent_publication': True, 'differences': []}
+{"project": "temporal", "case": "route-add", "incremental_seconds": 28.307904236018658, "files": 3000, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal", "case": "route-rename", "incremental_seconds": 28.506655392004177, "files": 3000, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal", "case": "route-delete", "incremental_seconds": 28.616889993892983, "files": 2997, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal-agent", "case": "route-add", "incremental_seconds": 10.981674812035635, "files": 2999, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal-agent", "case": "route-rename", "incremental_seconds": 11.311403968837112, "files": 2999, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal-agent", "case": "route-delete", "incremental_seconds": 11.122441813116893, "files": 2997, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
