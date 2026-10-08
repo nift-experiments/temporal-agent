@@ -1,0 +1,26 @@
+{
+  "pushfeedback.esm.js": {
+    "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+    "bytes": 7604,
+    "sha256": "37b127d32adea904223ac5568fa640a0f1f76b36d275a20c827de30b1263a409",
+    "resolved_version": "0.1.87"
+  },
+  "pushfeedback.css": {
+    "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+    "bytes": 10576,
+    "sha256": "16bdd9f112d0d1734b6d7fb139148db3223a3a2d69c08a9a38400b2b40fff0fb",
+    "resolved_version": "0.1.87"
+  },
+  "p-ed68abdd.js": {
+    "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+    "bytes": 9413,
+    "sha256": "1552e4d728cd0377b366216fe2ea69d82b218a0c9c9bf17e49217479457476cb",
+    "resolved_version": "0.1.87"
+  },
+  "p-a94be4c1.entry.js": {
+    "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+    "bytes": 91162,
+    "sha256": "24c53b8b4d9aae6a5eb06c764fdc201c1d47bba7cc8a8303d9a1ac650531cbc9",
+    "resolved_version": "0.1.87"
+  }
+}

@@ -1,0 +1,940 @@
+{
+  "scope": "Frozen upstream interactions; local fixture transports and clipboard, no remote/backend verification",
+  "cases": [
+    {
+      "name": "desktop theme switch",
+      "theme": "light",
+      "choice": "light"
+    },
+    {
+      "name": "desktop tabs click",
+      "tabs": [
+        {
+          "label": "macOS",
+          "selected": "false"
+        },
+        {
+          "label": "Linux",
+          "selected": "true"
+        },
+        {
+          "label": "Windows",
+          "selected": "false"
+        },
+        {
+          "label": "Docker",
+          "selected": "false"
+        }
+      ]
+    },
+    {
+      "name": "desktop tabs keyboard",
+      "focused": "Windows",
+      "selected": [
+        "Linux"
+      ]
+    },
+    {
+      "name": "desktop Markdown copy",
+      "bytes": 8099,
+      "matchesPublication": true
+    },
+    {
+      "name": "desktop code copy",
+      "copied": "brew install temporal"
+    },
+    {
+      "name": "desktop integration filter",
+      "query": "LangSmith",
+      "mainText": "Integrations\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /integrations.md. Append .md to any page URL to fetch its Markdown.\nIntegrations\nCopy for LLM\nView Markdown\n\nBrowse integrations for Temporal SDKs and Temporal Cloud. Filter by SDK, tag, or search to find what you need.\n\nSDK\nGo\nJava\nPython\nRuby\nTypeScript\nLanguage-agnostic\nTAG\nAgent framework\nAgent observability\nFramework\nGovernance\nObservability\nTemporal Cloud\nLangSmith\n\nTrace and debug LLM calls in Temporal Workflows with LangSmith.\n\nAGENT OBSERVABILITY\nLangSmith\n\nTrace and debug LLM calls in Temporal Workflows with LangSmith.\n\nAGENT OBSERVABILITY\nTags:IntegrationsAI FrameworksAgent FrameworksObservability\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nPriority and Fairness\nNext\nGlossary"
+    },
+    {
+      "name": "desktop retry island",
+      "numberInputsBefore": 9,
+      "numberInputsAfter": 10,
+      "canvas": 1
+    },
+    {
+      "name": "desktop diagram zoom",
+      "svgCount": 1,
+      "dialogs": 1
+    },
+    {
+      "name": "desktop search local hit",
+      "text": "Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"
+    },
+    {
+      "name": "desktop search navigate",
+      "url": "http://127.0.0.1:4390/develop/python/workflows"
+    },
+    {
+      "name": "desktop assistant delegation",
+      "calls": [
+        null
+      ],
+      "backend": "not exercised"
+    },
+    {
+      "name": "desktop feedback open",
+      "text": "Feedback\nPowered by PushFeedback\nWas this page helpful?\nAdd a screenshot\nSend",
+      "widgets": 1,
+      "backend": "not exercised; form not submitted"
+    },
+    {
+      "name": "mobile theme switch",
+      "theme": "light",
+      "choice": "light"
+    },
+    {
+      "name": "mobile navigation open",
+      "visible": true
+    },
+    {
+      "name": "mobile tabs click",
+      "tabs": [
+        {
+          "label": "macOS",
+          "selected": "false"
+        },
+        {
+          "label": "Linux",
+          "selected": "true"
+        },
+        {
+          "label": "Windows",
+          "selected": "false"
+        },
+        {
+          "label": "Docker",
+          "selected": "false"
+        }
+      ]
+    },
+    {
+      "name": "mobile tabs keyboard",
+      "focused": "Windows",
+      "selected": [
+        "Linux"
+      ]
+    },
+    {
+      "name": "mobile Markdown copy",
+      "bytes": 8099,
+      "matchesPublication": true
+    },
+    {
+      "name": "mobile code copy",
+      "copied": "brew install temporal"
+    },
+    {
+      "name": "mobile integration filter",
+      "query": "LangSmith",
+      "mainText": "Integrations\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /integrations.md. Append .md to any page URL to fetch its Markdown.\nIntegrations\nCopy for LLM\nView Markdown\n\nBrowse integrations for Temporal SDKs and Temporal Cloud. Filter by SDK, tag, or search to find what you need.\n\nSDK\nGo\nJava\nPython\nRuby\nTypeScript\nLanguage-agnostic\nTAG\nAgent framework\nAgent observability\nFramework\nGovernance\nObservability\nTemporal Cloud\nLangSmith\n\nTrace and debug LLM calls in Temporal Workflows with LangSmith.\n\nAGENT OBSERVABILITY\nLangSmith\n\nTrace and debug LLM calls in Temporal Workflows with LangSmith.\n\nAGENT OBSERVABILITY\nTags:IntegrationsAI FrameworksAgent FrameworksObservability\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nPriority and Fairness\nNext\nGlossary"
+    },
+    {
+      "name": "mobile retry island",
+      "numberInputsBefore": 9,
+      "numberInputsAfter": 10,
+      "canvas": 1
+    },
+    {
+      "name": "mobile diagram zoom",
+      "svgCount": 0,
+      "dialogs": 0
+    },
+    {
+      "name": "mobile search local hit",
+      "text": "Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"
+    },
+    {
+      "name": "mobile search navigate",
+      "url": "http://127.0.0.1:4390/develop/python/workflows"
+    },
+    {
+      "name": "mobile assistant delegation",
+      "calls": [
+        null
+      ],
+      "backend": "not exercised"
+    },
+    {
+      "name": "mobile feedback open",
+      "text": "Feedback\nPowered by PushFeedback\nWas this page helpful?\nSend",
+      "widgets": 1,
+      "backend": "not exercised; form not submitted"
+    }
+  ],
+  "externalAttempts": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=ILOzkqCFVAM",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=qkVb5BxjCJ5",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=9dPrn1pDsDI",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=O1CcHU3TFDV",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=qANXP0bH0LT",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=e3UpXugbAuW",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    }
+  ],
+  "errors": []
+}

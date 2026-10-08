@@ -1,0 +1,159 @@
+{
+  "status": "draft; run browser/reference capture after frozen successful baseline",
+  "fixtures": [
+    {
+      "family": "home",
+      "source": "docs/index.mdx",
+      "route": "/",
+      "title": "Temporal Platform Documentation"
+    },
+    {
+      "family": "ordinary-tabs",
+      "source": "docs/cli/setup-cli.mdx",
+      "route": "/cli/setup-cli",
+      "title": "Install and configure the CLI"
+    },
+    {
+      "family": "sdk-tabs",
+      "source": "docs/develop/environment-configuration.mdx",
+      "route": "/develop/environment-configuration",
+      "title": "Environment configuration"
+    },
+    {
+      "family": "setup-steps",
+      "source": "docs/develop/python/set-up.mdx",
+      "route": "/develop/python/set-up-your-local-python",
+      "title": "Set up your local with the Python SDK"
+    },
+    {
+      "family": "best-practices",
+      "source": "docs/best-practices/cost-governance.mdx",
+      "route": "/best-practices/cost-governance",
+      "title": "Cost governance on Temporal Cloud"
+    },
+    {
+      "family": "generated-cli",
+      "source": "docs/cli/command-reference/workflow.mdx",
+      "route": "/cli/command-reference/workflow",
+      "title": "Temporal CLI workflow command reference"
+    },
+    {
+      "family": "permissions-transclusion",
+      "source": "docs/cloud/manage-access/permissions-reference.mdx",
+      "route": "/cloud/manage-access/permissions-reference",
+      "title": "Permissions reference"
+    },
+    {
+      "family": "sdk-code",
+      "source": "docs/develop/python/workflows/index.mdx",
+      "route": "/develop/python/workflows/",
+      "title": "Workflows - Python SDK"
+    },
+    {
+      "family": "mermaid-json-table",
+      "source": "docs/cloud/connectivity/aws-connectivity.mdx",
+      "route": "/cloud/connectivity/aws-connectivity",
+      "title": "AWS PrivateLink connectivity"
+    },
+    {
+      "family": "retry-simulator",
+      "source": "docs/demos/activity-retry-simulator.mdx",
+      "route": "/demos/activity-retry-simulator",
+      "title": "Visualize an Activity Retry Policy with timeouts"
+    },
+    {
+      "family": "serverless-island",
+      "source": "docs/demos/serverless-workers.mdx",
+      "route": "/demos/serverless-workers",
+      "title": "Serverless Workers Interactive Demo"
+    },
+    {
+      "family": "standalone-island",
+      "source": "docs/demos/standalone-activities.mdx",
+      "route": "/demos/standalone-activities",
+      "title": "Standalone Activities Demo"
+    },
+    {
+      "family": "priority-fairness-island",
+      "source": "docs/demos/priority-fairness-walkthrough.mdx",
+      "route": "/demos/priority-fairness-walkthrough",
+      "title": "Task Queue Priority and Fairness - Interactive Walkthrough"
+    },
+    {
+      "family": "architecture-island",
+      "source": "docs/encyclopedia/architecture/how-temporal-works.mdx",
+      "route": "/encyclopedia/architecture/how-temporal-works",
+      "title": "How Temporal works"
+    },
+    {
+      "family": "event-history-walkthrough",
+      "source": "docs/encyclopedia/event-history/python.mdx",
+      "route": "/encyclopedia/event-history/event-history-python",
+      "title": "Event History walkthrough with the Python SDK"
+    },
+    {
+      "family": "ai-landing",
+      "source": "docs/ai/index.mdx",
+      "route": "/ai",
+      "title": "Durable AI"
+    },
+    {
+      "family": "integrations-grid",
+      "source": "docs/integrations.mdx",
+      "route": "/integrations",
+      "title": "Integrations"
+    },
+    {
+      "family": "cookbook-generated",
+      "source": "ai-cookbook/ai-sdk-by-vercel-typescript.mdx",
+      "route": "/ai/cookbook/ai-sdk-by-vercel-typescript",
+      "title": "Durable agent with tools using the AI SDK by Vercel"
+    },
+    {
+      "family": "cloud-tooltip",
+      "source": "docs/cloud/high-availability/index.mdx",
+      "route": "/cloud/high-availability",
+      "title": "High Availability"
+    },
+    {
+      "family": "search",
+      "route": "/search"
+    },
+    {
+      "family": "404",
+      "route": "/404.html"
+    }
+  ],
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "themes": [
+    "dark",
+    "light",
+    "system"
+  ],
+  "additional_required": [
+    "best-practices",
+    "generated CLI/reference",
+    "generated permissions transclusion",
+    "SDK synchronized tabs",
+    "navigation/mobilenav/keyboard",
+    "copy code/Markdown",
+    "tabs/accordion/zoom",
+    "search deterministic transports",
+    "feedback local UI no sends",
+    "redirect ordering and Markdown Accept negotiation",
+    "OG bytes",
+    "all routes/files and full/incremental equality"
+  ],
+  "remote_policy": "Intercept every nonlocal request before navigation; local deterministic fixture response where required, otherwise blocked and recorded. No live Algolia, analytics/feedback, Kapa MCP/backend, private API calls or search uploads. Backend behavior untested."
+}

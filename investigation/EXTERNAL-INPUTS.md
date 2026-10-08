@@ -10,3 +10,7 @@ Documentation SHA and independently pinned cookbook SHA, source/history hashes, 
 - Algolia: public client config in source, crawler config/records externally managed; no uploads or live extraction. Local deterministic search fixtures only; backend untested.
 - Analytics/feedback/Kapa/consent: runtime transports intercepted before all browser navigation. No feedback, telemetry, private API or MCP calls. UI/transport fixture results will be qualified.
 - Environment: publication origin logic is production unless explicit preview env; exact relevant settings must be recorded for each final workflow.
+
+### T2 frozen runtime test inputs
+
+PushFeedback public CDN resources resolved to 0.1.87 and Google Fonts Inter stylesheet/seven subsets are frozen and hashed in `t2/fixtures/remote-assets`. Algolia, Kapa, consent and feedback project responses are deterministic local fixtures. All telemetry/analytics/feedback submission/backend calls remain unexercised and never forwarded.

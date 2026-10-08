@@ -1,0 +1,1 @@
+These are exact baseline capture tools, preserving their original relative paths. They run from the `temporal-baseline` evidence layout with the pinned upstream build-work, toolchain and references; they are not yet migration test commands. T3 will introduce portable project-specific parity commands.

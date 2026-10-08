@@ -1,0 +1,7 @@
+[validate-og-images] 793 doc page(s) checked, 1 partial(s) skipped (not routed)
+[validate-og-images] 793/793 doc page(s) have a correct generated og:image + twitter:image
+[validate-og-images] 793/793 doc page(s) have their generated image present on disk
+[validate-og-images] 0/0 manual-override doc page(s) kept their own og:image
+[validate-og-images] 169/169 non-doc page(s) still match the site default
+
+OK: every doc page has a correct generated og:image (or kept its manual override), and every other page still uses the site default.

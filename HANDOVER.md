@@ -331,3 +331,7 @@ T1 audit recorded in `investigation/T1-SOURCE-AUDIT.md`; preserved baseline tool
 ## T1 complete
 
 The full unchanged production baseline and its warm reproduction succeeded. `investigation/BASELINE.md` and `investigation/t1/` contain complete accounting, byte manifests, logs, versions, timings/RSS and exact upstream source/archive pins. Only the operational OG stats sidecar varies. Original immutable reference lives in sibling `temporal-baseline/reference/t1-complete-history`; clean source reference is `temporal-upstream`. Next T2 freezes browser/local-transport fixtures; T3 must prove architecture and incremental/full equality before corpus translation.
+
+## T2 parity contract frozen
+
+126 reference states, 25 interaction observations across both viewports, 563 concrete redirect samples, Markdown negotiation/missing-route checks, and complete upstream OG validation are preserved under `investigation/t2`. Remote transport and inherited limitations are explicit in `investigation/PARITY-CONTRACT.md`. T2 complete; T3 architecture proof is next. No migrated corpus or performance claim yet.
