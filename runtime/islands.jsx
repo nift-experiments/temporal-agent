@@ -1,3 +1,4 @@
+import '@docusaurus/theme-classic/lib/prism-include-languages';
 import SearchPage from '../islands-src/pages/search';
 import DesktopTOC from '@theme/TOC';
 import Sidebar from './sidebar';

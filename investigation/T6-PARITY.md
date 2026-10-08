@@ -1,0 +1,11 @@
+# T6 whole-site publication/browser parity accepted
+
+Publication scope: 962 HTML routes, with 793 primary routes and 169 special routes. T5 body/metadata checks cover every route. All 832 Markdown/text/sitemap products and 1,130 maintained non-framework assets are byte-identical. All 4,544 code blocks per project match pinned token classes, styles and text. All HTML pages pass internal links and asset references: no missing paths in reference or migrations. Published framework bundles are replaced by migration island bundles; the upstream operational OG-statistics sidecar is not a publication product. No claim of identical total file count or complete JavaScript-byte equality is made.
+
+Representative browser parity: 132 states per migration, zero recorded differences or page errors. Real interactions: 49 cases per migration against deterministic local transports. Portable gateways preserve 563 concrete redirect samples from 567 rules, Markdown content negotiation, trailing-slash redirects and HTML/Markdown 404 behavior. Hosted Vercel, live Algolia index quality, Kapa backend, feedback submission and telemetry backends are not exercised.
+
+Visual review: eight representative families at desktop/mobile dark theme, 16 screenshots per implementation and 32 reference comparisons. All recorded geometry is identical. 21 comparisons are pixel-identical; 11 differ in 21 pixels by one channel level (maximum), retained as rasterization noise, not claimed pixel identity.
+
+Rejected visual drafts found three actual migration omissions: cookbook/main-doc index ID collision in navigation, Home navbar incorrectly active despite pinned activeBasePath:none, and missing upstream Prism additional-language initialization. All fixed migration-side; draft images/results retained. The scoped main-doc sidebar now prevents cookbook index overwrites, while the agent project maintains its own corrected explicit navigation. Original Prism initialization is retained on server and client.
+
+Nift core and templates are unchanged. The existing installed Nift v4.9.0 executable has been snapshotted and SHA-256 pinned before T7–T9 formal timings. Earlier timing logs are candidate diagnostics, not accepted benchmark results. Initial full publication, lifecycle correctness, profiling, optimization and final fresh-clone benchmark work remain T7–T9.

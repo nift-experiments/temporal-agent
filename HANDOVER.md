@@ -367,3 +367,7 @@ Next: finalize portable deployment/sitemap accounting, generated cookbook owners
 ## T5 accepted
 
 All 962 HTML routes, 832 Markdown/text/sitemap products, and 1,130 retained non-framework assets verified against the pinned reference. Full representative browser parity: 132 states per project, zero differences/errors; 49 interaction cases per project. Portable redirect/Markdown/404 checks passed. See investigation/T5-SPECIAL-PUBLICATION.md and investigation/t5. Next: T6 whole-site parity, then T7 initial benchmarks and incremental correctness. No formal benchmark accepted yet.
+
+## T6 accepted
+
+Whole-site publication and representative browser parity accepted; all 4,544 highlighted code blocks verified per project. 32 visual comparisons have identical geometry and max channel delta 1 after resolving real draft defects. See investigation/T6-PARITY.md. Next T7: separately installed frozen dependencies, initial whole-pipeline measurements and comprehensive incremental/forced equality; T8 profiling/optimization; T9 final serialized campaign and fresh-clone review. No final benchmark claim yet.
