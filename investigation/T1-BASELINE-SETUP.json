@@ -1,0 +1,29 @@
+{
+  "upstream_repository": "https://github.com/temporalio/documentation",
+  "upstream_sha": "5d9703a237a9efc9a7da48ac09f79526823b8182",
+  "pin_date": "2026-10-08",
+  "source_archive": {
+    "file": "source-5d9703a.tar.gz",
+    "sha256": "c95851279ccdd1725200b7445f81bc57c20250103672ea76579df7dda005a501"
+  },
+  "source_tree": {
+    "blobs": 1484,
+    "docs_markdown_mdx": 777
+  },
+  "pipeline": [
+    "yarn prebuild: node bin/sync-ai-cookbook.js",
+    "node --max-old-space-size=7168 node_modules/@docusaurus/core/bin/docusaurus.mjs build (production plugins and faster settings unchanged)",
+    "yarn postbuild: node bin/check-font-preload-hash.js"
+  ],
+  "runtime": "Node v24.21.0",
+  "yarn": "1.22.22",
+  "lockfile_sha256": "1aa614887e64a228f0cf54cf5ce37117082c00225a95502b09e78b0c77400863",
+  "nondeterminism": "unresolved until complete build reproduced",
+  "remote_boundaries": {
+    "ai_cookbook": "public Git clone read-only; must pin separate moving revision and preserve generated output; fallback placeholder cannot be accepted",
+    "search": "Algolia remote crawler/index not repository-owned; no uploads or live searches",
+    "analytics_feedback": "disabled/intercepted in deterministic browser fixtures; no submissions",
+    "deployment": "567 redirects, 3 headers, 3 rewrites, Accept:text/markdown middleware and markdown-not-found function must be represented"
+  },
+  "publication_frozen": false
+}

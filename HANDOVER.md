@@ -325,3 +325,5 @@ Follow MIGRATION.md; campaign checkpoints T0–T9 map to its phases. Upstream fu
 No telemetry, feedback, search uploads or private API calls. No Nift core changes. Maintain rendered HTML and explicit metadata/navigation; no routine Markdown conversion; islands remain available where faithful and maintainable.
 
 Next: complete T1 upstream baseline; then parity contract and representative architecture proof before corpus scaling. Full campaign authorized through T9, with exceptional stop policy from the user brief.
+
+T1 audit recorded in `investigation/T1-SOURCE-AUDIT.md`; preserved baseline tooling/evidence lives in sibling `temporal-baseline`. Current sessions are full-history clone and frozen-lockfile dependency installation. No source translation.
