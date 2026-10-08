@@ -6,7 +6,7 @@ async function save(name,page,result){record.cases.push({name,...result});fs.wri
 (async()=>{const browser=await chromium.launch({headless:true});try{
 for(const viewport of [{name:'desktop',width:1440,height:1000},{name:'mobile',width:390,height:844}]){
 const context=await browser.newContext({viewport:{width:viewport.width,height:viewport.height},colorScheme:'dark',reducedMotion:'reduce'});await install(context,record,base);
-await context.addInitScript(()=>{localStorage.setItem('theme','dark');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.__clipboardFixture=text,readText:async()=>window.__clipboardFixture||''},configurable:true});});
+await context.addInitScript(()=>{localStorage.setItem('theme-014','dark');Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>window.__clipboardFixture=text,readText:async()=>window.__clipboardFixture||''},configurable:true});});
 const page=await context.newPage();page.on('pageerror',e=>record.errors.push({viewport:viewport.name,error:e.message}));
 await page.goto(base,{waitUntil:'networkidle'});const reject=page.getByRole('button',{name:'Reject All',exact:true});if(await reject.count())await reject.click();
 if(viewport.name==='mobile')await page.getByRole('button',{name:'Toggle navigation bar'}).click();

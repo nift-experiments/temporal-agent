@@ -19,10 +19,10 @@ http.createServer((request,response)=>{
    const moved=redirects.markdownRedirect(pathname,compiled); if(moved){response.writeHead(moved.status,{Location:moved.location});return response.end();}
    response.writeHead(404,{'Content-Type':types['.md'],'Vary':'Accept, Accept-Encoding'});return response.end('# Page not found\n\nThis URL does not match a page in the Temporal documentation.\n\n## Where to look next\n\n- [Documentation index](https://docs.temporal.io/llms.txt)\n- [Documentation sitemap](https://docs.temporal.io/sitemap.xml)\n- [Temporal documentation home](https://docs.temporal.io/)\n');
   }
-  file=path.join(publication,'404.html'); response.statusCode=404;
+  file=path.join(publication,'404.html'); response.statusCode=404;if(!fs.existsSync(file))return response.end('Not found');
  }
  const extension=path.extname(file); response.setHeader('Content-Type',types[extension]||'application/octet-stream');
  response.setHeader('Vary','Accept, Accept-Encoding');
  if(extension==='.md') response.setHeader('X-Robots-Tag','noindex');
- fs.createReadStream(file).pipe(response);
+ fs.createReadStream(file).on('error',()=>{response.statusCode=404;response.end('Not found');}).pipe(response);
 }).listen(port,'127.0.0.1',()=>console.log('Local frozen reference http://127.0.0.1:'+port));
