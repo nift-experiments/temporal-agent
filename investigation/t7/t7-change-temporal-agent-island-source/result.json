@@ -1,0 +1,11 @@
+{
+  "project": "temporal-agent",
+  "case": "island-source",
+  "incremental_seconds": 9.364814336178824,
+  "explicit_maintenance_seconds": 1.1802594850305468,
+  "whole_operation_seconds": 10.545073821209371,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true
+}

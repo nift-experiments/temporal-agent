@@ -1,0 +1,11 @@
+{
+  "project": "temporal-agent",
+  "case": "navigation",
+  "incremental_seconds": 9.367385946912691,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 9.367385946912691,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true
+}

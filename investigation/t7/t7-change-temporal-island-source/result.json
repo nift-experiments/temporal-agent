@@ -1,0 +1,11 @@
+{
+  "project": "temporal",
+  "case": "island-source",
+  "incremental_seconds": 24.25345524493605,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 24.25345524493605,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true
+}

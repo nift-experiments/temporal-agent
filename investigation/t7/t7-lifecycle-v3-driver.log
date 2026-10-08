@@ -1,0 +1,8 @@
+{"project": "temporal", "case": "route-add", "incremental_seconds": 23.749476582976058, "files": 3000, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal", "case": "route-rename", "incremental_seconds": 23.216776387998834, "files": 3000, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+{"project": "temporal", "case": "route-delete", "incremental_seconds": 23.31494245491922, "files": 2997, "independent_clean_forced_equal": true, "differences": [], "expected_behavior_verified": true}
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/lifecycle-equality.py", line 26, in <module>
+    rows=json.loads(registry.read_text());template=next(r for r in rows if r.get('body') and r['route']=='/cloud/get-started/user-invite')
+                                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

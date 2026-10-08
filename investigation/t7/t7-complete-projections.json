@@ -1,0 +1,8322 @@
+[
+  {
+    "project": "temporal",
+    "file": "namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "payload-converter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-definition.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "dataconversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "quickstarts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "remote-data-encoding.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "local-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "llms-full.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "dual-visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "global-namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "task-routing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-definition.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "task-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "key-management.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "default-custom-data-converters.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "sitemap.xml",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ops.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "glossary.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tasks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "standalone-nexus-operation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "robots.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "dynamic-handler.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "with-ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "index.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "sending-messages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cron-job.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "codec-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "parent-close-policy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "worker-versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "handling-messages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "search-attribute.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "payload-codec.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "web-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "sticky-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "failure-converter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "list-filter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "patching.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/rate-limit-downstream-apis.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/temporary-rate-limit-increases.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/recover-without-restart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/durable-agent-on-agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/entity-pattern-loyalty-points.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/celery-to-standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/lock-shared-resources.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/reliable-document-approvals.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/route-specialized-workloads.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/worker-execution-affinity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "guides/durable-gaming-sessions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution/workflowid-runid.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution/event.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "workflow-execution/timers-delays.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "task-queue/naming.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/isolation domains.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/failover.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/health check.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/failback.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/replica.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/P95.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/RPO.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/conflict resolution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/RTO.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/replication lag.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "terms/trigger testing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/common-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/setup-cli.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/cost-optimization.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/knowledge-hub.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/cloud-access-control.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/managing-namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/worker-alerting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/cost-governance.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/multi-tenant-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/managing-aps-limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/pre-production-testing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "best-practices/security-controls.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/early-return.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/fixed-count-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/eager-workflow-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/entity-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/batch-processing-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/updatable-timer.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/worker-specific-taskqueue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/worker-configuration-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/sliding-window.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/activity-dependency-injection.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/mapreduce-tree.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/fast-slow-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/qos-throughput-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/request-response-via-updates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/early-return-local-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/saga-pattern.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/delayed-retry.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/local-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/priority-task-queues.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/workflow-messaging-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/fairness.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/pick-first.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/task-orchestration-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/non-retryable-errors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/delayed-callback.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/approval.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/long-running-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/performance-latency-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/resumable-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/delayed-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/fixed-wall-time-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/parallel-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/signal-with-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/error-handling-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/batch-iterator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/downstream-rate-limiting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/distributed-transaction-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/event-accumulator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/fanout-child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/retry-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/external-interaction-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/polling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "design-patterns/entity-lifecycle-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/plugins.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/detecting-workflow-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/extensibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/application-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/failures-and-error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/detecting-activity-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/workflow-message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/retry-policies.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/context-propagation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/batch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/admin.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/cluster.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/taskqueue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "tctl-v1/dataconverter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/temporal-proxy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/worker-capacity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/request-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/performance-bottlenecks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/last-connection-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/deadline-exceeded-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/schedule-missed-actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/blob-size-limit-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/execution-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/archival.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/persistence.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/temporal-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "temporal-service/multi-cluster-replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/why-temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/use-cases-design-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/understanding-temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/product-release-stages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "demos/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "demos/priority-fairness-walkthrough.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "demos/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "demos/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "demos/activity-retry-simulator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/environment-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-tuning-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/run-a-development-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/task-queue-priority-fairness.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/plugins-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/safe-deployments.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/endpoints.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/services.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/temporal-operation-handler.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/execution-debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/registry.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/nexgen.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "nexus/standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/pause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/reset.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/request-cancel.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/delete.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/unpause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/terminate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "activity-operations/update-options.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/deployment.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/server-frontend-api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/monitoring.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/embedded-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/archival.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/upgrade-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/defaults.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/multi-cluster-replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/production-checklist.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/server-options.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/client-environment-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/operation-list.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/web-ui-environment-variables.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/commands.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/sdk-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/workflow-task-errors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/service-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/web-ui-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/events.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/service-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "references/dynamic-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/certificates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/service-health.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/export.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/projects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/capacity-modes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/pricing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/worker-health.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/audit-logs-aws.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/slo.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/terraform-provider.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/monitor.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/billing-and-usage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/api-keys.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/notifications.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/migrate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/actions-usage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/rpo-rto.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/audit-logs-gcp.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/billing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/audit-logs.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/get-started.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/billing-api.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/export/aws-export-s3.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/export/gcp-export-gcs.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/ha-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/enable.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/monitoring.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/failovers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/architecture-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/get-started/users-invite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/openmetrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/sdk-metrics-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/generate-certificates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/logout.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/connectivity-rule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/service-account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/request.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/user-group.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/migration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/login.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/apikey.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/user.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/version.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/tcld/feature.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/migrate/estimate-actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/migrate/automated.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/migrate/migrate-within-cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/migrate/manual.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/connectivity/ip-addresses.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/connectivity/aws-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/connectivity/gcp-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/service-accounts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/user-groups.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/users.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/scim.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/roles-and-permissions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/_custom_role_permissions_table.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/saml.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/permissions-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/manage-access/custom-roles.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus/pricing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/nexus/latency-availability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/references/regions/awsregions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/references/regions/gcpregions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/references/regions/private-service.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/openmetrics/api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/openmetrics/faq.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/openmetrics/metrics-integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/metrics/openmetrics/metrics-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cloud/high-availability/failovers/manage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/mysql.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/legacy-standard.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/dual-visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/postgresql.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/sqlite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/custom-search-attributes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/migrate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "self-hosted-guide/visibility/elasticsearch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/set-up-your-local-php.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/set-up-your-local-go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/workflow-cache.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/task-queues.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/worker-performance/runtime-tuning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/install-typescript-sdk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/set-up-your-local-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/set-up-your-local-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/set-up-your-local-java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/set-up-your-local-dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/set-up-local-ruby.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/futures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/integrations/rails-integration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/ruby/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/dotnet/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/integrations/spring-boot-integration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/integrations/spring-ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/java/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices/python-sdk-sandbox.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices/python-sdk-sync-vs-async.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/langgraph.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/openai-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/google-adk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/google-genai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/deepagents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/strands-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/integrations/langsmith.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/python/workers/serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/entity-pattern.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/cancellation-scopes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations/google-adk-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations/openai-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations/strands-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations/langsmith.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/integrations/ai-sdk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/typescript/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workers/worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/rust/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices/multithreading.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices/context-propagation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/sessions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/selectors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/integrations/google-adk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/integrations/opentelemetry-v2.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/go/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "develop/php/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/cloud-vs-self-hosted-features.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/workflow-message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/job-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/core-primitives.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/timeouts-and-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/features/cancellation-and-termination.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud/support.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud/actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "evaluate/cloud/regions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "troubleshooting/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/temporal-proxy/configure.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/temporal-proxy/deploy-kubernetes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/temporal-proxy/encrypt-payloads.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/unversioned-to-versioned-migration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/kubernetes-controller.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/recover-pinned-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/deploy-workers-to-aws-eks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/worker-versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/self-hosted-guide/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/worker-versioning/configure-worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/worker-versioning/roll-out-and-pin.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/worker-versioning/sunset-and-gc.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/hello-world-openai-responses-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/guardrails-hard-rules-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/human-in-the-loop-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/agentic-loop-tool-call-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/strands-agents-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/basic-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/ai-sdk-by-vercel-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/tool-call-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/claim-check-pattern-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/hello-world-litellm-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/hello-world-durable-mcp-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/openai-agents-sdk-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/agentic-loop-tool-call-claude-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/multi-agent-adk-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/http-retry-enhancement-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "ai/cookbook/structured-output-openai-responses-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/workers/worker-shutdown.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/architecture/temporal-sdks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/architecture/how-temporal-works.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/architecture/temporal-architecture.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history/event-history-go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history/event-history-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history/event-history-dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history/event-history-java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/event-history/event-history-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/workflow/workflow-pause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "encyclopedia/workflow/cancellation-and-termination.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/config.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/batch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/task-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/env.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/operator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/project.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/logout.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/region.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/service-account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/user-group.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/async-operation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/login.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/apikey.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/user.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/whoami.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/custom-role.md",
+    "identical": true
+  },
+  {
+    "project": "temporal",
+    "file": "cli/command-reference/cloud/connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "payload-converter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-definition.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "dataconversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "quickstarts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "remote-data-encoding.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "local-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "llms-full.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "dual-visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "global-namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "task-routing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-definition.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "task-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "key-management.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "default-custom-data-converters.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "sitemap.xml",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ops.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "glossary.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tasks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "standalone-nexus-operation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "robots.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "dynamic-handler.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "with-ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "index.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "sending-messages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cron-job.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "codec-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "parent-close-policy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "worker-versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "handling-messages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "search-attribute.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "payload-codec.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "web-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "sticky-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "failure-converter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "list-filter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "patching.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/rate-limit-downstream-apis.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/temporary-rate-limit-increases.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/recover-without-restart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/durable-agent-on-agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/entity-pattern-loyalty-points.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/celery-to-standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/lock-shared-resources.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/reliable-document-approvals.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/route-specialized-workloads.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/worker-execution-affinity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "guides/durable-gaming-sessions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution/workflowid-runid.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution/event.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "workflow-execution/timers-delays.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "task-queue/naming.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/isolation domains.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/failover.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/health check.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/failback.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/replica.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/P95.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/RPO.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/conflict resolution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/RTO.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/replication lag.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "terms/trigger testing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/common-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/setup-cli.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/cost-optimization.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/knowledge-hub.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/cloud-access-control.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/managing-namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/worker-alerting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/cost-governance.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/multi-tenant-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/managing-aps-limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/pre-production-testing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "best-practices/security-controls.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/early-return.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/fixed-count-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/eager-workflow-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/entity-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/batch-processing-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/updatable-timer.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/worker-specific-taskqueue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/worker-configuration-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/sliding-window.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/activity-dependency-injection.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/mapreduce-tree.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/fast-slow-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/qos-throughput-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/request-response-via-updates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/early-return-local-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/saga-pattern.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/delayed-retry.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/local-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/priority-task-queues.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/workflow-messaging-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/fairness.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/pick-first.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/task-orchestration-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/non-retryable-errors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/delayed-callback.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/approval.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/long-running-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/performance-latency-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/resumable-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/delayed-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/fixed-wall-time-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/parallel-execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/signal-with-start.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/error-handling-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/batch-iterator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/downstream-rate-limiting.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/distributed-transaction-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/event-accumulator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/fanout-child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/retry-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/external-interaction-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/polling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "design-patterns/entity-lifecycle-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/plugins.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/detecting-workflow-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/extensibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/application-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/failures-and-error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/detecting-activity-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/workflow-message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/retry-policies.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/context-propagation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/batch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/admin.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/cluster.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/taskqueue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "tctl-v1/dataconverter.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/temporal-proxy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/worker-capacity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/request-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/performance-bottlenecks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/last-connection-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/deadline-exceeded-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/schedule-missed-actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/blob-size-limit-error.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/execution-failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/archival.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/persistence.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/temporal-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "temporal-service/multi-cluster-replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/why-temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/use-cases-design-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/understanding-temporal.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/product-release-stages.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "demos/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "demos/priority-fairness-walkthrough.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "demos/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "demos/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "demos/activity-retry-simulator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/environment-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-tuning-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/run-a-development-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/task-queue-priority-fairness.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/plugins-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/safe-deployments.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/endpoints.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/services.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/temporal-operation-handler.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/execution-debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/registry.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/nexgen.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "nexus/standalone-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/pause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/reset.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/request-cancel.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/delete.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/unpause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/terminate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "activity-operations/update-options.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/deployment.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/server-frontend-api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/monitoring.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/embedded-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/archival.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/upgrade-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/defaults.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/multi-cluster-replication.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/production-checklist.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/server-options.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/client-environment-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/operation-list.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/web-ui-environment-variables.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/failures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/commands.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/sdk-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/workflow-task-errors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/service-metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/web-ui-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/events.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/service-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "references/dynamic-configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/certificates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/service-health.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/export.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/projects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/capacity-modes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/pricing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/worker-health.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/audit-logs-aws.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/slo.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/terraform-provider.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/monitor.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/billing-and-usage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/api-keys.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/notifications.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/migrate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/actions-usage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/rpo-rto.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/audit-logs-gcp.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/billing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/audit-logs.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/get-started.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/billing-api.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/export/aws-export-s3.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/export/gcp-export-gcs.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/ha-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/enable.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/monitoring.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/failovers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/architecture-patterns.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/get-started/users-invite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/openmetrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/sdk-metrics-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/generate-certificates.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/logout.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/connectivity-rule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/service-account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/request.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/user-group.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/migration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/login.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/apikey.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/user.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/version.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/tcld/feature.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/migrate/estimate-actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/migrate/automated.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/migrate/migrate-within-cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/migrate/manual.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/connectivity/ip-addresses.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/connectivity/aws-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/connectivity/gcp-connectivity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/service-accounts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/user-groups.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/users.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/scim.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/roles-and-permissions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/_custom_role_permissions_table.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/saml.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/permissions-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/manage-access/custom-roles.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus/pricing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/nexus/latency-availability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/references/regions/awsregions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/references/regions/gcpregions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/references/regions/private-service.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/openmetrics/api-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/openmetrics/faq.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/openmetrics/metrics-integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/metrics/openmetrics/metrics-reference.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cloud/high-availability/failovers/manage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/mysql.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/legacy-standard.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/dual-visibility.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/postgresql.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/sqlite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/custom-search-attributes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/migrate.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "self-hosted-guide/visibility/elasticsearch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/set-up-your-local-php.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/set-up-your-local-go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/workflow-cache.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/metrics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/configuration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/task-queues.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/worker-performance/runtime-tuning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/install-typescript-sdk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/set-up-your-local-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/set-up-your-local-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/set-up-your-local-java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/set-up-your-local-dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/integrations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/set-up-local-ruby.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/platform.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/futures.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/integrations/rails-integration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/ruby/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/dotnet/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/integrations/spring-boot-integration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/integrations/spring-ai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/java/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices/python-sdk-sandbox.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices/python-sdk-sync-vs-async.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/worker-versioning-legacy.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/langgraph.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/openai-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/google-adk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/google-genai.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/deepagents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/strands-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/integrations/langsmith.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/python/workers/serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/entity-pattern.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/data-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/cancellation-scopes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations/google-adk-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations/openai-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations/strands-agents.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations/langsmith.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/integrations/ai-sdk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/typescript/best-practices/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workers/worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/rust/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/standalone-activities.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/dynamic-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/benign-exceptions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/standalone-activities-quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices/error-handling.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices/multithreading.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices/context-propagation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/interceptors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/sessions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/dynamic-workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/selectors.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/workflow-streams.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/client/namespaces.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/integrations/google-adk.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/integrations/opentelemetry-v2.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/nexus/quickstart.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/nexus/feature-guide.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/nexus/standalone-operations.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/data-handling/external-storage.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/data-handling/data-conversion.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/data-handling/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/go/workers/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/activities/execution.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/activities/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/activities/asynchronous-activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/activities/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/best-practices/debugging.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/best-practices/testing-suite.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workers/run-worker-process.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/cancellation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/timers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/side-effects.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/timeouts.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/workflows/basics.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/client/temporal-client.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/platform/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "develop/php/platform/enriching-ui.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/observability.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/cloud-vs-self-hosted-features.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/child-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/workflow-message-passing.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/schedules.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/job-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/data-encryption.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/core-primitives.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/timeouts-and-retries.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/features/cancellation-and-termination.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud/limits.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud/support.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud/actions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud/security.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "evaluate/cloud/regions.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "troubleshooting/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/temporal-proxy/configure.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/temporal-proxy/deploy-kubernetes.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/temporal-proxy/encrypt-payloads.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/unversioned-to-versioned-migration.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/kubernetes-controller.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/recover-pinned-workflows.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/deploy-workers-to-aws-eks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/worker-versioning.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/self-hosted-guide/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/worker-versioning/configure-worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/worker-versioning/roll-out-and-pin.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/worker-versioning/sunset-and-gc.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/cloud-run.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/agentcore.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/hello-world-openai-responses-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/guardrails-hard-rules-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/human-in-the-loop-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/agentic-loop-tool-call-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/llms.txt",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/strands-agents-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/basic-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/ai-sdk-by-vercel-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/tool-call-openai-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/claim-check-pattern-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/hello-world-litellm-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/hello-world-durable-mcp-server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/openai-agents-sdk-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/agentic-loop-tool-call-claude-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/multi-agent-adk-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/http-retry-enhancement-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "ai/cookbook/structured-output-openai-responses-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/workers/worker-shutdown.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/architecture/temporal-sdks.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/architecture/how-temporal-works.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/architecture/temporal-architecture.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history/event-history-go.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history/event-history-typescript.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history/event-history-dotnet.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history/event-history-java.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/event-history/event-history-python.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/workflow/workflow-pause.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "encyclopedia/workflow/cancellation-and-termination.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/activity.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/config.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/server.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/batch.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/task-queue.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/env.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/schedule.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/operator.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/workflow.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/worker.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/project.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/nexus.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/logout.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/namespace.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/region.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/service-account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/user-group.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/async-operation.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/login.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/account.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/apikey.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/user.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/whoami.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/custom-role.md",
+    "identical": true
+  },
+  {
+    "project": "temporal-agent",
+    "file": "cli/command-reference/cloud/connectivity.md",
+    "identical": true
+  }
+]

@@ -81,3 +81,6 @@ Next T5: 17 cookbook routes, generated/special projections and remaining retaine
 T5 accepted: generated cookbook ownership, special publication, retained islands and portable deployment checked. T6–T9 remain.
 
 T6 accepted: whole-site static/link/token audits plus representative visual/browser parity. T7–T9 remain.
+
+
+T7 accepted: initial five-sample warm-full evidence, unchanged/upstream production edits, 26 exact lifecycle/change checks and restored whole-site/browser parity. See investigation/T7-INITIAL-PROFILING.md. T8–T9 remain; full campaign continues automatically.

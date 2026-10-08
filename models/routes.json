@@ -48,7 +48,8 @@
           "id": "design-patterns-for-ai-agents",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Durable AI"
     }
   },
   {
@@ -127,7 +128,8 @@
           "id": "use-certificate-filters-to-restrict-access-when-using-shared-cas-for-example-dev-vs-prod",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Managing Cloud access control"
     }
   },
   {
@@ -241,7 +243,8 @@
           "id": "guardrails-to-design-around",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cost Governance"
     }
   },
   {
@@ -465,7 +468,8 @@
           "id": "when-to-get-help",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cost Optimization"
     }
   },
   {
@@ -559,7 +563,8 @@
           "id": "saga-pattern",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -618,7 +623,8 @@
           "id": "organizational-enablement",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -722,7 +728,8 @@
           "id": "get-started",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Knowledge Hub"
     }
   },
   {
@@ -911,7 +918,8 @@
           "id": "general-guidance",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Managing APS limits"
     }
   },
   {
@@ -1050,7 +1058,8 @@
           "id": "sdk-client-configuration",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespace best practices"
     }
   },
   {
@@ -1209,7 +1218,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Multi-tenant patterns"
     }
   },
   {
@@ -1373,7 +1383,8 @@
           "id": "summary",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Pre-Production Testing"
     }
   },
   {
@@ -1537,7 +1548,8 @@
           "id": "enable-high-availability-for-business-critical-use-cases",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Security controls for Cloud"
     }
   },
   {
@@ -1636,7 +1648,8 @@
           "id": "route-alerts-by-severity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker alerting"
     }
   },
   {
@@ -1735,7 +1748,8 @@
           "id": "manage-scale-down-safely",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker deployment and performance"
     }
   },
   {
@@ -1817,7 +1831,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "CLI basics"
     }
   },
   {
@@ -1879,7 +1894,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Use with Temporal Cloud"
     }
   },
   {
@@ -2008,7 +2024,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "activity"
     }
   },
   {
@@ -2067,7 +2084,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "batch"
     }
   },
   {
@@ -2191,7 +2209,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "account"
     }
   },
   {
@@ -2280,7 +2299,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "apikey"
     }
   },
   {
@@ -2334,7 +2354,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "async-operation"
     }
   },
   {
@@ -2413,7 +2434,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "connectivity"
     }
   },
   {
@@ -2492,7 +2514,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "custom-role"
     }
   },
   {
@@ -2530,7 +2553,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "cloud"
     }
   },
   {
@@ -2574,7 +2598,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "login"
     }
   },
   {
@@ -2618,7 +2643,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "logout"
     }
   },
   {
@@ -3092,7 +3118,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "namespace"
     }
   },
   {
@@ -3191,7 +3218,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "nexus"
     }
   },
   {
@@ -3300,7 +3328,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "project"
     }
   },
   {
@@ -3354,7 +3383,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "region"
     }
   },
   {
@@ -3453,7 +3483,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "service-account"
     }
   },
   {
@@ -3587,7 +3618,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "user-group"
     }
   },
   {
@@ -3686,7 +3718,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "user"
     }
   },
   {
@@ -3730,7 +3763,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "whoami"
     }
   },
   {
@@ -3799,7 +3833,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "config"
     }
   },
   {
@@ -3863,7 +3898,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "env"
     }
   },
   {
@@ -3901,7 +3937,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Command reference"
     }
   },
   {
@@ -3995,7 +4032,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "nexus"
     }
   },
   {
@@ -4159,7 +4197,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "operator"
     }
   },
   {
@@ -4253,7 +4292,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "schedule"
     }
   },
   {
@@ -4307,7 +4347,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "server"
     }
   },
   {
@@ -4456,7 +4497,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "task-queue"
     }
   },
   {
@@ -4590,7 +4632,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "worker"
     }
   },
   {
@@ -4784,7 +4827,8 @@
           "id": "global-flags",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "workflow"
     }
   },
   {
@@ -4848,7 +4892,8 @@
           "id": "command-reference",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "CLI (temporal)"
     }
   },
   {
@@ -4965,7 +5010,8 @@
           "id": "getting-cli-help",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Install and configure"
     }
   },
   {
@@ -5034,7 +5080,8 @@
           "id": "example-of-consuming-an-audit-log",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Amazon Kinesis"
     }
   },
   {
@@ -5093,7 +5140,8 @@
           "id": "create-an-audit-log-sink",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Pub/Sub"
     }
   },
   {
@@ -5187,7 +5235,8 @@
           "id": "audit-log-api",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Audit Logging"
     }
   },
   {
@@ -5276,7 +5325,8 @@
           "id": "next-steps",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Export to S3"
     }
   },
   {
@@ -5340,7 +5390,8 @@
           "id": "actions-in-workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Usage dashboards"
     }
   },
   {
@@ -5434,7 +5485,8 @@
           "id": "key-identifiers",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cloud Billing API"
     }
   },
   {
@@ -5509,7 +5561,8 @@
           "id": "account-cancellation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Billing Center"
     }
   },
   {
@@ -5548,7 +5601,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Billing and Usage"
     }
   },
   {
@@ -5667,7 +5721,8 @@
           "id": "setting-capacity-modes-from-the-api",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Capacity modes"
     }
   },
   {
@@ -5875,7 +5930,8 @@
           "id": "south-america---são-paulo-sa-east-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Private Connect"
     }
   },
   {
@@ -6023,7 +6079,8 @@
           "id": "asia-pacific---jakarta-asia-southeast2",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Private Connect"
     }
   },
   {
@@ -6186,7 +6243,8 @@
           "id": "extend-the-control-plane-privatelink-endpoint-to-other-aws-regions-with-vpc-peering",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Connectivity"
     }
   },
   {
@@ -6304,7 +6362,8 @@
           "id": "how-to-disable-stable-ips",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "IP addresses"
     }
   },
   {
@@ -6408,7 +6467,8 @@
           "id": "failover-scenarios",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Export"
     }
   },
   {
@@ -6487,7 +6547,8 @@
           "id": "next-steps",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Export to GCS"
     }
   },
   {
@@ -6726,7 +6787,8 @@
           "id": "faqs",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage API keys"
     }
   },
   {
@@ -6940,7 +7002,8 @@
           "id": "configure-temporal-cli",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Authenticate with mTLS certificates"
     }
   },
   {
@@ -7014,7 +7077,8 @@
           "id": "invite-your-team",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Get started with Cloud"
     }
   },
   {
@@ -7203,7 +7267,8 @@
           "id": "permissions-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -7431,7 +7496,8 @@
           "id": "faq-private-networking",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Architecture patterns"
     }
   },
   {
@@ -7518,7 +7584,8 @@
           "id": "remove-replica",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enable and manage High Availability"
     }
   },
   {
@@ -7606,7 +7673,8 @@
           "id": "how-workflow-id-uniqueness-is-preserved-after-a-forced-failover",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Failovers"
     }
   },
   {
@@ -7689,7 +7757,8 @@
           "id": "testing",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage failovers"
     }
   },
   {
@@ -7806,7 +7875,8 @@
           "id": "gcp-regions-and-private-service-connect-endpoints",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Connectivity for High Availability"
     }
   },
   {
@@ -7914,7 +7984,8 @@
           "id": "external-storage",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "High Availability"
     }
   },
   {
@@ -7992,7 +8063,8 @@
           "id": "failover-audit-log",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Monitoring"
     }
   },
   {
@@ -8041,7 +8113,8 @@
           "id": "feature-guides",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Cloud"
     }
   },
   {
@@ -8140,7 +8213,8 @@
           "id": "custom-roles-limits",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage custom roles"
     }
   },
   {
@@ -8234,7 +8308,8 @@
           "id": "email-domain-change",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Account access"
     }
   },
   {
@@ -8357,7 +8432,8 @@
           "id": "user-authorization-behavior",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Permissions reference"
     }
   },
   {
@@ -8405,7 +8481,8 @@
           "id": "namespace-level-permissions",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Roles and permissions"
     }
   },
   {
@@ -8484,7 +8561,8 @@
           "id": "finish-saml-configuration",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "SAML authentication"
     }
   },
   {
@@ -8553,7 +8631,8 @@
           "id": "configure-scim-with-okta",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "SCIM user management"
     }
   },
   {
@@ -8667,7 +8746,8 @@
           "id": "project-scoped-service-accounts",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage service accounts"
     }
   },
   {
@@ -8751,7 +8831,8 @@
           "id": "delete-a-user-group",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage user groups"
     }
   },
   {
@@ -8915,7 +8996,8 @@
           "id": "email-domain-change",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manage users"
     }
   },
   {
@@ -9128,7 +9210,8 @@
           "id": "api-limits",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "API reference"
     }
   },
   {
@@ -9201,7 +9284,8 @@
           "id": "why-are-some-metrics-missing-from-a-scrape",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "FAQ"
     }
   },
   {
@@ -9290,7 +9374,8 @@
           "id": "dashboard-templates",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Set up Cloud metrics"
     }
   },
   {
@@ -9393,7 +9478,8 @@
           "id": "opentelemetry-collector-configuration",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Connect an observability tool"
     }
   },
   {
@@ -9916,7 +10002,8 @@
           "id": "temporal_cloud_v1_provisioned_capacity_tru_count",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Metrics reference"
     }
   },
   {
@@ -9985,7 +10072,8 @@
           "id": "grafana-dashboards-setup",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Set up SDK metrics"
     }
   },
   {
@@ -10269,7 +10357,8 @@
           "id": "i-would-like-to-enable-payload-encryption-as-part-of-the-migration-is-this-supported",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Automated migration"
     }
   },
   {
@@ -10348,7 +10437,8 @@
           "id": "estimate-storage-separately",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Estimate Actions"
     }
   },
   {
@@ -10379,7 +10469,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Migrate"
     }
   },
   {
@@ -10463,7 +10554,8 @@
           "id": "multi-cluster-replication",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Manual migration"
     }
   },
   {
@@ -10526,7 +10618,8 @@
           "id": "steps-to-migrate",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Migrate between regions"
     }
   },
   {
@@ -10590,7 +10683,8 @@
           "id": "monitor-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Monitor"
     }
   },
   {
@@ -10638,7 +10732,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Nexus"
     }
   },
   {
@@ -10680,7 +10775,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Latency and Availability"
     }
   },
   {
@@ -10722,7 +10818,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Limits"
     }
   },
   {
@@ -10764,7 +10861,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -10811,7 +10909,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Pricing"
     }
   },
   {
@@ -10853,7 +10952,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Security"
     }
   },
   {
@@ -10917,7 +11017,8 @@
           "id": "admin-notifications",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Receive notifications"
     }
   },
   {
@@ -11056,7 +11157,8 @@
           "id": "provide-feedback",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cloud Ops API"
     }
   },
   {
@@ -11155,7 +11257,8 @@
           "id": "delete-a-project",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Projects"
     }
   },
   {
@@ -11447,7 +11550,8 @@
           "id": "comparing-rto-and-sla",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Outages and Recovery Objectives (RTO / RPO)"
     }
   },
   {
@@ -11596,7 +11700,8 @@
           "id": "workflow-lock-contention-busyworkflow",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Monitor service health"
     }
   },
   {
@@ -11680,7 +11785,8 @@
           "id": "related",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Uptime, latency, and SLOs"
     }
   },
   {
@@ -11984,7 +12090,8 @@
           "id": "--page-token-1",
           "level": 6
         }
-      ]
+      ],
+      "breadcrumbLabel": "account"
     }
   },
   {
@@ -12148,7 +12255,8 @@
           "id": "--request-id-3",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "apikey"
     }
   },
   {
@@ -12247,7 +12355,8 @@
           "id": "--connectivity-rule-id-1",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "connectivity-rule"
     }
   },
   {
@@ -12296,7 +12405,8 @@
           "id": "get",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "feature"
     }
   },
   {
@@ -12415,7 +12525,8 @@
           "id": "--key-file",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "generate-certificates"
     }
   },
   {
@@ -12489,7 +12600,8 @@
           "id": "build-tcld-from-source",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "CLI (tcld)"
     }
   },
   {
@@ -12538,7 +12650,8 @@
           "id": "--disable-pop-up",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "login"
     }
   },
   {
@@ -12587,7 +12700,8 @@
           "id": "--disable-pop-up",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "logout"
     }
   },
   {
@@ -12721,7 +12835,8 @@
           "id": "--id-3",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "migration"
     }
   },
   {
@@ -13905,7 +14020,8 @@
           "id": "--remove-all",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "namespace"
     }
   },
   {
@@ -14164,7 +14280,8 @@
           "id": "--request-id-5",
           "level": 5
         }
-      ]
+      ],
+      "breadcrumbLabel": "nexus"
     }
   },
   {
@@ -14218,7 +14335,8 @@
           "id": "--request-id",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "request"
     }
   },
   {
@@ -14442,7 +14560,8 @@
           "id": "--namespace-permission-2",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "service-account"
     }
   },
   {
@@ -14626,7 +14745,8 @@
           "id": "--request-id-2",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "user-group"
     }
   },
   {
@@ -14835,7 +14955,8 @@
           "id": "--namespace-permission-1",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "user"
     }
   },
   {
@@ -14878,7 +14999,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "version"
     }
   },
   {
@@ -14966,7 +15088,8 @@
           "id": "community-involvement",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Terraform provider"
     }
   },
   {
@@ -15105,7 +15228,8 @@
           "id": "enable-host-resource-reporting",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Monitor Worker health"
     }
   },
   {
@@ -15142,7 +15266,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Activity retry simulator"
     }
   },
   {
@@ -15185,7 +15310,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Priority and Fairness"
     }
   },
   {
@@ -15239,7 +15365,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -15297,7 +15424,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Activities"
     }
   },
   {
@@ -15440,7 +15568,8 @@
           "id": "typescript",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Dependency Injection"
     }
   },
   {
@@ -15563,7 +15692,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Approval"
     }
   },
   {
@@ -15646,7 +15776,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Batch Iterator"
     }
   },
   {
@@ -15719,7 +15850,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Batch Processing"
     }
   },
   {
@@ -15857,7 +15989,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -15975,7 +16108,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -16113,7 +16247,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Delayed Callback"
     }
   },
   {
@@ -16216,7 +16351,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Delayed Retry"
     }
   },
   {
@@ -16329,7 +16465,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Delayed Start"
     }
   },
   {
@@ -16382,7 +16519,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Distributed Transaction"
     }
   },
   {
@@ -16505,7 +16643,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Downstream Rate Limiting"
     }
   },
   {
@@ -16598,7 +16737,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Eager Workflow Start"
     }
   },
   {
@@ -16686,7 +16826,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Early Return + Local Activities"
     }
   },
   {
@@ -16789,7 +16930,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Early Return"
     }
   },
   {
@@ -16842,7 +16984,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Entity & Lifecycle"
     }
   },
   {
@@ -16955,7 +17098,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Entity Workflow"
     }
   },
   {
@@ -17018,7 +17162,8 @@
           "id": "references",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error Handling & Retry"
     }
   },
   {
@@ -17116,7 +17261,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Event Accumulator"
     }
   },
   {
@@ -17169,7 +17315,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Interaction"
     }
   },
   {
@@ -17267,7 +17414,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Fairness"
     }
   },
   {
@@ -17350,7 +17498,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Fan-Out with Child Workflows"
     }
   },
   {
@@ -17448,7 +17597,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Fast/Slow Retries"
     }
   },
   {
@@ -17546,7 +17696,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Fixed Count of Retries"
     }
   },
   {
@@ -17644,7 +17795,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Fixed Wall-Time Retries"
     }
   },
   {
@@ -17732,7 +17884,8 @@
           "id": "worker-configuration-patterns",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Design Patterns"
     }
   },
   {
@@ -17825,7 +17978,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Local Activities"
     }
   },
   {
@@ -17968,7 +18122,8 @@
           "id": "go",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Long Running Activity"
     }
   },
   {
@@ -18051,7 +18206,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "MapReduce Tree"
     }
   },
   {
@@ -18159,7 +18315,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Non-Retryable Errors"
     }
   },
   {
@@ -18282,7 +18439,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Parallel Execution"
     }
   },
   {
@@ -18345,7 +18503,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Performance & Latency"
     }
   },
   {
@@ -18463,7 +18622,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Pick First (Race)"
     }
   },
   {
@@ -18621,7 +18781,8 @@
           "id": "go",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Polling External Services"
     }
   },
   {
@@ -18719,7 +18880,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Priority"
     }
   },
   {
@@ -18772,7 +18934,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "QoS & Throughput"
     }
   },
   {
@@ -18880,7 +19043,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Request-Response via Updates"
     }
   },
   {
@@ -18993,7 +19157,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Resumable Activity"
     }
   },
   {
@@ -19096,7 +19261,8 @@
           "id": "references",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Retry Alerting via Metrics"
     }
   },
   {
@@ -19209,7 +19375,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Saga Pattern"
     }
   },
   {
@@ -19322,7 +19489,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Signal with Start"
     }
   },
   {
@@ -19405,7 +19573,8 @@
           "id": "patterns",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Sliding Window"
     }
   },
   {
@@ -19458,7 +19627,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Task Orchestration"
     }
   },
   {
@@ -19576,7 +19746,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Updatable Timer"
     }
   },
   {
@@ -19629,7 +19800,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker Configuration"
     }
   },
   {
@@ -19757,7 +19929,8 @@
           "id": "sample-code",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker-Specific Task Queues"
     }
   },
   {
@@ -19810,7 +19983,8 @@
           "id": "related-sections",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Messaging"
     }
   },
   {
@@ -19858,7 +20032,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Asynchronous Activity completion"
     }
   },
   {
@@ -19912,7 +20087,8 @@
           "id": "develop-activity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -19970,7 +20146,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -20024,7 +20201,8 @@
           "id": "set-a-dynamic-activity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Activity"
     }
   },
   {
@@ -20083,7 +20261,8 @@
           "id": "get-activity-results",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -20137,7 +20316,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -20236,7 +20416,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -20329,7 +20510,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -20418,7 +20600,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -20482,7 +20665,8 @@
           "id": "custom-payload-converter",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -20556,7 +20740,8 @@
           "id": "using-a-codec-server",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -20604,7 +20789,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -20673,7 +20859,8 @@
           "id": "debug-in-a-development-production",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -20747,7 +20934,8 @@
           "id": "workflow-failure",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -20796,7 +20984,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -20890,7 +21079,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -20944,7 +21134,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -21028,7 +21219,8 @@
           "id": "get-workflow-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -21117,7 +21309,8 @@
           "id": "temporal-net-technical-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": ".NET SDK"
     }
   },
   {
@@ -21286,7 +21479,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -21335,7 +21529,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus"
     }
   },
   {
@@ -21438,7 +21633,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -21532,7 +21728,8 @@
           "id": "run-standalone-nexus-operations-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Operations"
     }
   },
   {
@@ -21621,7 +21818,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -21670,7 +21868,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -21789,7 +21988,8 @@
           "id": "upsert-search-attributes",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -21907,7 +22107,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -21956,7 +22157,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -22040,7 +22242,8 @@
           "id": "implementing-worker-call-interceptors",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -22119,7 +22322,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -22198,7 +22402,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers on AWS Lambda"
     }
   },
   {
@@ -22277,7 +22482,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -22331,7 +22537,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -22435,7 +22642,8 @@
           "id": "workflow-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -22519,7 +22727,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -22582,7 +22791,8 @@
           "id": "parent-close-policy",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -22661,7 +22871,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -22715,7 +22926,8 @@
           "id": "set-a-dynamic-workflow",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Workflow"
     }
   },
   {
@@ -22769,7 +22981,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -22953,7 +23166,8 @@
           "id": "set-a-dynamic-update",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Message passing"
     }
   },
   {
@@ -23056,7 +23270,8 @@
           "id": "start-delay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -23130,7 +23345,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -23182,7 +23398,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -23286,7 +23503,8 @@
           "id": "testing-a-workflow-for-replay-safety",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -23400,7 +23618,8 @@
           "id": "see-also",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -23478,7 +23697,8 @@
           "id": "load-configuration-from-a-custom-path",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Environment configuration"
     }
   },
   {
@@ -23526,7 +23746,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Asynchronous Activity Completion"
     }
   },
   {
@@ -23595,7 +23816,8 @@
           "id": "customize-activity-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -23653,7 +23875,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -23707,7 +23930,8 @@
           "id": "set-a-dynamic-activity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Activity"
     }
   },
   {
@@ -23816,7 +24040,8 @@
           "id": "get-activity-results",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -23870,7 +24095,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -23959,7 +24185,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -24052,7 +24279,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -24141,7 +24369,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -24220,7 +24449,8 @@
           "id": "further-reading",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Context Propagation"
     }
   },
   {
@@ -24274,7 +24504,8 @@
           "id": "custom-payload-converter",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -24348,7 +24579,8 @@
           "id": "using-a-codec-server",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -24452,7 +24684,8 @@
           "id": "multi-region-durability-with-amazon-s3",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Storage"
     }
   },
   {
@@ -24500,7 +24733,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -24594,7 +24828,8 @@
           "id": "debugging",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -24653,7 +24888,8 @@
           "id": "panics-and-deferred-functions",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -24702,7 +24938,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -24761,7 +24998,8 @@
           "id": "static-analysis-with-the-workflowcheck-tool",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Multithreading"
     }
   },
   {
@@ -24880,7 +25118,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -24934,7 +25173,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -24993,7 +25233,8 @@
           "id": "manage-namespaces",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -25142,7 +25383,8 @@
           "id": "get-last-completion-result",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -25246,7 +25488,8 @@
           "id": "get-connected-with-the-temporal-go-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Go SDK"
     }
   },
   {
@@ -25375,7 +25618,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Google ADK"
     }
   },
   {
@@ -25423,7 +25667,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -25562,7 +25807,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "OpenTelemetry v2"
     }
   },
   {
@@ -25751,7 +25997,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -25800,7 +26047,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Nexus"
     }
   },
   {
@@ -25893,7 +26141,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -25987,7 +26236,8 @@
           "id": "run-standalone-nexus-operations-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Operations"
     }
   },
   {
@@ -26076,7 +26326,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -26125,7 +26376,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -26244,7 +26496,8 @@
           "id": "remove-search-attribute",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -26342,7 +26595,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -26451,7 +26705,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -26510,7 +26765,8 @@
           "id": "related",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -26589,7 +26845,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -26663,7 +26920,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -26737,7 +26995,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -26791,7 +27050,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -26865,7 +27125,8 @@
           "id": "recreate-session",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Sessions"
     }
   },
   {
@@ -26959,7 +27220,8 @@
           "id": "detecting-replay-advanced",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -27033,7 +27295,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -27102,7 +27365,8 @@
           "id": "parent-close-policy",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -27181,7 +27445,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -27235,7 +27500,8 @@
           "id": "set-a-dynamic-workflow",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Workflow"
     }
   },
   {
@@ -27289,7 +27555,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -27458,7 +27725,8 @@
           "id": "problems-when-sending-a-query",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Messages"
     }
   },
   {
@@ -27567,7 +27835,8 @@
           "id": "temporal-cron-jobs",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -27651,7 +27920,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Selectors"
     }
   },
   {
@@ -27710,7 +27980,8 @@
           "id": "mutable-side-effects",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Side Effects"
     }
   },
   {
@@ -27784,7 +28055,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -27836,7 +28108,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -27925,7 +28198,8 @@
           "id": "runtime-checking",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -28039,7 +28313,8 @@
           "id": "see-also",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -28070,7 +28345,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Develop"
     }
   },
   {
@@ -28118,7 +28394,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Asynchronous Activity completion"
     }
   },
   {
@@ -28202,7 +28479,8 @@
           "id": "custom-name",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -28260,7 +28538,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -28379,7 +28658,8 @@
           "id": "activity-execution-result",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -28433,7 +28713,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -28527,7 +28808,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -28620,7 +28902,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -28709,7 +28992,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -28768,7 +29052,8 @@
           "id": "custom-payload-conversion",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -28837,7 +29122,8 @@
           "id": "using-a-codec-server",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -28926,7 +29212,8 @@
           "id": "manage-external-objects",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Storage"
     }
   },
   {
@@ -28974,7 +29261,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -29038,7 +29326,8 @@
           "id": "debug-in-a-production-environment",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -29142,7 +29431,8 @@
           "id": "fail-a-workflow",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -29191,7 +29481,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -29335,7 +29626,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -29389,7 +29681,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -29448,7 +29741,8 @@
           "id": "manage-namespaces",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -29607,7 +29901,8 @@
           "id": "get-last-completion-result",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -29706,7 +30001,8 @@
           "id": "get-connected-with-the-temporal-java-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Java SDK"
     }
   },
   {
@@ -29754,7 +30050,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -29878,7 +30175,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Spring AI"
     }
   },
   {
@@ -30012,7 +30310,8 @@
           "id": "testing",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Spring Boot"
     }
   },
   {
@@ -30191,7 +30490,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -30240,7 +30540,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus"
     }
   },
   {
@@ -30333,7 +30634,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -30427,7 +30729,8 @@
           "id": "run-standalone-nexus-operations-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Operations"
     }
   },
   {
@@ -30516,7 +30819,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -30565,7 +30869,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -30684,7 +30989,8 @@
           "id": "remove-search-attribute",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -30797,7 +31103,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -30901,7 +31208,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -30965,7 +31273,8 @@
           "id": "related",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -31044,7 +31353,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -31118,7 +31428,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers on AWS Lambda"
     }
   },
   {
@@ -31197,7 +31508,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -31251,7 +31563,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -31355,7 +31668,8 @@
           "id": "detecting-replay-advanced",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -31433,7 +31747,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interrupt a Workflow"
     }
   },
   {
@@ -31502,7 +31817,8 @@
           "id": "parent-close-policy",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -31581,7 +31897,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -31635,7 +31952,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -31849,7 +32167,8 @@
           "id": "set-a-dynamic-update",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Messages"
     }
   },
   {
@@ -31958,7 +32277,8 @@
           "id": "start-delay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -32017,7 +32337,8 @@
           "id": "side-effects",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Side Effects"
     }
   },
   {
@@ -32091,7 +32412,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -32150,7 +32472,8 @@
           "id": "timers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -32249,7 +32572,8 @@
           "id": "testing-a-workflow-for-replay-safety",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -32373,7 +32697,8 @@
           "id": "see-also",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -32427,7 +32752,8 @@
           "id": "asynchronous-activity-completion",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Asynchronous Activity Completion"
     }
   },
   {
@@ -32496,7 +32822,8 @@
           "id": "activity-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -32560,7 +32887,8 @@
           "id": "get-activity-results",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -32614,7 +32942,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -32708,7 +33037,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -32777,7 +33107,8 @@
           "id": "debug-in-a-development-production",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -32826,7 +33157,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -32905,7 +33237,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -32959,7 +33292,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -33078,7 +33412,8 @@
           "id": "configure-rpc-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -33167,7 +33502,8 @@
           "id": "get-connected-with-the-temporal-php-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "PHP SDK"
     }
   },
   {
@@ -33251,7 +33587,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -33300,7 +33637,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -33399,7 +33737,8 @@
           "id": "remove-search-attribute",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -33522,7 +33861,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -33571,7 +33911,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -33630,7 +33971,8 @@
           "id": "register-types",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker processes"
     }
   },
   {
@@ -33709,7 +34051,8 @@
           "id": "workflow-logic-requirements",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Basics"
     }
   },
   {
@@ -33768,7 +34111,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -33832,7 +34176,8 @@
           "id": "parent-close-policy",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -33911,7 +34256,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -33965,7 +34311,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -34184,7 +34531,8 @@
           "id": "set-a-dynamic-update",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Messages"
     }
   },
   {
@@ -34248,7 +34596,8 @@
           "id": "temporal-cron-jobs",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -34307,7 +34656,8 @@
           "id": "side-effects",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Side effects"
     }
   },
   {
@@ -34381,7 +34731,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -34440,7 +34791,8 @@
           "id": "timers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -34524,7 +34876,8 @@
           "id": "runtime-checking",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -34663,7 +35016,8 @@
           "id": "side-effects-tests",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Plugins guide"
     }
   },
   {
@@ -34711,7 +35065,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Asynchronous Activity completion"
     }
   },
   {
@@ -34780,7 +35135,8 @@
           "id": "activity-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -34838,7 +35194,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -34902,7 +35259,8 @@
           "id": "get-activity-results",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -34956,7 +35314,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -35055,7 +35414,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -35148,7 +35508,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -35237,7 +35598,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -35311,7 +35673,8 @@
           "id": "customize-the-json-converter-for-custom-types",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -35385,7 +35748,8 @@
           "id": "codec-server",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -35489,7 +35853,8 @@
           "id": "multi-region-durability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Storage"
     }
   },
   {
@@ -35537,7 +35902,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -35596,7 +35962,8 @@
           "id": "debug-in-a-production-environment",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -35750,7 +36117,8 @@
           "id": "protecting-sensitive-information",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -35799,7 +36167,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -35908,7 +36277,8 @@
           "id": "import-notification-policy",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Python SDK sandbox"
     }
   },
   {
@@ -36017,7 +36387,8 @@
           "id": "when-should-you-use-async-activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Python SDK sync vs async"
     }
   },
   {
@@ -36116,7 +36487,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -36170,7 +36542,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -36254,7 +36627,8 @@
           "id": "get-workflow-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -36353,7 +36727,8 @@
           "id": "get-connected-with-the-temporal-python-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Python SDK"
     }
   },
   {
@@ -36462,7 +36837,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deep Agents"
     }
   },
   {
@@ -36556,7 +36932,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Google ADK"
     }
   },
   {
@@ -36670,7 +37047,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Google GenAI"
     }
   },
   {
@@ -36718,7 +37096,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -36897,7 +37276,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "LangGraph"
     }
   },
   {
@@ -36986,7 +37366,8 @@
           "id": "example-sample",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "LangSmith"
     }
   },
   {
@@ -37160,7 +37541,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "OpenAI Agents SDK integration"
     }
   },
   {
@@ -37314,7 +37696,8 @@
           "id": "samples",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Strands Agents"
     }
   },
   {
@@ -37468,7 +37851,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -37517,7 +37901,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus"
     }
   },
   {
@@ -37610,7 +37995,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -37704,7 +38090,8 @@
           "id": "run-standalone-nexus-operations-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Operations"
     }
   },
   {
@@ -37793,7 +38180,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -37842,7 +38230,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -37971,7 +38360,8 @@
           "id": "remove-search-attribute",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -38069,7 +38459,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -38118,7 +38509,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -38202,7 +38594,8 @@
           "id": "implementing-worker-call-interceptors",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -38281,7 +38674,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -38370,7 +38764,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Amazon Bedrock AgentCore"
     }
   },
   {
@@ -38444,7 +38839,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -38518,7 +38914,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -38572,7 +38969,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -38671,7 +39069,8 @@
           "id": "detecting-replay-advanced",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -38739,7 +39138,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -38803,7 +39203,8 @@
           "id": "parent-close-policy",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -38882,7 +39283,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -38936,7 +39338,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -39145,7 +39548,8 @@
           "id": "set-a-dynamic-activity",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Messages"
     }
   },
   {
@@ -39254,7 +39658,8 @@
           "id": "start-delay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -39328,7 +39733,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -39381,7 +39787,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -39485,7 +39892,8 @@
           "id": "testing-a-workflow-for-replay-safety",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -39664,7 +40072,8 @@
           "id": "see-also",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -39718,7 +40127,8 @@
           "id": "asynchronous-activity-completion",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Asynchronous Activity completion"
     }
   },
   {
@@ -39777,7 +40187,8 @@
           "id": "activity-concurrency-and-executors",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -39835,7 +40246,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -39889,7 +40301,8 @@
           "id": "set-a-dynamic-activity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Activities"
     }
   },
   {
@@ -39943,7 +40356,8 @@
           "id": "activity-execution",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -39997,7 +40411,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -40096,7 +40511,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -40189,7 +40605,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -40278,7 +40695,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -40347,7 +40765,8 @@
           "id": "active-model",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -40421,7 +40840,8 @@
           "id": "using-a-codec-server",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -40469,7 +40889,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -40538,7 +40959,8 @@
           "id": "debug-in-a-production-environment",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -40612,7 +41034,8 @@
           "id": "workflow-failure",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Error handling"
     }
   },
   {
@@ -40661,7 +41084,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -40760,7 +41184,8 @@
           "id": "replay-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -40814,7 +41239,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -40898,7 +41324,8 @@
           "id": "get-workflow-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -40992,7 +41419,8 @@
           "id": "get-connected-with-the-temporal-ruby-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Ruby SDK"
     }
   },
   {
@@ -41035,7 +41463,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -41088,7 +41517,8 @@
           "id": "lazyeager-loading",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Rails"
     }
   },
   {
@@ -41177,7 +41607,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -41226,7 +41657,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -41345,7 +41777,8 @@
           "id": "upsert-search-attributes",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -41443,7 +41876,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -41492,7 +41926,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -41571,7 +42006,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -41650,7 +42086,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -41704,7 +42141,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -41798,7 +42236,8 @@
           "id": "detecting-replay-advanced",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -41877,7 +42316,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -41940,7 +42380,8 @@
           "id": "parent-close-policy",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -41998,7 +42439,8 @@
           "id": "continue-as-new",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -42052,7 +42494,8 @@
           "id": "set-a-dynamic-workflow",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic Workflow"
     }
   },
   {
@@ -42106,7 +42549,8 @@
           "id": "workflow-futures",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow futures"
     }
   },
   {
@@ -42160,7 +42604,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -42344,7 +42789,8 @@
           "id": "set-a-dynamic-update",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Message passing"
     }
   },
   {
@@ -42447,7 +42893,8 @@
           "id": "start-delay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -42521,7 +42968,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -42573,7 +43021,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Durable Timers"
     }
   },
   {
@@ -42672,7 +43121,8 @@
           "id": "testing-a-workflow-for-replay-safety",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -42801,7 +43251,8 @@
           "id": "activity-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -42865,7 +43316,8 @@
           "id": "get-activity-results",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -42919,7 +43371,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -43018,7 +43471,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -43111,7 +43565,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -43200,7 +43655,8 @@
           "id": "heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -43254,7 +43710,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -43338,7 +43795,8 @@
           "id": "get-workflow-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -43422,7 +43880,8 @@
           "id": "get-connected-with-the-temporal-rust-community",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Rust SDK"
     }
   },
   {
@@ -43481,7 +43940,8 @@
           "id": "nexus-operation-arguments",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature guide"
     }
   },
   {
@@ -43530,7 +43990,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus"
     }
   },
   {
@@ -43633,7 +44094,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -43682,7 +44144,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -43761,7 +44224,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -43815,7 +44279,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -43894,7 +44359,8 @@
           "id": "shut-down-a-worker",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -44008,7 +44474,8 @@
           "id": "return-types",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -44076,7 +44543,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -44155,7 +44623,8 @@
           "id": "parent-close-policy-options",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -44234,7 +44703,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -44288,7 +44758,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -44437,7 +44908,8 @@
           "id": "ensure-handlers-finish-before-completion",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Messages"
     }
   },
   {
@@ -44511,7 +44983,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -44563,7 +45036,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -44632,7 +45106,8 @@
           "id": "use-the-multi-modal-worker",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Safe deployments"
     }
   },
   {
@@ -44736,7 +45211,8 @@
           "id": "limitations-of-fairness",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Task queue priority and fairness"
     }
   },
   {
@@ -44795,7 +45271,8 @@
           "id": "local-activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Asynchronous Activity"
     }
   },
   {
@@ -44884,7 +45361,8 @@
           "id": "dynamically-reference-activities",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity basics"
     }
   },
   {
@@ -44942,7 +45420,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Benign exceptions"
     }
   },
   {
@@ -45006,7 +45485,8 @@
           "id": "get-activity-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -45060,7 +45540,8 @@
           "id": "activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -45159,7 +45640,8 @@
           "id": "connect-with-an-api-key",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -45262,7 +45744,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -45351,7 +45834,8 @@
           "id": "activity-heartbeat-timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -45435,7 +45919,8 @@
           "id": "protobufs",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload conversion"
     }
   },
   {
@@ -45499,7 +45984,8 @@
           "id": "custom-payload-codec",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload encryption"
     }
   },
   {
@@ -45603,7 +46089,8 @@
           "id": "multi-region-durability-with-amazon-s3",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Storage"
     }
   },
   {
@@ -45651,7 +46138,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Data handling"
     }
   },
   {
@@ -45760,7 +46248,8 @@
           "id": "grpc-call-timeouts-context-deadline-exceeded",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Debugging"
     }
   },
   {
@@ -45809,7 +46298,8 @@
           "id": "single-entity-pattern",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Entity pattern"
     }
   },
   {
@@ -45858,7 +46348,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Best practices"
     }
   },
   {
@@ -45982,7 +46473,8 @@
           "id": "replay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Testing"
     }
   },
   {
@@ -46036,7 +46528,8 @@
           "id": "temporal-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Client"
     }
   },
   {
@@ -46095,7 +46588,8 @@
           "id": "manage-namespaces",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -46199,7 +46693,8 @@
           "id": "get-workflow-results",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -46303,7 +46798,8 @@
           "id": "linting-and-types",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "TypeScript SDK"
     }
   },
   {
@@ -46447,7 +46943,8 @@
           "id": "stream-structured-output",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "AI SDK by Vercel"
     }
   },
   {
@@ -46566,7 +47063,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Google ADK"
     }
   },
   {
@@ -46614,7 +47112,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -46718,7 +47217,8 @@
           "id": "samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "LangSmith"
     }
   },
   {
@@ -46887,7 +47387,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "OpenAI Agents SDK integration"
     }
   },
   {
@@ -47041,7 +47542,8 @@
           "id": "samples",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Strands Agents"
     }
   },
   {
@@ -47195,7 +47697,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Feature Guide"
     }
   },
   {
@@ -47244,7 +47747,8 @@
           "id": "temporal-nexus",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus"
     }
   },
   {
@@ -47337,7 +47841,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -47431,7 +47936,8 @@
           "id": "run-standalone-nexus-operations-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Operations"
     }
   },
   {
@@ -47520,7 +48026,8 @@
           "id": "event-history",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Enriching the UI"
     }
   },
   {
@@ -47569,7 +48076,8 @@
           "id": "platform",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Platform"
     }
   },
   {
@@ -47748,7 +48256,8 @@
           "id": "proxy-and-call-a-sink-function-from-a-workflow",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -47851,7 +48360,8 @@
           "id": "verify-success",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstart"
     }
   },
   {
@@ -47955,7 +48465,8 @@
           "id": "workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -48039,7 +48550,8 @@
           "id": "nexus-interceptor-registration",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -48148,7 +48660,8 @@
           "id": "do-not-use-alpine",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Run a Worker"
     }
   },
   {
@@ -48227,7 +48740,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -48306,7 +48820,8 @@
           "id": "add-observability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -48360,7 +48875,8 @@
           "id": "supported-providers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -48454,7 +48970,8 @@
           "id": "detecting-replay-advanced",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow basics"
     }
   },
   {
@@ -48517,7 +49034,8 @@
           "id": "reset",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation"
     }
   },
   {
@@ -48616,7 +49134,8 @@
           "id": "sharing-promises-between-scopes",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation scopes"
     }
   },
   {
@@ -48680,7 +49199,8 @@
           "id": "parent-close-policy",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -48759,7 +49279,8 @@
           "id": "how-to-test",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -48813,7 +49334,8 @@
           "id": "workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -49012,7 +49534,8 @@
           "id": "dynamic-signals-and-queries",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Message passing"
     }
   },
   {
@@ -49121,7 +49644,8 @@
           "id": "start-delay",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -49205,7 +49729,8 @@
           "id": "workflow-retries",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts"
     }
   },
   {
@@ -49269,7 +49794,8 @@
           "id": "asynchronous-design-patterns",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timers"
     }
   },
   {
@@ -49368,7 +49894,8 @@
           "id": "worker-versioning",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Versioning"
     }
   },
   {
@@ -49482,7 +50009,8 @@
           "id": "see-also",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -49566,7 +50094,8 @@
           "id": "invariants",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Configuration options"
     }
   },
   {
@@ -49665,7 +50194,8 @@
           "id": "related-reading",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker performance"
     }
   },
   {
@@ -49729,7 +50259,8 @@
           "id": "cache-metrics",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Performance metrics"
     }
   },
   {
@@ -49828,7 +50359,8 @@
           "id": "net-c-sdk",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Runtime tuning"
     }
   },
   {
@@ -49952,7 +50484,8 @@
           "id": "rate-limiting",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Task Queue performance"
     }
   },
   {
@@ -49995,7 +50528,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Workflow cache tuning"
     }
   },
   {
@@ -50149,7 +50683,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker tuning reference"
     }
   },
   {
@@ -50202,7 +50737,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Activities"
     }
   },
   {
@@ -50291,7 +50827,8 @@
           "id": "best-practices-for-defining-activities",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Definition"
     }
   },
   {
@@ -50395,7 +50932,8 @@
           "id": "task-token",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Execution"
     }
   },
   {
@@ -50469,7 +51007,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Delete"
     }
   },
   {
@@ -50568,7 +51107,8 @@
           "id": "audit-trail",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Activity Operations"
     }
   },
   {
@@ -50657,7 +51197,8 @@
           "id": "limitations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Pause"
     }
   },
   {
@@ -50731,7 +51272,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Request Cancel"
     }
   },
   {
@@ -50815,7 +51357,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Reset"
     }
   },
   {
@@ -50889,7 +51432,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Terminate"
     }
   },
   {
@@ -50963,7 +51507,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Unpause"
     }
   },
   {
@@ -51037,7 +51582,8 @@
           "id": "important-considerations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Update Options"
     }
   },
   {
@@ -51126,7 +51672,8 @@
           "id": "activity-vs-local-activity",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Local Activity"
     }
   },
   {
@@ -51270,7 +51817,8 @@
           "id": "temporal-cloud-support",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Activity"
     }
   },
   {
@@ -51354,7 +51902,8 @@
           "id": "operator-commands",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Activity"
     }
   },
   {
@@ -51458,7 +52007,8 @@
           "id": "workflow-execution-failures",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Application failures"
     }
   },
   {
@@ -51557,7 +52107,8 @@
           "id": "workflow-resumes-and-finishes",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "How Temporal works"
     }
   },
   {
@@ -51651,7 +52202,8 @@
           "id": "persistence-layer",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal architecture"
     }
   },
   {
@@ -51760,7 +52312,8 @@
           "id": "sdk-and-service-relationship",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "About the SDKs"
     }
   },
   {
@@ -51834,7 +52387,8 @@
           "id": "child-workflow-versus-an-activity",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -51888,7 +52442,8 @@
           "id": "parent-close-policy",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Parent Close Policy"
     }
   },
   {
@@ -51937,7 +52492,8 @@
           "id": "implementing-context-propagation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Context Propagation"
     }
   },
   {
@@ -52041,7 +52597,8 @@
           "id": "sdk-codec-server-samples",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Codec Server"
     }
   },
   {
@@ -52100,7 +52657,8 @@
           "id": "payload",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Data Conversion"
     }
   },
   {
@@ -52164,7 +52722,8 @@
           "id": "custom-data-converter",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Default and Custom Data Converters"
     }
   },
   {
@@ -52258,7 +52817,8 @@
           "id": "replication-tradeoffs",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "External Storage"
     }
   },
   {
@@ -52317,7 +52877,8 @@
           "id": "failure-converter",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Failure Converter"
     }
   },
   {
@@ -52381,7 +52942,8 @@
           "id": "key-rotation",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Key management"
     }
   },
   {
@@ -52450,7 +53012,8 @@
           "id": "encryption",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload Codec"
     }
   },
   {
@@ -52514,7 +53077,8 @@
           "id": "composite-data-converters",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Payload Converter"
     }
   },
   {
@@ -52583,7 +53147,8 @@
           "id": "decoding-data-on-the-web-ui-and-cli",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Remote data encoding"
     }
   },
   {
@@ -52677,7 +53242,8 @@
           "id": "heartbeat-timeout-zero",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Detecting Activity failures"
     }
   },
   {
@@ -52751,7 +53317,8 @@
           "id": "detecting-workflow-task-failures",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Detecting Workflow failures"
     }
   },
   {
@@ -52834,7 +53401,8 @@
           "id": "temporal-applications-support-non-deterministic-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": ".NET"
     }
   },
   {
@@ -52891,7 +53459,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Event History"
     }
   },
   {
@@ -52974,7 +53543,8 @@
           "id": "temporal-applications-support-non-deterministic-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Go"
     }
   },
   {
@@ -53057,7 +53627,8 @@
           "id": "temporal-applications-support-non-deterministic-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Java"
     }
   },
   {
@@ -53140,7 +53711,8 @@
           "id": "temporal-applications-support-non-deterministic-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Python"
     }
   },
   {
@@ -53223,7 +53795,8 @@
           "id": "temporal-applications-support-non-deterministic-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "TypeScript"
     }
   },
   {
@@ -53261,7 +53834,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Extensibility"
     }
   },
   {
@@ -53304,7 +53878,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Failures and error handling"
     }
   },
   {
@@ -53335,7 +53910,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Encyclopedia"
     }
   },
   {
@@ -53379,7 +53955,8 @@
           "id": "implementing-interceptors",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Interceptors"
     }
   },
   {
@@ -53428,7 +54005,8 @@
           "id": "global-namespace",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Global Namespace"
     }
   },
   {
@@ -53482,7 +54060,8 @@
           "id": "namespace-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -53536,7 +54115,8 @@
           "id": "data-validation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "NexGen"
     }
   },
   {
@@ -53590,7 +54170,8 @@
           "id": "deploying-a-nexus-endpoint",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Endpoints"
     }
   },
   {
@@ -53638,7 +54219,8 @@
           "id": "nexus-error-handling-in-caller-workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Error Handling"
     }
   },
   {
@@ -53696,7 +54278,8 @@
           "id": "tracing",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Execution Debugging"
     }
   },
   {
@@ -53780,7 +54363,8 @@
           "id": "operational-reference",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Nexus"
     }
   },
   {
@@ -53833,7 +54417,8 @@
           "id": "self-hosted-metrics",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Metrics"
     }
   },
   {
@@ -53972,7 +54557,8 @@
           "id": "attaching-multiple-nexus-callers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Operations"
     }
   },
   {
@@ -54050,7 +54636,8 @@
           "id": "production-usage",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Patterns"
     }
   },
   {
@@ -54129,7 +54716,8 @@
           "id": "automate-nexus-endpoint-provisioning-and-lifecycle-management",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Registry"
     }
   },
   {
@@ -54213,7 +54801,8 @@
           "id": "managing-nexus-endpoints",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Security"
     }
   },
   {
@@ -54256,7 +54845,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Nexus Services"
     }
   },
   {
@@ -54310,7 +54900,8 @@
           "id": "cancellation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Nexus Standalone Activity"
     }
   },
   {
@@ -54409,7 +55000,8 @@
           "id": "temporal-cloud-support",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Standalone Nexus Operation"
     }
   },
   {
@@ -54458,7 +55050,8 @@
           "id": "the-nexus-aware-client",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Operation Handler"
     }
   },
   {
@@ -54502,7 +55095,8 @@
           "id": "implementing-plugins",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Plugins"
     }
   },
   {
@@ -54626,7 +55220,8 @@
           "id": "event-history",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Retry Policies"
     }
   },
   {
@@ -54675,7 +55270,8 @@
           "id": "sdk-guides",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Client"
     }
   },
   {
@@ -54744,7 +55340,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal"
     }
   },
   {
@@ -54793,7 +55390,8 @@
           "id": "archival",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Archival"
     }
   },
   {
@@ -54867,7 +55465,8 @@
           "id": "workflow-task-processing",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Multi-Cluster Replication"
     }
   },
   {
@@ -54921,7 +55520,8 @@
           "id": "dependency-versions",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Persistence"
     }
   },
   {
@@ -55010,7 +55610,8 @@
           "id": "manual-cleanup-of-closed-workflow-executions",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Server"
     }
   },
   {
@@ -55099,7 +55700,8 @@
           "id": "monitoring-and-observation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Configuration"
     }
   },
   {
@@ -55142,7 +55744,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Temporal Service"
     }
   },
   {
@@ -55191,7 +55794,8 @@
           "id": "visibility",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Visibility"
     }
   },
   {
@@ -55240,7 +55844,8 @@
           "id": "dual-visibility",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dual Visibility"
     }
   },
   {
@@ -55344,7 +55949,8 @@
           "id": "alias-resolution-with-custom-search-attributes",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "List Filter"
     }
   },
   {
@@ -55433,7 +56039,8 @@
           "id": "usage",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Search Attributes"
     }
   },
   {
@@ -55517,7 +56124,8 @@
           "id": "standard-visibility",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Visibility"
     }
   },
   {
@@ -55701,7 +56309,8 @@
           "id": "tuning-for-long-running-activities",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -55785,7 +56394,8 @@
           "id": "lifecycle",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -55899,7 +56509,8 @@
           "id": "worker-versioning-with-serverless-workers",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -55978,7 +56589,8 @@
           "id": "lifecycle",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Amazon Bedrock AgentCore"
     }
   },
   {
@@ -56032,7 +56644,8 @@
           "id": "why-sticky-execution",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Sticky Execution"
     }
   },
   {
@@ -56075,7 +56688,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Task Queue naming"
     }
   },
   {
@@ -56134,7 +56748,8 @@
           "id": "task-ordering",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Task Queues"
     }
   },
   {
@@ -56228,7 +56843,8 @@
           "id": "worker-session",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Task Routing and Worker sessions"
     }
   },
   {
@@ -56322,7 +56938,8 @@
           "id": "nexus-task-execution",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Tasks"
     }
   },
   {
@@ -56395,7 +57012,8 @@
           "id": "general-developer-guidance",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker Shutdown"
     }
   },
   {
@@ -56524,7 +57142,8 @@
           "id": "versioning-override-inheritance",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker Versioning"
     }
   },
   {
@@ -56593,7 +57212,8 @@
           "id": "worker-process",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workers"
     }
   },
   {
@@ -56697,7 +57317,8 @@
           "id": "handle-cancellation-in-your-sdk",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation and Termination"
     }
   },
   {
@@ -56766,7 +57387,8 @@
           "id": "stop-cron-schedules",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cron Job"
     }
   },
   {
@@ -56815,7 +57437,8 @@
           "id": "dynamic-handler",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic handler"
     }
   },
   {
@@ -56968,7 +57591,8 @@
           "id": "writing-query-handlers",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Handling Signals, Queries, & Updates"
     }
   },
   {
@@ -57066,7 +57690,8 @@
           "id": "stack-trace-query",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Sending Signals, Queries, & Updates"
     }
   },
   {
@@ -57144,7 +57769,8 @@
           "id": "for-readwrite-requests",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Message Passing"
     }
   },
   {
@@ -57323,7 +57949,8 @@
           "id": "stream-from-long-running-workflows",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Streams"
     }
   },
   {
@@ -57412,7 +58039,8 @@
           "id": "recommendations",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Patching"
     }
   },
   {
@@ -57536,7 +58164,8 @@
           "id": "limitations",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedule"
     }
   },
   {
@@ -57630,7 +58259,8 @@
           "id": "workflow-type",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Definition"
     }
   },
   {
@@ -57683,7 +58313,8 @@
           "id": "when",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Continue-As-New"
     }
   },
   {
@@ -57781,7 +58412,8 @@
           "id": "self-hosted-temporal",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Events"
     }
   },
   {
@@ -57839,7 +58471,8 @@
           "id": "workflow-execution-nexus-operation-limits",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Limits"
     }
   },
   {
@@ -57892,7 +58525,8 @@
           "id": "delay-workflow-execution",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timers and Start Delays"
     }
   },
   {
@@ -57991,7 +58625,8 @@
           "id": "workflow-cache",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Execution"
     }
   },
   {
@@ -58059,7 +58694,8 @@
           "id": "workflow-id-conflict-policy",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Id and Run Id"
     }
   },
   {
@@ -58118,7 +58754,8 @@
           "id": "resuming-a-workflow",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflows"
     }
   },
   {
@@ -58257,7 +58894,8 @@
           "id": "interaction-with-activity-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow Pause"
     }
   },
   {
@@ -58366,7 +59004,8 @@
           "id": "capacity",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Actions"
     }
   },
   {
@@ -58505,7 +59144,8 @@
           "id": "evaluate-temporal-cloud",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Cloud"
     }
   },
   {
@@ -58774,7 +59414,8 @@
           "id": "max-task-queues-in-deployment-version-limits",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Limits"
     }
   },
   {
@@ -58918,7 +59559,8 @@
           "id": "pricing-faq",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Pricing"
     }
   },
   {
@@ -59067,7 +59709,8 @@
           "id": "asia-pacific---jakarta-asia-southeast2",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Service regions"
     }
   },
   {
@@ -59206,7 +59849,8 @@
           "id": "compliance",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Security model"
     }
   },
   {
@@ -59285,7 +59929,8 @@
           "id": "developer-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Support"
     }
   },
   {
@@ -59338,7 +59983,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Cancellation and termination"
     }
   },
   {
@@ -59416,7 +60062,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Child Workflows"
     }
   },
   {
@@ -59507,7 +60154,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Core primitives"
     }
   },
   {
@@ -59575,7 +60223,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Data encryption"
     }
   },
   {
@@ -59606,7 +60255,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Features"
     }
   },
   {
@@ -59674,7 +60324,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Job queues"
     }
   },
   {
@@ -59752,7 +60403,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Observability"
     }
   },
   {
@@ -59815,7 +60467,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Schedules"
     }
   },
   {
@@ -59904,7 +60557,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -59987,7 +60641,8 @@
           "id": "learn-more",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Nexus"
     }
   },
   {
@@ -60060,7 +60715,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Timeouts and retries"
     }
   },
   {
@@ -60138,7 +60794,8 @@
           "id": "resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Workflow message passing"
     }
   },
   {
@@ -60176,7 +60833,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Evaluate"
     }
   },
   {
@@ -60230,7 +60888,8 @@
           "id": "general-availability",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Product release stages"
     }
   },
   {
@@ -60334,7 +60993,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Understanding Temporal"
     }
   },
   {
@@ -60443,7 +61103,8 @@
           "id": "find-an-implementation",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Use cases"
     }
   },
   {
@@ -60532,7 +61193,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Why Temporal"
     }
   },
   {
@@ -61267,7 +61929,8 @@
           "id": "tctl-deprecated",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Glossary"
     }
   },
   {
@@ -61386,7 +62049,8 @@
           "id": "before-you-benchmark",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Migrate from Celery"
     }
   },
   {
@@ -61495,7 +62159,8 @@
           "id": "6-run-the-agent",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Durable agent on AgentCore"
     }
   },
   {
@@ -61704,7 +62369,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Durable gaming sessions"
     }
   },
   {
@@ -61933,7 +62599,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Customer loyalty program"
     }
   },
   {
@@ -61986,7 +62653,8 @@
       "documentOptions": {
         "llm_exclude": true
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Guides"
     }
   },
   {
@@ -62115,7 +62783,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Distributed locking"
     }
   },
   {
@@ -62309,7 +62978,8 @@
           "id": "api-documentation",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Rate-limit downstream APIs"
     }
   },
   {
@@ -62498,7 +63168,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Recovery without restart"
     }
   },
   {
@@ -62692,7 +63363,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Reliable document approvals"
     }
   },
   {
@@ -62886,7 +63558,8 @@
           "id": "community-resources",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Route specialized workloads"
     }
   },
   {
@@ -63030,7 +63703,8 @@
           "id": "related-resources",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporary rate limit increases"
     }
   },
   {
@@ -63214,7 +63888,8 @@
           "id": "community-resources",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker execution affinity"
     }
   },
   {
@@ -63241,7 +63916,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Home"
     }
   },
   {
@@ -63294,7 +63970,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Integrations"
     }
   },
   {
@@ -63408,7 +64085,8 @@
           "id": "temporal-nexus",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Codecs and Encryption"
     }
   },
   {
@@ -63467,7 +64145,8 @@
           "id": "worker-deployments",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deploy to production"
     }
   },
   {
@@ -63571,7 +64250,8 @@
           "id": "custom-archiver-faq",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Archival"
     }
   },
   {
@@ -63655,7 +64335,8 @@
           "id": "cost-management",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Production checklist"
     }
   },
   {
@@ -63698,7 +64379,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Configurable defaults"
     }
   },
   {
@@ -63787,7 +64469,8 @@
           "id": "use-helm-charts",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deployment"
     }
   },
   {
@@ -63871,7 +64554,8 @@
           "id": "related",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Embedded server"
     }
   },
   {
@@ -63930,7 +64614,8 @@
           "id": "protect-data-and-enable-advanced-features",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Self-host"
     }
   },
   {
@@ -64019,7 +64704,8 @@
           "id": "datadog",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Monitoring"
     }
   },
   {
@@ -64118,7 +64804,8 @@
           "id": "set-up-multi-cluster-replication-in-v114-and-later",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "Multi-Cluster Replication"
     }
   },
   {
@@ -64191,7 +64878,8 @@
           "id": "best-practices",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Namespaces"
     }
   },
   {
@@ -64385,7 +65073,8 @@
           "id": "configuration-options-for-restricting-and-securing-access",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Security"
     }
   },
   {
@@ -64454,7 +65143,8 @@
           "id": "with-a-gui",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Server API"
     }
   },
   {
@@ -64528,7 +65218,8 @@
           "id": "what-to-expect-on-failover",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Nexus"
     }
   },
   {
@@ -64617,7 +65308,8 @@
           "id": "roll-out-technique",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Upgrade server"
     }
   },
   {
@@ -64676,7 +65368,8 @@
           "id": "remove-custom-search-attributes",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Custom Search Attributes"
     }
   },
   {
@@ -64740,7 +65433,8 @@
           "id": "update-temporal-service-configuration",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dual Visibility"
     }
   },
   {
@@ -64804,7 +65498,8 @@
           "id": "elasticsearch-privileges",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Elasticsearch / OpenSearch"
     }
   },
   {
@@ -64858,7 +65553,8 @@
           "id": "supported-databases",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Visibility"
     }
   },
   {
@@ -64922,7 +65618,8 @@
           "id": "database-schema-and-setup",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Legacy standard"
     }
   },
   {
@@ -64986,7 +65683,8 @@
           "id": "deprecate-primary-visibility-store",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Migrate database"
     }
   },
   {
@@ -65045,7 +65743,8 @@
           "id": "database-schema-and-setup",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "MySQL"
     }
   },
   {
@@ -65109,7 +65808,8 @@
           "id": "postgresql-index-maintenance",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "PostgreSQL"
     }
   },
   {
@@ -65168,7 +65868,8 @@
           "id": "database-schema-and-setup",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "SQLite"
     }
   },
   {
@@ -65267,7 +65968,8 @@
           "id": "configure-tls",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Configure"
     }
   },
   {
@@ -65361,7 +66063,8 @@
           "id": "gcp-workload-identity",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deploy to Kubernetes"
     }
   },
   {
@@ -65430,7 +66133,8 @@
           "id": "plug-in-your-own-key-management-backend",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Encrypt payloads"
     }
   },
   {
@@ -65514,7 +66218,8 @@
           "id": "related",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Temporal Proxy"
     }
   },
   {
@@ -65597,7 +66302,8 @@
           "id": "verify-that-the-workers-are-connected",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deploy Workers to Amazon EKS"
     }
   },
   {
@@ -65640,7 +66346,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Worker deployments"
     }
   },
   {
@@ -65719,7 +66426,8 @@
           "id": "running-the-temporal-worker-controller",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker Controller"
     }
   },
   {
@@ -65818,7 +66526,8 @@
           "id": "summary",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Recover pinned Workflows"
     }
   },
   {
@@ -65912,7 +66621,8 @@
           "id": "verify-worker-startup",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Amazon Bedrock AgentCore"
     }
   },
   {
@@ -65996,7 +66706,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Self-hosted setup"
     }
   },
   {
@@ -66100,7 +66811,8 @@
           "id": "verify-deployment",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -66194,7 +66906,8 @@
           "id": "troubleshooting",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Local development"
     }
   },
   {
@@ -66273,7 +66986,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Self-hosted setup"
     }
   },
   {
@@ -66382,7 +67096,8 @@
           "id": "verify-deployment",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -66461,7 +67176,8 @@
           "id": "next-steps",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Self-hosted setup"
     }
   },
   {
@@ -66520,7 +67236,8 @@
           "id": "try-it-locally",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -66604,7 +67321,8 @@
           "id": "step-6-scale-down-and-clean-up-unversioned-workers",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Unversioned to versioned migration"
     }
   },
   {
@@ -66647,7 +67365,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Configure a Worker"
     }
   },
   {
@@ -66726,7 +67445,8 @@
           "id": "default-versioning-behavior-considerations",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker Versioning"
     }
   },
   {
@@ -66790,7 +67510,8 @@
           "id": "migrating-a-workflow-from-pinned-to-auto-upgrade",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Roll out and pin"
     }
   },
   {
@@ -66849,7 +67570,8 @@
           "id": "garbage-collection",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Sunset and GC"
     }
   },
   {
@@ -66913,7 +67635,8 @@
           "id": "upgrade-on-can-limitations",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Upgrade on Continue-as-New"
     }
   },
   {
@@ -66965,7 +67688,8 @@
           "id": "nexus",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Quickstarts"
     }
   },
   {
@@ -67033,7 +67757,8 @@
           "id": "need-help",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "API reference"
     }
   },
   {
@@ -67237,7 +67962,8 @@
           "id": "temporal_tls_ca_data",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Environment configuration"
     }
   },
   {
@@ -67391,7 +68117,8 @@
           "id": "protocolmessagecommand",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Commands"
     }
   },
   {
@@ -67495,7 +68222,8 @@
           "id": "nexus-settings",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Dynamic configuration"
     }
   },
   {
@@ -67869,7 +68597,8 @@
           "id": "workflowpropertiesmodified",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Events"
     }
   },
   {
@@ -68038,7 +68767,8 @@
           "id": "server-failure",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Failures"
     }
   },
   {
@@ -68075,7 +68805,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "References"
     }
   },
   {
@@ -68113,7 +68844,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Cloud Operations"
     }
   },
   {
@@ -68407,7 +69139,8 @@
           "id": "workflow_task_schedule_to_start_latency",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "SDK metrics"
     }
   },
   {
@@ -68501,7 +69234,8 @@
           "id": "withcustommetricshandler",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Server options"
     }
   },
   {
@@ -68710,7 +69444,8 @@
           "id": "dynamicconfigclient",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Service configuration"
     }
   },
   {
@@ -69014,7 +69749,8 @@
           "id": "nexus_completion_request_preprocess_errors",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "OSS Temporal Service metrics"
     }
   },
   {
@@ -69253,7 +69989,8 @@
           "id": "codec",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Web UI configuration"
     }
   },
   {
@@ -69627,7 +70364,8 @@
           "id": "temporal_codec_default_error_link",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Web UI env vars"
     }
   },
   {
@@ -69946,7 +70684,8 @@
           "id": "resource-exhausted-cause-unspecified",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Errors"
     }
   },
   {
@@ -69984,7 +70723,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Security"
     }
   },
   {
@@ -70082,7 +70822,8 @@
           "id": "--identity-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "activity"
     }
   },
   {
@@ -71010,7 +71751,8 @@
           "id": "--output_filename-value",
           "level": 4
         }
-      ]
+      ],
+      "breadcrumbLabel": "admin"
     }
   },
   {
@@ -71123,7 +71865,8 @@
           "id": "--reason-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "batch"
     }
   },
   {
@@ -71166,7 +71909,8 @@
           "id": "health",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "cluster"
     }
   },
   {
@@ -71214,7 +71958,8 @@
           "id": "--web_ui_url",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "dataconverter"
     }
   },
   {
@@ -71393,7 +72138,8 @@
           "id": "temporal_context_timeout",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "CLI (tctl)"
     }
   },
   {
@@ -71571,7 +72317,8 @@
           "id": "--visibility_uri-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "namespace"
     }
   },
   {
@@ -71644,7 +72391,8 @@
           "id": "update",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "schedule"
     }
   },
   {
@@ -71702,7 +72450,8 @@
           "id": "--taskqueue-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "taskqueue"
     }
   },
   {
@@ -72556,7 +73305,8 @@
           "id": "--reason-2",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "workflow"
     }
   },
   {
@@ -72640,7 +73390,8 @@
           "id": "how-to-resolve-1",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Message size limit errors"
     }
   },
   {
@@ -72724,7 +73475,8 @@
           "id": "when-executing-or-scheduling-workflows",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Deadline-exceeded error"
     }
   },
   {
@@ -72823,7 +73575,8 @@
           "id": "how-workflow-task-heartbeating-works",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Execution failures"
     }
   },
   {
@@ -72866,7 +73619,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Troubleshooting"
     }
   },
   {
@@ -72935,7 +73689,8 @@
           "id": "additional-resources",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Failed reaching server error"
     }
   },
   {
@@ -73079,7 +73834,8 @@
           "id": "temporal_sticky_cache_total_forced_eviction_total",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Performance bottlenecks"
     }
   },
   {
@@ -73163,7 +73919,8 @@
           "id": "request-latency-high-on-user-facing-operations",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Request failures"
     }
   },
   {
@@ -73302,7 +74059,8 @@
           "id": "related-reading",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Missed Schedule Actions"
     }
   },
   {
@@ -73401,7 +74159,8 @@
           "id": "check-aws-issues",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "AWS Lambda"
     }
   },
   {
@@ -73510,7 +74269,8 @@
           "id": "check-gcp-issues",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "GCP Cloud Run"
     }
   },
   {
@@ -73558,7 +74318,8 @@
       "documentOptions": {
         "llm_exclude": false
       },
-      "toc": []
+      "toc": [],
+      "breadcrumbLabel": "Serverless Workers"
     }
   },
   {
@@ -73657,7 +74418,8 @@
           "id": "sticky-cache-holding-zero-entries-under-load",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Worker capacity"
     }
   },
   {
@@ -73821,7 +74583,8 @@
           "id": "codec-server",
           "level": 3
         }
-      ]
+      ],
+      "breadcrumbLabel": "Web UI"
     }
   },
   {
@@ -73909,7 +74672,8 @@
           "id": "markdown-pages-and-llmstxt",
           "level": 2
         }
-      ]
+      ],
+      "breadcrumbLabel": "Develop with AI"
     }
   },
   {

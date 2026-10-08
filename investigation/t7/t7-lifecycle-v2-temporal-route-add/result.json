@@ -1,0 +1,23 @@
+{
+  "project": "temporal",
+  "case": "route-add",
+  "incremental_seconds": 23.877655240008608,
+  "files": 3000,
+  "independent_clean_forced_equal": false,
+  "differences": [
+    "robots.txt",
+    "terms/P95.md",
+    "terms/RPO.md",
+    "terms/RTO.md",
+    "terms/conflict resolution.md",
+    "terms/failback.md",
+    "terms/failover.md",
+    "terms/health check.md",
+    "terms/isolation domains.md",
+    "terms/replica.md",
+    "terms/replication lag.md",
+    "terms/replication.md",
+    "terms/trigger testing.md"
+  ],
+  "expected_behavior_verified": true
+}

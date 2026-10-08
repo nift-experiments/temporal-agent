@@ -1,0 +1,12 @@
+errors [] warnings 2
+browser_bundle 1.835s
+errors [] warnings 0
+retained_components_server_bundle 0.952s
+react_ssr_or_html_source 0.200s
+shell_and_dependencies 5.441s
+static_and_browser_publication 0.108s
+sitemap 0.035s
+📦 962 files built successfully
+time taken: 0.292311 seconds
+nift_composition 0.309s
+complete 9.003s

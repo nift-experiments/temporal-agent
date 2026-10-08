@@ -1,0 +1,9 @@
+{
+  "project": "temporal-agent",
+  "case": "route-add",
+  "incremental_seconds": 7.745195148978382,
+  "files": 2999,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

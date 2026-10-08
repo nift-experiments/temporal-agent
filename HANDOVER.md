@@ -371,3 +371,6 @@ All 962 HTML routes, 832 Markdown/text/sitemap products, and 1,130 retained non-
 ## T6 accepted
 
 Whole-site publication and representative browser parity accepted; all 4,544 highlighted code blocks verified per project. 32 visual comparisons have identical geometry and max channel delta 1 after resolving real draft defects. See investigation/T6-PARITY.md. Next T7: separately installed frozen dependencies, initial whole-pipeline measurements and comprehensive incremental/forced equality; T8 profiling/optimization; T9 final serialized campaign and fresh-clone review. No final benchmark claim yet.
+
+
+T7 accepted: initial five-sample warm-full evidence, unchanged/upstream production edits, 26 exact lifecycle/change checks and restored whole-site/browser parity. See investigation/T7-INITIAL-PROFILING.md. T8–T9 remain; full campaign continues automatically.

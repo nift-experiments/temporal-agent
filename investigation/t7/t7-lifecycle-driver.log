@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/lifecycle-equality.py", line 35, in <module>
+    compare(repo,name,'route-add',added)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/lifecycle-equality.py", line 14, in compare
+    expect(repo);inc=manifest(repo)
+    ~~~~~~^^^^^^
+  File "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/tools/lifecycle-equality.py", line 34, in added
+    if not agent:assert (r/'public/tags/t7-lifecycle-tag/index.html').is_file()
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+AssertionError

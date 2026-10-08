@@ -1,0 +1,312 @@
+{
+  "warm_full": {
+    "upstream": {
+      "samples": 5,
+      "wall_median_seconds": 37.86662529199384,
+      "wall_range_seconds": [
+        35.15282647893764,
+        40.635570902144536
+      ],
+      "maximum_individual_descendant_rss_median_mib": 6897.9921875,
+      "sampled_descendant_rss_sum_peak_median_mib": 6989.86328125
+    },
+    "temporal": {
+      "samples": 5,
+      "wall_median_seconds": 27.36563344998285,
+      "wall_range_seconds": [
+        26.258754085050896,
+        30.420299304183573
+      ],
+      "maximum_individual_descendant_rss_median_mib": 1141.6484375,
+      "sampled_descendant_rss_sum_peak_median_mib": 1357.04296875
+    },
+    "temporal-agent": {
+      "samples": 5,
+      "wall_median_seconds": 11.433900584001094,
+      "wall_range_seconds": [
+        9.905409405939281,
+        13.016331691062078
+      ],
+      "maximum_individual_descendant_rss_median_mib": 844.8515625,
+      "sampled_descendant_rss_sum_peak_median_mib": 891.35546875
+    }
+  },
+  "changed_inputs": [
+    {
+      "project": "temporal",
+      "case": "body-1",
+      "incremental_seconds": 23.016112070996314,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 23.016112070996314,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "body-10",
+      "incremental_seconds": 22.900813578860834,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 22.900813578860834,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "body-100",
+      "incremental_seconds": 23.215623199939728,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 23.215623199939728,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "metadata",
+      "incremental_seconds": 23.08124971506186,
+      "explicit_maintenance_seconds": 0.8123289491049945,
+      "whole_operation_seconds": 23.893578664166853,
+      "files": 2997,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "shared-layout",
+      "incremental_seconds": 23.846798985963687,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 23.846798985963687,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "navigation",
+      "incremental_seconds": 26.185631674015895,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 26.185631674015895,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "diagram",
+      "incremental_seconds": 21.88787204003893,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 21.88787204003893,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "generated-synced",
+      "incremental_seconds": 22.167856929823756,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 22.167856929823756,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "search-visible",
+      "incremental_seconds": 21.975551672978327,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 21.975551672978327,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "island-source",
+      "incremental_seconds": 24.25345524493605,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 24.25345524493605,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "body-1",
+      "incremental_seconds": 7.237690984969959,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.237690984969959,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "body-10",
+      "incremental_seconds": 7.0329509801231325,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.0329509801231325,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "body-100",
+      "incremental_seconds": 7.118538160808384,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.118538160808384,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "metadata",
+      "incremental_seconds": 6.994746951851994,
+      "explicit_maintenance_seconds": 0.542725435923785,
+      "whole_operation_seconds": 7.537472387775779,
+      "files": 2997,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "shared-layout",
+      "incremental_seconds": 7.65203248988837,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.65203248988837,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "navigation",
+      "incremental_seconds": 9.367385946912691,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 9.367385946912691,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "diagram",
+      "incremental_seconds": 7.119669276988134,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.119669276988134,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "generated-synced",
+      "incremental_seconds": 7.059904076857492,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.059904076857492,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "search-visible",
+      "incremental_seconds": 7.365897808922455,
+      "explicit_maintenance_seconds": 0,
+      "whole_operation_seconds": 7.365897808922455,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "island-source",
+      "incremental_seconds": 9.364814336178824,
+      "explicit_maintenance_seconds": 1.1802594850305468,
+      "whole_operation_seconds": 10.545073821209371,
+      "files": 2996,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "observable_change_verified": true
+    }
+  ],
+  "route_lifecycle": [
+    {
+      "project": "temporal",
+      "case": "route-add",
+      "incremental_seconds": 23.749476582976058,
+      "files": 3000,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "route-rename",
+      "incremental_seconds": 23.216776387998834,
+      "files": 3000,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    },
+    {
+      "project": "temporal",
+      "case": "route-delete",
+      "incremental_seconds": 23.31494245491922,
+      "files": 2997,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "route-add",
+      "incremental_seconds": 7.745195148978382,
+      "files": 2999,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "route-rename",
+      "incremental_seconds": 7.568207652075216,
+      "files": 2999,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    },
+    {
+      "project": "temporal-agent",
+      "case": "route-delete",
+      "incremental_seconds": 8.04243406211026,
+      "files": 2997,
+      "independent_clean_forced_equal": true,
+      "differences": [],
+      "expected_behavior_verified": true
+    }
+  ]
+}

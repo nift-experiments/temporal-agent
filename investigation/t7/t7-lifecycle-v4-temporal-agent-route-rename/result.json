@@ -1,0 +1,9 @@
+{
+  "project": "temporal-agent",
+  "case": "route-rename",
+  "incremental_seconds": 7.568207652075216,
+  "files": 2999,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

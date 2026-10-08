@@ -1,0 +1,9 @@
+{
+  "project": "temporal",
+  "case": "route-add",
+  "incremental_seconds": 23.749476582976058,
+  "files": 3000,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

@@ -1,0 +1,9 @@
+{
+  "project": "temporal-agent",
+  "case": "route-delete",
+  "incremental_seconds": 8.04243406211026,
+  "files": 2997,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true
+}

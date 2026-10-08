@@ -1,0 +1,56 @@
+[
+  {
+    "project": "temporal",
+    "case": "route-add",
+    "incremental_seconds": 23.749476582976058,
+    "files": 3000,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  },
+  {
+    "project": "temporal",
+    "case": "route-rename",
+    "incremental_seconds": 23.216776387998834,
+    "files": 3000,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  },
+  {
+    "project": "temporal",
+    "case": "route-delete",
+    "incremental_seconds": 23.31494245491922,
+    "files": 2997,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  },
+  {
+    "project": "temporal-agent",
+    "case": "route-add",
+    "incremental_seconds": 7.745195148978382,
+    "files": 2999,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  },
+  {
+    "project": "temporal-agent",
+    "case": "route-rename",
+    "incremental_seconds": 7.568207652075216,
+    "files": 2999,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  },
+  {
+    "project": "temporal-agent",
+    "case": "route-delete",
+    "incremental_seconds": 8.04243406211026,
+    "files": 2997,
+    "independent_clean_forced_equal": true,
+    "differences": [],
+    "expected_behavior_verified": true
+  }
+]

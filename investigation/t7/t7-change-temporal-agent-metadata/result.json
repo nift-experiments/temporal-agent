@@ -1,0 +1,11 @@
+{
+  "project": "temporal-agent",
+  "case": "metadata",
+  "incremental_seconds": 6.994746951851994,
+  "explicit_maintenance_seconds": 0.542725435923785,
+  "whole_operation_seconds": 7.537472387775779,
+  "files": 2997,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true
+}
