@@ -10,19 +10,19 @@ Mark each: not started / in progress / blocked / done.
 
 | Phase | Status | Acceptance criteria | Required evidence | Commands | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 1 Baseline frozen | | | | | |
-| 2 Parity contract + fixtures | | | | | |
-| 3 Initial Nift structure + compatibility proof | | | | | |
-| 4 Shared shells/templates | | | | | |
-| 5 Authored content | | | | | |
-| 6 Source compatibility | | | | | |
-| 7 Route/content/render/browser/behaviour parity | | | | | |
-| 8 Incremental correctness | | | | | |
-| 9 Performance campaign | | Profiles, general improvements or justified deferrals | | | |
-| 10 Final parity revalidation | | Complete parity contract after optimization | | | |
-| 11 Final benchmark campaign | | Optimized, parity-certified production pipeline | | | |
-| 12 Clean-checkout verification | | | | | |
-| 13 Handover / final report | | | | | |
+| 1 Baseline frozen | done | | | | |
+| 2 Parity contract + fixtures | done | | | | |
+| 3 Initial Nift structure + compatibility proof | done | | | | |
+| 4 Shared shells/templates | done | | | | |
+| 5 Authored content | in progress | | | | |
+| 6 Source compatibility | in progress | | | | |
+| 7 Route/content/render/browser/behaviour parity | not started | | | | |
+| 8 Incremental correctness | in progress | | | | |
+| 9 Performance campaign | not started | Profiles, general improvements or justified deferrals | | | |
+| 10 Final parity revalidation | not started | Complete parity contract after optimization | | | |
+| 11 Final benchmark campaign | not started | Optimized, parity-certified production pipeline | | | |
+| 12 Clean-checkout verification | not started | | | | |
+| 13 Handover / final report | not started | | | | |
 
 GATE: compatibility proof must precede broad content translation. Do not mark
 phase 5 in progress until phases 1-4 acceptance criteria are met.
@@ -69,3 +69,11 @@ T1 complete: unchanged production lifecycle repeated, 3984-file reference frozen
 Seven real routes in each source model pass all body semantics, 42 browser states per migration, 31 desktop/mobile interaction observations, and five incremental-versus-clean publication mutation checks. Retained sidebar positioning additionally verified visually. Evidence: investigation/t3 and T3-ARCHITECTURE.md. Temporary baseline dependency symlink is ignored; final fresh-clone gate still pending.
 
 Next T4: scale ordinary corpus and factor shared shells/navigation with authoritative authored inputs. T5 generated/special, T6 whole-site parity, T7 initial benchmarks/lifecycle, T8 profiling, T9 final campaign remain required. No whole-site parity or benchmark conclusion yet. Full campaign continues automatically; no current exceptional blocker.
+
+## T4 main-document corpus complete
+
+776 routes per project; all 1552 body projections match the immutable reference. Both corrected 42-state matrices match all recorded page fields with zero page errors. Real desktop/mobile sidebar expansion/navigation and mobile TOC/anchor/resizing match. Four shared footer/navigation mutations have full incremental==clean-forced file manifests; inputs restored. Evidence: investigation/t4 and T4-CORPUS.md.
+
+Source models remain distinct: maintained Markdown/MDX/sidebars and derived navigation vs maintained HTML/downloads/explicit navigation metadata. Both use retained sidebar/TOC islands with native document links; no Docusaurus page app or Nift core modification.
+
+Next T5: 17 cookbook routes, generated/special projections and remaining retained interactions; then T6 whole-site/browser acceptance, T7 initial benchmarks/lifecycle, T8 profiling, T9 final comparison/fresh clone. No whole-site acceptance or final performance claim yet. No exceptional blocker; full campaign remains active.

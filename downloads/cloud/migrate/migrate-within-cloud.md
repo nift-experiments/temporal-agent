@@ -1,0 +1,43 @@
+# Migrate between regions
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Add a Namespace replica in a new region, wait for it to activate, then fail over for a zero-downtime Temporal Cloud migration.
+
+Temporal Cloud's [High Availability features](/cloud/high-availability) allow you to migrate a Temporal Cloud Namespace from one region or cloud provider to another with zero downtime.
+
+## Preparing to migrate
+
+Namespaces using Export will need to stop Export and migrate the region configuration to the new region for Export jobs to continue after migration. 
+See [failover scenarios](/cloud/export#failover-scenarios) for details.
+
+[Using High Availability features affects pricing](/cloud/pricing#high-availability-features).
+
+> **ℹ️ Info:**
+> Using AWS PrivateLink or GCP Private Service Connect?
+>
+> If the Namespace uses Private Connectivity, the steps below need additional DNS and VPC Endpoint work. Follow [How to migrate to another Temporal Cloud Region when using Private Connectivity](/cloud/high-availability/ha-connectivity#how-to-migrate-regions-with-private-connectivity) instead of (or alongside) the public steps below.
+>
+
+## Steps to migrate
+
+1. Add a Namespace replica in the region you want to migrate to. See [regions](/evaluate/cloud/regions) for a list of available regions and supported multi-region and multi-cloud configurations.
+
+![Add a namespace replica](/img/cloud/high-availability/migrate/1-add-replica.png)
+
+![Choose the region for the replica](/img/cloud/high-availability/migrate/2-choose-region.png)
+
+2. Wait for the replica to become active. The Cloud UI will display a time estimate, and namespace admins will receive an email when the replica is active.
+3. If your Workers are using [Regional Endpoints](/cloud/namespaces#access-namespaces), ensure they are updated to use the Regional Endpoint of the [replica's region](/evaluate/cloud/regions).
+4. Trigger a failover to the new region.
+
+![Initiate failover to the new region](/img/cloud/high-availability/migrate/3-failover.png)
+
+5. [Prepare connectivity before removing the replica](/cloud/high-availability/enable#prepare-connectivity-before-removing-a-replica), then remove the Namespace replica in the region you are migrating from.
+
+![Remove the replica for the original region](/img/cloud/high-availability/migrate/4-remove-replica.png)
+
+> **📝 Note:**
+> All replica changes are subject to a [cooldown period](/cloud/high-availability/enable#changing) before further replica changes can be made.
+>

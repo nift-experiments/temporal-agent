@@ -1,0 +1,34 @@
+# Debugging - .NET SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Debug Workflows in development and production environments using Temporal .NET SDK. Use logging, debugger, Web UI, CLI, replay, tracing, and more for efficient troubleshooting.
+
+## Debugging 
+
+This page shows how to do the following:
+
+- [Debug in a development environment](#debug-in-a-development-environment)
+- [Debug in a production environment](#debug-in-a-development-production)
+
+### Debug in a development environment 
+
+In developing Workflows, you can use the normal development tools of logging and a debugger to see what’s happening in your Workflow.
+In addition to the normal development tools of logging and a debugger, you can also see what’s happening in your Workflow by using the [Web UI](/web-ui) or [Temporal CLI](/cli).
+The Web UI provides insight into your Workflows, making it easier to identify issues and monitor the state of your Workflows in real time.
+
+### Debug in a production environment 
+
+You can debug production Workflows using:
+
+- [Web UI](/web-ui)
+- [Temporal CLI](/cli)
+- [Replay](/develop/dotnet/best-practices/testing-suite#replay)
+- [Tracing](/develop/dotnet/platform/observability#tracing)
+- [Logging](/develop/dotnet/platform/observability#logging)
+
+You can debug and tune Worker performance with metrics and the [Worker performance guide](/develop/worker-performance).
+For more information, see [Observability ▶️ Metrics](/develop/dotnet/platform/observability#metrics) for setting up SDK metrics.
+
+Debug Server performance with [Cloud metrics](/cloud/metrics/openmetrics) or [self-hosted Server metrics](/self-hosted-guide/production-checklist#scaling-and-metrics).

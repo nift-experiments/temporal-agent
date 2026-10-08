@@ -1,0 +1,42 @@
+# Error Handling - Temporal Nexus
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Learn about error handling for Temporal Nexus.
+
+Nexus Operations can return errors for a caller Workflow to handle.
+Errors from an asynchronous Operation's underlying Workflow propagate back to the caller.
+
+## Errors in Nexus handlers
+
+Nexus handlers may return [different error types](/references/failures#nexus-errors).
+By default, handler errors are retryable unless they are:
+
+- [Application Failures](/references/failures#nexus-errors) explicitly marked as non-retryable.
+- [Nexus Operation errors](/references/failures#nexus-errors) that resolve an Operation as failed or canceled.
+- [Non-retryable Nexus errors](/references/failures#non-retryable-nexus-errors).
+
+When the caller's Nexus Machinery receives an error:
+
+- **Non-retryable** - A [NexusOperationFailed](/references/events#nexusoperationfailed) event is added to the caller's Event History.
+- **Retryable** - The Nexus Machinery [automatically retries](/nexus/operations#automatic-retries). These errors surface in [Pending Operations](/nexus/execution-debugging/#pending-operations).
+
+> **💡 Tip:**
+>
+> Return a [specific Nexus error type](/references/failures#nexus-errors) to avoid infinite retries.
+> See [errors in Nexus Operations](/references/failures#errors-in-nexus-operations) for additional details.
+>
+
+## Nexus error handling in caller Workflows
+
+When a Nexus Operation fails, the caller receives a Nexus Operation Failure containing the operation name, token, and failure reason.
+The cause field indicates the type of error (for example, Application Error or Canceled Error).
+
+> **💡 Tip:**
+> RESOURCES
+>
+> - [Errors in Nexus Operations](/references/failures#errors-in-nexus-operations)
+> - [Nexus Errors](/references/failures#nexus-errors)
+> - [Nexus Operation Failures](/references/failures#nexus-operation-failure)
+>

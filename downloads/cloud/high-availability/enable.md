@@ -1,0 +1,341 @@
+# Enable and manage High Availability
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Add a replica to a Namespace to enable High Availability, then manage forwarding behavior and automatic failover settings.
+
+You can enable [High Availability](/cloud/high-availability) features for a new or existing Namespace by adding a
+replica. When you add a replica, Temporal Cloud begins asynchronously replicating ongoing and existing Workflow
+Executions.
+
+Adding a replica fails the Namespace over automatically; to plan how your Workers fail over with it, see [Worker deployment patterns for high availability and disaster recovery](/cloud/high-availability/architecture-patterns).
+
+ The replica region must be on the same continent as the primary region. Because of that, not all replication options are available in all Temporal Cloud regions. See the [Service regions](/evaluate/cloud/regions) page for the supported replica regions for each active region.
+
+Using private network connectivity with a HA namespace requires extra setup. See
+[Connectivity for HA](/cloud/high-availability/ha-connectivity).
+
+There are charges associated with Replication and enabling High Availability features. For pricing details, visit
+Temporal Cloud's [Pricing](/cloud/pricing) page.
+
+## Create a Namespace with High Availability features 
+
+To create a new Namespace with High Availability features, you can use the Temporal Cloud UI or the command line
+utility.
+
+**Web UI**
+
+    1. Visit Temporal Cloud in your Web browser.
+    1. During Namespace creation, specify the primary [region](/evaluate/cloud/regions) for the Namespace.
+    1. Select "Add a replica".
+    1. Choose the [region](/evaluate/cloud/regions) for the replica.
+
+    The web interface will present an estimated time for replication to complete.
+    This time is based on your selection and the size and scale of the Workflows in your Namespace.
+
+**Temporal CLI**
+
+At the command line, enter:
+
+```
+temporal cloud namespace create \
+   --name <namespace_id> \
+   --region <primary_region> \
+   --region <replica_region>
+```
+
+Specify the [region codes](/evaluate/cloud/regions) as arguments to the two `--region` flags.
+
+**tcld**
+
+At the command line, enter:
+
+```
+tcld namespace create \
+   --namespace <namespace_id>.<account_id> \
+   --region <primary_region> \
+   --region <replica_region>
+```
+
+Specify the [region codes](/evaluate/cloud/regions) as arguments to the two `--region` flags.
+
+If using API key authentication with the `--api-key` flag, you must add it directly after the tcld command and before
+`namespace create`.
+
+Temporal Cloud sends an email alert to all Namespace Admins once your Namespace replica is ready for use.
+
+## Add High Availability to an existing Namespace 
+
+A replica can be added after a namespace has already been created.
+
+**Web UI**
+
+1. Visit Temporal Cloud Namespaces in your Web browser.
+1. Navigate to the Namespace details page.
+1. Select the “Add a replica” button.
+1. Choose the [region](/evaluate/cloud/regions) for the replica.
+
+The web interface will present an estimated time for replication to complete. This time is based on your selection and
+the size and scale of the Workflows in your Namespace.
+
+Temporal Cloud sends an email alert to all Namespace Admins once your Namespace replica is ready for use.
+
+**Temporal CLI**
+
+At the command line, enter:
+
+```
+temporal cloud namespace ha region add \
+   --namespace <namespace_id>.<account_id> \
+   --region <replica_region>
+```
+
+Specify the region ID (for example, `aws-us-east-1`) of the region where you want to create the replica as an argument to
+the `--region` flag. See [Regions](/evaluate/cloud/regions) for available region names.
+
+Temporal Cloud sends an email alert once your Namespace is ready for use.
+
+**tcld**
+
+At the command line, enter:
+
+```
+tcld namespace add-region \
+   --namespace <namespace_id>.<account_id> \
+   --region <replica_region>
+```
+
+Specify the region name (for example, `us-east-1`) of the region where you want to create the replica as an argument to the
+`--region` flag. See [Regions](/evaluate/cloud/regions) for available region names.
+
+If using API key authentication with the `--api-key` flag, you must add it directly after the tcld command and before
+`namespace add-region`.
+
+Temporal Cloud sends an email alert once your Namespace is ready for use.
+
+## Change a replica location 
+
+Temporal Cloud can't change replica locations directly. To change a replica's location, you need to remove the replica
+and add a new one.
+
+> **⚠️ Caution:**
+>
+> We discourage changing the location of your replica for deployed applications, except under exceptional circumstances.
+> If you remove your replica, you lose the availability guarantees of the Namespace, and it can take time to add another
+> replica.
+>
+> If you remove a replica from a region, you must wait seven days before you can re-enable High Availability (HA) in that
+> same location. During this period, you may add a replica to a different region, provided you have not had one
+> there within the last seven days.
+>
+
+Follow these steps to change the replica location:
+
+1. [Remove your replica](#disable). This disables High Availability for your Namespace.
+2. [Add a new replica](#upgrade) to your Namespace.
+
+You will receive an email alert once your Namespace is ready for use.
+
+## Change the forwarding behavior 
+
+Requests that reach the passive replica can be [forwarded](/cloud/high-availability/#request-forwarding) to the active region, and responses sent back to the Worker or Client. The `disablePassivePollerForwarding` Namespace setting controls this behavior for Worker poll traffic only.
+
+With `disablePassivePollerForwarding` enabled, Worker polls that reach a passive replica are not forwarded, and these Workers do not execute Workflows or Activities. Workers connected to such a passive replica receive a `NamespaceNotActive` error on poll requests. These Workers stay connected and will start executing Workflows and Activities if the replica becomes active.
+
+Same-region replicas are not affected by this setting.
+
+To deploy Worker fleets in both regions that stay on standby in the passive region until failover, see [Active/Hot-Passive](/cloud/high-availability/architecture-patterns#active-hot).
+
+Set `disablePassivePollerForwarding` through the [Cloud Ops API](/ops), the [cloud-api SDK](https://github.com/temporalio/cloud-sdk-go), or the [`temporal cloud` CLI extension](/cli/cloud), using one of the recipes in this section.
+
+> **ℹ️ Info:**
+>
+> To see which endpoints route to which replica, see [How requests reach the replica](/cloud/high-availability/ha-connectivity#how-requests-reach-the-replica).
+>
+
+### Client requests are forwarded regardless of this setting 
+
+`disablePassivePollerForwarding` stops Worker polls. It does not stop Client requests. The following APIs are forwarded from the passive replica to the active region whether or not the setting is enabled, with responses returned to the Client:
+
+| API group | Forwarded operations |
+| --- | --- |
+| Workflow | Start Workflow, Signal-with-Start, Signal, Cancel, Terminate, Delete, Query |
+| [Standalone Activity](/standalone-activity) | Start, Cancel, Terminate, Delete, Pause, Unpause, Reset, Update Activity Options |
+| [Standalone Nexus Operation](/standalone-nexus-operation) | Start, Cancel, Terminate, Delete |
+
+For the current list, see [`selectedAPIsForwardingRedirectionPolicyWhitelistedAPIs`](https://github.com/temporalio/temporal/blob/main/common/rpc/interceptor/dc_redirection_policy.go#L59-L71) in the Temporal Server source.
+
+A Client that reaches the passive replica, for example through the passive region's Regional Endpoint, keeps working while the setting is enabled: it can start Workflows, send Signals, and run Queries successfully. Workers in the active region process the resulting Workflow and Activity Tasks, because the passive region's Workers receive none.
+
+Plan for this if you disable forwarding to keep a region's traffic out of the active region. The setting stops that region's Workers from processing tasks. It does not stop Workflow starters, Signal senders, or other Clients in that region from reaching the Namespace.
+
+### Set the forwarding behavior with the `temporal cloud` CLI 
+
+Use the [`temporal cloud namespace ha update`](/cli/command-reference/cloud/namespace#ha-update) command:
+
+```bash
+temporal cloud namespace ha update \
+    --namespace <namespace>.<account> \
+    --passive-poller-forwarding disabled
+```
+
+Set the flag to `enabled` to re-enable forwarding.
+
+### Set the forwarding behavior with the Cloud Ops API 
+
+This recipe uses `curl` against the Cloud Ops API. Because `UpdateNamespace` replaces the entire Namespace spec, it fetches the current spec, merges in the new value, and posts it back with the current `resourceVersion`. The `jq` filter preserves any other High Availability fields you have set (such as `disableManagedFailover`).
+
+Set the Cloud Ops API key and Namespace ID. The Namespace ID is in `<namespace>.<account>` format (the full identifier shown in the Cloud Web UI):
+
+```bash
+export TEMPORAL_CLOUD_OPS_API_KEY='<your-api-key>'
+export NS='<namespace>.<account>'
+```
+
+Fetch the current spec:
+
+```bash
+curl -sS "https://saas-api.tmprl.cloud/cloud/namespaces/$NS" \
+  -H "Authorization: Bearer $TEMPORAL_CLOUD_OPS_API_KEY" > /tmp/ns.json
+```
+
+Build the update payload. Set the value to `true` to disable forwarding, or `false` to restore the default:
+
+```bash
+jq --arg rv "$(jq -r '.namespace.resourceVersion' /tmp/ns.json)" '{
+  spec: (.namespace.spec
+    | .highAvailability = ((.highAvailability // {}) + {disablePassivePollerForwarding: true})),
+  resourceVersion: $rv
+}' /tmp/ns.json > /tmp/ns-update.json
+```
+
+Post the update. The response contains an `asyncOperation` ID; the change is complete when `GET /cloud/operations/<id>` reports a terminal state.
+
+```bash
+curl -sS -X POST "https://saas-api.tmprl.cloud/cloud/namespaces/$NS" \
+  -H "Authorization: Bearer $TEMPORAL_CLOUD_OPS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d @/tmp/ns-update.json
+```
+
+Verify the current value:
+
+```bash
+curl -sS "https://saas-api.tmprl.cloud/cloud/namespaces/$NS" \
+  -H "Authorization: Bearer $TEMPORAL_CLOUD_OPS_API_KEY" \
+  | jq '.namespace.spec.highAvailability.disablePassivePollerForwarding'
+```
+
+A result of `null` means the field has never been set, which is equivalent to `false` — proto3 JSON omits default-`false` values from responses.
+
+## Enable or disable automatic failovers 
+
+When a Temporal Cloud Namespace has a replica in a different region or cloud, Temporal Cloud automatically fails over the Namespace to its replica in the event of an outage. _This is the recommended and default option._
+
+If you prefer to disable automatic failovers and handle your own failovers, follow these instructions:
+
+> **⚠️ Warning:**
+> Disabling automatic failovers voids Temporal's RTO
+>
+> With automatic failovers disabled, Temporal Cloud cannot fail your Namespace over to its replica during an outage. You take responsibility for detecting outages and [triggering a failover](/cloud/high-availability/failovers/manage#trigger-failover) yourself. Temporal's [20-minute RTO](/cloud/rpo-rto) does not apply while this setting is disabled.
+>
+
+**Web UI**
+
+1. Navigate to the Namespace detail page in Temporal Cloud.
+1. Choose the "Disable Temporal-initiated failovers" option.
+
+**Temporal CLI**
+
+To disable automatic failovers, run the following command in your terminal:
+
+```
+temporal cloud namespace ha update \
+    --namespace <namespace_id>.<account_id> \
+    --auto-failover disabled
+```
+
+**tcld**
+
+To disable automatic failovers, run the following command in your terminal:
+
+```
+tcld namespace update-high-availability \
+    --namespace <namespace_id>.<account_id> \
+    --disable-auto-failover=true
+```
+
+If using API key authentication with the `--api-key` flag, you must add it directly after the tcld command and before
+`namespace update-high-availability`.
+
+To restore the default behavior, unselect the option in the Web UI, pass `--auto-failover enabled` with the Temporal CLI,
+or pass `--disable-auto-failover=false` with `tcld`.
+
+> **📝 Note:**
+> Automatic failovers are always enabled for Same-region Replication
+>
+> This setting applies only to Multi-region and Multi-cloud Replication. You cannot disable automatic failovers for a [Same-region Replication](/cloud/high-availability#same-region-replication) Namespace, because same-region failovers between cells are always managed by Temporal.
+>
+
+## Disable High Availability (remove a replica) 
+
+To disable High Availability features on a Namespace, remove the replica from that Namespace. Removing a replica
+disables all High Availability features:
+
+- Discontinues replication of the Workflows in the Namespace.
+- Disables the Namespace's ability to trigger a failover to a different region or cloud.
+- Ends High Availability charges.
+
+> **⚠️ Caution:**
+>
+> After removing a Namespace's replica, you cannot add a new replica to that same region for seven days.
+> During that time, you can still add a replica to any other region.
+>
+
+### Prepare connectivity before removing a replica 
+
+Before removing the replica, update any Workers and Clients that reach the Namespace through the region being removed:
+
+- **Regional Endpoint:** Change the Worker and Client endpoint configuration to use the [Namespace Endpoint](/cloud/high-availability/ha-connectivity#namespace-endpoint-recommended) or the remaining region's Regional Endpoint. After deletion, the removed region's Regional Endpoint can no longer reach the Namespace or forward requests to the remaining region. Workers and Clients configured with the Namespace Endpoint do not need an endpoint configuration change, but private routing and DNS might still need updates as described below.
+- **Private connectivity:** Move traffic using a PrivateLink service in the removed region to private connectivity in the remaining region. After deletion, the removed region's private connection can no longer reach the Namespace or forward requests. Check your own DNS and network routing to determine which AWS VPC Endpoints (or equivalent private endpoints on GCP or Azure) your Workers and Clients use. A useful clue is whether the Namespace is attached to any [Connectivity Rules](/cloud/connectivity#connectivity-rules) from the region being removed; this does not replace checking your routing. Update Worker and Client endpoint configurations if they target the removed region's private endpoint directly.
+- **Private DNS:** If you followed the [HA private DNS setup](/cloud/high-availability/ha-connectivity) and override regional FQDNs such as `aws-us-east-1.region.tmprl.cloud`, change to the single-region private DNS setup for the remaining region. Follow the [AWS PrivateLink private DNS instructions](/cloud/connectivity/aws-connectivity#configuring-private-dns-for-aws-privatelink) or [GCP Private Service Connect private DNS instructions](/cloud/connectivity/gcp-connectivity#configuring-private-dns-for-gcp-private-service-connect).
+  - Configure private DNS for the endpoint your Workers and Clients use: for the Namespace Endpoint, create an A record for each Namespace or a wildcard record for `*.<account>.tmprl.cloud`; for the Regional Endpoint, configure a single record for the remaining region's Regional Endpoint. Resolve these records to the remaining region's private endpoint. Both endpoint choices support mTLS and API key authentication. See [Update DNS or clients to use private connectivity](/cloud/connectivity#update-dns-or-clients-to-use-private-connectivity).
+  - After HA is disabled, do not rely on the Namespace Endpoint continuing to resolve through the HA regional CNAME records.
+  - Keep regional DNS records that other HA Namespaces still use.
+
+Verify that Workers and Clients can connect through the remaining region before deleting the replica.
+
+### Remove the replica 
+
+Follow these steps to remove a replica from a Namespace:
+
+**Web UI**
+
+1. Navigate to the Namespace details page in Temporal Cloud
+1. Select the option to "Remove Replica" on the "Region" card.
+
+**Temporal CLI**
+
+Run the following command to remove the replica:
+
+```
+temporal cloud namespace ha region delete \
+    --namespace <namespace_id>.<account_id> \
+    --region <replica_region_name>
+```
+
+See [Regions](/evaluate/cloud/regions) for available region names.
+
+**tcld**
+
+Run the following command to remove the replica:
+
+```
+tcld namespace delete-region \
+    --api-key <api_key> \
+    --namespace <namespace_id>.<account_id> \
+    --region <replica_region_name>
+```
+
+See [Regions](/evaluate/cloud/regions) for available region names.

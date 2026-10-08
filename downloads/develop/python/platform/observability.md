@@ -1,0 +1,363 @@
+# Observability
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Discover how to monitor your Temporal Application using metrics, tracing, logging, and visibility APIs. Emit metrics, set up tracing, log from Workflows, and use custom Search Attributes.
+
+The observability section of the Temporal Developer's guide covers the many ways to view the current state of your [Temporal Application](/temporal#temporal-application)—that is, ways to view which [Workflow Executions](/workflow-execution) are tracked by the [Temporal Platform](/temporal#temporal-platform) and the state of any specified Workflow Execution, either currently or at points of an execution.
+
+This section covers features related to viewing the state of the application, including:
+
+- [Emit metrics](#metrics)
+- [Set up tracing](#tracing)
+- [Log from a Workflow](#logging)
+- [Visibility APIs](#visibility)
+
+## Emit metrics 
+
+Each Temporal SDK is capable of emitting an optional set of metrics from either the Client or the Worker process.
+For a complete list of metrics capable of being emitted, see the [SDK metrics reference](/references/sdk-metrics).
+
+- For an overview of Prometheus and Grafana integration, refer to the [Monitoring](/self-hosted-guide/monitoring) guide.
+- For a list of metrics, see the [SDK metrics reference](/references/sdk-metrics).
+- For an end-to-end example that exposes metrics with the Python SDK, refer to the [samples-python](https://github.com/temporalio/samples-python/tree/main/prometheus) repo.
+
+Metrics in Python are configured globally; therefore, you should set a Prometheus endpoint before any other Temporal code.
+
+### Set a Prometheus endpoint
+
+The following example exposes a Prometheus endpoint on port `9000`.
+
+```python
+from temporalio.runtime import Runtime, TelemetryConfig, PrometheusConfig
+
+# Create a new runtime that has telemetry enabled. Create this first to avoid
+# the default Runtime from being lazily created.
+new_runtime = Runtime(telemetry=TelemetryConfig(metrics=PrometheusConfig(bind_address="0.0.0.0:9000")))
+my_client = await Client.connect("my.temporal.host:7233", runtime=new_runtime)
+```
+
+### Attach global tags to metrics
+
+SDK metrics arrive tagged with Temporal information such as `namespace` and `task_queue`.
+Global tags add your organization's information next to them, so a dashboard can group Workers by the team, service, or environment that owns them.
+
+Set [`global_tags`](https://python.temporal.io/temporalio.runtime.TelemetryConfig.html#global_tags) on `TelemetryConfig` to add the same key-value pairs to every metric the runtime emits, from both the Client and the Worker.
+
+```python
+from temporalio.runtime import Runtime, TelemetryConfig, PrometheusConfig
+
+new_runtime = Runtime(
+    telemetry=TelemetryConfig(
+        metrics=PrometheusConfig(bind_address="0.0.0.0:9000"),
+        global_tags={
+            "team": "content-platform",
+            "service": "checkout",
+            "cost_center": "cc-1042",
+            "environment": "production",
+        },
+    )
+)
+my_client = await Client.connect("my.temporal.host:7233", runtime=new_runtime)
+```
+
+#### Choose a tag set
+
+Tags group metrics work best when standardized across the organization. Every Worker across your organization emits the same keys, so decide on the set before teams adopt it.
+These five suit most organizations:
+
+| Tag           | Example            | Question it answers                                    |
+| ------------- | ------------------ | ------------------------------------------------------ |
+| `team`        | `content-platform` | Who owns the Workers behind this Namespace or Task Queue? |
+| `service`     | `checkout`         | Which application emits these metrics?                 |
+| `cost_center` | `cc-1042`          | Which budget does this Worker fleet belong to?         |
+| `environment` | `production`       | Is this production traffic, or staging or test?        |
+| `region`      | `us-east-2`        | Where does the Worker fleet run?                       |
+
+The built-in tags identify where a metric came from inside Temporal.
+`namespace` and `task_queue` do not record which team runs the Workers behind them, so a dashboard grouped only by those tags cannot answer an ownership question.
+
+That gap costs you time during an incident.
+When several Namespaces degrade at once, what you need first is the name of the team that owns the affected Workers, so you can ask whether they deployed recently.
+Standardized tags put that name on the dashboard, which turns a broad question about the Temporal Service into a direct message to one team.
+
+Grouping by `team` also tells you which case you are looking at:
+
+- The affected Workers share one `team` value. Check that team's recent deploys first, because a deploy that restarts a Worker fleet causes a short disturbance in its metrics.
+- The affected Workers span several `team` values. A single team's deploy no longer explains the pattern, so you can rule it out and look for a shared cause.
+
+The same grouping answers questions outside incidents.
+A `cost_center` tag shows which budget owner drives Workflow and Activity volume.
+SDK metrics count what your Workers and Clients do, which is not the same as the [Actions](/cloud/pricing#action) Temporal Cloud bills for, so use them to compare teams rather than to reconcile a bill.
+
+Keep tag values low cardinality.
+Your metrics backend stores one series per distinct combination of tag values, so a value that changes per Workflow Execution, such as a Workflow Id or a customer identifier, multiplies what it stores.
+Ownership and deployment identifiers avoid this because they stay fixed for the life of the process.
+
+## Set up tracing 
+
+Tracing allows you to view the call graph of a Workflow along with its Activities and any Child Workflows.
+
+Temporal Web's tracing capabilities mainly track Activity Execution within a Temporal context. If you need custom tracing specific for your use case, you should make use of context propagation to add tracing logic accordingly.
+
+To configure tracing in Python, install the `opentelemetry` dependencies and an exporter for your tracing backend.
+
+```bash
+# This command installs the `opentelemetry` dependencies.
+pip install temporalio[opentelemetry]
+# Any OpenTelemetry exporter works; this one speaks OTLP.
+pip install opentelemetry-exporter-otlp
+```
+
+The Python SDK offers two ways to emit OpenTelemetry spans: the `OpenTelemetryPlugin`, which supports spans with real
+durations and the standard OpenTelemetry API inside Workflow code, and the earlier `TracingInterceptor`.
+
+### Trace with the OpenTelemetry plugin
+
+The [`OpenTelemetryPlugin`](https://python.temporal.io/temporalio.contrib.opentelemetry.OpenTelemetryPlugin.html)
+propagates trace context across Client, Workflow, and Activity boundaries and lets Workflow code use the standard
+OpenTelemetry API. It requires a replay-safe tracer provider from
+[`create_tracer_provider()`](https://python.temporal.io/temporalio.contrib.opentelemetry.html#create_tracer_provider),
+set as the global tracer provider before you connect the Client.
+
+```python
+from opentelemetry import trace
+from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+from temporalio.client import Client
+from temporalio.contrib.opentelemetry import OpenTelemetryPlugin, create_tracer_provider
+
+provider = create_tracer_provider()
+provider.add_span_processor(
+    BatchSpanProcessor(OTLPSpanExporter(endpoint="http://localhost:4318/v1/traces"))
+)
+trace.set_tracer_provider(provider)
+
+client = await Client.connect(
+    "localhost:7233",
+    plugins=[OpenTelemetryPlugin(add_temporal_spans=True)],
+)
+```
+
+Register the plugin on the Client only. Workers created from that Client inherit it. With `add_temporal_spans=True`,
+the plugin creates spans for Temporal operations: `StartWorkflow`, `RunWorkflow`, `StartActivity`, `RunActivity`,
+Signal, Query, and Update handlers, and Child Workflows. With the default `add_temporal_spans=False`, the plugin only
+propagates trace context, so spans you create yourself nest correctly without additional Temporal spans.
+
+Inside Workflow code, create spans with the regular tracer. The plugin allows the `opentelemetry` module through
+the Workflow sandbox.
+
+```python
+from datetime import timedelta
+
+from opentelemetry import trace
+from temporalio import workflow
+
+from my_activities import my_activity
+
+@workflow.defn
+class MyWorkflow:
+    @workflow.run
+    async def run(self, name: str) -> str:
+        with trace.get_tracer(__name__).start_as_current_span("prepare"):
+            return await workflow.execute_activity(
+                my_activity, name, start_to_close_timeout=timedelta(seconds=10)
+            )
+```
+
+Replay is safe. The provider generates span identifiers deterministically from Workflow state and does not export
+spans while a Workflow replays, so Worker restarts and cache evictions never produce duplicate spans. A span that is
+open when a Worker stops is exported once, when the Workflow finishes it on another Worker. Each Activity attempt
+produces its own `RunActivity` span, so retries stay visible.
+
+> **⚠️ Caution:**
+>
+> `OpenTelemetryPlugin` and `create_tracer_provider()` are experimental and may change in future versions.
+>
+
+For a complete example that sends agent traces to an observability backend, see the
+[OpenTelemetry section of the OpenAI Agents SDK guide](/develop/python/integrations/openai-agents#opentelemetry).
+
+### Trace with the interceptor
+
+The [`temporalio.contrib.opentelemetry.TracingInterceptor`](https://python.temporal.io/temporalio.contrib.opentelemetry.TracingInterceptor.html)
+class is the earlier integration. Set it as an interceptor as an argument of
+[`Client.connect()`](https://python.temporal.io/temporalio.client.Client.html#connect).
+
+```python
+from temporalio.client import Client
+from temporalio.contrib.opentelemetry import TracingInterceptor
+
+client = await Client.connect("localhost:7233", interceptors=[TracingInterceptor()])
+```
+
+When your Client is connected, spans are created for all Client calls, Activities, and Workflow invocations on the
+Worker. Spans are created and serialized through the server to give one trace for a Workflow Execution.
+
+The interceptor creates Workflow-side spans as completed spans with no duration, because an open span cannot
+survive replay. To add a custom span from Workflow code with the interceptor, use
+[`temporalio.contrib.opentelemetry.workflow.completed_span()`](https://python.temporal.io/temporalio.contrib.opentelemetry.workflow.html).
+For spans with real durations inside Workflows, use the plugin instead.
+
+## Log from a Workflow 
+
+Logging enables you to record critical information during code execution.
+Loggers create an audit trail and capture information about your Workflow's operation.
+An appropriate logging level depends on your specific needs.
+During development or troubleshooting, you might use debug or even trace.
+In production, you might use info or warn to avoid excessive log volume.
+
+You can log from a Workflow using Python's standard library, by importing the logging module `logging`. You can find the log levels supported by the `logging` module in [their official documentation](https://docs.python.org/3/library/logging.html#logging-levels). The Temporal SDK core normally uses `WARN` as its default logging level.
+
+Set your logging configuration to a level you want to expose logs to.
+The following example sets the logging information level to `INFO`.
+
+```python
+logging.basicConfig(level=logging.INFO)
+```
+
+Then in your Workflow, set your [`logger`](https://python.temporal.io/temporalio.workflow.html#logger) and level on the Workflow. The following example logs the Workflow.
+
+```python {11}
+from temporalio import workflow
+
+@workflow.defn
+class GreetingWorkflow:
+    def __init__(self) -> None:
+        self._greeting = "<no greeting>"
+
+    @workflow.run
+    async def run(self, name: str) -> None:
+        workflow.logger.info("Workflow input parameter: %s" % name)
+        self._greeting = f"Hello, {name}!"
+
+    @workflow.query
+    def greeting(self) -> str:
+        return self._greeting
+```
+
+### Custom logger 
+
+Use a custom logger for logging.
+
+Use the built-in [Logging facility for Python](https://docs.python.org/3/library/logging.html) to set a custom logger.
+
+## Visibility APIs 
+
+The term Visibility, within the Temporal Platform, refers to the subsystems and APIs that enable an operator to view Workflow Executions that currently exist within a Temporal Service.
+
+### Use Search Attributes 
+
+The typical method of retrieving a Workflow Execution is by its Workflow Id.
+
+However, sometimes you'll want to retrieve one or more Workflow Executions based on another property. For example, imagine you want to get all Workflow Executions of a certain type that have failed within a time range, so that you can start new ones with the same arguments.
+
+You can do this with [Search Attributes](/search-attribute).
+
+- [Default Search Attributes](/search-attribute#default-search-attribute) like `WorkflowType`, `StartTime` and `ExecutionStatus` are automatically added to Workflow Executions.
+- [Custom Search Attributes](/search-attribute#custom-search-attribute) can contain their own domain-specific data (like `customerId` or `numItems`).
+
+The steps to using custom Search Attributes are:
+
+- Create a new Search Attribute in your Temporal Service in the Temporal CLI or Web UI.
+  - For example: `temporal operator search-attribute create --name CustomKeywordField --type Text`
+    - Replace `CustomKeywordField` with the name of your Search Attribute.
+    - Replace `Text` with a type value associated with your Search Attribute: `Text` | `Keyword` | `Int` | `Double` | `Bool` | `Datetime` | `KeywordList`
+- Set the value of the Search Attribute for a Workflow Execution:
+  - On the Client by including it as an option when starting the Execution.
+  - In the Workflow by calling `upsert_search_attributes`.
+- Read the value of the Search Attribute:
+  - On the Client by calling `DescribeWorkflow`.
+  - In the Workflow by looking at `WorkflowInfo`.
+- Query Workflow Executions by the Search Attribute using a [List Filter](/list-filter):
+  - [In the Temporal CLI](/cli/command-reference/operator#list-2)
+  - In code by calling `ListWorkflowExecutions`.
+
+Here is how to query Workflow Executions:
+
+Use the [list_workflows()](https://python.temporal.io/temporalio.client.Client.html#list_workflows) method on the Client handle and pass a [List Filter](/list-filter) as an argument to filter the listed Workflows.
+
+```python {30-31}
+import asyncio
+from temporalio.client import Client
+from greeting_workflow import GreetingWorkflow
+
+async def main():
+    client = await Client.connect("localhost:7233")
+    handle = await client.start_workflow(
+        GreetingWorkflow.run,
+        id="search-attributes-workflow-id",
+        task_queue="search-attributes-task-queue",
+        search_attributes={"CustomKeywordField": ["old-value"]},
+    )
+
+    print(
+        "First search attribute values: ",
+        (await handle.describe()).search_attributes.get("CustomKeywordField"),
+    )
+    await asyncio.sleep(3)
+    print(
+        "Second search attribute values: ",
+        (await handle.describe()).search_attributes.get("CustomKeywordField"),
+    )
+    await asyncio.sleep(3)
+    print(
+        "Empty search attribute values: ",
+        (await handle.describe()).search_attributes.get("CustomKeywordField"),
+    )
+
+    async for workflow in client.list_workflows('WorkflowType="GreetingWorkflow"'):
+        print(f"Workflow: {workflow.id}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+### How to set custom Search Attributes 
+
+After you've created custom Search Attributes in your Temporal Service (using `temporal operator search-attribute create` or the Cloud UI), you can set the values of the custom Search Attributes when starting a Workflow.
+
+Use `SearchAttributeKey` to create your Search Attributes. Then, when starting a Workflow execution using `client.start_workflow()`, include the Custom Search Attributes by passing instances of `SearchAttributePair()` containing each of your keys and starting values to a parameter called `search_attributes`.
+If you had Custom Search Attributes `CustomerId` of type `Keyword` and `MiscData` of type `Text`, you could provide these starting values:
+
+```python
+customer_id_key = SearchAttributeKey.for_keyword("CustomerId")
+misc_data_key = SearchAttributeKey.for_text("MiscData")
+
+handle = await client.start_workflow(
+    GreetingWorkflow.run,
+    id="search-attributes-workflow-id",
+    task_queue="search-attributes-task-queue",
+    search_attributes=TypedSearchAttributes([
+        SearchAttributePair(customer_id_key, "customer_1"),
+        SearchAttributePair(misc_data_key, "customer_1_data")
+    ]),
+)
+```
+
+In this example, `CustomerId` and `MiscData` are set as Search Attributes.
+These attributes are useful for querying Workflows based on the customer ID or the date the order was placed.
+
+### Upsert Search Attributes 
+
+You can upsert Search Attributes to add or update Search Attributes from within Workflow code.
+
+To upsert custom Search Attributes, use the [`upsert_search_attributes()`](https://python.temporal.io/temporalio.workflow.html#upsert_search_attributes) method to pass a list of `SearchAttributeUpdate()`.
+These can be created via value_set calls on Search Attribute keys:
+
+```python
+workflow.upsert_search_attributes([
+    customer_id_key.value_set("customer_2")
+])
+```
+
+### Remove a Search Attribute from a Workflow 
+
+To remove a Search Attribute that was previously set, use `value_unset call` on the Search Attribute key.
+
+```python
+workflow.upsert_search_attributes([
+    customer_id_key.value_unset()
+])
+```

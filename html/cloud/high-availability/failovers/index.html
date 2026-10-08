@@ -1,0 +1,156 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/cloud/high-availability/failovers.md">/cloud/high-availability/failovers.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Failovers</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/cloud/high-availability/failovers.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fcloud%2Fhigh-availability%2Ffailovers.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fcloud%2Fhigh-availability%2Ffailovers.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>When a Namespace with <a href="/cloud/high-availability" class="">High Availability</a> is disrupted by an outage, Temporal Cloud can fail
+over the Namespace from the primary to the replica. This lets in-flight Workflow Executions continue, new Workflow
+Executions start, and closed Workflow Executions be inspected, all with minimal interruptions or data loss.</p>
+<p>Returning control from the replica to the primary is called a <span style="display:contents" data-temporal-island="ToolTipTerm" data-props="{&quot;term&quot;:&quot;failback&quot;}"><span style="display:inline-block"><span aria-describedby="tooltip" tabindex="0" role="button" style="cursor:help;color:#5856E7;text-decoration:underline;font-size:1rem;font-weight:bold;transition:color 0.3s ease">failback</span></span></span>. After an automatic
+failover, Temporal automatically fails back to the original region once it is healthy, unless you
+<a href="/cloud/high-availability/failovers/manage#after-an-automatic-failover" class="">opt out</a>. See
+<a href="/cloud/high-availability/failovers/manage#failbacks" class="">Failbacks</a> for details.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="automatic-failover">Automatic failover<a href="#automatic-failover" class="hash-link" aria-label="Direct link to Automatic failover" title="Direct link to Automatic failover" translate="no">​</a></h2>
+<p>Temporal Cloud offers managed outage detection and failover to all Namespaces that use High Availability. These
+automatic failovers keep your Namespace available without manual intervention. Temporal aims to both detect the outage
+and complete a failover in minutes from when the outage began, according to the stated
+<a href="/cloud/rpo-rto" class="">Recovery Time Objective (RTO)</a>.</p>
+<p>After an automatic failover, the Namespace will have a replica in its original region. Once the original region is
+healthy again, Temporal Cloud automatically performs a <a href="/cloud/high-availability/failovers/manage#failbacks" class="">failback</a>,
+moving the Namespace back to its original region.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/img/cloud/high-availability/failover.png&quot;,&quot;title&quot;:&quot;On failover, the replica becomes active and the Namespace endpoint directs access to it.&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/img/cloud/high-availability/failover.png" alt="On failover, the replica becomes active and the Namespace endpoint directs access to it." decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">On failover, the replica becomes active and the Namespace endpoint directs access to it.</p></div></span>
+<p>To opt out of automatic failovers and their RTO, you can
+<a href="/cloud/high-availability/enable#automatic-failovers" class="">disable automatic failovers</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conditions-that-trigger-an-automatic-failover">Conditions that trigger an automatic failover<a href="#conditions-that-trigger-an-automatic-failover" class="hash-link" aria-label="Direct link to Conditions that trigger an automatic failover" title="Direct link to Conditions that trigger an automatic failover" translate="no">​</a></h3>
+<p>While the failover operation itself usually completes in seconds, the bulk of the Recovery Time in an outage is spent
+detecting the disruption and deciding to trigger a failover. See <a href="#failover-process" class="">The failover process</a> for a
+detailed breakdown.</p>
+<p>Temporal Cloud runs automated Workflows that detect outages and trigger failovers. These Workflows continuously monitor
+the health of Temporal Cloud in every region and every cell.</p>
+<p>If any of the monitored conditions are failing for too long, Temporal Cloud automatically triggers a failover on any
+Namespaces with High Availability that have a healthy replica.</p>
+<p>Temporal&#x27;s on-call engineers may also trigger a failover at their discretion, for example, if they see early signs of a
+regional outage.</p>
+<div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>The following list gives a general idea of the conditions that trigger an automatic failover. This is not an exhaustive
+list, and it may change over time.</p></div></div>
+<ul>
+<li class="">Whether Temporal Cloud&#x27;s services in the cell are reachable from the Control Plane.</li>
+<li class="">The average latency of inbound RPC calls (excluding long-polling APIs) to Temporal services in the cell.</li>
+<li class="">The percentage of inbound RPC calls that returned errors related to server health.</li>
+<li class="">The average latency of calls from Temporal Cloud&#x27;s services in the cell to its persistence layer.</li>
+<li class="">The percentage of calls to the persistence layer that returned errors related to persistence health.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-failover">Manual failover<a href="#manual-failover" class="hash-link" aria-label="Direct link to Manual failover" title="Direct link to Manual failover" translate="no">​</a></h2>
+<p>You can also <a href="/cloud/high-availability/failovers/manage#trigger-failover" class="">manually trigger a failover</a> based on your own
+monitoring or for failover testing.</p>
+<p>Most Namespaces with High Availability are well-served by automatic failovers. The cases where a manual failover (that is,
+a failover triggered by a user) is warranted are:</p>
+<ul>
+<li class=""><strong>Testing failover or migrating to a new region.</strong> A manual failover is the standard way to exercise your failover
+process with your Clients and Workers, or to move a Namespace to a different region.</li>
+<li class=""><strong>An outage that affects only your systems.</strong> If an outage is contained to your application, Workers, or other
+infrastructure, and Temporal Cloud is not affected, Temporal will not initiate a failover on your behalf. Detect the
+outage with your own monitoring and trigger a failover yourself.</li>
+<li class=""><strong>Failing over more aggressively during a regional outage.</strong> Even with automatic failovers enabled, you can trigger a
+failover yourself if you detect a regional outage before Temporal does. Whichever failover happens first takes effect,
+and the later one is a no-op. A manual failover does not conflict with Temporal&#x27;s automatic failover.</li>
+</ul>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Same-region Replication</div><div class="admonitionContent_vXIg"><p>Manual failovers apply only to Multi-region and Multi-cloud Replication. A
+<a href="/cloud/high-availability#same-region-replication" class="">Same-region Replication</a> Namespace fails over automatically between
+cells and cannot be failed over manually or have its automatic failovers disabled.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failover-process">The failover process<a href="#failover-process" class="hash-link" aria-label="Direct link to The failover process" title="Direct link to The failover process" translate="no">​</a></h2>
+<p>The failover process is the same whether it is triggered automatically by Temporal or manually by a user.</p>
+<ol>
+<li class="">
+<p><strong>During normal operation</strong>, the primary asynchronously replicates data to the replica, keeping them in sync.</p>
+</li>
+<li class="">
+<p><strong>A failover is triggered.</strong> For automatic failovers, the majority of time is spent on outage detection. Temporal&#x27;s
+automated health checks must confirm the disruption before initiating a failover. For the overall timing target, see
+the <a href="/cloud/rpo-rto" class="">Recovery Time Objective (RTO)</a>.</p>
+</li>
+<li class="">
+<p><strong>The Namespace becomes active in the replica&#x27;s region.</strong></p>
+<ol>
+<li class="">Temporal Cloud first attempts a <em>graceful failover</em>: it pauses traffic, drains in-flight replication, and switches
+to the replica with no data conflicts.</li>
+<li class="">If the graceful attempt does not complete within 10 seconds, Temporal Cloud falls back to a <em>forced failover</em>,
+which immediately activates the replica. In a forced failover, any events not yet replicated undergo
+<a href="#conflict-resolution" class="">conflict resolution</a> once the original region comes back.</li>
+<li class="">This hybrid strategy balances consistency and availability. During the switch, Workflow operations are briefly
+paused, and Temporal Cloud returns a retryable &quot;Service unavailable&quot; error to SDKs.</li>
+</ol>
+</li>
+<li class="">
+<p><strong>The Namespace Endpoint redirects via DNS to the active region.</strong> This change can take a few minutes to fully propagate
+to all Clients and Workers. If your application has an extremely demanding Recovery Time, you can eliminate this
+stage by connecting through a <a href="/cloud/high-availability/ha-connectivity#regional-endpoint" class="">Regional Endpoint</a> instead
+of the Namespace Endpoint.</p>
+</li>
+<li class="">
+<p><strong>Failback.</strong> If the failover was triggered by Temporal, Temporal automatically triggers a failback to the original
+region once the region is healthy. If the failover was triggered by a user, the Namespace continues as-is until a
+user triggers another failover. See <a href="/cloud/high-availability/failovers/manage#failbacks" class="">failback options</a> for
+details.</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="post-failover-events">Post-failover events<a href="#post-failover-events" class="hash-link" aria-label="Direct link to Post-failover events" title="Direct link to Post-failover events" translate="no">​</a></h2>
+<p>After any failover, whether triggered by you or by Temporal, an event appears in both the
+<a href="https://cloud.temporal.io/namespaces" class="">Temporal Cloud Web UI</a> (on the Namespace detail page) and in your audit logs. The
+audit log entry uses the <code>&quot;operation&quot;: &quot;FailoverNamespace&quot;</code> event. Temporal Cloud
+<a href="/cloud/notifications#admin-notifications" class="">notifies you via email</a> whenever a failover occurs.</p>
+<p>After an automatic failover, Temporal automatically fails back to the original region once the region is healthy, unless
+you <a href="/cloud/high-availability/failovers/manage#after-an-automatic-failover" class="">opt out</a>. After a user-triggered failover,
+the Namespace stays in the replica region until a user triggers another failover. See
+<a href="/cloud/high-availability/failovers/manage#failbacks" class="">failback options</a> for details.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="split-brain-scenario">Split-brain scenario<a href="#split-brain-scenario" class="hash-link" aria-label="Direct link to Split-brain scenario" title="Direct link to Split-brain scenario" translate="no">​</a></h2>
+<p>At any time, only the primary or the replica should be active. However, if a network partition separates the two
+regions, the regions cannot communicate with each other. If you promote the replica to active during a network
+partition, both regions will be active simultaneously, accepting writes independently. This is known as a split-brain
+scenario.</p>
+<p>When the network partition resolves and the regions can communicate again, Temporal&#x27;s
+<a href="#conflict-resolution" class="">conflict resolution</a> process reconciles the divergent histories and determines which region
+remains active.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="conflict-resolution">Conflict resolution<a href="#conflict-resolution" class="hash-link" aria-label="Direct link to Conflict resolution" title="Direct link to Conflict resolution" translate="no">​</a></h2>
+<p>Namespaces with replicas rely on asynchronous event replication. Updates made to the primary may not immediately be
+reflected in the replica due to <span style="display:contents" data-temporal-island="ToolTipTerm" data-props="{&quot;term&quot;:&quot;replication lag&quot;}"><span style="display:inline-block"><span aria-describedby="tooltip" tabindex="0" role="button" style="cursor:help;color:#5856E7;text-decoration:underline;font-size:1rem;font-weight:bold;transition:color 0.3s ease">replication lag</span></span></span>, particularly during failovers. In the event of a
+non-graceful failover, replication lag causes a temporary setback in Workflow progress. At the moment of non-graceful
+failover:</p>
+<ul>
+<li class="">Operations that had already replicated remain durable in the replica.</li>
+<li class="">Operations that had not yet replicated (that is, that are still in the replication backlog) are reconciled when the
+region recovers, according to the conflict resolution process.</li>
+</ul>
+<div class="theme-admonition theme-admonition-caution alert alert--warning admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Conflict resolution requires a recoverable region</div><div class="admonitionContent_vXIg"><p>Conflict resolution can only recover data from a functioning Temporal Service. If the previously active region never
+recovers, Workflow API calls that fall within the <a href="/cloud/rpo-rto" class="">RPO</a> — under one minute — may be permanently lost.
+Such a case would require the permanent loss of multiple cloud Availability Zones and has never happened in the history
+of Temporal Cloud.</p></div></div>
+<p>In a graceful failover, Temporal Cloud drains the replication backlog to zero and pauses traffic before switching
+regions, so the replica holds every acknowledged operation and the Namespace achieves a recovery point of zero.</p>
+<p>Namespaces that are not replicated can be configured to provide <em>at-most-once</em> semantics for Activity execution when a
+retry policy&#x27;s <a href="/encyclopedia/retry-policies#maximum-attempts" class="">maximum attempts</a> is set to 0. High
+Availability Namespaces provide <em>at-least-once</em> semantics for execution of Activities. Completed Activities <em>may</em> be
+re-dispatched in a newly active Namespace, leading to repeated executions.</p>
+<p>The same durability boundary applies to Workflow starts, Signals, and Updates: a <code>StartWorkflowExecution</code>,
+<code>SignalWorkflowExecution</code>, <code>SignalWithStartWorkflowExecution</code>, or <code>UpdateWorkflowExecution</code> call that returns success is
+durably committed in the active region, and replicated asynchronously to the replica.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-workflow-id-uniqueness-is-preserved-after-a-forced-failover">How Workflow Id uniqueness is preserved after a forced failover<a href="#how-workflow-id-uniqueness-is-preserved-after-a-forced-failover" class="hash-link" aria-label="Direct link to How Workflow Id uniqueness is preserved after a forced failover" title="Direct link to How Workflow Id uniqueness is preserved after a forced failover" translate="no">​</a></h3>
+<p>The <a href="/workflow-execution/workflowid-runid#workflow-id" class="">Workflow Id uniqueness guarantee</a> — at most one Open Workflow
+Execution per Workflow Id — is always enforced within the active Namespace, and conflict resolution preserves it across
+a failover. This guarantee limits how many Executions are <em>Open</em> at the same time; reuse of a Workflow Id after an
+Execution Closes is governed separately by the
+<a href="/workflow-execution/workflowid-runid#workflow-id-reuse-policy" class="">Workflow Id Reuse Policy</a>, and a start request that
+collides with an already-Open Execution is governed by the
+<a href="/workflow-execution/workflowid-runid#workflow-id-conflict-policy" class="">Workflow Id Conflict Policy</a>. Because the guarantee
+constrains only concurrency, and not how many <a href="/workflow-execution/workflowid-runid#run-id" class="">Run Ids</a> a Workflow Id
+accumulates over its lifetime, conflict resolution can reconcile a divergence without ever running the same Workflow Id
+twice concurrently.</p>
+<ol>
+<li class=""><strong>Steady state.</strong> The active region enforces uniqueness on every write and asynchronously replicates the Event
+History to the replica.</li>
+<li class=""><strong>Failover with divergence.</strong> In a forced failover when replication lag is present, both regions can independently
+append events under the same Workflow Id. When the regions reconnect, their Event Histories have diverged for that
+Workflow Id.</li>
+<li class=""><strong>One Execution stays Open.</strong> Temporal Cloud does not interleave the divergent histories. Events from the previously
+active Namespace that arrive after the failover cannot be directly applied, so Temporal Cloud forks the Event History
+into a new branch. Its <span style="display:contents" data-temporal-island="ToolTipTerm" data-props="{&quot;term&quot;:&quot;conflict resolution&quot;}"><span style="display:inline-block"><span aria-describedby="tooltip" tabindex="0" role="button" style="cursor:help;color:#5856E7;text-decoration:underline;font-size:1rem;font-weight:bold;transition:color 0.3s ease">conflict resolution</span></span></span> process then keeps a single Workflow Execution
+Open. The competing Execution in the previously active region becomes a
+<a href="/temporal-service/multi-cluster-replication#zombie-workflows" class="">zombie Workflow Execution</a> — an Execution that region
+can no longer mutate on its own — and is terminated there once replication informs it of the competing Workflow Id.
+The Temporal Service ensures the resulting Event Histories remain valid and replayable by SDKs.</li>
+</ol></div>

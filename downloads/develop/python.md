@@ -1,0 +1,102 @@
+# Python SDK developer guide
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Explore Temporal Python SDK feature guides to master developing Temporal Applications. Build Workflows, Activities, and Workers, connect to Temporal Services, set up a testing suite, handle failure detection, send messages, complete Activities asynchronously, implement Versioning, use Observability, debug applications, schedule Workflows
+
+![Python SDK Banner](/img/assets/banner-python-temporal.png)
+
+## Install and get started
+
+You can find detailed installation instructions for the Python SDK in the [Quickstart](/develop/python/set-up-your-local-python).
+
+There's also a short walkthrough of how to use the Temporal primitives (Activities, Workflows, and Workers) to build and run a Temporal application to get you up and running.
+
+Once your local Temporal Service is set up, continue building with the following resources:
+
+- [Activity basics](/develop/python/activities/basics)
+- [Workflow basics](/develop/python/workflows/basics)
+- [Start an Activity Execution](/develop/python/activities/execution)
+- [Run Worker processes](/develop/python/workers/run-worker-process)
+
+From there, you can dive deeper into any of the Temporal primitives to start building Workflows that fit your use cases.
+
+## [Workflows](/develop/python/workflows)
+
+- [Workflow basics](/develop/python/workflows/basics)
+- [Child Workflows](/develop/python/workflows/child-workflows)
+- [Continue-As-New](/develop/python/workflows/continue-as-new)
+- [Cancellation](/develop/python/workflows/cancellation)
+- [Timeouts](/develop/python/workflows/timeouts)
+- [Message passing](/develop/python/workflows/message-passing)
+- [Schedules](/develop/python/workflows/schedules)
+- [Timers](/develop/python/workflows/timers)
+- [Versioning](/develop/python/workflows/versioning)
+- [Workflow Streams](/develop/python/workflows/workflow-streams)
+
+## [Activities](/develop/python/activities)
+
+- [Activity basics](/develop/python/activities/basics)
+- [Activity Execution](/develop/python/activities/execution)
+- [Standalone Activities](/develop/python/activities/standalone-activities-quickstart)
+- [Timeouts](/develop/python/activities/timeouts)
+- [Asynchronous Activity completion](/develop/python/activities/asynchronous-activity)
+- [Benign exceptions](/develop/python/activities/benign-exceptions)
+
+## [Workers](/develop/python/workers)
+
+- [Worker processes](/develop/python/workers/run-worker-process)
+
+## [Temporal Client](/develop/python/client)
+
+- [Temporal Client](/develop/python/client/temporal-client)
+
+## [Temporal Nexus](/develop/python/nexus)
+
+- [Quickstart](/develop/python/nexus/quickstart)
+- [Feature guide](/develop/python/nexus/feature-guide)
+- [Standalone Operations](/develop/python/nexus/standalone-operations)
+
+## [Platform](/develop/python/platform)
+
+- [Observability](/develop/python/platform/observability)
+- [Enriching the UI](/develop/python/platform/enriching-ui)
+
+## [Best practices](/develop/python/best-practices)
+
+- [Testing](/develop/python/best-practices/testing-suite)
+- [Python SDK sandbox](/develop/python/best-practices/python-sdk-sandbox)
+- [Debugging](/develop/python/best-practices/debugging)
+- [Data handling](/develop/python/data-handling)
+- [Sync vs async](/develop/python/best-practices/python-sdk-sync-vs-async)
+
+## [Integrations](/develop/python/integrations)
+
+- [Braintrust integration](https://www.braintrust.dev/docs/integrations/sdk-integrations/temporal#python)
+- [Deep Agents integration](/develop/python/integrations/deepagents)
+- [Google ADK integration](/develop/python/integrations/google-adk)
+- [Google GenAI integration](/develop/python/integrations/google-genai)
+- [Langfuse integration](https://langfuse.com/integrations/frameworks/temporal)
+- [LangGraph integration](/develop/python/integrations/langgraph)
+- [LangSmith integration](/develop/python/integrations/langsmith)
+- [OpenAI Agents SDK integration](/develop/python/integrations/openai-agents)
+- [OpenBox integration](https://docs.openbox.ai/getting-started/temporal)
+- [Parseable integration](https://github.com/parseablehq/temporal-plugin-python/blob/main/INTEGRATION.MD)
+- [Pydantic AI integration](https://ai.pydantic.dev/durable_execution/temporal/)
+- [Strands Agents integration](/develop/python/integrations/strands-agents)
+- [Tenuo integration](https://tenuo.ai/temporal)
+
+## Temporal Python technical resources
+
+- [Python SDK Quickstart - Setup Guide](/develop/python/set-up-your-local-python)
+- [Python API Documentation](https://python.temporal.io)
+- [Python SDK Code Samples](https://github.com/temporalio/samples-python)
+- [Python SDK GitHub](https://github.com/temporalio/sdk-python)
+- [Temporal 101 in Python Free Course](https://learn.temporal.io/courses/temporal_101/python/)
+- [Build a Job Queue with Standalone Activities Tutorial](https://learn.temporal.io/tutorials/python/standalone-activities/)
+
+## Get connected with the Temporal Python community
+
+- [Temporal Python Community Slack](https://app.slack.com/client/TNWA8QCGZ)
+- [Python SDK Forum](https://community.temporal.io/tag/python-sdk)

@@ -1,0 +1,90 @@
+# Continue-As-New - Go SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Use Temporal's Continue-As-New in Go to manage large Event Histories by atomically creating new Workflow Executions with the same Workflow Id and fresh parameters.
+
+This page covers the following for Go developers:
+
+- [What is Continue-As-New?](#what)
+- [Use Continue-As-New](#how)
+- [When is it right to Continue-As-New?](#when)
+- [Test Continue-As-New](#how-to-test)
+
+## What is Continue-As-New? 
+
+[Continue-As-New](/workflow-execution/continue-as-new) lets a Workflow Execution close successfully and creates a new Workflow Execution.
+You can think of it as a checkpoint when your Workflow gets too long or approaches certain scaling limits.
+
+The new Workflow Execution is in the same [chain](/workflow-execution#workflow-execution-chain); it keeps the same Workflow Id but gets a new Run Id and a fresh Event History.
+It also receives your Workflow's usual parameters.
+
+## Use Continue-As-New with the Go SDK 
+
+First, design your Workflow parameters so that you can pass in the "current state" when you Continue-As-New into the next Workflow run.
+This state is typically set to `None` for the original caller of the Workflow.
+
+[View the source code](https://github.com/temporalio/samples-go/blob/main/safe_message_handler/workflow.go) in the context of the rest of the application code.
+
+```go
+ClusterManagerInput struct {
+    State             *ClusterManagerState
+    TestContinueAsNew bool
+}
+
+func newClusterManager(ctx workflow.Context, wfInput ClusterManagerInput) (*ClusterManager, error) {
+
+````
+The test hook in the above snippet is covered [below](#how-to-test).
+
+Inside your Workflow, return the [`NewContinueAsNewError`](https://pkg.go.dev/go.temporal.io/sdk/workflow#NewContinueAsNewError) error.
+This stops the Workflow right away and starts a new one.
+
+[View the source code](https://github.com/temporalio/samples-go/blob/main/safe_message_handler/workflow.go) in the context of the rest of the application code.
+
+```go
+return ClusterManagerResult{}, workflow.NewContinueAsNewError(
+    ctx,
+    ClusterManagerWorkflow,
+    ClusterManagerInput{
+        State:             &cm.state,
+        TestContinueAsNew: cm.testContinueAsNew,
+    },
+)
+````
+
+### Considerations for Workflows with message handlers 
+
+If you use Updates or Signals, don't call Continue-as-New from the handlers.
+Instead, wait for your handlers to finish in your main Workflow before you return `NewContinueAsNewError`.
+See the [`AllHandlersFinished`](message-passing#wait-for-message-handlers) example for guidance.
+
+## When is it right to Continue-As-New with the Go SDK? 
+
+Use Continue-as-New when your Workflow might hit [Event History Limits](/workflow-execution/event#event-history).
+
+Temporal tracks your Workflow's progress against these limits to let you know when you should Continue-as-New.
+Call `GetInfo(ctx).GetContinueAsNewSuggested()` to check if it's time.
+
+## Test Continue-As-New with the Go SDK 
+
+Testing Workflows that naturally Continue-as-New may be time-consuming and resource-intensive.
+Instead, add a test hook to check your Workflow's Continue-as-New behavior faster in automated tests.
+
+For example, when `TestContinueAsNew == True`, this sample creates a test-only variable called `maxHistoryLength` and sets it to a small value.
+A helper method in the Workflow checks it each time it considers using Continue-as-New:
+
+[View the source code](https://github.com/temporalio/samples-go/blob/main/safe_message_handler/workflow.go) in the context of the rest of the application code.
+
+```go
+func (cm *ClusterManager) shouldContinueAsNew(ctx workflow.Context) bool {
+	if workflow.GetInfo(ctx).GetContinueAsNewSuggested() {
+		return true
+	}
+	if cm.maxHistoryLength > 0 && workflow.GetInfo(ctx).GetCurrentHistoryLength() > cm.maxHistoryLength {
+		return true
+	}
+	return false
+}
+```

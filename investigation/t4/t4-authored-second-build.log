@@ -1,0 +1,35 @@
+Error: MDX compilation failed for file "/home/nick/Repositories/nift/nift-experiments/temporal/docs/cloud/get-started/api-keys.mdx"
+Cause: Markdown link with URL `/cloud/tcld/index.mdx` in source file "docs/cloud/get-started/api-keys.mdx" (75:3) couldn't be resolved.
+Make sure it references a local Markdown file that exists within the current plugin.
+To ignore this error, use the `siteConfig.markdown.hooks.onBrokenMarkdownLinks` option, or apply the `pathname://` protocol to the broken link URLs.
+Details:
+Error: Markdown link with URL `/cloud/tcld/index.mdx` in source file "docs/cloud/get-started/api-keys.mdx" (75:3) couldn't be resolved.
+Make sure it references a local Markdown file that exists within the current plugin.
+To ignore this error, use the `siteConfig.markdown.hooks.onBrokenMarkdownLinks` option, or apply the `pathname://` protocol to the broken link URLs.
+    at throwError (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/logger/lib/logger.js:80:11)
+    at onBrokenMarkdownLinks (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/mdx-loader/lib/remark/resolveMarkdownLinks/index.js:20:60)
+    at /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/mdx-loader/lib/remark/resolveMarkdownLinks/index.js:77:21
+    at overload (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit/lib/index.js:311:12)
+    at node ([33mlink[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:347:27)
+    at node ([33mparagraph[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+    at node ([33mlistItem[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+    at node ([33mlist[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+    at node ([33mroot[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+    at visitParents (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:305:31)
+    at compileToJSX (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/mdx-loader/lib/utils.js:93:15)
+    at async Object.prepare (/home/nick/Repositories/nift/nift-experiments/temporal/tools/compile.cjs:7:218)
+    at async /home/nick/Repositories/nift/nift-experiments/temporal/tools/publish.cjs:6:301 {
+  [cause]: Error: Markdown link with URL `/cloud/tcld/index.mdx` in source file "docs/cloud/get-started/api-keys.mdx" (75:3) couldn't be resolved.
+  Make sure it references a local Markdown file that exists within the current plugin.
+  To ignore this error, use the `siteConfig.markdown.hooks.onBrokenMarkdownLinks` option, or apply the `pathname://` protocol to the broken link URLs.
+      at throwError (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/logger/lib/logger.js:80:11)
+      at onBrokenMarkdownLinks (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/mdx-loader/lib/remark/resolveMarkdownLinks/index.js:20:60)
+      at /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/@docusaurus/mdx-loader/lib/remark/resolveMarkdownLinks/index.js:77:21
+      at overload (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit/lib/index.js:311:12)
+      at node ([33mlink[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:347:27)
+      at node ([33mparagraph[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+      at node ([33mlistItem[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+      at node ([33mlist[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+      at node ([33mroot[39m) (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:364:61)
+      at visitParents (file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/unist-util-visit-parents/lib/index.js:305:31)
+}

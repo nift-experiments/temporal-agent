@@ -1,0 +1,180 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/activity-execution.md">/activity-execution.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Activity Execution</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/activity-execution.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Factivity-execution.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Factivity-execution.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This page discusses the following:</p>
+<ul>
+<li class=""><a href="#activity-execution" class="">Activity Execution</a></li>
+<li class=""><a href="#activity-execution-lifecycle" class="">Activity Execution Lifecycle</a></li>
+<li class=""><a href="#cancellation" class="">Cancellation</a></li>
+<li class=""><a href="#activity-id" class="">Activity ID</a></li>
+<li class=""><a href="#asynchronous-activity-completion" class="">Asynchronous Activity Completion</a></li>
+<li class=""><a href="#task-token" class="">Task Token</a></li>
+</ul>
+<p>When an Activity caller starts an <a href="/activities" class="">Activity</a>, an Activity Execution is created that orchestrates its full lifecycle, including retries.</p>
+<p><a href="/workflow-activity" class="">Workflow Activities</a> and <a href="/standalone-activity" class="">Standalone Activities</a> are durable Activity Executions that live in the Temporal Service.
+They <a href="/activity-execution#activity-execution-lifecycle" class="">dispatch Tasks to Activity Workers using an Activity Task Queue</a> and collect results to determine next steps.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-execution">How can an Activity be invoked?<a href="#activity-execution" class="hash-link" aria-label="Direct link to How can an Activity be invoked?" title="Direct link to How can an Activity be invoked?" translate="no">​</a></h2>
+<p>Once an Activity function has been <a href="/activity-definition" class="">defined and registred in a Worker</a> it can be invoked in different ways.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-activity-executions">Workflow Activity Executions<a href="#workflow-activity-executions" class="hash-link" aria-label="Direct link to Workflow Activity Executions" title="Direct link to Workflow Activity Executions" translate="no">​</a></h3>
+<p>A <a href="/workflow-activity" class="">Workflow Activity</a> is started as a step in a Workflow using the Temporal SDK and its lifetime is scoped to the Workflow.
+The Workflow schedules the Activity, and the result is delivered back to the Workflow when the
+Activity Execution closes. Each step is recorded in the Workflow Execution&#x27;s
+<a href="/workflow-execution/event" class="">Event History</a>, for example the
+Workflow <a href="/references/events#activitytaskcompleted" class="">ActivityTaskCompleted</a> Event. For other related Events, see
+<a href="/workflow-execution/event#activity-events" class="">Workflow Activity Events</a>.</p>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>GET STARTED</div><div class="admonitionContent_vXIg"><p>Start a Workflow Activity:
+<a href="/develop/go/activities/execution" class="">Go</a>
+| <a href="/develop/java/activities/execution" class="">Java</a>
+| <a href="/develop/php/activities/execution" class="">PHP</a>
+| <a href="/develop/python/activities/execution" class="">Python</a>
+| <a href="/develop/typescript/activities/execution" class="">TypeScript</a>
+| <a href="/develop/dotnet/activities/execution" class="">.NET</a>
+| <a href="/develop/ruby/activities/execution" class="">Ruby</a>
+| <a href="/develop/rust/activities/execution" class="">Rust</a></p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standalone-activity-executions">Standalone Activity Executions<a href="#standalone-activity-executions" class="hash-link" aria-label="Direct link to Standalone Activity Executions" title="Direct link to Standalone Activity Executions" translate="no">​</a></h3>
+<p>A <a href="/standalone-activity" class="">Standalone Activity</a> is an independent top-level execution, started directly by a Temporal SDK <a href="/encyclopedia/temporal-client" class="">Client</a>, with its own lifetime.
+The Client gets a handle and
+fetches the result through it.
+Because there&#x27;s no Workflow, there is no Workflow Event History.
+Standalone Activities use a <a href="/standalone-activity#deduplication-and-id-space-uniqueness" class="">separate ID space</a> for deduplication and uniqueness and provide full <a href="/standalone-activity#visibility" class="">visibility</a> and <a href="/standalone-activity#lifecycle-control" class="">lifecycle control</a>.</p>
+<table><thead><tr><th></th><th><a href="/standalone-activity" class="">Standalone Activity</a></th><th><a href="/workflow-activity" class="">Workflow Activity</a></th></tr></thead><tbody><tr><td>Started by</td><td><a href="/encyclopedia/temporal-client" class="">Client</a></td><td>Workflow code</td></tr><tr><td>Lifetime</td><td>Independent top-level execution</td><td>Scoped to the Workflow Run</td></tr><tr><td>Result delivered to</td><td>The Client, through a handle</td><td>The Workflow</td></tr><tr><td>Recorded in Event History</td><td>No Workflow, so no Event History</td><td>Yes</td></tr><tr><td>Activity ID space</td><td><a href="/standalone-activity#deduplication-and-id-space-uniqueness" class="">Separate ID space</a></td><td>Scoped to the Workflow Run</td></tr><tr><td>Best for</td><td><a href="/evaluate/features/job-queue" class="">Durable job processing</a></td><td>Multi-step orchestration</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>GET STARTED</div><div class="admonitionContent_vXIg"><p>Start a Standalone Activity:
+<a href="/develop/go/activities/standalone-activities-quickstart#execute-activity" class="">Go</a>
+| <a href="/develop/python/activities/standalone-activities-quickstart#execute-a-standalone-activity" class="">Python</a>
+| <a href="/develop/java/activities/standalone-activities-quickstart#execute-activity" class="">Java</a>
+| <a href="/develop/dotnet/activities/standalone-activities-quickstart#execute-activity" class="">.NET</a>
+| <a href="/develop/typescript/activities/standalone-activities-quickstart#execute-activity-type-checking" class="">TypeScript</a>
+| <a href="/develop/ruby/activities/standalone-activities-quickstart#execute-activity" class="">Ruby</a>
+| <a href="/develop/rust/activities/standalone-activities-quickstart#execute-activity" class="">Rust</a></p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-activity-executions">Local Activity Executions<a href="#local-activity-executions" class="hash-link" aria-label="Direct link to Local Activity Executions" title="Direct link to Local Activity Executions" translate="no">​</a></h3>
+<p>When specific performance optimizations are more important than full durability, an Activity may be executed in the same process as a Workflow (a <a href="/local-activity" class="">Local Activity</a>), bypassing the regular Activity Execution and Task Queue.</p>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_vXIg"><p><a href="/local-activity" class="">Local Activities</a> are not a replacement for regular Activities, since they bypass the regular Activity Execution lifecycle and lack full durability.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-execution-lifecycle">Activity Execution lifecycle<a href="#activity-execution-lifecycle" class="hash-link" aria-label="Direct link to Activity Execution lifecycle" title="Direct link to Activity Execution lifecycle" translate="no">​</a></h2>
+<p><a href="/workflow-activity" class="">Workflow Activities</a> and <a href="/standalone-activity" class="">Standalone Activities</a> use the regular Activity Execution lifecycle, which includes the full chain of <a href="/tasks#activity-task-execution" class="">Activity Task Executions</a>.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/activity-execution.svg&quot;,&quot;title&quot;:&quot;Activity Execution&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/activity-execution.svg" alt="Activity Execution" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Activity Execution</p></div></span>
+<p>You can customize <a href="/encyclopedia/detecting-activity-failures#start-to-close-timeout" class="">Activity Execution timeouts</a> and
+<a href="/encyclopedia/retry-policies" class="">retry policies</a>.</p>
+<p>If an Activity Execution fails (because it exhausted all retries, threw a
+<a href="/encyclopedia/retry-policies#non-retryable-errors" class="">non-retryable error</a>, or was canceled), the error is returned to your
+<a href="/workflows" class="">Workflow</a> code when it attempts to fetch the Activity result. For <a href="/standalone-activity" class="">Standalone Activities</a> the error is
+returned to the Client when you attempt to fetch the Activity result.</p>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>Temporal guarantees that an Activity Task either runs or timeouts. There are multiple failure scenarios when an Activity
+Task is lost. It can be lost during delivery to a Worker or after the Activity Function is called and the Worker
+crashed.</p><p>Temporal doesn&#x27;t detect task loss directly. It relies on
+<a href="/encyclopedia/detecting-activity-failures#start-to-close-timeout" class="">Start-To-Close timeout</a>. If the Activity Task times
+out, the Activity Execution will be retried according to the Activity Execution Retry Policy.</p><p>In scenarios where the Activity Execution Retry Policy is set to <code>1</code> and a Timeout occurs, the Activity Execution will
+not be tried.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cancellation">Cancellation<a href="#cancellation" class="hash-link" aria-label="Direct link to Cancellation" title="Direct link to Cancellation" translate="no">​</a></h2>
+<p>Activity Cancellation:</p>
+<ul>
+<li class="">lets the Activity know it doesn&#x27;t need to keep doing work, and</li>
+<li class="">gives the Activity time to clean up any resources it has created.</li>
+</ul>
+<p>Activities must heartbeat to receive cancellations from a Temporal Service.</p>
+<p>An Activity may receive Cancellation if:</p>
+<ul>
+<li class="">The Activity was requested to be Cancelled. This can often cascade from Workflow Cancellation, but not always—SDKs
+have ways to stop Cancellation from cascading. </li>
+<li class="">The Activity was considered failed by the Server because any of the Activity timeouts have triggered (for example, the
+Server didn&#x27;t receive a heartbeat within the Activity&#x27;s Heartbeat timeout). The
+<a href="/references/failures#cancelled-failure" class="">Cancelled Failure</a> that the Activity receives will have
+<code>message: &#x27;TIMED_OUT&#x27;</code>.</li>
+<li class="">The Workflow Run reached a <a href="/workflow-execution#workflow-execution-status" class="">Closed state</a>, in which case the Cancelled
+Failure will have <code>message: &#x27;NOT_FOUND&#x27;</code>.</li>
+<li class="">In some SDKs:<!-- -->
+<ul>
+<li class="">The Worker is shutting down.</li>
+<li class="">An Activity sends a Heartbeat but the Heartbeat details can&#x27;t be converted by the Worker&#x27;s configured
+<a href="/dataconversion" class="">Data Converter</a>. This fails the Activity Task Execution with an Application Failure.</li>
+<li class="">The Activity timed out on the Worker side and is not Heartbeating or the Temporal Service hasn&#x27;t relayed a
+Cancellation.</li>
+</ul>
+</li>
+</ul>
+<p>There are different ways to receive Cancellation depending on the SDK. <!-- --> An Activity may
+accept or ignore Cancellation:</p>
+<ul>
+<li class="">To allow Cancellation to happen, let the Cancellation Failure propagate.</li>
+<li class="">To ignore Cancellation, catch it and continue executing.</li>
+</ul>
+<p>Some SDKs have ways to shield tasks from being stopped while still letting the Cancellation propagate.</p>
+<p>The Workflow can also decide if it wants to wait for the Activity Cancellation to be accepted or to proceed without
+waiting.</p>
+<p>Cancellation can only be requested a single time. If you try to cancel your Activity Execution more than once, it will
+not receive more than one Cancellation request.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-id">What is an Activity ID?<a href="#activity-id" class="hash-link" aria-label="Direct link to What is an Activity ID?" title="Direct link to What is an Activity ID?" translate="no">​</a></h2>
+<p>The identifier for an <a href="#activity-execution" class="">Activity Execution</a>. The identifier can be generated by the system, or it
+can be provided by the Workflow code that spawns the Activity Execution. The identifier is unique among the open
+Activity Executions of a <a href="/workflow-execution/workflowid-runid#run-id" class="">Workflow Run</a>. (A single Workflow Run may reuse
+an Activity ID if an earlier Activity Execution with the same ID has closed.)</p>
+<p>An Activity ID can be used to <a href="#asynchronous-activity-completion" class="">complete the Activity asynchronously</a>.</p>
+<p><a href="/standalone-activity" class="">Standalone Activities</a> have a <a href="/standalone-activity#deduplication-and-id-space-uniqueness" class="">separate ID space</a> from <a href="/workflow-execution/workflowid-runid" class="">the Workflow ID space</a> for deduplication and uniqueness.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="asynchronous-activity-completion">What is Asynchronous Activity Completion?<a href="#asynchronous-activity-completion" class="hash-link" aria-label="Direct link to What is Asynchronous Activity Completion?" title="Direct link to What is Asynchronous Activity Completion?" translate="no">​</a></h2>
+<p>Asynchronous Activity Completion is a feature that enables an Activity Function to return without causing the Activity
+Execution to complete. The Temporal Client can then be used from anywhere to both Heartbeat Activity Execution progress
+and eventually complete the Activity Execution and provide a result.</p>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>GET STARTED</div><div class="admonitionContent_vXIg"><p>Complete an Activity Asynchronously:
+<a href="/develop/go/activities/asynchronous-activity" class="">Go</a>
+| <a href="/develop/java/activities/asynchronous-activity" class="">Java</a>
+| <a href="/develop/php/activities/asynchronous-activity" class="">PHP</a>
+| <a href="/develop/python/activities/asynchronous-activity" class="">Python</a>
+| <a href="/develop/typescript/activities/asynchronous-activity" class="">TypeScript</a>
+| <a href="/develop/dotnet/activities/asynchronous-activity" class="">.NET</a>
+| <a href="/develop/ruby/activities/asynchronous-activity" class="">Ruby</a></p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-use-async-completion">When to use Async Completion<a href="#when-to-use-async-completion" class="hash-link" aria-label="Direct link to When to use Async Completion" title="Direct link to When to use Async Completion" translate="no">​</a></h3>
+<p>When an external system has the final result of a computation that is started by an Activity, there are three main ways
+of getting the result to the Workflow:</p>
+<ol>
+<li class="">The external system uses Async Completion to complete the Activity with the result.</li>
+<li class="">The Activity completes normally, without the result. Later, the external system sends a Signal to the Workflow with
+the result.</li>
+<li class="">A subsequent Activity
+<a href="https://community.temporal.io/t/what-is-the-best-practice-for-a-polling-activity/328/2" class="">polls the external system</a>
+for the result.</li>
+</ol>
+<p>If you don&#x27;t have control over the external system — that is, you can&#x27;t add Async Completion or a Signal to its code —
+then:</p>
+<ul>
+<li class="">you can poll (#3), or</li>
+<li class="">if the external system can reliably call a webhook (and retry calling in the case of failure), you can write a webhook
+handler that sends a Signal to the Workflow (#2).</li>
+</ul>
+<p>The decision between using #1 vs #2 involves a few factors. Use Async Completion if:</p>
+<ul>
+<li class="">the external system is unreliable and might fail to Signal, or</li>
+<li class="">you want the external process to Heartbeat or receive Cancellation.</li>
+</ul>
+<p>Otherwise, if the external system can reliably be trusted to do the task and Signal back with the result, and it doesn&#x27;t
+need to Heartbeat or receive Cancellation, then you may want to use Signals.</p>
+<p>The benefit to using Signals has to do with the timing of failure retries. For example, consider an external process
+that is waiting for a human to review something and respond, and they could take up to a week to do so. If you use Async
+Completion (#1), you would:</p>
+<ul>
+<li class="">set a <a href="/encyclopedia/detecting-activity-failures#start-to-close-timeout" class="">Start-To-Close Timeout</a> of one week on the
+Activity,</li>
+<li class="">in the Activity, notify the external process you need the human review, and</li>
+<li class="">have the external process Asynchronously Complete the Activity when the human responds.</li>
+</ul>
+<p>If the Activity fails on the second step to notify the external system and doesn&#x27;t throw an error (for example, if the
+Worker dies), then the Activity won&#x27;t be retried for a week, when the Start-To-Close Timeout is hit.</p>
+<p>If you use Signals, you would:</p>
+<ul>
+<li class="">set a <a href="/encyclopedia/detecting-activity-failures#start-to-close-timeout" class="">Start-To-Close Timeout</a> of one minute on the
+Activity,</li>
+<li class="">in the Activity, notify the external process you need the human review,</li>
+<li class="">complete the Activity without the result, and</li>
+<li class="">have the external process Signal the Workflow when the human responds.</li>
+</ul>
+<p>If the Activity fails on the second step to notify the external system and doesn&#x27;t throw an error, then the Activity
+will be retried in a minute.</p>
+<p>In the second scenario, the failure is retried sooner. This is particularly helpful in scenarios like this in which the
+external process might take a long time.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-token">What is a Task Token?<a href="#task-token" class="hash-link" aria-label="Direct link to What is a Task Token?" title="Direct link to What is a Task Token?" translate="no">​</a></h3>
+<p>A Task Token is a unique identifier for an <a href="/tasks#activity-task-execution" class="">Activity Task Execution</a>.</p>
+<p><a href="#asynchronous-activity-completion" class="">Asynchronous Activity Completion</a> calls take either of the following as arguments:</p>
+<ul>
+<li class="">a Task Token, or</li>
+<li class="">an <a href="#activity-id" class="">Activity ID</a>, a <a href="/workflow-execution/workflowid-runid#workflow-id" class="">Workflow ID</a>, and optionally a
+<a href="/workflow-execution/workflowid-runid#run-id" class="">Run ID</a>.</li>
+</ul>
+<p>Since a Task Token is unique for an Activity execution, retries can cause a remote service using the Task Token to end
+up with an invalid one. For example, an Activity might fail after passing its current Task Token to a remote service,
+but before returning the complete async error, leaving that service with a Task Token that&#x27;s no longer valid.</p>
+<p>To avoid this risk, you can provide the Activity ID and Workflow ID to the remote service instead of the Task Token.</p></div>

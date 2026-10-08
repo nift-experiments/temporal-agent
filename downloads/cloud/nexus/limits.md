@@ -1,0 +1,16 @@
+# Limits - Temporal Nexus
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Learn about Nexus limits including rate limits, the maximum number of Endpoints, and handler request timeouts.
+
+Nexus limits are documented in [Temporal Cloud limits](/evaluate/cloud/limits):
+
+- [Nexus rate limits](/evaluate/cloud/limits#nexus-rate-limits) - Nexus requests count toward the Namespace RPS limit.
+- [Nexus Endpoint limits](/evaluate/cloud/limits#nexus-endpoints-limits) - 100 Endpoints per Account (default).
+- [Nexus caller Namespace limits](/evaluate/cloud/limits#nexus-endpoint-access-policy-limits) - 1,000 caller Namespaces per Endpoint (default).
+- [Per-Workflow Nexus Operation limits](/evaluate/cloud/limits#per-workflow-nexus-operation-limits) - 30 in-flight Operations per Workflow.
+- [Nexus Operation request timeout](/evaluate/cloud/limits#nexus-operation-request-timeout) - Less than 10 seconds for a handler to process a start or cancel request.
+- [Nexus Operation duration limits](/evaluate/cloud/limits#nexus-operation-duration-limits) - 60-day maximum ScheduleToClose duration.
+- [Per-Workflow callback limits](/evaluate/cloud/limits#per-workflow-callback-limits) - 2000 callbacks per Workflow. Governs how many Nexus callers can attach to a handler Workflow.

@@ -1,0 +1,77 @@
+# Workflow Timeouts - Rust SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Optimize Workflow Execution with the Temporal Rust SDK by configuring Workflow Timeouts and Retry Policies.
+
+## Workflow timeouts 
+
+Each Workflow timeout controls the maximum duration of a different aspect of a Workflow Execution.
+
+In most cases, **Workflow Timeouts are not recommended**. Temporal Workflows are designed to be long-running and resilient. Setting timeouts can unnecessarily limit their ability to tolerate delays or extended processing.
+
+If you need to trigger logic after a specific duration, use a **Timer inside the Workflow** instead of a timeout.
+
+You can configure Workflow timeouts when starting a Workflow Execution.
+
+Available timeouts include:
+
+- [Workflow Execution Timeout](/encyclopedia/detecting-workflow-failures#workflow-execution-timeout): Maximum total time a Workflow Execution can run.
+- [Workflow Run Timeout](/encyclopedia/detecting-workflow-failures#workflow-run-timeout): Maximum time a single Workflow Run can last.
+- [Workflow Task Timeout](/encyclopedia/detecting-workflow-failures#workflow-task-timeout): Maximum time a Worker can take to complete a Workflow Task.
+
+In Rust, you set these via `WorkflowStartOptions` when starting or executing a Workflow.
+
+Available fields:
+
+- `execution_timeout`
+- `run_timeout`
+- `task_timeout`
+
+```rust
+let wf_handle = client.start_workflow(
+    GreetingsWorkflow::run, 
+    (), 
+    WorkflowStartOptions::new(
+        "my-task-queue", 
+        "greetings-workflow-10",
+    )
+    // Set timeouts
+    .execution_timeout(Duration::from_secs(3600))
+    .run_timeout(Duration::from_secs(600))
+    .task_timeout(Duration::from_secs(10))
+    .build()
+).await?;
+```
+
+## Workflow retries 
+
+A Retry Policy can be used alongside timeouts to control how Workflow Executions are retried after failure.
+
+Workflow Executions do **not retry by default**. Retry Policies should only be applied when restarting the entire Workflow is safe and intentional.
+
+To enable retries, configure a [Retry Policy](/encyclopedia/retry-policies) when starting the Workflow.
+
+```rust
+let wf_handle = client.start_workflow(
+    GreetingsWorkflow::run, 
+    (), 
+    WorkflowStartOptions::new(
+        "my-task-queue", 
+        "greetings-workflow-10",
+    )
+    .retry_policy(
+        RetryPolicy::builder()
+            .initial_interval(Duration::from_secs(1))
+            .backoff_coefficient(2.0)
+            .maximum_interval(Duration::from_secs(100))
+            .maximum_attempts(5)
+            .non_retryable_error_types(["NonRetryableError"])
+            .build(),
+    )
+    .build()
+).await?;
+```
+
+Retry Policies define retry behavior such as backoff intervals, maximum attempts, and retry conditions.

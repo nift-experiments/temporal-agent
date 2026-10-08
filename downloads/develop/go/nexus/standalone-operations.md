@@ -1,0 +1,218 @@
+# Standalone Nexus Operations - Go SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Execute Nexus Operations independently without a Workflow using the Temporal Go SDK.
+
+> **Pre-release**
+> Requires Go SDK `v1.46.0` or above. All APIs are experimental and may be subject to backwards-incompatible changes.
+
+[Standalone Nexus Operations](/standalone-nexus-operation) let you run Nexus Operation Executions independently, without
+being orchestrated by a Workflow. Instead of calling a Nexus Operation from within a Workflow Definition using
+`workflow.NewNexusClient()`, you execute a Standalone Nexus Operation directly from a Nexus Client created using
+`client.NewNexusClient()`.
+
+Standalone Nexus Operations use the same Nexus Service contract, Operation handlers, and Worker setup as
+Workflow-driven Operations — only the execution path differs. See the [Nexus feature guide](/develop/go/nexus/feature-guide) for details on
+[defining a Service contract](/develop/go/nexus/feature-guide#define-nexus-service-contract),
+[developing Operation handlers](/develop/go/nexus/feature-guide#develop-nexus-service-operation-handlers), and
+[registering a Service in a Worker](/develop/go/nexus/feature-guide#register-a-nexus-service-in-a-worker).
+
+This page focuses on the client-side APIs that are unique to Standalone Nexus Operations:
+
+- [Execute a Standalone Nexus Operation](#execute-operation)
+- [Get the result of a Standalone Nexus Operation](#get-operation-result)
+- [List Standalone Nexus Operations](#list-operations)
+- [Count Standalone Nexus Operations](#count-operations)
+- [Run Standalone Nexus Operations with Temporal Cloud](#run-standalone-nexus-operations-temporal-cloud)
+
+> **📝 Note:**
+> This documentation uses source code from the
+> [Go Nexus Standalone sample](https://github.com/temporalio/samples-go/tree/main/nexus-standalone-operations).
+>
+
+## Prerequisites 
+
+Standalone Nexus Operations are a Pre-release feature and require Temporal CLI v1.9.0 or higher.
+
+### 1. Install and verify the Temporal CLI 
+
+The `temporal nexus operation` commands require Temporal CLI v1.9.0 or higher. See
+[Temporal CLI support](/standalone-nexus-operation#temporal-cli-support) for install options,
+then verify:
+
+```bash
+temporal --version
+```
+
+Which should output v1.9.0 or higher.
+
+### 2. Start a local dev server 
+
+The dev server enables Standalone Nexus Operations by default — no dynamic config is
+required. Start it with the caller and handler Namespaces pre-created:
+
+```bash
+temporal server start-dev \
+  --namespace my-caller-namespace \
+  --namespace my-handler-namespace
+```
+
+The starter and Worker connect to two different Namespaces (a caller Namespace and a handler
+Namespace), mirroring how Nexus crosses Namespace boundaries.
+
+To run the examples on this page against the [Go sample](https://github.com/temporalio/samples-go/tree/main/nexus-standalone-operations),
+create a Nexus Endpoint that routes to the handler Namespace and the Worker's Task Queue:
+
+```bash
+temporal operator nexus endpoint create \
+  --name my-nexus-endpoint \
+  --target-namespace my-handler-namespace \
+  --target-task-queue nexus-handler-queue
+```
+
+Then start the sample Worker in the handler Namespace:
+
+```bash
+TEMPORAL_NAMESPACE=my-handler-namespace go run nexus-standalone-operations/worker/main.go
+```
+
+## Execute a Standalone Nexus Operation 
+
+To execute a Standalone Nexus Operation, first create a
+[`NexusClient`](https://pkg.go.dev/go.temporal.io/sdk/client#NexusClient) using `client.NewNexusClient()`, bound to a
+specific Nexus Endpoint and Service. The endpoint must be pre-created on the server. Then call `ExecuteOperation()` from
+application code (for example, a starter program), not from inside a Workflow Definition.
+
+`ExecuteOperation` returns a [`NexusOperationHandle`](https://pkg.go.dev/go.temporal.io/sdk/client#NexusOperationHandle)
+that you can use to get the result of the Operation.
+[`StartNexusOperationOptions`](https://pkg.go.dev/go.temporal.io/sdk/client#StartNexusOperationOptions) requires `ID`.
+`ScheduleToCloseTimeout` is optional and defaults to the maximum allowed by the Temporal server.
+
+```go
+nexusClient, err := c.NewNexusClient(client.NexusClientOptions{
+    Endpoint: "my-nexus-endpoint",
+    Service:  "my-hello-service",
+})
+
+handle, err := nexusClient.ExecuteOperation(ctx, operationName, input, client.StartNexusOperationOptions{
+    ID:                     "unique-operation-id",
+    ScheduleToCloseTimeout: 10 * time.Second,
+})
+```
+
+See the full
+[starter sample](https://github.com/temporalio/samples-go/blob/main/nexus-standalone-operations/starter/main.go)
+for a complete example that executes both synchronous and asynchronous Operations, gets their results, and lists and
+counts Operations.
+
+To run the starter in the caller Namespace (in a separate terminal from the Worker):
+
+```
+TEMPORAL_NAMESPACE=my-caller-namespace go run nexus-standalone-operations/starter/main.go
+```
+
+Or use the Temporal CLI to execute a Standalone Nexus Operation:
+
+```bash
+temporal nexus operation execute \
+  --namespace my-caller-namespace \
+  --endpoint my-nexus-endpoint \
+  --service my-hello-service \
+  --operation echo \
+  --operation-id my-echo-op \
+  --input '{"Message":"hello"}'
+```
+
+## Get the result of a Standalone Nexus Operation 
+
+Use `NexusOperationHandle.Get()` to block until the Operation completes and retrieve its result. This works for both
+synchronous and asynchronous (Workflow-backed) Operations.
+
+```go
+var result service.EchoOutput
+err = handle.Get(context.Background(), &result)
+if err != nil {
+    log.Fatalln("Operation failed", err)
+}
+log.Println("Operation result:", result.Message)
+```
+
+If the Operation completed successfully, the result is deserialized into the provided pointer. If the Operation failed,
+the failure is returned as an error.
+
+Or use the Temporal CLI to wait for a result by Operation ID:
+
+```bash
+temporal nexus operation result --namespace my-caller-namespace --operation-id my-echo-op
+```
+
+## List Standalone Nexus Operations 
+
+Use [`client.ListNexusOperations()`](https://pkg.go.dev/go.temporal.io/sdk/client#Client) to list Standalone Nexus
+Operation Executions that match a [List Filter](/list-filter) query. The result contains an iterator that yields
+operation metadata entries.
+
+Note that `ListNexusOperations` is called on the base `client.Client`, not on the `NexusClient`.
+
+```go
+resp, err := c.ListNexusOperations(context.Background(), client.ListNexusOperationsOptions{
+    Query: "Endpoint = 'my-nexus-endpoint'",
+})
+if err != nil {
+    log.Fatalln("Unable to list Nexus operations", err)
+}
+
+for metadata, err := range resp.Results {
+    if err != nil {
+        log.Fatalln("Error iterating operations", err)
+    }
+    log.Printf("OperationID: %s, Operation: %s, Status: %v\n",
+        metadata.OperationID, metadata.Operation, metadata.Status)
+}
+```
+
+The `Query` field accepts [List Filter](/list-filter) syntax. For example,
+`"Endpoint = 'my-endpoint' AND ExecutionStatus = 'Running'"`.
+
+Or use the Temporal CLI:
+
+```bash
+temporal nexus operation list --namespace my-caller-namespace --query 'Endpoint = "my-nexus-endpoint"'
+```
+
+## Count Standalone Nexus Operations 
+
+Use [`client.CountNexusOperations()`](https://pkg.go.dev/go.temporal.io/sdk/client#Client) to count Standalone Nexus
+Operation Executions that match a [List Filter](/list-filter) query.
+
+Note that `CountNexusOperations` is called on the base `client.Client`, not on the `NexusClient`.
+
+```go
+resp, err := c.CountNexusOperations(context.Background(), client.CountNexusOperationsOptions{
+    Query: "Endpoint = 'my-nexus-endpoint'",
+})
+if err != nil {
+    log.Fatalln("Unable to count Nexus operations", err)
+}
+
+log.Println("Total Nexus operations:", resp.Count)
+```
+
+Or use the Temporal CLI:
+
+```bash
+temporal nexus operation count --namespace my-caller-namespace --query 'Endpoint = "my-nexus-endpoint"'
+```
+
+## Run Standalone Nexus Operations with Temporal Cloud 
+
+The code samples on this page use `envconfig.MustLoadDefaultClientOptions()`, so the same code
+works against Temporal Cloud — just configure the connection via environment variables or a TOML
+profile. No code changes are needed.
+
+For full details on connecting to Temporal Cloud, including Namespace creation, Nexus Endpoint
+setup, certificate generation, and authentication options, see
+[Make Nexus calls across Namespaces in Temporal Cloud](/develop/go/nexus/feature-guide#nexus-calls-across-namespaces-temporal-cloud)
+and [Connect to Temporal Cloud](/develop/go/client/temporal-client#connect-to-temporal-cloud).

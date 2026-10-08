@@ -1,0 +1,199 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/best-practices/cost-optimization.md">/best-practices/cost-optimization.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Workflow cost optimization</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/best-practices/cost-optimization.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fcost-optimization.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fcost-optimization.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This guide provides strategies for optimizing costs associated with workloads running on Temporal Cloud while maintaining Workflow reliability and observability.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overview">Overview<a href="#overview" class="hash-link" aria-label="Direct link to Overview" title="Direct link to Overview" translate="no">​</a></h2>
+<p>Temporal Cloud uses consumption-based pricing with two primary cost components: <a href="/cloud/pricing#action" class="">Actions and Storage</a>.
+Optimization opportunities vary significantly based on your workload characteristics - Workflows with high signal volume face different cost drivers than long-running Workflows with large payloads.</p>
+<div class="theme-admonition theme-admonition-important alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>Build Workflows following best practices first, then optimize based on observed costs.
+Premature optimization can compromise observability and create operational challenges.</p></div></div>
+<p>Every optimization involves tradeoffs.
+This guide helps you make informed decisions about where and how to optimize based on your specific requirements.</p>
+<p>Should you need additional guidance on Workflow design considerations, please reach out to a Temporal Solutions Architect.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-anti-patterns">Common anti-patterns<a href="#common-anti-patterns" class="hash-link" aria-label="Direct link to Common anti-patterns" title="Direct link to Common anti-patterns" translate="no">​</a></h2>
+<p>Avoid these patterns that either inflate costs unnecessarily or create problems through aggressive optimization:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="premature-activity-consolidation">Premature Activity consolidation<a href="#premature-activity-consolidation" class="hash-link" aria-label="Direct link to Premature Activity consolidation" title="Direct link to Premature Activity consolidation" translate="no">​</a></h3>
+<p>Combining Activities before understanding failure modes reduces observability and retry control.
+Activities should be split based on failure boundaries and retry requirements, not cost optimization alone.
+See <a href="https://temporal.io/blog/how-many-activities-should-i-use-in-my-temporal-workflow" class="">How many Activities should I use in my Temporal Workflow</a> for a decision framework.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="inappropriate-use-of-local-activities">Inappropriate use of Local Activities<a href="#inappropriate-use-of-local-activities" class="hash-link" aria-label="Direct link to Inappropriate use of Local Activities" title="Direct link to Inappropriate use of Local Activities" translate="no">​</a></h3>
+<p>Using Local Activities for all operations without understanding their failure semantics and limitations.
+Local Activities don&#x27;t provide Worker-level isolation and have different retry behavior.
+See <a href="/local-activity" class="">Local Activities</a> for guidance.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="missing-continue-as-new">Missing Continue-As-New<a href="#missing-continue-as-new" class="hash-link" aria-label="Direct link to Missing Continue-As-New" title="Direct link to Missing Continue-As-New" translate="no">​</a></h3>
+<p>Long-running Workflows that don&#x27;t implement Continue-As-New accumulate large Event Histories, increasing storage costs and impacting performance.
+Workflows running days or weeks or processing thousands of events require <a href="/workflow-execution/continue-as-new" class="">Continue-As-New</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-volume-of-activity-retries">High volume of Activity retries<a href="#high-volume-of-activity-retries" class="hash-link" aria-label="Direct link to High volume of Activity retries" title="Direct link to High volume of Activity retries" translate="no">​</a></h3>
+<p>Generally, the default values for <a href="/encyclopedia/retry-policies" class="">Activity retries</a> are quite good.
+However, excessive Activity retries often indicate underlying issues like timeouts that are too short or Activities that frequently fail.
+Detect Activity retry frequency and if high, consider increasing retry intervals or Activity timeouts before failures occur.
+See <a href="https://temporal.io/blog/spooky-stories-chilling-temporal-anti-patterns-part-2#2-hiding-behind-the-chainsaws" class="">Spooky Stories: Chilling Temporal Anti-Patterns</a> for guidance on retry defaults and patterns.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="large-payloads-in-event-history">Large payloads in Event History<a href="#large-payloads-in-event-history" class="hash-link" aria-label="Direct link to Large payloads in Event History" title="Direct link to Large payloads in Event History" translate="no">​</a></h3>
+<p>Passing multi-megabyte payloads through Workflows when external storage (S3, blob storage) is more appropriate.
+Use <a href="/troubleshooting/blob-size-limit-error#payload-size-limit" class="">compression</a> or the <a href="https://dataengineering.wiki/Concepts/Software+Engineering/Claim+Check+Pattern" target="_blank" rel="noopener noreferrer" class="">claim check pattern</a> for large data.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="over-optimization-at-the-expense-of-observability">Over-optimization at the expense of observability<a href="#over-optimization-at-the-expense-of-observability" class="hash-link" aria-label="Direct link to Over-optimization at the expense of observability" title="Direct link to Over-optimization at the expense of observability" translate="no">​</a></h3>
+<p>Aggressively optimizing costs without maintaining sufficient visibility for debugging and operational needs.
+Balance cost reduction with your team&#x27;s observability requirements.</p>
+<p>For example, merging five separate Activities (validate input, call payment API, update database, send notification, generate receipt) into a single &quot;processOrder&quot; Activity reduces from 5 Actions to 1, but you lose per-step visibility in the Temporal UI.
+When the notification step fails, you can&#x27;t see which of the five steps failed, you lose independent retry control (a notification failure retries the entire flow including the payment call), and you can&#x27;t filter Workflows by failure stage.</p>
+<p>Similarly, removing <a href="/encyclopedia/detecting-activity-failures#activity-heartbeat" class="">Heartbeats</a> from a long-running data processing Activity saves Actions, but means you can&#x27;t detect a stuck Worker until the full Activity timeout expires and you lose progress tracking (for example, &quot;processed 500 of 1,000 records&quot;).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="excessive-activity-heartbeats">Excessive Activity Heartbeats<a href="#excessive-activity-heartbeats" class="hash-link" aria-label="Direct link to Excessive Activity Heartbeats" title="Direct link to Excessive Activity Heartbeats" translate="no">​</a></h3>
+<p>Each Heartbeat counts as one Action.
+Only use Heartbeats for long-running Activities (10+ minutes) where you need to detect Worker failures and track progress.
+Short-running Activities that complete in seconds or minutes don&#x27;t need Heartbeats.
+See <a href="/encyclopedia/detecting-activity-failures#which-activities-should-heartbeat" class="">Activity Heartbeat documentation</a> for guidance.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-cost-drivers">Understanding cost drivers<a href="#understanding-cost-drivers" class="hash-link" aria-label="Direct link to Understanding cost drivers" title="Direct link to Understanding cost drivers" translate="no">​</a></h2>
+<p>Temporal Cloud pricing consists of Actions, Storage, and Support.
+If you are new to Temporal Cloud, see the <a href="/cloud/pricing#action" class="">pricing documentation</a> to learn more and familiarize yourself with <a href="/evaluate/cloud/actions" class="">what results in a billable Action</a> in Temporal Cloud.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cost-distribution">Cost distribution<a href="#cost-distribution" class="hash-link" aria-label="Direct link to Cost distribution" title="Direct link to Cost distribution" translate="no">​</a></h3>
+<p>For most workloads, Actions represent the majority of total costs, with storage typically accounting for 10% or less of a monthly bill.
+Focus optimization efforts on what&#x27;s driving costs with a specific workload:</p>
+<p><strong>High Actions costs generally indicate</strong>:</p>
+<ul>
+<li class=""><a href="https://temporal.io/blog/how-many-activities-should-i-use-in-my-temporal-workflow" class="">Many Activities per Workflow</a></li>
+<li class="">Frequent <a href="/encyclopedia/workflow-message-passing#choosing-messages" class="">Signals, Queries, or Updates</a></li>
+<li class="">Long-running Activities with <a href="/cloud/worker-health#manage-worker-heartbeating" class="">Heartbeats</a></li>
+<li class="">High <a href="/demos/activity-retry-simulator" class="">Activity retry rates</a></li>
+<li class="">Extensive Query usage</li>
+</ul>
+<p><strong>High Storage costs generally indicate</strong>:</p>
+<ul>
+<li class="">Large payloads in Workflow inputs, outputs, or Activity results</li>
+<li class="">Long retention periods with high Workflow volume</li>
+<li class="">Long-running Workflows without Continue-As-New</li>
+<li class="">Workflows accumulating large Event Histories</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="optimization-priority">Optimization priority<a href="#optimization-priority" class="hash-link" aria-label="Direct link to Optimization priority" title="Direct link to Optimization priority" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Actions optimization</strong>: Usually provides the largest cost reduction opportunity</li>
+<li class=""><strong>Active Storage optimization</strong>: Relevant for long-running Workflows or large payloads</li>
+<li class=""><strong>Retained Storage optimization</strong>: Relevant for high volume combined with long retention periods</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="measuring">Measuring<a href="#measuring" class="hash-link" aria-label="Direct link to Measuring" title="Direct link to Measuring" translate="no">​</a></h2>
+<p>Establish <a href="/cloud/metrics/openmetrics/metrics-reference" class="">baseline metrics</a> before optimizing and be sure to validate impact after implementation.
+Specifically:</p>
+<ul>
+<li class="">Actions consumption (per Workflow, per day/month, by Namespace)</li>
+<li class="">Storage consumption (Active and Retained)</li>
+<li class="">Monthly costs (total, per Namespace, per Workflow Type)</li>
+<li class="">Observability metrics (time to debug, incident detection)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="actions-optimization">Actions optimization<a href="#actions-optimization" class="hash-link" aria-label="Direct link to Actions optimization" title="Direct link to Actions optimization" translate="no">​</a></h2>
+<p><a href="/evaluate/cloud/actions" class="">Actions</a> encompass Workflow operations, Activity Executions, Signals, Queries, and other interactions with Temporal.
+Each represents a unit of consumption.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-granularity">Activity granularity<a href="#activity-granularity" class="hash-link" aria-label="Direct link to Activity granularity" title="Direct link to Activity granularity" translate="no">​</a></h3>
+<p>Activity granularity is a fundamental architectural decision that impacts both costs and observability.
+More Activities provide better visibility and retry control but increase the Action count.
+Fewer Activities reduce costs but limit observability.</p>
+<p>For detailed discussion of this tradeoff, see <a href="https://temporal.io/blog/how-many-activities-should-i-use-in-my-temporal-workflow" class="">How many Activities should I use in my Temporal Workflow?</a></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="child-workflows-vs-activities">Child Workflows vs Activities<a href="#child-workflows-vs-activities" class="hash-link" aria-label="Direct link to Child Workflows vs Activities" title="Direct link to Child Workflows vs Activities" translate="no">​</a></h3>
+<p><a href="/evaluate/cloud/actions#workflow" class="">Child Workflows cost 2 Actions</a> compared to an Activity&#x27;s 1 Action.
+See <a href="/child-workflows" class="">Child Workflows documentation</a> for detailed comparison of capabilities and use cases.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="standalone-activities-vs-a-workflow-that-runs-a-single-activity">Standalone Activities vs a Workflow that runs a single Activity<a href="#standalone-activities-vs-a-workflow-that-runs-a-single-activity" class="hash-link" aria-label="Direct link to Standalone Activities vs a Workflow that runs a single Activity" title="Direct link to Standalone Activities vs a Workflow that runs a single Activity" translate="no">​</a></h3>
+<p>Starting a <a href="/standalone-activity" class="">Standalone Activity</a> costs 1 Action.
+Running the same single Activity in a wrapper Workflow costs 1 Action for the Activity and 1 Action for the Workflow, not including Activity heartbeats, retries, or other billable <a href="/evaluate/cloud/actions#activity" class="">Actions</a>.</p>
+<p>Use a Workflow when you need multi-step orchestration, human in the loop, signals, timers, updates, queries, or enhanced step-by-step visibility with event history and <a href="/workflow-execution#replay" class="">replay</a>.</p>
+<p>Use a Standalone Activity when you need to execute a single Activity function reliably.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="retry-policies">Retry Policies<a href="#retry-policies" class="hash-link" aria-label="Direct link to Retry Policies" title="Direct link to Retry Policies" translate="no">​</a></h3>
+<p>Each Activity retry counts as one Action.
+Default <a href="/encyclopedia/retry-policies" class="">Retry Policies</a> can be aggressive, which is appropriate for most operations but costly for expensive external operations.</p>
+<p>For example, consider an Activity that calls a third-party payment API.
+With Temporal&#x27;s default Retry Policy (1s initial interval, 2.0 backoff coefficient, unlimited maximum attempts), if that API goes down for 30 minutes, the Activity retries approximately 20 times before reaching the 100s maximum interval cap, then continues retrying every 100 seconds.
+Each retry counts as 1 Action.
+Across 1,000 concurrent Workflows hitting the same outage, that produces 20,000+ extra Actions from retries alone.</p>
+<p>For expensive external operations like this, consider:</p>
+<ul>
+<li class="">Setting <code>MaximumAttempts</code> to cap total retries</li>
+<li class="">Increasing <code>InitialInterval</code> (for example, to 10s) to reduce retry frequency</li>
+<li class="">Adding error types to <code>NonRetryableErrorTypes</code> for errors that won&#x27;t resolve on retry (such as 4xx HTTP status codes)</li>
+<li class="">Using <a href="/encyclopedia/retry-policies#per-error-next-retry-delay" class="">next retry delay</a> to dynamically control retry timing based on failure types (for example, respecting rate-limit headers)</li>
+<li class="">Implementing an <a href="/cli/command-reference/activity#pause" class="">Activity pause pattern</a> to wait for manual intervention rather than automatic retries</li>
+</ul>
+<p>Use the <a href="/demos/activity-retry-simulator" class="">Activity Retry Simulator</a> to visualize how different Retry Policy configurations affect retry behavior and Action consumption.</p>
+<p>Refer to this blog post on <a href="https://temporal.io/blog/failure-handling-in-practice" class="">Mastering Workflow retry logic for resilient applications</a> for additional guidance.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-activities">Local Activities<a href="#local-activities" class="hash-link" aria-label="Direct link to Local Activities" title="Direct link to Local Activities" translate="no">​</a></h3>
+<p>A <a href="/local-activity#local-activity" class="">Local Activity</a> is an Activity Execution that executes in the same process as the Workflow Execution that spawns it.
+Therefore, multiple Local Activities that run back-to-back only <a href="/evaluate/cloud/actions#activity" class="">count as a single billable action</a>, whereas each regular Activity counts as a billable action.
+However, there are tradeoffs to converting regular Activities to Local Activities.
+For example, if a specific Local Activity fails, <em>all</em> of them will be retried together.
+Review <a href="/local-activity" class="">the docs</a> or reach out to your account team to learn more.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-stick-with-regular-activities">When to stick with Regular Activities<a href="#when-to-stick-with-regular-activities" class="hash-link" aria-label="Direct link to When to stick with Regular Activities" title="Direct link to When to stick with Regular Activities" translate="no">​</a></h4>
+<p>Use Regular Activities instead of Local Activities if you require any of the following:</p>
+<ul>
+<li class="">Activities may take more than 10 seconds to complete</li>
+<li class="">Independent retry control for each Activity</li>
+<li class="">Need to avoid re-running expensive Activities when unrelated Activities fail</li>
+<li class="">Immediate Signal/Update handling during execution</li>
+<li class="">Separate resource management (like rate limits) for each Activity</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="batching-operations">Batching operations<a href="#batching-operations" class="hash-link" aria-label="Direct link to Batching operations" title="Direct link to Batching operations" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-attributes">Search Attributes<a href="#search-attributes" class="hash-link" aria-label="Direct link to Search Attributes" title="Direct link to Search Attributes" translate="no">​</a></h4>
+<ol>
+<li class=""><a href="/search-attribute#custom-search-attribute" class="">Search Attributes</a> provided at Workflow start do not count as billable Actions.
+If Search Attribute values are known before starting the Workflow, provide them at Workflow start to eliminate these costs entirely.</li>
+<li class="">For Search Attributes that must be updated during Workflow Execution, each <code>UpsertSearchAttributes</code> call counts as 1 Action regardless of how many attributes are updated.
+Batch multiple related attribute updates into single operations to reduce Actions consumed.</li>
+</ol>
+<p>See the <a href="/evaluate/cloud/actions#workflow" class="">Temporal Cloud Action Documentation</a> for details.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="signal-handling">Signal handling<a href="#signal-handling" class="hash-link" aria-label="Direct link to Signal handling" title="Direct link to Signal handling" translate="no">​</a></h4>
+<p>Where feasible, implement deduplication logic client-side or aggregate data into fewer Signals.
+Use <code>SignalWithStart</code> instead of separate <code>StartWorkflow</code> and <code>SignalWorkflow</code> calls when initiating Workflows with Signals.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="storage-optimization">Storage optimization<a href="#storage-optimization" class="hash-link" aria-label="Direct link to Storage optimization" title="Direct link to Storage optimization" translate="no">​</a></h2>
+<p><a href="/cloud/pricing#storage" class="">Storage costs</a> are divided into Active Storage (open Workflows) and Retained Storage (closed Workflow History during retention period).
+Active Storage is significantly more expensive than Retained Storage.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="active-storage">Active Storage<a href="#active-storage" class="hash-link" aria-label="Direct link to Active Storage" title="Direct link to Active Storage" translate="no">​</a></h3>
+<p>Active Storage applies to open Workflows and their Event Histories.
+The following sections detail optimization opportunities for Active Storage.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="continue-as-new">Continue-As-New<a href="#continue-as-new" class="hash-link" aria-label="Direct link to Continue-As-New" title="Direct link to Continue-As-New" translate="no">​</a></h4>
+<p>For long-running Workflows with extended sleep/wait periods, calling Continue-As-New before sleeping closes the current execution (moving to cheaper Retained Storage) and starts fresh when work resumes, reducing Active Storage costs.
+See <a href="/workflow-execution/continue-as-new" class="">Continue-As-New documentation</a> to learn more.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="compression">Compression<a href="#compression" class="hash-link" aria-label="Direct link to Compression" title="Direct link to Compression" translate="no">​</a></h4>
+<p>Large payloads increase Active Storage costs.
+Implement a custom Data Converter with compression for moderately large payloads (100KB-1MB).
+See the <a href="/default-custom-data-converters#custom-data-converter" class="">Data Converter documentation</a> to learn more.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="claim-check-pattern">Claim check pattern<a href="#claim-check-pattern" class="hash-link" aria-label="Direct link to Claim check pattern" title="Direct link to Claim check pattern" translate="no">​</a></h4>
+<p>For very large payloads or binary data, store data externally (S3 or GCS) and pass references through Workflows.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="retained-storage">Retained Storage<a href="#retained-storage" class="hash-link" aria-label="Direct link to Retained Storage" title="Direct link to Retained Storage" translate="no">​</a></h3>
+<p>Retained Storage applies to closed Workflow History during the retention period.
+The following sections detail optimization opportunities for Retained Storage.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="retention-periods">Retention periods<a href="#retention-periods" class="hash-link" aria-label="Direct link to Retention periods" title="Direct link to Retention periods" translate="no">​</a></h4>
+<p>The default Namespace retention is 30 days (configurable between 1 and 90 days).
+Adjust based on operational and compliance requirements.</p>
+<p><strong>Considerations</strong>:</p>
+<ul>
+<li class="">Shorter retention reduces costs but limits historical analysis</li>
+<li class="">Audit investigation patterns before shortening retention</li>
+<li class="">Ensure compliance requirements are met</li>
+</ul>
+<p>See <a href="/temporal-service/temporal-server#retention-period" class="">Namespace retention documentation</a> for configuration details.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-export">Workflow export<a href="#workflow-export" class="hash-link" aria-label="Direct link to Workflow export" title="Direct link to Workflow export" translate="no">​</a></h4>
+<p>Temporal Cloud supports exporting Event Histories to external storage for compliance while maintaining shorter retention periods.
+Note that Workflow export costs one Action per export.</p>
+<p>See the <a href="/cloud/export" class="">Workflow History export documentation</a> for more details.
+Alternatively, if you are looking to do analysis on closed Workflow Executions, <a href="https://temporal.io/blog/get-insights-from-workflow-histories-export-on-temporal-cloud" class="">review this blog post to learn how to gain insights from exported Event Histories</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation">Validation<a href="#validation" class="hash-link" aria-label="Direct link to Validation" title="Direct link to Validation" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validation-approach">Validation approach<a href="#validation-approach" class="hash-link" aria-label="Direct link to Validation approach" title="Direct link to Validation approach" translate="no">​</a></h3>
+<ol>
+<li class=""><strong>Test in non-production</strong>: Validate functional correctness before production deployment</li>
+<li class=""><strong>Monitor comprehensively</strong>: Leverage the <a href="/cloud/actions-usage#usage" class="">Usage dashboard</a> in the Cloud UI to track the impact on Actions and Storage after optimizations are made</li>
+<li class=""><strong>Progressive rollout</strong>: Deploy to a small percentage, validate, then expand. Review the <a href="/production-deployment/worker-deployments/worker-versioning" class="">Worker Versioning documentation</a> to learn about rolling out changes to Workflows</li>
+<li class=""><strong>Continuous review</strong>: Re-evaluate optimization effectiveness quarterly as system evolves</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="success-criteria">Success criteria<a href="#success-criteria" class="hash-link" aria-label="Direct link to Success criteria" title="Direct link to Success criteria" translate="no">​</a></h3>
+<ul>
+<li class="">Cost reduced without increasing mean time to repair (MTTR)</li>
+<li class="">Workflow success rates maintained or improved</li>
+<li class="">Reduced observability does not increase mean time to detect (MTTD) incidents</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tools">Tools<a href="#tools" class="hash-link" aria-label="Direct link to Tools" title="Direct link to Tools" translate="no">​</a></h3>
+<ul>
+<li class="">Temporal Cloud Usage dashboard for Actions and Storage metrics</li>
+<li class="">Event History for per-Workflow billable Actions estimates</li>
+<li class="">Export metrics to observability platforms such as Datadog or Grafana for custom monitoring</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="when-to-get-help">When to get help<a href="#when-to-get-help" class="hash-link" aria-label="Direct link to When to get help" title="Direct link to When to get help" translate="no">​</a></h2>
+<p>Engage the Temporal team for Workflow audits when experiencing:</p>
+<ul>
+<li class="">Complex Workflow patterns with unclear optimization paths</li>
+<li class="">Compliance requirements limiting optimization options</li>
+<li class="">Need for custom DataConverters or advanced patterns</li>
+<li class="">Desire for expert validation of optimization strategies</li>
+</ul>
+<p>Contact your Temporal Account Representative or <a href="http://support.temporal.io" class="">Temporal support</a> to discuss optimization services.</p></div>

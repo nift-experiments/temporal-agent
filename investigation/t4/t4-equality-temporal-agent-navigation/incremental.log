@@ -1,0 +1,38 @@
+errors [] warnings 2
+browser_bundle 1.824s
+errors [] warnings 0
+retained_components_server_bundle 0.885s
+react_ssr_or_html_source 0.188s
+shell_and_dependencies 4.913s
+static_and_browser_publication 0.120s
+rebuild causes:
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS91bmRlcnN0YW5kaW5nLXRlbXBvcmFsLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS91c2UtY2FzZXMtZGVzaWduLXBhdHRlcm5zLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS93aHktdGVtcG9yYWwubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9hY3Rpb25zLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9pbmRleC5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9saW1pdHMubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9wcmljaW5nLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9yZWdpb25zLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9zZWN1cml0eS5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9jbG91ZC9zdXBwb3J0Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy90ZW1wb3JhbC1uZXh1cy5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy90aW1lb3V0cy1hbmQtcmV0cmllcy5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy93b3JrZmxvdy1tZXNzYWdlLXBhc3NpbmcubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9jYW5jZWxsYXRpb24tYW5kLXRlcm1pbmF0aW9uLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9jaGlsZC13b3JrZmxvd3MubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9jb3JlLXByaW1pdGl2ZXMubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9kYXRhLWVuY3J5cHRpb24ubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9pbmRleC5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9qb2ItcXVldWUubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9vYnNlcnZhYmlsaXR5Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9zY2hlZHVsZXMubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9zZXJ2ZXJsZXNzLXdvcmtlcnMvaW5kZXgubWR4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9pbmRleC5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9wcm9kdWN0LXJlbGVhc2Utc3RhZ2VzLm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9zZWN1cml0eS5tZHg.prefix.html → 1 file
+affected files: evaluate/cloud/actions/index, evaluate/cloud/index, evaluate/cloud/limits/index, cloud/pricing/index, evaluate/cloud/regions/index  +20 more
+📦 25 files rebuilt successfully
+time taken: 0.051369 seconds
+nift_composition 0.067s
+complete 8.046s

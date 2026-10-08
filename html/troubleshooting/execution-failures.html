@@ -1,0 +1,207 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/troubleshooting/execution-failures.md">/troubleshooting/execution-failures.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Troubleshoot Workflow and Activity execution failures</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/troubleshooting/execution-failures.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftroubleshooting%2Fexecution-failures.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftroubleshooting%2Fexecution-failures.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This guide covers failures that happen while your Workflow and Activity code is running on a Worker: replay mismatches, oversized responses, unhandled exceptions, and Local Activities that outrun the Workflow Task heartbeat timeout.
+It applies to Workers connected to Temporal Cloud and to a self-hosted Temporal Service.</p>
+<p>Every section on this page is one of the recommended alerts in <a href="/best-practices/worker-alerting" class="">Worker alerting</a>.
+Each one opens with the alert definition, explains what the condition costs you, then walks through triage.
+If you got here from a firing alert, the section you landed on is the runbook for it.</p>
+<p>For metric definitions, see the <a href="/references/sdk-metrics" class="">Temporal SDK metrics reference</a>.</p>
+<p><a href="/references/sdk-metrics#workflow_task_execution_failed" class=""><code>temporal_workflow_task_execution_failed</code></a> carries a <code>failure_reason</code> tag along with <code>namespace</code>, <code>task_queue</code>, and <code>workflow_type</code>.
+The reason decides what the Temporal Service does next, and the difference is worth knowing: three of the four retry forever, one terminates the Execution on the spot.
+Alert on each <code>failure_reason</code> separately.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="non-determinism-error">Non-determinism error<a href="#non-determinism-error" class="hash-link" aria-label="Direct link to Non-determinism error" title="Direct link to Non-determinism error" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <code>temporal_workflow_task_execution_failed</code> with <code>failure_reason=NonDeterminismError</code>
+Fires on any occurrence, held for 1m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>Replay produced a different sequence of commands than the one recorded in Event History.
+The Worker noticed that the Workflow code it is running no longer matches what the Execution has already done.</p>
+<p><strong>Why it matters.</strong>
+Affected Executions stop making progress.
+The Temporal Service retries the Workflow Task over and over, loading up your Workflow Workers, and by default those Executions sit in Running status the whole time.
+This will not clear up on its own.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the affected Workflow Executions.</strong> This metric does not carry a Workflow Id. Worker logs record the error with the Workflow Id and Run Id. In the Temporal UI you can also find affected Executions by querying the <code>TemporalReportedProblems</code> Search Attribute, which the Temporal Service sets on Executions experiencing repeated Workflow Task failures.</li>
+<li class=""><strong>Read the error.</strong> The <code>WorkflowTaskFailed</code> event in an affected Execution&#x27;s Event History contains the message identifying exactly where replay diverged and which command was expected versus produced. This is the most direct signal for root cause.</li>
+<li class=""><strong>Determine whether this is a code change or a deploy artifact.</strong> Common causes:<!-- -->
+<ul>
+<li class="">A code change added, removed, or reordered commands such as Activity scheduling, Timers, Signals, or Child Workflows, without a versioning guard. Executions that built their History under the old code fail on the new code.</li>
+<li class="">A rolling restart with old and new Worker versions briefly running together. Some Executions fail transiently and recover once the rollout completes. If your deploys routinely trigger this alert, lengthen its <code>for</code> duration past how long a rollout takes.</li>
+<li class="">Changed Activity or Timer parameters in existing Workflow code without versioning.</li>
+</ul>
+</li>
+<li class=""><strong>Roll back if it isn&#x27;t clearing.</strong> If the errors started after a deploy and aren&#x27;t going away, roll the Worker back. Affected Executions pick up again on their next Workflow Task retry once compatible code is running. Then add a proper versioning guard before you redeploy. See <a href="/workflow-definition#workflow-versioning" class="">Versioning Workflows</a> and <a href="/production-deployment/worker-deployments/worker-versioning" class="">Worker Versioning</a>.</li>
+<li class=""><strong>Watch Worker pressure.</strong> All those retries add up. Cross-check <a href="/troubleshooting/worker-capacity#worker-task-slots-exhausted" class="">Worker Task slots exhausted</a> for <code>worker_type=WorkflowWorker</code> and <a href="#workflow-task-execution-latency-high" class="">Workflow Task execution latency high</a>. Enough retry volume will saturate your capacity and start hurting healthy Executions on the same Task Queue.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="grpc-message-too-large">gRPC message too large<a href="#grpc-message-too-large" class="hash-link" aria-label="Direct link to gRPC message too large" title="Direct link to gRPC message too large" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <code>temporal_workflow_task_execution_failed</code> with <code>failure_reason=GrpcMessageTooLarge</code>
+Fires on any occurrence, held for 1m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>The Workflow Task response was bigger than the gRPC message size limit.
+The Worker tried <code>RespondWorkflowTaskCompleted</code> and something rejected it: the gRPC library on the SDK side, a proxy or load balancer in the path, or the gRPC library on the Temporal Service side when it went to receive.</p>
+<p>The Temporal Service never saw that original request, so the SDK follows up with <code>RespondWorkflowTaskFailed</code> and cause <code>WORKFLOW_TASK_FAILED_CAUSE_GRPC_MESSAGE_TOO_LARGE</code>.
+Replay would build the same oversized response every time, so the Service terminates the Workflow Execution instead of retrying it.</p>
+<p>For the payload size limits themselves, and for the Activity Task version of this (which retries instead of terminating), see <a href="/troubleshooting/blob-size-limit-error" class="">Troubleshoot the BlobSizeLimitError</a>.</p>
+<p><strong>Why it matters.</strong>
+Affected Executions end immediately and permanently, with <code>TERMINATED</code> status and no retry.
+Whatever work was in progress is gone, and someone has to restart them by hand.</p>
+<p>This is the one <code>failure_reason</code> on this page that kills Executions instead of retrying them, so give it a short <code>for</code> duration.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the affected Executions.</strong> This metric does not carry a Workflow Id. Check Worker logs for Workflow Ids and Run Ids, then confirm the cause from the <code>WorkflowTaskFailed</code> and <code>WorkflowExecutionTerminated</code> events in Event History.</li>
+<li class=""><strong>Find what is oversized.</strong> The fix depends entirely on which part of the response is too large:<!-- -->
+<ul>
+<li class=""><strong>Oversized Activity inputs or outputs.</strong> Move the payload out of band: put it in blob storage and pass a reference through Event History instead. See <a href="/external-storage" class="">External Storage</a> for the pattern.</li>
+<li class=""><strong>Accumulated Signals or Updates.</strong> A large number buffered into a single Workflow Task. Rate-limit senders or batch Signals.</li>
+<li class=""><strong>Too many commands in one response.</strong> A Workflow scheduling a very large fan-out of Activities or Child Workflows in a single step. Break the fan-out into smaller batches across multiple Workflow Tasks.</li>
+</ul>
+</li>
+<li class=""><strong>Fix and deploy before restarting anything.</strong> Terminated Executions do not retry. Restarting them before the cause is fixed means hitting the same limit and being terminated again. Once the corrected Worker is deployed and verified, restart the affected Executions from the Temporal UI or CLI.</li>
+</ol>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Self-hosted Temporal Service</div><div class="admonitionContent_vXIg"><p>Check the Workflow terminate rate on your server dashboard. A spike alongside this metric confirms Executions are being terminated in bulk.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="request-too-large">Request too large<a href="#request-too-large" class="hash-link" aria-label="Direct link to Request too large" title="Direct link to Request too large" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <code>temporal_workflow_task_execution_failed</code> with <code>failure_reason=RequestTooLarge</code>
+Fires on any occurrence, held for 1m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>The whole Workflow Task completion was bigger than the Namespace limit on a single <code>RespondWorkflowTaskCompleted</code> request.
+This is not one oversized Payload, it is the total: every command, Payload, message, and piece of metadata the Worker produced for that one Workflow Task, added together.</p>
+<p>Workers that support command pagination split a large completion across several requests, but the recombined size still has to fit the limit.
+When it does not, the Worker fails the Workflow Task itself with cause <code>WORKFLOW_TASK_FAILED_CAUSE_REQUEST_TOO_LARGE</code> rather than sending pages the Temporal Service is going to reject.</p>
+<p><strong>Why it matters.</strong>
+The Temporal Service retries the Workflow Task, so unlike <a href="#grpc-message-too-large" class="">gRPC message too large</a> the Execution is not terminated.
+Replay produces the same oversized completion every time, so affected Executions stop making progress and stay that way until the cause is fixed.
+The retries consume Workflow Worker capacity and can start affecting healthy Executions on the same Task Queue.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the affected Executions.</strong> Find the Workflow Id and Run Id in Worker logs because the metric does not carry a Workflow Id. In the Temporal UI, you can also find affected Executions by querying the <code>TemporalReportedProblems</code> Search Attribute, which the Temporal Service sets on Executions experiencing repeated Workflow Task failures.</li>
+<li class=""><strong>Find and fix what made the completion large.</strong> The limit applies to the sum. Identify what the Workflow produced in a single step, then change the Workflow to produce less in each Workflow Task:<!-- -->
+<ul>
+<li class=""><strong>A large fan-out.</strong> Scheduling many Activities, Child Workflows, or Timers in one Workflow Task can make the completion too large. Break the fan-out into smaller batches across multiple Workflow Tasks.</li>
+<li class=""><strong>Accumulated Signals or Updates.</strong> Handling a large number of buffered Signals or Updates in one Workflow Task can make the completion too large. Limit how many senders send at once, or batch their requests.</li>
+<li class=""><strong>Large Payloads in aggregate.</strong> Payloads can each be under the Payload limit but make the completion too large when combined. Store the data in <a href="/external-storage" class="">External Storage</a> and pass a reference through Event History instead.</li>
+</ul>
+</li>
+<li class=""><strong>Check the Namespace limit.</strong> The limit is a Namespace setting on the size of a single Workflow Task completion, separate from the Payload and gRPC message limits. On Temporal Cloud, contact support if the workload legitimately needs a higher limit. Self-hosted operators can adjust it in dynamic config.</li>
+<li class=""><strong>Fix and redeploy.</strong> Affected Executions resume on their next Workflow Task retry once the corrected Worker is running. They do not need to be restarted, because they were never terminated.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-task-execution-failures-elevated">Workflow Task execution failures elevated<a href="#workflow-task-execution-failures-elevated" class="hash-link" aria-label="Direct link to Workflow Task execution failures elevated" title="Direct link to Workflow Task execution failures elevated" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <code>temporal_workflow_task_execution_failed</code> with <code>failure_reason=WorkflowError</code>
+Fires when the rate goes above 10/s, held for 2m. Routed Warning by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>Workflow Tasks are failing steadily from unhandled exceptions and panics in Workflow code that the SDK catches and reports.
+<code>WorkflowError</code> is the catch-all reason. It covers thread pool exhaustion, unhandled exceptions thrown inside the Workflow function, and Data Converter errors.</p>
+<p><strong>Why it matters.</strong>
+The Temporal Service retries the Workflow Task.
+If the error is deterministic and shows up on every replay, the Execution is stuck retrying forever, burning Worker capacity and never getting healthy.</p>
+<p>At high rates the retry pressure fills up your Workflow Worker slots and starts affecting healthy Executions on the same Task Queue.
+Unlike <code>GrpcMessageTooLarge</code>, the Temporal Service won&#x27;t terminate the Execution for you, so this gets worse the longer you leave it.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the affected Executions.</strong> This metric does not carry a Workflow Id. Worker logs carry the Workflow Id, Run Id, and full stack trace. The <code>WorkflowTaskFailed</code> event in Event History carries the error message and type. The <code>workflow_type</code> tag on the metric narrows which Workflow is failing.</li>
+<li class=""><strong>Determine which failure mode this is.</strong> <code>WorkflowError</code> covers several:<!-- -->
+<ul>
+<li class=""><strong>Thread pool exhaustion (Java SDK).</strong> A <code>RejectedExecutionException</code> from a saturated Workflow thread pool. <code>setMaxWorkflowThreadCount</code> on <code>WorkerFactoryOptions</code> is too low for the number of concurrent Executions, so new Workflow Tasks get rejected before they run. Raise the thread count, and think about whether the Worker pool needs to scale out too.</li>
+<li class=""><strong>Unhandled exception in Workflow code.</strong> A bug or an unexpected condition throws. If it reproduces on every replay, the Execution is stuck. The <code>WorkflowTaskFailed</code> event names the error.</li>
+<li class=""><strong>Data Converter error.</strong> Something failed serializing or deserializing Workflow inputs, outputs, or Memo fields. Check your <a href="/dataconversion" class="">Data Converter</a> and <a href="/payload-codec" class="">Payload Codec</a> configuration.</li>
+</ul>
+</li>
+<li class=""><strong>Check Worker thread and slot pressure.</strong> Cross-check <a href="/troubleshooting/worker-capacity#worker-task-slots-exhausted" class="">Worker Task slots exhausted</a> for <code>worker_type=WorkflowWorker</code>. Slot exhaustion and thread pool exhaustion tend to show up together under load, and a CPU-starved Worker is slower to finish Workflow Tasks, which makes both worse.</li>
+<li class=""><strong>Fix and redeploy.</strong> Affected Executions resume on their next Workflow Task retry once compatible code is running.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-task-execution-latency-high">Workflow Task execution latency high<a href="#workflow-task-execution-latency-high" class="hash-link" aria-label="Direct link to Workflow Task execution latency high" title="Direct link to Workflow Task execution latency high" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <a href="/references/sdk-metrics#workflow_task_execution_latency" class=""><code>temporal_workflow_task_execution_latency</code></a>, tagged <code>namespace</code>, <code>task_queue</code>, and <code>workflow_type</code>
+Fires when p99 goes above 10s, held for 5m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>Workflow Tasks are taking too long to execute on the Worker.
+The default Workflow Task timeout is 10 seconds, so at or above that value the Temporal Service is actively timing out Workflow Tasks.</p>
+<p>A batch workload where Workflow Tasks routinely run long can sit above this threshold all day without anything being wrong.
+Set the threshold from your own observed p99, and only treat the default as meaningful if your Workflows are latency-sensitive.</p>
+<p><strong>Why it matters.</strong>
+The Temporal Service writes <code>WorkflowTaskTimedOut</code> events to Event History and reschedules timed-out Tasks on the normal Task Queue.
+Each timeout forces a <a href="/sticky-execution" class="">Sticky Execution</a> cache eviction on the Worker holding the Execution, so the next Workflow Task for it requires a full cold replay.</p>
+<p>If you run <a href="/local-activity" class="">Local Activities</a>, a Workflow Task timeout causes them to re-execute from scratch on the retried Task, because their results are not checkpointed between Workflow Task heartbeats.
+Non-idempotent Local Activities produce duplicate side effects with real business impact.</p>
+<p>At scale this compounds: more timeouts cause more cold replays, cold replays drive latency higher, and higher latency causes more timeouts.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Check replay latency.</strong> Look at <a href="/references/sdk-metrics#workflow_task_replay_latency" class=""><code>temporal_workflow_task_replay_latency</code></a>. If it is high, the time is going into re-running Event History rather than into new commands. Large histories, a slow Data Converter during replay, or a high cache eviction rate forcing cold replays are the usual culprits.</li>
+<li class=""><strong>Check the Sticky Execution cache.</strong> A high forced-eviction rate causes a cold replay on every Workflow Task. See <a href="/troubleshooting/worker-capacity#sticky-cache-holding-zero-entries-under-load" class="">Sticky cache holding zero entries under load</a>.</li>
+<li class=""><strong>Check Worker CPU.</strong> If replay latency is normal but execution latency is high, the time is going into new command execution. High CPU slows all code on the Worker.</li>
+<li class=""><strong>Check for blocking Workflow code.</strong> Workflow code must not perform blocking I/O, heavy computation, or synchronous non-Temporal calls. Any blocking call holds the Task slot and inflates this metric. In the Python SDK, verify that no <code>async def</code> Workflow code is blocking the event loop.</li>
+<li class=""><strong>Check for throttling on respond operations.</strong> See <a href="/troubleshooting/request-failures#resource_exhausted-on-respond-operations" class="">RESOURCE_EXHAUSTED on respond operations</a>. The SDK holds the slot until the respond call succeeds, which inflates this metric even when your Workflow code finished quickly.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-execution-failures-elevated">Activity execution failures elevated<a href="#activity-execution-failures-elevated" class="hash-link" aria-label="Direct link to Activity execution failures elevated" title="Direct link to Activity execution failures elevated" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <a href="/references/sdk-metrics#activity_execution_failed" class=""><code>temporal_activity_execution_failed</code></a> with <code>failure_reason=ActivityError</code>, tagged <code>activity_type</code>
+Fires when the rate goes above 10/s, held for 2m. Routed Warning by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>Activities are failing outright at a sustained rate: returning failures, not timing out.</p>
+<p>Filter on <code>failure_reason=ActivityError</code> so this alert tracks Activity code and its dependencies.
+The other reasons on this metric are Worker-side size limits with different triage, covered in <a href="#activity-payloads-too-large" class="">Activity Payloads too large</a>.</p>
+<p><code>ApplicationFailure</code> instances marked with category <code>BENIGN</code> don&#x27;t increment this counter, so how well this metric tracks only the unexpected failures depends on how consistently your application marks the expected ones.</p>
+<p><strong>Why it matters.</strong>
+A high failure rate means a burst of retry Tasks.
+If your Workers can&#x27;t keep up with the retry volume, the Activity Task backlog grows. See <a href="/troubleshooting/worker-capacity#activity-schedule-to-start-latency-elevated" class="">Activity schedule-to-start latency elevated</a>.
+At scale, sustained retry bursts put real pressure on Task matching and the database underneath.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify which Activity is failing.</strong> The <code>activity_type</code> tag narrows it down. Worker logs for that type carry the error messages, stack traces, and associated Workflow Ids.</li>
+<li class=""><strong>Work out whether this is transient or a bug.</strong> A downstream outage, a network partition, or a database timeout will recover on its own, so watch whether the rate falls. A code bug won&#x27;t.</li>
+<li class=""><strong>Check downstream service health.</strong> A struggling dependency is a common cause of sustained failure bursts. If it is throttling you, check that your <a href="/encyclopedia/retry-policies" class="">Retry Policy</a> has sensible backoff. Without it, your retries pile more pressure onto something that is already overloaded.</li>
+<li class=""><strong>Check schedule-to-start latency.</strong> A growing retry backlog shows up as elevated <a href="/troubleshooting/worker-capacity#activity-schedule-to-start-latency-elevated" class="">Activity schedule-to-start latency</a> even after the failure rate drops.</li>
+<li class=""><strong>Mark expected failures as benign.</strong> If your design fails Activities on purpose, as polling patterns, Saga compensations, and flow control through exceptions all do, mark those <code>ApplicationFailure</code> instances with category <code>BENIGN</code>. That keeps them out of this metric and lets the alert track only the failures you didn&#x27;t expect, without tuning a threshold per <code>activity_type</code>. Check that your SDK version supports the category before you rely on it.</li>
+</ol>
+<p>One caveat: internal failures increment this counter no matter what category you set. Those are things like a context propagation error or a context timeout, rather than an Activity returning a failure.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity-payloads-too-large">Activity Payloads too large<a href="#activity-payloads-too-large" class="hash-link" aria-label="Direct link to Activity Payloads too large" title="Direct link to Activity Payloads too large" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <a href="/references/sdk-metrics#activity_execution_failed" class=""><code>temporal_activity_execution_failed</code></a> with <code>failure_reason=PayloadsTooLarge</code>, tagged <code>activity_type</code>
+Fires on any occurrence, held for 1m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>A Payload in the Activity Task response was bigger than the Namespace Payload size limit.
+The Worker failed the Activity Task itself rather than send a completion the Temporal Service was going to reject, so the Activity fails with an explicit error instead of timing out silently.</p>
+<p>The Worker marks this failure retryable on purpose: the point of catching it on the Worker is to turn something the Temporal Service would hard-fail into an Activity failure you can fix and redeploy past.</p>
+<p>For the limits themselves and the ways to stay under them, see <a href="/troubleshooting/blob-size-limit-error#payload-size-limit" class="">Troubleshoot the BlobSizeLimitError</a>.</p>
+<p><strong>Why it matters.</strong>
+The Activity retries under its Retry Policy and produces the same oversized result every time, so it cannot succeed until the code changes.
+The Workflow Execution stays blocked on that Activity until its schedule-to-close timeout expires, and each attempt is wasted work on a Worker.
+This will not clear up on its own, which is why it is worth alerting on any occurrence rather than on a rate.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify which Activity is oversized.</strong> The <code>activity_type</code> tag narrows it down. Worker logs for that type record the size and the limit that was exceeded.</li>
+<li class=""><strong>Find which Payload is too large.</strong> Usually the Activity result. Large collections, embedded files, and full API responses returned verbatim are the common causes.</li>
+<li class=""><strong>Move the Payload out of band.</strong> Store it and return a reference instead, using <a href="/external-storage" class="">External Storage</a> or a custom <a href="/payload-codec" class="">Payload Codec</a>. Compression buys headroom but does not remove the ceiling.</li>
+<li class=""><strong>Deploy the fix.</strong> Because the failure is retryable, affected Activities succeed on their next attempt once the corrected Worker is running, as long as the Workflow has not already hit its schedule-to-close timeout.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="unregistered-activity-invocation">Unregistered Activity invocation<a href="#unregistered-activity-invocation" class="hash-link" aria-label="Direct link to Unregistered Activity invocation" title="Direct link to Unregistered Activity invocation" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <a href="/references/sdk-metrics#unregistered_activity_invocation" class=""><code>temporal_unregistered_activity_invocation</code></a>, tagged <code>activity_type</code>, <code>task_queue</code>, and <code>workflow_type</code>
+Fires on any occurrence, held for 1m. Routed Critical by default. Go SDK only. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>A Workflow scheduled an Activity that the Worker polling that Task Queue has no registered implementation for.</p>
+<p>This metric is emitted by the Go SDK only.</p>
+<p><strong>Why it matters.</strong>
+The Activity can&#x27;t run. It keeps getting retried against a Worker that has no implementation for it, until the Activity&#x27;s <code>scheduleToClose</code> timeout expires, or forever if you haven&#x27;t set one. Meanwhile the Workflow Execution waiting on it goes nowhere.</p>
+<p>This is nearly always a deployment mistake rather than a runtime condition: Workflow code scheduling an Activity that the deployed Worker doesn&#x27;t register. It won&#x27;t fix itself.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the Activity and the Task Queue.</strong> The <code>activity_type</code> and <code>task_queue</code> tags name both. The <code>workflow_type</code> tag identifies which Workflow is scheduling it.</li>
+<li class=""><strong>Check whether the Activity is registered on the right Worker.</strong> Confirm the Worker polling that Task Queue registers that Activity type. A common cause is registering the Activity on a Worker polling a different Task Queue.</li>
+<li class=""><strong>Check for a partial rollout.</strong> If Workflow code that schedules a new Activity deployed ahead of the Worker that implements it, some Workers will be running without the registration. Complete the rollout.</li>
+<li class=""><strong>Check for a renamed Activity.</strong> Changing an Activity&#x27;s registered name while Executions are in flight leaves those Executions scheduling the old name. Register both names until the in-flight Executions drain, or use a versioning guard.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="local-activity-latency-exceeds-the-heartbeat-timeout">Local Activity latency exceeds the heartbeat timeout<a href="#local-activity-latency-exceeds-the-heartbeat-timeout" class="hash-link" aria-label="Direct link to Local Activity latency exceeds the heartbeat timeout" title="Direct link to Local Activity latency exceeds the heartbeat timeout" translate="no">​</a></h2>
+<p><strong>Recommended alert:</strong> <a href="/references/sdk-metrics#local_activity_execution_latency" class=""><code>temporal_local_activity_execution_latency</code></a>, tagged <code>activity_type</code>
+Fires when p99 goes above 30m, held for 5m. Routed Critical by default. <a href="/best-practices/worker-alerting#execution-failures" class="">Tune the threshold</a>.</p>
+<p>A <a href="/local-activity" class="">Local Activity</a> is running past the Workflow Task heartbeat timeout, which defaults to 30 minutes.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-workflow-task-heartbeating-works">How Workflow Task heartbeating works<a href="#how-workflow-task-heartbeating-works" class="hash-link" aria-label="Direct link to How Workflow Task heartbeating works" title="Direct link to How Workflow Task heartbeating works" translate="no">​</a></h3>
+<p>A Local Activity executes inside the Workflow Task rather than as a separately scheduled Activity Task.
+That means the Workflow Task stays open for as long as the Local Activity runs, which would normally exceed the Workflow Task timeout.</p>
+<p>To keep the Task alive, the SDK sends Workflow Task heartbeats: repeated <code>RespondWorkflowTaskCompleted</code> calls that tell the Temporal Service work is still going and ask for more time.
+The Service goes along with this up to the Workflow Task heartbeat timeout.
+After that it times the Task out and reschedules it on the normal Task Queue.</p>
+<p>Local Activities cannot heartbeat individually the way regular Activities can, and their results are not recorded in Event History between Workflow Task heartbeats.
+So when the Task is rescheduled, every Local Activity in it runs again from the beginning.</p>
+<p><strong>Why it matters.</strong>
+When the Temporal Service times out the heartbeating Workflow Task, the Local Activity re-executes from scratch.
+A non-idempotent Local Activity produces duplicate side effects with real business impact.</p>
+<p>Any pending Signals, Updates, or other events are delayed until the retried Workflow Task completes, so end-to-end Execution latency rises significantly.</p>
+<p>The Local Activity also occupies an executor slot for its entire duration.
+Several in this state at once can occupy every available slot, blocking new Local Activities from starting.
+See <a href="/troubleshooting/worker-capacity#localactivityworker-slots" class="">LocalActivityWorker slots</a>.</p>
+<p>Local Activities are designed for short, fast operations.
+A single attempt running for 30 minutes is a design problem, not a tuning problem.</p>
+<p><strong>Triage.</strong></p>
+<ol>
+<li class=""><strong>Identify the affected Local Activity.</strong> The <code>activity_type</code> tag narrows it down. Worker logs for that type show what it is doing, how long individual attempts run, and the associated Workflow Ids.</li>
+<li class=""><strong>Find what it is blocked on.</strong> A Local Activity running this long is nearly always stuck on a downstream call: a slow service, a slow query, or a network call with a very generous timeout. Fix the dependency, or shorten that timeout so the Local Activity fails fast instead of hanging.</li>
+<li class=""><strong>Check whether a retry chain is accumulating.</strong> A high failure rate paired with an aggressive Retry Policy can push total elapsed time past the heartbeat timeout even when every individual attempt is short. Check <a href="/references/sdk-metrics#local_activity_execution_failed" class=""><code>temporal_local_activity_execution_failed</code></a> for the same <code>activity_type</code>, and fix the underlying failure first.</li>
+<li class=""><strong>Check whether timeouts have already happened.</strong> By the time this fires, the Temporal Service may have timed out heartbeating Workflow Tasks already. Look for timeout errors in Worker logs and <code>WorkflowTaskTimedOut</code> events in Event History. If they are there, your Local Activities have already run twice, so check whether they are idempotent and clean up any duplicate side effects.</li>
+<li class=""><strong>Fix the design.</strong> If the work genuinely takes this long, convert it to a regular Activity with heartbeating, which is the correct primitive for long-running work. If it must stay a Local Activity, set a <code>scheduleToCloseTimeout</code> below the Workflow Task heartbeat timeout so it fails with a timeout error the Workflow can handle, rather than having the entire Workflow Task re-executed.</li>
+</ol></div>

@@ -1,0 +1,124 @@
+# User management
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Learn how to manage user invitations for Temporal Cloud
+
+**Web UI**
+
+To invite users using the Temporal Cloud UI:
+
+1. In Temporal Web UI, select **Settings** in the left portion of the window.
+1. On the **Settings** page, select **Create Users** in the upper-right portion of the window.
+1. On the **Create Users** page in the **Email Addresses** box, type or paste one or more email addresses.
+1. In **Account-Level Role**, select a [Role](/cloud/manage-access/roles-and-permissions#account-level-roles). The Role
+   applies to all users whose email addresses appear in **Email Addresses**.
+1. If the account has any Namespaces, they are listed under **Grant access to Namespaces**. To add a permission, select
+   the checkbox next to a Namespace, and then select a
+   [permission](/cloud/manage-access/roles-and-permissions#namespace-level-permissions). Repeat as needed.
+1. When all permissions are assigned, select **Send Invite**.
+
+**Temporal CLI**
+
+Use the [`temporal cloud user invite`](/cli/command-reference/cloud/user#invite) command. Specify the user's email, an
+account-level role, and optionally one or more Namespace permissions.
+
+Available account roles: `owner` | `admin` | `developer` | `finance-admin` | `read` | `metrics-read`.
+
+Available Namespace permissions: `admin` | `write` | `read`.
+
+```command
+temporal cloud user invite \
+  --email <user@example.com> \
+  --account-role <role> \
+  --namespace-access <namespace.account>=<permission>
+```
+
+Repeat `--namespace-access` to grant permissions on more than one Namespace. `--email` takes a single address, so invite
+one user per command:
+
+```command
+temporal cloud user invite \
+  --email user1@example.com \
+  --account-role developer \
+  --namespace-access ns1.my-account=admin \
+  --namespace-access ns2.my-account=write
+```
+
+**tcld**
+
+Use the [`tcld user invite`](/cloud/tcld/user/#invite) command. Specify the user's email, an account-level role, and
+optionally one or more Namespace permissions.
+
+Available account roles: `admin` | `developer` | `read`.
+
+Available Namespace permissions: `Admin` | `Write` | `Read`.
+
+```command
+tcld user invite \
+  --user-email <user@example.com> \
+  --account-role <role> \
+  --namespace-permission <namespace>=<permission>
+```
+
+You can invite multiple users and assign multiple Namespace permissions in a single command:
+
+```command
+tcld user invite \
+  --user-email user1@example.com \
+  --user-email user2@example.com \
+  --account-role developer \
+  --namespace-permission ns1=Admin \
+  --namespace-permission ns2=Write
+```
+
+### Frequently asked questions
+
+#### Can multiple Temporal Cloud accounts share the same email domain?
+
+Yes. Multiple Temporal Cloud accounts can coexist with users from the same email domain.
+Each account has its own independent SAML configuration, tied to its unique Account Id.
+We recommend configuring [SAML](/cloud/manage-access/saml) for each account independently.
+For the smoother login experience, you can configure SAML for each account separately and use IdP-initiated login: you click the relevant app tile in your identity provider's portal to access the Temporal Cloud account associated with your email address directly.
+
+#### Can the same email be used across different Temporal Cloud accounts?
+
+No. Each email address can only be associated with a single Temporal Cloud account.
+If you need access to multiple accounts, you’ll need a separate invite for each one using a different email address.
+
+#### Can I use Google or Microsoft SSO after signing up with email and password?
+
+If you originally signed up for Temporal Cloud using an email and password, you won’t be able to log in using Google or Microsoft single sign-on.
+
+If you prefer SSO, ask your Account Owner to delete your current user and send you a new invitation.
+During re-invitation, be sure to sign up using your preferred authentication method.
+
+Use the [CreateUser](https://saas-api.tmprl.cloud/docs/httpapi.html#tag/users) endpoint to invite a user.
+
+```
+POST /cloud/users
+```
+
+The request body includes a `spec` with the following fields:
+
+- `spec.email` — The email address of the user to invite.
+- `spec.access.account_access.role` — The account-level role to assign.
+- `spec.access.namespace_accesses` — A map of Namespace names to permissions.
+
+Available roles: `ROLE_ADMIN` | `ROLE_DEVELOPER` | `ROLE_READ` | `ROLE_OWNER` | `ROLE_FINANCE_ADMIN`.
+
+Available Namespace permissions: `PERMISSION_ADMIN` | `PERMISSION_WRITE` | `PERMISSION_READ`.
+
+The new users receive an email with a link to accept the invitation and complete their setup. The new user must use this
+link to sign up to be added to your account unless the account has a SAML configuration. If your account has a SAML
+configuration, the new user can sign in using their existing SAML credentials and be included in the account
+automatically.
+
+> **⚠️ Caution:**
+>
+> The new user must use the same authentication method they originally signed up with to sign in to Temporal Cloud. If
+> they used single sign-on (SSO), they must use the same SSO provider to sign in to Temporal Cloud. If they used email and
+> password authentication, they must use the same email and password to sign in to Temporal Cloud, and cannot use SSO,
+> even if the underlying email address is the same.
+>

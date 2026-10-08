@@ -1,0 +1,5 @@
+SyntaxError: Unexpected token '.', ..."el": 2
+}, ...__tocAW"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at Object.prepare (/home/nick/Repositories/nift/nift-experiments/temporal/tools/compile.cjs:7:399)
+    at async /home/nick/Repositories/nift/nift-experiments/temporal/tools/publish.cjs:6:301

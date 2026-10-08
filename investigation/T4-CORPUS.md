@@ -1,0 +1,11 @@
+# T4 main-document corpus
+
+All 776 main-document routes retain their published body semantics: exact normalized text, headings/anchors, links, image paths, code and table counts. Generated/special family behavior and the remaining 17 cookbook routes, tag routes, search page, ancillary projections and deployment contract remain T5/T6 work. Successful publication and semantic comparison do not alone establish complete interactive parity.
+
+Authored sources remain in docs/ with original organization/frontmatter; sidebars.js remains maintained source. The bounded navigation adapter handles only doc/category/link forms used by the pinned definitions. Retained sidebar components preserve category expansion, lazy children and navigation, without a Docusaurus page application. Authored models derive from source; rendered models/navigation.json is independently maintained structured source.
+
+Shared navbar/footer live in models/chrome. Per-route shells currently retain page chrome/metadata rather than duplicating navbar/footer. Metadata and lifecycle strengthening, full projections and cache profiling remain later gates. Browser bundling, MDX compilation, React SSR, shell/dependencies, assets, Markdown downloads and Nift composition are independently recorded; these development timings are not final benchmarks.
+
+The frozen source includes upstream whitespace; it is preserved instead of reformatted to make git whitespace checks clean. Migration-owned code is checked separately. No Nift core changes.
+
+Desktop/mobile sidebar expansion and navigation match the local reference with zero page errors. Mobile TOC expansion, exact heading links, hash navigation and desktop restoration after resizing also match; TOCs derive from the compiled MDX exports (including imported fragments), or are explicit maintained metadata in the rendered project. Native link composition resolves relative links using the published route and removes framework application prefetch. Shared global footer is separate from route-specific edit/source controls. Managed asset manifests retire superseded browser assets; forced publications start from a clean derived output directory. Full interaction coverage across the corpus remains T5/T6.

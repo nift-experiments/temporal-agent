@@ -1,0 +1,11 @@
+errors [] warnings 2
+browser_bundle 1.963s
+errors [] warnings 0
+retained_components_server_bundle 0.962s
+react_ssr_or_html_source 0.207s
+shell_and_dependencies 5.570s
+static_and_browser_publication 0.117s
+✓ 776 tracked files are up to date
+time taken: 0.042712 seconds
+nift_composition 0.060s
+complete 8.928s

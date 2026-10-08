@@ -1,0 +1,478 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/references/sdk-metrics.md">/references/sdk-metrics.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Temporal SDK metrics reference</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/references/sdk-metrics.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fsdk-metrics.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fsdk-metrics.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>For metrics emitted by <a href="/evaluate/cloud" class="">Temporal Cloud</a>, see <a href="/cloud/metrics/openmetrics" class="">Cloud metrics</a>.
+For metrics emitted by a <a href="/temporal-service" class="">self-hosted Temporal Service</a>, see <a href="/references/service-metrics" class="">Temporal Service metrics</a>.
+To tune Workers based on these metrics, see <a href="/develop/worker-performance" class="">Worker performance</a>.</p></div></div>
+<p>The <a href="/encyclopedia/architecture/temporal-sdks" class="">Temporal SDKs</a> emit metrics from Temporal Client usage and Worker Processes.
+To set up metrics in your application, see the observability guide for your SDK:
+<a href="/develop/go/platform/observability#metrics" class="">Go</a>,
+<a href="/develop/java/platform/observability#metrics" class="">Java</a>,
+<a href="/develop/python/platform/observability#metrics" class="">Python</a>,
+<a href="/develop/typescript/platform/observability#metrics" class="">TypeScript</a>,
+<a href="/develop/dotnet/platform/observability#metrics" class="">.NET</a>, or
+<a href="/develop/ruby/platform/observability#metrics" class="">Ruby</a>.</p>
+<p>Only the metrics on this page have guaranteed, defined behavior.
+Some SDKs emit other metrics.
+Treat those as deprecated, inconsistent, or experimental.</p>
+<p>The SDKs add the <code>temporal_</code> prefix to every metric before exporting it.
+Headings on this page omit the prefix.</p>
+<p>Each metric on this page lists the following:</p>
+<ul>
+<li class=""><strong>Type:</strong> Counter, Gauge, or Histogram.</li>
+<li class=""><strong>Available in:</strong> The SDK that defines the metric.
+Other SDKs inherit their metrics from one of these:<!-- -->
+<ul>
+<li class=""><strong>Core:</strong> The <a href="/glossary#core-sdk" class="">Core SDK</a> defines the metrics for the TypeScript, Python, .NET, and Ruby SDKs, in <a href="https://github.com/temporalio/sdk-rust/blob/main/crates/sdk-core/src/telemetry/metrics.rs" target="_blank" rel="noopener noreferrer" class="">Worker metrics</a> and <a href="https://github.com/temporalio/sdk-rust/blob/main/crates/client/src/metrics.rs" target="_blank" rel="noopener noreferrer" class="">Client metrics</a>.</li>
+<li class=""><strong>Go:</strong> The Go SDK defines the metrics for the Go and PHP SDKs, in <a href="https://github.com/temporalio/sdk-go/blob/main/internal/common/metrics/constants.go" target="_blank" rel="noopener noreferrer" class="">Worker and Client metrics</a>.</li>
+<li class=""><strong>Java:</strong> The Java SDK defines its own metrics, in <a href="https://github.com/temporalio/sdk-java/blob/main/temporal-sdk/src/main/java/io/temporal/worker/MetricsType.java" target="_blank" rel="noopener noreferrer" class="">Worker metrics</a> and <a href="https://github.com/temporalio/sdk-java/blob/main/temporal-serviceclient/src/main/java/io/temporal/serviceclient/MetricsType.java" target="_blank" rel="noopener noreferrer" class="">Client metrics</a>.</li>
+</ul>
+</li>
+<li class=""><strong>Tags:</strong> The <a href="/glossary#tag" class="">tags</a> the SDK attaches to the metric.
+Prometheus and other OpenMetrics-compatible systems call these labels.</li>
+</ul>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Metric units across SDKs</div><div class="admonitionContent_vXIg"><p>The unit for Histogram metrics depends on the SDK:</p><ul>
+<li class=""><strong>Core-based SDKs:</strong> Milliseconds by default.
+You can configure Core-based SDKs to use seconds instead.</li>
+<li class=""><strong>Go and Java SDKs:</strong> Seconds.</li>
+</ul></div></div>
+<p>Each metric may have some combination of the following tags:</p>
+<ul>
+<li class=""><code>task_queue</code>: The Task Queue the Worker Entity polls.</li>
+<li class=""><code>namespace</code>: The Namespace the Worker is bound to.</li>
+<li class=""><code>poller_type</code>: One of the following:<!-- -->
+<ul>
+<li class=""><code>workflow_task</code></li>
+<li class=""><code>workflow_sticky_task</code></li>
+<li class=""><code>activity_task</code></li>
+<li class=""><code>nexus_task</code></li>
+</ul>
+</li>
+<li class=""><code>worker_type</code>: One of the following:<!-- -->
+<ul>
+<li class=""><code>ActivityWorker</code></li>
+<li class=""><code>WorkflowWorker</code></li>
+<li class=""><code>LocalActivityWorker</code></li>
+<li class=""><code>NexusWorker</code></li>
+</ul>
+</li>
+<li class=""><code>activity_type</code>: The name of the Activity Function.</li>
+<li class=""><code>workflow_type</code>: The name of the Workflow Function.</li>
+<li class=""><code>operation</code>: The RPC method name. Available on Temporal Client gRPC request metrics.</li>
+<li class=""><code>status_code</code>: The gRPC status code the Temporal Service returned, in <code>UPPER_SNAKE_CASE</code>, such as <code>NOT_FOUND</code>. Available on Temporal Client gRPC request failure metrics.</li>
+<li class=""><code>cause</code>: The reason the Temporal Service rejected a request as resource exhausted, such as <code>RESOURCE_EXHAUSTED_CAUSE_RPS_LIMIT</code>. Available on the resource-exhausted metrics.</li>
+</ul>
+<p>Not every SDK attaches every tag, and Histogram buckets differ between SDKs.</p>
+<table><thead><tr><th>Metric name</th><th>Emitted by</th><th>Metric type</th><th>Availability</th></tr></thead><tbody><tr><td><a href="#activity_execution_cancelled" class="">temporal_activity_execution_cancelled</a></td><td>Worker</td><td>Counter</td><td>Java</td></tr><tr><td><a href="#activity_execution_failed" class="">temporal_activity_execution_failed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#activity_execution_latency" class="">temporal_activity_execution_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#activity_poll_no_task" class="">temporal_activity_poll_no_task</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#activity_schedule_to_start_latency" class="">temporal_activity_schedule_to_start_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#activity_succeed_endtoend_latency" class="">temporal_activity_succeed_endtoend_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#activity_task_error" class="">temporal_activity_task_error</a></td><td>Worker</td><td>Counter</td><td>Go</td></tr><tr><td><a href="#corrupted_signals" class="">temporal_corrupted_signals</a></td><td>Worker</td><td>Counter</td><td>Go, Java</td></tr><tr><td><a href="#local_activity_execution_cancelled" class="">temporal_local_activity_execution_cancelled</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#local_activity_execution_failed" class="">temporal_local_activity_execution_failed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#local_activity_execution_latency" class="">temporal_local_activity_execution_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#local_activity_succeed_endtoend_latency" class="">temporal_local_activity_succeed_endtoend_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#local_activity_total" class="">temporal_local_activity_total</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#long_request" class="">temporal_long_request</a></td><td>Service Client</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#long_request_failure" class="">temporal_long_request_failure</a></td><td>Service Client</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#long_request_latency" class="">temporal_long_request_latency</a></td><td>Service Client</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#long_request_resource_exhausted" class="">temporal_long_request_resource_exhausted</a></td><td>Service Client</td><td>Counter</td><td>Go</td></tr><tr><td><a href="#nexus_poll_no_task" class="">temporal_nexus_poll_no_task</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#nexus_task_schedule_to_start_latency" class="">temporal_nexus_task_schedule_to_start_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#nexus_task_execution_failed" class="">temporal_nexus_task_execution_failed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#nexus_task_execution_latency" class="">temporal_nexus_task_execution_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#nexus_task_endtoend_latency" class="">temporal_nexus_task_endtoend_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#num_pollers" class="">temporal_num_pollers</a></td><td>Worker</td><td>Gauge</td><td>Core, Go, Java</td></tr><tr><td><a href="#poller_start" class="">temporal_poller_start</a></td><td>Worker</td><td>Counter</td><td>Go, Java</td></tr><tr><td><a href="#request" class="">temporal_request</a></td><td>Service Client</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#request_failure" class="">temporal_request_failure</a></td><td>Service Client</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#request_latency" class="">temporal_request_latency</a></td><td>Service Client</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#request_resource_exhausted" class="">temporal_request_resource_exhausted</a></td><td>Service Client</td><td>Counter</td><td>Go</td></tr><tr><td><a href="#resource_slots_cpu_usage" class="">temporal_resource_slots_cpu_usage</a></td><td>Worker</td><td>Gauge</td><td>Core, Java</td></tr><tr><td><a href="#resource_slots_mem_usage" class="">temporal_resource_slots_mem_usage</a></td><td>Worker</td><td>Gauge</td><td>Core, Java</td></tr><tr><td><a href="#sticky_cache_hit" class="">temporal_sticky_cache_hit</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#sticky_cache_miss" class="">temporal_sticky_cache_miss</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#sticky_cache_size" class="">temporal_sticky_cache_size</a></td><td>Worker</td><td>Gauge</td><td>Core, Go, Java</td></tr><tr><td><a href="#sticky_cache_total_forced_eviction" class="">temporal_sticky_cache_total_forced_eviction</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#unregistered_activity_invocation" class="">temporal_unregistered_activity_invocation</a></td><td>Worker</td><td>Counter</td><td>Go</td></tr><tr><td><a href="#worker_start" class="">temporal_worker_start</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#worker_task_slots_available" class="">temporal_worker_task_slots_available</a></td><td>Worker</td><td>Gauge</td><td>Core, Go, Java</td></tr><tr><td><a href="#worker_task_slots_used" class="">temporal_worker_task_slots_used</a></td><td>Worker</td><td>Gauge</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_active_thread_count" class="">temporal_workflow_active_thread_count</a></td><td>Worker</td><td>Gauge</td><td>Java</td></tr><tr><td><a href="#workflow_canceled" class="">temporal_workflow_canceled</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_completed" class="">temporal_workflow_completed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_continue_as_new" class="">temporal_workflow_continue_as_new</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_endtoend_latency" class="">temporal_workflow_endtoend_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_failed" class="">temporal_workflow_failed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_execution_failed" class="">temporal_workflow_task_execution_failed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_execution_latency" class="">temporal_workflow_task_execution_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_queue_poll_empty" class="">temporal_workflow_task_queue_poll_empty</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_queue_poll_succeed" class="">temporal_workflow_task_queue_poll_succeed</a></td><td>Worker</td><td>Counter</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_replay_latency" class="">temporal_workflow_task_replay_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr><tr><td><a href="#workflow_task_schedule_to_start_latency" class="">temporal_workflow_task_schedule_to_start_latency</a></td><td>Worker</td><td>Histogram</td><td>Core, Go, Java</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_execution_cancelled"><code>activity_execution_cancelled</code><a href="#activity_execution_cancelled" class="hash-link" aria-label="Direct link to activity_execution_cancelled" title="Direct link to activity_execution_cancelled" translate="no">​</a></h3>
+<p>An Activity Execution was canceled.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_execution_failed"><code>activity_execution_failed</code><a href="#activity_execution_failed" class="hash-link" aria-label="Direct link to activity_execution_failed" title="Direct link to activity_execution_failed" translate="no">​</a></h3>
+<p>An Activity Execution failed.
+In the Go and Java SDKs, this metric doesn&#x27;t count Local Activity failures.
+For those, see <a href="#local_activity_execution_failed" class=""><code>local_activity_execution_failed</code></a>.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code>, <code>failure_reason</code></li>
+</ul>
+<p>Valid values for the <code>failure_reason</code> tag:</p>
+<ul>
+<li class=""><code>PayloadsTooLarge</code>: A Payload in the Activity Task response exceeded the Namespace size limit, so the Worker failed the Activity Task as retryable before sending it.
+See <a href="/troubleshooting/execution-failures#activity-payloads-too-large" class="">Activity Payloads too large</a>.</li>
+<li class=""><code>ActivityError</code>: The Activity Task failed for any other reason.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_execution_latency"><code>activity_execution_latency</code><a href="#activity_execution_latency" class="hash-link" aria-label="Direct link to activity_execution_latency" title="Direct link to activity_execution_latency" translate="no">​</a></h3>
+<p>Time to complete an Activity Execution, from when the Activity Task is generated to when the SDK responds with a success or failure.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_poll_no_task"><code>activity_poll_no_task</code><a href="#activity_poll_no_task" class="hash-link" aria-label="Direct link to activity_poll_no_task" title="Direct link to activity_poll_no_task" translate="no">​</a></h3>
+<p>An Activity Worker&#x27;s poll for an Activity Task timed out because no Activity Task was available on the Task Queue.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_schedule_to_start_latency"><code>activity_schedule_to_start_latency</code><a href="#activity_schedule_to_start_latency" class="hash-link" aria-label="Direct link to activity_schedule_to_start_latency" title="Direct link to activity_schedule_to_start_latency" translate="no">​</a></h3>
+<p>The Schedule-To-Start time of an Activity Task.
+Use this metric to check that Workers pick up Activity Tasks from the Task Queue promptly.
+To limit this time, set a <a href="/encyclopedia/detecting-activity-failures#schedule-to-start-timeout" class="">Schedule-To-Start Timeout</a> when you start the Activity Execution.</p>
+<p>Some SDKs add the <code>activity_type</code> and <code>workflow_type</code> tags.
+The value doesn&#x27;t vary by type, because the type doesn&#x27;t affect how fast Workers pull tasks from the Task Queue.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_succeed_endtoend_latency"><code>activity_succeed_endtoend_latency</code><a href="#activity_succeed_endtoend_latency" class="hash-link" aria-label="Direct link to activity_succeed_endtoend_latency" title="Direct link to activity_succeed_endtoend_latency" translate="no">​</a></h3>
+<p>Total time for a successful Activity Execution, from when it&#x27;s scheduled to when it completes.
+The SDK doesn&#x27;t record this metric for Activities that complete asynchronously.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activity_task_error"><code>activity_task_error</code><a href="#activity_task_error" class="hash-link" aria-label="Direct link to activity_task_error" title="Direct link to activity_task_error" translate="no">​</a></h3>
+<p>An internal error or panic occurred while the Worker handled or ran an Activity Task.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="corrupted_signals"><code>corrupted_signals</code><a href="#corrupted_signals" class="hash-link" aria-label="Direct link to corrupted_signals" title="Direct link to corrupted_signals" translate="no">​</a></h3>
+<p>The number of Signals whose Payload the Worker couldn&#x27;t deserialize.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local_activity_execution_cancelled"><code>local_activity_execution_cancelled</code><a href="#local_activity_execution_cancelled" class="hash-link" aria-label="Direct link to local_activity_execution_cancelled" title="Direct link to local_activity_execution_cancelled" translate="no">​</a></h3>
+<p>A Local Activity Execution was canceled.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local_activity_execution_failed"><code>local_activity_execution_failed</code><a href="#local_activity_execution_failed" class="hash-link" aria-label="Direct link to local_activity_execution_failed" title="Direct link to local_activity_execution_failed" translate="no">​</a></h3>
+<p>A Local Activity Execution failed.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code>, <code>failure_reason</code></li>
+</ul>
+<p>Valid values for the <code>failure_reason</code> tag:</p>
+<ul>
+<li class=""><code>timeout</code>: The Local Activity exceeded its Schedule-To-Close Timeout or Start-To-Close Timeout.</li>
+<li class=""><code>ActivityError</code>: The Local Activity failed for any other reason.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local_activity_execution_latency"><code>local_activity_execution_latency</code><a href="#local_activity_execution_latency" class="hash-link" aria-label="Direct link to local_activity_execution_latency" title="Direct link to local_activity_execution_latency" translate="no">​</a></h3>
+<p>Time to complete a Local Activity Execution, from when the first Activity Task is generated to when the SDK responds that the execution is complete.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local_activity_succeed_endtoend_latency"><code>local_activity_succeed_endtoend_latency</code><a href="#local_activity_succeed_endtoend_latency" class="hash-link" aria-label="Direct link to local_activity_succeed_endtoend_latency" title="Direct link to local_activity_succeed_endtoend_latency" translate="no">​</a></h3>
+<p>Total time for a successful Local Activity Execution, from when it&#x27;s scheduled to when it completes.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="local_activity_total"><code>local_activity_total</code><a href="#local_activity_total" class="hash-link" aria-label="Direct link to local_activity_total" title="Direct link to local_activity_total" translate="no">​</a></h3>
+<p>The total number of <a href="/local-activity" class="">Local Activity Executions</a>.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long_request"><code>long_request</code><a href="#long_request" class="hash-link" aria-label="Direct link to long_request" title="Direct link to long_request" translate="no">​</a></h3>
+<p>The Temporal Client made a gRPC long-poll request.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long_request_failure"><code>long_request_failure</code><a href="#long_request_failure" class="hash-link" aria-label="Direct link to long_request_failure" title="Direct link to long_request_failure" translate="no">​</a></h3>
+<p>A gRPC long-poll request from the Temporal Client failed.
+The <code>long_request</code> counter also counts these requests.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code>, <code>status_code</code></li>
+</ul>
+<p>The <code>status_code</code> tag holds the gRPC status code the Temporal Service returned.
+Values match the gRPC status code names in <code>UPPER_SNAKE_CASE</code>, such as <code>NOT_FOUND</code>, <code>RESOURCE_EXHAUSTED</code>, <code>UNIMPLEMENTED</code>, and <code>INTERNAL</code>.
+Client options can suppress this tag, so confirm your metrics endpoint includes it before you write queries against it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long_request_latency"><code>long_request_latency</code><a href="#long_request_latency" class="hash-link" aria-label="Direct link to long_request_latency" title="Direct link to long_request_latency" translate="no">​</a></h3>
+<p>Latency of a gRPC long-poll request from the Temporal Client.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="long_request_resource_exhausted"><code>long_request_resource_exhausted</code><a href="#long_request_resource_exhausted" class="hash-link" aria-label="Direct link to long_request_resource_exhausted" title="Direct link to long_request_resource_exhausted" translate="no">​</a></h3>
+<p>The Temporal Service rejected a gRPC long-poll request from the Temporal Client as resource exhausted.
+The <code>long_request_failure</code> metric also counts these failures with <code>status_code=RESOURCE_EXHAUSTED</code>.
+This metric adds the reason for the rejection in the <code>cause</code> tag.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code>, <code>cause</code></li>
+</ul>
+<p>The <code>cause</code> tag holds the reason the Temporal Service rejected the request, such as <code>RESOURCE_EXHAUSTED_CAUSE_RPS_LIMIT</code>, <code>RESOURCE_EXHAUSTED_CAUSE_CONCURRENT_LIMIT</code>, <code>RESOURCE_EXHAUSTED_CAUSE_SYSTEM_OVERLOADED</code>, or <code>RESOURCE_EXHAUSTED_CAUSE_CIRCUIT_BREAKER_OPEN</code>.
+Use this metric instead of <code>long_request_failure</code> to investigate throttling, because the fix depends on the cause.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nexus_poll_no_task"><code>nexus_poll_no_task</code><a href="#nexus_poll_no_task" class="hash-link" aria-label="Direct link to nexus_poll_no_task" title="Direct link to nexus_poll_no_task" translate="no">​</a></h3>
+<p>A Nexus Worker&#x27;s poll for a Nexus Task timed out because no Nexus Task was available on the Task Queue.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nexus_task_schedule_to_start_latency"><code>nexus_task_schedule_to_start_latency</code><a href="#nexus_task_schedule_to_start_latency" class="hash-link" aria-label="Direct link to nexus_task_schedule_to_start_latency" title="Direct link to nexus_task_schedule_to_start_latency" translate="no">​</a></h3>
+<p>The Schedule-To-Start time of a Nexus Task, from when the request reaches the Frontend Service to when the SDK starts processing the task.
+The <code>Request-Timeout</code> header on the request to the Frontend Service limits this time.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nexus_task_execution_failed"><code>nexus_task_execution_failed</code><a href="#nexus_task_execution_failed" class="hash-link" aria-label="Direct link to nexus_task_execution_failed" title="Direct link to nexus_task_execution_failed" translate="no">​</a></h3>
+<p>Handling a Nexus Task resulted in an error.
+This includes errors returned from your handler and unexpected internal errors in the SDK.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>nexus_service</code>, <code>nexus_operation</code>, <code>failure_reason</code></li>
+</ul>
+<p>Valid values for the <code>failure_reason</code> tag:</p>
+<ul>
+<li class=""><code>internal_sdk_error</code>: The SDK hit an unexpected internal error while handling the Nexus Task.
+This indicates a bug in the SDK.</li>
+<li class=""><code>handler_error_{TYPE}</code>: Your handler returned a <a href="https://github.com/nexus-rpc/api/blob/main/SPEC.md#predefined-handler-errors" target="_blank" rel="noopener noreferrer" class="">predefined handler error</a> from the Nexus specification.
+If the handler returns an unexpected error, <code>{TYPE}</code> is <code>INTERNAL</code>.</li>
+<li class=""><code>timeout</code>: Your handler didn&#x27;t return within the request timeout.</li>
+<li class=""><code>operation_failed</code>: Your handler reported that the Nexus Operation failed.
+In Go, this is an <code>UnsuccessfulOperationError</code> with a <code>failed</code> state.</li>
+<li class=""><code>operation_canceled</code>: Your handler reported that the Nexus Operation completed as canceled.
+In Go, this is an <code>UnsuccessfulOperationError</code> with a <code>canceled</code> state.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nexus_task_execution_latency"><code>nexus_task_execution_latency</code><a href="#nexus_task_execution_latency" class="hash-link" aria-label="Direct link to nexus_task_execution_latency" title="Direct link to nexus_task_execution_latency" translate="no">​</a></h3>
+<p>Time to complete a Nexus Task, from when the SDK starts processing it to when your handler completes.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>nexus_service</code>, <code>nexus_operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="nexus_task_endtoend_latency"><code>nexus_task_endtoend_latency</code><a href="#nexus_task_endtoend_latency" class="hash-link" aria-label="Direct link to nexus_task_endtoend_latency" title="Direct link to nexus_task_endtoend_latency" translate="no">​</a></h3>
+<p>Total time for a Nexus Task, from when the request reaches the Frontend Service to when the Temporal Service acknowledges the task&#x27;s completion to the SDK.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>nexus_service</code>, <code>nexus_operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="num_pollers"><code>num_pollers</code><a href="#num_pollers" class="hash-link" aria-label="Direct link to num_pollers" title="Direct link to num_pollers" translate="no">​</a></h3>
+<p>The current number of Worker Entities that are polling.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>poller_type</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="poller_start"><code>poller_start</code><a href="#poller_start" class="hash-link" aria-label="Direct link to poller_start" title="Direct link to poller_start" translate="no">​</a></h3>
+<p>A Worker Entity started a poller.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="request"><code>request</code><a href="#request" class="hash-link" aria-label="Direct link to request" title="Direct link to request" translate="no">​</a></h3>
+<p>The Temporal Client made a gRPC request.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="request_failure"><code>request_failure</code><a href="#request_failure" class="hash-link" aria-label="Direct link to request_failure" title="Direct link to request_failure" translate="no">​</a></h3>
+<p>A gRPC request from the Temporal Client failed.
+The <code>request</code> counter also counts these requests.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code>, <code>status_code</code></li>
+</ul>
+<p>The <code>status_code</code> tag holds the gRPC status code the Temporal Service returned.
+Values match the gRPC status code names in <code>UPPER_SNAKE_CASE</code>, such as <code>NOT_FOUND</code>, <code>RESOURCE_EXHAUSTED</code>, <code>UNIMPLEMENTED</code>, and <code>INTERNAL</code>.
+Client options can suppress this tag, so confirm your metrics endpoint includes it before you write queries against it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="request_latency"><code>request_latency</code><a href="#request_latency" class="hash-link" aria-label="Direct link to request_latency" title="Direct link to request_latency" translate="no">​</a></h3>
+<p>Latency of a Temporal Client gRPC request.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="request_resource_exhausted"><code>request_resource_exhausted</code><a href="#request_resource_exhausted" class="hash-link" aria-label="Direct link to request_resource_exhausted" title="Direct link to request_resource_exhausted" translate="no">​</a></h3>
+<p>The Temporal Service rejected a gRPC request from the Temporal Client as resource exhausted.
+The <code>request_failure</code> metric also counts these failures with <code>status_code=RESOURCE_EXHAUSTED</code>.
+This metric adds the reason for the rejection in the <code>cause</code> tag.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go</li>
+<li class="">Tags: <code>namespace</code>, <code>operation</code>, <code>cause</code></li>
+</ul>
+<p>The <code>cause</code> tag holds the reason the Temporal Service rejected the request, such as <code>RESOURCE_EXHAUSTED_CAUSE_RPS_LIMIT</code>, <code>RESOURCE_EXHAUSTED_CAUSE_CONCURRENT_LIMIT</code>, <code>RESOURCE_EXHAUSTED_CAUSE_SYSTEM_OVERLOADED</code>, or <code>RESOURCE_EXHAUSTED_CAUSE_CIRCUIT_BREAKER_OPEN</code>.
+Use this metric instead of <code>request_failure</code> to investigate throttling, because the fix depends on the cause.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource_slots_cpu_usage"><code>resource_slots_cpu_usage</code><a href="#resource_slots_cpu_usage" class="hash-link" aria-label="Direct link to resource_slots_cpu_usage" title="Direct link to resource_slots_cpu_usage" translate="no">​</a></h3>
+<p>CPU usage, from 0 to 100, as measured by the resource-based slot tuner.
+The SDK emits this metric only when the resource-based slot tuner is enabled.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Java</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource_slots_mem_usage"><code>resource_slots_mem_usage</code><a href="#resource_slots_mem_usage" class="hash-link" aria-label="Direct link to resource_slots_mem_usage" title="Direct link to resource_slots_mem_usage" translate="no">​</a></h3>
+<p>Memory usage, from 0 to 100, as measured by the resource-based slot tuner.
+The SDK emits this metric only when the resource-based slot tuner is enabled.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Java</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sticky_cache_hit"><code>sticky_cache_hit</code><a href="#sticky_cache_hit" class="hash-link" aria-label="Direct link to sticky_cache_hit" title="Direct link to sticky_cache_hit" translate="no">​</a></h3>
+<p>A Workflow Task found a cached Workflow Execution to run against.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sticky_cache_miss"><code>sticky_cache_miss</code><a href="#sticky_cache_miss" class="hash-link" aria-label="Direct link to sticky_cache_miss" title="Direct link to sticky_cache_miss" translate="no">​</a></h3>
+<p>A Workflow Task didn&#x27;t find a cached Workflow Execution to run against.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sticky_cache_size"><code>sticky_cache_size</code><a href="#sticky_cache_size" class="hash-link" aria-label="Direct link to sticky_cache_size" title="Direct link to sticky_cache_size" translate="no">​</a></h3>
+<p>The current number of Workflow Executions in the cache.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code> (TypeScript, Java), <code>task_queue</code> (TypeScript)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sticky_cache_total_forced_eviction"><code>sticky_cache_total_forced_eviction</code><a href="#sticky_cache_total_forced_eviction" class="hash-link" aria-label="Direct link to sticky_cache_total_forced_eviction" title="Direct link to sticky_cache_total_forced_eviction" translate="no">​</a></h3>
+<p>The Worker evicted a Workflow Execution from the cache on purpose.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unregistered_activity_invocation"><code>unregistered_activity_invocation</code><a href="#unregistered_activity_invocation" class="hash-link" aria-label="Direct link to unregistered_activity_invocation" title="Direct link to unregistered_activity_invocation" translate="no">​</a></h3>
+<p>The Worker received an Activity Task for an Activity type that isn&#x27;t registered with it.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Go</li>
+<li class="">Tags: <code>activity_type</code>, <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker_start"><code>worker_start</code><a href="#worker_start" class="hash-link" aria-label="Direct link to worker_start" title="Direct link to worker_start" translate="no">​</a></h3>
+<p>A Worker Entity was registered, created, or started.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>worker_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker_task_slots_available"><code>worker_task_slots_available</code><a href="#worker_task_slots_available" class="hash-link" aria-label="Direct link to worker_task_slots_available" title="Direct link to worker_task_slots_available" translate="no">​</a></h3>
+<p>The number of Workflow, Activity, Local Activity, or Nexus Task execution slots currently available.
+Use the <code>worker_type</code> tag to tell the slot types apart.
+For example, <code>WorkflowWorker</code> slots run Workflow Tasks and <code>ActivityWorker</code> slots run Activity Tasks.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>worker_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker_task_slots_used"><code>worker_task_slots_used</code><a href="#worker_task_slots_used" class="hash-link" aria-label="Direct link to worker_task_slots_used" title="Direct link to worker_task_slots_used" translate="no">​</a></h3>
+<p>The number of Workflow, Activity, Local Activity, or Nexus Task execution slots currently in use.
+Use the <code>worker_type</code> tag to tell the slot types apart.
+For example, <code>WorkflowWorker</code> slots run Workflow Tasks and <code>ActivityWorker</code> slots run Activity Tasks.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>worker_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_active_thread_count"><code>workflow_active_thread_count</code><a href="#workflow_active_thread_count" class="hash-link" aria-label="Direct link to workflow_active_thread_count" title="Direct link to workflow_active_thread_count" translate="no">​</a></h3>
+<p>The number of Workflow threads in the Worker Process.</p>
+<ul>
+<li class="">Type: Gauge</li>
+<li class="">Available in: Java</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_canceled"><code>workflow_canceled</code><a href="#workflow_canceled" class="hash-link" aria-label="Direct link to workflow_canceled" title="Direct link to workflow_canceled" translate="no">​</a></h3>
+<p>A Workflow Execution ended because of a cancellation request.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_completed"><code>workflow_completed</code><a href="#workflow_completed" class="hash-link" aria-label="Direct link to workflow_completed" title="Direct link to workflow_completed" translate="no">​</a></h3>
+<p>A Workflow Execution completed successfully.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_continue_as_new"><code>workflow_continue_as_new</code><a href="#workflow_continue_as_new" class="hash-link" aria-label="Direct link to workflow_continue_as_new" title="Direct link to workflow_continue_as_new" translate="no">​</a></h3>
+<p>A Workflow Execution ended with Continue-As-New.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_endtoend_latency"><code>workflow_endtoend_latency</code><a href="#workflow_endtoend_latency" class="hash-link" aria-label="Direct link to workflow_endtoend_latency" title="Direct link to workflow_endtoend_latency" translate="no">​</a></h3>
+<p>Total time for a single Workflow Run, from when it&#x27;s scheduled to when it completes.
+Each retry of a Workflow Execution is a separate Run.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_failed"><code>workflow_failed</code><a href="#workflow_failed" class="hash-link" aria-label="Direct link to workflow_failed" title="Direct link to workflow_failed" translate="no">​</a></h3>
+<p>A Workflow Execution failed.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_execution_failed"><code>workflow_task_execution_failed</code><a href="#workflow_task_execution_failed" class="hash-link" aria-label="Direct link to workflow_task_execution_failed" title="Direct link to workflow_task_execution_failed" translate="no">​</a></h3>
+<p>A Workflow Task Execution failed.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code>, <code>failure_reason</code></li>
+</ul>
+<p>Valid values for the <code>failure_reason</code> tag:</p>
+<ul>
+<li class=""><code>NonDeterminismError</code>: The Workflow Task failed because of a non-determinism error.</li>
+<li class=""><code>GrpcMessageTooLarge</code>: The Workflow Task response exceeded the gRPC message size limit and couldn&#x27;t be delivered.
+The Temporal Service terminates the Workflow Execution in response.
+See <a href="/troubleshooting/blob-size-limit-error" class="">Troubleshoot the BlobSizeLimitError</a>.</li>
+<li class=""><code>PayloadsTooLarge</code>: A Payload or Memo in the Workflow Task response exceeded the Namespace size limit, so the Worker failed the Workflow Task as retryable before sending it.
+See <a href="/troubleshooting/blob-size-limit-error#payload-size-limit" class="">Troubleshoot the BlobSizeLimitError</a>.</li>
+<li class=""><code>RequestTooLarge</code>: The whole Workflow Task completion exceeded the Namespace limit on the size of a single request.
+The Worker failed the Workflow Task instead of sending a request the Temporal Service would reject, and the Temporal Service retries the Workflow Task.
+See <a href="/troubleshooting/execution-failures#request-too-large" class="">Request too large</a>.</li>
+<li class=""><code>WorkflowError</code>: The Workflow Task failed for any other reason.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_execution_latency"><code>workflow_task_execution_latency</code><a href="#workflow_task_execution_latency" class="hash-link" aria-label="Direct link to workflow_task_execution_latency" title="Direct link to workflow_task_execution_latency" translate="no">​</a></h3>
+<p>Time to run a Workflow Task Execution.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_queue_poll_empty"><code>workflow_task_queue_poll_empty</code><a href="#workflow_task_queue_poll_empty" class="hash-link" aria-label="Direct link to workflow_task_queue_poll_empty" title="Direct link to workflow_task_queue_poll_empty" translate="no">​</a></h3>
+<p>A Workflow Worker polled a Task Queue and timed out without picking up a Workflow Task.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_queue_poll_succeed"><code>workflow_task_queue_poll_succeed</code><a href="#workflow_task_queue_poll_succeed" class="hash-link" aria-label="Direct link to workflow_task_queue_poll_succeed" title="Direct link to workflow_task_queue_poll_succeed" translate="no">​</a></h3>
+<p>A Workflow Worker polled a Task Queue and successfully picked up a Workflow Task.</p>
+<ul>
+<li class="">Type: Counter</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_replay_latency"><code>workflow_task_replay_latency</code><a href="#workflow_task_replay_latency" class="hash-link" aria-label="Direct link to workflow_task_replay_latency" title="Direct link to workflow_task_replay_latency" translate="no">​</a></h3>
+<p>Time the Worker spends replaying Event History to catch up before running a Workflow Task.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code>, <code>workflow_type</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow_task_schedule_to_start_latency"><code>workflow_task_schedule_to_start_latency</code><a href="#workflow_task_schedule_to_start_latency" class="hash-link" aria-label="Direct link to workflow_task_schedule_to_start_latency" title="Direct link to workflow_task_schedule_to_start_latency" translate="no">​</a></h3>
+<p>The Schedule-To-Start time of a Workflow Task.</p>
+<ul>
+<li class="">Type: Histogram</li>
+<li class="">Available in: Core, Go, Java</li>
+<li class="">Tags: <code>namespace</code>, <code>task_queue</code></li>
+</ul></div>

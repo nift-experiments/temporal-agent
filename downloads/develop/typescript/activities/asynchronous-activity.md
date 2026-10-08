@@ -1,0 +1,59 @@
+# Asynchronous Activity - TypeScript SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Asynchronously complete an Activity in Temporal by enabling the Activity Function to return before the Activity Execution finishes, using AsyncCompletionClient.
+
+## Asynchronously complete an Activity 
+
+[Asynchronous Activity Completion](/activity-execution#asynchronous-activity-completion) enables the Activity Function to return without the Activity Execution completing.
+
+There are three steps to follow:
+
+1. The Activity provides the external system with identifying information needed to complete the Activity Execution.
+   Identifying information can be a [Task Token](/activity-execution#task-token), or a combination of Namespace, Workflow Id, and Activity Id.
+2. The Activity Function completes in a way that identifies it as waiting to be completed by an external system.
+3. The Temporal Client is used to Heartbeat and complete the Activity.
+
+To asynchronously complete an Activity, call [`AsyncCompletionClient.complete`](https://typescript.temporal.io/api/classes/client.AsyncCompletionClient#complete).
+
+<!--SNIPSTART typescript-activity-complete-async -->
+[activities-examples/src/activities/async-completion.ts](https://github.com/temporalio/samples-typescript/blob/main/activities-examples/src/activities/async-completion.ts)
+```ts
+import { CompleteAsyncError, activityInfo } from '@temporalio/activity';
+import { Client } from '@temporalio/client';
+
+export async function doSomethingAsync(): Promise<string> {
+  const taskToken = activityInfo().taskToken;
+  setTimeout(() => doSomeWork(taskToken), 1000);
+  throw new CompleteAsyncError();
+}
+
+// this work could be done in a different process or on a different machine
+async function doSomeWork(taskToken: Uint8Array): Promise<void> {
+  const client = new Client();
+  // does some work...
+  await client.activity.complete(taskToken, "Job's done!");
+}
+```
+<!--SNIPEND-->
+
+## Local Activities 
+
+To call [Local Activities](/local-activity) in TypeScript, use [`proxyLocalActivities`](https://typescript.temporal.io/api/namespaces/workflow/#proxylocalactivities).
+
+```ts
+import * as workflow from '@temporalio/workflow';
+
+const { getEnvVar } = workflow.proxyLocalActivities({
+  startToCloseTimeout: '2 seconds',
+});
+
+export async function yourWorkflow(): Promise<void> {
+  const someSetting = await getEnvVar('SOME_SETTING');
+  // ...
+}
+```
+
+Local Activities must be registered with the Worker the same way non-local Activities are.

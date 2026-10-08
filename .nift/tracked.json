@@ -1,23 +1,218 @@
 {
   "tracked": [
     {
-      "name": "cli/setup-cli/index",
-      "title": "Install and configure the CLI",
+      "name": "ai/index",
+      "title": "Durable AI",
       "template": "templates/raw.html"
     },
     {
-      "name": "cloud/connectivity/aws-connectivity/index",
-      "title": "AWS PrivateLink connectivity",
+      "name": "best-practices/cloud-access-control/index",
+      "title": "Managing Temporal Cloud access control",
       "template": "templates/raw.html"
     },
     {
-      "name": "demos/activity-retry-simulator/index",
-      "title": "Visualize an Activity Retry Policy with timeouts",
+      "name": "best-practices/cost-governance/index",
+      "title": "Cost governance on Temporal Cloud",
       "template": "templates/raw.html"
     },
     {
-      "name": "develop/environment-configuration/index",
-      "title": "Environment configuration",
+      "name": "best-practices/cost-optimization/index",
+      "title": "Workflow cost optimization",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/error-handling/index",
+      "title": "Error handling",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/index",
+      "title": "Best practices",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/knowledge-hub/index",
+      "title": "Knowledge Hub",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/managing-aps-limits/index",
+      "title": "Managing Actions per Second (APS) limits in Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/managing-namespace/index",
+      "title": "Namespace best practices",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/multi-tenant-patterns/index",
+      "title": "Multi-tenant application patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/pre-production-testing/index",
+      "title": "Pre-production testing",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/security-controls/index",
+      "title": "Security controls for Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/worker-alerting/index",
+      "title": "Alerting on Worker metrics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "best-practices/worker/index",
+      "title": "Worker deployment and performance",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/common-operations/index",
+      "title": "CLI basics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/cloud/index",
+      "title": "Use with Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/activity/index",
+      "title": "Temporal CLI activity command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/batch/index",
+      "title": "Temporal CLI batch command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/account/index",
+      "title": "Temporal CLI cloud account command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/apikey/index",
+      "title": "Temporal CLI cloud apikey command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/async-operation/index",
+      "title": "Temporal CLI cloud async-operation command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/connectivity/index",
+      "title": "Temporal CLI cloud connectivity command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/custom-role/index",
+      "title": "Temporal CLI cloud custom-role command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/index",
+      "title": "Temporal CLI cloud command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/login/index",
+      "title": "Temporal CLI cloud login command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/logout/index",
+      "title": "Temporal CLI cloud logout command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/namespace/index",
+      "title": "Temporal CLI cloud namespace command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/nexus/index",
+      "title": "Temporal CLI cloud nexus command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/project/index",
+      "title": "Temporal CLI cloud project command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/region/index",
+      "title": "Temporal CLI cloud region command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/service-account/index",
+      "title": "Temporal CLI cloud service-account command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/user-group/index",
+      "title": "Temporal CLI cloud user-group command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/user/index",
+      "title": "Temporal CLI cloud user command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/cloud/whoami/index",
+      "title": "Temporal CLI cloud whoami command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/config/index",
+      "title": "Temporal CLI config command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/env/index",
+      "title": "Temporal CLI env command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/index",
+      "title": "Temporal CLI command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/nexus/index",
+      "title": "Temporal CLI nexus command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/operator/index",
+      "title": "Temporal CLI operator command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/schedule/index",
+      "title": "Temporal CLI schedule command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/server/index",
+      "title": "Temporal CLI server command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/task-queue/index",
+      "title": "Temporal CLI task-queue command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/command-reference/worker/index",
+      "title": "Temporal CLI worker command reference",
       "template": "templates/raw.html"
     },
     {
@@ -26,13 +221,3663 @@
       "template": "templates/raw.html"
     },
     {
-      "name": "develop/python/workflows/index",
-      "title": "Workflows - Python SDK",
+      "name": "cli/index",
+      "title": "Temporal CLI",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cli/setup-cli/index",
+      "title": "Install and configure the CLI",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/audit-logs-aws/index",
+      "title": "Audit Logs - AWS Kinesis",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/audit-logs-gcp/index",
+      "title": "Audit Logs - GCP Pub/Sub",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/audit-logs/index",
+      "title": "Audit Logs",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/export/aws-export-s3/index",
+      "title": "Exporting Workflow Event History to AWS S3",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/actions-usage/index",
+      "title": "Usage dashboards",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/billing-api/index",
+      "title": "Cloud Billing API",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/billing/index",
+      "title": "Billing Center",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/billing-and-usage/index",
+      "title": "Billing and usage management",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/capacity-modes/index",
+      "title": "Capacity modes",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/connectivity/aws-connectivity/index",
+      "title": "AWS PrivateLink connectivity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/connectivity/gcp-connectivity/index",
+      "title": "Google Private Service Connect connectivity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/connectivity/index",
+      "title": "Connectivity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/connectivity/ip-addresses/index",
+      "title": "Temporal Cloud IP addresses",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/export/index",
+      "title": "Workflow History Export",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/export/gcp-export-gcs/index",
+      "title": "Exporting Workflow Event History to GCS",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/api-keys/index",
+      "title": "Manage API keys",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/certificates/index",
+      "title": "Authenticate with mTLS certificates",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/get-started/index",
+      "title": "Get started with Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/namespaces/index",
+      "title": "Namespaces",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/get-started/users-invite/index",
+      "title": "User management",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/architecture-patterns/index",
+      "title": "Architecture patterns for Active-Passive and Active-Active HA/DR",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/enable/index",
+      "title": "Enable and manage High Availability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/failovers/index",
+      "title": "Failovers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/failovers/manage/index",
+      "title": "Manage failovers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/ha-connectivity/index",
+      "title": "Connectivity for High Availability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/index",
+      "title": "High Availability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/high-availability/monitoring/index",
+      "title": "Monitoring High Availability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/index",
+      "title": "Temporal Cloud guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/custom-roles/index",
+      "title": "Manage custom roles",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/index",
+      "title": "Account access",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/permissions-reference/index",
+      "title": "Permissions reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/roles-and-permissions/index",
+      "title": "Roles and permissions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/saml/index",
+      "title": "SAML authentication",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/scim/index",
+      "title": "SCIM user management",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/service-accounts/index",
+      "title": "Manage service accounts",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/user-groups/index",
+      "title": "Manage user groups",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/manage-access/users/index",
+      "title": "Manage users",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/openmetrics/api-reference/index",
+      "title": "OpenMetrics API reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/openmetrics/faq/index",
+      "title": "OpenMetrics FAQ",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/openmetrics/index",
+      "title": "Set up Cloud metrics with OpenMetrics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/openmetrics/metrics-integrations/index",
+      "title": "Metrics integrations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/openmetrics/metrics-reference/index",
+      "title": "OpenMetrics metrics reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/metrics/sdk-metrics-setup/index",
+      "title": "Set up SDK metrics with Prometheus and Grafana",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/migrate/automated/index",
+      "title": "Automated migration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/migrate/estimate-actions/index",
+      "title": "Estimate Actions for migration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/migrate/index",
+      "title": "Migrate",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/migrate/manual/index",
+      "title": "Manual migration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/migrate/migrate-within-cloud/index",
+      "title": "Migrate between regions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/monitor/index",
+      "title": "Monitor Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/index",
+      "title": "Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/latency-availability/index",
+      "title": "Latency and Availability - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/limits/index",
+      "title": "Limits - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/observability/index",
+      "title": "Observability - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/pricing/index",
+      "title": "Pricing for Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/nexus/security/index",
+      "title": "Security - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/notifications/index",
+      "title": "Receive Temporal Cloud notifications",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "ops/index",
+      "title": "Cloud Ops API",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/projects/index",
+      "title": "Projects",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/references/regions/awsregions/index",
+      "title": "awsregions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/references/regions/gcpregions/index",
+      "title": "gcpregions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/references/regions/private-service/index",
+      "title": "private-service",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/rpo-rto/index",
+      "title": "Outages and Recovery Objectives (RTO / RPO)",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/service-health/index",
+      "title": "Monitor Temporal Cloud service health",
       "template": "templates/raw.html"
     },
     {
       "name": "cloud/slo/index",
       "title": "Uptime, latency, and SLOs",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/account/index",
+      "title": "tcld account command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/apikey/index",
+      "title": "tcld apikey command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/connectivity-rule/index",
+      "title": "tcld connectivity-rule command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/feature/index",
+      "title": "tcld feature command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/generate-certificates/index",
+      "title": "tcld generate-certificates command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/index",
+      "title": "tcld command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/login/index",
+      "title": "tcld login command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/logout/index",
+      "title": "tcld logout command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/migration/index",
+      "title": "tcld migration command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/namespace/index",
+      "title": "tcld namespace command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/nexus/index",
+      "title": "tcld nexus command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/request/index",
+      "title": "tcld request command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/service-account/index",
+      "title": "tcld service-account command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/user-group/index",
+      "title": "tcld user-group command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/user/index",
+      "title": "tcld user command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/tcld/version/index",
+      "title": "tcld version command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/terraform-provider/index",
+      "title": "Temporal Cloud Terraform provider",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/worker-health/index",
+      "title": "Monitor Worker health",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "demos/activity-retry-simulator/index",
+      "title": "Visualize an Activity Retry Policy with timeouts",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "demos/priority-fairness-walkthrough/index",
+      "title": "Task Queue Priority and Fairness - Interactive Walkthrough",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "demos/serverless-workers/index",
+      "title": "Serverless Workers Interactive Demo",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "demos/standalone-activities/index",
+      "title": "Standalone Activities Demo",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/activity-dependency-injection/index",
+      "title": "Activity Dependency Injection",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/approval/index",
+      "title": "Approval Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/batch-iterator/index",
+      "title": "Batch Iterator",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/batch-processing-patterns/index",
+      "title": "Batch Processing Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/child-workflows/index",
+      "title": "Child Workflows Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/continue-as-new/index",
+      "title": "Continue-As-New Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/delayed-callback/index",
+      "title": "Delayed Callback (Webhooks)",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/delayed-retry/index",
+      "title": "Delayed Retry",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/delayed-start/index",
+      "title": "Delayed Start Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/distributed-transaction-patterns/index",
+      "title": "Distributed Transaction Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/downstream-rate-limiting/index",
+      "title": "Downstream Rate Limiting",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/eager-workflow-start/index",
+      "title": "Eager Workflow Start",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/early-return-local-activities/index",
+      "title": "Early Return + Local Activities",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/early-return/index",
+      "title": "Early Return (Update with Start)",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/entity-lifecycle-patterns/index",
+      "title": "Entity & Lifecycle Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/entity-workflow/index",
+      "title": "Entity Workflow Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/error-handling-patterns/index",
+      "title": "Error Handling & Retry Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/event-accumulator/index",
+      "title": "Event Accumulator Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/external-interaction-patterns/index",
+      "title": "External Interaction Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/fairness/index",
+      "title": "Fairness",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/fanout-child-workflows/index",
+      "title": "Fan-Out with Child Workflows",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/fast-slow-retries/index",
+      "title": "Fast/Slow Retries",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/fixed-count-retries/index",
+      "title": "Fixed Count of Retries",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/fixed-wall-time-retries/index",
+      "title": "Fixed Wall-Time Retries",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/index",
+      "title": "Temporal Design Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/local-activities/index",
+      "title": "Local Activities",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/long-running-activity/index",
+      "title": "Long-Running Activity - Tracking Progress and Handling Cancellation with Heartbeats",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/mapreduce-tree/index",
+      "title": "MapReduce Tree",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/non-retryable-errors/index",
+      "title": "Non-Retryable Errors",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/parallel-execution/index",
+      "title": "Parallel Execution",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/performance-latency-patterns/index",
+      "title": "Performance & Latency Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/pick-first/index",
+      "title": "Pick First Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/polling/index",
+      "title": "Polling External Services",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/priority-task-queues/index",
+      "title": "Priority",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/qos-throughput-patterns/index",
+      "title": "QoS & Throughput Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/request-response-via-updates/index",
+      "title": "Request-Response via Updates",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/resumable-activity/index",
+      "title": "Resumable Activity (AKA Pause On Failure)",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/retry-metrics/index",
+      "title": "Retry Alerting via Metrics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/saga-pattern/index",
+      "title": "Saga Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/signal-with-start/index",
+      "title": "Signal with Start Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/sliding-window/index",
+      "title": "Sliding Window",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/task-orchestration-patterns/index",
+      "title": "Task Orchestration Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/updatable-timer/index",
+      "title": "Updatable / Debounced Timer Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/worker-configuration-patterns/index",
+      "title": "Worker Configuration Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/worker-specific-taskqueue/index",
+      "title": "Worker-Specific Task Queues Pattern",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "design-patterns/workflow-messaging-patterns/index",
+      "title": "Workflow Messaging Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity completion - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/basics/index",
+      "title": "Activity basics - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/benign-exceptions/index",
+      "title": "Benign exceptions - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/dynamic-activity/index",
+      "title": "Dynamic Activity - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/execution/index",
+      "title": "Activity Execution - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/index",
+      "title": "Activities - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities .NET Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/activities/timeouts/index",
+      "title": "Activity Timeouts - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/data-handling/data-conversion/index",
+      "title": "Payload conversion - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/data-handling/data-encryption/index",
+      "title": "Payload encryption - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/data-handling/index",
+      "title": "Data handling - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/debugging/index",
+      "title": "Debugging - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/error-handling/index",
+      "title": "Error handling - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/index",
+      "title": "Best practices - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/best-practices/testing-suite/index",
+      "title": "Testing - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/client/index",
+      "title": "Client - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/client/temporal-client/index",
+      "title": "Temporal Client - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/index",
+      "title": ".NET SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/nexus/feature-guide/index",
+      "title": "Temporal Nexus - .NET SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/nexus/index",
+      "title": "Nexus - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/nexus/quickstart/index",
+      "title": "Nexus .NET Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/nexus/standalone-operations/index",
+      "title": "Standalone Nexus Operations - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/platform/enriching-ui/index",
+      "title": "Enriching the user interface - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/platform/index",
+      "title": "Platform - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/platform/observability/index",
+      "title": "Observability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/set-up-your-local-dotnet/index",
+      "title": "Set up your local with the .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/index",
+      "title": "Workers - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/interceptors/index",
+      "title": "Interceptors - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/run-worker-process/index",
+      "title": "Run a Worker - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workers/serverless-workers/index",
+      "title": "Serverless Workers - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/basics/index",
+      "title": "Workflow basics - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/cancellation/index",
+      "title": "Cancellation - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/child-workflows/index",
+      "title": "Child Workflows - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/continue-as-new/index",
+      "title": "Continue-As-New - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/dynamic-workflow/index",
+      "title": "Dynamic Workflow - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/index",
+      "title": "Workflows - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/message-passing/index",
+      "title": "Message passing - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/schedules/index",
+      "title": "Schedules - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/timeouts/index",
+      "title": "Workflow Timeouts - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/timers/index",
+      "title": "Timers - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/versioning/index",
+      "title": "Versioning - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/dotnet/workflows/workflow-streams/index",
+      "title": "Workflow Streams - .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/environment-configuration/index",
+      "title": "Environment configuration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity completion - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/basics/index",
+      "title": "Activity basics - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/benign-exceptions/index",
+      "title": "Benign exceptions - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/dynamic-activity/index",
+      "title": "Dynamic Activity - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/execution/index",
+      "title": "Activity Execution - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/index",
+      "title": "Activities - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities Go Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/activities/timeouts/index",
+      "title": "Activity Timeouts - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/context-propagation/index",
+      "title": "Context Propagation - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/data-handling/data-conversion/index",
+      "title": "Payload conversion - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/data-handling/data-encryption/index",
+      "title": "Payload encryption - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/data-handling/external-storage/index",
+      "title": "External Storage - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/data-handling/index",
+      "title": "Data handling - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/debugging/index",
+      "title": "Debugging - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/error-handling/index",
+      "title": "Error handling - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/index",
+      "title": "Best practices - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/multithreading/index",
+      "title": "Temporal Go SDK multithreading",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/best-practices/testing-suite/index",
+      "title": "Testing - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/client/index",
+      "title": "Client - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/client/namespaces/index",
+      "title": "Namespaces - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/client/temporal-client/index",
+      "title": "Temporal Client - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/index",
+      "title": "Go SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/integrations/google-adk/index",
+      "title": "Google ADK integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/integrations/index",
+      "title": "Integrations - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/integrations/opentelemetry-v2/index",
+      "title": "OpenTelemetry v2 integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/nexus/feature-guide/index",
+      "title": "Temporal Nexus - Go SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/nexus/index",
+      "title": "Nexus - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/nexus/quickstart/index",
+      "title": "Nexus Go Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/nexus/standalone-operations/index",
+      "title": "Standalone Nexus Operations - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/platform/enriching-ui/index",
+      "title": "Enriching the user interface - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/platform/index",
+      "title": "Platform - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/platform/observability/index",
+      "title": "Observability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/set-up-your-local-go/index",
+      "title": "Set up your local with the Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/worker-versioning-legacy/index",
+      "title": "Worker Versioning (Legacy) - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/index",
+      "title": "Workers - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/interceptors/index",
+      "title": "Interceptors",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/run-worker-process/index",
+      "title": "Run a Worker - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/serverless-workers/index",
+      "title": "Serverless Workers - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workers/sessions/index",
+      "title": "Worker Sessions - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/basics/index",
+      "title": "Workflow basics - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/cancellation/index",
+      "title": "Cancel a Workflow - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/child-workflows/index",
+      "title": "Child Workflows - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/continue-as-new/index",
+      "title": "Continue-As-New - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/dynamic-workflow/index",
+      "title": "Dynamic Workflow - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/index",
+      "title": "Workflows - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/message-passing/index",
+      "title": "Workflow message passing - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/schedules/index",
+      "title": "Schedules - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/selectors/index",
+      "title": "Selectors - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/side-effects/index",
+      "title": "Side Effects - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/timeouts/index",
+      "title": "Workflow Timeouts - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/timers/index",
+      "title": "Timers - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/versioning/index",
+      "title": "Versioning - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/go/workflows/workflow-streams/index",
+      "title": "Workflow Streams - Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/index",
+      "title": "Develop durable applications with Temporal SDKs",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity completion - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/basics/index",
+      "title": "Activity basics - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/benign-exceptions/index",
+      "title": "Benign exceptions - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/execution/index",
+      "title": "Activity Execution - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/index",
+      "title": "Activities - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities Java Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/activities/timeouts/index",
+      "title": "Activity Timeouts - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/data-handling/data-conversion/index",
+      "title": "Payload conversion - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/data-handling/data-encryption/index",
+      "title": "Payload encryption - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/data-handling/external-storage/index",
+      "title": "External Storage - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/data-handling/index",
+      "title": "Data handling - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/debugging/index",
+      "title": "Debugging - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/error-handling/index",
+      "title": "Error handling - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/index",
+      "title": "Best practices - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/best-practices/testing-suite/index",
+      "title": "Testing - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/client/index",
+      "title": "Client - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/client/namespaces/index",
+      "title": "Namespaces - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/client/temporal-client/index",
+      "title": "Temporal Client - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/index",
+      "title": "Java SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/integrations/index",
+      "title": "Integrations - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/integrations/spring-ai/index",
+      "title": "Spring AI integration - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/integrations/spring-boot-integration/index",
+      "title": "Spring Boot integration - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/nexus/feature-guide/index",
+      "title": "Temporal Nexus - Java SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/nexus/index",
+      "title": "Nexus - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/nexus/quickstart/index",
+      "title": "Nexus Java Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/nexus/standalone-operations/index",
+      "title": "Standalone Nexus Operations - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/platform/enriching-ui/index",
+      "title": "Enriching the user interface - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/platform/index",
+      "title": "Platform - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/platform/observability/index",
+      "title": "Observability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/set-up-your-local-java/index",
+      "title": "Set up your local with the Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/worker-versioning-legacy/index",
+      "title": "Worker Versioning (Legacy) - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/index",
+      "title": "Workers - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/interceptors/index",
+      "title": "Interceptors",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/run-worker-process/index",
+      "title": "Run a Worker - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workers/serverless-workers/index",
+      "title": "Serverless Workers - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/basics/index",
+      "title": "Workflow basics - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/cancellation/index",
+      "title": "Interrupt a Workflow Execution - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/child-workflows/index",
+      "title": "Child Workflows - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/continue-as-new/index",
+      "title": "Continue-As-New - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/index",
+      "title": "Workflows - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/message-passing/index",
+      "title": "Workflow message passing - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/schedules/index",
+      "title": "Schedules - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/side-effects/index",
+      "title": "Side Effects - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/timeouts/index",
+      "title": "Workflow Timeouts - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/timers/index",
+      "title": "Timers - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/versioning/index",
+      "title": "Versioning - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/java/workflows/workflow-streams/index",
+      "title": "Workflow Streams - Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity Completion - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/activities/basics/index",
+      "title": "Activity basics - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/activities/execution/index",
+      "title": "Activity Execution - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/activities/index",
+      "title": "Activities - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/activities/timeouts/index",
+      "title": "Activity Timeouts - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/best-practices/debugging/index",
+      "title": "Debugging - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/best-practices/index",
+      "title": "Best practices - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/best-practices/testing-suite/index",
+      "title": "Testing - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/client/index",
+      "title": "Client - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/client/temporal-client/index",
+      "title": "Temporal Client - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/index",
+      "title": "PHP SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/platform/enriching-ui/index",
+      "title": "Enriching the user interface - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/platform/index",
+      "title": "Platform - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/platform/observability/index",
+      "title": "Observability - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/set-up-your-local-php/index",
+      "title": "Set up your local development with the PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workers/index",
+      "title": "Workers - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workers/run-worker-process/index",
+      "title": "Run Worker processes - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/basics/index",
+      "title": "Workflow Basics - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/cancellation/index",
+      "title": "Cancel a Workflow - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/child-workflows/index",
+      "title": "Child Workflows - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/continue-as-new/index",
+      "title": "Continue-As-New - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/index",
+      "title": "Workflows - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/message-passing/index",
+      "title": "Workflow message passing - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/schedules/index",
+      "title": "Schedules - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/side-effects/index",
+      "title": "Side Effects - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/timeouts/index",
+      "title": "Workflow Timeouts - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/timers/index",
+      "title": "Timers - PHP SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/php/workflows/versioning/index",
+      "title": "Versioning - PHP SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/plugins-guide/index",
+      "title": "Plugins guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity completion - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/basics/index",
+      "title": "Activity basics - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/benign-exceptions/index",
+      "title": "Benign exceptions - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/execution/index",
+      "title": "Activity Execution - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/index",
+      "title": "Activities - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities Python Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/activities/timeouts/index",
+      "title": "Activity Timeouts - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/data-handling/data-conversion/index",
+      "title": "Payload conversion - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/data-handling/data-encryption/index",
+      "title": "Payload encryption - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/data-handling/external-storage/index",
+      "title": "External Storage - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/data-handling/index",
+      "title": "Data handling - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/debugging/index",
+      "title": "Debugging - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/error-handling/index",
+      "title": "Error handling - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/index",
+      "title": "Best practices - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/python-sdk-sandbox/index",
+      "title": "Temporal Python SDK sandbox environment",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/python-sdk-sync-vs-async/index",
+      "title": "Temporal Python SDK synchronous versus asynchronous Activity implementations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/best-practices/testing-suite/index",
+      "title": "Testing - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/client/index",
+      "title": "Client - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/client/temporal-client/index",
+      "title": "Temporal Client - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/index",
+      "title": "Python SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/deepagents/index",
+      "title": "Deep Agents integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/google-adk/index",
+      "title": "Google ADK integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/google-genai/index",
+      "title": "Google GenAI integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/index",
+      "title": "Integrations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/langgraph/index",
+      "title": "LangGraph integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/langsmith/index",
+      "title": "LangSmith integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/openai-agents/index",
+      "title": "OpenAI Agents SDK integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/integrations/strands-agents/index",
+      "title": "Strands Agents integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/nexus/feature-guide/index",
+      "title": "Temporal Nexus - Python SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/nexus/index",
+      "title": "Nexus - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/nexus/quickstart/index",
+      "title": "Nexus Python Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/nexus/standalone-operations/index",
+      "title": "Standalone Nexus Operations - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/platform/enriching-ui/index",
+      "title": "Enriching the user interface - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/platform/index",
+      "title": "Platform - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/platform/observability/index",
+      "title": "Observability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/set-up-your-local-python/index",
+      "title": "Set up your local with the Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/index",
+      "title": "Workers - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/interceptors/index",
+      "title": "Interceptors - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/run-worker-process/index",
+      "title": "Run a Worker - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/serverless-workers/agentcore/index",
+      "title": "Serverless Workers on Amazon Bedrock AgentCore Runtime - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workers/serverless-workers/index",
+      "title": "Serverless Workers - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/basics/index",
+      "title": "Workflow Basics - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/cancellation/index",
+      "title": "Cancellation - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/child-workflows/index",
+      "title": "Child Workflows - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/continue-as-new/index",
+      "title": "Continue-As-New - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/index",
+      "title": "Workflows - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/message-passing/index",
+      "title": "Workflow message passing - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/schedules/index",
+      "title": "Schedules - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/timeouts/index",
+      "title": "Workflow Timeouts - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/timers/index",
+      "title": "Timers - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/versioning/index",
+      "title": "Versioning - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/worker-versioning-legacy/index",
+      "title": "Worker Versioning (Legacy) - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/python/workflows/workflow-streams/index",
+      "title": "Workflow Streams - Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity completion - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/basics/index",
+      "title": "Activity basics - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/benign-exceptions/index",
+      "title": "Benign exceptions - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/dynamic-activity/index",
+      "title": "Dynamic Activities - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/execution/index",
+      "title": "Activity Execution - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/index",
+      "title": "Activities - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities Ruby Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/activities/timeouts/index",
+      "title": "Activity Timeouts - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/data-handling/data-conversion/index",
+      "title": "Payload conversion - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/data-handling/data-encryption/index",
+      "title": "Payload encryption - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/data-handling/index",
+      "title": "Data handling - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/debugging/index",
+      "title": "Debugging - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/error-handling/index",
+      "title": "Error handling - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/index",
+      "title": "Best practices - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/best-practices/testing-suite/index",
+      "title": "Testing - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/client/index",
+      "title": "Client - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/client/temporal-client/index",
+      "title": "Temporal Client - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/index",
+      "title": "Ruby SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/integrations/index",
+      "title": "Integrations - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/integrations/rails-integration/index",
+      "title": "Rails integration - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/platform/enriching-ui/index",
+      "title": "Enriching the user interface - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/platform/index",
+      "title": "Platform - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/platform/observability/index",
+      "title": "Observability - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/set-up-local-ruby/index",
+      "title": "Set up your local with the Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workers/index",
+      "title": "Workers - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workers/run-worker-process/index",
+      "title": "Run a Worker - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workers/serverless-workers/index",
+      "title": "Serverless Workers - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/basics/index",
+      "title": "Workflow basics - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/cancellation/index",
+      "title": "Cancellation - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/child-workflows/index",
+      "title": "Child Workflows - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/continue-as-new/index",
+      "title": "Continue-As-New - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/dynamic-workflow/index",
+      "title": "Dynamic Workflow - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/futures/index",
+      "title": "Workflow futures - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/index",
+      "title": "Workflows - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/message-passing/index",
+      "title": "Message passing - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/schedules/index",
+      "title": "Schedules - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/timeouts/index",
+      "title": "Workflow Timeouts - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/timers/index",
+      "title": "Timers - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/ruby/workflows/versioning/index",
+      "title": "Versioning - Ruby SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/run-a-development-server/index",
+      "title": "Run a development server",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/basics/index",
+      "title": "Activity basics - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/execution/index",
+      "title": "Activity Execution - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/index",
+      "title": "Activities - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities Rust Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/activities/timeouts/index",
+      "title": "Activity Timeouts - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/client/index",
+      "title": "Client - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/client/temporal-client/index",
+      "title": "Temporal Client - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/index",
+      "title": "Rust SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/nexus/feature-guide/index",
+      "title": "Nexus feature guide - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/nexus/index",
+      "title": "Nexus - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/quickstart/index",
+      "title": "Quickstart - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workers/index",
+      "title": "Workers - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workers/serverless-workers/index",
+      "title": "Serverless Workers - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workers/worker-process/index",
+      "title": "Run a Worker - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/basics/index",
+      "title": "Workflow basics - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/cancellation/index",
+      "title": "Cancellation - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/child-workflows/index",
+      "title": "Child Workflows - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/continue-as-new/index",
+      "title": "Continue-As-New - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/index",
+      "title": "Workflows - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/message-passing/index",
+      "title": "Workflow message passing - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/timeouts/index",
+      "title": "Workflow Timeouts - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/rust/workflows/timers/index",
+      "title": "Timers - Rust SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/safe-deployments/index",
+      "title": "Safely deploying changes to Workflow code",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/task-queue-priority-fairness/index",
+      "title": "Task Queue Priority and Fairness",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/asynchronous-activity/index",
+      "title": "Asynchronous Activity - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/basics/index",
+      "title": "Activity basics - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/benign-exceptions/index",
+      "title": "Benign exceptions - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/execution/index",
+      "title": "Activity Execution - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/index",
+      "title": "Activities - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/standalone-activities/index",
+      "title": "Standalone Activities Feature Guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/standalone-activities-quickstart/index",
+      "title": "Standalone Activities TypeScript Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/activities/timeouts/index",
+      "title": "Activity Timeouts - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/data-handling/data-conversion/index",
+      "title": "Payload conversion - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/data-handling/data-encryption/index",
+      "title": "Payload encryption - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/data-handling/external-storage/index",
+      "title": "External Storage - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/data-handling/index",
+      "title": "Data handling - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/debugging/index",
+      "title": "Debugging - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/entity-pattern/index",
+      "title": "Entity pattern - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/index",
+      "title": "Best practices - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/best-practices/testing-suite/index",
+      "title": "Testing - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/client/index",
+      "title": "Client - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/client/namespaces/index",
+      "title": "Namespaces - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/client/temporal-client/index",
+      "title": "Temporal Client - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/index",
+      "title": "TypeScript SDK developer guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/install-typescript-sdk/index",
+      "title": "Install the TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/ai-sdk/index",
+      "title": "AI SDK by Vercel integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/google-adk-agents/index",
+      "title": "Google ADK integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/index",
+      "title": "Integrations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/langsmith/index",
+      "title": "LangSmith integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/openai-agents/index",
+      "title": "OpenAI Agents SDK integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/integrations/strands-agents/index",
+      "title": "Strands Agents integration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/nexus/feature-guide/index",
+      "title": "Temporal Nexus - TypeScript SDK feature guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/nexus/index",
+      "title": "Nexus - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/nexus/quickstart/index",
+      "title": "Nexus TypeScript Quickstart",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/nexus/standalone-operations/index",
+      "title": "Standalone Nexus Operations - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/platform/enriching-ui/index",
+      "title": "Enriching the user interface - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/platform/index",
+      "title": "Platform - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/platform/observability/index",
+      "title": "Observability - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/set-up-your-local-typescript/index",
+      "title": "Set up your local with the TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/worker-versioning-legacy/index",
+      "title": "Worker Versioning (Legacy) - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/index",
+      "title": "Workers - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/interceptors/index",
+      "title": "Manage Interceptors - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/run-worker-process/index",
+      "title": "Run a Worker - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workers/serverless-workers/index",
+      "title": "Serverless Workers - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/basics/index",
+      "title": "Workflow basics - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/cancellation/index",
+      "title": "Cancel a Workflow - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/cancellation-scopes/index",
+      "title": "Cancellation scopes - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/child-workflows/index",
+      "title": "Child Workflows - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/continue-as-new/index",
+      "title": "Continue-As-New - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/index",
+      "title": "Workflows - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/message-passing/index",
+      "title": "Workflow message passing - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/schedules/index",
+      "title": "Schedules - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/timeouts/index",
+      "title": "Workflow Timeouts - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/timers/index",
+      "title": "Timers - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/versioning/index",
+      "title": "Versioning - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/typescript/workflows/workflow-streams/index",
+      "title": "Workflow Streams - TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/configuration/index",
+      "title": "Worker performance options",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/index",
+      "title": "Worker performance",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/metrics/index",
+      "title": "Performance metrics for tuning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/runtime-tuning/index",
+      "title": "Worker runtime performance tuning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/task-queues/index",
+      "title": "Task Queue performance",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-performance/workflow-cache/index",
+      "title": "Workflow cache tuning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "develop/worker-tuning-reference/index",
+      "title": "Worker tuning quick reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activities/index",
+      "title": "What is a Temporal Activity?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-definition/index",
+      "title": "Activity Definition",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-execution/index",
+      "title": "Activity Execution",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/delete/index",
+      "title": "Delete an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/index",
+      "title": "Activity Operations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/pause/index",
+      "title": "Pause an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/request-cancel/index",
+      "title": "Request Cancel for an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/reset/index",
+      "title": "Reset an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/terminate/index",
+      "title": "Terminate an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/unpause/index",
+      "title": "Unpause an Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "activity-operations/update-options/index",
+      "title": "Update Activity Options",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "local-activity/index",
+      "title": "Local Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "standalone-activity/index",
+      "title": "Standalone Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-activity/index",
+      "title": "Workflow Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/application-failures/index",
+      "title": "Application failures",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/architecture/how-temporal-works/index",
+      "title": "How Temporal works",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/architecture/temporal-architecture/index",
+      "title": "Temporal architecture",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/architecture/temporal-sdks/index",
+      "title": "About Temporal SDKs",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "child-workflows/index",
+      "title": "Child Workflows",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "parent-close-policy/index",
+      "title": "Parent Close Policy",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/context-propagation/index",
+      "title": "Context Propagation",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "codec-server/index",
+      "title": "Codec Server",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "dataconversion/index",
+      "title": "How does Temporal handle application data?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "default-custom-data-converters/index",
+      "title": "Default and Custom Data Converters",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "external-storage/index",
+      "title": "External Storage",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "failure-converter/index",
+      "title": "Failure Converter",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "key-management/index",
+      "title": "Key management",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "payload-codec/index",
+      "title": "Payload Codec",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "payload-converter/index",
+      "title": "Payload Converter",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "remote-data-encoding/index",
+      "title": "Remote data encoding",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/detecting-activity-failures/index",
+      "title": "Detecting Activity failures",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/detecting-workflow-failures/index",
+      "title": "Detecting Workflow failures",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/event-history-dotnet/index",
+      "title": "Event History walkthrough with the .NET SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/index",
+      "title": "Event History",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/event-history-go/index",
+      "title": "Event History walkthrough with the Go SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/event-history-java/index",
+      "title": "Event History walkthrough with the Java SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/event-history-python/index",
+      "title": "Event History walkthrough with the Python SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/event-history/event-history-typescript/index",
+      "title": "Event History walkthrough with the TypeScript SDK",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/extensibility/index",
+      "title": "Extensibility",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/failures-and-error-handling/index",
+      "title": "Failures and error handling",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/index",
+      "title": "Temporal Encyclopedia",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/interceptors/index",
+      "title": "Interceptors",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "global-namespace/index",
+      "title": "Global Namespace",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "namespaces/index",
+      "title": "Temporal Namespace",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/nexgen/index",
+      "title": "NexGen",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/endpoints/index",
+      "title": "Nexus Endpoints",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/error-handling/index",
+      "title": "Error Handling - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/execution-debugging/index",
+      "title": "Execution Debugging - Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/index",
+      "title": "Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/metrics/index",
+      "title": "Nexus Metrics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/operations/index",
+      "title": "Nexus Operations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/patterns/index",
+      "title": "Nexus Patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/registry/index",
+      "title": "Nexus Registry",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/security/index",
+      "title": "Security in Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/services/index",
+      "title": "Nexus services",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/standalone-activity/index",
+      "title": "Nexus Standalone Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "standalone-nexus-operation/index",
+      "title": "Standalone Nexus Operation",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "nexus/temporal-operation-handler/index",
+      "title": "Temporal Operation Handler",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/plugins/index",
+      "title": "Plugins",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/retry-policies/index",
+      "title": "What is a Temporal Retry Policy?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/temporal-client/index",
+      "title": "Temporal Client",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal/index",
+      "title": "What is Temporal?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/archival/index",
+      "title": "Archival",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/multi-cluster-replication/index",
+      "title": "Multi-Cluster Replication",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/persistence/index",
+      "title": "Persistence",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/temporal-server/index",
+      "title": "Temporal Server",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/configuration/index",
+      "title": "Temporal Service configuration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/index",
+      "title": "Temporal Service",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "temporal-service/visibility/index",
+      "title": "Visibility",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "dual-visibility/index",
+      "title": "Dual Visibility",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "list-filter/index",
+      "title": "List Filter",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "search-attribute/index",
+      "title": "Search Attributes",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "visibility/index",
+      "title": "Temporal Visibility",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/worker-versioning-legacy/index",
+      "title": "Worker versioning (legacy)",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "serverless-workers/aws-lambda/index",
+      "title": "Serverless Workers on AWS Lambda",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "serverless-workers/cloud-run/index",
+      "title": "Serverless Workers on GCP Cloud Run",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "serverless-workers/index",
+      "title": "Serverless Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "serverless-workers/agentcore/index",
+      "title": "Serverless Workers on Amazon Bedrock AgentCore Runtime",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "sticky-execution/index",
+      "title": "Sticky Execution",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "task-queue/naming/index",
+      "title": "Task Queues and naming best practices",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "task-queue/index",
+      "title": "Task Queues",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "task-routing/index",
+      "title": "Task Routing and Worker sessions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tasks/index",
+      "title": "Tasks",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/workers/worker-shutdown/index",
+      "title": "Worker Shutdown Behavior",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "worker-versioning/index",
+      "title": "Worker Versioning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workers/index",
+      "title": "What is a Temporal Worker?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/workflow/cancellation-and-termination/index",
+      "title": "Cancellation and Termination",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cron-job/index",
+      "title": "Temporal Cron Job",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "dynamic-handler/index",
+      "title": "Dynamic handler",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "handling-messages/index",
+      "title": "Handling Signals, Queries, & Updates",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "sending-messages/index",
+      "title": "Sending Signals, Queries, & Updates",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/workflow-message-passing/index",
+      "title": "Temporal Workflow message passing - Signals, Queries, & Updates",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-streams/index",
+      "title": "Workflow Streams",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "patching/index",
+      "title": "Patching",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "schedule/index",
+      "title": "Schedule",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-definition/index",
+      "title": "Temporal Workflow Definition",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/continue-as-new/index",
+      "title": "Continue-As-New",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/event/index",
+      "title": "Events and Event History",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/limits/index",
+      "title": "Workflow Execution limits",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/timers-delays/index",
+      "title": "Timers and Start Delays",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/index",
+      "title": "Temporal Workflow Execution overview",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflow-execution/workflowid-runid/index",
+      "title": "Workflow Id and Run Id",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "workflows/index",
+      "title": "Temporal Workflow",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "encyclopedia/workflow/workflow-pause/index",
+      "title": "Workflow Pause",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/actions/index",
+      "title": "Temporal Cloud Actions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/index",
+      "title": "Overview",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/limits/index",
+      "title": "System limits",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "cloud/pricing/index",
+      "title": "Temporal Cloud pricing",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/regions/index",
+      "title": "Service regions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/security/index",
+      "title": "Security model",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/cloud/support/index",
+      "title": "Services, support, and training",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/cancellation-and-termination/index",
+      "title": "Cancellation and termination",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/child-workflows/index",
+      "title": "Child Workflows",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/cloud-vs-self-hosted-features/index",
+      "title": "Temporal's production deployment features",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/core-primitives/index",
+      "title": "Core primitives",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/data-encryption/index",
+      "title": "Data encryption",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/index",
+      "title": "Temporal development and production features",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/job-queue/index",
+      "title": "Job queues",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/observability/index",
+      "title": "Observability",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/schedules/index",
+      "title": "Schedules",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/serverless-workers/index",
+      "title": "Serverless Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/nexus/index",
+      "title": "Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/timeouts-and-retries/index",
+      "title": "Timeouts and Retry Policies",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/features/workflow-message-passing/index",
+      "title": "Workflow message passing",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/index",
+      "title": "Evaluate Temporal",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/product-release-stages/index",
+      "title": "Temporal product release stages",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/understanding-temporal/index",
+      "title": "Understanding Temporal",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/use-cases-design-patterns/index",
+      "title": "Temporal use cases and design patterns",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "evaluate/why-temporal/index",
+      "title": "Why Temporal?",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "glossary/index",
+      "title": "Glossary",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/celery-to-standalone-activity/index",
+      "title": "Migrate a Celery task queue to a Temporal Standalone Activity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/durable-agent-on-agentcore/index",
+      "title": "Build a durable agent on Amazon Bedrock AgentCore",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/durable-gaming-sessions/index",
+      "title": "Build durable multiplayer game sessions with the actor model",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/entity-pattern-loyalty-points/index",
+      "title": "Build a customer loyalty program with Entity Workflows",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/index",
+      "title": "Guides",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/lock-shared-resources/index",
+      "title": "Build a distributed lock and semaphore with Workflow IDs",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/rate-limit-downstream-apis/index",
+      "title": "Rate-limit downstream APIs with separate Task Queues",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/recover-without-restart/index",
+      "title": "Pause a Workflow on failure and resume it after a fix",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/reliable-document-approvals/index",
+      "title": "Build a human-in-the-loop document approval Workflow",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/route-specialized-workloads/index",
+      "title": "Route GPU and high-memory Activities to dedicated Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/temporary-rate-limit-increases/index",
+      "title": "Temporarily increase Namespace capacity on Temporal Cloud",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "guides/worker-execution-affinity/index",
+      "title": "Run all of a Workflow's Activities on the same Worker",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "index",
+      "title": "Temporal Platform Documentation",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "integrations/index",
+      "title": "Integrations",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/data-encryption/index",
+      "title": "Codecs and Encryption",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/index",
+      "title": "Temporal Platform production deployments",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/archival/index",
+      "title": "Self-hosted Archival setup",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/production-checklist/index",
+      "title": "Temporal Platform's production readiness checklist",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/defaults/index",
+      "title": "Self-hosted Temporal Service defaults",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/deployment/index",
+      "title": "Deploying a Temporal Service",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/embedded-server/index",
+      "title": "Embedding Temporal server as a Go library",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/index",
+      "title": "Self-hosted Temporal Service guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/monitoring/index",
+      "title": "Monitor Temporal Platform metrics",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/multi-cluster-replication/index",
+      "title": "Self-hosted Multi-Cluster Replication",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/namespaces/index",
+      "title": "Managing Namespaces",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/security/index",
+      "title": "Temporal Platform security features",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/server-frontend-api-reference/index",
+      "title": "Server frontend API reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/self-hosted-guide/nexus/index",
+      "title": "Self-hosted Temporal Nexus",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/upgrade-server/index",
+      "title": "Upgrade the Temporal Server",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/custom-search-attributes/index",
+      "title": "Manage custom Search Attributes",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/dual-visibility/index",
+      "title": "Set up Dual Visibility",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/elasticsearch/index",
+      "title": "Integrate Elasticsearch or OpenSearch",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/index",
+      "title": "Self-hosted Visibility feature setup",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/legacy-standard/index",
+      "title": "Legacy standard Visibility configuration",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/migrate/index",
+      "title": "Migrate Visibility database",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/mysql/index",
+      "title": "Set up MySQL Visibility store",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/postgresql/index",
+      "title": "Set up PostgreSQL Visibility store",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "self-hosted-guide/visibility/sqlite/index",
+      "title": "Set up SQLite Visibility store",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/temporal-proxy/configure/index",
+      "title": "Configure the Temporal Proxy",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/temporal-proxy/deploy-kubernetes/index",
+      "title": "Deploy Temporal Proxy to Kubernetes",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/temporal-proxy/encrypt-payloads/index",
+      "title": "Encrypt payloads with Temporal Proxy",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/temporal-proxy/index",
+      "title": "Temporal Proxy",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/deploy-workers-to-aws-eks/index",
+      "title": "Quick launch - Deploying your Workers on Amazon EKS",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/index",
+      "title": "Temporal Worker deployments",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/kubernetes-controller/index",
+      "title": "Temporal Worker Controller",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/recover-pinned-workflows/index",
+      "title": "Recover pinned Workflows after a bad rollout",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/agentcore/index",
+      "title": "Deploy a Serverless Worker on Amazon Bedrock AgentCore Runtime",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/agentcore/self-hosted-setup/index",
+      "title": "Self-hosted setup for Serverless Workers on Amazon Bedrock AgentCore Runtime",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/aws-lambda/index",
+      "title": "Deploy a Serverless Worker on AWS Lambda",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/aws-lambda/local-development/index",
+      "title": "Test a Serverless Worker locally with LocalStack",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/aws-lambda/self-hosted-setup/index",
+      "title": "Self-hosted setup for Serverless Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/cloud-run/index",
+      "title": "Deploy a Serverless Worker on GCP Cloud Run",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/cloud-run/self-hosted-setup/index",
+      "title": "Self-hosted setup for Serverless Workers on GCP Cloud Run",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/serverless-workers/index",
+      "title": "Serverless Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/unversioned-to-versioned-migration/index",
+      "title": "Migrating from Unversioned to Versioned Temporal Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/worker-versioning/configure-worker/index",
+      "title": "Configure a Worker for Versioning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/worker-versioning/index",
+      "title": "Worker Versioning",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/worker-versioning/roll-out-and-pin/index",
+      "title": "Roll out and pin Workflows",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/worker-versioning/sunset-and-gc/index",
+      "title": "Sunset and garbage collection",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "production-deployment/worker-deployments/worker-versioning/upgrade-on-continue-as-new/index",
+      "title": "Upgrade on Continue-as-New",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "quickstarts/index",
+      "title": "Quickstarts",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/api-reference/index",
+      "title": "API reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/client-environment-configuration/index",
+      "title": "Client environment configuration reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/commands/index",
+      "title": "Temporal Commands reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/dynamic-configuration/index",
+      "title": "Temporal Service dynamic configuration reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/events/index",
+      "title": "Temporal Events reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/failures/index",
+      "title": "Temporal Failures reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/index",
+      "title": "Temporal Platform references",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/operation-list/index",
+      "title": "Temporal Cloud operations reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/sdk-metrics/index",
+      "title": "Temporal SDK metrics reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/server-options/index",
+      "title": "Temporal Server options reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/service-configuration/index",
+      "title": "Temporal Service configuration reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/service-metrics/index",
+      "title": "OSS Temporal Service metrics reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/web-ui-configuration/index",
+      "title": "Temporal Web UI configuration reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/web-ui-environment-variables/index",
+      "title": "Temporal Web UI environment variables reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "references/workflow-task-errors/index",
+      "title": "Workflow Task errors reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "security/index",
+      "title": "Temporal Platform security",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/activity/index",
+      "title": "tctl v1.17 activity command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/admin/index",
+      "title": "tctl v1.17 admin command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/batch/index",
+      "title": "tctl v1.17 batch command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/cluster/index",
+      "title": "tctl v1.17 cluster command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/dataconverter/index",
+      "title": "tctl v1.17 data-converter command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/index",
+      "title": "tctl v1.17 command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/namespace/index",
+      "title": "tctl v1.17 namespace command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/schedule/index",
+      "title": "tctl 1.17 schedule command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/taskqueue/index",
+      "title": "tctl v1.17 taskqueue command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "tctl-v1/workflow/index",
+      "title": "tctl v1.17 workflow command reference",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/blob-size-limit-error/index",
+      "title": "Troubleshoot payload and gRPC message size limit errors",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/deadline-exceeded-error/index",
+      "title": "Troubleshoot the deadline-exceeded error",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/execution-failures/index",
+      "title": "Troubleshoot Workflow and Activity execution failures",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/index",
+      "title": "Error handling and troubleshooting",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/last-connection-error/index",
+      "title": "Troubleshoot the failed reaching server error",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/performance-bottlenecks/index",
+      "title": "Performance bottlenecks troubleshooting guide",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/request-failures/index",
+      "title": "Troubleshoot request failures",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/schedule-missed-actions/index",
+      "title": "Troubleshoot missed Schedule Actions",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/serverless-workers/aws-lambda/index",
+      "title": "Troubleshoot Serverless Workers on AWS Lambda",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/serverless-workers/cloud-run/index",
+      "title": "Troubleshoot Serverless Workers on GCP Cloud Run",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/serverless-workers/index",
+      "title": "Troubleshoot Serverless Workers",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "troubleshooting/worker-capacity/index",
+      "title": "Troubleshoot Worker capacity",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "web-ui/index",
+      "title": "Temporal Web UI",
+      "template": "templates/raw.html"
+    },
+    {
+      "name": "with-ai/index",
+      "title": "Develop with AI",
       "template": "templates/raw.html"
     }
   ]

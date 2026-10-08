@@ -1,0 +1,27 @@
+# Timers - .NET SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Set a Durable Timer using the Temporal .NET SDK. Pause Workflow execution for days or months. Timers are persisted and highly resource-efficient using Workflow.DelayAsync.
+
+This page describes how to set a Durable Timer using the Temporal .NET SDK.
+
+A [Durable Timer](/workflow-execution/timers-delays) is used to pause the execution of a Workflow for a specified duration.
+A Workflow can sleep for days or even months.
+Timers are persisted, so even if your Worker or Temporal Service is down when the time period completes, as soon as your Worker and Temporal Service are back up, the Durable Timer call will resolve and your code will continue executing.
+
+Sleeping is a resource-light operation: it does not tie up the process, and you can run millions of Timers off a single Worker.
+
+To add a Timer in a Workflow, use `Workflow.DelayAsync`. This is like a deterministic form of `Task.Delay`.
+
+```csharp
+// Sleep for 3 days
+await Workflow.DelayAsync(TimeSpan.FromDays(3));
+```
+
+<!--  ## Skip time in tests 
+
+**How to skip time while testing Workflows using the .NET SDK**
+
+TODO(cretz): This should not be under a durable timers section -->

@@ -1,0 +1,136 @@
+<link rel="preload" as="image" href="/diagrams/temporal-worker-service.svg"/><div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/temporal-service/temporal-server.md">/temporal-service/temporal-server.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Temporal Server</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/temporal-service/temporal-server.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftemporal-service%2Ftemporal-server.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftemporal-service%2Ftemporal-server.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This page discusses the following:</p>
+<ul>
+<li class=""><a href="#frontend-service" class="">Frontend Service</a></li>
+<li class=""><a href="#history-service" class="">History Service</a></li>
+<li class=""><a href="#history-shard" class="">History Shard</a></li>
+<li class=""><a href="#matching-service" class="">Matching Service</a></li>
+<li class=""><a href="#worker-service" class="">Worker Service</a></li>
+<li class=""><a href="#retention-period" class="">Retention Period</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal-server">What is the Temporal Server?<a href="#temporal-server" class="hash-link" aria-label="Direct link to What is the Temporal Server?" title="Direct link to What is the Temporal Server?" translate="no">​</a></h2>
+<p>The Temporal Server consists of four independently scalable services:</p>
+<ul>
+<li class="">Frontend gateway: for rate limiting, routing, authorizing.</li>
+<li class="">History subsystem: maintains data (mutable state, queues, and timers).</li>
+<li class="">Matching subsystem: hosts Task Queues for dispatching.</li>
+<li class="">Worker Service: for internal background Workflows.</li>
+</ul>
+<p>For example, a real-life production deployment can have 5 Frontend, 15 History, 17 Matching, and 3 Worker Services per Temporal Service.</p>
+<p>The Temporal Server services can run independently or be grouped together into shared processes on one or more physical or virtual machines.
+For live (production) environments, we recommend that each service runs independently, because each one has different scaling requirements and troubleshooting becomes easier.
+The History, Matching, and Worker Services can scale horizontally within a Temporal Service.
+The Frontend Service scales differently than the others because it has no sharding or partitioning; it is just stateless.</p>
+<p>Each service is aware of the others, including scaled instances, through a membership protocol via <a href="https://github.com/temporalio/ringpop-go" target="_blank" rel="noopener noreferrer" class="">Ringpop</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="versions-and-support">Versions and support<a href="#versions-and-support" class="hash-link" aria-label="Direct link to Versions and support" title="Direct link to Versions and support" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_vXIg"><p>We release new versions of the Temporal SDKs and Temporal Server software independently of one another.
+That said, All SDK versions support all server versions.</p><p>To take advantage of bug fixes, performance improvements, and new features, please upgrade both SDK and servers to the latest versions on a regular cadence.</p></div></div>
+<p>All Temporal Server releases abide by the <a href="https://semver.org/" target="_blank" rel="noopener noreferrer" class="">Semantic Versioning Specification</a>.</p>
+<p>We support upgrade paths from every version beginning with Temporal v1.7.0.
+For details on upgrading your Temporal Service, see <a href="/self-hosted-guide/upgrade-server#upgrade-server" class="">Upgrade Server</a>.</p>
+<p>We provide maintenance support for previously published minor and major versions by continuing to release critical bug fixes related to security, the prevention of data loss, and reliability, whenever they are found.</p>
+<p>We aim to publish incremental upgrade guides for each minor and major version, which include specifics about dependency upgrades that we have tested for (such as Cassandra 3.0 -&gt; 3.11).</p>
+<p>We offer maintenance support of the last three <strong>minor</strong> versions after a release and do not plan to &quot;backport&quot; patches beyond that.</p>
+<p>We offer maintenance support of <strong>major</strong> versions for at least 12 months after a GA release, and we provide at least 6 months&#x27; notice before EOL/deprecating support.</p>
+<p><strong>Dependencies</strong></p>
+<p>Temporal offers official support for, and is tested against, dependencies with the exact versions described in the <code>go.mod</code> file of the corresponding release tag.
+(For example, <a href="https://github.com/temporalio/temporal/tree/v1.5.1" target="_blank" rel="noopener noreferrer" class="">v1.5.1</a> dependencies are documented in <a href="https://github.com/temporalio/temporal/blob/v1.5.1/go.mod" target="_blank" rel="noopener noreferrer" class="">the go.mod for v1.5.1</a>.)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="frontend-service">What is a Frontend Service?<a href="#frontend-service" class="hash-link" aria-label="Direct link to What is a Frontend Service?" title="Direct link to What is a Frontend Service?" translate="no">​</a></h2>
+<p>The Frontend Service is a stateless gateway service that exposes a strongly typed <a href="https://github.com/temporalio/api/blob/main/temporal/api/workflowservice/v1/service.proto" target="_blank" rel="noopener noreferrer" class="">Proto API</a>.
+The Frontend Service is responsible for rate limiting, authorizing, validating, and routing all inbound calls.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/temporal-frontend-service.svg&quot;,&quot;title&quot;:&quot;Frontend Service&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/temporal-frontend-service.svg" alt="Frontend Service" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Frontend Service</p></div></span>
+<p>Types of inbound calls include the following:</p>
+<ul>
+<li class=""><a href="/namespaces" class="">Namespace</a> CRUD</li>
+<li class="">External events</li>
+<li class="">Worker polls</li>
+<li class=""><a href="/temporal-service/visibility" class="">Visibility</a> requests</li>
+<li class=""><a href="/cli" class="">Temporal CLI</a> (the Temporal CLI) operations</li>
+<li class="">Calls from a remote Temporal Service related to <a href="/temporal-service/multi-cluster-replication" class="">Multi-Cluster Replication</a></li>
+</ul>
+<p>Every inbound request related to a Workflow Execution must have a Workflow Id, which is hashed for routing purposes.
+The Frontend Service has access to the hash rings that maintain service membership information, including how many nodes (instances of each service) are in the Temporal Service.</p>
+<p>Inbound call rate limiting is applied per host and per namespace.</p>
+<p>The Frontend Service talks to the Matching Service, History Service, Worker Service, the database, and Elasticsearch (if in use).</p>
+<ul>
+<li class="">It uses the grpcPort 7233 to host the service handler.</li>
+<li class="">It uses port 6933 for membership-related communication.</li>
+</ul>
+<p>Ports are configurable in the Temporal Service configuration.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="history-service">What is a History Service?<a href="#history-service" class="hash-link" aria-label="Direct link to What is a History Service?" title="Direct link to What is a History Service?" translate="no">​</a></h2>
+<p>The History Service is responsible for persisting Workflow Execution state to the Event History.
+When the Workflow Execution is able to progress, the History Service adds a Task with the Workflow&#x27;s updated history to the Task Queue.
+From there, a Worker can poll for work, receive this updated history, and resume execution.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/temporal-history-service.svg&quot;,&quot;title&quot;:&quot;Block diagram of how the History Service relates to the other services of the Temporal Server and to the Temporal Service&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/temporal-history-service.svg" alt="Block diagram of how the History Service relates to the other services of the Temporal Server and to the Temporal Service" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Block diagram of how the History Service relates to the other services of the Temporal Server and to the Temporal Service</p></div></span>
+<p>The total number of History Service processes can be between 1 and the total number of <a href="#history-shard" class="">History Shards</a>.
+An individual History Service can support many History Shards.
+Temporal recommends starting at a ratio of 1 History Service process for every 500 History Shards.</p>
+<p>Although the total number of History Shards remains static for the life of the Temporal Service, the number of History Service processes can change.</p>
+<p>The History Service talks to the Matching Service and the database.</p>
+<ul>
+<li class="">It uses grpcPort 7234 to host the service handler.</li>
+<li class="">It uses port 6934 for membership-related communication.</li>
+</ul>
+<p>Ports are configurable in the Temporal Service configuration.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="history-shard">What is a History Shard?<a href="#history-shard" class="hash-link" aria-label="Direct link to What is a History Shard?" title="Direct link to What is a History Shard?" translate="no">​</a></h3>
+<p>A History Shard is an important unit within a Temporal Service by which concurrent Workflow Execution throughput can be scaled.</p>
+<p>Each History Shard maps to a single persistence partition.
+A History Shard assumes that only one concurrent operation can be within a partition at a time.
+In essence, the number of History Shards represents the number of concurrent database operations that can occur for a Temporal Service.
+This means that the number of History Shards in a Temporal Service plays a significant role in the performance of your Temporal Application.</p>
+<p>Before integrating a database, the total number of History Shards for the Temporal Service must be chosen and set in the Temporal Service&#x27;s configuration (see <a href="/references/service-configuration#persistence" class="">persistence</a>).
+After the Shard count is configured and the database integrated, the total number of History Shards for the Temporal Service cannot be changed.</p>
+<p>In theory, a Temporal Service can operate with an unlimited number of History Shards, but each History Shard adds compute overhead to the Temporal Service.
+The Temporal Service has operated successfully using anywhere from 1 to 128K History Shards, with each Shard responsible for tens of thousands of Workflow Executions.
+One Shard is useful only in small scale setups designed for testing, while 128k Shards is useful only in very large scale production environments.
+The correct number of History Shards for any given Temporal Service depends entirely on the Temporal Application that it is supporting and the type of database.</p>
+<p>A History Shard is represented as a hashed integer.
+Each Workflow Execution is automatically assigned to a History Shard.
+The assignment algorithm hashes Workflow Execution metadata such as Workflow Id and Namespace and uses that value to match a History Shard.</p>
+<p>Each History Shard maintains the Workflow Execution Event History, Workflow Execution mutable state, and the following internal Task Queues:</p>
+<ul>
+<li class="">Internal Transfer Task Queue: Transfers internal tasks to the Matching Service.
+Whenever a new Workflow Task needs to be scheduled, the History Service&#x27;s Transfer Task Queue Processor transactionally dispatches it to the Matching Service.</li>
+<li class="">Internal Timer Task Queue: Durably persists Timers.</li>
+<li class="">Internal Replicator Task Queue: Asynchronously replicates Workflow Executions from active Clusters to other passive Clusters.
+(Relies on the experimental Multi-Cluster feature.)</li>
+<li class="">Internal Visibility Task Queue: Pushes data to the <a href="/visibility#advanced-visibility" class="">Advanced Visibility</a> index.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="matching-service">What is a Matching Service?<a href="#matching-service" class="hash-link" aria-label="Direct link to What is a Matching Service?" title="Direct link to What is a Matching Service?" translate="no">​</a></h2>
+<p>The Matching Service is responsible for hosting user-facing <a href="/task-queue" class="">Task Queues</a> for Task dispatching.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/temporal-matching-service.svg&quot;,&quot;title&quot;:&quot;Matching Service&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/temporal-matching-service.svg" alt="Matching Service" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Matching Service</p></div></span>
+<p>It is responsible for matching Workers to Tasks and routing new Tasks to the appropriate queue.
+This service can scale internally by having multiple instances.</p>
+<p>It talks to the Frontend Service, History Service, and the database.</p>
+<ul>
+<li class="">It uses grpcPort 7235 to host the service handler.</li>
+<li class="">It uses port 6935 for membership related communication.</li>
+</ul>
+<p>Ports are configurable in the Temporal Service configuration.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker-service">What is a Worker Service?<a href="#worker-service" class="hash-link" aria-label="Direct link to What is a Worker Service?" title="Direct link to What is a Worker Service?" translate="no">​</a></h2>
+<p>The Worker Service runs background processing for the replication queue, system Workflows, and (in versions older than 1.5.0) the Kafka visibility processor.</p>
+<div class="tdiw"><div class="tditw"><p class="tdit">Worker Service</p></div><div class="tdiiw" height="740"><img class="img_ev3q" src="/diagrams/temporal-worker-service.svg" alt="Worker Service"/></div></div>
+<p>It talks to the Frontend Service.</p>
+<ul>
+<li class="">It uses port 6939 for membership-related communication.</li>
+</ul>
+<p>Ports are configurable in the Temporal Service configuration.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="retention-period">What is a Retention Period?<a href="#retention-period" class="hash-link" aria-label="Direct link to What is a Retention Period?" title="Direct link to What is a Retention Period?" translate="no">​</a></h2>
+<p>Retention Period is the duration for which the Temporal Service stores data associated with closed Workflow Executions on a Namespace in the Persistence store.</p>
+<ul>
+<li class=""><a href="/cli/command-reference/operator#create" class="">How to set the Retention Period for a Namespace</a></li>
+<li class=""><a href="/develop/go/client/namespaces" class="">How to set the Retention Period for a Namespace using the Go SDK</a></li>
+<li class=""><a href="/develop/java/client/namespaces" class="">How to set the Retention Period for a Namespace using the Java SDK</a></li>
+</ul>
+<p>A Retention Period applies to all closed Workflow Executions within a <a href="/namespaces" class="">Namespace</a> and is set when the Namespace is registered.</p>
+<p>The Temporal Service triggers a Timer task at the end of the Retention Period that cleans up the data associated with the closed Workflow Execution on that Namespace.</p>
+<p>The minimum Retention Period is 1 day.
+On Temporal Service version 1.18 and later, the maximum Retention Period value for Namespaces can be set to anything over the minimum requirement of 1 day. Ensure that your Persistence store has enough capacity for the storage.
+On Temporal Service versions 1.17 and earlier, the maximum Retention Period you can set is 30 days.
+Setting the Retention Period to 0 results in the error <em>A valid retention period is not set on request</em>.</p>
+<p>If you don&#x27;t set the Retention Period value when using the <a href="/cli/command-reference/operator#create" class=""><code>temporal operator namespace create</code></a> command, it defaults to 3 days.
+If you don&#x27;t set the Retention Period value when using the Register Namespace Request API, it returns an error.</p>
+<p>When changing the Retention Period (with <a href="/cli/command-reference/operator#update" class=""><code>temporal operator namespace update</code></a> or the <code>UpdateNamespace</code> API), the new duration applies to Workflow Executions that close after the change is saved.</p>
+<div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>Changing the Retention Period does NOT affect existing closed Workflow Executions: they retain their original cleanup timers based on the Retention Period that was in effect when they closed.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manual-cleanup-of-closed-workflow-executions">Manual cleanup of closed Workflow Executions<a href="#manual-cleanup-of-closed-workflow-executions" class="hash-link" aria-label="Direct link to Manual cleanup of closed Workflow Executions" title="Direct link to Manual cleanup of closed Workflow Executions" translate="no">​</a></h3>
+<p>For cases where you need to remove closed Workflow Executions before their retention timer expires, you can use <a href="/cli/command-reference/workflow#delete" class=""><code>temporal workflow delete</code></a> or the <code>DeleteWorkflowExecution</code> command.
+This is particularly useful along with reducing the Retention Period to clean up previously closed Workflow Executions to reduce storage costs.</p></div>

@@ -1,0 +1,156 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/best-practices/managing-namespace.md">/best-practices/managing-namespace.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Namespace best practices</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/best-practices/managing-namespace.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fmanaging-namespace.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fmanaging-namespace.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Applies to both open source and Temporal Cloud</div><div class="admonitionContent_vXIg"><p>This page covers namespace best practices that apply to <strong>both</strong> open source Temporal and Temporal Cloud.
+Platform-specific guidance is clearly labeled throughout.</p><p>For reference documentation, see:</p><ul>
+<li class=""><a href="/namespaces" class="">Namespace concepts</a></li>
+<li class=""><a href="/self-hosted-guide/namespaces" class="">Managing Namespaces (open source)</a></li>
+<li class=""><a href="/cloud/namespaces" class="">Namespaces (Temporal Cloud)</a></li>
+</ul></div></div>
+<p>A <a href="/namespaces" class="">Namespace</a> is a unit of isolation within the Temporal Platform.
+It ensures that Workflow Executions, Task Queues, and resources are logically separated, preventing conflicts and enabling safe multi-tenant usage.</p>
+<p>Use this page to decide how many Namespaces you need and where to draw boundaries between environments, services,
+domains, and tenants. For Cloud-specific namespace mechanics such as creation, tagging, and gRPC endpoints, see
+<a href="/cloud/namespaces" class="">Namespaces (Temporal Cloud)</a>.</p>
+<p>Related guidance:</p>
+<ul>
+<li class=""><a href="/best-practices/cloud-access-control" class="">Managing Temporal Cloud access control</a></li>
+<li class=""><a href="/best-practices/multi-tenant-patterns" class="">Multi-tenant application patterns</a></li>
+<li class=""><a href="/best-practices/managing-aps-limits" class="">Managing Actions per Second (APS) limits in Temporal Cloud</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="naming-conventions">Naming conventions<a href="#naming-conventions" class="hash-link" aria-label="Direct link to Naming conventions" title="Direct link to Naming conventions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-lowercase-and-hyphens">Use lowercase and hyphens<a href="#use-lowercase-and-hyphens" class="hash-link" aria-label="Direct link to Use lowercase and hyphens" title="Direct link to Use lowercase and hyphens" translate="no">​</a></h3>
+<p>Use lowercase letters and hyphens (<code>-</code>) as separators in Namespace names.</p>
+<ul>
+<li class=""><strong>Temporal Cloud</strong>: Namespace names are case-insensitive, so <code>MyNamespace</code> and <code>mynamespace</code> refer to the same Namespace.</li>
+<li class=""><strong>Open source</strong>: Namespace names are case-sensitive, so <code>MyNamespace</code> and <code>mynamespace</code> are different Namespaces.</li>
+</ul>
+<p>To avoid confusion across environments, always use lowercase.</p>
+<p><strong>Example</strong>: <code>payment-checkout-prd</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="follow-a-consistent-naming-pattern">Follow a consistent naming pattern<a href="#follow-a-consistent-naming-pattern" class="hash-link" aria-label="Direct link to Follow a consistent naming pattern" title="Direct link to Follow a consistent naming pattern" translate="no">​</a></h3>
+<p>Use a pattern like <code>&lt;use-case&gt;-&lt;domain&gt;-&lt;environment&gt;</code> to name Namespaces:</p>
+<table><thead><tr><th>Component</th><th>Max Length</th><th>Examples</th></tr></thead><tbody><tr><td>Use case</td><td>10 chars</td><td><code>payments</code>, <code>fulfill</code>, <code>orders</code></td></tr><tr><td>Domain</td><td>10 chars</td><td><code>checkout</code>, <code>notify</code>, <code>inventory</code></td></tr><tr><td>Environment</td><td>3 chars</td><td><code>dev</code>, <code>stg</code>, <code>prd</code></td></tr></tbody></table>
+<p><strong>Examples</strong>: <code>payments-checkout-dev</code>, <code>fulfill-notify-prd</code>, <code>orders-inventory-stg</code></p>
+<p><strong>Why this pattern?</strong></p>
+<ul>
+<li class="">Simple and easy to understand</li>
+<li class="">Clearly separates environments</li>
+<li class="">Groups related services under domains</li>
+<li class="">Allows platform teams to implement chargeback to application teams</li>
+<li class="">Namespace-level limits are isolated between different services and environments</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>Temporal Cloud</div><div class="admonitionContent_vXIg"><p>Cloud Namespace names are limited to <a href="/cloud/namespaces#temporal-cloud-namespace-name" class="">39 characters</a>.
+If you need to include region, use short codes (for example, <code>aps1</code>, <code>use1</code>).</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="organizational-patterns">Organizational patterns<a href="#organizational-patterns" class="hash-link" aria-label="Direct link to Organizational patterns" title="Direct link to Organizational patterns" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="choose-your-namespace-boundary-intentionally">Choose your Namespace boundary intentionally<a href="#choose-your-namespace-boundary-intentionally" class="hash-link" aria-label="Direct link to Choose your Namespace boundary intentionally" title="Direct link to Choose your Namespace boundary intentionally" translate="no">​</a></h3>
+<p>Start with the smallest number of Namespaces that gives you clear ownership and safe isolation.
+In Temporal Cloud, a Namespace boundary affects:</p>
+<ul>
+<li class=""><a href="/evaluate/cloud/limits#actions-per-second" class="">APS limits</a> and rate limiting</li>
+<li class="">access control and credential scope</li>
+<li class="">blast radius for misconfigured or overloaded Workers</li>
+<li class="">observability boundaries for dashboards and alerts</li>
+<li class="">operational overhead for provisioning, tagging, and lifecycle management</li>
+</ul>
+<p>Use the following decision table as a starting point:</p>
+<table><thead><tr><th>If you need...</th><th>Prefer...</th><th>Why</th></tr></thead><tbody><tr><td>Basic environment isolation for a single application or use case</td><td>Namespace per use case and environment</td><td>This is the simplest pattern and works well for most initial deployments</td></tr><tr><td>Separate operational ownership for services within the same use case</td><td>Namespace per use case, service, and environment</td><td>This isolates credentials, limits, and operational changes per service</td></tr><tr><td>Stronger boundaries across teams, domains, or business capabilities</td><td>Namespace per use case, domain, and environment</td><td>This reduces blast radius and lets teams own their own Namespace contracts</td></tr><tr><td>Tenant-specific credentials, rate limits, or compliance boundaries</td><td>Namespace per tenant</td><td>Use this only for a small number of high-value tenants because of the operational overhead</td></tr></tbody></table>
+<p>As a default, start with one Namespace per use case and environment. Split later when APS pressure, security
+requirements, ownership boundaries, or troubleshooting needs justify the extra operational cost.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-1-namespace-per-use-case-and-environment">Pattern 1: Namespace per use case and environment<a href="#pattern-1-namespace-per-use-case-and-environment" class="hash-link" aria-label="Direct link to Pattern 1: Namespace per use case and environment" title="Direct link to Pattern 1: Namespace per use case and environment" translate="no">​</a></h3>
+<p>For simple configurations without multiple services or team boundaries.</p>
+<p><strong>Naming convention</strong>: <code>&lt;use-case&gt;-&lt;environment&gt;</code></p>
+<p><strong>Example</strong>: <code>payments-prd</code>, <code>orders-dev</code></p>
+<p>Choose this pattern when:</p>
+<ul>
+<li class="">one team owns the use case</li>
+<li class="">environments need clean separation</li>
+<li class="">workload volume and criticality do not yet require further isolation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-2-namespace-per-use-case-service-and-environment">Pattern 2: Namespace per use case, service, and environment<a href="#pattern-2-namespace-per-use-case-service-and-environment" class="hash-link" aria-label="Direct link to Pattern 2: Namespace per use case, service, and environment" title="Direct link to Pattern 2: Namespace per use case, service, and environment" translate="no">​</a></h3>
+<p>When multiple services that are part of the same use case communicate externally to Temporal via API (HTTP/gRPC).</p>
+<p><strong>Naming convention</strong>: <code>&lt;use-case&gt;-&lt;service&gt;-&lt;environment&gt;</code></p>
+<p><strong>Example</strong>: <code>payments-gateway-prd</code>, <code>payments-processor-prd</code></p>
+<p>Choose this pattern when:</p>
+<ul>
+<li class="">services need separate credentials or access policies</li>
+<li class="">one service can exhaust APS or operational limits independently of the others</li>
+<li class="">teams want separate ownership of deployment, alerting, or on-call boundaries</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-3-namespace-per-use-case-domain-and-environment">Pattern 3: Namespace per use case, domain, and environment<a href="#pattern-3-namespace-per-use-case-domain-and-environment" class="hash-link" aria-label="Direct link to Pattern 3: Namespace per use case, domain, and environment" title="Direct link to Pattern 3: Namespace per use case, domain, and environment" translate="no">​</a></h3>
+<p>When multiple services need to communicate with each other, use <a href="/nexus" class="">Temporal Nexus</a> to connect Workflows across Namespace boundaries.
+This provides better security, fault isolation, and modularity than sharing a Namespace.</p>
+<p><strong>Naming convention</strong>: <code>&lt;use-case&gt;-&lt;domain&gt;-&lt;environment&gt;</code></p>
+<p><strong>Example</strong>: <code>payments-checkout-prd</code>, <code>payments-refunds-prd</code></p>
+<p>Choose this pattern when:</p>
+<ul>
+<li class="">multiple teams or domains need independent release cadence and ownership</li>
+<li class="">failures in one domain should not affect the others</li>
+<li class="">you want a stronger permission boundary between capabilities</li>
+<li class="">you plan to expose cross-Namespace contracts through Nexus</li>
+</ul>
+<p>For systems without Nexus, services can communicate via <a href="/sending-messages#sending-signals" class="">Signals</a> or <a href="/child-workflows" class="">Child Workflows</a> within the same Namespace.</p>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Workflow ID uniqueness</div><div class="admonitionContent_vXIg"><p>When multiple teams share a Namespace, prefix each Workflow ID with a service-specific string to ensure uniqueness.
+Task Queue names must also be unique within the Namespace.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-4-namespace-per-tenant">Pattern 4: Namespace per tenant<a href="#pattern-4-namespace-per-tenant" class="hash-link" aria-label="Direct link to Pattern 4: Namespace per tenant" title="Direct link to Pattern 4: Namespace per tenant" translate="no">​</a></h3>
+<p>Use a separate <a href="/namespaces" class="">Namespace</a> per tenant only when each tenant needs a true isolation boundary.</p>
+<p>This is usually appropriate only for a small number of high-value tenants that require:</p>
+<ul>
+<li class="">dedicated credentials and access control</li>
+<li class="">tenant-specific rate limits or capacity decisions</li>
+<li class="">strict compliance or data-isolation boundaries</li>
+<li class="">independent debugging, alerting, and operational ownership</li>
+</ul>
+<p>For most SaaS use cases, a shared Namespace with per-tenant <a href="/task-queue" class="">Task Queues</a> is simpler and more scalable.
+See <a href="/best-practices/multi-tenant-patterns" class="">Multi-tenant application patterns</a> for those designs.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-should-cause-you-to-split-a-namespace-later">What should cause you to split a Namespace later?<a href="#what-should-cause-you-to-split-a-namespace-later" class="hash-link" aria-label="Direct link to What should cause you to split a Namespace later?" title="Direct link to What should cause you to split a Namespace later?" translate="no">​</a></h3>
+<p>Revisit your topology when one or more of the following becomes true:</p>
+<ul>
+<li class="">one workload is consuming enough APS that it regularly threatens others in the same Namespace</li>
+<li class="">one team needs tighter access controls or dedicated credentials</li>
+<li class="">production troubleshooting requires clearer dashboards, alerts, or ownership boundaries</li>
+<li class="">one application or domain is business-critical enough that its blast radius must be reduced</li>
+<li class="">a tenant or regulated workload needs stronger separation than Task Queue isolation can provide</li>
+</ul>
+<p>Splitting a Namespace increases safety, but it also adds overhead for provisioning, tagging, credentials, and cross-Namespace coordination.
+Use <a href="/nexus" class="">Nexus</a> where possible instead of sharing Temporal primitives across team or domain boundaries.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="production-safeguards">Production safeguards<a href="#production-safeguards" class="hash-link" aria-label="Direct link to Production safeguards" title="Direct link to Production safeguards" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="authorizer">Use an Authorizer (open source only)<a href="#authorizer" class="hash-link" aria-label="Direct link to Use an Authorizer (open source only)" title="Direct link to Use an Authorizer (open source only)" translate="no">​</a></h3>
+<p>Use a custom <a href="/self-hosted-guide/security#authorizer-plugin" class="">Authorizer</a> on your Frontend Service to set restrictions on who can create, update, or deprecate Namespaces.</p>
+<p>If an Authorizer is not set, Temporal uses the <code>nopAuthority</code> authorizer that unconditionally allows all API calls.</p>
+<p>On Temporal Cloud, <a href="/cloud/manage-access/roles-and-permissions#namespace-level-permissions" class="">role-based access controls</a> provide namespace-level authorization without custom configuration.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deletion-protection">Enable deletion protection (Temporal Cloud only)<a href="#deletion-protection" class="hash-link" aria-label="Direct link to Enable deletion protection (Temporal Cloud only)" title="Direct link to Enable deletion protection (Temporal Cloud only)" translate="no">​</a></h3>
+<p><a href="/cloud/namespaces#delete-protection" class="">Enable deletion protection</a> for production Namespaces to prevent accidental deletion.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-availability">Enable High Availability (Temporal Cloud only)<a href="#high-availability" class="hash-link" aria-label="Direct link to Enable High Availability (Temporal Cloud only)" title="Direct link to Enable High Availability (Temporal Cloud only)" translate="no">​</a></h3>
+<p>For business-critical use cases with strict uptime requirements, enable <a href="/cloud/high-availability" class="">High Availability features</a> for a <a href="https://temporal.io/sla" class="">higher contractual SLA</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="terraform">Use Infrastructure as Code (Temporal Cloud only)<a href="#terraform" class="hash-link" aria-label="Direct link to Use Infrastructure as Code (Temporal Cloud only)" title="Direct link to Use Infrastructure as Code (Temporal Cloud only)" translate="no">​</a></h3>
+<p>Use the <a href="/cloud/terraform-provider" class="">Temporal Cloud Terraform provider</a> to manage Namespaces.
+If Terraform isn&#x27;t suitable, scripting against the <a href="/ops" class="">Cloud Ops API</a> or <a href="/cloud/tcld" class="">tcld</a> is a good alternative.</p>
+<p>This provides:</p>
+<ul>
+<li class="">Documentation of each Namespace&#x27;s purpose and owners</li>
+<li class="">Prevention of infrastructure drift</li>
+<li class="">Version-controlled configuration changes</li>
+</ul>
+<p>Use <code>prevent_destroy = true</code> in your Terraform configuration to prevent accidental Namespace deletion via Terraform.
+This is separate from <a href="/cloud/namespaces#delete-protection" class="">Temporal Cloud deletion protection</a>, which prevents deletion through any interface.</p>
+<p><strong>Reference</strong>: <a href="https://github.com/kawofong/temporal-terraform" target="_blank" rel="noopener noreferrer" class="">Example Terraform configuration</a></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tagging">Tagging (Temporal Cloud only)<a href="#tagging" class="hash-link" aria-label="Direct link to Tagging (Temporal Cloud only)" title="Direct link to Tagging (Temporal Cloud only)" translate="no">​</a></h2>
+<p><a href="/cloud/namespaces#tag-a-namespace" class="">Tags</a> are key-value metadata pairs that help organize, track, and manage Namespaces.</p>
+<p>Tags complement your naming convention by adding metadata that doesn&#x27;t fit in the Namespace name.
+While the name captures use case, domain, and environment, tags can capture additional dimensions like team ownership, data sensitivity, or business criticality.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recommended-tag-categories">Recommended tag categories<a href="#recommended-tag-categories" class="hash-link" aria-label="Direct link to Recommended tag categories" title="Direct link to Recommended tag categories" translate="no">​</a></h3>
+<table><thead><tr><th>Tag Key</th><th>Purpose</th><th>Examples</th></tr></thead><tbody><tr><td><code>environment</code></td><td>Deployment stage</td><td><code>dev</code>, <code>staging</code>, <code>production</code></td></tr><tr><td><code>team</code></td><td>Owning team</td><td><code>platform</code>, <code>payments</code>, <code>identity</code></td></tr><tr><td><code>division</code></td><td>Business unit</td><td><code>engineering</code>, <code>finance</code>, <code>ops</code></td></tr><tr><td><code>criticality</code></td><td>Business importance</td><td><code>high</code>, <code>medium</code>, <code>low</code></td></tr><tr><td><code>data-sensitivity</code></td><td>Data classification</td><td><code>pii</code>, <code>pci</code>, <code>public</code></td></tr><tr><td><code>latency-sensitivity</code></td><td>Performance tier</td><td><code>realtime</code>, <code>batch</code>, <code>async</code></td></tr></tbody></table>
+<p>For tag structure, limits, and management instructions, see <a href="/cloud/namespaces#tag-a-namespace" class="">How to tag a Namespace</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="description">Description<a href="#description" class="hash-link" aria-label="Direct link to Description" title="Direct link to Description" translate="no">​</a></h2>
+<p>Use an optional <a href="/cloud/namespaces#describe-a-namespace" class="">Namespace description</a> for a one-line purpose note: workload,
+owner context, or why the Namespace exists.</p>
+<p>Keep structured classification in <a href="#tagging" class="">Tags</a>. Description is for humans reading the Namespace. Tags are for
+filter, report, and automation dimensions such as <code>team</code> and <code>environment</code>.</p>
+<p>Do not put secrets, confidential data, or PII in a description. Like Tags and <a href="/search-attribute" class="">Search Attributes</a>,
+descriptions are not encrypted.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sdk-client-configuration">SDK client configuration<a href="#sdk-client-configuration" class="hash-link" aria-label="Direct link to SDK client configuration" title="Direct link to SDK client configuration" translate="no">​</a></h2>
+<p>Set Namespaces in your SDK Client to isolate your Workflow Executions.
+If you do not set a Namespace, all Workflow Executions started using the Client will be associated with the <code>default</code> Namespace.</p>
+<p>You must register a Namespace before setting it in your Client.</p>
+<p>For configuration details, see:</p>
+<ul>
+<li class=""><a href="/namespaces" class="">Namespace concepts</a></li>
+<li class=""><a href="/cloud/namespaces#access-namespaces" class="">Namespaces (Temporal Cloud)</a></li>
+</ul></div>

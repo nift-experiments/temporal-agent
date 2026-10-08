@@ -1,0 +1,717 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/cloud/tcld/namespace.md">/cloud/tcld/namespace.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>tcld namespace command reference</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/cloud/tcld/namespace.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fcloud%2Ftcld%2Fnamespace.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fcloud%2Ftcld%2Fnamespace.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header>
+<p><code>tcld namespace</code>: Namespace operations.</p>
+<p>Alias: <code>n</code></p>
+<ul>
+<li class=""><a href="#create" class="">tcld namespace create</a></li>
+<li class=""><a href="#add-region" class="">tcld namespace add-region</a></li>
+<li class=""><a href="#delete-region" class="">tcld namespace delete-region</a></li>
+<li class=""><a href="#lifecycle" class="">tcld namespace lifecycle</a></li>
+<li class=""><a href="#delete" class="">tcld namespace delete</a></li>
+<li class=""><a href="#list" class="">tcld namespace list</a></li>
+<li class=""><a href="#get" class="">tcld namespace get</a></li>
+<li class=""><a href="#accepted-client-ca" class="">tcld namespace accepted-client-ca</a></li>
+<li class=""><a href="#auth-method" class="">tcld namespace auth-method</a></li>
+<li class=""><a href="#certificate-filters" class="">tcld namespace certificate-filters</a></li>
+<li class=""><a href="#update-codec-server" class="">tcld namespace update-codec-server</a></li>
+<li class=""><a href="#retention" class="">tcld namespace retention</a></li>
+<li class=""><a href="#search-attributes" class="">tcld namespace search-attributes</a></li>
+<li class=""><a href="#failover" class="">tcld namespace failover</a></li>
+<li class=""><a href="#update-high-availability" class="">tcld namespace update-high-availability</a></li>
+<li class=""><a href="#tags" class="">tcld namespace tags</a></li>
+<li class=""><a href="#capacity" class="">tcld namespace capacity</a></li>
+<li class=""><a href="#export" class="">tcld namespace export</a></li>
+<li class=""><a href="#set-connectivity-rules" class="">tcld namespace set-connectivity-rules</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="create">create<a href="#create" class="hash-link" aria-label="Direct link to create" title="Direct link to create" translate="no">​</a></h3>
+<p><code>tcld namespace create</code>: Create a temporal namespace.</p>
+<p>Alias: <code>c</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id">--request-id<a href="#--request-id" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate">--ca-certificate<a href="#--ca-certificate" class="hash-link" aria-label="Direct link to --ca-certificate" title="Direct link to --ca-certificate" translate="no">​</a></h4>
+<p>The base64 encoded ca certificate</p>
+<p>Alias: <code>c</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace">--namespace<a href="#--namespace" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region">--region<a href="#--region" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h4>
+<p>Create namespace in specified regions; if multiple regions are selected, the first one will be the active region. See &#x27;tcld account list-regions&#x27; to get a list of available regions for your account</p>
+<p>Alias: <code>re</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--retention-days">--retention-days<a href="#--retention-days" class="hash-link" aria-label="Direct link to --retention-days" title="Direct link to --retention-days" translate="no">​</a></h4>
+<p>The retention of the namespace in days</p>
+<p>Alias: <code>rd</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--auth-method">--auth-method<a href="#--auth-method" class="hash-link" aria-label="Direct link to --auth-method" title="Direct link to --auth-method" translate="no">​</a></h4>
+<p>The authentication method to use for the namespace (for example, &#x27;mtls&#x27;, &#x27;api_key&#x27;)</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-file">--ca-certificate-file<a href="#--ca-certificate-file" class="hash-link" aria-label="Direct link to --ca-certificate-file" title="Direct link to --ca-certificate-file" translate="no">​</a></h4>
+<p>The path to the ca pem file</p>
+<p>Alias: <code>cf</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-file">--certificate-filter-file<a href="#--certificate-filter-file" class="hash-link" aria-label="Direct link to --certificate-filter-file" title="Direct link to --certificate-filter-file" translate="no">​</a></h4>
+<p>Path to a JSON file that defines the certificate filters that will be added to the namespace. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>cff</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-input">--certificate-filter-input<a href="#--certificate-filter-input" class="hash-link" aria-label="Direct link to --certificate-filter-input" title="Direct link to --certificate-filter-input" translate="no">​</a></h4>
+<p>JSON that defines the certificate filters that will be added to the namespace. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>cfi</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--search-attribute">--search-attribute<a href="#--search-attribute" class="hash-link" aria-label="Direct link to --search-attribute" title="Direct link to --search-attribute" translate="no">​</a></h4>
+<p>Flag can be used multiple times; value must be &quot;name=type&quot;; valid types are: [Keyword Text Int Double Datetime Bool KeywordList]</p>
+<p>Alias: <code>sa</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--user-namespace-permission">--user-namespace-permission<a href="#--user-namespace-permission" class="hash-link" aria-label="Direct link to --user-namespace-permission" title="Direct link to --user-namespace-permission" translate="no">​</a></h4>
+<p>Flag can be used multiple times; value must be &quot;email=permission&quot;; valid permissions are: [Admin Write Read]</p>
+<p>Alias: <code>p</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--enable-delete-protection">--enable-delete-protection<a href="#--enable-delete-protection" class="hash-link" aria-label="Direct link to --enable-delete-protection" title="Direct link to --enable-delete-protection" translate="no">​</a></h4>
+<p>Enable delete protection on the namespace</p>
+<p>Alias: <code>edp</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--endpoint">--endpoint<a href="#--endpoint" class="hash-link" aria-label="Direct link to --endpoint" title="Direct link to --endpoint" translate="no">​</a></h4>
+<p>The codec server endpoint to decode payloads for all users interacting with this Namespace, must be https</p>
+<p>Alias: <code>e</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--pass-access-token">--pass-access-token<a href="#--pass-access-token" class="hash-link" aria-label="Direct link to --pass-access-token" title="Direct link to --pass-access-token" translate="no">​</a></h4>
+<p>Pass the user access token to the remote endpoint</p>
+<p>Alias: <code>pat</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--include-credentials">--include-credentials<a href="#--include-credentials" class="hash-link" aria-label="Direct link to --include-credentials" title="Direct link to --include-credentials" translate="no">​</a></h4>
+<p>Include cross-origin credentials</p>
+<p>Alias: <code>ic</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--cloud-provider">--cloud-provider<a href="#--cloud-provider" class="hash-link" aria-label="Direct link to --cloud-provider" title="Direct link to --cloud-provider" translate="no">​</a></h4>
+<p>Cloud provider for the namespace to be created for, currently support [aws, gcp].  For this version, if not specified, we default to aws</p>
+<p>Alias: <code>cp</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--tag">--tag<a href="#--tag" class="hash-link" aria-label="Direct link to --tag" title="Direct link to --tag" translate="no">​</a></h4>
+<p>Add tags to the namespace (format: key=value). Flag can be used multiple times.</p>
+<p>Alias: <code>t</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--connectivity-rule-ids">--connectivity-rule-ids<a href="#--connectivity-rule-ids" class="hash-link" aria-label="Direct link to --connectivity-rule-ids" title="Direct link to --connectivity-rule-ids" translate="no">​</a></h4>
+<p>The list of connectivity rule IDs, can be used in create namespace and update namespace. example: --ids id1 --ids id2 --ids id3</p>
+<p>Alias: <code>ids</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="add-region">add-region<a href="#add-region" class="hash-link" aria-label="Direct link to add-region" title="Direct link to add-region" translate="no">​</a></h3>
+<p><code>tcld namespace add-region</code>: Add a new region to a namespace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-1">--request-id<a href="#--request-id-1" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-1">--namespace<a href="#--namespace-1" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region-1">--region<a href="#--region-1" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h4>
+<p>New region to add to the namespace.</p>
+<p>Alias: <code>re</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--cloud-provider-1">--cloud-provider<a href="#--cloud-provider-1" class="hash-link" aria-label="Direct link to --cloud-provider" title="Direct link to --cloud-provider" translate="no">​</a></h4>
+<p>The cloud provider of the region. Default: aws</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="delete-region">delete-region<a href="#delete-region" class="hash-link" aria-label="Direct link to delete-region" title="Direct link to delete-region" translate="no">​</a></h3>
+<p><code>tcld namespace delete-region</code>: Delete a region from a namespace.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-2">--request-id<a href="#--request-id-2" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-2">--namespace<a href="#--namespace-2" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region-2">--region<a href="#--region-2" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h4>
+<p>The region to remove from a namespace.</p>
+<p>Alias: <code>re</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--cloud-provider-2">--cloud-provider<a href="#--cloud-provider-2" class="hash-link" aria-label="Direct link to --cloud-provider" title="Direct link to --cloud-provider" translate="no">​</a></h4>
+<p>The cloud provider of the region. Default: aws</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lifecycle">lifecycle<a href="#lifecycle" class="hash-link" aria-label="Direct link to lifecycle" title="Direct link to lifecycle" translate="no">​</a></h3>
+<p><code>tcld namespace lifecycle</code>: Enable delete protection on a temporal namespace.</p>
+<p>Alias: <code>lc</code></p>
+<ul>
+<li class=""><a href="#get" class="">tcld namespace lifecycle get</a></li>
+<li class=""><a href="#set" class="">tcld namespace lifecycle set</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="get">get<a href="#get" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h4>
+<p><code>tcld namespace lifecycle get</code>: Get the lifecycle spec for the namespace.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-3">--request-id<a href="#--request-id-3" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version">--resource-version<a href="#--resource-version" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-3">--namespace<a href="#--namespace-3" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="set">set<a href="#set" class="hash-link" aria-label="Direct link to set" title="Direct link to set" translate="no">​</a></h4>
+<p><code>tcld namespace lifecycle set</code>: Set the lifecycle spec for the namespace.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-4">--request-id<a href="#--request-id-4" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-1">--resource-version<a href="#--resource-version-1" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-4">--namespace<a href="#--namespace-4" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--enable-delete-protection-1">--enable-delete-protection<a href="#--enable-delete-protection-1" class="hash-link" aria-label="Direct link to --enable-delete-protection" title="Direct link to --enable-delete-protection" translate="no">​</a></h5>
+<p>Enable delete protection on the namespace, value must be true or false</p>
+<p>Alias: <code>edp</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="delete">delete<a href="#delete" class="hash-link" aria-label="Direct link to delete" title="Direct link to delete" translate="no">​</a></h3>
+<p><code>tcld namespace delete</code>: Delete a temporal namespace.</p>
+<p>Alias: <code>d</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-5">--request-id<a href="#--request-id-5" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-2">--resource-version<a href="#--resource-version-2" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h4>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-5">--namespace<a href="#--namespace-5" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="list">list<a href="#list" class="hash-link" aria-label="Direct link to list" title="Direct link to list" translate="no">​</a></h3>
+<p><code>tcld namespace list</code>: List all known namespaces.</p>
+<p>Alias: <code>l</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-token">--page-token<a href="#--page-token" class="hash-link" aria-label="Direct link to --page-token" title="Direct link to --page-token" translate="no">​</a></h4>
+<p>The page token for list operations</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-size">--page-size<a href="#--page-size" class="hash-link" aria-label="Direct link to --page-size" title="Direct link to --page-size" translate="no">​</a></h4>
+<p>Number of namespaces to list per page</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-1">get<a href="#get-1" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h3>
+<p><code>tcld namespace get</code>: Get namespace information.</p>
+<p>Alias: <code>g</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-6">--namespace<a href="#--namespace-6" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="accepted-client-ca">accepted-client-ca<a href="#accepted-client-ca" class="hash-link" aria-label="Direct link to accepted-client-ca" title="Direct link to accepted-client-ca" translate="no">​</a></h3>
+<p><code>tcld namespace accepted-client-ca</code>: Manage client ca certificate used to verify client connections.</p>
+<p>Alias: <code>ca</code></p>
+<ul>
+<li class=""><a href="#list" class="">tcld namespace accepted-client-ca list</a></li>
+<li class=""><a href="#add" class="">tcld namespace accepted-client-ca add</a></li>
+<li class=""><a href="#remove" class="">tcld namespace accepted-client-ca remove</a></li>
+<li class=""><a href="#set" class="">tcld namespace accepted-client-ca set</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="list-1">list<a href="#list-1" class="hash-link" aria-label="Direct link to list" title="Direct link to list" translate="no">​</a></h4>
+<p><code>tcld namespace accepted-client-ca list</code>: List the accepted client ca certificates currently configured for the namespace.</p>
+<p>Alias: <code>l</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-7">--namespace<a href="#--namespace-7" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="add">add<a href="#add" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h4>
+<p><code>tcld namespace accepted-client-ca add</code>: Add a new ca accepted client ca certificate.</p>
+<p>Alias: <code>a</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-8">--namespace<a href="#--namespace-8" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-6">--request-id<a href="#--request-id-6" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-3">--resource-version<a href="#--resource-version-3" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-1">--ca-certificate<a href="#--ca-certificate-1" class="hash-link" aria-label="Direct link to --ca-certificate" title="Direct link to --ca-certificate" translate="no">​</a></h5>
+<p>The base64 encoded ca certificate</p>
+<p>Alias: <code>c</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-file-1">--ca-certificate-file<a href="#--ca-certificate-file-1" class="hash-link" aria-label="Direct link to --ca-certificate-file" title="Direct link to --ca-certificate-file" translate="no">​</a></h5>
+<p>The path to the ca pem file</p>
+<p>Alias: <code>f</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove">remove<a href="#remove" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h4>
+<p><code>tcld namespace accepted-client-ca remove</code>: Remove existing certificates.</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-9">--namespace<a href="#--namespace-9" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-7">--request-id<a href="#--request-id-7" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-4">--resource-version<a href="#--resource-version-4" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-2">--ca-certificate<a href="#--ca-certificate-2" class="hash-link" aria-label="Direct link to --ca-certificate" title="Direct link to --ca-certificate" translate="no">​</a></h5>
+<p>The base64 encoded ca certificate</p>
+<p>Alias: <code>c</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-file-2">--ca-certificate-file<a href="#--ca-certificate-file-2" class="hash-link" aria-label="Direct link to --ca-certificate-file" title="Direct link to --ca-certificate-file" translate="no">​</a></h5>
+<p>The path to the ca pem file</p>
+<p>Alias: <code>f</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-fingerprint">--ca-certificate-fingerprint<a href="#--ca-certificate-fingerprint" class="hash-link" aria-label="Direct link to --ca-certificate-fingerprint" title="Direct link to --ca-certificate-fingerprint" translate="no">​</a></h5>
+<p>The fingerprint of to the ca certificate</p>
+<p>Alias: <code>fp</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--all">--all<a href="#--all" class="hash-link" aria-label="Direct link to --all" title="Direct link to --all" translate="no">​</a></h5>
+<p>If set, all existing certificates will be removed</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-1">set<a href="#set-1" class="hash-link" aria-label="Direct link to set" title="Direct link to set" translate="no">​</a></h4>
+<p><code>tcld namespace accepted-client-ca set</code>: Set the accepted client ca certificate.</p>
+<p>Alias: <code>s</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-10">--namespace<a href="#--namespace-10" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-8">--request-id<a href="#--request-id-8" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-5">--resource-version<a href="#--resource-version-5" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-3">--ca-certificate<a href="#--ca-certificate-3" class="hash-link" aria-label="Direct link to --ca-certificate" title="Direct link to --ca-certificate" translate="no">​</a></h5>
+<p>The base64 encoded ca certificate</p>
+<p>Alias: <code>c</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--ca-certificate-file-3">--ca-certificate-file<a href="#--ca-certificate-file-3" class="hash-link" aria-label="Direct link to --ca-certificate-file" title="Direct link to --ca-certificate-file" translate="no">​</a></h5>
+<p>The path to the ca pem file</p>
+<p>Alias: <code>f</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="auth-method">auth-method<a href="#auth-method" class="hash-link" aria-label="Direct link to auth-method" title="Direct link to auth-method" translate="no">​</a></h3>
+<p><code>tcld namespace auth-method</code>: Manage the authentication method for the namespace.</p>
+<p>Alias: <code>am</code></p>
+<ul>
+<li class=""><a href="#set" class="">tcld namespace auth-method set</a></li>
+<li class=""><a href="#get" class="">tcld namespace auth-method get</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-2">set<a href="#set-2" class="hash-link" aria-label="Direct link to set" title="Direct link to set" translate="no">​</a></h4>
+<p><code>tcld namespace auth-method set</code>: Set the authentication method for the namespace.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-11">--namespace<a href="#--namespace-11" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-9">--request-id<a href="#--request-id-9" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-6">--resource-version<a href="#--resource-version-6" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--auth-method-1">--auth-method<a href="#--auth-method-1" class="hash-link" aria-label="Direct link to --auth-method" title="Direct link to --auth-method" translate="no">​</a></h5>
+<p>The authentication method used for the namespace (that is, &#x27;restricted&#x27;, &#x27;mtls&#x27;, &#x27;api_key&#x27;, &#x27;api_key_or_mtls&#x27;)</p>
+<p>Alias: <code>am</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-2">get<a href="#get-2" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h4>
+<p><code>tcld namespace auth-method get</code>: Retrieve the authentication method for namespace.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-12">--namespace<a href="#--namespace-12" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="certificate-filters">certificate-filters<a href="#certificate-filters" class="hash-link" aria-label="Direct link to certificate-filters" title="Direct link to certificate-filters" translate="no">​</a></h3>
+<p><code>tcld namespace certificate-filters</code>: Manage optional certificate filters used by namespace to authorize client certificates based on distinguished name fields.</p>
+<p>Alias: <code>cf</code></p>
+<ul>
+<li class=""><a href="#import" class="">tcld namespace certificate-filters import</a></li>
+<li class=""><a href="#export" class="">tcld namespace certificate-filters export</a></li>
+<li class=""><a href="#clear" class="">tcld namespace certificate-filters clear</a></li>
+<li class=""><a href="#add" class="">tcld namespace certificate-filters add</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="import">import<a href="#import" class="hash-link" aria-label="Direct link to import" title="Direct link to import" translate="no">​</a></h4>
+<p><code>tcld namespace certificate-filters import</code>: Sets the certificate filters on the namespace. Existing filters will be replaced.</p>
+<p>Alias: <code>imp</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-13">--namespace<a href="#--namespace-13" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-10">--request-id<a href="#--request-id-10" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-7">--resource-version<a href="#--resource-version-7" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-file-1">--certificate-filter-file<a href="#--certificate-filter-file-1" class="hash-link" aria-label="Direct link to --certificate-filter-file" title="Direct link to --certificate-filter-file" translate="no">​</a></h5>
+<p>Path to a JSON file that defines the certificate filters that will be configured on the namespace. This will replace the existing filter configuration. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>file</code>, <code>f</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-input-1">--certificate-filter-input<a href="#--certificate-filter-input-1" class="hash-link" aria-label="Direct link to --certificate-filter-input" title="Direct link to --certificate-filter-input" translate="no">​</a></h5>
+<p>JSON that defines the certificate filters that will be configured on the namespace. This will replace the existing filter configuration. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>input</code>, <code>i</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="export">export<a href="#export" class="hash-link" aria-label="Direct link to export" title="Direct link to export" translate="no">​</a></h4>
+<p><code>tcld namespace certificate-filters export</code>: Exports existing certificate filters on the namespace.</p>
+<p>Alias: <code>exp</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-14">--namespace<a href="#--namespace-14" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-11">--request-id<a href="#--request-id-11" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-8">--resource-version<a href="#--resource-version-8" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-file-2">--certificate-filter-file<a href="#--certificate-filter-file-2" class="hash-link" aria-label="Direct link to --certificate-filter-file" title="Direct link to --certificate-filter-file" translate="no">​</a></h5>
+<p>Path to a JSON file where tcld will export the certificate filter configuration to</p>
+<p>Alias: <code>file</code>, <code>f</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="clear">clear<a href="#clear" class="hash-link" aria-label="Direct link to clear" title="Direct link to clear" translate="no">​</a></h4>
+<p><code>tcld namespace certificate-filters clear</code>: Clears all certificate filters on the namespace. Note that this will allow <em>any</em> client certificate that chains up to a configured CA in the bundle to connect to the namespace.</p>
+<p>Alias: <code>c</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-15">--namespace<a href="#--namespace-15" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-12">--request-id<a href="#--request-id-12" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-9">--resource-version<a href="#--resource-version-9" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="add-1">add<a href="#add-1" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h4>
+<p><code>tcld namespace certificate-filters add</code>: Adds additional certificate filters to the namespace.</p>
+<p>Alias: <code>a</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-16">--namespace<a href="#--namespace-16" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-13">--request-id<a href="#--request-id-13" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-10">--resource-version<a href="#--resource-version-10" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-file-3">--certificate-filter-file<a href="#--certificate-filter-file-3" class="hash-link" aria-label="Direct link to --certificate-filter-file" title="Direct link to --certificate-filter-file" translate="no">​</a></h5>
+<p>Path to a JSON file that defines the certificate filters that will be added to the namespace. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>file</code>, <code>f</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--certificate-filter-input-2">--certificate-filter-input<a href="#--certificate-filter-input-2" class="hash-link" aria-label="Direct link to --certificate-filter-input" title="Direct link to --certificate-filter-input" translate="no">​</a></h5>
+<p>JSON that defines the certificate filters that will be added to the namespace. Sample JSON: { &quot;filters&quot;: [ { &quot;commonName&quot;: &quot;test1&quot; } ] }</p>
+<p>Alias: <code>input</code>, <code>i</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="update-codec-server">update-codec-server<a href="#update-codec-server" class="hash-link" aria-label="Direct link to update-codec-server" title="Direct link to update-codec-server" translate="no">​</a></h3>
+<p><code>tcld namespace update-codec-server</code>: Update codec server config used to decode encoded payloads through remote endpoint.</p>
+<p>Alias: <code>ucs</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-17">--namespace<a href="#--namespace-17" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--endpoint-1">--endpoint<a href="#--endpoint-1" class="hash-link" aria-label="Direct link to --endpoint" title="Direct link to --endpoint" translate="no">​</a></h4>
+<p>The codec server endpoint to decode payloads for all users interacting with this Namespace, must be https</p>
+<p>Alias: <code>e</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--pass-access-token-1">--pass-access-token<a href="#--pass-access-token-1" class="hash-link" aria-label="Direct link to --pass-access-token" title="Direct link to --pass-access-token" translate="no">​</a></h4>
+<p>Pass the user access token to the remote endpoint</p>
+<p>Alias: <code>pat</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--include-credentials-1">--include-credentials<a href="#--include-credentials-1" class="hash-link" aria-label="Direct link to --include-credentials" title="Direct link to --include-credentials" translate="no">​</a></h4>
+<p>Include cross-origin credentials</p>
+<p>Alias: <code>ic</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="retention">retention<a href="#retention" class="hash-link" aria-label="Direct link to retention" title="Direct link to retention" translate="no">​</a></h3>
+<p><code>tcld namespace retention</code>: Manages configuration of the length of time (in days) a closed workflow will be preserved before deletion.</p>
+<p>Alias: <code>r</code></p>
+<ul>
+<li class=""><a href="#set" class="">tcld namespace retention set</a></li>
+<li class=""><a href="#get" class="">tcld namespace retention get</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-3">set<a href="#set-3" class="hash-link" aria-label="Direct link to set" title="Direct link to set" translate="no">​</a></h4>
+<p><code>tcld namespace retention set</code>: Set the length of time (in days) a closed workflow will be preserved before deletion for a given namespace.</p>
+<p>Alias: <code>s</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-18">--namespace<a href="#--namespace-18" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-11">--resource-version<a href="#--resource-version-11" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--retention-days-1">--retention-days<a href="#--retention-days-1" class="hash-link" aria-label="Direct link to --retention-days" title="Direct link to --retention-days" translate="no">​</a></h5>
+<p>The retention of the namespace in days</p>
+<p>Alias: <code>rd</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-14">--request-id<a href="#--request-id-14" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-3">get<a href="#get-3" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h4>
+<p><code>tcld namespace retention get</code>: Retrieve the length of time (in days) a closed workflow will be preserved before deletion for a given namespace.</p>
+<p>Alias: <code>g</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-19">--namespace<a href="#--namespace-19" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-attributes">search-attributes<a href="#search-attributes" class="hash-link" aria-label="Direct link to search-attributes" title="Direct link to search-attributes" translate="no">​</a></h3>
+<p><code>tcld namespace search-attributes</code>: Manage search attributes used by namespace.</p>
+<p>Alias: <code>sa</code></p>
+<ul>
+<li class=""><a href="#add" class="">tcld namespace search-attributes add</a></li>
+<li class=""><a href="#remove" class="">tcld namespace search-attributes remove</a></li>
+<li class=""><a href="#rename" class="">tcld namespace search-attributes rename</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="add-2">add<a href="#add-2" class="hash-link" aria-label="Direct link to add" title="Direct link to add" translate="no">​</a></h4>
+<p><code>tcld namespace search-attributes add</code>: Add a new namespace custom search attribute.</p>
+<p>Alias: <code>a</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-20">--namespace<a href="#--namespace-20" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-15">--request-id<a href="#--request-id-15" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-12">--resource-version<a href="#--resource-version-12" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--search-attribute-1">--search-attribute<a href="#--search-attribute-1" class="hash-link" aria-label="Direct link to --search-attribute" title="Direct link to --search-attribute" translate="no">​</a></h5>
+<p>Flag can be used multiple times; value must be &quot;name=type&quot;; valid types are: [Keyword Text Int Double Datetime Bool KeywordList]</p>
+<p>Alias: <code>sa</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove-1">remove<a href="#remove-1" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h4>
+<p><code>tcld namespace search-attributes remove</code>: Remove an existing namespace custom search attribute.</p>
+<p>Alias: <code>rm</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-21">--namespace<a href="#--namespace-21" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-16">--request-id<a href="#--request-id-16" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-13">--resource-version<a href="#--resource-version-13" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--search-attribute-2">--search-attribute<a href="#--search-attribute-2" class="hash-link" aria-label="Direct link to --search-attribute" title="Direct link to --search-attribute" translate="no">​</a></h5>
+<p>The name of the search attribute to remove</p>
+<p>Alias: <code>sa</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="rename">rename<a href="#rename" class="hash-link" aria-label="Direct link to rename" title="Direct link to rename" translate="no">​</a></h4>
+<p><code>tcld namespace search-attributes rename</code>: Update the name of an existing custom search attribute.</p>
+<p>Alias: <code>rn</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-22">--namespace<a href="#--namespace-22" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-17">--request-id<a href="#--request-id-17" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-14">--resource-version<a href="#--resource-version-14" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--existing-name">--existing-name<a href="#--existing-name" class="hash-link" aria-label="Direct link to --existing-name" title="Direct link to --existing-name" translate="no">​</a></h5>
+<p>The name of an existing search attribute</p>
+<p>Alias: <code>en</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--new-name">--new-name<a href="#--new-name" class="hash-link" aria-label="Direct link to --new-name" title="Direct link to --new-name" translate="no">​</a></h5>
+<p>The new name for the search attribute</p>
+<p>Alias: <code>nn</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="failover">failover<a href="#failover" class="hash-link" aria-label="Direct link to failover" title="Direct link to failover" translate="no">​</a></h3>
+<p><code>tcld namespace failover</code>: Failover a temporal namespace.</p>
+<p>Alias: <code>fo</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-18">--request-id<a href="#--request-id-18" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-23">--namespace<a href="#--namespace-23" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region-3">--region<a href="#--region-3" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h4>
+<p>The region to failover to</p>
+<p>Alias: <code>re</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--cloud-provider-3">--cloud-provider<a href="#--cloud-provider-3" class="hash-link" aria-label="Direct link to --cloud-provider" title="Direct link to --cloud-provider" translate="no">​</a></h4>
+<p>The cloud provider of the region. Default: aws</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="update-high-availability">update-high-availability<a href="#update-high-availability" class="hash-link" aria-label="Direct link to update-high-availability" title="Direct link to update-high-availability" translate="no">​</a></h3>
+<p><code>tcld namespace update-high-availability</code>: Update Temporal namespace high availability setting.</p>
+<p>Alias: <code>uha</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-19">--request-id<a href="#--request-id-19" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h4>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-24">--namespace<a href="#--namespace-24" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--disable-auto-failover">--disable-auto-failover<a href="#--disable-auto-failover" class="hash-link" aria-label="Direct link to --disable-auto-failover" title="Direct link to --disable-auto-failover" translate="no">​</a></h4>
+<p>Disable Temporal-managed failover on a replicated namespace (use --disable-auto-failover=false to enable)</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags">tags<a href="#tags" class="hash-link" aria-label="Direct link to tags" title="Direct link to tags" translate="no">​</a></h3>
+<p><code>tcld namespace tags</code>: Manage namespace tags.</p>
+<p>Alias: <code>t</code></p>
+<ul>
+<li class=""><a href="#upsert" class="">tcld namespace tags upsert</a></li>
+<li class=""><a href="#remove" class="">tcld namespace tags remove</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="upsert">upsert<a href="#upsert" class="hash-link" aria-label="Direct link to upsert" title="Direct link to upsert" translate="no">​</a></h4>
+<p><code>tcld namespace tags upsert</code>: Add new tags or update existing tag values.</p>
+<p>Alias: <code>u</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-25">--namespace<a href="#--namespace-25" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-20">--request-id<a href="#--request-id-20" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--tag-1">--tag<a href="#--tag-1" class="hash-link" aria-label="Direct link to --tag" title="Direct link to --tag" translate="no">​</a></h5>
+<p>Add new or update existing namespace tags (format: key=value). Flag can be used multiple times.</p>
+<p>Alias: <code>t</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove-2">remove<a href="#remove-2" class="hash-link" aria-label="Direct link to remove" title="Direct link to remove" translate="no">​</a></h4>
+<p><code>tcld namespace tags remove</code>: Remove existing tags by key.</p>
+<p>Alias: <code>rm</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-26">--namespace<a href="#--namespace-26" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-21">--request-id<a href="#--request-id-21" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--tag-key">--tag-key<a href="#--tag-key" class="hash-link" aria-label="Direct link to --tag-key" title="Direct link to --tag-key" translate="no">​</a></h5>
+<p>Remove namespace tags by key. Flag can be used multiple times.</p>
+<p>Alias: <code>tk</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capacity">capacity<a href="#capacity" class="hash-link" aria-label="Direct link to capacity" title="Direct link to capacity" translate="no">​</a></h3>
+<p><code>tcld namespace capacity</code>: Manage namespace capacity.</p>
+<p>Alias: <code>cap</code></p>
+<ul>
+<li class=""><a href="#get" class="">tcld namespace capacity get</a></li>
+<li class=""><a href="#update" class="">tcld namespace capacity update</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-4">get<a href="#get-4" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h4>
+<p><code>tcld namespace capacity get</code>: Get namespace capacity information.</p>
+<p>Alias: <code>g</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-27">--namespace<a href="#--namespace-27" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="update">update<a href="#update" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h4>
+<p><code>tcld namespace capacity update</code>: Set the capacity of a given namespace.</p>
+<p>Alias: <code>u</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-28">--namespace<a href="#--namespace-28" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h5>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--capacity-mode">--capacity-mode<a href="#--capacity-mode" class="hash-link" aria-label="Direct link to --capacity-mode" title="Direct link to --capacity-mode" translate="no">​</a></h5>
+<p>The capacity mode to use for the namespace. Valid values are &#x27;on_demand&#x27; and &#x27;provisioned&#x27;</p>
+<p>Alias: <code>cm</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--capacity-value">--capacity-value<a href="#--capacity-value" class="hash-link" aria-label="Direct link to --capacity-value" title="Direct link to --capacity-value" translate="no">​</a></h5>
+<p>The capacity value to use for the namespace. Required if capacity mode is &#x27;provisioned&#x27;, ignored otherwise</p>
+<p>Alias: <code>cv</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-22">--request-id<a href="#--request-id-22" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h5>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-15">--resource-version<a href="#--resource-version-15" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h5>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="export-1">export<a href="#export-1" class="hash-link" aria-label="Direct link to export" title="Direct link to export" translate="no">​</a></h3>
+<p><code>tcld namespace export</code>: Manage export.</p>
+<p>Alias: <code>es</code></p>
+<ul>
+<li class=""><a href="#s3" class="">tcld namespace export s3</a></li>
+<li class=""><a href="#gcs" class="">tcld namespace export gcs</a></li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="s3">s3<a href="#s3" class="hash-link" aria-label="Direct link to s3" title="Direct link to s3" translate="no">​</a></h4>
+<p><code>tcld namespace export s3</code>: Manage S3 export sink.</p>
+<ul>
+<li class=""><a href="#create" class="">tcld namespace export s3 create</a></li>
+<li class=""><a href="#validate" class="">tcld namespace export s3 validate</a></li>
+<li class=""><a href="#update" class="">tcld namespace export s3 update</a></li>
+<li class=""><a href="#get" class="">tcld namespace export s3 get</a></li>
+<li class=""><a href="#delete" class="">tcld namespace export s3 delete</a></li>
+<li class=""><a href="#list" class="">tcld namespace export s3 list</a></li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-1">create<a href="#create-1" class="hash-link" aria-label="Direct link to create" title="Direct link to create" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 create</code>: Create export sink.</p>
+<p>Alias: <code>c</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-29">--namespace<a href="#--namespace-29" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name">--sink-name<a href="#--sink-name" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--role-arn">--role-arn<a href="#--role-arn" class="hash-link" aria-label="Direct link to --role-arn" title="Direct link to --role-arn" translate="no">​</a></h6>
+<p>Provide role arn for the IAM Role</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--s3-bucket-name">--s3-bucket-name<a href="#--s3-bucket-name" class="hash-link" aria-label="Direct link to --s3-bucket-name" title="Direct link to --s3-bucket-name" translate="no">​</a></h6>
+<p>Provide the name of an AWS S3 bucket that Temporal will send closed workflow histories to</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--kms-arn">--kms-arn<a href="#--kms-arn" class="hash-link" aria-label="Direct link to --kms-arn" title="Direct link to --kms-arn" translate="no">​</a></h6>
+<p>Provide the ARN of the KMS key to use for encryption. Note: If the KMS ARN needs to be added or updated, user must create the IAM Role with KMS or modify the created IAM Role accordingly.</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region-4">--region<a href="#--region-4" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h6>
+<p>The region to use for the request, if not set the server will use the namespace&#x27;s region</p>
+<p>Alias: <code>re</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="validate">validate<a href="#validate" class="hash-link" aria-label="Direct link to validate" title="Direct link to validate" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 validate</code>: Validate export sink.</p>
+<p>Alias: <code>v</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-30">--namespace<a href="#--namespace-30" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-1">--sink-name<a href="#--sink-name-1" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--role-arn-1">--role-arn<a href="#--role-arn-1" class="hash-link" aria-label="Direct link to --role-arn" title="Direct link to --role-arn" translate="no">​</a></h6>
+<p>Provide role arn for the IAM Role</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--s3-bucket-name-1">--s3-bucket-name<a href="#--s3-bucket-name-1" class="hash-link" aria-label="Direct link to --s3-bucket-name" title="Direct link to --s3-bucket-name" translate="no">​</a></h6>
+<p>Provide the name of an AWS S3 bucket that Temporal will send closed workflow histories to</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--kms-arn-1">--kms-arn<a href="#--kms-arn-1" class="hash-link" aria-label="Direct link to --kms-arn" title="Direct link to --kms-arn" translate="no">​</a></h6>
+<p>Provide the ARN of the KMS key to use for encryption. Note: If the KMS ARN needs to be added or updated, user must create the IAM Role with KMS or modify the created IAM Role accordingly.</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--region-5">--region<a href="#--region-5" class="hash-link" aria-label="Direct link to --region" title="Direct link to --region" translate="no">​</a></h6>
+<p>The region to use for the request, if not set the server will use the namespace&#x27;s region</p>
+<p>Alias: <code>re</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="update-1">update<a href="#update-1" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 update</code>: Update export sink.</p>
+<p>Alias: <code>u</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-31">--namespace<a href="#--namespace-31" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-2">--sink-name<a href="#--sink-name-2" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--enabled">--enabled<a href="#--enabled" class="hash-link" aria-label="Direct link to --enabled" title="Direct link to --enabled" translate="no">​</a></h6>
+<p>Whether the sink is enabled</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--role-arn-2">--role-arn<a href="#--role-arn-2" class="hash-link" aria-label="Direct link to --role-arn" title="Direct link to --role-arn" translate="no">​</a></h6>
+<p>Provide role arn for the IAM Role</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--s3-bucket-name-2">--s3-bucket-name<a href="#--s3-bucket-name-2" class="hash-link" aria-label="Direct link to --s3-bucket-name" title="Direct link to --s3-bucket-name" translate="no">​</a></h6>
+<p>Provide the name of an AWS S3 bucket that Temporal will send closed workflow histories to</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-16">--resource-version<a href="#--resource-version-16" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h6>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--kms-arn-2">--kms-arn<a href="#--kms-arn-2" class="hash-link" aria-label="Direct link to --kms-arn" title="Direct link to --kms-arn" translate="no">​</a></h6>
+<p>Provide the ARN of the KMS key to use for encryption. Note: If the KMS ARN needs to be added or updated, user must create the IAM Role with KMS or modify the created IAM Role accordingly.</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-5">get<a href="#get-5" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 get</code>: Get export sink.</p>
+<p>Alias: <code>g</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-32">--namespace<a href="#--namespace-32" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-3">--sink-name<a href="#--sink-name-3" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="delete-1">delete<a href="#delete-1" class="hash-link" aria-label="Direct link to delete" title="Direct link to delete" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 delete</code>: Delete export sink.</p>
+<p>Alias: <code>d</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-33">--namespace<a href="#--namespace-33" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-4">--sink-name<a href="#--sink-name-4" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-17">--resource-version<a href="#--resource-version-17" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h6>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-23">--request-id<a href="#--request-id-23" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h6>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="list-2">list<a href="#list-2" class="hash-link" aria-label="Direct link to list" title="Direct link to list" translate="no">​</a></h5>
+<p><code>tcld namespace export s3 list</code>: List export sinks.</p>
+<p>Alias: <code>l</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-34">--namespace<a href="#--namespace-34" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-size-1">--page-size<a href="#--page-size-1" class="hash-link" aria-label="Direct link to --page-size" title="Direct link to --page-size" translate="no">​</a></h6>
+<p>The page size for list operations</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-token-1">--page-token<a href="#--page-token-1" class="hash-link" aria-label="Direct link to --page-token" title="Direct link to --page-token" translate="no">​</a></h6>
+<p>The page token for list operations</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="gcs">gcs<a href="#gcs" class="hash-link" aria-label="Direct link to gcs" title="Direct link to gcs" translate="no">​</a></h4>
+<p><code>tcld namespace export gcs</code>: Manage GCS export sink.</p>
+<ul>
+<li class=""><a href="#create" class="">tcld namespace export gcs create</a></li>
+<li class=""><a href="#update" class="">tcld namespace export gcs update</a></li>
+<li class=""><a href="#validate" class="">tcld namespace export gcs validate</a></li>
+<li class=""><a href="#get" class="">tcld namespace export gcs get</a></li>
+<li class=""><a href="#delete" class="">tcld namespace export gcs delete</a></li>
+<li class=""><a href="#list" class="">tcld namespace export gcs list</a></li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="create-2">create<a href="#create-2" class="hash-link" aria-label="Direct link to create" title="Direct link to create" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs create</code>: Create export sink.</p>
+<p>Alias: <code>c</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-35">--namespace<a href="#--namespace-35" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-5">--sink-name<a href="#--sink-name-5" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--service-account-email">--service-account-email<a href="#--service-account-email" class="hash-link" aria-label="Direct link to --service-account-email" title="Direct link to --service-account-email" translate="no">​</a></h6>
+<p>Service account that has access to the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--gcs-bucket">--gcs-bucket<a href="#--gcs-bucket" class="hash-link" aria-label="Direct link to --gcs-bucket" title="Direct link to --gcs-bucket" translate="no">​</a></h6>
+<p>GCS bucket of the sink</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="update-2">update<a href="#update-2" class="hash-link" aria-label="Direct link to update" title="Direct link to update" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs update</code>: Update export sink.</p>
+<p>Alias: <code>u</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-36">--namespace<a href="#--namespace-36" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-6">--sink-name<a href="#--sink-name-6" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--enabled-1">--enabled<a href="#--enabled-1" class="hash-link" aria-label="Direct link to --enabled" title="Direct link to --enabled" translate="no">​</a></h6>
+<p>Whether the sink is enabled</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--service-account-email-1">--service-account-email<a href="#--service-account-email-1" class="hash-link" aria-label="Direct link to --service-account-email" title="Direct link to --service-account-email" translate="no">​</a></h6>
+<p>Service account that has access to the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--gcs-bucket-1">--gcs-bucket<a href="#--gcs-bucket-1" class="hash-link" aria-label="Direct link to --gcs-bucket" title="Direct link to --gcs-bucket" translate="no">​</a></h6>
+<p>GCS bucket of the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-18">--resource-version<a href="#--resource-version-18" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h6>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="validate-1">validate<a href="#validate-1" class="hash-link" aria-label="Direct link to validate" title="Direct link to validate" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs validate</code>: Validate export sink.</p>
+<p>Alias: <code>v</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-37">--namespace<a href="#--namespace-37" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-7">--sink-name<a href="#--sink-name-7" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--service-account-email-2">--service-account-email<a href="#--service-account-email-2" class="hash-link" aria-label="Direct link to --service-account-email" title="Direct link to --service-account-email" translate="no">​</a></h6>
+<p>Service account that has access to the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--gcs-bucket-2">--gcs-bucket<a href="#--gcs-bucket-2" class="hash-link" aria-label="Direct link to --gcs-bucket" title="Direct link to --gcs-bucket" translate="no">​</a></h6>
+<p>GCS bucket of the sink</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="get-6">get<a href="#get-6" class="hash-link" aria-label="Direct link to get" title="Direct link to get" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs get</code>: Get export sink.</p>
+<p>Alias: <code>g</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-38">--namespace<a href="#--namespace-38" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-8">--sink-name<a href="#--sink-name-8" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="delete-2">delete<a href="#delete-2" class="hash-link" aria-label="Direct link to delete" title="Direct link to delete" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs delete</code>: Delete export sink.</p>
+<p>Alias: <code>d</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-39">--namespace<a href="#--namespace-39" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--sink-name-9">--sink-name<a href="#--sink-name-9" class="hash-link" aria-label="Direct link to --sink-name" title="Direct link to --sink-name" translate="no">​</a></h6>
+<p>Provide a name for the sink</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--resource-version-19">--resource-version<a href="#--resource-version-19" class="hash-link" aria-label="Direct link to --resource-version" title="Direct link to --resource-version" translate="no">​</a></h6>
+<p>The resource-version (etag) to update from, if not set the cli will use the latest (optional)</p>
+<p>Alias: <code>v</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--request-id-24">--request-id<a href="#--request-id-24" class="hash-link" aria-label="Direct link to --request-id" title="Direct link to --request-id" translate="no">​</a></h6>
+<p>The request-id to use for the asynchronous operation, if not set the server will assign one (optional)</p>
+<p>Alias: <code>r</code></p>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id="list-3">list<a href="#list-3" class="hash-link" aria-label="Direct link to list" title="Direct link to list" translate="no">​</a></h5>
+<p><code>tcld namespace export gcs list</code>: List export sinks.</p>
+<p>Alias: <code>l</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-40">--namespace<a href="#--namespace-40" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h6>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-size-2">--page-size<a href="#--page-size-2" class="hash-link" aria-label="Direct link to --page-size" title="Direct link to --page-size" translate="no">​</a></h6>
+<p>The page size for list operations</p>
+<h6 class="anchor anchorTargetStickyNavbar_Vzrq" id="--page-token-2">--page-token<a href="#--page-token-2" class="hash-link" aria-label="Direct link to --page-token" title="Direct link to --page-token" translate="no">​</a></h6>
+<p>The page token for list operations</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="set-connectivity-rules">set-connectivity-rules<a href="#set-connectivity-rules" class="hash-link" aria-label="Direct link to set-connectivity-rules" title="Direct link to set-connectivity-rules" translate="no">​</a></h3>
+<p><code>tcld namespace set-connectivity-rules</code>: set the connectivity rules for a namespace.</p>
+<p>Alias: <code>scrs</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--namespace-41">--namespace<a href="#--namespace-41" class="hash-link" aria-label="Direct link to --namespace" title="Direct link to --namespace" translate="no">​</a></h4>
+<p>The namespace hosted on temporal cloud</p>
+<p>Alias: <code>n</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--connectivity-rule-ids-1">--connectivity-rule-ids<a href="#--connectivity-rule-ids-1" class="hash-link" aria-label="Direct link to --connectivity-rule-ids" title="Direct link to --connectivity-rule-ids" translate="no">​</a></h4>
+<p>The list of connectivity rule IDs, can be used in create namespace and update namespace. example: --ids id1 --ids id2 --ids id3</p>
+<p>Alias: <code>ids</code></p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="--remove-all">--remove-all<a href="#--remove-all" class="hash-link" aria-label="Direct link to --remove-all" title="Direct link to --remove-all" translate="no">​</a></h4>
+<p>Acknowledge that all connectivity rules will be removed, enabling connectivity from any source</p></div>

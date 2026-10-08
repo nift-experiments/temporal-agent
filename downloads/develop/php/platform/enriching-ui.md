@@ -1,0 +1,140 @@
+# Enriching the user interface - PHP SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Add contextual information to workflows and events in the Temporal UI using the PHP SDK.
+
+Temporal supports adding context to Workflows and Events with metadata. 
+This helps users identify and understand Workflows and their operations.
+
+## Adding summary and details to Workflows
+
+### Starting a Workflow
+
+When starting a Workflow, you can provide a static summary and details to help identify the Workflow in the UI:
+
+```php
+use Temporal\Client\WorkflowClient;
+use Temporal\Client\WorkflowOptions;
+
+// Create workflow client
+$workflowClient = WorkflowClient::create($serviceClient);
+
+// Start a workflow with static summary and details
+$workflow = $workflowClient->newWorkflowStub(
+    YourWorkflow::class,
+    WorkflowOptions::new()
+        ->withWorkflowId('your-workflow-id')
+        ->withTaskQueue('your-task-queue')
+        ->withStaticSummary('Order processing for customer #12345')
+        ->withStaticDetails('Processing premium order with expedited shipping')
+);
+
+$result = $workflow->yourWorkflowMethod('workflow input');
+```
+
+`withStaticSummary()` sets a single-line description that appears in the Workflow list view, limited to 200 bytes.
+`withStaticDetails()` sets multi-line comprehensive information that appears in the Workflow details view, with a larger limit of 20K bytes.
+
+The input format is standard Markdown excluding images, HTML, and scripts.
+
+You can also start a Workflow asynchronously:
+
+```php
+// Start workflow asynchronously
+$workflowClient->start($workflow, 'workflow input');
+```
+
+### Adding Summary to Activities and Timers
+
+You can attach a `summary` to timers within a workflow:
+
+```php
+use Temporal\Workflow;
+use Temporal\Workflow\TimerOptions;
+
+#[WorkflowInterface]
+interface YourWorkflow
+{
+    #[WorkflowMethod]
+    public function yourWorkflowMethod(string $input): string;
+}
+
+class YourWorkflowImpl implements YourWorkflow
+{
+    public function yourWorkflowMethod(string $input): \Generator
+    {
+        // Create a timer with a summary
+        yield Workflow::timer(
+            300, // 5 minutes in seconds
+            TimerOptions::new()->withSummary('Waiting for payment confirmation')
+        );
+        
+        return 'Timer completed';
+    }
+}
+```
+
+For Activities, you can set a summary using Activity options:
+
+```php
+use Temporal\Activity\ActivityOptions;
+use Temporal\Workflow;
+
+class YourWorkflowImpl implements YourWorkflow
+{
+    private YourActivitiesInterface $activities;
+    
+    public function __construct()
+    {
+        $this->activities = Workflow::newActivityStub(
+            YourActivitiesInterface::class,
+            ActivityOptions::new()
+                ->withStartToCloseTimeout('10 seconds')
+                ->withSummary('Processing user data')
+        );
+    }
+    
+    public function yourWorkflowMethod(string $input): \Generator
+    {
+        // Execute the activity with the summary
+        $result = yield $this->activities->yourActivity($input);
+        
+        return $result;
+    }
+}
+```
+
+The input format for `summary` is a string, and limited to 200 bytes.
+
+## Viewing summary and details in the UI
+
+Once you've added summaries and details to your Workflows, Activities, and Timers, you can view this enriched information in the Temporal Web UI. 
+Navigate to your Workflow's details page to see the metadata displayed in three key locations:
+
+### User Metadata
+
+On the Workflow Details page, under the **User Metadata** tab, you'll find the workflow-level metadata:
+
+- **Summary & Details** - Displays the static summary and static details set when starting the Workflow
+- **Current Details** - Displays the dynamic details that can be updated during Workflow Execution
+
+All Workflow details support standard Markdown formatting (excluding images, HTML, and scripts), allowing you to create rich, structured information displays.
+
+### Timeline
+
+The **Timeline** tab on the Workflow details page renders each Activity and Timer as a horizontal bar. When you set a `Summary` on an Activity or Timer, the summary text is shown directly on the bar label, making it possible to distinguish individual instances of the same Activity Type at a glance.
+
+Labels longer than 120 characters are truncated with an ellipsis.
+
+Setting a distinct `Summary` per Activity is especially useful for **fan-out Workflows** that schedule many instances of the same Activity Type, where the Activity Type alone is not enough to tell each bar apart on the Timeline. 
+
+Activity `Summary` support on the Timeline shipped in Temporal UI **v2.34.6** and is available on Temporal Cloud and on self-hosted UI builds at that version or later.
+
+### Event History
+
+Individual events in the Workflow's Event History display their associated summaries when available.
+
+Workflow, Activity and Timer summaries appear in purple text next to their corresponding Events, providing immediate context without requiring you to expand the event details. 
+When you do expand an Event, the summary is also prominently displayed in the detailed view.

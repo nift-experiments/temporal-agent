@@ -1,0 +1,143 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/workflow-execution.md">/workflow-execution.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Temporal Workflow Execution overview</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/workflow-execution.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fworkflow-execution.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fworkflow-execution.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This page provides an overview of Workflow Execution:</p>
+<ul>
+<li class=""><a href="#workflow-execution" class="">What is a Workflow Execution?</a></li>
+<li class=""><a href="#replay" class="">Replay</a></li>
+<li class=""><a href="#commands-awaitables" class="">Commands and awaitables</a></li>
+<li class=""><a href="#command" class="">What is a Command?</a></li>
+<li class=""><a href="#workflow-execution-status" class="">Checking Workflow Execution Status</a></li>
+<li class=""><a href="#workflow-execution-chain" class="">Workflow Execution Chain</a></li>
+<li class=""><a href="#memo" class="">Memo</a></li>
+<li class=""><a href="#state-transition" class="">State Transition</a></li>
+<li class=""><a href="#workflow-cache" class="">Workflow cache</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-execution">What is a Workflow Execution?<a href="#workflow-execution" class="hash-link" aria-label="Direct link to What is a Workflow Execution?" title="Direct link to What is a Workflow Execution?" translate="no">​</a></h2>
+<p>While the Workflow Definition is the code that defines the Workflow, the Workflow Execution is created by executing that code.
+A Temporal Workflow Execution is a durable, reliable, and scalable function execution.
+It is the main unit of execution of a <a href="/temporal#temporal-application" class="">Temporal Application</a>.</p>
+<ul>
+<li class=""><a href="/cli/command-reference/workflow#start" class="">How to start a Workflow Execution using temporal</a></li>
+<li class=""><a href="/develop/dotnet/client/temporal-client#start-workflow" class="">How to start a Workflow Execution using the .NET SDK</a></li>
+<li class=""><a href="/develop/go/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the Go SDK</a></li>
+<li class=""><a href="/develop/java/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the Java SDK</a></li>
+<li class=""><a href="/develop/php/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the PHP SDK</a></li>
+<li class=""><a href="/develop/python/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the Python SDK</a></li>
+<li class=""><a href="/develop/ruby/client/temporal-client#start-workflow" class="">How to start a Workflow Execution using the Ruby SDK</a></li>
+<li class=""><a href="/develop/rust/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the Rust SDK</a></li>
+<li class=""><a href="/develop/typescript/client/temporal-client#start-workflow-execution" class="">How to start a Workflow Execution using the TypeScript SDK</a></li>
+</ul>
+<p>Each Temporal Workflow Execution has exclusive access to its local state.
+It executes concurrently to all other Workflow Executions, and communicates with other Workflow Executions through <a href="/sending-messages#sending-signals" class="">Signals</a> and the environment through <a href="/activities" class="">Activities</a>.
+While a single Workflow Execution has limits on size and throughput, a Temporal Application can consist of millions to billions of Workflow Executions.</p>
+<p><strong>Durability</strong></p>
+<p>Durability is the absence of an imposed time limit.</p>
+<p>A Workflow Execution is durable because it executes a Temporal Workflow Definition (also called a Temporal Workflow Function), your application code, effectively once and to completion—whether your code executes for seconds or years.</p>
+<p><strong>Reliability</strong></p>
+<p>Reliability is responsiveness in the presence of failure.</p>
+<p>A Workflow Execution is reliable, because it is fully recoverable after a failure.
+The Temporal Platform ensures the state of the Workflow Execution persists in the face of failures and outages and resumes execution from the latest state.</p>
+<p><strong>Scalability</strong></p>
+<p>Scalability is responsiveness in the presence of load.</p>
+<p>A single Workflow Execution is limited in size and throughput but is scalable because it can <a href="/workflow-execution/continue-as-new" class="">Continue-As-New</a> in response to load.
+A Temporal Application is scalable because the Temporal Platform is capable of supporting millions to billions of Workflow Executions executing concurrently, which is realized by the design and nature of the <a href="/temporal-service" class="">Temporal Service</a> and <a href="/workers#worker-process" class="">Worker Processes</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="replay">Replays<a href="#replay" class="hash-link" aria-label="Direct link to Replays" title="Direct link to Replays" translate="no">​</a></h3>
+<p>A Replay is the method by which a Workflow Execution resumes making progress. During a Replay the Commands that are generated are checked against an existing Event History. Replays are necessary and often happen to give the effect that Workflow Executions are resumable, reliable, and durable.</p>
+<p>For more information, see <a href="/workflow-definition#deterministic-constraints" class="">Deterministic constraints</a>.</p>
+<p>If a failure occurs, the Workflow Execution picks up where the last recorded event occurred in the Event History.</p>
+<ul>
+<li class=""><a href="/develop/go/best-practices/testing-suite#replay" class="">How to use Replay APIs using the Go SDK</a></li>
+<li class=""><a href="/develop/java/best-practices/testing-suite#replay" class="">How to use Replay APIs using the Java SDK</a></li>
+<li class=""><a href="/develop/python/best-practices/testing-suite#replay" class="">How to use Replay APIs using the Python SDK</a></li>
+<li class=""><a href="/develop/typescript/best-practices/testing-suite#replay" class="">How to use Replay APIs using the TypeScript SDK</a></li>
+<li class=""><a href="/develop/dotnet/best-practices/testing-suite#replay" class="">How to use Replay APIs using the .NET SDK</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="commands-awaitables">Commands and awaitables<a href="#commands-awaitables" class="hash-link" aria-label="Direct link to Commands and awaitables" title="Direct link to Commands and awaitables" translate="no">​</a></h3>
+<p>A Workflow Execution does two things:</p>
+<ol>
+<li class="">Issue <a href="#command" class="">Commands</a>.</li>
+<li class="">Wait on an Awaitables (often called Futures).</li>
+</ol>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/workflow-execution-progession-simple.svg&quot;,&quot;title&quot;:&quot;Command generation and waiting&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/workflow-execution-progession-simple.svg" alt="Command generation and waiting" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Command generation and waiting</p></div></span>
+<p>Commands are issued and Awaitables are provided by the use of Workflow APIs in the <a href="/workflow-definition" class="">Workflow Definition</a>.</p>
+<p>Commands are generated whenever the Workflow Function is executed.
+The Worker Process supervises the Command generation and makes sure that it maps to the current Event History.
+(For more information, see <a href="/workflow-definition#deterministic-constraints" class="">Deterministic constraints</a>.)
+The Worker Process batches the Commands and then suspends progress to send the Commands to the Temporal Service whenever the Workflow Function reaches a place where it can no longer progress without a result from an Awaitable.</p>
+<p>A Workflow Execution may only ever block progress on an Awaitable that is provided through a Temporal SDK API.
+Awaitables are provided when using APIs for the following:</p>
+<ul>
+<li class="">Awaiting: Progress can block using explicit &quot;Await&quot; APIs.</li>
+<li class="">Requesting cancellation of another Workflow Execution: Progress can block on confirmation that the other Workflow Execution is cancelled.</li>
+<li class="">Sending a <a href="/sending-messages#sending-signals" class="">Signal</a>: Progress can block on confirmation that the Signal sent.</li>
+<li class="">Spawning a <a href="/child-workflows" class="">Child Workflow Execution</a>: Progress can block on confirmation that the Child Workflow Execution started, and on the result of the Child Workflow Execution.</li>
+<li class="">Spawning an <a href="/activity-execution" class="">Activity Execution</a>: Progress can block on the result of the Activity Execution.</li>
+<li class="">Starting a Timer: Progress can block until the Timer fires.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="command">What is a Command?<a href="#command" class="hash-link" aria-label="Direct link to What is a Command?" title="Direct link to What is a Command?" translate="no">​</a></h3>
+<p>A Command is a requested action issued by a <a href="/workers#worker" class="">Worker</a> to the <a href="/temporal-service" class="">Temporal Service</a> after a <a href="/tasks#workflow-task-execution" class="">Workflow Task Execution</a> completes.</p>
+<p>The action that the Temporal Service takes is recorded in the <a href="#workflow-execution" class="">Workflow Execution&#x27;s</a> <a href="/workflow-execution/event#event-history" class="">Event History</a> as an <a href="/workflow-execution/event" class="">Event</a>.
+The Workflow Execution can await on some of the Events that come as a result from some of the Commands.</p>
+<p>Commands are generated by the use of Workflow APIs in your code. During a Workflow Task Execution there may be several Commands that are generated.
+The Commands are batched and sent to the Temporal Service as part of the Workflow Task Execution completion request, after the Workflow Task has progressed as far as it can with the Workflow function.
+There will always be <a href="/references/events#workflowtaskstarted" class="">WorkflowTaskStarted</a> and <a href="/references/events#workflowtaskcompleted" class="">WorkflowTaskCompleted</a> Events in the Event History when there is a Workflow Task Execution completion request.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/commands.svg&quot;,&quot;title&quot;:&quot;Commands are generated by the use of Workflow APIs in your code&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/commands.svg" alt="Commands are generated by the use of Workflow APIs in your code" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Commands are generated by the use of Workflow APIs in your code</p></div></span>
+<p>Commands are described in the <a href="/references/commands" class="">Command reference</a> and are defined in the <a href="https://github.com/temporalio/api/blob/main/temporal/api/command/v1/message.proto" target="_blank" rel="noopener noreferrer" class="">Temporal gRPC API</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-execution-status">Status<a href="#workflow-execution-status" class="hash-link" aria-label="Direct link to Status" title="Direct link to Status" translate="no">​</a></h3>
+<p>A Workflow Execution can be either <em>Open</em> or <em>Closed</em>.</p>
+<span style="display:contents" data-temporal-island="CaptionedImage" data-props="{&quot;src&quot;:&quot;/diagrams/workflow-execution-statuses.svg&quot;,&quot;title&quot;:&quot;Workflow Execution statuses&quot;}"><div class="imageContainer_nsq7" style="width:auto;padding-left:0%;padding-right:0%;position:relative;display:inline-block"><img src="/diagrams/workflow-execution-statuses.svg" alt="Workflow Execution statuses" decoding="async" loading="lazy" class="image_OlVL image_BJsV"/><p class="title_KwiN">Workflow Execution statuses</p></div></span>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="open">Open<a href="#open" class="hash-link" aria-label="Direct link to Open" title="Direct link to Open" translate="no">​</a></h4>
+<p>An <em>Open</em> status means that the Workflow Execution is able to make progress.</p>
+<ul>
+<li class="">Running: The Workflow Execution is actively progressing or is waiting on something.</li>
+<li class="">Paused: The Workflow Execution has been <a href="/encyclopedia/workflow/workflow-pause" class="">Paused</a>. It remains Open, but the Temporal Service doesn&#x27;t
+dispatch new Workflow Tasks until the Workflow Execution is Unpaused.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="closed">Closed<a href="#closed" class="hash-link" aria-label="Direct link to Closed" title="Direct link to Closed" translate="no">​</a></h4>
+<p>A <em>Closed</em> status means that the Workflow Execution cannot make further progress because of one of the following reasons:</p>
+<ul>
+<li class="">Cancelled: The Workflow Execution successfully handled a cancellation request.</li>
+<li class="">Completed: The Workflow Execution has completed successfully.</li>
+<li class="">Continued-As-New: The Workflow Execution <a href="/workflow-execution/continue-as-new" class="">Continued-As-New</a>.</li>
+<li class="">Failed: The Workflow Execution returned an error and failed.</li>
+<li class="">Terminated: The Workflow Execution was terminated.</li>
+<li class="">Timed Out: The Workflow Execution reached a timeout limit.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-execution-chain">Workflow Execution Chain<a href="#workflow-execution-chain" class="hash-link" aria-label="Direct link to Workflow Execution Chain" title="Direct link to Workflow Execution Chain" translate="no">​</a></h3>
+<p>A Workflow Execution Chain is a sequence of Workflow Executions that share the same Workflow Id.
+Each link in the Chain is often called a Workflow Run.
+Each Workflow Run in the sequence is connected by one of the following:</p>
+<ul>
+<li class=""><a href="/workflow-execution/continue-as-new" class="">Continue-As-New</a></li>
+<li class=""><a href="/encyclopedia/retry-policies" class="">Retries</a></li>
+<li class=""><a href="/cron-job" class="">Temporal Cron Job</a></li>
+</ul>
+<p>A Workflow Execution is uniquely identified by its <a href="/namespaces" class="">Namespace</a>, <a href="/workflow-execution/workflowid-runid#workflow-id" class="">Workflow Id</a>, and <a href="/workflow-execution/workflowid-runid#run-id" class="">Run Id</a>.</p>
+<p>The <a href="/encyclopedia/detecting-workflow-failures#workflow-execution-timeout" class="">Workflow Execution Timeout</a> applies to a Workflow Execution Chain.
+The <a href="/encyclopedia/detecting-workflow-failures#workflow-run-timeout" class="">Workflow Run Timeout</a> applies to a single Workflow Execution (Workflow Run).</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="memo">What is a Memo?<a href="#memo" class="hash-link" aria-label="Direct link to What is a Memo?" title="Direct link to What is a Memo?" translate="no">​</a></h2>
+<p>A Memo is a non-indexed set of Workflow Execution metadata that developers supply at start time or in Workflow code and that is returned when you describe or list Workflow Executions.</p>
+<p>The primary purpose of using a Memo is to enhance the organization and management of Workflow Executions.
+Add your own metadata, such as notes or descriptions, to a Workflow Execution, which lets you annotate and categorize Workflow Executions based on developer-defined criteria.
+This feature is particularly useful when dealing with numerous Workflow Executions because it facilitates the addition of context, reminders, or any other relevant information that aids in understanding or tracking the Workflow Execution.</p>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Use Memos judiciously</div><div class="admonitionContent_vXIg"><p>Memos shouldn&#x27;t store data that&#x27;s critical to the execution of a Workflow, for some of the following reasons:</p><ul>
+<li class="">Unlike Workflow inputs, Memos lack type safety</li>
+<li class="">Memos are subject to eventual consistency and may not be immediately available</li>
+<li class="">Excessive reliance on Memos hides mutable state from the Workflow Execution History</li>
+</ul></div></div>
+<p>On Temporal Cloud, a Memo is limited to 40 KB.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="state-transition">What is a State Transition?<a href="#state-transition" class="hash-link" aria-label="Direct link to What is a State Transition?" title="Direct link to What is a State Transition?" translate="no">​</a></h2>
+<p>A State Transition is a unit of progress made by a <a href="#workflow-execution" class="">Workflow Execution</a>.
+Each State Transition is recorded in a persistence store.</p>
+<p>Some operations, such as <a href="/encyclopedia/detecting-activity-failures#activity-heartbeat" class="">Activity Heartbeats</a>, require only one or two State Transitions each. With an Activity Heartbeat, there are two: the Activity Heartbeat and a Timer.</p>
+<p>Most operations require multiple State Transitions.</p>
+<p>For example, a simple Workflow with two sequential <a href="/tasks#activity-task" class="">Activity Tasks</a> (and no retries) produces 11 State Transitions: two for Workflow start, four for each Activity, and one for Workflow completion.</p>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>NEXT STEPS</div><div class="admonitionContent_vXIg"><p>For more information on Workflow Execution, please refer to the following subpages:</p><ul>
+<li class=""><a href="/workflow-execution/event" class="">Event</a></li>
+<li class=""><a href="/workflow-execution/workflowid-runid" class="">Workflow Id and Run Id</a></li>
+<li class=""><a href="/workflow-execution/limits" class="">Limits</a></li>
+<li class=""><a href="/workflow-execution/continue-as-new" class="">Continue-as-New</a></li>
+<li class=""><a href="/workflow-execution/timers-delays" class="">Timers and Start Delay</a></li>
+</ul></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-cache">Workflow cache<a href="#workflow-cache" class="hash-link" aria-label="Direct link to Workflow cache" title="Direct link to Workflow cache" translate="no">​</a></h2>
+<p>A Workflow Cache is an in-memory LRU (least recently used) cache maintained by Workers that stores the state of Workflow Executions they have processed.</p>
+<p>When a Worker picks up a Workflow Task, it caches the Workflow&#x27;s state in memory. This allows the Worker to continue processing subsequent Tasks for that Workflow without having to fetch the full Event History from the server and replay it from scratch.</p>
+<p>This caching mechanism is closely tied to <a href="/sticky-execution" class="">Sticky Execution</a>. The Temporal Service directs future Workflow Tasks to the same Worker that cached the Workflow, via a dedicated &quot;Sticky Queue&quot;. If the cached Workflow is evicted, to make room for another for example, the Worker must replay the Event History to restore its state before continuing.</p></div>

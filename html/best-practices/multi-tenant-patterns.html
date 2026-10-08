@@ -1,0 +1,248 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/best-practices/multi-tenant-patterns.md">/best-practices/multi-tenant-patterns.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Multi-tenant application patterns</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/best-practices/multi-tenant-patterns.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fmulti-tenant-patterns.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fmulti-tenant-patterns.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>Many SaaS providers and large enterprise platform teams use a single Temporal <a href="/namespaces" class="">Namespace</a> with <a href="#1-task-queues-per-tenant-recommended" class="">per-tenant Task Queues</a> or <a href="#2-single-task-queue-with-fairness" class="">Task Queue Fairness</a> to power their multi-tenant applications. These approaches maximize resource efficiency while maintaining logical separation between tenants.</p>
+<p>This guide covers architectural patterns, design considerations, and practical examples for building multi-tenant applications with Temporal.</p>
+<p>For related guidance on where to draw Namespace boundaries and how to scope credentials and permissions, see
+<a href="/best-practices/managing-namespace" class="">Namespace best practices</a> and
+<a href="/best-practices/cloud-access-control" class="">Managing Temporal Cloud access control</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architectural-principles">Architectural principles<a href="#architectural-principles" class="hash-link" aria-label="Direct link to Architectural principles" title="Direct link to Architectural principles" translate="no">​</a></h2>
+<p>When designing a multi-tenant Temporal application, follow these principles:</p>
+<ul>
+<li class=""><strong>Define your tenant model</strong> - Determine what constitutes a tenant in your business (customers, pricing tiers, teams, etc.)</li>
+<li class=""><strong>Prefer simplicity</strong> - Start with the simplest pattern that meets your needs</li>
+<li class=""><strong>Understand Temporal limits</strong> - Design within the constraints of your Temporal deployment</li>
+<li class=""><strong>Test at scale</strong> - Performance testing must drive your capacity decisions</li>
+<li class=""><strong>Plan for growth</strong> - Consider how you&#x27;ll onboard new tenants and scale workers</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architectural-patterns">Architectural patterns<a href="#architectural-patterns" class="hash-link" aria-label="Direct link to Architectural patterns" title="Direct link to Architectural patterns" translate="no">​</a></h2>
+<p>There are four main patterns for multi-tenant applications in Temporal, listed from most to least recommended:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-task-queues-per-tenant-recommended">1. Task queues per tenant (Recommended)<a href="#1-task-queues-per-tenant-recommended" class="hash-link" aria-label="Direct link to 1. Task queues per tenant (Recommended)" title="Direct link to 1. Task queues per tenant (Recommended)" translate="no">​</a></h3>
+<p><strong>Use different <a href="/task-queue" class="">Task Queues</a> for each tenant&#x27;s <a href="/workflows" class="">Workflows</a> and <a href="/activities" class="">Activities</a>.</strong></p>
+<p>This is the recommended pattern for most use cases. Each tenant gets dedicated Task Queue(s), with <a href="/workers" class="">Workers</a> polling multiple tenant Task Queues in a single process.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li class="">Strong isolation between tenants</li>
+<li class="">Efficient resource utilization</li>
+<li class="">Flexible worker scaling</li>
+<li class="">Easy to add new tenants</li>
+<li class="">Can handle thousands of tenants per <a href="/namespaces" class="">Namespace</a></li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li class="">Requires worker configuration management</li>
+<li class="">Potential for uneven resource distribution</li>
+<li class="">Need to prevent &quot;noisy neighbor&quot; issues at the worker level</li>
+</ul>
+<div class="relatedReadDiv_Gsje"><span class="relatedReadLabel_C9Zi">Related 📚</span><div><a href="#task-queue-isolation-pattern" class="relatedReadLink_ardv">Task Queue Isolation Pattern Details</a><span class="archetypeTag_YhtE">feature-guide</span></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-single-task-queue-with-fairness">2. Single Task Queue with Fairness<a href="#2-single-task-queue-with-fairness" class="hash-link" aria-label="Direct link to 2. Single Task Queue with Fairness" title="Direct link to 2. Single Task Queue with Fairness" translate="no">​</a></h3>
+<p><strong>Use a single <a href="/task-queue" class="">Task Queue</a> with <a href="/develop/task-queue-priority-fairness#task-queue-fairness" class="">Fairness keys</a> to distribute work across tenants.</strong></p>
+<p>This pattern uses <a href="/develop/task-queue-priority-fairness#task-queue-fairness" class="">Task Queue Fairness</a> to manage multi-tenant workloads within a single Task Queue. Each tenant is assigned a fairness key, and fairness weights control the share of Task dispatches each tenant receives.</p>
+<p>You can also set per-fairness-key rate limits (requests per second) to cap individual tenant throughput, preventing any single tenant from consuming too much of the queue&#x27;s throughput.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li class="">Priority and Fairness keys and weights can be adjusted without redeployment</li>
+<li class="">Onboarding new tenants doesn&#x27;t require spinning up additional <a href="/workers" class="">Workers</a></li>
+<li class="">Simpler Worker topology than per-tenant Task Queues</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li class="">Fairness is probabilistic and may be harder to debug than strict isolation</li>
+<li class="">The fairness weight applies at schedule time, not at dispatch time, so it only affects newly-scheduled Tasks</li>
+<li class="">When using <a href="/worker-versioning" class="">Worker Versioning</a>, Fairness isn&#x27;t guaranteed between versions</li>
+</ul>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_vXIg"><p>This pattern works well when you have many tenants with different service tiers and want to manage them without the operational overhead of per-tenant Task Queues or Workers.</p></div></div>
+<div class="relatedReadDiv_Gsje"><span class="relatedReadLabel_C9Zi">Related 📚</span><ul class="relatedReadList_FzII"><li><div><a href="/develop/task-queue-priority-fairness#task-queue-fairness" class="relatedReadLink_ardv">Task Queue Fairness Reference</a><span class="archetypeTag_YhtE">feature-guide</span></div></li><li><div><a href="/design-patterns/fairness" class="relatedReadLink_ardv">Fairness pattern</a></div></li><li><div><a href="/design-patterns/priority-task-queues" class="relatedReadLink_ardv">Priority pattern</a></div></li></ul></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-shared-workflow-task-queues-separate-activity-task-queues">3. Shared Workflow Task Queues, separate Activity Task Queues<a href="#3-shared-workflow-task-queues-separate-activity-task-queues" class="hash-link" aria-label="Direct link to 3. Shared Workflow Task Queues, separate Activity Task Queues" title="Direct link to 3. Shared Workflow Task Queues, separate Activity Task Queues" translate="no">​</a></h3>
+<p><strong>Share <a href="/task-queue" class="">Workflow Task Queues</a> but use different <a href="/task-queue" class="">Activity Task Queues</a> per tenant.</strong></p>
+<p>Use this pattern when <a href="/workflows" class="">Workflows</a> are lightweight but <a href="/activities" class="">Activities</a> have heavy resource requirements or external dependencies that need isolation.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li class="">Easier worker management than full isolation</li>
+<li class="">Activity-level tenant isolation</li>
+<li class="">Good for compute-intensive Activities</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li class="">Less isolation than pattern #1</li>
+<li class="">Workflow visibility is shared</li>
+<li class="">More complex to reason about</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-namespace-per-tenant">4. Namespace per tenant<a href="#4-namespace-per-tenant" class="hash-link" aria-label="Direct link to 4. Namespace per tenant" title="Direct link to 4. Namespace per tenant" translate="no">​</a></h3>
+<p><strong>Use a separate <a href="/namespaces" class="">Namespace</a> for each tenant.</strong></p>
+<p>Only practical for a smaller number of high-value tenants due to operational overhead. Most teams find this manageable for fewer than 50 tenants, though organizations with strong automation may scale higher. This pattern is not a good fit if you expect a very large number of tenants (10,000+).</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li class="">Complete isolation between tenants — no noisy neighbor problem</li>
+<li class="">Each Namespace has its own <a href="/evaluate/cloud/limits" class="">rate limits</a> that can be provisioned on demand per customer</li>
+<li class="">Each Namespace can be deployed across <a href="/evaluate/cloud/regions" class="">multiple regions</a> globally</li>
+<li class="">Per-Namespace observability is available by default</li>
+<li class="">Maximum security boundary</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<ul>
+<li class="">Higher operational overhead</li>
+<li class="">Credential and connectivity management per <a href="/namespaces" class="">Namespace</a></li>
+<li class="">Requires a new <a href="/workers" class="">Worker</a> pool deployment for each customer (minimum 2 per Namespace for high availability)</li>
+<li class="">Not cost-effective at scale</li>
+</ul>
+<p>This pattern is usually chosen when tenant boundaries also need to be credential boundaries. For example, each tenant may
+need its own service accounts, API keys, dashboards, or rate limits. If that is your primary driver, review
+<a href="/best-practices/cloud-access-control" class="">Managing Temporal Cloud access control</a> together with
+<a href="/best-practices/managing-namespace" class="">Namespace best practices</a> before committing to Namespace-per-tenant isolation.</p>
+<div class="relatedReadDiv_Gsje"><span class="relatedReadLabel_C9Zi">Related 📚</span><div><a href="/evaluate/cloud/security#namespace-isolation" class="relatedReadLink_ardv">Namespace Isolation in Temporal Cloud</a></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pattern-comparison">Pattern comparison<a href="#pattern-comparison" class="hash-link" aria-label="Direct link to Pattern comparison" title="Direct link to Pattern comparison" translate="no">​</a></h3>
+<table><thead><tr><th></th><th>Task Queues per tenant</th><th>Fairness-based</th><th>Shared Workflow / Separate Activity TQs</th><th>Namespace per tenant</th></tr></thead><tbody><tr><td><strong>Isolation</strong></td><td>Task Queue level</td><td>Probabilistic (weighted)</td><td>Activity-level only</td><td>Complete</td></tr><tr><td><strong>Noisy neighbor protection</strong></td><td>Strong</td><td>Weight-based throttling</td><td>Activity-level</td><td>Full — separate rate limits</td></tr><tr><td><strong>Worker management</strong></td><td>Moderate — config per tenant</td><td>Simple — single Task Queue</td><td>Moderate</td><td>High — Worker pool per tenant</td></tr><tr><td><strong>Onboarding new tenants</strong></td><td>Config update and restart</td><td>Set fairness and priority values (no new Workers)</td><td>Config update and Worker restart</td><td>New Namespace and Worker pool</td></tr><tr><td><strong>Observability</strong></td><td>Per-Task Queue metrics</td><td>Per-Task Queue metrics</td><td>Mixed</td><td>Per-Namespace</td></tr><tr><td><strong>Rate limiting</strong></td><td>Shared across Task Queue</td><td>Per-key rate limits</td><td>Shared across Namespace</td><td>Independent per Namespace</td></tr><tr><td><strong>Scale ceiling</strong></td><td>Thousands of tenants</td><td>Thousands of tenants</td><td>Thousands of tenants</td><td>10,000 (Namespace limit)</td></tr><tr><td><strong>Best for</strong></td><td>Most multi-tenant apps</td><td>Tiered SaaS with many tenants</td><td>Heavy Activity workloads</td><td>High-value, compliance-sensitive tenants</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-queue-isolation-pattern">Task Queue isolation pattern<a href="#task-queue-isolation-pattern" class="hash-link" aria-label="Direct link to Task Queue isolation pattern" title="Direct link to Task Queue isolation pattern" translate="no">​</a></h2>
+<p>This section details the recommended pattern for most multi-tenant applications.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker-design">Worker design<a href="#worker-design" class="hash-link" aria-label="Direct link to Worker design" title="Direct link to Worker design" translate="no">​</a></h3>
+<p>When a <a href="/workers" class="">Worker</a> starts up:</p>
+<ol>
+<li class=""><strong>Load tenant configuration</strong> - Retrieve the list of tenants this Worker should handle (from config file, API, or database)</li>
+<li class=""><strong>Create <a href="/task-queue" class="">Task Queues</a></strong> - For each tenant, generate a unique Task Queue name (for example, <code>customer-{tenant-id}</code>)</li>
+<li class=""><strong>Register <a href="/workflows" class="">Workflows</a> and <a href="/activities" class="">Activities</a></strong> - Register your Workflow and Activity implementations once, passing the tenant-specific Task Queue name</li>
+<li class=""><strong>Poll multiple Task Queues</strong> - A single Worker process polls all assigned tenant Task Queues</li>
+</ol>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:#8a93c8;font-style:italic">// Example: Go worker polling multiple tenant Task Queues</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token keyword" style="font-style:italic">for</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">_</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> tenant </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">range</span><span class="token plain"> assignedTenants </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    taskQueue </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> fmt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">Sprintf</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&quot;customer-%s&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> tenant</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">ID</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain" style="display:inline-block"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    worker </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> worker</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">New</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">client</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> taskQueue</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> worker</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">Options</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    worker</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">RegisterWorkflow</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">YourWorkflow</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    worker</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">RegisterActivity</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">YourActivity</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;// Example: Go worker polling multiple tenant Task Queues\nfor _, tenant := range assignedTenants {\n    taskQueue := fmt.Sprintf(\&quot;customer-%s\&quot;, tenant.ID)\n\n    worker := worker.New(client, taskQueue, worker.Options{})\n    worker.RegisterWorkflow(YourWorkflow)\n    worker.RegisterActivity(YourActivity)\n}\n&quot;,&quot;code&quot;:&quot;// Example: Go worker polling multiple tenant Task Queues\nfor _, tenant := range assignedTenants {\n    taskQueue := fmt.Sprintf(\&quot;customer-%s\&quot;, tenant.ID)\n\n    worker := worker.New(client, taskQueue, worker.Options{})\n    worker.RegisterWorkflow(YourWorkflow)\n    worker.RegisterActivity(YourActivity)\n}&quot;,&quot;className&quot;:&quot;language-go&quot;,&quot;language&quot;:&quot;go&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="routing-requests-to-task-queues">Routing requests to Task Queues<a href="#routing-requests-to-task-queues" class="hash-link" aria-label="Direct link to Routing requests to Task Queues" title="Direct link to Routing requests to Task Queues" translate="no">​</a></h3>
+<p>Your application needs to route <a href="/workflows" class="">Workflow</a> starts and other operations to the correct tenant <a href="/task-queue" class="">Task Queue</a>:</p>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:#8a93c8;font-style:italic">// Example: Starting a Workflow for a specific tenant</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">taskQueue </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> fmt</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">Sprintf</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">&quot;customer-%s&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> tenantID</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">workflowOptions </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> client</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">StartWorkflowOptions</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    ID</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">        workflowID</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    TaskQueue</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> taskQueue</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;// Example: Starting a Workflow for a specific tenant\ntaskQueue := fmt.Sprintf(\&quot;customer-%s\&quot;, tenantID)\nworkflowOptions := client.StartWorkflowOptions{\n    ID:        workflowID,\n    TaskQueue: taskQueue,\n}\n&quot;,&quot;code&quot;:&quot;// Example: Starting a Workflow for a specific tenant\ntaskQueue := fmt.Sprintf(\&quot;customer-%s\&quot;, tenantID)\nworkflowOptions := client.StartWorkflowOptions{\n    ID:        workflowID,\n    TaskQueue: taskQueue,\n}&quot;,&quot;className&quot;:&quot;language-go&quot;,&quot;language&quot;:&quot;go&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<p>Consider creating an API or service that:</p>
+<ul>
+<li class="">Maps tenant IDs to Task Queue names</li>
+<li class="">Tracks which <a href="/workers" class="">Workers</a> are handling which tenants</li>
+<li class="">Allows both your application and Workers to read the mappings of:<!-- -->
+<ol>
+<li class="">Tenant IDs to Task Queues</li>
+<li class="">Workers to tenants</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capacity-planning">Capacity planning<a href="#capacity-planning" class="hash-link" aria-label="Direct link to Capacity planning" title="Direct link to Capacity planning" translate="no">​</a></h3>
+<p>Key questions to answer through performance testing:</p>
+<p><strong><a href="/namespaces" class="">Namespace</a> capacity:</strong></p>
+<ul>
+<li class="">How many concurrent <a href="/task-queue" class="">Task Queue</a> pollers can your Namespace support?</li>
+<li class="">What are your <a href="/evaluate/cloud/limits#actions-per-second" class="">Actions Per Second (APS)</a> limits?</li>
+<li class="">What are your <a href="/references/operation-list" class="">Operations Per Second (OPS)</a> limits?</li>
+</ul>
+<p><strong><a href="/workers" class="">Worker</a> capacity:</strong></p>
+<ul>
+<li class="">How many tenants can a single Worker process handle?</li>
+<li class="">What are the CPU and memory requirements per tenant?</li>
+<li class="">How many concurrent <a href="/workflows" class="">Workflow</a> executions per tenant?</li>
+<li class="">How many concurrent <a href="/activities" class="">Activity</a> executions per tenant?</li>
+</ul>
+<p><strong>SDK configuration to tune:</strong></p>
+<ul>
+<li class=""><code>MaxConcurrentWorkflowTaskExecutionSize</code></li>
+<li class=""><code>MaxConcurrentActivityExecutionSize</code></li>
+<li class=""><code>MaxConcurrentWorkflowTaskPollers</code></li>
+<li class=""><code>MaxConcurrentActivityTaskPollers</code></li>
+<li class="">Worker replicas (in Kubernetes deployments)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="provisioning-new-tenants">Provisioning new tenants<a href="#provisioning-new-tenants" class="hash-link" aria-label="Direct link to Provisioning new tenants" title="Direct link to Provisioning new tenants" translate="no">​</a></h3>
+<p>Automate tenant onboarding with a Temporal <a href="/workflows" class="">Workflow</a>:</p>
+<ol>
+<li class="">
+<p>Create a tenant onboarding Workflow that:</p>
+<ul>
+<li class="">Validates tenant information</li>
+<li class="">Provisions infrastructure</li>
+<li class="">Deploys/updates <a href="/workers" class="">Worker</a> configuration</li>
+<li class="">Triggers Worker restarts or scaling</li>
+<li class="">Verifies the tenant is operational</li>
+</ul>
+</li>
+<li class="">
+<p>Store tenant-to-Worker mappings in a database or configuration service</p>
+</li>
+<li class="">
+<p>Update Worker deployments to pick up new tenant assignments</p>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="practical-example">Practical example<a href="#practical-example" class="hash-link" aria-label="Direct link to Practical example" title="Direct link to Practical example" translate="no">​</a></h2>
+<p><strong>Scenario:</strong> A SaaS company has 1,000 customers and expects to grow to 5,000 customers over 3 years. They have 2 <a href="/workflows" class="">Workflows</a> and ~25 <a href="/activities" class="">Activities</a> per Workflow. All customers are on the same tier (no segmentation yet).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="assumptions">Assumptions<a href="#assumptions" class="hash-link" aria-label="Direct link to Assumptions" title="Direct link to Assumptions" translate="no">​</a></h3>
+<table><thead><tr><th>Item</th><th>Value</th></tr></thead><tbody><tr><td>Current customers</td><td>1,000</td></tr><tr><td>Workflow Task Queues per customer</td><td>1</td></tr><tr><td>Activity Task Queues per customer</td><td>1</td></tr><tr><td>Max Task Queue pollers per Namespace</td><td>20,000 (per <a href="/evaluate/cloud/limits" class="">Cloud limits</a>)</td></tr><tr><td>SDK concurrent Workflow task pollers</td><td>5</td></tr><tr><td>SDK concurrent Activity task pollers</td><td>5</td></tr><tr><td>Max concurrent Workflow executions</td><td>200</td></tr><tr><td>Max concurrent Activity executions</td><td>200</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="capacity-calculations">Capacity calculations<a href="#capacity-calculations" class="hash-link" aria-label="Direct link to Capacity calculations" title="Direct link to Capacity calculations" translate="no">​</a></h3>
+<p><strong><a href="/task-queue" class="">Task Queue</a> poller limits:</strong></p>
+<ul>
+<li class="">Each <a href="/workers" class="">Worker</a> uses 10 pollers per tenant (5 Workflow + 5 Activity)</li>
+<li class="">Maximum Workers in <a href="/namespaces" class="">Namespace</a>: 20,000 pollers ÷ 10 = <strong>2,000 Workers</strong></li>
+</ul>
+<p><strong>Worker capacity:</strong></p>
+<ul>
+<li class="">Each Worker can theoretically handle 200 <a href="/workflows" class="">Workflows</a> and 200 <a href="/activities" class="">Activities</a> concurrently</li>
+<li class="">Conservative estimate: <strong>250 tenants per Worker</strong> (accounting for overhead)</li>
+<li class="">For 1,000 customers: <strong>4 Workers minimum</strong> (plus replicas for HA)</li>
+<li class="">For 5,000 customers: <strong>20 Workers minimum</strong> (plus replicas for HA)</li>
+</ul>
+<p><strong>Namespace capacity:</strong></p>
+<ul>
+<li class="">At 250 tenants per Worker, need 2 Workers per group of tenants (for HA)</li>
+<li class="">Maximum tenants in Namespace: (2,000 Workers ÷ 2) × 250 = <strong>250,000 tenants</strong></li>
+</ul>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>These are theoretical calculations based on SDK defaults. <strong>Always perform load testing</strong> to determine actual capacity for your specific workload. Monitor CPU, memory, and Temporal metrics during testing.</p><p>While testing, also pay attention to your <a href="/cloud/metrics/openmetrics/api-reference#managing-high-cardinality" class="">metrics capacity and cardinality</a>.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker-assignment-strategies">Worker assignment strategies<a href="#worker-assignment-strategies" class="hash-link" aria-label="Direct link to Worker assignment strategies" title="Direct link to Worker assignment strategies" translate="no">​</a></h3>
+<p><strong>Option 1: Static configuration</strong></p>
+<ul>
+<li class="">Each <a href="/workers" class="">Worker</a> reads a config file listing assigned tenant IDs</li>
+<li class="">Simple to implement</li>
+<li class="">Requires deployment to add tenants</li>
+</ul>
+<p><strong>Option 2: Dynamic API</strong></p>
+<ul>
+<li class="">Workers call an API on startup to get assigned tenants</li>
+<li class="">Workers identified by static ID (1 to N)</li>
+<li class="">API returns tenant list based on Worker ID</li>
+<li class="">More flexible, no deployment needed for new tenants</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="best-practices">Best practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best practices" title="Direct link to Best practices" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-tenant-isolation-affects-namespace-and-access-design">How tenant isolation affects Namespace and access design<a href="#how-tenant-isolation-affects-namespace-and-access-design" class="hash-link" aria-label="Direct link to How tenant isolation affects Namespace and access design" title="Direct link to How tenant isolation affects Namespace and access design" translate="no">​</a></h3>
+<p>Your multi-tenant architecture also determines how much isolation you get from Namespaces and access controls:</p>
+<ul>
+<li class=""><strong>Shared Namespace with per-tenant Task Queues</strong>: Best for scale and operational simplicity, but tenant isolation is
+mostly enforced by your application and worker routing logic rather than by Temporal credentials.</li>
+<li class=""><strong>Separate Namespaces for domains or services</strong>: Useful when teams need separate credentials, dashboards, APS
+envelopes, or on-call boundaries.</li>
+<li class=""><strong>Namespace per tenant</strong>: Strongest isolation, but highest provisioning and credential-management overhead.</li>
+</ul>
+<p>If tenants, teams, or regulated workloads need different credentials or RBAC boundaries, decide that together with your
+Namespace topology. See <a href="/best-practices/managing-namespace" class="">Namespace best practices</a> and
+<a href="/best-practices/cloud-access-control" class="">Managing Temporal Cloud access control</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="monitoring">Monitoring<a href="#monitoring" class="hash-link" aria-label="Direct link to Monitoring" title="Direct link to Monitoring" translate="no">​</a></h3>
+<p>Track these <a href="/references/sdk-metrics" class="">metrics</a> per tenant:</p>
+<ul>
+<li class=""><a href="/cloud/metrics/openmetrics/metrics-reference#workflow-completion-metrics" class="">Workflow completion</a> rates</li>
+<li class=""><a href="/cloud/metrics/openmetrics/metrics-reference#task-queue-metrics" class="">Activity execution</a> rates</li>
+<li class=""><a href="/cloud/metrics/openmetrics/metrics-reference#task-queue-metrics" class="">Task Queue backlog</a></li>
+<li class=""><a href="/references/sdk-metrics#worker_task_slots_used" class="">Worker resource utilization</a></li>
+<li class=""><a href="/encyclopedia/detecting-workflow-failures" class="">Workflow failure rates</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="handling-noisy-neighbors">Handling noisy neighbors<a href="#handling-noisy-neighbors" class="hash-link" aria-label="Direct link to Handling noisy neighbors" title="Direct link to Handling noisy neighbors" translate="no">​</a></h3>
+<p>Even with <a href="/task-queue" class="">Task Queue</a> isolation, monitor for tenants that:</p>
+<ul>
+<li class="">Generate excessive load</li>
+<li class="">Have high failure rates</li>
+<li class="">Cause <a href="/workers" class="">Worker</a> resource exhaustion</li>
+</ul>
+<p>Strategies:</p>
+<ul>
+<li class="">Implement per-tenant rate limiting in your application</li>
+<li class="">Implement fairness keys and apply per-key rate limits</li>
+<li class="">Move problematic tenants to dedicated Workers</li>
+<li class="">Use <a href="/workflows" class="">Workflow</a>/<a href="/activities" class="">Activity</a> timeouts aggressively</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tenant-lifecycle">Tenant lifecycle<a href="#tenant-lifecycle" class="hash-link" aria-label="Direct link to Tenant lifecycle" title="Direct link to Tenant lifecycle" translate="no">​</a></h3>
+<p>Plan for:</p>
+<ul>
+<li class=""><strong>Onboarding</strong> - Automated provisioning <a href="/workflows" class="">Workflow</a></li>
+<li class=""><strong>Scaling</strong> - When to add new <a href="/workers" class="">Workers</a> for growing tenants</li>
+<li class=""><strong>Offboarding</strong> - Graceful tenant removal and data cleanup</li>
+<li class=""><strong>Rebalancing</strong> - Redistributing tenants across Workers</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="search-attributes">Search Attributes<a href="#search-attributes" class="hash-link" aria-label="Direct link to Search Attributes" title="Direct link to Search Attributes" translate="no">​</a></h3>
+<p>Use <a href="/search-attribute" class="">Search Attributes</a> to enable tenant-scoped queries:</p>
+<div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token comment" style="color:#8a93c8;font-style:italic">// Add tenant ID as a Search Attribute</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">searchAttributes </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> </span><span class="token keyword" style="font-style:italic">map</span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token builtin" style="color:rgb(130, 170, 255)">string</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token keyword" style="font-style:italic">interface</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;TenantId&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> tenantID</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;// Add tenant ID as a Search Attribute\nsearchAttributes := map[string]interface{}{\n    \&quot;TenantId\&quot;: tenantID,\n}\n&quot;,&quot;code&quot;:&quot;// Add tenant ID as a Search Attribute\nsearchAttributes := map[string]interface{}{\n    \&quot;TenantId\&quot;: tenantID,\n}&quot;,&quot;className&quot;:&quot;language-go&quot;,&quot;language&quot;:&quot;go&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<p>This allows filtering <a href="/workflows" class="">Workflows</a> by tenant in the UI and SDK:</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">TenantId </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;customer-123&#x27;</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">AND</span><span class="token plain"> ExecutionStatus </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&#x27;Running&#x27;</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;TenantId = &#x27;customer-123&#x27; AND ExecutionStatus = &#x27;Running&#x27;\n&quot;,&quot;code&quot;:&quot;TenantId = &#x27;customer-123&#x27; AND ExecutionStatus = &#x27;Running&#x27;&quot;,&quot;className&quot;:&quot;language-sql&quot;,&quot;language&quot;:&quot;sql&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="related-resources">Related resources<a href="#related-resources" class="hash-link" aria-label="Direct link to Related resources" title="Direct link to Related resources" translate="no">​</a></h2>
+<div class="relatedReadDiv_Gsje"><span class="relatedReadLabel_C9Zi">Related 📚</span><ul class="relatedReadList_FzII"><li><div><a href="/namespaces" class="relatedReadLink_ardv">Namespaces</a><span class="archetypeTag_YhtE">feature-guide</span></div></li><li><div><a href="/evaluate/cloud/limits" class="relatedReadLink_ardv">Temporal Cloud Limits</a></div></li><li><div><a href="/visibility" class="relatedReadLink_ardv">Visibility and Search Attributes</a><span class="archetypeTag_YhtE">feature-guide</span></div></li></ul></div></div>

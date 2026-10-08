@@ -1,0 +1,246 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/troubleshooting/performance-bottlenecks.md">/troubleshooting/performance-bottlenecks.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Performance bottlenecks troubleshooting guide</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/troubleshooting/performance-bottlenecks.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftroubleshooting%2Fperformance-bottlenecks.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Ftroubleshooting%2Fperformance-bottlenecks.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This guide outlines common performance bottlenecks in Temporal Workers and Clients.
+It covers key latency metrics and root causes of high values, and provides diagnostic steps and troubleshooting strategies.
+These metrics can help you optimize Temporal deployments and Workflow execution.</p>
+<p>To get the most out of this guide, you should be familiar with <a href="/temporal" class="">Temporal architecture</a>, <a href="/workflows" class="">Workflows</a>, <a href="/activities" class="">Activities</a>, and <a href="/task-queue" class="">Task Queues</a>.
+You should also know how to use key metrics like latency, counter, rate, CPU utilization, and memory usage.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="task-processing-metrics">Task processing metrics<a href="#task-processing-metrics" class="hash-link" aria-label="Direct link to Task processing metrics" title="Direct link to Task processing metrics" translate="no">​</a></h2>
+<p>These metrics provide insights into various stages of the <a href="/tasks" class="">Task</a> lifecycle, from scheduling to completion.
+The following sections detail common metrics, their potential causes for high latency or resource depletion, and strategies for diagnosing and resolving performance issues.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_workflow_task_schedule_to_start_latency-spike"><code>temporal_workflow_task_schedule_to_start_latency</code> spike<a href="#temporal_workflow_task_schedule_to_start_latency-spike" class="hash-link" aria-label="Direct link to temporal_workflow_task_schedule_to_start_latency-spike" title="Direct link to temporal_workflow_task_schedule_to_start_latency-spike" translate="no">​</a></h3>
+<p>High <a href="/references/sdk-metrics#workflow_task_schedule_to_start_latency" class=""><code>temporal_workflow_task_schedule_to_start_latency</code></a> (P95 higher than one second) can be caused by several factors.
+This metric represents the time between when a <a href="/tasks#workflow-task" class="">Workflow Task</a> is scheduled (enqueued) and when it is picked up by a Worker for processing. Here are some potential causes:</p>
+<ul>
+<li class="">Insufficient Worker capacity: If there aren&#x27;t enough Workers or if the Workers are overloaded, they may not be able to pick up Tasks quickly enough. This can lead to Tasks waiting longer in the queue (<a href="/cloud/worker-health#detect-task-backlog" class="">Detect Task Backlog</a>).</li>
+<li class="">Worker configuration issues: Improperly configured Workers, such as having too few pollers or Task slots, can lead to increased latency (<a href="/cloud/worker-health#detect-task-backlog" class="">Detect Task Backlog</a>).</li>
+<li class="">High Workflow lock latency: If many updates are made to a single execution, this can cause Workflow lock latency, which in turn affects the Schedule-to-start latency. Reduce the rate of Signals.</li>
+<li class="">Network latency: Workers in a different region from the Temporal cluster, or large payload size, can introduce additional latency.</li>
+</ul>
+<p>To diagnose and address high <code>temporal_workflow_task_schedule_to_start_latency</code>, you should:</p>
+<ol>
+<li class="">Check Worker CPU and memory usage.</li>
+<li class="">Review Worker configuration (such as number of pollers and Task slots).</li>
+<li class="">Look for any spikes in Workflow or Activity starts that might be overwhelming the system.</li>
+<li class="">Ensure Workers are in the same region as the Temporal cluster if possible.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_activity_schedule_to_start_latency-spike"><code>temporal_activity_schedule_to_start_latency</code> spike<a href="#temporal_activity_schedule_to_start_latency-spike" class="hash-link" aria-label="Direct link to temporal_activity_schedule_to_start_latency-spike" title="Direct link to temporal_activity_schedule_to_start_latency-spike" translate="no">​</a></h3>
+<p>High <a href="/references/sdk-metrics#activity_schedule_to_start_latency" class=""><code>temporal_activity_schedule_to_start_latency</code></a> (P95 higher than one second) can be caused by several factors.
+This metric represents the time between when an <a href="/tasks#activity-task" class="">Activity Task</a> is scheduled (enqueued) and when it is picked up by a Worker for processing.
+Here are some potential causes:</p>
+<ul>
+<li class="">Insufficient Worker capacity: If there aren&#x27;t enough Workers or if the Workers are overloaded, they may not be able to pick up Tasks quickly enough. This can lead to Tasks waiting longer in the queue (<a href="/cloud/worker-health#detect-task-backlog" class="">Detect Task Backlog</a>).</li>
+<li class="">Worker configuration issues: Improperly configured Workers, such as having too few pollers or Task slots, can lead to increased latency (<a href="/cloud/worker-health#detect-task-backlog" class="">Detect Task Backlog</a>).</li>
+<li class="">Task Queue configuration: Setting <code>TaskQueueActivitiesPerSecond</code> too low can limit the rate at which Activities are started, leading to increased Schedule-to-start latency.</li>
+<li class="">Network latency: Workers in a different region from the Temporal cluster, or large payload size can introduce additional latency.</li>
+</ul>
+<p>To diagnose and address high <code>temporal_activity_schedule_to_start_latency</code>:</p>
+<ol>
+<li class="">Check Worker CPU and memory usage.</li>
+<li class="">Review Worker configuration (such as number of pollers and Task slots).</li>
+<li class="">Look for any spikes in Workflow or Activity starts that might be overwhelming the system.</li>
+<li class="">Ensure Workers are in the same region as the Temporal cluster if possible.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_workflow_endtoend_latency-spike"><code>temporal_workflow_endtoend_latency</code> spike<a href="#temporal_workflow_endtoend_latency-spike" class="hash-link" aria-label="Direct link to temporal_workflow_endtoend_latency-spike" title="Direct link to temporal_workflow_endtoend_latency-spike" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#workflow_endtoend_latency" class=""><code>temporal_workflow_endtoend_latency</code></a> metric represents the total Workflow Execution time from Schedule to the closure for a single Workflow Run.
+Normal ranges for this metric depend on the use case, but here are some potential causes for the unexpected spikes:</p>
+<ul>
+<li class="">Complex Workflows: If the Workflows have many Activities or if the Activities take a long time to execute.</li>
+<li class="">Workflow and Activity retries: If Workflows or Activities are configured to retry upon failure and they fail often, this can increase the end-to-end latency as the system will wait for the retry delay before reattempting the failed operation.</li>
+<li class="">Worker capacity and configuration: If there aren&#x27;t enough Workers or if the Workers are overloaded, they may not be able to pick up and process Tasks quickly enough. This can lead to Tasks waiting longer in the queue, thereby increasing the end-to-end latency (<a href="/cloud/worker-health#detect-task-backlog" class="">Detect Task Backlog</a>).</li>
+<li class="">External dependencies: If your Workflows or Activities depend on external systems or services (such as databases or APIs) and these systems are slow or unreliable, they can increase the end-to-end latency.</li>
+<li class="">Network latency: Workers in a different region from the Temporal cluster can introduce additional latency.</li>
+</ul>
+<p>To diagnose and address high <code>temporal_workflow_endtoend_latency</code>:</p>
+<ol>
+<li class="">Review your Workflow and Activity designs to ensure they are as efficient as possible.</li>
+<li class="">Monitor your Workers to ensure they have sufficient capacity (CPU and memory) and are not overloaded.</li>
+<li class="">Monitor your external dependencies to ensure they are performing well.</li>
+<li class="">Ensure Workers are in the same region as the Temporal cluster if possible.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-temporal_workflow_task_execution_latency">High <code>temporal_workflow_task_execution_latency</code><a href="#high-temporal_workflow_task_execution_latency" class="hash-link" aria-label="Direct link to high-temporal_workflow_task_execution_latency" title="Direct link to high-temporal_workflow_task_execution_latency" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#workflow_task_execution_latency" class=""><code>temporal_workflow_task_execution_latency</code></a> metric represents the time taken by a Worker to execute a Workflow Task.
+The Temporal SDK raises a “Deadlock detected during Workflow run” error or <a href="https://github.com/temporalio/rules/blob/main/rules/TMPRL1101.md" target="_blank" rel="noopener noreferrer" class="">TMPRL1101</a> when a Workflow Task takes more than one or two seconds to complete.
+Here are some potential causes:</p>
+<ul>
+<li class="">CPU-intensive work: Performing CPU-intensive operations in your Workflow Task can lead to slow execution.</li>
+<li class="">Slow local Activities: Workflow Task execution time includes the Local Activity execution time.</li>
+<li class="">Slow Workflow replay: Workflow Task execution time includes the Workflow Replay time. Refer to <code>workflow_task_replay_latency</code> for more details.</li>
+<li class="">Worker resource constraints: High CPU usage on Worker pods can lead to slower Workflow Task execution. Workers with insufficient CPU resources can cause delays.</li>
+<li class="">Infinite loops or blocking calls: Workflow code with infinite loops or blocking external API calls can cause the Workflow Task to execute slowly or time out.</li>
+<li class="">Slow data conversion: Your custom Data Converter is taking too long to encode/decode payloads, for example, when talking to a remote encryption service.</li>
+</ul>
+<p>To diagnose and address slow Workflow Task execution, you can:</p>
+<ol>
+<li class="">Monitor Worker CPU and memory utilization.</li>
+<li class="">Ensure that your Workers have adequate resources and are properly scaled for your workload.</li>
+<li class="">Consider running your Workflow code in a profiler using a replayer to see where CPU cycles are spent.</li>
+<li class="">Review your Workflow code for potential optimizations or to remove blocking operations.</li>
+<li class="">Disable deadlock detection for Data Converter: It does not reduce Task execution latency but does remove the “Deadlock detected during Workflow run” or TMPRL1101 error. In Go, wrap it with <code>workflow.DataConverterWithoutDeadlockDetection</code>. In Java, surround your Data Converter code with <code>WorkflowUnsafe.deadlockDetectorOff</code>.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-workflow_task_replay_latency">High <code>workflow_task_replay_latency</code><a href="#high-workflow_task_replay_latency" class="hash-link" aria-label="Direct link to high-workflow_task_replay_latency" title="Direct link to high-workflow_task_replay_latency" translate="no">​</a></h3>
+<p>Workflow Task replay is the process of reconstructing the Workflow&#x27;s state by re-executing the Workflow code from the beginning, using the recorded Event History.
+This process ensures that the Workflow can continue from where it left off, even after interruptions or failures.
+<a href="/references/sdk-metrics#workflow_task_replay_latency" class=""><code>workflow_task_replay_latency</code></a> is high if it exceeds a few milliseconds.
+Here are the main causes:</p>
+<ul>
+<li class="">Large Event Histories: Workflows with long histories take more time to replay, as the Worker needs to process all events to reconstruct the Workflow state.</li>
+<li class="">Data Converter performance: Slow Data Converters, especially those that perform encryption or interact with external services, can impact replay.</li>
+<li class="">Large payloads: Activities or Signals with large payloads can slow down the replay process, especially if the Data Converter needs to process these payloads.</li>
+<li class="">Complex Workflow logic: Workflow code with complex logic or computationally intensive operations, such as scheduling many concurrent child Workflows or Activities, can increase replay latency.</li>
+<li class="">Frequent cache evictions: If workers often evict Workflow Executions from their cache (due to memory constraints or frequent restarts), it leads to more replays and higher latency.</li>
+<li class="">Worker resource constraints: High CPU utilization or memory pressure on Worker nodes can slow down the replay.</li>
+</ul>
+<p>To diagnose and address slow Workflow Task replay, you can:</p>
+<ol>
+<li class="">Monitor SDK Metrics: Keep a close eye on the <code>temporal_workflow_task_replay_latency</code> metric. This histogram metric measures the time it takes to replay a Workflow Task.</li>
+<li class="">Analyze Event History Size: Check the number of events in your Workflow histories and consider using the &quot;Continue-As-New&quot; feature for long-running Workflows.</li>
+<li class="">Optimize Data Converters: If you&#x27;re using custom Data Converters, especially for encryption or complex serialization, look for opportunities to optimize their performance.</li>
+<li class="">Review Payload Sizes: Large Activity or Signal payloads can slow down replay. Consider optimizing the size of data being passed in your Workflows.</li>
+<li class="">Profile Workflow Code: Use a profiler to identify CPU-intensive parts of your Workflow code that might be slowing down replay.</li>
+<li class="">Manage Worker Cache: Frequent cache evictions can lead to more replays. Tune your Worker&#x27;s cache size and eviction policies.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_activity_execution_latency-spike"><code>temporal_activity_execution_latency</code> spike<a href="#temporal_activity_execution_latency-spike" class="hash-link" aria-label="Direct link to temporal_activity_execution_latency-spike" title="Direct link to temporal_activity_execution_latency-spike" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#activity_execution_latency" class=""><code>temporal_activity_execution_latency</code></a> metric measures the time from when a Worker starts processing an Activity Task until it reports to the service that the Task is complete or failed.
+There are several potential causes for high <code>temporal_activity_execution_latency</code>:</p>
+<ul>
+<li class="">Activity implementation: The most common cause of high Activity Execution latency is the actual implementation of the Activity itself. If the Activity is performing time-consuming operations or making slow external API calls, it will take longer to execute.</li>
+<li class="">External dependencies: If your Activity is constrained by an external resource or service that all Activities access, it could cause increased latency.</li>
+<li class="">Worker resource constraints: Under-resourced Worker nodes or experiencing high CPU utilization can lead to slower Activity Execution.</li>
+<li class="">Network latency: High latency between your Workers and external services or the Temporal service itself can contribute to increased Activity Execution time.</li>
+</ul>
+<p>To diagnose and address high Activity Execution latency:</p>
+<ol>
+<li class="">Monitor the <code>activity_execution_latency</code> metric, which you can filter by Activity type and Activity Task queue.</li>
+<li class="">Optimize your Activity implementation to reduce latency, especially with external services or database interactions.</li>
+<li class="">Check your Worker CPU and memory utilization to make sure they have adequate resources.</li>
+<li class="">Examine your Worker configuration, particularly <code>(Max)ConcurrentActivityExecutionSize</code> and <code>(Max)WorkerActivitiesPerSecond</code>, to ensure they are not limiting your activity execution.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="depletion-of-temporal_worker_task_slots_available-for-workflowworker">Depletion of <code>temporal_worker_task_slots_available</code> for <code>WorkflowWorker</code><a href="#depletion-of-temporal_worker_task_slots_available-for-workflowworker" class="hash-link" aria-label="Direct link to depletion-of-temporal_worker_task_slots_available-for-workflowworker" title="Direct link to depletion-of-temporal_worker_task_slots_available-for-workflowworker" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#worker_task_slots_available" class=""><code>temporal_worker_task_slots_available{worker_type=”WorkflowWorker”}</code></a> metric indicates the number of available slots for executing Workflow Tasks on a Worker.
+This metric may go to zero for several reasons:</p>
+<ul>
+<li class="">High Workflow Task Load: If there are more Tasks than the Worker can handle concurrently, the available slots will be depleted. This can happen if the rate of incoming Tasks is higher than the rate at which tasks are being completed.</li>
+<li class="">Worker Configuration: The number of available slots is determined by the Worker configuration, specifically the <code>MaxConcurrentWorkflowTaskExecutionSize</code> setting. If these are set too low, the Worker may not have enough slots to handle the Task load.</li>
+<li class="">High <code>temporal_workflow_task_execution_latency</code> and <code>workflow_task_replay_latency</code>.</li>
+</ul>
+<p>To prevent depletion of Workflow Task slots:</p>
+<ol>
+<li class="">Monitor Worker CPU and Memory usage while increasing <code>(Max)ConcurrentWorkflowTaskExecutionSize</code> to add more execution slots.</li>
+<li class="">Scale up Workers both vertically (increasing CPU and Memory) and horizontally (increasing Worker instances).</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="depletion-of-temporal_worker_task_slots_available-for-activityworker">Depletion of <code>temporal_worker_task_slots_available</code> for <code>ActivityWorker</code><a href="#depletion-of-temporal_worker_task_slots_available-for-activityworker" class="hash-link" aria-label="Direct link to depletion-of-temporal_worker_task_slots_available-for-activityworker" title="Direct link to depletion-of-temporal_worker_task_slots_available-for-activityworker" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#worker_task_slots_available" class=""><code>temporal_worker_task_slots_available{worker_type=”ActivityWorker”}</code></a> metric indicates the number of available slots for executing Activity Tasks on a Worker.
+This metric may go to zero for several reasons:</p>
+<ul>
+<li class="">Blocked Activities and Zombie Activities: The most common cause is activities that are blocked or not returning on time. Zombie Activities are a subset of this category. They occur when an Activity times out (hits its <code>StartToClose</code> or <code>HeartbeatTimeout</code> timeout) and has stopped Heartbeating but continues to run, occupying some or all the slots as more retries occur. This can happen if:<!-- -->
+<ul>
+<li class="">The Activity code is blocking on a downstream service call or an infinite loop.</li>
+<li class="">There&#x27;s a mismatch between the Activity&#x27;s <code>StartToClose</code> timeout and any client-side timeouts for external calls.</li>
+</ul>
+</li>
+<li class="">Resource Utilization: High CPU or memory usage on Workers can cause activities to block and not release slots.</li>
+</ul>
+<p>To prevent depletion of Activity Task slots:</p>
+<ol>
+<li class="">Monitor Worker CPU and Memory usage while increasing <code>(Max)ConcurrentActivityExecutionSize</code> to add more execution slots.</li>
+<li class="">Add client-side timeout to your downstream API client.</li>
+<li class="">Review your Task code to ensure Tasks complete within a reasonable time measured by <code>temporal_activity_execution_latency</code>.</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-requests">Network requests<a href="#network-requests" class="hash-link" aria-label="Direct link to Network requests" title="Direct link to Network requests" translate="no">​</a></h2>
+<p>Network issues can impact Temporal clients and workers, leading to delays, failures, and overall system instability.
+This section focuses on metrics that reveal common network-related problems with your Temporal deployment, specifically related to network connectivity, latency, and request failures.
+These metrics can indicate where bottlenecks exist within the communication channels between Temporal clients (including Temporal Workers) and the Temporal server.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-temporal_long_request_failure">High <code>temporal_long_request_failure</code><a href="#high-temporal_long_request_failure" class="hash-link" aria-label="Direct link to high-temporal_long_request_failure" title="Direct link to high-temporal_long_request_failure" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#long_request_failure" class=""><code>temporal_long_request_failure</code></a> metric counts the number of failed RPC long poll requests for <code>PollWorkflowTaskQueue</code>, <code>PollActivityTaskQueue</code>, and <code>GetWorkflowExecutionHistory</code> (when polling new events). High values of this metric can be caused by several factors:</p>
+<ul>
+<li class="">Network Issues: Problems with the network connection between the Temporal Client and the Temporal Server, including firewalls and proxies, can cause long poll requests to fail.</li>
+<li class="">Rate Limiting: If the rate of requests exceeds the configured limits on the Temporal Server or Temporal Cloud, additional requests may be rejected, increasing the <code>temporal_long_request_failure</code> count. This is often indicated by a <code>ResourceExhausted</code> status code.</li>
+<li class="">Server Errors: If the Temporal Server is experiencing issues, it may fail to respond to long poll requests correctly, leading to an increase in <code>temporal_long_request_failure</code>.</li>
+</ul>
+<p>To diagnose the cause of high <code>temporal_long_request_failure</code>, you can:</p>
+<ol>
+<li class="">Check the operation and the status or code tag of the <code>temporal_long_request_failure</code> metric to see the type of errors that are occurring.</li>
+<li class="">If you receive a <code>ResourceExhausted</code> status code, review the rate limits configured on the Temporal Server or ask for help from Temporal Support for Temporal Cloud.</li>
+<li class="">Check the network connection between the Temporal Client and the Temporal Server.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-temporal_request_failure_total">High <code>temporal_request_failure_total</code><a href="#high-temporal_request_failure_total" class="hash-link" aria-label="Direct link to high-temporal_request_failure_total" title="Direct link to high-temporal_request_failure_total" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#request_failure" class=""><code>temporal_request_failure_total</code></a> metric counts the number of RPC requests made by the Temporal Client that have failed.
+High values of this metric can be caused by several factors:</p>
+<ul>
+<li class="">Network Issues: Problems with the network connection between the Temporal Client and the Temporal Server can cause requests to fail.</li>
+<li class="">Client Errors: If there&#x27;s an issue with the Temporal Client, such as misconfiguration or resource exhaustion, it may fail to make requests correctly.</li>
+<li class="">Operation Errors: Specific operations like <code>SignalWorkflowExecution</code> or <code>TerminateWorkflowExecution</code> can fail if they are trying to act on a closed Workflow Execution that no longer exists (because it completed and was removed from persistence when it hit Namespace retention time).</li>
+<li class="">Rate Limiting: If the rate of requests exceeds the configured limits on the Temporal Server, additional requests may be rejected, increasing the counter. This is often indicated by a <code>ResourceExhausted</code> status code.</li>
+<li class="">Request Size Limit: If the Worker tries to return an Activity response that is larger than the blob size limit (2MB), the service will reject it, causing a request failure.</li>
+<li class="">Server Errors: If the Temporal Server is experiencing issues, it may fail to respond to requests correctly, leading to an increase in <code>temporal_request_failure_total</code>.</li>
+</ul>
+<p>To diagnose the cause of high <code>temporal_request_failure_total</code>, you can:</p>
+<ol>
+<li class="">Check the status or code tag of the <code>temporal_request_failure_total</code> metric to see the type of errors that are occurring.</li>
+<li class="">Look at the operation tag of the <code>temporal_request_failure_total</code> metric to see which operations are failing.</li>
+<li class="">Monitor the Temporal Server logs and the Temporal Client logs for any error messages or warnings.</li>
+<li class="">Check the network connection between the Temporal Client and the Temporal Server.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="high-temporal_request_latency">High <code>temporal_request_latency</code><a href="#high-temporal_request_latency" class="hash-link" aria-label="Direct link to high-temporal_request_latency" title="Direct link to high-temporal_request_latency" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#request_latency" class=""><code>temporal_request_latency</code></a> metric measures the latency of gRPC requests made by the Temporal Client.
+High values for this metric can be caused by several factors:</p>
+<ul>
+<li class="">Network Latency: The physical distance and network conditions between the Temporal Client and the Temporal Server can affect the latency of requests.</li>
+<li class="">Network Transfer Time: Larger payloads take longer to transfer over the network, which affects request latency. For example, large payloads in <code>RespondWorkflowTaskCompleted</code> can affect the latency of the request. This is especially true when Workflows are scheduling multiple activities with large inputs.</li>
+<li class="">Resource Exhaustion: Running out of resources (such as CPU or memory) on the client or server can cause delays in processing the request.</li>
+<li class="">Client Configuration: Improper client configuration, such as setting thread pool sizes too aggressively or having memory constraints that are too low for the number of allocated threads, can lead to situations where Tasks overwhelm the client, causing increased latency.</li>
+<li class="">Server Load: If the Temporal Server is under heavy load, it may take longer to respond to requests, leading to increased latency.</li>
+</ul>
+<p>To diagnose and address high <code>temporal_request_latency</code>:</p>
+<ol>
+<li class="">Monitor the <code>temporal_request_latency</code> metric to identify when and where latency spikes are occurring.</li>
+<li class="">Check the network connection between the Temporal Client and the Temporal Server.</li>
+<li class="">Monitor the resource usage on both the Temporal Client and the Temporal Server.</li>
+<li class="">Review your Temporal Client configuration to ensure it is optimized for your workload.</li>
+<li class="">If you&#x27;re using Temporal Cloud, check if the Cloud’s <a href="/cloud/metrics/openmetrics/metrics-reference#temporal_cloud_v1_service_latency_p95" class="">service latency</a> metric spikes up and reach out to Temporal Support for help.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ratetemporal_long_request_totaloperationpollactivitytaskqueue"><code>rate(temporal_long_request_total{operation=&quot;PollActivityTaskQueue&quot;})</code><a href="#ratetemporal_long_request_totaloperationpollactivitytaskqueue" class="hash-link" aria-label="Direct link to ratetemporal_long_request_totaloperationpollactivitytaskqueue" title="Direct link to ratetemporal_long_request_totaloperationpollactivitytaskqueue" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#long_request" class=""><code>rate(temporal_long_request_total{operation=&quot;PollActivityTaskQueue&quot;})</code></a> expression measures the per-second average rate of <code>PollActivityTaskQueue</code> long poll requests over a certain period of time.</p>
+<p><code>PollActivityTaskQueue</code> is an operation where Workers poll for Activity Tasks from the Task Queue.
+The <code>temporal_long_request_total</code> metric counts the number of these long poll requests.</p>
+<p>By applying the <code>rate()</code> function in Prometheus, you can calculate the per-second average rate of these requests over the time range specified in the Query.
+This can help you understand the load on your Temporal service and how often your Workers are polling for Activity Tasks.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ratetemporal_long_request_totaloperationpollworkflowtaskqueue"><code>rate(temporal_long_request_total{operation=&quot;PollWorkflowTaskQueue&quot;})</code><a href="#ratetemporal_long_request_totaloperationpollworkflowtaskqueue" class="hash-link" aria-label="Direct link to ratetemporal_long_request_totaloperationpollworkflowtaskqueue" title="Direct link to ratetemporal_long_request_totaloperationpollworkflowtaskqueue" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#long_request" class=""><code>rate(temporal_long_request_total{operation=&quot;PollWorkflowTaskQueue&quot;})</code></a> expression measures the per-second average rate of <code>PollWorkflowTaskQueue</code> long poll requests over a certain period of time.</p>
+<p><code>PollWorkflowTaskQueue</code> is an operation where Workers poll for Workflow Tasks from the Task Queue.
+The <code>temporal_long_request_total</code> metric counts the number of these long poll requests.</p>
+<p>By applying the <code>rate()</code> function in Prometheus, you can calculate the per-second average rate of these requests over the time range specified in the query.
+This can help you understand the load on your Temporal service and how often your Workers are polling for Workflow Tasks.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="caching">Caching<a href="#caching" class="hash-link" aria-label="Direct link to Caching" title="Direct link to Caching" translate="no">​</a></h2>
+<p>Temporal Workers rely on caching to optimize performance by reducing the overhead of fetching Workflow state from the history and Replaying.
+However, unlimited caching is impossible; there&#x27;s a trade-off between the benefits of cached data and the memory consumed.
+These metrics allow you to balance performance gains with responsible memory usage.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_sticky_cache_size"><code>temporal_sticky_cache_size</code><a href="#temporal_sticky_cache_size" class="hash-link" aria-label="Direct link to temporal_sticky_cache_size" title="Direct link to temporal_sticky_cache_size" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#sticky_cache_size" class=""><code>temporal_sticky_cache_size</code></a> metric represents the number of Workflow executions currently cached in a Worker&#x27;s memory.</p>
+<p>The sticky cache is used to improve performance by keeping the Workflow state in memory, reducing the need to reconstruct the Workflow from its Event History for every Task.
+It’s particularly useful for latency-sensitive Workflows.</p>
+<p>There is a direct relationship between the sticky cache size and Worker memory consumption.
+As the cache size increases, so does the memory usage of the Worker.</p>
+<p>The maximum size of the sticky cache can be configured. For example, the default in the Go SDK is 10,000 Workflows.</p>
+<p>A larger sticky cache can improve performance by reducing the need to replay Workflow histories.
+However, it also increases memory usage, which can lead to issues if not properly managed.</p>
+<p>Monitor this metric alongside Worker memory usage.
+A sudden increase in <code>sticky_cache_size</code> can correlate with increased memory consumption and potential performance issues.</p>
+<p>If memory consumption is too high, you can reduce the maximum sticky cache size.
+Conversely, if you have available memory and want to improve performance, you might increase it.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_sticky_cache_hit_total-and-temporal_sticky_cache_miss_total"><code>temporal_sticky_cache_hit_total</code> and <code>temporal_sticky_cache_miss_total</code><a href="#temporal_sticky_cache_hit_total-and-temporal_sticky_cache_miss_total" class="hash-link" aria-label="Direct link to temporal_sticky_cache_hit_total-and-temporal_sticky_cache_miss_total" title="Direct link to temporal_sticky_cache_hit_total-and-temporal_sticky_cache_miss_total" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#sticky_cache_hit" class=""><code>temporal_sticky_cache_hit_total</code></a> metric is a counter that measures the total number of times a Workflow Task found a cached Workflow Execution to run against, and
+the opposite is <a href="/references/sdk-metrics#sticky_cache_miss" class=""><code>temporal_sticky_cache_miss_total</code></a>, which is a counter that measures the total number of times a Workflow Task did not find a cached Workflow Execution to run against.</p>
+<p>Sticky Execution is a feature where a Worker caches a Workflow Execution and creates a dedicated Task Queue to listen on.
+This improves performance because the Temporal Service only sends new events to the Worker instead of entire Event Histories, and the Workflow doesn&#x27;t have to Replay.</p>
+<p>A “hit” means the Worker finds the Workflow in its cache when processing a Workflow Task, allowing immediate processing without fetching the full Event History from the server and Replaying.
+A &quot;miss&quot; means the Worker didn&#x27;t find the Workflow in its cache, and it must fetch the Event History and Replay.</p>
+<p>Monitoring these two metrics and comparing them can help you understand how your sticky cache is being used.
+A high rate of cache hits with a low rate of cache misses indicates that your Workflows are being scheduled efficiently, with minimal need for fetching Event Histories and Replaying.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal_sticky_cache_total_forced_eviction_total"><code>temporal_sticky_cache_total_forced_eviction_total</code><a href="#temporal_sticky_cache_total_forced_eviction_total" class="hash-link" aria-label="Direct link to temporal_sticky_cache_total_forced_eviction_total" title="Direct link to temporal_sticky_cache_total_forced_eviction_total" translate="no">​</a></h3>
+<p>The <a href="/references/sdk-metrics#sticky_cache_hit" class=""><code>temporal_sticky_cache_total_forced_eviction_total</code></a> metric is a counter that measures the total number of Workflow Executions that have been forcibly evicted from the sticky cache.</p>
+<p>Sticky Execution is a feature where a Worker caches a Workflow Execution and creates a dedicated Task Queue to listen on.
+This improves performance because the Temporal Service only sends new events to the Worker instead of entire Event Histories, and the Workflow doesn&#x27;t have to Replay.</p>
+<p>A &quot;forced eviction&quot; in this context means that a Workflow Execution was removed from the cache before it completed, typically because the cache was full and needed to make room for other Workflow Executions.
+This means that if the Worker needs to process more Tasks for the evicted Workflow Execution, it will have to fetch the entire Event History from the Temporal Service and Replay.</p>
+<p>Monitoring the <code>temporal_sticky_cache_total_forced_eviction_total</code> metric can help you understand how often your Workflows are being evicted from the cache.
+A high rate of forced evictions could indicate that your cache size is too small for your workload, and you may need to increase the <code>WorkflowCacheSize</code> setting if your Worker resources can accommodate it.</p></div>

@@ -1,0 +1,37 @@
+# Dynamic Workflow - Ruby SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> This section explains Dynamic Workflows with the Ruby SDK
+
+## Set a Dynamic Workflow 
+
+A Dynamic Workflow in Temporal is a Workflow that is invoked dynamically at runtime if no other Workflow with the same name is registered.
+A Workflow can be made dynamic by invoking `workflow_dynamic` class method at the top of the definition.
+You must register the Workflow with the Worker before it can be invoked.
+Only one Dynamic Workflow can be present on a Worker.
+
+Often, dynamic is used in conjunction with `workflow_raw_args` which does not convert arguments but instead passes them
+through as a splatted array of `Temporalio::Converters::RawValue` instances.
+
+```ruby
+class MyDynamicWorkflow < Temporalio::Workflow::Definition
+  # Make this the dynamic workflow and accept raw args
+  workflow_dynamic
+  workflow_raw_args
+
+  def execute(*raw_args)
+    # Require a single arg for our workflow
+    raise Temporalio::Error::ApplicationError, 'One arg expected' unless raw_args.size == 1
+
+    # Use payload converter to convert it
+    name = Temporalio::Workflow.payload_converter.from_payload(raw_args.first.payload)
+    Temporalio::Workflow.execute_activity(
+      MyActivity,
+      { greeting: 'Hello', name: },
+      start_to_close_timeout: 100
+    )
+  end
+end
+```

@@ -1,0 +1,396 @@
+# Delayed Retry
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Override one failure's retry interval with nextRetryDelay on ApplicationFailure, matching the wait time the error reports.
+
+> **ℹ️ TLDR:**
+> Throw an `ApplicationFailure` with `nextRetryDelay` set inside the Activity to **delay the next retry for a fixed time.** Use this when an error carries its own timing information — such as an HTTP 429 `Retry-After` header or a known maintenance window — so Temporal waits exactly as long as needed instead of following the generic backoff schedule.
+
+## Overview
+
+The Delayed Retry pattern overrides the next retry interval for a specific failure by throwing an `ApplicationFailure` with a `nextRetryDelay` field set from inside the Activity.
+Use it when a particular error carries information about how long to wait before retrying — such as a rate-limit response with a `Retry-After` header, or a known maintenance window with a fixed end time.
+
+## Problem
+
+A `RetryPolicy` applies a single backoff schedule to all failures from an Activity.
+This works well for generic transient errors, but some errors carry specific information about how long the caller must wait:
+
+- An HTTP 429 response includes a `Retry-After: 60` header telling you exactly when the quota resets.
+- A downstream system returns an error message saying "maintenance until 02:00 UTC" — a precise, known delay.
+- A database error includes a lock timeout duration that indicates when the resource will be available.
+
+With a global `RetryPolicy`, you have two options, neither of which is what you need: set a short interval and retry too early (wasting quota and adding load), or set a long interval and wait longer than necessary.
+What you need is to set the next retry delay *specific to this failure*, based on the information the error itself provides.
+
+## Solution
+
+Throw an `ApplicationFailure` with the `nextRetryDelay` field set from inside the Activity.
+Temporal replaces the RetryPolicy-calculated interval for that single retry with the value you specify.
+Subsequent retries (if the next attempt also fails) return to the normal RetryPolicy schedule unless you set `nextRetryDelay` again.
+
+```mermaid
+sequenceDiagram
+    participant Workflow
+    participant Temporal as Temporal Service
+    participant API as Rate-Limited API
+
+    Workflow->>Temporal: Schedule activity<br/>(RetryPolicy: initialInterval=1s)
+    Temporal->>+API: Attempt 1
+    API-->>-Temporal: HTTP 429 — Retry-After: 60s
+    Note over Temporal: Activity throws<br/>ApplicationFailure(nextRetryDelay=60s)
+    Note over Temporal: Override: wait 60s<br/>(ignoring RetryPolicy interval)
+    Temporal->>+API: Attempt 2
+    API-->>-Temporal: Success
+    Temporal-->>Workflow: Result
+```
+
+The following describes each step:
+
+1. The Activity calls the API. It receives an HTTP 429 with a `Retry-After: 60` header.
+2. The Activity extracts the retry delay from the response and throws `ApplicationFailure` with `nextRetryDelay=60s`.
+3. Temporal ignores the RetryPolicy's calculated interval for this retry and waits exactly 60 seconds instead.
+4. The next attempt succeeds and Temporal delivers the result to the Workflow.
+
+## Implementation
+
+### Override the retry delay from the response
+
+Extract the wait duration from the error or response and pass it to `ApplicationFailure`.
+The RetryPolicy's `MaximumAttempts` and `ScheduleToCloseTimeout` still apply — only the interval for the next retry is overridden.
+
+**Python**
+
+```python
+# activities.py
+from datetime import timedelta
+from temporalio import activity
+from temporalio.exceptions import ApplicationError
+
+@activity.defn
+async def call_api(endpoint: str) -> str:
+    response = await http_client.get(endpoint)
+
+    if response.status_code == 429:
+        retry_after = response.headers.get("Retry-After")
+        if retry_after is not None:
+            raise ApplicationError(
+                f"Rate limited — retrying after {retry_after}s",
+                type="RateLimitError",
+                next_retry_delay=timedelta(seconds=int(retry_after)),
+            )
+        raise ApplicationError(
+            "Rate limited — retrying per RetryPolicy", type="RateLimitError"
+        )
+
+    return response.text
+```
+
+**Go**
+
+```go
+// rate_limited_activity.go
+func CallApi(ctx context.Context, endpoint string) (string, error) {
+    response, err := httpClient.Get(endpoint)
+    if err != nil {
+        return "", err
+    }
+
+    if response.StatusCode == 429 {
+        if retryAfter := response.Header.Get("Retry-After"); retryAfter != "" {
+            seconds, _ := strconv.Atoi(retryAfter)
+            return "", temporal.NewApplicationErrorWithOptions(
+                fmt.Sprintf("Rate limited — retrying after %ds", seconds),
+                "RateLimitError",
+                temporal.ApplicationErrorOptions{NextRetryDelay: time.Duration(seconds) * time.Second},
+            )
+        }
+        return "", temporal.NewApplicationError("Rate limited — retrying per RetryPolicy", "RateLimitError")
+    }
+
+    return response.Body, nil
+}
+```
+
+**Java**
+
+```java
+// RateLimitedActivityImpl.java
+import io.temporal.activity.Activity;
+import io.temporal.failure.ApplicationFailure;
+import java.time.Duration;
+
+public class RateLimitedActivityImpl implements RateLimitedActivity {
+    @Override
+    public String callApi(String endpoint) {
+        ApiResponse response = httpClient.get(endpoint);
+
+        if (response.getStatusCode() == 429) {
+            int retryAfterSeconds = response.getHeaderInt("Retry-After", 0);
+            if (retryAfterSeconds > 0) {
+                throw ApplicationFailure.newFailureWithCauseAndDelay(
+                    "Rate limited — retrying after " + retryAfterSeconds + "s",
+                    "RateLimitError",
+                    null,
+                    Duration.ofSeconds(retryAfterSeconds)
+                );
+            }
+            throw ApplicationFailure.newFailure("Rate limited — retrying per RetryPolicy", "RateLimitError");
+        }
+
+        return response.getBody();
+    }
+}
+```
+
+**TypeScript**
+
+```typescript
+// activities.ts
+import { ApplicationFailure } from '@temporalio/activity';
+
+export async function callApi(endpoint: string): Promise<string> {
+    const response = await fetch(endpoint);
+
+    if (response.status === 429) {
+        const retryAfterHeader = response.headers.get('Retry-After');
+        const retryAfterSeconds = retryAfterHeader != null ? parseInt(retryAfterHeader, 10) : undefined;
+        throw ApplicationFailure.create({
+            message: retryAfterSeconds != null
+                ? `Rate limited — retrying after ${retryAfterSeconds}s`
+                : 'Rate limited — retrying per RetryPolicy',
+            type: 'RateLimitError',
+            // Only override the interval when the header is present; fall back to RetryPolicy otherwise
+            nextRetryDelay: retryAfterSeconds != null ? `${retryAfterSeconds}s` : undefined,
+        });
+    }
+
+    return response.text();
+}
+```
+
+### Attempt-proportional delay
+
+You can also set the delay dynamically based on the attempt number — for example, to implement a custom backoff that differs from exponential, or to add a known base delay on top of the standard backoff.
+
+**Python**
+
+```python
+# activities.py
+from datetime import timedelta
+from temporalio import activity
+from temporalio.exceptions import ApplicationError
+
+@activity.defn
+async def process(input: str) -> str:
+    attempt = activity.info().attempt
+
+    try:
+        return await downstream_service.call(input)
+    except ServiceUnavailableError as e:
+        # Custom delay: 3 seconds × attempt number (3s, 6s, 9s, …)
+        raise ApplicationError(
+            f"Service unavailable on attempt {attempt}",
+            type="ServiceUnavailable",
+            next_retry_delay=timedelta(seconds=3 * attempt),
+        ) from e
+```
+
+**Go**
+
+```go
+// backoff_activity.go
+func Process(ctx context.Context, input string) (string, error) {
+    attempt := activity.GetInfo(ctx).Attempt
+
+    result, err := downstreamService.Call(input)
+    if err != nil {
+        // Custom delay: 3 seconds × attempt number (3s, 6s, 9s, …)
+        return "", temporal.NewApplicationErrorWithOptions(
+            fmt.Sprintf("Service unavailable on attempt %d", attempt),
+            "ServiceUnavailable",
+            temporal.ApplicationErrorOptions{
+                Cause:          err,
+                NextRetryDelay: 3 * time.Second * time.Duration(attempt),
+            },
+        )
+    }
+    return result, nil
+}
+```
+
+**Java**
+
+```java
+// BackoffActivityImpl.java
+import io.temporal.activity.Activity;
+import io.temporal.failure.ApplicationFailure;
+import java.time.Duration;
+
+public class BackoffActivityImpl implements BackoffActivity {
+    @Override
+    public String process(String input) {
+        int attempt = Activity.getExecutionContext().getInfo().getAttempt();
+
+        try {
+            return downstreamService.call(input);
+        } catch (ServiceUnavailableException e) {
+            // Custom delay: 3 seconds × attempt number (3s, 6s, 9s, …)
+            throw ApplicationFailure.newFailureWithCauseAndDelay(
+                "Service unavailable on attempt " + attempt,
+                "ServiceUnavailable",
+                e,
+                Duration.ofSeconds(3L * attempt)
+            );
+        }
+    }
+}
+```
+
+**TypeScript**
+
+```typescript
+// activities.ts
+import { ApplicationFailure, activityInfo } from '@temporalio/activity';
+
+export async function process(input: string): Promise<string> {
+    const { attempt } = activityInfo();
+
+    try {
+        return await downstreamService.call(input);
+    } catch (e) {
+        // Custom delay: 3 seconds × attempt number (3s, 6s, 9s, …)
+        throw ApplicationFailure.create({
+            message: `Service unavailable on attempt ${attempt}`,
+            type: 'ServiceUnavailable',
+            cause: e as Error,
+            nextRetryDelay: `${3 * attempt}s`,
+        });
+    }
+}
+```
+
+### Workflow configuration
+
+The Workflow sets a normal `RetryPolicy`.
+The `nextRetryDelay` set in the Activity overrides the interval only for the retry following that specific failure — subsequent attempts fall back to the RetryPolicy schedule if `nextRetryDelay` is not set again.
+
+**Python**
+
+```python
+# workflows.py
+from datetime import timedelta
+from temporalio import workflow
+from temporalio.common import RetryPolicy
+
+with workflow.unsafe.imports_passed_through():
+    from activities import call_api
+
+@workflow.defn
+class ApiWorkflow:
+    @workflow.run
+    async def run(self, endpoint: str) -> str:
+        return await workflow.execute_activity(
+            call_api,
+            endpoint,
+            start_to_close_timeout=timedelta(seconds=10),
+            retry_policy=RetryPolicy(
+                initial_interval=timedelta(seconds=1),
+                backoff_coefficient=2.0,
+                maximum_attempts=10,
+            ),
+        )
+```
+
+**Go**
+
+```go
+// api_workflow.go
+func ApiWorkflow(ctx workflow.Context, endpoint string) (string, error) {
+    ao := workflow.ActivityOptions{
+        StartToCloseTimeout: 10 * time.Second,
+        RetryPolicy: &temporal.RetryPolicy{
+            InitialInterval:    time.Second,
+            BackoffCoefficient: 2.0,
+            MaximumAttempts:    10,
+        },
+    }
+    ctx = workflow.WithActivityOptions(ctx, ao)
+
+    var result string
+    err := workflow.ExecuteActivity(ctx, CallApi, endpoint).Get(ctx, &result)
+    return result, err
+}
+```
+
+**Java**
+
+```java
+// ApiWorkflowImpl.java
+public class ApiWorkflowImpl implements ApiWorkflow {
+    private final RateLimitedActivity activities = Workflow.newActivityStub(
+        RateLimitedActivity.class,
+        ActivityOptions.newBuilder()
+            .setStartToCloseTimeout(Duration.ofSeconds(10))
+            .setRetryOptions(RetryOptions.newBuilder()
+                .setInitialInterval(Duration.ofSeconds(1))
+                .setBackoffCoefficient(2.0)
+                .setMaximumAttempts(10)
+                .build())
+            .build()
+    );
+
+    @Override
+    public String run(String endpoint) {
+        return activities.callApi(endpoint);
+    }
+}
+```
+
+**TypeScript**
+
+```typescript
+// workflows.ts
+import * as wf from '@temporalio/workflow';
+import type * as activities from './activities';
+
+const { callApi } = wf.proxyActivities<typeof activities>({
+    startToCloseTimeout: '10s',
+    retry: {
+        initialInterval: '1s',
+        backoffCoefficient: 2,
+        maximumAttempts: 10,
+    },
+});
+
+export async function apiWorkflow(endpoint: string): Promise<string> {
+    return await callApi(endpoint);
+}
+```
+
+## Best practices
+
+- **Use the error's own delay information when available.** HTTP 429 `Retry-After`, database lock timeouts, and API-provided backoff hints are more accurate than any value you could configure statically.
+- **Fall back to the RetryPolicy for unknown errors.** Only set `nextRetryDelay` for error types where you have reliable delay information. Let the RetryPolicy handle all other failures normally.
+- **Still set a meaningful RetryPolicy.** `nextRetryDelay` overrides the interval for a single retry; the RetryPolicy still governs maximum attempts and the intervals for attempts where `nextRetryDelay` is not set. Also ensure `scheduleToCloseTimeout` is long enough to accommodate the maximum possible `nextRetryDelay` value — a tight budget can cause the Activity to expire before the delayed retry executes.
+- **Surface the delay in the failure message.** Include the delay value and its source in the `ApplicationFailure` message (for example, `"Rate limited — retrying after 60s (Retry-After header)"`) so it appears directly in the Workflow history - Activity failure details. This makes it clear why the Activity waited an unusual amount of time without requiring separate log correlation.
+
+## Common pitfalls
+
+- **Assuming `nextRetryDelay` persists across all retries.** It only applies to the immediate next retry. If the following attempt also fails without setting `nextRetryDelay`, the RetryPolicy interval resumes.
+- **Setting `nextRetryDelay` longer than `ScheduleToCloseTimeout`.** If the override delay exceeds the remaining `ScheduleToCloseTimeout` budget, the retry will never execute — Temporal will expire the Activity before the delay elapses.
+
+## Related
+
+### Patterns
+
+- [Fixed Count of Retries](/design-patterns/fixed-count-retries): Cap total attempts to prevent unbounded retry cost.
+- [Fixed Wall-Time Retries](/design-patterns/fixed-wall-time-retries): Enforce a total elapsed time budget across all attempts.
+- [Fast/Slow Retries](/design-patterns/fast-slow-retries): Shift from a fast retry cadence to a slow one after initial attempts are exhausted.
+- [Error Handling & Retry Patterns](/design-patterns/error-handling-patterns): Overview and decision tree for all retry patterns.
+
+### References
+
+- [Per-error next Retry delay](/encyclopedia/retry-policies#per-error-next-retry-delay)

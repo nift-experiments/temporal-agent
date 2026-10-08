@@ -1,0 +1,37 @@
+# Performance metrics for tuning
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Use Temporal SDK slot availability, latency, and cache metrics to tune Worker performance.
+
+> **ℹ️ Info:**
+>
+> All metrics on this page are prepended with the `temporal_` prefix.
+> For example, `worker_task_slots_available` is actually `temporal_worker_task_slots_available` when used.
+> The omitted prefix makes the names more readable and descriptive.
+>
+
+The Temporal SDKs emit metrics from Temporal Client usage and Worker Processes.
+Performance tuning uses three important SDK metric groups:
+
+### Slot availability metrics 
+
+Temporal's [`worker_task_slots_available`](/references/sdk-metrics#worker_task_slots_available) and `worker_task_slots_used` gauges can report the number of available executor “slots” that are currently available and unoccupied for a Worker type.
+Tag these with `worker_type=WorkflowWorker` for Workflow Task Workers or `worker_type=ActivityWorker` for Activity Workers.
+
+> **💡 Tip:**
+>
+> Unlike `worker_task_slots_used`, `worker_task_slots_available` can only be used with fixed size slot suppliers and can't be used with resource-based slot suppliers.
+>
+
+### Latency metrics
+
+Temporal provides two latency timers: [`workflow_task_schedule_to_start_latency`](/references/sdk-metrics#workflow_task_schedule_to_start_latency) for Workflow Tasks and [`activity_schedule_to_start_latency`](/references/sdk-metrics#activity_schedule_to_start_latency) for Activities.
+A Schedule-To-Start latency is the time from when an Task is scheduled (that is, placed in a Queue) to when a Worker starts (that is, picks up from the Task Queue) that Task.
+These metrics help ensure that Tasks are being processed from the queue in a timely manner.
+For more information about `schedule_to_start` timeout and latency, see [Schedule-To-Start Timeout](/encyclopedia/detecting-activity-failures#schedule-to-start-timeout).
+
+### Cache metrics
+
+The [`sticky_cache_size`](/references/sdk-metrics#sticky_cache_size) and [`workflow_active_thread_count`](/references/sdk-metrics#workflow_active_thread_count) metrics report the size of the Workflow cache and the number of cached Workflow threads.

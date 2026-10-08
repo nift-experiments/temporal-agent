@@ -1,0 +1,42 @@
+# Continue-As-New - Ruby SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Use Continue-As-New in Ruby to close a Workflow Execution and start a new one with the same Workflow Id and a fresh Event History.
+
+This page describes how to Continue-As-New using the Temporal Ruby SDK.
+
+[Continue-As-New](/workflow-execution/continue-as-new) enables a Workflow Execution to close successfully and create a new Workflow Execution in a single atomic operation if the number of Events in the Event History is becoming too large.
+The Workflow Execution spawned from the use of Continue-As-New has the same Workflow Id, a new Run Id, and a fresh Event History and is passed all the appropriate parameters.
+
+> **⚠️ Caution:**
+>
+> As a precautionary measure, the Workflow Execution's Event History is limited to [51,200 Events](https://github.com/temporalio/temporal/blob/48dc5a95949ea0e555ce0f48e0031b54633fc703/common/dynamicconfig/constants.go#L441) or [50 MB](https://github.com/temporalio/temporal/blob/48dc5a95949ea0e555ce0f48e0031b54633fc703/common/dynamicconfig/constants.go#L425) and will warn you after 10,240 Events or 10 MB.
+>
+
+To prevent a Workflow Execution Event History from exceeding this limit and failing, use Continue-As-New to start a new Workflow Execution with a fresh Event History.
+
+A very large Event History can adversely affect the performance of a Workflow Execution.
+For example, in the case of a Workflow Worker failure, the full Event History must be pulled from the Temporal Service and given to another Worker via a Workflow Task.
+If the Event history is very large, it may take some time to load it.
+
+The Continue-As-New feature enables developers to complete the current Workflow Execution and start a new one atomically.
+
+The new Workflow Execution has the same Workflow Id, but a different Run Id, and has its own Event History.
+
+## Continue-As-New in Ruby 
+
+To Continue-As-New in Ruby, raise a `Temporalio::Workflow::ContinueAsNewError` from inside your Workflow, which will stop the Workflow immediately and Continue-As-New.
+
+```ruby
+raise Temporalio::Workflow::ContinueAsNewError.new('my-new-arg')
+```
+
+> **⚠️ Warning:**
+> Using Continue-as-New and Updates
+>
+> - Temporal _does not_ support Continue-as-New functionality within Update handlers.
+> - Complete all handlers _before_ using Continue-as-New.
+> - Use Continue-as-New from your main Workflow Definition method, just as you would complete or fail a Workflow Execution.
+>

@@ -6,7 +6,7 @@ If you use a private environment that does not allow external connectivity, you 
 <p>After creating the PrivateLink endpoint, configure your clients to use it through either <a href="#configuring-private-dns-for-aws-privatelink" class="">private DNS</a> or <a href="#direct-vpce" class="">direct VPCE targeting</a>. Direct VPCE targeting is simplest for single-region Namespaces, but also works for High Availability Namespaces with <a href="#direct-vpce" class="">more careful setup</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements">Requirements<a href="#requirements" class="hash-link" aria-label="Direct link to Requirements" title="Direct link to Requirements" translate="no">​</a></h2>
 <ul>
-<li class="">Your AWS PrivateLink (PL) endpoint must be in the same region as your Temporal Cloud Namespace or one of its <a class="" href="/cloud/high-availability">High Availability</a> replicas.
+<li class="">Your AWS PrivateLink (PL) endpoint must be in the same region as your Temporal Cloud Namespace or one of its <a href="/cloud/high-availability" class="">High Availability</a> replicas.
 See <a href="#cross-region-privatelink" class="">cross-region PrivateLink connectivity</a> to access the Namespace from a different region.</li>
 <li class="">Your Private DNS must be configured to direct Worker / Client traffic to your VPC Endpoint, as described below.</li>
 <li class="">If the Worker / Client does not use the Namespace Endpoint as the connection string in its code, it may need to set the <code>server_name</code> config to the Namespace Endpoint string, as described below.</li>
@@ -83,13 +83,13 @@ This can take up to 10 minutes.</p>
 <li class="">Eliminate the need to set a custom SNI override.</li>
 <li class="">Make future Endpoint rotations transparent—only the PHZ record changes.</li>
 </ul>
-<p>This approach is <strong>optional</strong>; Temporal Cloud works without it. It simply streamlines configuration and operations. If you cannot use private DNS, refer to <a class="" href="/cloud/connectivity#update-dns-or-clients-to-use-private-connectivity">our guide for updating the server and TLS settings on your clients</a>.</p>
+<p>This approach is <strong>optional</strong>; Temporal Cloud works without it. It simply streamlines configuration and operations. If you cannot use private DNS, refer to <a href="/cloud/connectivity#update-dns-or-clients-to-use-private-connectivity" class="">our guide for updating the server and TLS settings on your clients</a>.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h3>
 <table><thead><tr><th>Requirement</th><th>Notes</th></tr></thead><tbody><tr><td>AWS VPC with DNS resolution and DNS hostnames enabled</td><td><em>VPC console → Edit DNS settings → enable both checkboxes.</em></td></tr><tr><td>Interface VPC Endpoint for Temporal Cloud</td><td>Subnets must be associated with the VPC and Security Group must allow TCP ingress traffic to port 7233 from the appropriate hosts.</td></tr><tr><td>Route 53 available in your AWS account</td><td>You need permission to create Private Hosted Zones and records.</td></tr><tr><td>Namespace details</td><td>Needed to choose the correct override domain pattern below.</td></tr></tbody></table>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="choose-the-override-domain-and-endpoint">Choose the override domain and endpoint<a href="#choose-the-override-domain-and-endpoint" class="hash-link" aria-label="Direct link to Choose the override domain and endpoint" title="Direct link to Choose the override domain and endpoint" translate="no">​</a></h3>
-<table><thead><tr><th>Endpoint type</th><th>PHZ domain format</th><th>Example</th><th>Use when</th></tr></thead><tbody><tr><td>Namespace endpoint</td><td><code>&lt;namespace-id&gt;.tmprl.cloud</code></td><td><code>payments.abcde.tmprl.cloud</code></td><td><strong>Single-region Namespaces.</strong> Simplest pattern — one record per Namespace. For <a class="" href="/cloud/high-availability/ha-connectivity">High Availability</a> Namespaces, overriding the Namespace Endpoint is nuanced — see <a class="" href="/cloud/high-availability/ha-connectivity">Connectivity for High Availability</a>.</td></tr><tr><td>Regional endpoint</td><td><code>&lt;region&gt;.&lt;cloud&gt;.api.temporal.io</code></td><td><code>ap-northeast-2.aws.api.temporal.io</code></td><td>You want to pin a client to a specific Temporal Cloud region.</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-caution alert alert--warning admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>HA Namespaces need a more nuanced PHZ setup</div><div class="admonitionContent_vXIg"><p>For Namespaces with <a class="" href="/cloud/high-availability/ha-connectivity">High Availability</a>, the PHZ pattern to use depends on how you want Workers to reach the active region. Overriding the Namespace Endpoint directly is read out of the PHZ before public DNS, so the regional CNAME that Temporal Cloud rewrites on failover isn&#x27;t followed — which is usually not what you want, but can be the right choice in some topologies (for example, multi-cloud HA with one region per cloud, where Workers on each cloud should always reach their local region). Because the trade-offs depend on your setup, see <a class="" href="/cloud/high-availability/ha-connectivity">Connectivity for High Availability</a> before choosing a pattern.</p></div></div>
-<p>The step-by-step below walks through the <strong>Namespace endpoint</strong> pattern, which is the simpler single-region case. For HA, follow the <a class="" href="/cloud/high-availability/ha-connectivity">HA Connectivity guide</a> instead, which uses the same Route 53 mechanics but on the regional records.</p>
+<table><thead><tr><th>Endpoint type</th><th>PHZ domain format</th><th>Example</th><th>Use when</th></tr></thead><tbody><tr><td>Namespace endpoint</td><td><code>&lt;namespace-id&gt;.tmprl.cloud</code></td><td><code>payments.abcde.tmprl.cloud</code></td><td><strong>Single-region Namespaces.</strong> Simplest pattern — one record per Namespace. For <a href="/cloud/high-availability/ha-connectivity" class="">High Availability</a> Namespaces, overriding the Namespace Endpoint is nuanced — see <a href="/cloud/high-availability/ha-connectivity" class="">Connectivity for High Availability</a>.</td></tr><tr><td>Regional endpoint</td><td><code>&lt;region&gt;.&lt;cloud&gt;.api.temporal.io</code></td><td><code>ap-northeast-2.aws.api.temporal.io</code></td><td>You want to pin a client to a specific Temporal Cloud region.</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-caution alert alert--warning admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>HA Namespaces need a more nuanced PHZ setup</div><div class="admonitionContent_vXIg"><p>For Namespaces with <a href="/cloud/high-availability/ha-connectivity" class="">High Availability</a>, the PHZ pattern to use depends on how you want Workers to reach the active region. Overriding the Namespace Endpoint directly is read out of the PHZ before public DNS, so the regional CNAME that Temporal Cloud rewrites on failover isn&#x27;t followed — which is usually not what you want, but can be the right choice in some topologies (for example, multi-cloud HA with one region per cloud, where Workers on each cloud should always reach their local region). Because the trade-offs depend on your setup, see <a href="/cloud/high-availability/ha-connectivity" class="">Connectivity for High Availability</a> before choosing a pattern.</p></div></div>
+<p>The step-by-step below walks through the <strong>Namespace endpoint</strong> pattern, which is the simpler single-region case. For HA, follow the <a href="/cloud/high-availability/ha-connectivity" class="">HA Connectivity guide</a> instead, which uses the same Route 53 mechanics but on the regional records.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="step-by-step-instructions">Step-by-step instructions<a href="#step-by-step-instructions" class="hash-link" aria-label="Direct link to Step-by-step instructions" title="Direct link to Step-by-step instructions" translate="no">​</a></h3>
 <div class="theme-admonition theme-admonition-warning alert alert--danger admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M5.05.31c.81 2.17.41 3.38-.52 4.31C3.55 5.67 1.98 6.45.9 7.98c-1.45 2.05-1.7 6.53 3.53 7.7-2.2-1.16-2.67-4.52-.3-6.61-.61 2.03.53 3.33 1.94 2.86 1.39-.47 2.3.53 2.27 1.67-.02.78-.31 1.44-1.13 1.81 3.42-.59 4.78-3.42 4.78-5.56 0-2.84-2.53-3.22-1.25-5.61-1.52.13-2.03 1.13-1.89 2.75.09 1.08-1.02 1.8-1.86 1.33-.67-.41-.66-1.19-.06-1.78C8.18 5.31 8.68 2.45 5.05.32L5.03.3l.02.01z"></path></svg></span>Order matters</div><div class="admonitionContent_vXIg"><p>A Route 53 private hosted zone with no records causes DNS resolution to fail (NXDOMAIN) inside any associated VPC. If you create an empty PHZ for <code>&lt;account&gt;.tmprl.cloud</code> and associate it with a VPC where Workers are running, <strong>all Worker traffic to Temporal Cloud in that VPC stops</strong> until you add the CNAME record. Follow the steps below in order to avoid this.</p></div></div>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-collect-your-privatelink-endpoint-dns-name">1. Collect your PrivateLink endpoint DNS name<a href="#1-collect-your-privatelink-endpoint-dns-name" class="hash-link" aria-label="Direct link to 1. Collect your PrivateLink endpoint DNS name" title="Direct link to 1. Collect your PrivateLink endpoint DNS name" translate="no">​</a></h4>
@@ -115,8 +115,8 @@ e. Create the hosted zone.</p>
 <div class="language-go codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-go codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">clientOptions </span><span class="token operator" style="color:rgb(137, 221, 255)">:=</span><span class="token plain"> client</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">Options</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    HostPort</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;payments.abcde.tmprl.cloud:7233&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    Namespace</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">&quot;payments&quot;</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token comment" style="color:#8a93c8;font-style:italic">// No TLS SNI override needed</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;clientOptions := client.Options{\n    HostPort: \&quot;payments.abcde.tmprl.cloud:7233\&quot;,\n    Namespace: \&quot;payments\&quot;,\n    // No TLS SNI override needed\n}\n&quot;,&quot;code&quot;:&quot;clientOptions := client.Options{\n    HostPort: \&quot;payments.abcde.tmprl.cloud:7233\&quot;,\n    Namespace: \&quot;payments\&quot;,\n    // No TLS SNI override needed\n}&quot;,&quot;className&quot;:&quot;language-go&quot;,&quot;language&quot;:&quot;go&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
 <p>The DNS resolver inside your VPC returns the private endpoint, while TLS still validates the original hostname—simplifying both code and certificate management.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="configure-private-dns-for-namespaces-with-high-availability">Configure private DNS for Namespaces with High Availability<a href="#configure-private-dns-for-namespaces-with-high-availability" class="hash-link" aria-label="Direct link to Configure private DNS for Namespaces with High Availability" title="Direct link to Configure private DNS for Namespaces with High Availability" translate="no">​</a></h2>
-<p>For Namespaces with <a class="" href="/cloud/high-availability">High Availability features</a>, you need to override DNS for <code>region.tmprl.cloud</code> so each region resolves to the local VPC Endpoint, and you need to ensure Workers can reach whichever region is active. Failover is transparent to clients only when this is set up correctly.</p>
-<p>The complete guidance — including single-cloud (AWS-only) HA, multi-cloud HA (AWS PrivateLink + GCP Private Service Connect), and a recommended failover-testing plan — lives on a single page: <a class="" href="/cloud/high-availability/ha-connectivity">Connectivity for High Availability</a>.</p>
+<p>For Namespaces with <a href="/cloud/high-availability" class="">High Availability features</a>, you need to override DNS for <code>region.tmprl.cloud</code> so each region resolves to the local VPC Endpoint, and you need to ensure Workers can reach whichever region is active. Failover is transparent to clients only when this is set up correctly.</p>
+<p>The complete guidance — including single-cloud (AWS-only) HA, multi-cloud HA (AWS PrivateLink + GCP Private Service Connect), and a recommended failover-testing plan — lives on a single page: <a href="/cloud/high-availability/ha-connectivity" class="">Connectivity for High Availability</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="direct-vpce">Direct VPCE targeting without per-Namespace DNS<a href="#direct-vpce" class="hash-link" aria-label="Direct link to Direct VPCE targeting without per-Namespace DNS" title="Direct link to Direct VPCE targeting without per-Namespace DNS" translate="no">​</a></h2>
 <p>You can avoid creating DNS records for each Namespace by pointing Workers directly at the VPC Endpoint and overriding the TLS Server Name Indicator (SNI):</p>
 <ol>
@@ -131,7 +131,7 @@ e. Create the hosted zone.</p>
 <p>With this approach, new Namespaces do not require new DNS records. Workers set their <strong>Endpoint</strong> to the VPC Endpoint DNS name and their <strong>Server name</strong> to the Namespace Endpoint, so the client SDK accepts the TLS handshake from Temporal Cloud.</p>
 <p><strong>Single-region Namespace</strong></p>
 <span style="display:contents" data-temporal-island="Mermaid" data-props="{&quot;value&quot;:&quot;---\ntitle: Direct VPCE targeting (single region)\n---\n%%{init: {&#x27;themeVariables&#x27;:{&#x27;fontFamily&#x27;:&#x27;Inter, ui-sans-serif, system-ui, sans-serif&#x27;},&#x27;flowchart&#x27;:{&#x27;nodeSpacing&#x27;:18,&#x27;rankSpacing&#x27;:45,&#x27;curve&#x27;:&#x27;basis&#x27;,&#x27;subGraphTitleMargin&#x27;:{&#x27;top&#x27;:6,&#x27;bottom&#x27;:12}}}}%%\nflowchart LR\n    classDef worker stroke-width:1px;\n    classDef ns stroke-width:1px;\n    classDef endpoint stroke-width:1px;\n    classDef region stroke-width:1.5px;\n    subgraph SREG[\&quot;&lt;b&gt;Your VPC&lt;/b&gt;\&quot;]\n      SW[\&quot;&lt;b&gt;Worker(s)&lt;/b&gt;&lt;br/&gt;Server name:&lt;br/&gt;my-namespace.my-account.tmprl.cloud\&quot;]:::worker\n      SVPCE[\&quot;&lt;b&gt;VPC Endpoint&lt;/b&gt;&lt;br/&gt;vpce-…\&quot;]:::endpoint\n      SW --&gt; SVPCE\n    end\n    SNS[\&quot;&lt;b&gt;Namespace&lt;/b&gt;&lt;br/&gt;(Temporal Cloud)\&quot;]:::ns\n    SVPCE --&gt;|PrivateLink| SNS\n    class SREG region&quot;}"><div></div></span>
-<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Using direct VPCE targeting with High Availability Namespaces</div><div class="admonitionContent_vXIg"><p>Direct VPCE targeting also works for Namespaces with <a class="" href="/cloud/high-availability">High Availability features</a>, but it takes more careful setup. Because each VPC Endpoint is pinned to its region and does not follow Temporal Cloud&#x27;s active-region CNAME on failover, you cannot rely on DNS to move Workers between regions. This is the same trade-off as targeting a <a class="" href="/cloud/high-availability/ha-connectivity#regional-endpoint">Regional Endpoint</a> instead of the Namespace Endpoint.</p></div></div>
+<div class="theme-admonition theme-admonition-note alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>Using direct VPCE targeting with High Availability Namespaces</div><div class="admonitionContent_vXIg"><p>Direct VPCE targeting also works for Namespaces with <a href="/cloud/high-availability" class="">High Availability features</a>, but it takes more careful setup. Because each VPC Endpoint is pinned to its region and does not follow Temporal Cloud&#x27;s active-region CNAME on failover, you cannot rely on DNS to move Workers between regions. This is the same trade-off as targeting a <a href="/cloud/high-availability/ha-connectivity#regional-endpoint" class="">Regional Endpoint</a> instead of the Namespace Endpoint.</p></div></div>
 <p><strong>Namespace with High Availability</strong></p>
 <p>To use the Direct VPCE approach with a Namespace that has High Availability:</p>
 <ul>
@@ -139,7 +139,7 @@ e. Create the hosted zone.</p>
 <li class="">Set the <strong>Server name</strong> (SNI override) to the Namespace Endpoint value in every region — it is the same everywhere.</li>
 <li class=""><strong>(Recommended)</strong> To stay available during a failover, run Workers in every region the Namespace can be active in.</li>
 </ul>
-<p>Workers connected to the passive region&#x27;s VPC Endpoint stay productive: Temporal Cloud forwards their tasks to the active region (you can <a class="" href="/cloud/high-availability/enable#change-forwarding-behavior">configure this forwarding behavior</a>). On failover, no DNS change is needed, because Workers are already connected in both regions and the surviving region takes over.</p>
+<p>Workers connected to the passive region&#x27;s VPC Endpoint stay productive: Temporal Cloud forwards their tasks to the active region (you can <a href="/cloud/high-availability/enable#change-forwarding-behavior" class="">configure this forwarding behavior</a>). On failover, no DNS change is needed, because Workers are already connected in both regions and the surviving region takes over.</p>
 <span style="display:contents" data-temporal-island="Mermaid" data-props="{&quot;value&quot;:&quot;---\ntitle: Direct VPCE targeting (High Availability)\n---\n%%{init: {&#x27;themeVariables&#x27;:{&#x27;fontFamily&#x27;:&#x27;Inter, ui-sans-serif, system-ui, sans-serif&#x27;},&#x27;flowchart&#x27;:{&#x27;nodeSpacing&#x27;:55,&#x27;rankSpacing&#x27;:70,&#x27;curve&#x27;:&#x27;basis&#x27;,&#x27;subGraphTitleMargin&#x27;:{&#x27;top&#x27;:6,&#x27;bottom&#x27;:12}}}}%%\nflowchart TD\n    classDef worker stroke-width:1px;\n    classDef ns stroke-width:1px;\n    classDef endpoint stroke-width:1px;\n    classDef region stroke-width:1.5px;\n    subgraph HSEC[\&quot;&lt;b&gt;us-west-2&lt;/b&gt; (passive)\&quot;]\n      HWB[\&quot;&lt;b&gt;Worker(s)&lt;/b&gt;&lt;br/&gt;Server name&lt;br/&gt;&lt;span style=&#x27;font-family:mono&#x27;&gt;namespace.&lt;br/&gt;acct.&lt;br/&gt;tmprl.cloud&lt;/span&gt;\&quot;]:::worker\n      HVPB[\&quot;&lt;b&gt;VPC&lt;br/&gt;Endpoint&lt;/b&gt;&lt;br/&gt;vpce-…&lt;br/&gt;us-west-2\&quot;]:::endpoint\n      HNSB[\&quot;&lt;b&gt;Replica&lt;/b&gt;&lt;br/&gt;(Passive,&lt;br/&gt;forwards&lt;br/&gt;to active)\&quot;]:::ns\n      HWB --&gt; HVPB\n      HVPB --&gt; HNSB\n    end\n    subgraph HPRIM[\&quot;&lt;b&gt;us-east-1&lt;/b&gt; (active)\&quot;]\n      HWA[\&quot;&lt;b&gt;Worker(s)&lt;/b&gt;&lt;br/&gt;Server name&lt;br/&gt;&lt;span style=&#x27;font-family:mono&#x27;&gt;namespace.&lt;br/&gt;acct.&lt;br/&gt;tmprl.cloud&lt;/span&gt;\&quot;]:::worker\n      HVPA[\&quot;&lt;b&gt;VPC&lt;br/&gt;Endpoint&lt;/b&gt;&lt;br/&gt;vpce-…&lt;br/&gt;us-east-1\&quot;]:::endpoint\n      HNSA[\&quot;&lt;b&gt;Namespace&lt;/b&gt;&lt;br/&gt;(Active)\&quot;]:::ns\n      HWA --&gt; HVPA\n      HVPA --&gt; HNSA\n    end\n    \n    \n    class HPRIM,HSEC region&quot;}"><div></div></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="adding-privatelink-from-additional-aws-accounts">Adding PrivateLink from additional AWS accounts<a href="#adding-privatelink-from-additional-aws-accounts" class="hash-link" aria-label="Direct link to Adding PrivateLink from additional AWS accounts" title="Direct link to Adding PrivateLink from additional AWS accounts" translate="no">​</a></h2>
 <p>A common pattern is to have separate AWS accounts for different lines of business, environments (staging, production), or compliance scopes (PCI vs non-PCI), each with its own VPC and Workers connecting to the same Temporal Cloud account.</p>
@@ -153,9 +153,9 @@ e. Create the hosted zone.</p>
 <li class="">Or, use <a href="#direct-vpce" class="">direct VPCE targeting</a>. For High Availability Namespaces, follow the <a href="#direct-vpce" class="">additional setup</a> so each region&#x27;s Workers target their local VPC Endpoint.</li>
 </ul>
 </li>
-<li class=""><strong>Optional:</strong> if you want to enforce private-only access for a Namespace, add a Connectivity Rule for each VPC endpoint and attach all of them (plus a public rule, if needed) to the Namespace. See <a class="" href="/cloud/connectivity#connectivity-rules">Connectivity Rules</a>.</li>
+<li class=""><strong>Optional:</strong> if you want to enforce private-only access for a Namespace, add a Connectivity Rule for each VPC endpoint and attach all of them (plus a public rule, if needed) to the Namespace. See <a href="/cloud/connectivity#connectivity-rules" class="">Connectivity Rules</a>.</li>
 </ol>
-<p>There is no upper limit on the number of VPC endpoints you can connect from your side to a regional PrivateLink service. The default per-account limit on private Connectivity Rules is 50 — <a class="" href="/evaluate/cloud/support#support-ticket">contact support</a> if you need to raise it.</p>
+<p>There is no upper limit on the number of VPC endpoints you can connect from your side to a regional PrivateLink service. The default per-account limit on private Connectivity Rules is 50 — <a href="/evaluate/cloud/support#support-ticket" class="">contact support</a> if you need to raise it.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="available-aws-regions-privatelink-endpoints-and-dns-record-overrides">Available AWS regions, PrivateLink endpoints, and DNS record overrides<a href="#available-aws-regions-privatelink-endpoints-and-dns-record-overrides" class="hash-link" aria-label="Direct link to Available AWS regions, PrivateLink endpoints, and DNS record overrides" title="Direct link to Available AWS regions, PrivateLink endpoints, and DNS record overrides" translate="no">​</a></h2>
 <p>The following table lists the available Temporal regions, PrivateLink endpoints, and regional endpoints used for DNS record overrides:</p>
 <!-- -->
@@ -165,7 +165,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-northeast-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-northeast-1.vpce-svc-08f34c33f9fb8a48a</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-2</code></li>
 <li class=""><code>aws-ap-south-1</code></li>
@@ -174,7 +174,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -186,7 +186,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-northeast-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-northeast-2.vpce-svc-08c4d5445a5aad308</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-1</code></li>
 <li class=""><code>aws-ap-south-1</code></li>
@@ -195,7 +195,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -207,7 +207,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-south-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-south-1.vpce-svc-0ad4f8ed56db15662</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-1</code></li>
 <li class=""><code>aws-ap-northeast-2</code></li>
@@ -216,7 +216,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -228,7 +228,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-south-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-south-2.vpce-svc-08bcf602b646c69c1</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-1</code></li>
 <li class=""><code>aws-ap-northeast-2</code></li>
@@ -237,7 +237,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -249,7 +249,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-southeast-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-southeast-1.vpce-svc-05c24096fa89b0ccd</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-1</code></li>
 <li class=""><code>aws-ap-northeast-2</code></li>
@@ -258,7 +258,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -270,7 +270,7 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>ap-southeast-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ap-southeast-2.vpce-svc-0634f9628e3c15b08</code></li>
 <li class=""><strong>Same Region Replication</strong>: Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ap-northeast-1</code></li>
 <li class=""><code>aws-ap-northeast-2</code></li>
@@ -279,7 +279,7 @@ e. Create the hosted zone.</p>
 <li class=""><code>aws-ap-southeast-1</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-asia-south1</code></li>
 </ul>
@@ -291,13 +291,13 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>eu-central-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.eu-central-1.vpce-svc-073a419b36663a0f3</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-eu-west-1</code></li>
 <li class=""><code>aws-eu-west-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-europe-west3</code></li>
 </ul>
@@ -309,13 +309,13 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>eu-west-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.eu-west-1.vpce-svc-04388e89f3479b739</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-eu-central-1</code></li>
 <li class=""><code>aws-eu-west-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-europe-west3</code></li>
 </ul>
@@ -327,13 +327,13 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>eu-west-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.eu-west-2.vpce-svc-0ac7f9f07e7fb5695</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-eu-central-1</code></li>
 <li class=""><code>aws-eu-west-1</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-europe-west3</code></li>
 </ul>
@@ -345,14 +345,14 @@ e. Create the hosted zone.</p>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.ca-central-1.vpce-svc-080a781925d0b1d9d</code></li>
 <li class=""><strong>Regional Endpoint</strong>: <code>ca-central-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-us-east-1</code></li>
 <li class=""><code>aws-us-east-2</code></li>
 <li class=""><code>aws-us-west-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-us-central1</code></li>
 <li class=""><code>gcp-us-west1</code></li>
@@ -366,14 +366,14 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>us-east-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.us-east-1.vpce-svc-0822256b6575ea37f</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ca-central-1</code></li>
 <li class=""><code>aws-us-east-2</code></li>
 <li class=""><code>aws-us-west-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-us-central1</code></li>
 <li class=""><code>gcp-us-west1</code></li>
@@ -387,14 +387,14 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>us-east-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.us-east-2.vpce-svc-01b8dccfc6660d9d4</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ca-central-1</code></li>
 <li class=""><code>aws-us-east-1</code></li>
 <li class=""><code>aws-us-west-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-us-central1</code></li>
 <li class=""><code>gcp-us-west1</code></li>
@@ -408,14 +408,14 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>us-west-2.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.us-west-2.vpce-svc-0f44b3d7302816b94</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>aws-ca-central-1</code></li>
 <li class=""><code>aws-us-east-1</code></li>
 <li class=""><code>aws-us-east-2</code></li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class=""><code>gcp-us-central1</code></li>
 <li class=""><code>gcp-us-west1</code></li>
@@ -429,12 +429,12 @@ e. Create the hosted zone.</p>
 <li class=""><strong>Regional Endpoint</strong>: <code>sa-east-1.aws.api.temporal.io:7233</code></li>
 <li class=""><strong>PrivateLink Endpoint Service</strong>: <code>com.amazonaws.vpce.sa-east-1.vpce-svc-0ca67a102f3ce525a</code></li>
 <li class=""><strong>Same Region Replication</strong>:  Not Available</li>
-<li class=""><strong>Multi-Region Replication</strong>:
+<li class=""><strong>Multi-Region Replication</strong>:<!-- -->
 <ul>
 <li class="">None</li>
 </ul>
 </li>
-<li class=""><strong>Multi-Cloud Replication</strong>:
+<li class=""><strong>Multi-Cloud Replication</strong>:<!-- -->
 <ul>
 <li class="">None</li>
 </ul>

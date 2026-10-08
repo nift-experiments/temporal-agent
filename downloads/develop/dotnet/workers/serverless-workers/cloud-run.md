@@ -1,0 +1,129 @@
+# Serverless Workers on GCP Cloud Run - .NET SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Run a Temporal Worker on a GCP Cloud Run worker pool using the .NET SDK.
+
+> **Public Preview**
+> Cloud Run support is in Public Preview. APIs and configuration may change before the stable release.
+
+On a [GCP Cloud Run worker pool](https://cloud.google.com/run/docs/resource-model#worker-pools), you run a standard long-lived Temporal Worker.
+Register Workflows and Activities the same way you would with any other .NET Worker, and Temporal Cloud scales the pool up and down as work arrives and drains.
+
+A Cloud Run Worker needs no Cloud Run-specific package.
+The one addition to a standard Worker is [Worker Versioning](/worker-versioning), which is required for Serverless Workers.
+
+For the end-to-end deployment guide covering the Worker Pool, IAM, and compute configuration, see [Deploy a Serverless Worker on GCP Cloud Run](/production-deployment/worker-deployments/serverless-workers/cloud-run).
+
+## Create a versioned Worker 
+
+Build the Worker as you would any long-running .NET Worker, then set `DeploymentOptions` on `TemporalWorkerOptions` to declare the Worker Deployment Version and turn versioning on.
+
+The following Worker reads its connection settings and Task Queue from the environment, so the same image can run against any Namespace:
+
+```csharp
+using Temporalio.Client;
+using Temporalio.Common;
+using Temporalio.Worker;
+
+var client = await TemporalClient.ConnectAsync(
+    new(Environment.GetEnvironmentVariable("TEMPORAL_ADDRESS")!)
+    {
+        Namespace = Environment.GetEnvironmentVariable("TEMPORAL_NAMESPACE")!,
+        ApiKey = Environment.GetEnvironmentVariable("TEMPORAL_API_KEY"),
+        Tls = new(),
+    });
+
+var options = new TemporalWorkerOptions(
+    Environment.GetEnvironmentVariable("TEMPORAL_TASK_QUEUE")!)
+{
+    DeploymentOptions = new(new("my-app", "build-1"), useWorkerVersioning: true)
+    {
+        DefaultVersioningBehavior = VersioningBehavior.Pinned,
+    },
+};
+options.AddWorkflow<GreetingWorkflow>();
+options.AddAllActivities(typeof(GreetingActivities), null);
+
+using var worker = new TemporalWorker(client, options);
+await worker.ExecuteAsync(CancellationToken.None);
+```
+
+The two arguments to `WorkerDeploymentVersion` are the deployment name and the build ID, and together they identify the Worker Deployment Version. Both values must match the version you create with `temporal worker deployment create-version` in the deployment guide, or the Worker polls under a version the WCI does not manage.
+
+Every Workflow needs a [versioning behavior](/worker-versioning#versioning-behaviors), either `Pinned` or `AutoUpgrade`.
+Setting `DefaultVersioningBehavior` as shown above covers every Workflow on the Worker.
+To set the behavior per Workflow instead, set `VersioningBehavior` on the `Workflow` attribute:
+
+```csharp
+using Temporalio.Common;
+using Temporalio.Workflows;
+
+[Workflow(VersioningBehavior = VersioningBehavior.Pinned)]
+public class GreetingWorkflow
+{
+    [WorkflowRun]
+    public async Task<string> RunAsync(string name) => // ...
+}
+```
+
+For general Worker setup and options that are not specific to Cloud Run, see [Run a Worker](/develop/dotnet/workers/run-worker-process).
+
+## Configure the Temporal connection 
+
+Read the Namespace, address, and Task Queue from environment variables you set on the Worker Pool, and mount the Temporal Cloud API key or TLS material from Secret Manager rather than passing it in plaintext.
+The Worker above reads `TEMPORAL_ADDRESS`, `TEMPORAL_NAMESPACE`, `TEMPORAL_API_KEY`, and `TEMPORAL_TASK_QUEUE`, so the same image can run against any Namespace.
+
+To load those values through the shared configuration format instead of reading them yourself, use `ClientEnvConfig.LoadClientConnectOptions()` from the `Temporalio.Common.EnvConfig` namespace.
+For the full list of supported variables, the config file format, and profiles, see [Environment configuration](/develop/environment-configuration).
+
+## Package the Worker image 
+
+Publish the Worker and run it on a .NET runtime image:
+
+```dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+
+WORKDIR /src
+COPY *.csproj ./
+RUN dotnet restore
+COPY . .
+RUN dotnet publish -c Release -o /out
+
+FROM mcr.microsoft.com/dotnet/runtime:10.0
+
+WORKDIR /app
+COPY --from=build /out ./
+CMD ["dotnet", "MyWorker.dll"]
+```
+
+The Worker runs on a Rust core that reads TLS roots from the operating system's certificate store, so the runtime image must include one.
+The Debian-based `mcr.microsoft.com/dotnet/runtime` images do.
+
+## Keep Activities safe across scale-in 
+
+The WCI decides when to remove an instance from Task Queue activity, not from what an individual instance is doing.
+An instance running a long Activity can be stopped mid-execution.
+
+Use [Activity Heartbeats](/develop/dotnet/activities/timeouts#activity-heartbeats) so a retry resumes from the last recorded progress instead of starting over:
+
+```csharp
+[Activity]
+public static string Process(IReadOnlyList<string> items)
+{
+    for (var i = 0; i < items.Count; i++)
+    {
+        ActivityExecutionContext.Current.Heartbeat(i);
+        // ... process items[i]
+    }
+    return "done";
+}
+```
+
+For how scale-in decisions are made, see [Serverless Workers on GCP Cloud Run](/serverless-workers/cloud-run#lifecycle).
+
+## Add observability 
+
+A Cloud Run Worker emits the same traces and metrics as a Worker anywhere else.
+For how to configure metrics export and OpenTelemetry tracing interceptors, see [Observability - .NET SDK](/develop/dotnet/platform/observability) and the [SDK metrics reference](/references/sdk-metrics).

@@ -1,0 +1,101 @@
+# TypeScript SDK developer guide
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+![TypeScript SDK Banner](/img/assets/banner-typescript-temporal.png)
+
+## Install and get started
+
+You can find detailed installation instructions for the TypeScript SDK in the [Quickstart](/develop/typescript/set-up-your-local-typescript).
+
+There's also a short walkthrough of how to use the Temporal primitives (Activities, Workflows, and Workers) to build and run a Temporal application to get you up and running.
+
+Once your local Temporal Service is set up, continue building with the following resources:
+
+- [Develop a Workflow](/develop/typescript/workflows/basics)
+- [Develop an Activity](/develop/typescript/activities/basics)
+- [Start an Activity Execution](/develop/typescript/activities/execution)
+- [Run Worker processes](/develop/typescript/workers/run-worker-process)
+
+## [Workflows](/develop/typescript/workflows)
+
+- [Workflow basics](/develop/typescript/workflows/basics)
+- [Child Workflows](/develop/typescript/workflows/child-workflows)
+- [Continue-As-New](/develop/typescript/workflows/continue-as-new)
+- [Message passing](/develop/typescript/workflows/message-passing)
+- [Cancellation](/develop/typescript/workflows/cancellation)
+- [Cancellation scopes](/develop/typescript/workflows/cancellation-scopes)
+- [Timeouts](/develop/typescript/workflows/timeouts)
+- [Schedules](/develop/typescript/workflows/schedules)
+- [Timers](/develop/typescript/workflows/timers)
+- [Versioning](/develop/typescript/workflows/versioning)
+- [Workflow Streams](/develop/typescript/workflows/workflow-streams)
+
+## [Activities](/develop/typescript/activities)
+
+- [Activity basics](/develop/typescript/activities/basics)
+- [Activity Execution](/develop/typescript/activities/execution)
+- [Timeouts](/develop/typescript/activities/timeouts)
+- [Asynchronous Activity](/develop/typescript/activities/asynchronous-activity)
+- [Benign exceptions](/develop/typescript/activities/benign-exceptions)
+
+## [Workers](/develop/typescript/workers)
+
+- [Worker processes](/develop/typescript/workers/run-worker-process)
+- [Interceptors](/develop/typescript/workers/interceptors)
+
+## [Temporal Client](/develop/typescript/client)
+
+- [Temporal Client](/develop/typescript/client/temporal-client)
+- [Namespaces](/develop/typescript/client/namespaces)
+
+## [Temporal Nexus](/develop/typescript/nexus)
+
+- [Quickstart](/develop/typescript/nexus/quickstart)
+- [Feature guide](/develop/typescript/nexus/feature-guide)
+- [Standalone Operations](/develop/typescript/nexus/standalone-operations)
+
+## [Platform](/develop/typescript/platform)
+
+- [Observability](/develop/typescript/platform/observability)
+- [Enriching the UI](/develop/typescript/platform/enriching-ui)
+
+## [Best practices](/develop/typescript/best-practices)
+
+- [Testing](/develop/typescript/best-practices/testing-suite)
+- [Debugging](/develop/typescript/best-practices/debugging)
+- [Converters and encryption](/develop/typescript/best-practices/data-handling)
+- [Entity pattern](/develop/typescript/best-practices/entity-pattern)
+
+## [Integrations](/develop/typescript/integrations)
+
+- [Braintrust integration](https://www.braintrust.dev/docs/integrations/sdk-integrations/temporal#typescript)
+- [Google ADK integration](/develop/typescript/integrations/google-adk-agents)
+- [LangSmith integration](/develop/typescript/integrations/langsmith)
+- [Mastra integration](https://mastra.ai/guides/deployment/temporal)
+- [OpenAI Agents SDK integration](/develop/typescript/integrations/openai-agents)
+- [Parseable integration](https://github.com/parseablehq/temporal-plugin/blob/main/INTEGRATION.md)
+- [Strands Agents integration](/develop/typescript/integrations/strands-agents)
+- [Vercel AI SDK integration](/develop/typescript/integrations/ai-sdk)
+
+## Temporal TypeScript technical resources
+
+- [TypeScript SDK Quickstart - Setup Guide](/develop/typescript/set-up-your-local-typescript)
+- [TypeScript API Documentation](https://typescript.temporal.io)
+- [TypeScript SDK Code Samples](https://github.com/temporalio/samples-typescript)
+- [TypeScript SDK GitHub](https://github.com/temporalio/sdk-typescript)
+- [Temporal 101 in TypeScript Free Course](https://learn.temporal.io/courses/temporal_101/typescript/)
+- [Build a Job Queue with Standalone Activities Tutorial](https://learn.temporal.io/tutorials/typescript/standalone-activities/)
+
+## Get connected with the Temporal TypeScript community
+
+- [Temporal TypeScript Community Slack](https://temporalio.slack.com/archives/C01DKSMU94L)
+- [TypeScript SDK Forum](https://community.temporal.io/tag/typescript-sdk)
+
+## Linting and types in TypeScript 
+
+If you started your project with `@temporalio/create`, you already have our recommended TypeScript and ESLint
+configurations.
+
+If you incrementally added Temporal to an existing app, we do recommend setting up linting and types because they help catch bugs well before you ship them to production, and they improve your development feedback loop. Take a look at our recommended [.eslintrc](https://github.com/temporalio/samples-typescript/blob/main/.shared/.eslintrc.js) file and tweak to suit your needs.

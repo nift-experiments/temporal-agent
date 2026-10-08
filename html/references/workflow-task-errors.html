@@ -1,0 +1,360 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/references/workflow-task-errors.md">/references/workflow-task-errors.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Workflow Task errors reference</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/references/workflow-task-errors.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fworkflow-task-errors.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fworkflow-task-errors.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>For the Failure types that Workflows, Activities, and Nexus Operations return, see the <a href="/references/failures" class="">Temporal Failures reference</a>.
+For symptom-based guidance, see <a href="/troubleshooting/execution-failures" class="">Troubleshooting Workflow Execution failures</a>.</p></div></div>
+<p>When a <a href="/tasks#workflow-task" class="">Workflow Task</a> fails, the Temporal Service records a <a href="/references/events#workflowtaskfailed" class="">WorkflowTaskFailed</a> Event with a cause in <code>workflow_task_failed_event_attributes</code>.
+The Temporal Service retries the failed Workflow Task, and the Workflow Execution stays open unless the entry says otherwise.
+Many of these failures come from a <a href="/references/commands" class="">Command</a> the Worker sent with unset or invalid attributes.</p>
+<p>Workflow Task failure causes are defined in the <a href="https://github.com/temporalio/api/blob/master/temporal/api/enums/v1/failed_cause.proto" target="_blank" rel="noopener noreferrer" class=""><code>WorkflowTaskFailedCause</code> enum</a> of the Temporal gRPC API.
+The <a href="#resource-exhausted-causes" class="">Resource Exhausted causes</a> on this page come from the <code>ResourceExhaustedCause</code> enum in the same file.
+They&#x27;re carried on a gRPC <code>RESOURCE_EXHAUSTED</code> response, not on a Workflow Task failure Event.</p>
+<p>Each error on this page lists its enum value as <strong>Cause</strong>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="command-attribute-errors">Command attribute errors<a href="#command-attribute-errors" class="hash-link" aria-label="Direct link to Command attribute errors" title="Direct link to Command attribute errors" translate="no">​</a></h2>
+<p>The Temporal Service validates the attributes of each Command.
+If a required attribute is unset or a value exceeds a size limit, the Workflow Task fails.
+The SDK sets most Command attributes, so an unset attribute can indicate an outdated SDK.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-cancel-timer-attributes">Bad Cancel Timer Attributes<a href="#bad-cancel-timer-attributes" class="hash-link" aria-label="Direct link to Bad Cancel Timer Attributes" title="Direct link to Bad Cancel Timer Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_CANCEL_TIMER_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#canceltimer" class="">CancelTimer</a> Command is missing a Timer ID.</p>
+<p>Set a valid Timer ID and deploy the change to your Workers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-cancel-workflow-execution-attributes">Bad Cancel Workflow Execution Attributes<a href="#bad-cancel-workflow-execution-attributes" class="hash-link" aria-label="Direct link to Bad Cancel Workflow Execution Attributes" title="Direct link to Bad Cancel Workflow Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_CANCEL_WORKFLOW_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#cancelworkflowexecution" class="">CancelWorkflowExecution</a> Command has unset attributes.</p>
+<p>Set the missing attributes and deploy the change to your Workers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-complete-workflow-execution-attributes">Bad Complete Workflow Execution Attributes<a href="#bad-complete-workflow-execution-attributes" class="hash-link" aria-label="Direct link to Bad Complete Workflow Execution Attributes" title="Direct link to Bad Complete Workflow Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_COMPLETE_WORKFLOW_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#completeworkflowexecution" class="">CompleteWorkflowExecution</a> Command has unset attributes, or its result exceeds the Payload size limit.</p>
+<p>Set the missing attributes.
+If the Workflow result is too large, store the data in external storage and return a reference to it.
+See <a href="/troubleshooting/blob-size-limit-error" class="">Payload size limit</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-continue-as-new-attributes">Bad Continue as New Attributes<a href="#bad-continue-as-new-attributes" class="hash-link" aria-label="Direct link to Bad Continue as New Attributes" title="Direct link to Bad Continue as New Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_CONTINUE_AS_NEW_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#continueasnewworkflowexecution" class="">ContinueAsNewWorkflowExecution</a> Command has an unset or invalid attribute.</p>
+<p>Set the missing attributes.
+If the input or Memo exceeds the size limit, reduce its size.
+Check that every <a href="/search-attribute" class="">Search Attribute</a> the new run sets is registered on the Namespace.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-fail-workflow-execution-attributes">Bad Fail Workflow Execution Attributes<a href="#bad-fail-workflow-execution-attributes" class="hash-link" aria-label="Direct link to Bad Fail Workflow Execution Attributes" title="Direct link to Bad Fail Workflow Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_FAIL_WORKFLOW_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#failworkflowexecution" class="">FailWorkflowExecution</a> Command has unset attributes, such as a missing Failure, or its Failure exceeds the size limit.</p>
+<p>Reduce the size of the error details the Workflow returns.
+If the attributes are unset, upgrade to the latest release of your <a href="/encyclopedia/architecture/temporal-sdks" class="">Temporal SDK</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-modify-workflow-properties-attributes">Bad Modify Workflow Properties Attributes<a href="#bad-modify-workflow-properties-attributes" class="hash-link" aria-label="Direct link to Bad Modify Workflow Properties Attributes" title="Direct link to Bad Modify Workflow Properties Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_MODIFY_WORKFLOW_PROPERTIES_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#modifyworkflowproperties" class="">ModifyWorkflowProperties</a> Command has unset attributes, or the <a href="/workflow-execution#memo" class="">Memo</a> update exceeds the size limit.</p>
+<p>Set the missing attributes and reduce the size of the Memo.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-record-marker-attributes">Bad Record Marker Attributes<a href="#bad-record-marker-attributes" class="hash-link" aria-label="Direct link to Bad Record Marker Attributes" title="Direct link to Bad Record Marker Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_RECORD_MARKER_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#recordmarker" class="">RecordMarker</a> Command has an unset or invalid <a href="/references/events#markerrecorded" class="">Marker</a> name.</p>
+<p>The SDK issues RecordMarker Commands, not your Workflow code.
+Upgrade to the latest release of your Temporal SDK.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-request-cancel-activity-attributes">Bad Request Cancel Activity Attributes<a href="#bad-request-cancel-activity-attributes" class="hash-link" aria-label="Direct link to Bad Request Cancel Activity Attributes" title="Direct link to Bad Request Cancel Activity Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_REQUEST_CANCEL_ACTIVITY_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#requestcancelactivitytask" class="">RequestCancelActivityTask</a> Command has unset attributes, or the SDK&#x27;s History Builder is in an invalid state.</p>
+<p>Upgrade to the latest release of your Temporal SDK.
+If the error continues, check your Workflow code for <a href="/workflow-definition#non-deterministic-change" class="">non-deterministic changes</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-request-cancel-external-workflow-execution">Bad Request Cancel External Workflow Execution Attributes<a href="#bad-request-cancel-external-workflow-execution" class="hash-link" aria-label="Direct link to Bad Request Cancel External Workflow Execution Attributes" title="Direct link to Bad Request Cancel External Workflow Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_REQUEST_CANCEL_EXTERNAL_WORKFLOW_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#requestcancelexternalworkflowexecution" class="">RequestCancelExternalWorkflowExecution</a> Command has unset or invalid attributes.</p>
+<p>Set any missing attributes, such as the Workflow ID or Run ID, and shorten any fields that exceed length limits.</p>
+<p>A Workflow Task can&#x27;t both start a <a href="/child-workflows" class="">Child Workflow</a> and request its cancellation.
+If your Workflow does both in the same Workflow Task, request the cancellation in a later Workflow Task.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-request-cancel-nexus-operation-attributes">Bad Request Cancel Nexus Operation Attributes<a href="#bad-request-cancel-nexus-operation-attributes" class="hash-link" aria-label="Direct link to Bad Request Cancel Nexus Operation Attributes" title="Direct link to Bad Request Cancel Nexus Operation Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_REQUEST_CANCEL_NEXUS_OPERATION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#requestcancelnexusoperation" class="">RequestCancelNexusOperation</a> Command has unset or invalid attributes.</p>
+<p>Read the reason in the error message for the attribute that failed validation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-schedule-activity-attributes">Bad Schedule Activity Attributes<a href="#bad-schedule-activity-attributes" class="hash-link" aria-label="Direct link to Bad Schedule Activity Attributes" title="Direct link to Bad Schedule Activity Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_SCHEDULE_ACTIVITY_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#scheduleactivitytask" class="">ScheduleActivityTask</a> Command has unset or invalid attributes, or the Activity input exceeds the Payload size limit.</p>
+<p>Set a Start-To-Close Timeout or a Schedule-To-Close Timeout on the <a href="/activities" class="">Activity</a>.
+If the input is too large, store the data in external storage and pass a reference to the Activity.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-schedule-nexus-operation-attributes">Bad Schedule Nexus Operation Attributes<a href="#bad-schedule-nexus-operation-attributes" class="hash-link" aria-label="Direct link to Bad Schedule Nexus Operation Attributes" title="Direct link to Bad Schedule Nexus Operation Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_SCHEDULE_NEXUS_OPERATION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#schedulenexusoperation" class="">ScheduleNexusOperation</a> Command has unset or invalid attributes.
+For example, the Nexus Endpoint name in the caller Workflow doesn&#x27;t exist.</p>
+<p>Read the reason in the error message for the attribute that failed validation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-search-attributes">Bad Search Attributes<a href="#bad-search-attributes" class="hash-link" aria-label="Direct link to Bad Search Attributes" title="Direct link to Bad Search Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_SEARCH_ATTRIBUTES</code></li>
+</ul>
+<p>The Workflow set unset or invalid <a href="/search-attribute" class="">Search Attributes</a>.
+The Workflow Task keeps failing on retry until you fix the Search Attributes.</p>
+<p>Register each Search Attribute on the Namespace with the type your Workflow uses, and keep values within the size limits.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-signal-input-size">Bad Signal Input Size<a href="#bad-signal-input-size" class="hash-link" aria-label="Direct link to Bad Signal Input Size" title="Direct link to Bad Signal Input Size" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_SIGNAL_INPUT_SIZE</code></li>
+</ul>
+<p>The input of a <a href="/sending-messages#sending-signals" class="">Signal</a> sent to another Workflow Execution exceeds the size limit.</p>
+<p>Reduce the size of the Signal input and deploy the change to your Workers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-signal-workflow-execution-attributes">Bad Signal Workflow Execution Attributes<a href="#bad-signal-workflow-execution-attributes" class="hash-link" aria-label="Direct link to Bad Signal Workflow Execution Attributes" title="Direct link to Bad Signal Workflow Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_SIGNAL_WORKFLOW_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#signalexternalworkflowexecution" class="">SignalExternalWorkflowExecution</a> Command has unset or invalid attributes, or its input exceeds the size limit.</p>
+<p>Set the missing attributes and reduce the size of the input.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-start-child-execution-attributes">Bad Start Child Execution Attributes<a href="#bad-start-child-execution-attributes" class="hash-link" aria-label="Direct link to Bad Start Child Execution Attributes" title="Direct link to Bad Start Child Execution Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_START_CHILD_EXECUTION_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#startchildworkflowexecution" class="">StartChildWorkflowExecution</a> Command has unset or invalid attributes, or its input exceeds the size limit.</p>
+<p>Reduce the size of the Child Workflow input.
+Check that every Search Attribute the Child Workflow sets is registered on the Namespace.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="bad-start-timer-attributes">Bad Start Timer Attributes<a href="#bad-start-timer-attributes" class="hash-link" aria-label="Direct link to Bad Start Timer Attributes" title="Direct link to Bad Start Timer Attributes" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_START_TIMER_ATTRIBUTES</code></li>
+</ul>
+<p>The <a href="/references/commands#starttimer" class="">StartTimer</a> Command is missing a Timer ID.</p>
+<p>Set a valid Timer ID and deploy the change to your Workers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cause-bad-update">Cause Bad Update<a href="#cause-bad-update" class="hash-link" aria-label="Direct link to Cause Bad Update" title="Direct link to Cause Bad Update" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_UPDATE_WORKFLOW_EXECUTION_MESSAGE</code></li>
+</ul>
+<p>A <a href="/sending-messages#sending-updates" class="">Workflow Update</a> message from the <a href="/workers#worker" class="">Worker</a> (Acceptance, Rejection, or Response) has an invalid format or is missing required fields.</p>
+<p>This error can indicate an unsupported SDK.
+Use a <a href="/encyclopedia/architecture/temporal-sdks" class="">supported SDK</a> and upgrade to its latest release.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="duplicate-id-errors">Duplicate ID errors<a href="#duplicate-id-errors" class="hash-link" aria-label="Direct link to Duplicate ID errors" title="Direct link to Duplicate ID errors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="schedule-activity-duplicate-id">Schedule Activity Duplicate ID<a href="#schedule-activity-duplicate-id" class="hash-link" aria-label="Direct link to Schedule Activity Duplicate ID" title="Direct link to Schedule Activity Duplicate ID" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_SCHEDULE_ACTIVITY_DUPLICATE_ID</code></li>
+</ul>
+<p>The Workflow scheduled an <a href="/activities" class="">Activity</a> with an Activity ID that&#x27;s already in use in the Workflow Execution.</p>
+<p>Give each Activity in the Workflow a unique Activity ID.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="start-timer-duplicate-id">Start Timer Duplicate ID<a href="#start-timer-duplicate-id" class="hash-link" aria-label="Direct link to Start Timer Duplicate ID" title="Direct link to Start Timer Duplicate ID" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_START_TIMER_DUPLICATE_ID</code></li>
+</ul>
+<p>The Workflow started a Timer with a Timer ID that&#x27;s already in use in the Workflow Execution.</p>
+<p>Give each Timer in the Workflow a unique Timer ID.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-operation-limit-errors">Pending operation limit errors<a href="#pending-operation-limit-errors" class="hash-link" aria-label="Direct link to Pending operation limit errors" title="Direct link to Pending operation limit errors" translate="no">​</a></h2>
+<p>A Workflow Execution has a maximum number of pending operations of each type.
+When a Command would exceed a limit, the Workflow Task fails and is retried.
+See <a href="/workflow-execution/limits#workflow-execution-limits" class="">Workflow Execution limits</a>.</p>
+<p>On a self-hosted Temporal Service, you can change these limits with <a href="/references/dynamic-configuration#size-limit-settings" class="">dynamic configuration</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-activities-limit-exceeded">Pending Activities Limit Exceeded<a href="#pending-activities-limit-exceeded" class="hash-link" aria-label="Direct link to Pending Activities Limit Exceeded" title="Direct link to Pending Activities Limit Exceeded" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PENDING_ACTIVITIES_LIMIT_EXCEEDED</code></li>
+<li class="">Default limit: 2,000 pending Activities</li>
+</ul>
+<p>Scheduling another <a href="/activities" class="">Activity</a> would exceed the Workflow Execution&#x27;s limit of pending Activities.</p>
+<p>Reduce the number of Activities the Workflow runs at the same time, for example by processing work in batches.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-child-workflows-limit-exceeded">Pending Child Workflows Limit Exceeded<a href="#pending-child-workflows-limit-exceeded" class="hash-link" aria-label="Direct link to Pending Child Workflows Limit Exceeded" title="Direct link to Pending Child Workflows Limit Exceeded" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PENDING_CHILD_WORKFLOWS_LIMIT_EXCEEDED</code></li>
+<li class="">Default limit: 2,000 pending Child Workflows</li>
+</ul>
+<p>Starting another <a href="/child-workflows" class="">Child Workflow</a> would exceed the Workflow Execution&#x27;s limit of pending Child Workflows.</p>
+<p>Reduce the number of Child Workflows the Workflow runs at the same time.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-nexus-operations-limit-exceeded">Pending Nexus Operations Limit Exceeded<a href="#pending-nexus-operations-limit-exceeded" class="hash-link" aria-label="Direct link to Pending Nexus Operations Limit Exceeded" title="Direct link to Pending Nexus Operations Limit Exceeded" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PENDING_NEXUS_OPERATIONS_LIMIT_EXCEEDED</code></li>
+<li class="">Default limit: 30 pending Nexus Operations</li>
+</ul>
+<p>Scheduling another Nexus Operation would exceed the Workflow Execution&#x27;s limit of pending Nexus Operations.</p>
+<p>Reduce the number of Nexus Operations the Workflow runs at the same time.
+See <a href="/workflow-execution/limits#workflow-execution-nexus-operation-limits" class="">Workflow Execution Nexus Operation limits</a> and, for Temporal Cloud, <a href="/evaluate/cloud/limits#per-workflow-nexus-operation-limits" class="">Per Workflow Nexus Operation limits</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-request-cancel-limit-exceeded">Pending Request Cancel Limit Exceeded<a href="#pending-request-cancel-limit-exceeded" class="hash-link" aria-label="Direct link to Pending Request Cancel Limit Exceeded" title="Direct link to Pending Request Cancel Limit Exceeded" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PENDING_REQUEST_CANCEL_LIMIT_EXCEEDED</code></li>
+<li class="">Default limit: 2,000 pending Cancellation Requests to other Workflows</li>
+</ul>
+<p>Requesting cancellation of another Workflow Execution would exceed the limit of pending Cancellation Requests.</p>
+<p>Reduce the number of Cancellation Requests the Workflow sends at the same time.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pending-signals-limit-exceeded">Pending Signals Limit Exceeded<a href="#pending-signals-limit-exceeded" class="hash-link" aria-label="Direct link to Pending Signals Limit Exceeded" title="Direct link to Pending Signals Limit Exceeded" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PENDING_SIGNALS_LIMIT_EXCEEDED</code></li>
+<li class="">Default limit: 2,000 pending Signals to other Workflows</li>
+</ul>
+<p>Sending another <a href="/sending-messages#sending-signals" class="">Signal</a> to an external Workflow Execution would exceed the limit of pending outgoing Signals.</p>
+<p>Reduce the number of Signals the Workflow sends to other Workflow Executions at the same time.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="size-limit-errors">Size limit errors<a href="#size-limit-errors" class="hash-link" aria-label="Direct link to Size limit errors" title="Direct link to Size limit errors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="grpc-message-too-large">gRPC Message Too Large<a href="#grpc-message-too-large" class="hash-link" aria-label="Direct link to gRPC Message Too Large" title="Direct link to gRPC Message Too Large" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_GRPC_MESSAGE_TOO_LARGE</code></li>
+</ul>
+<p>The Workflow Task completion exceeds the 4 MB gRPC message size limit.
+Replay produces the same oversized request, so the Temporal Service terminates the Workflow Execution.</p>
+<p>This error usually means the Workflow schedules too many Activities, Child Workflows, or Commands in a single Workflow Task, or returns a large result.</p>
+<p>Fix your Workflow code and start a new Workflow Execution.
+Split work into smaller batches, return smaller results, use <a href="/workflow-execution/continue-as-new" class="">Continue-As-New</a> for long-running Workflows, or compress large Payloads with a custom <a href="/payload-codec" class="">Payload Codec</a>.
+See <a href="/troubleshooting/blob-size-limit-error" class="">gRPC message size limit</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="payloads-too-large">Payloads Too Large<a href="#payloads-too-large" class="hash-link" aria-label="Direct link to Payloads Too Large" title="Direct link to Payloads Too Large" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_PAYLOADS_TOO_LARGE</code></li>
+</ul>
+<p>A Payload in the Workflow Task completion exceeds the Payload size limit.
+SDKs that report this cause, such as Python SDK 1.23.0 and later and Go SDK 1.43.0 and later, leave the Workflow Execution open.</p>
+<p>Store large data in external storage, pass a reference through the Workflow, and deploy the fix to your Workers.
+See <a href="/troubleshooting/blob-size-limit-error" class="">Payload size limit</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-code-and-worker-errors">Workflow code and Worker errors<a href="#workflow-code-and-worker-errors" class="hash-link" aria-label="Direct link to Workflow code and Worker errors" title="Direct link to Workflow code and Worker errors" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="non-deterministic-error">Nondeterminism Error<a href="#non-deterministic-error" class="hash-link" aria-label="Direct link to Nondeterminism Error" title="Direct link to Nondeterminism Error" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_NON_DETERMINISTIC_ERROR</code></li>
+</ul>
+<p>During Replay, the Workflow code produced Commands that don&#x27;t match the Event History.
+This happens when Workflow code changes in a <a href="/workflow-definition#non-deterministic-change" class="">non-deterministic way</a> while Workflow Executions are open.</p>
+<p>See <a href="/troubleshooting/execution-failures#non-determinism-error" class="">Non-determinism error</a> for how to find and fix the change.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-worker-unhandled-failure">Workflow Worker Unhandled Failure<a href="#workflow-worker-unhandled-failure" class="hash-link" aria-label="Direct link to Workflow Worker Unhandled Failure" title="Direct link to Workflow Worker Unhandled Failure" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_WORKFLOW_WORKER_UNHANDLED_FAILURE</code></li>
+</ul>
+<p>The <a href="/workflow-definition" class="">Workflow Definition</a> raised an error or panic that the SDK doesn&#x27;t treat as a Workflow Execution failure.</p>
+<p>Read the stack trace in the WorkflowTaskFailed Event or the Worker logs, fix the code, and deploy the change to your Workers.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="unhandled-command">Unhandled Command<a href="#unhandled-command" class="hash-link" aria-label="Direct link to Unhandled Command" title="Direct link to Unhandled Command" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_UNHANDLED_COMMAND</code></li>
+</ul>
+<p>New <a href="/references/events" class="">Events</a>, such as Signals, arrived while the Workflow Task was running, and the Workflow tried to close without handling them.
+The Temporal Service fails the Workflow Task and schedules a new one that includes the new Events.</p>
+<p>This error is common when a Workflow receives many <a href="/sending-messages#sending-signals" class="">Signals</a>.
+Before the Workflow completes, process every pending Signal.
+In the Go SDK, drain the Signal Channel with <code>ReceiveAsync</code>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cause-unhandled-update">Cause Unhandled Update<a href="#cause-unhandled-update" class="hash-link" aria-label="Direct link to Cause Unhandled Update" title="Direct link to Cause Unhandled Update" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_UNHANDLED_UPDATE</code></li>
+</ul>
+<p>The Temporal Service received a Workflow Update while the Worker processed a Workflow Task that would close the Workflow Execution.</p>
+<p>The Temporal Service rejects the Workflow Task completion and rewinds the Workflow so that Workflow code handles the pending Update.
+This error is common when a Workflow receives frequent Updates.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cause-bad-binary">Cause Bad Binary<a href="#cause-bad-binary" class="hash-link" aria-label="Direct link to Cause Bad Binary" title="Direct link to Cause Bad Binary" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_BAD_BINARY</code></li>
+</ul>
+<p>The <a href="/workers" class="">Worker</a> that completed the Workflow Task has a binary checksum that&#x27;s marked as bad on the Namespace.</p>
+<p>Deploy a Worker build that isn&#x27;t marked as bad.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cause-unspecified">Cause Unspecified<a href="#cause-unspecified" class="hash-link" aria-label="Direct link to Cause Unspecified" title="Direct link to Cause Unspecified" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_UNSPECIFIED</code></li>
+</ul>
+<p>The Workflow Task failed without a specific cause.</p>
+<p>Read the failure message in the WorkflowTaskFailed Event and check your Workflow Definition.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal-service-errors">Temporal Service errors<a href="#temporal-service-errors" class="hash-link" aria-label="Direct link to Temporal Service errors" title="Direct link to Temporal Service errors" translate="no">​</a></h2>
+<p>The Temporal Service fails these Workflow Tasks because of an operation outside your Workflow code.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cause-reset-workflow">Cause Reset Workflow<a href="#cause-reset-workflow" class="hash-link" aria-label="Direct link to Cause Reset Workflow" title="Direct link to Cause Reset Workflow" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_RESET_WORKFLOW</code></li>
+</ul>
+<p>The Workflow Task failed because the Workflow Execution was <a href="/workflow-execution/event#reset" class="">reset</a>.</p>
+<p>The reset starts a new run of the Workflow Execution.
+If the new run didn&#x27;t start, reset the Workflow Execution again.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reset-sticky-task-queue">Reset Sticky Task Queue<a href="#reset-sticky-task-queue" class="hash-link" aria-label="Direct link to Reset Sticky Task Queue" title="Direct link to Reset Sticky Task Queue" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_RESET_STICKY_TASK_QUEUE</code></li>
+</ul>
+<p>The Worker failed the Workflow Task so that the next Workflow Task goes to the normal <a href="/task-queue" class="">Task Queue</a> instead of the Sticky Task Queue.</p>
+<p>No action is needed.
+The Temporal Service schedules the next Workflow Task automatically.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="failover-close-command">Failover Close Command<a href="#failover-close-command" class="hash-link" aria-label="Direct link to Failover Close Command" title="Direct link to Failover Close Command" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_FAILOVER_CLOSE_COMMAND</code></li>
+</ul>
+<p>A <a href="/namespaces" class="">Namespace</a> failover forced the Workflow Task to close.</p>
+<p>No action is needed.
+The Temporal Service schedules a retry automatically.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="force-close-command">Force Close Command<a href="#force-close-command" class="hash-link" aria-label="Direct link to Force Close Command" title="Direct link to Force Close Command" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_FORCE_CLOSE_COMMAND</code></li>
+</ul>
+<p>The Temporal Service forced the Workflow Task to close.
+If the error is recoverable, the Temporal Service schedules a retry.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="feature-disabled">Feature Disabled<a href="#feature-disabled" class="hash-link" aria-label="Direct link to Feature Disabled" title="Direct link to Feature Disabled" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>WORKFLOW_TASK_FAILED_CAUSE_FEATURE_DISABLED</code></li>
+</ul>
+<p>The Workflow Task requested a feature that&#x27;s disabled on the Temporal Service, either for the whole Temporal Service or, more often, for the Workflow&#x27;s Namespace.</p>
+<p>Read the failure message in the WorkflowTaskFailed Event for the feature name, then turn on the feature for the Namespace or remove its use from the Workflow.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-causes">Resource Exhausted causes<a href="#resource-exhausted-causes" class="hash-link" aria-label="Direct link to Resource Exhausted causes" title="Direct link to Resource Exhausted causes" translate="no">​</a></h2>
+<p>The Temporal Service returns a gRPC <code>RESOURCE_EXHAUSTED</code> error with one of these causes when it throttles a request.
+SDKs retry these requests automatically.
+For triage steps, see <a href="/troubleshooting/request-failures#resource_exhausted-on-user-facing-operations" class="">RESOURCE_EXHAUSTED on user-facing operations</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-aps-limit">Resource Exhausted Cause APS Limit<a href="#resource-exhausted-cause-aps-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause APS Limit" title="Direct link to Resource Exhausted Cause APS Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_APS_LIMIT</code></li>
+</ul>
+<p>The caller exceeded the Namespace&#x27;s actions per second limit.</p>
+<p>Reduce your request rate, or on Temporal Cloud, compare your throughput with the Namespace <a href="/evaluate/cloud/limits" class="">limits</a> and request an increase.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-busy-workflow">Resource Exhausted Cause Busy Workflow<a href="#resource-exhausted-cause-busy-workflow" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Busy Workflow" title="Direct link to Resource Exhausted Cause Busy Workflow" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_BUSY_WORKFLOW</code></li>
+</ul>
+<p>The target Workflow Execution is busy.</p>
+<p>Reduce the rate of requests, such as Signals and Updates, that you send to a single Workflow Execution.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-circuit-breaker-open">Resource Exhausted Cause Circuit Breaker Open<a href="#resource-exhausted-cause-circuit-breaker-open" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Circuit Breaker Open" title="Direct link to Resource Exhausted Cause Circuit Breaker Open" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_CIRCUIT_BREAKER_OPEN</code></li>
+</ul>
+<p>A circuit breaker in the Temporal Service is open or half-open, and the Temporal Service is shedding load.</p>
+<p>Treat this cause as a capacity problem.
+Raising a rate limit doesn&#x27;t help.
+Add capacity to the Temporal Service or slow down your workload.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-concurrent-limit">Resource Exhausted Cause Concurrent Limit<a href="#resource-exhausted-cause-concurrent-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Concurrent Limit" title="Direct link to Resource Exhausted Cause Concurrent Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_CONCURRENT_LIMIT</code></li>
+</ul>
+<p>The caller exceeded the maximum number of concurrent requests, such as long-poll requests from Workers.</p>
+<p>Reduce the <a href="/develop/worker-performance/task-queues#poller-count" class="">poller count</a> per <a href="/workers" class="">Worker</a> or the number of Workers polling the Namespace.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-ops-limit">Resource Exhausted Cause Ops Limit<a href="#resource-exhausted-cause-ops-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Ops Limit" title="Direct link to Resource Exhausted Cause Ops Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_OPS_LIMIT</code></li>
+</ul>
+<p>The Namespace exceeded its operations rate limit.</p>
+<p>Reduce your request rate, or on Temporal Cloud, compare your throughput with the Namespace <a href="/evaluate/cloud/limits" class="">limits</a> and request an increase.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-persistence-limit">Resource Exhausted Cause Persistence Limit<a href="#resource-exhausted-cause-persistence-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Persistence Limit" title="Direct link to Resource Exhausted Cause Persistence Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_PERSISTENCE_LIMIT</code></li>
+</ul>
+<p>The Namespace exceeded the persistence rate limit.</p>
+<p>On a self-hosted Temporal Service, check persistence latency and the <a href="/references/dynamic-configuration#qps-limits-for-persistence-store" class="">persistence QPS limits</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-persistence-storage-limit">Resource Exhausted Cause Persistence Storage Limit<a href="#resource-exhausted-cause-persistence-storage-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Persistence Storage Limit" title="Direct link to Resource Exhausted Cause Persistence Storage Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_PERSISTENCE_STORAGE_LIMIT</code></li>
+</ul>
+<p>The persistence storage limit was exceeded.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-rps-limit">Resource Exhausted Cause RPS Limit<a href="#resource-exhausted-cause-rps-limit" class="hash-link" aria-label="Direct link to Resource Exhausted Cause RPS Limit" title="Direct link to Resource Exhausted Cause RPS Limit" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_RPS_LIMIT</code></li>
+</ul>
+<p>The caller exceeded the requests per second limit.</p>
+<p>Reduce your request rate.
+On Temporal Cloud, compare your throughput with the Namespace <a href="/evaluate/cloud/limits" class="">limits</a> and request an increase.
+On a self-hosted Temporal Service, check the <a href="/references/dynamic-configuration#service-level-rps-limits" class="">Service-level RPS limits</a> after you confirm that persistence is healthy.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-system-overload">Resource Exhausted Cause System Overload<a href="#resource-exhausted-cause-system-overload" class="hash-link" aria-label="Direct link to Resource Exhausted Cause System Overload" title="Direct link to Resource Exhausted Cause System Overload" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_SYSTEM_OVERLOADED</code></li>
+</ul>
+<p>The Temporal Service is overloaded and is shedding load to protect itself.</p>
+<p>Treat this cause as a capacity problem.
+Raising a rate limit doesn&#x27;t help.
+Add capacity to the Temporal Service or slow down your workload.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-worker-deployment-limits">Resource Exhausted Cause Worker Deployment Limits<a href="#resource-exhausted-cause-worker-deployment-limits" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Worker Deployment Limits" title="Direct link to Resource Exhausted Cause Worker Deployment Limits" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_WORKER_DEPLOYMENT_LIMITS</code></li>
+</ul>
+<p>The request reached a <a href="/evaluate/cloud/limits#worker-versioning-level" class="">Worker Versioning limit</a>, such as the maximum number of Worker Deployments in a Namespace or Versions in a Worker Deployment.</p>
+<p>To free space for a new Version, stop polling from an old, drained Version so the Temporal Service can delete it.
+See <a href="/production-deployment/worker-deployments/worker-versioning/sunset-and-gc#garbage-collection" class="">Garbage collection</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="resource-exhausted-cause-unspecified">Resource Exhausted Cause Unspecified<a href="#resource-exhausted-cause-unspecified" class="hash-link" aria-label="Direct link to Resource Exhausted Cause Unspecified" title="Direct link to Resource Exhausted Cause Unspecified" translate="no">​</a></h3>
+<ul>
+<li class="">Cause: <code>RESOURCE_EXHAUSTED_CAUSE_UNSPECIFIED</code></li>
+</ul>
+<p>The Temporal Service throttled the request without a specific cause.</p></div>

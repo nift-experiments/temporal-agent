@@ -1,0 +1,97 @@
+# Continue-As-New - PHP SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Use Temporal's Continue-As-New in PHP to manage large Event Histories by atomically creating new Workflow Executions with the same Workflow Id and fresh parameters.
+
+This page covers the following for PHP developers:
+
+- [What is Continue-As-New?](#what)
+- [Use Continue-As-New](#how)
+- [When is it right to Continue-As-New?](#when)
+- [Test Continue-As-New](#how-to-test)
+
+## What is Continue-As-New? 
+
+[Continue-As-New](/workflow-execution/continue-as-new) lets a Workflow Execution close successfully and creates a new Workflow Execution.
+You can think of it as a checkpoint when your Workflow gets too long or approaches certain scaling limits.
+
+The new Workflow Execution is in the same [chain](/workflow-execution#workflow-execution-chain); it keeps the same Workflow Id but gets a new Run Id and a fresh Event History.
+It also receives your Workflow's usual parameters.
+
+## Use Continue-As-New with the PHP SDK 
+
+First, design your Workflow parameters so that you can pass in the "current state" when you Continue-As-New into the next Workflow run.
+This state is typically set to `None` for the original caller of the Workflow.
+
+[View the source code](https://github.com/temporalio/samples-php/blob/master/app/src/SafeMessageHandlers/MessageHandlerWorkflowInterface.php) in the context of the rest of the application code.
+
+```php
+final class ClusterManagerInput {
+    public function __construct(
+        public ?ClusterManagerState $state = null,
+        public bool $testContinueAsNew = false,
+    ) {}
+}
+
+#[Workflow\WorkflowInterface]
+interface MessageHandlerWorkflowInterface
+{
+#[Workflow\WorkflowMethod]
+public function run(ClusterManagerInput $input);
+}
+
+````
+The test hook in the above snippet is covered [below](#how-to-test).
+
+Inside your Workflow, call the [`continueAsNew()`](https://php.temporal.io/classes/Temporal-Workflow.html#method_continueAsNew) function with the same type.
+This stops the Workflow right away and starts a new one.
+
+[View the source code](https://github.com/temporalio/samples-php/blob/master/app/src/SafeMessageHandlers/MessageHandlerWorkflow.php) in the context of the rest of the application code.
+
+```php
+Workflow::continueAsNew(
+    Workflow::getInfo()->type->name,
+    [new ClusterManagerInput($this->state, $input->testContinueAsNew)],
+);
+````
+
+### Considerations for Workflows with message handlers 
+
+If you use Updates or Signals, don't call Continue-as-New from the handlers.
+Instead, wait for your handlers to finish in your main Workflow before you run `continueAsNew`.
+See the [`allHandlersFinished`](message-passing#wait-for-message-handlers) example for guidance.
+
+## When is it right to Continue-As-New with the PHP SDK? 
+
+Use Continue-as-New when your Workflow might hit [Event History Limits](/workflow-execution/event#event-history).
+
+Temporal tracks your Workflow's progress against these limits to let you know when you should Continue-as-New.
+Call `Workflow::getInfo()->shouldContinueAsNew` to check if it's time.
+
+## Test Continue-As-New with the PHP SDK 
+
+Testing Workflows that naturally Continue-as-New may be time-consuming and resource-intensive.
+Instead, add a test hook to check your Workflow's Continue-as-New behavior faster in automated tests.
+
+For example, when `testContinueAsNew == true`, this sample creates a test-only variable called `$this->maxHistoryLength` and sets it to a small value.
+A helper method in the Workflow checks it each time it considers using Continue-as-New:
+
+[View the source code](https://github.com/temporalio/samples-php/blob/master/app/src/SafeMessageHandlers/MessageHandlerWorkflow.php) in the context of the rest of the application code.
+
+```php
+private function shouldContinueAsNew(): bool
+{
+    if (Workflow::getInfo()->shouldContinueAsNew) {
+        return true;
+    }
+
+    // This is just for ease-of-testing.  In production, we trust temporal to tell us when to continue as new.
+    if ($this->maxHistoryLength !== null && Workflow::getInfo()->historyLength > $this->maxHistoryLength) {
+        return true;
+    }
+
+    return false;
+}
+```

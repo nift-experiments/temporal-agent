@@ -1,0 +1,269 @@
+# Quickstart - Rust SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Configure your local development environment to get started developing with Temporal and the Rust SDK
+
+# Quickstart
+
+Configure your local development environment to get started developing with Temporal using the Rust SDK.
+
+## Install Rust
+
+Make sure you have Rust installed on your system. You can download and install Rust from [rustup.rs](https://rustup.rs/).
+
+After installation, verify it's working by checking the version. You'll also need Cargo, which is Rust's package manager and comes bundled with Rust.
+
+```bash
+rustc --version
+```
+
+## Create a Project
+
+Now that you have Rust and Cargo installed, create a new Rust project to manage your dependencies.
+
+```bash
+mkdir temporal-rust-project
+```
+
+```bash
+cd temporal-rust-project
+```
+
+```bash
+cargo init --name temporal-hello-world
+```
+
+## Add Temporal Rust SDK Dependencies
+
+Now update your project's `Cargo.toml` file to match the example and run `cargo build`.
+
+The core dependencies you'll need are:
+
+- `temporalio-sdk` - The Rust SDK for Temporal
+- `tokio` - Async runtime required by the SDK
+- `serde` - For serialization/deserialization
+
+Next, you'll configure a local Temporal Service for development.
+
+```toml
+[package]
+name = "temporal-hello-world"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+futures = "0.3"
+serde = { version = "1", features = ["derive"] }
+temporalio-client = "1.0.0"
+temporalio-common = "1.0.0"
+temporalio-macros = "1.0.0"
+temporalio-sdk = "1.0.0"
+temporalio-workflow = "1.0.0"
+tokio = { version = "1", features = ["full"] }
+
+```
+
+If you run into issues installing the dependencies, try:
+```bash
+brew install protobuf
+```
+
+## Install Temporal CLI and start the development server
+
+The fastest way to get a development version of the Temporal Service running on your local machine is to use
+[Temporal CLI](/cli).
+
+Choose your operating system to install Temporal CLI:
+
+**macOS**
+
+```bash
+brew install temporal
+```
+
+**Windows**
+
+Download the Temporal CLI archive for your architecture:
+
+- [Windows amd64](https://temporal.download/cli/archive/latest?platform=windows&arch=amd64)
+- [Windows arm64](https://temporal.download/cli/archive/latest?platform=windows&arch=arm64)
+
+Extract it and add `temporal.exe` to your PATH.
+
+**Linux**
+
+Download the Temporal CLI for your architecture:
+
+- [Linux amd64](https://temporal.download/cli/archive/latest?platform=linux&arch=amd64)
+- [Linux arm64](https://temporal.download/cli/archive/latest?platform=linux&arch=arm64)
+
+Extract the archive and move the `temporal` binary into your PATH:
+```bash
+sudo mv temporal /usr/local/bin
+```
+
+## Start the development server
+
+Once you've installed Temporal CLI and added it to your PATH, open a new Terminal window and run the following command.
+
+This command starts a local Temporal Service. It starts the Web UI, creates the default Namespace, and uses an in-memory database.
+
+The Temporal Service will be available on localhost:7233. The Temporal Web UI will be available at http://localhost:8233.
+
+Leave the local Temporal Service running as you work through tutorials and other projects. You can stop the Temporal Service at any time by pressing CTRL+C.
+
+After installing, open a new Terminal. Keep this running in the background:
+```bash
+temporal server start-dev
+```
+
+#### Change the Web UI port
+The Temporal Web UI may be on a different port in some examples or tutorials. To change the port for the Web UI, use the `--ui-port` option when starting the server:
+```bash
+temporal server start-dev --ui-port 8080
+```
+
+The Temporal Web UI will now be available at http://localhost:8080.
+
+## Run Hello World: Test your installation
+
+Now let's verify your setup is working by creating and running a complete Temporal application with both a Workflow and Activity.
+
+This test will confirm that:
+
+- The Temporal Rust SDK is properly installed
+- Your local Temporal Service is running
+- You can successfully create and execute Workflows and Activities
+- The communication between components is functioning correctly
+
+### 1. Define your Activity
+
+Create a `/src/activities.rs` file with the Activity definition:
+
+```rust
+use temporalio_macros::activities;
+use temporalio_sdk::activities::{ActivityContext, ActivityError};
+
+pub struct MyActivities;
+
+#[activities]
+impl MyActivities {
+    #[activity]
+    pub async fn greet(_ctx: ActivityContext, name: String) -> Result<String, ActivityError> {
+        Ok(format!("Hello, {}!", name))
+    }
+}
+```
+
+### 2. Define your Workflow
+
+Create a `/src/workflows.rs` file with the Workflow definition:
+
+```rust
+use temporalio_macros::{workflow, workflow_methods};
+use temporalio_sdk::{ActivityOptions, WorkflowContext, WorkflowContextView, WorkflowResult};
+use std::time::Duration;
+
+use crate::activities::MyActivities;
+
+#[workflow]
+pub struct GreetingWorkflow {
+    name: String,
+}
+
+#[workflow_methods]
+impl GreetingWorkflow {
+    #[init]
+    fn new(_ctx: &WorkflowContextView, name: String) -> Self {
+        Self { name }
+    }
+
+    #[run]
+    pub async fn run(ctx: &mut WorkflowContext<Self>) -> WorkflowResult<String> {
+        let name = ctx.state(|s| s.name.clone());
+
+        // Execute an activity
+        let greeting = ctx
+            .execute_activity(
+                MyActivities::greet,
+                name,
+                ActivityOptions::start_to_close_timeout(Duration::from_secs(30)),
+            )
+            .await?;
+
+        println!("{}", greeting);
+        Ok(greeting)
+    }
+}
+```
+
+### 3. Create and Run a Worker
+
+Update your `/src/main.rs` file with the following:
+
+```rust
+use temporalio_client::{
+    Client, ClientOptions, Connection,
+    envconfig::LoadClientConfigProfileOptions,
+};
+use temporalio_sdk::{Runtime, Worker, WorkerOptions};
+
+mod workflows;
+mod activities;
+
+use crate::workflows::GreetingWorkflow;
+use crate::activities::MyActivities;
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let runtime = Runtime::from_current_tokio(Default::default())?;
+
+    // Set up client connection options, loading from config if available
+    let (connection_options, client_options) = ClientOptions::load_from_config(
+        LoadClientConfigProfileOptions::default(),
+    )?;
+
+    let connection = Connection::connect(connection_options).await?;
+    let client = Client::new(connection, client_options)?;
+
+    let worker_options = WorkerOptions::new("my-task-queue")
+        .register_activities(MyActivities)
+        .register_workflow::<GreetingWorkflow>()?
+        .build();
+
+    let mut worker = Worker::new(&runtime, client, worker_options)?;
+    worker.run().await?;
+
+    Ok(())
+}
+```
+
+Open a new terminal and run the Worker with:
+
+```bash
+cargo run
+```
+
+### 4. Start a Workflow
+
+You can now start a Workflow execution using the client. In a new terminal, run the Workflow with:
+
+```bash
+temporal workflow start \
+  --type GreetingWorkflow \
+  --task-queue my-task-queue \
+  --input '"Ziggy"'
+```
+
+## Next steps
+
+Now that you have the basics working, explore the following resources to build more sophisticated applications:
+
+- [Develop a Workflow](/develop/rust/workflows/basics) - Learn how to write complex workflow logic
+- [Develop an Activity](/develop/rust/activities/basics) - Understand activity patterns and best practices
+- [Worker Processes](/develop/rust/workers/worker-process) - Configure and scale workers
+- [Using the Temporal Client](/develop/rust/client/temporal-client) - Start workflows and interact with the Temporal Service
+
+- [Take a Temporal 101 course](https://learn.temporal.io/courses/): Learn Temporal concepts and build your first application with a guided course

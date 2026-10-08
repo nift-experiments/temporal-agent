@@ -1,0 +1,42 @@
+# Workflow Timeouts - Ruby SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Optimize Workflow Execution with Temporal Ruby SDK - Set Workflow Timeouts and Retry Policies efficiently.
+
+## Workflow timeouts 
+
+Each Workflow timeout controls the maximum duration of a different aspect of a Workflow Execution.
+
+- **[Workflow Execution Timeout](/encyclopedia/detecting-workflow-failures#workflow-execution-timeout)**: Limits how long the full Workflow Execution can run.
+- **[Workflow Run Timeout](/encyclopedia/detecting-workflow-failures#workflow-run-timeout)**: Limits the duration of an individual run of a Workflow Execution.
+- **[Workflow Task Timeout](/encyclopedia/detecting-workflow-failures#workflow-task-timeout)**: Limits the time allowed for a Worker to process a Workflow Task.
+
+Set these values as keyword parameter options when starting a Workflow.
+
+```ruby
+result = my_client.execute_workflow(
+  MyWorkflow, 'some-input',
+  id: 'my-workflow-id', task_queue: 'my-task-queue',
+  execution_timeout: 5 * 60
+)
+```
+
+## Workflow retries 
+
+A Retry Policy can work in cooperation with the timeouts to provide fine controls to optimize the execution experience.
+
+Use a [Retry Policy](/encyclopedia/retry-policies) to automatically retry Workflow Executions on failure.
+
+Workflow Executions do not retry by default, and Retry Policies should be used with Workflow Executions only in certain situations.
+
+The `retry_policy` can be set when calling `start_workflow` or `execute_workflow`.
+
+```ruby
+result = my_client.execute_workflow(
+  MyWorkflow, 'some-input',
+  id: 'my-workflow-id', task_queue: 'my-task-queue',
+  retry_policy: Temporalio::RetryPolicy.new(max_interval: 10)
+)
+```

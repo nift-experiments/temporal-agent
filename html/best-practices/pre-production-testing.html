@@ -1,0 +1,324 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/best-practices/pre-production-testing.md">/best-practices/pre-production-testing.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Pre-production testing</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/best-practices/pre-production-testing.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fpre-production-testing.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fbest-practices%2Fpre-production-testing.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>This guide collects practical, experience-driven testing practices for teams running Temporal applications.
+The goal is not just to verify that things fail and recover, but to build confidence that <em>recovery</em>, <em>correctness</em>, <em>consistency</em>, and <em>operability</em> hold under real-world conditions.</p>
+<p>The scenarios below assume familiarity with Temporal concepts such as <a href="/namespaces" class="">Namespaces</a>, <a href="/workers" class="">Workers</a>, <a href="/task-queue" class="">Task Queues</a>, <a href="/temporal-service/temporal-server#history-shard" class="">History shards</a>, <a href="/workflow-execution/timers-delays" class="">Timers</a>, and <a href="/workflow-execution#replay" class="">Workflow replay</a>.
+Start with <a href="/evaluate/understanding-temporal#durable-execution" class="">Understanding Temporal</a> if you need background.</p>
+<p>Before starting any load testing in Temporal Cloud, we recommend connecting with your Temporal Account team and our Developer Success Engineering team.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="guiding-principles">Guiding principles<a href="#guiding-principles" class="hash-link" aria-label="Direct link to Guiding principles" title="Direct link to Guiding principles" translate="no">​</a></h2>
+<p>Before diving into specific experiments, keep these principles in mind:</p>
+<ul>
+<li class=""><strong>Failure is normal</strong>: Temporal is designed to survive failure and issues, but <em>your application logic</em> must be too.</li>
+<li class=""><strong>Partial failure is often harder to deal with than total failure</strong>: Systems that are &quot;mostly working&quot; expose the most flaws.</li>
+<li class=""><strong>Recovery paths deserve as much testing as steady state</strong>: Analyze recovering application behavior as much as you analyze failing behavior.</li>
+<li class=""><strong>Build observability before you break things</strong>: Ensure metrics, logs, and visibility tools are in place before injecting failures.</li>
+<li class=""><strong>Testing is a continual process</strong>: Testing is never finished. Testing is a practice.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="worker-testing">Worker testing<a href="#worker-testing" class="hash-link" aria-label="Direct link to Worker testing" title="Direct link to Worker testing" translate="no">​</a></h2>
+<p><strong>Relevant best practices</strong>: <a href="/best-practices/worker" class="">Worker deployment and performance</a>, appropriate timeouts, managing Worker shutdown, idempotency</p>
+<ul>
+<li class=""><a href="/encyclopedia/workers/worker-shutdown" class="">Worker shutdown</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="kill-all-workers-then-restart-them">Kill all Workers, then restart them<a href="#kill-all-workers-then-restart-them" class="hash-link" aria-label="Direct link to Kill all Workers, then restart them" title="Direct link to Kill all Workers, then restart them" translate="no">​</a></h3>
+<p><strong>What to test</strong></p>
+<p>Abruptly terminate all Workers processing a Task Queue, then restart them.</p>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Validates at-least-once execution semantics.</li>
+<li class="">Ensures Activities are idempotent and Workflows replay cleanly.</li>
+<li class="">Validates Task timeouts and retries and that Workers can finish business processes.</li>
+</ul>
+<p><strong>How to run this</strong></p>
+<p>Depending on execution environment:</p>
+<ul>
+<li class=""><strong>Kubernetes</strong>: Set pod count to zero:<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">kubectl scale deployment &lt;deployment-name&gt; --replicas=0 -n &lt;namespace&gt;</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">kubectl scale deployment &lt;deployment-name&gt; --replicas=3 -n &lt;namespace&gt;</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;kubectl scale deployment &lt;deployment-name&gt; --replicas=0 -n &lt;namespace&gt;\nkubectl scale deployment &lt;deployment-name&gt; --replicas=3 -n &lt;namespace&gt;\n&quot;,&quot;code&quot;:&quot;kubectl scale deployment &lt;deployment-name&gt; --replicas=0 -n &lt;namespace&gt;\nkubectl scale deployment &lt;deployment-name&gt; --replicas=3 -n &lt;namespace&gt;&quot;,&quot;className&quot;:&quot;language-bash&quot;,&quot;language&quot;:&quot;bash&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+</li>
+<li class=""><strong>Azure App Service</strong>:<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token plain">az webapp restart --name &lt;app-name&gt; --resource-group &lt;resource-group&gt;</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;az webapp restart --name &lt;app-name&gt; --resource-group &lt;resource-group&gt;\n&quot;,&quot;code&quot;:&quot;az webapp restart --name &lt;app-name&gt; --resource-group &lt;resource-group&gt;&quot;,&quot;className&quot;:&quot;language-bash&quot;,&quot;language&quot;:&quot;bash&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Duplicate/improper Activity results</li>
+<li class="">Workflow failures</li>
+<li class="">Workflow backlog growth and drain time</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="frequent-worker-restart">Frequent Worker restart<a href="#frequent-worker-restart" class="hash-link" aria-label="Direct link to Frequent Worker restart" title="Direct link to Frequent Worker restart" translate="no">​</a></h3>
+<p><strong>What to test</strong></p>
+<p>Periodically restart a fixed or random percentage (for example, 20-30%) of your Worker fleet every few minutes.</p>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Mimics failure modes where Workers restart due to high CPU utilization and out-of-memory errors from compute-intensive logic in Activities.</li>
+<li class="">Ensures Temporal invalidates specific Sticky Task Queues and reschedules the task to the associated non-Sticky Task Queue.</li>
+</ul>
+<p><strong>How to run this</strong></p>
+<ul>
+<li class=""><strong>Kubernetes</strong>: Build a script using <code>kubectl</code> to randomly delete pods in a loop.</li>
+<li class=""><strong>Chaos Mesh</strong>: <a href="https://chaos-mesh.org/docs/simulate-pod-chaos-on-kubernetes/" target="_blank" rel="noopener noreferrer" class="">Simulate pod faults</a>.</li>
+<li class=""><strong>App Services</strong>: Scale down and up again.</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Replay latency</li>
+<li class="">Drop in Workflow and Activity completion</li>
+<li class="">Duplicate/improper Activity results</li>
+<li class="">Workflow failures</li>
+<li class="">Workflow backlog growth and drain time</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="load-testing">Load testing<a href="#load-testing" class="hash-link" aria-label="Direct link to Load testing" title="Direct link to Load testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="pre-load-test-setup-expectations-for-success">Pre-load test setup: expectations for success<a href="#pre-load-test-setup-expectations-for-success" class="hash-link" aria-label="Direct link to Pre-load test setup: expectations for success" title="Direct link to Pre-load test setup: expectations for success" translate="no">​</a></h3>
+<ol>
+<li class="">Have SDK metrics accessible (not just the Cloud metrics)</li>
+<li class="">Understand and predict what you should see from these metrics:<!-- -->
+<ul>
+<li class="">Rate limiting (<a href="/cloud/metrics/openmetrics/metrics-reference#temporal_cloud_v1_total_action_throttled_count" class=""><code>temporal_cloud_v1_total_action_throttled_count</code></a> and <a href="/cloud/metrics/openmetrics/metrics-reference#temporal_cloud_v1_service_request_throttled_count" class=""><code>temporal_cloud_v1_service_request_throttled_count</code></a>)</li>
+<li class="">Workflow failures (<code>temporal_cloud_v1_workflow_failed_count</code>)</li>
+<li class="">Workflow execution time (<code>workflow_endtoend_latency</code>)</li>
+<li class="">High Cloud latency (<code>temporal_cloud_v1_service_latency_p95</code>)</li>
+<li class=""><a href="/develop/worker-performance" class="">Worker metrics</a> (<code>workflow_task_schedule_to_start_latency</code> and <code>activity_schedule_to_start_latency</code>)</li>
+</ul>
+</li>
+<li class="">Determine throughput requirements ahead of time. Work with your account team to match that to the Namespace capacity to avoid rate limiting. Capacity increases are done via Temporal support and can be requested for a load test (short-term).</li>
+<li class="">Automate how you run the load test so you can start and stop it at will. How will you clear Workflow Executions that are just temporary?</li>
+<li class="">What does &quot;success&quot; look like for this test? Be specific with metrics and numbers stated in business terms.</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validate-downstream-load-capacity">Validate downstream load capacity<a href="#validate-downstream-load-capacity" class="hash-link" aria-label="Direct link to Validate downstream load capacity" title="Direct link to Validate downstream load capacity" translate="no">​</a></h3>
+<p><strong>Relevant best practices</strong>: Idempotent Activities, bounded retries, appropriate timeouts and retry policies, understand behavior when limits are reached</p>
+<p><strong>What to test</strong></p>
+<ul>
+<li class="">Schedule a large number of Actions and Requests by starting many Workflows</li>
+<li class="">Increase the number until you start overloading downstream systems</li>
+</ul>
+<p><strong>Why it matters</strong></p>
+<p>Validates behavior of Temporal application and application dependencies under high load.</p>
+<p><strong>How to run this</strong></p>
+<p>Start Workflows at a rate to surpass throughput limits. Example: <a href="https://github.com/joshmsmith/temporal-ratelimit-tester-go" target="_blank" rel="noopener noreferrer" class="">temporal-ratelimit-tester-go</a></p>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Downstream service error rates (HTTP 5xx, database errors)</li>
+<li class="">Increased downstream service latency and saturation metrics</li>
+<li class="">Activity failure rates, specifically classifying between retryable and non-retryable errors</li>
+<li class="">Activity retry and backoff behavior against the overloaded system</li>
+<li class="">Workflow backlog growth and drain time</li>
+<li class="">Correctness and consistency of data (ensuring Activity idempotency holds under duress)</li>
+<li class="">Worker CPU/memory utilization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="validate-rate-limiting-behavior">Validate rate limiting behavior<a href="#validate-rate-limiting-behavior" class="hash-link" aria-label="Direct link to Validate rate limiting behavior" title="Direct link to Validate rate limiting behavior" translate="no">​</a></h3>
+<p><strong>Relevant best practices</strong>: <a href="/best-practices/managing-aps-limits" class="">Manage Namespace capacity limits</a>, understand behavior when limits are reached</p>
+<p><strong>What to test</strong></p>
+<ul>
+<li class="">Schedule a large number of Actions and Requests by starting many Workflows</li>
+<li class="">Increase the number until you get rate limited and trigger <a href="/cloud/metrics/openmetrics/metrics-reference#temporal_cloud_v1_total_action_throttled_count" class=""><code>temporal_cloud_v1_total_action_throttled_count</code></a> or <a href="/cloud/metrics/openmetrics/metrics-reference#temporal_cloud_v1_service_request_throttled_count" class=""><code>temporal_cloud_v1_service_request_throttled_count</code></a></li>
+</ul>
+<p><strong>Why it matters</strong></p>
+<p>Validates behavior of Cloud service under high load: &quot;In Temporal Cloud, the effect of rate limiting is increased latency, not lost work. Workers might take longer to complete Workflows.&quot;</p>
+<p><strong>How to run this</strong></p>
+<ol>
+<li class="">(Optional) Decrease a test Namespace&#x27;s rate limits to make it easier to hit limits</li>
+<li class="">Calculate current APS at current throughput (in production)</li>
+<li class="">Calculate Workflow throughput needed to surpass limits</li>
+<li class="">Start Workflows at a rate to surpass throughput limits using <a href="https://github.com/joshmsmith/temporal-ratelimit-tester-go" target="_blank" rel="noopener noreferrer" class="">temporal-ratelimit-tester-go</a></li>
+</ol>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Worker behavior when rate limited</li>
+<li class="">Client behavior when rate limited</li>
+<li class="">Temporal request and long_request failure rates</li>
+<li class="">Workflow success rates</li>
+<li class="">Workflow latency rates</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="failover-and-availability">Failover and availability<a href="#failover-and-availability" class="hash-link" aria-label="Direct link to Failover and availability" title="Direct link to Failover and availability" translate="no">​</a></h2>
+<p><strong>Relevant best practices</strong>: Use <a href="/cloud/high-availability" class="">High Availability features</a> for critical workloads.</p>
+<ul>
+<li class=""><a href="/cloud/high-availability/monitoring" class="">High Availability monitoring</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="test-region-failover">Test region failover<a href="#test-region-failover" class="hash-link" aria-label="Direct link to Test region failover" title="Direct link to Test region failover" translate="no">​</a></h3>
+<p><strong>What to test</strong></p>
+<p>Trigger a <a href="/cloud/high-availability" class="">High Availability</a> failover event for a Namespace.</p>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Real outages are messy and rarely isolated.</li>
+<li class="">Ensures your operational playbooks and automation are resilient.</li>
+<li class="">Validates Worker and Namespace failover behavior.</li>
+</ul>
+<p><strong>How to run this</strong></p>
+<p>Execute a manual failover per the <a href="/cloud/high-availability/failovers/manage#trigger-failover" class="">manual failovers documentation</a>.</p>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Namespace availability</li>
+<li class="">Client and Worker connectivity to failover region</li>
+<li class="">Workflow Task reassignments</li>
+<li class="">Human-in-the-loop recovery steps</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="dependency-and-downstream-testing">Dependency and downstream testing<a href="#dependency-and-downstream-testing" class="hash-link" aria-label="Direct link to Dependency and downstream testing" title="Direct link to Dependency and downstream testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="break-the-things-your-workflows-call">Break the things your Workflows call<a href="#break-the-things-your-workflows-call" class="hash-link" aria-label="Direct link to Break the things your Workflows call" title="Direct link to Break the things your Workflows call" translate="no">​</a></h3>
+<p><strong>What to test</strong></p>
+<p>Intentionally break or degrade downstream dependencies used by Activities:</p>
+<ul>
+<li class="">Make databases read-only or unavailable</li>
+<li class="">Inject high latency or error rates into external APIs</li>
+<li class="">Throttle or pause message queues and event streams</li>
+</ul>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Temporal guarantees Workflow durability, not dependency availability.</li>
+<li class="">Validates that Activities are retryable, idempotent, and correctly timeout-bounded.</li>
+<li class="">Ensures Workflows make forward progress instead of livelocking on broken dependencies.</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Activity retry and backoff behavior</li>
+<li class="">Heartbeat effectiveness for long-running Activities</li>
+<li class="">Database connection exhaustion and retry storms</li>
+<li class="">API timeouts vs Activity timeouts</li>
+<li class="">Whether failures propagate as Signals, compensations, or Workflow-level errors</li>
+</ul>
+<p><strong>Anti-patterns this reveals</strong></p>
+<ul>
+<li class="">Non-idempotent Activities</li>
+<li class="">Infinite retries without circuit breaking</li>
+<li class="">Using Workflow logic to &quot;wait out&quot; broken dependencies</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deployment-and-code-level-testing">Deployment and code-level testing<a href="#deployment-and-code-level-testing" class="hash-link" aria-label="Direct link to Deployment and code-level testing" title="Direct link to Deployment and code-level testing" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deploy-a-workflow-change-with-versioning">Deploy a Workflow change with versioning<a href="#deploy-a-workflow-change-with-versioning" class="hash-link" aria-label="Direct link to Deploy a Workflow change with versioning" title="Direct link to Deploy a Workflow change with versioning" translate="no">​</a></h3>
+<p><strong>Relevant best practices</strong>: Implement a versioning strategy.</p>
+<ul>
+<li class=""><a href="https://community.temporal.io/t/workflow-versioning-strategies/6911" class="">Workflow Versioning Strategies - Developer Corner</a></li>
+<li class=""><a href="/production-deployment/worker-deployments/worker-versioning" class="">Worker Versioning</a></li>
+<li class="">Replay Testing: see SDK documentation for details</li>
+</ul>
+<p><strong>What to test</strong></p>
+<ul>
+<li class="">Deploy Workflow code that would introduce non-deterministic errors (NDEs) but use a versioning strategy to deploy successfully</li>
+<li class="">Validate Workflow success and clear the backlog of tasks</li>
+</ul>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Unplanned NDEs can be a painful surprise</li>
+<li class="">Tests versioning strategy and patching discipline to build production confidence</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Workflow Task failure reasons</li>
+<li class="">Effectiveness of versioning and patching patterns</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deploy-a-version-that-causes-ndes-then-recover">Deploy a version that causes NDEs, then recover<a href="#deploy-a-version-that-causes-ndes-then-recover" class="hash-link" aria-label="Direct link to Deploy a version that causes NDEs, then recover" title="Direct link to Deploy a version that causes NDEs, then recover" translate="no">​</a></h3>
+<p><strong>Relevant best practices</strong>: Implement a versioning strategy.</p>
+<ul>
+<li class=""><a href="https://community.temporal.io/t/workflow-versioning-strategies/6911" class="">Workflow Versioning Strategies - Developer Corner</a></li>
+<li class=""><a href="/production-deployment/worker-deployments/worker-versioning" class="">Worker Versioning</a></li>
+<li class="">Replay Testing: see SDK documentation for details</li>
+</ul>
+<p><strong>What to test</strong></p>
+<ul>
+<li class="">Deploy Workflow code that introduces non-deterministic errors (NDEs)</li>
+<li class="">Attempt rollback to a known-good version, or apply versioning strategies to apply the new changes successfully</li>
+<li class="">Clear or recover the backlog of tasks</li>
+</ul>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Unplanned NDEs can be a painful surprise</li>
+<li class="">Tests versioning strategy, patching discipline, and recovery tooling</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Workflow Task failure reasons</li>
+<li class="">Backlog growth and drain time</li>
+<li class="">Effectiveness of versioning and patching patterns</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="network-level-testing">Network-level testing<a href="#network-level-testing" class="hash-link" aria-label="Direct link to Network-level testing" title="Direct link to Network-level testing" translate="no">​</a></h2>
+<p>The scenarios below are most relevant if your infrastructure introduces network boundaries (such as firewalls, VPNs, or network policies) between Workers and the Temporal service, or if you need to verify application behavior during prolonged disconnections.</p>
+<p><strong>Relevant best practices</strong>: Idempotent Activities, bounded retries, appropriate timeouts</p>
+<ul>
+<li class=""><a href="https://temporal.io/blog/activity-timeouts" class="">Activity timeouts</a></li>
+<li class=""><a href="https://temporal.io/blog/idempotency-and-durable-execution" class="">Idempotency and durable execution</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="remove-network-connectivity-to-a-namespace">Remove network connectivity to a Namespace<a href="#remove-network-connectivity-to-a-namespace" class="hash-link" aria-label="Direct link to Remove network connectivity to a Namespace" title="Direct link to Remove network connectivity to a Namespace" translate="no">​</a></h3>
+<p><strong>What to test</strong></p>
+<p>Temporarily block all network access between Workers and the Temporal service for a Namespace.</p>
+<p><strong>Why it matters</strong></p>
+<ul>
+<li class="">Validates Worker retry behavior, Sticky Task Queue behavior, Worker recovery performance, backoff policies, and Workflow replay determinism under prolonged disconnection.</li>
+<li class="">Ensures no assumptions are made about &quot;always-on&quot; connectivity.</li>
+</ul>
+<p><strong>Temporal failure modes exercised</strong></p>
+<ul>
+<li class="">Workflow Task timeouts vs retries</li>
+<li class="">Activity retry semantics</li>
+<li class="">Replay correctness after long gaps</li>
+</ul>
+<p><strong>How to run this</strong></p>
+<ul>
+<li class=""><strong>Kubernetes</strong>: Apply a NetworkPolicy that denies egress from Worker pods to the Temporal APIs.</li>
+<li class=""><strong><a href="https://github.com/Shopify/toxiproxy" target="_blank" rel="noopener noreferrer" class="">ToxiProxy</a></strong>: Proves your application doesn&#x27;t have single points of failure.</li>
+<li class=""><strong>Chaos Mesh / Litmus</strong>: NetworkChaos with full packet drop.</li>
+<li class=""><strong>Local testing</strong>: Block ports with iptables or firewall rules.</li>
+</ul>
+<p><strong>Things to watch</strong></p>
+<ul>
+<li class="">Workflow failures (replay, timeout)</li>
+<li class="">Workflow Task retries</li>
+<li class="">Activity failures, classifications (retryable vs non-retryable)</li>
+<li class="">Worker CPU usage during reconnect storms</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="observability-checklist">Observability checklist<a href="#observability-checklist" class="hash-link" aria-label="Direct link to Observability checklist" title="Direct link to Observability checklist" translate="no">​</a></h2>
+<p>Before (and during) testing, ensure visibility into:</p>
+<ul>
+<li class="">Workflow Task and Activity failure rates</li>
+<li class="">Throughput limits and usage</li>
+<li class="">Workflow and Activity end-to-end latencies</li>
+<li class="">Task latency and backlog depth</li>
+<li class="">Event History size and event counts</li>
+<li class="">Worker CPU, memory, and restart counts</li>
+<li class="">gRPC error codes</li>
+<li class="">Retry behavior</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="game-day-runbook">Game day runbook<a href="#game-day-runbook" class="hash-link" aria-label="Direct link to Game day runbook" title="Direct link to Game day runbook" translate="no">​</a></h2>
+<p>Use this checklist when running tests during a scheduled game day or real incident simulation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="before-you-start">Before you start<a href="#before-you-start" class="hash-link" aria-label="Direct link to Before you start" title="Direct link to Before you start" translate="no">​</a></h3>
+<ul>
+<li class="">Make sure people know you&#x27;re testing and what scenarios you&#x27;re trying<!-- -->
+<ul>
+<li class="">Let the teams that support the APIs you&#x27;re calling know you&#x27;re testing</li>
+<li class="">Reach out to the Temporal Cloud Support and Account teams to coordinate</li>
+</ul>
+</li>
+<li class="">Dashboards for SDK and Cloud metrics<!-- -->
+<ul>
+<li class="">Task latency, backlog depth, Workflow failures, Activity failures</li>
+</ul>
+</li>
+<li class="">Alerts muted or routed appropriately</li>
+<li class="">Known-good deployment artifact available</li>
+<li class="">Rollback and scale controls verified</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="during-testing">During testing<a href="#during-testing" class="hash-link" aria-label="Direct link to During testing" title="Direct link to During testing" translate="no">​</a></h3>
+<ul>
+<li class="">Introduce <em>one variable at a time</em></li>
+<li class="">Record start/stop times of each experiment</li>
+<li class="">Capture screenshots or logs of unexpected behavior</li>
+<li class="">Track backlog growth and drain rate</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recovery-validation">Recovery validation<a href="#recovery-validation" class="hash-link" aria-label="Direct link to Recovery validation" title="Direct link to Recovery validation" translate="no">​</a></h3>
+<ul>
+<li class="">Workflows resume without manual intervention</li>
+<li class="">No permanent Workflow Task failures (unless intentional)</li>
+<li class="">Activity retries behave as expected</li>
+<li class="">Backlogs drain in predictable time</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="after-action-review">After action review<a href="#after-action-review" class="hash-link" aria-label="Direct link to After action review" title="Direct link to After action review" translate="no">​</a></h3>
+<ul>
+<li class="">Identify unclear alerts or missing metrics/alerts</li>
+<li class="">Update retry, timeout, or versioning policies</li>
+<li class="">Document surprises and operational debt</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary" translate="no">​</a></h2>
+<p>Pre-production testing with Temporal is about more than proving durability - it&#x27;s about proving <em>operability under stress</em>.
+You want to go through the exercise and know what to do before you go to production and have to do it for real.</p>
+<p>If your system survives:</p>
+<ul>
+<li class="">Connectivity issues</li>
+<li class="">Repeated failovers</li>
+<li class="">Greater than expected load</li>
+<li class="">Mass Worker churn</li>
+</ul>
+<p>...then you can have confidence it&#x27;s ready for many kinds of production chaos.</p></div>

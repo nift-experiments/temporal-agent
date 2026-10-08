@@ -1,0 +1,138 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/evaluate/use-cases-design-patterns.md">/evaluate/use-cases-design-patterns.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Temporal use cases and design patterns</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/evaluate/use-cases-design-patterns.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fevaluate%2Fuse-cases-design-patterns.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fevaluate%2Fuse-cases-design-patterns.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><p>Across industries, Temporal applications fall into a handful of shapes: a transaction that must not
+half-complete, a process that waits days for a person, an entity that accumulates state for years, a
+pipeline that fans out across GPUs. This page groups those shapes, names companies running each one
+in production, and points to the pattern or Guide that implements it.</p>
+<p><a href="/evaluate/why-temporal" class="">Why Temporal</a> covers what the platform replaces, and
+<a href="/evaluate/understanding-temporal" class="">Understanding Temporal</a> covers the vocabulary.
+<a href="/design-patterns" class="">Design Patterns</a> is the code-level catalog, and <a href="/guides" class="">Guides</a> are full
+implementation walkthroughs built on top of those patterns.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporal-in-production">Temporal in production<a href="#temporal-in-production" class="hash-link" aria-label="Direct link to Temporal in production" title="Direct link to Temporal in production" translate="no">​</a></h2>
+<p>These are the use cases where Temporal runs at scale today. For more companies and a deeper look at
+each, see <a href="https://temporal.io/in-use" class="">Temporal in use</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="transactions">Transactions<a href="#transactions" class="hash-link" aria-label="Direct link to Transactions" title="Direct link to Transactions" translate="no">​</a></h3>
+<p>Operations across two or more parties where a partial completion leaves money or data in the wrong
+state.</p>
+<ul>
+<li class=""><a href="https://temporal.io/resources/on-demand/stripe" class="">Payment processing at Stripe</a></li>
+<li class=""><a href="https://temporal.io/in-use/coinbase" class="">Money movement at Coinbase</a></li>
+<li class=""><a href="https://temporal.io/resources/case-studies/box" class="">Content management at Box</a></li>
+</ul>
+<p>Start with the <a href="/design-patterns/saga-pattern" class="">Saga pattern</a> to compensate for steps that already
+succeeded, and <a href="/design-patterns/non-retryable-errors" class="">Non-Retryable Errors</a> to fail fast on a
+rejection that no retry will fix. See
+<a href="/design-patterns/distributed-transaction-patterns" class="">distributed transaction patterns</a> to choose
+between them.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="business-processes">Business processes<a href="#business-processes" class="hash-link" aria-label="Direct link to Business processes" title="Direct link to Business processes" translate="no">​</a></h3>
+<p>A sequence of steps that ends in a service or product delivered to a customer, often with a person
+in the middle.</p>
+<ul>
+<li class=""><a href="https://temporal.io/replay/videos/temporal-adoption-and-integration-at-turo" class="">Bookings at Turo</a></li>
+<li class=""><a href="https://temporal.io/replay/videos/building-a-time-machine-for-the-logistics-industry" class="">Orders and logistics at Maersk</a></li>
+<li class=""><a href="https://medium.com/airbnb-engineering/journey-platform-a-low-code-tool-for-creating-interactive-user-workflows-9954f51fa3f8" target="_blank" rel="noopener noreferrer" class="">Marketing campaigns at Airbnb</a></li>
+<li class=""><a href="https://temporal.io/in-use/checkr" class="">Human-in-the-loop at Checkr</a></li>
+</ul>
+<p>Use the <a href="/design-patterns/approval" class="">Approval</a> pattern for the steps that block on a decision, and
+<a href="/design-patterns/updatable-timer" class="">Updatable Timer</a> for deadlines that move. The
+<a href="/guides/reliable-document-approvals" class="">reliable document approvals</a> Guide walks through a full
+implementation.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="entity-lifecycle">Entity lifecycle<a href="#entity-lifecycle" class="hash-link" aria-label="Direct link to Entity lifecycle" title="Direct link to Entity lifecycle" translate="no">​</a></h3>
+<p>A long-lived business entity — an account, a device, a loan application — that accumulates state
+over months or years.</p>
+<ul>
+<li class=""><a href="https://temporal.io/in-use/anz-story" class="">Mortgage underwriting at ANZ</a></li>
+<li class=""><a href="https://temporal.io/replay-2023/videos/synchronizing-concurrent-workflows" class="">Menu versioning at Yum! Brands</a></li>
+</ul>
+<p>Give each instance one <a href="/design-patterns/entity-workflow" class="">Entity Workflow</a> and drive every state
+transition with a Signal or an Update, then use
+<a href="/design-patterns/continue-as-new" class="">Continue-As-New</a> to keep Event History bounded. The
+<a href="/guides/entity-pattern-loyalty-points" class="">loyalty points</a> and
+<a href="/guides/durable-gaming-sessions" class="">gaming sessions</a> Guides show the pattern end to end.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="operations-and-infrastructure">Operations and infrastructure<a href="#operations-and-infrastructure" class="hash-link" aria-label="Direct link to Operations and infrastructure" title="Direct link to Operations and infrastructure" translate="no">​</a></h3>
+<p>Repeatable internal automation: provisioning, deployments, and scheduled maintenance.</p>
+<ul>
+<li class=""><a href="https://www.youtube.com/watch?v=Hz7ZZzafBoE" target="_blank" rel="noopener noreferrer" class="">Infrastructure services at Datadog</a></li>
+<li class=""><a href="https://temporal.io/replay-2023/videos/actor-workflows-reliably-orchestrating-thousands-of-flink-clusters-at" class="">Custom CI/CD at Netflix</a></li>
+</ul>
+<p>Run recurring work on a <a href="/schedule" class="">Schedule</a>, wait on external state with the
+<a href="/design-patterns/polling" class="">Polling</a> pattern, and route work to the right hardware with
+<a href="/design-patterns/worker-specific-taskqueue" class="">Worker-Specific Task Queues</a>. The
+<a href="/guides/route-specialized-workloads" class="">route specialized workloads</a> and
+<a href="/guides/temporary-rate-limit-increases" class="">temporary rate limit increases</a> Guides cover the routing
+and capacity cases.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="data-and-ai-pipelines">Data and AI pipelines<a href="#data-and-ai-pipelines" class="hash-link" aria-label="Direct link to Data and AI pipelines" title="Direct link to Data and AI pipelines" translate="no">​</a></h3>
+<p>Multi-step extraction, embedding, transcoding, or batch inference work that fans out and must resume
+without reprocessing what already finished.</p>
+<ul>
+<li class=""><a href="https://temporal.io/blog/ai-ml-and-data-engineering-workflows-with-temporal#descript" class="">Orchestrating video processing at Descript</a></li>
+<li class=""><a href="https://temporal.io/blog/ai-ml-and-data-engineering-workflows-with-temporal#neosync" class="">Automating data pipelines at Neosync</a></li>
+</ul>
+<p>Fan out with <a href="/design-patterns/fanout-child-workflows" class="">Child Workflows</a> or a
+<a href="/design-patterns/mapreduce-tree" class="">MapReduce Tree</a>, page through unbounded input with the
+<a href="/design-patterns/batch-iterator" class="">Batch Iterator</a>, and cap concurrency with a
+<a href="/design-patterns/sliding-window" class="">Sliding Window</a>. When pipelines share Workers across models or
+tenants, <a href="/develop/task-queue-priority-fairness" class="">Task Queue Priority and Fairness</a> dispatches urgent
+work ahead of bulk work and keeps one tenant from starving the others.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-agents">AI agents<a href="#ai-agents" class="hash-link" aria-label="Direct link to AI agents" title="Direct link to AI agents" translate="no">​</a></h3>
+<p>Agent loops are long-running and stateful, and the calls inside them fail: model requests time out,
+tools rate-limit, approvals take a day. The loop is a Workflow, each model call and tool call is an
+Activity, and a crash resumes the conversation instead of restarting it.</p>
+<ul>
+<li class=""><a href="https://temporal.io/resources/case-studies/lindy-reliability-observability-ai-agents-temporal-cloud" class="">Reliable, observable agents at Lindy</a></li>
+<li class=""><a href="https://temporal.io/blog/how-dust-builds-agentic-ai-temporal" class="">Long-running, durable agents at Dust</a></li>
+<li class=""><a href="https://temporal.io/resources/on-demand/account-summaries-gen-ai" class="">Account summaries with agents at ZoomInfo</a></li>
+</ul>
+<p><a href="/ai" class="">Durable AI</a> is the entry point for this work: runnable <a href="/ai/cookbook" class="">AI Cookbook</a> recipes for
+tool calling, MCP, structured output, and human-in-the-loop, plus the agent framework integrations
+for each SDK.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-application-patterns">Common application patterns<a href="#common-application-patterns" class="hash-link" aria-label="Direct link to Common application patterns" title="Direct link to Common application patterns" translate="no">​</a></h2>
+<p>Several shapes recur regardless of industry. Each one below has a reusable implementation in the
+<a href="/design-patterns" class="">Design Patterns</a> catalog.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-in-the-loop">Human in the loop<a href="#human-in-the-loop" class="hash-link" aria-label="Direct link to Human in the loop" title="Direct link to Human in the loop" translate="no">​</a></h3>
+<p>Some steps can&#x27;t proceed until a person acts: an onboarding form, an invoice approval, a manual
+fraud review. The wait is the hard part, because it can last days and the connection between the
+person and the rest of the system is unreliable.</p>
+<p>A Workflow handles this without a callback table or a polling job. It blocks on a
+<a href="/evaluate/features/workflow-message-passing" class="">Signal or Update</a>, sets a durable
+<a href="/workflow-execution/timers-delays#timer" class="">Timer</a> for the reminder or the deadline, and keeps its
+place across Worker restarts in between. See the <a href="/design-patterns/approval" class="">Approval</a> pattern for
+the reusable version and the <a href="https://learn.temporal.io/examples/go/background-checks/" class="">background checks example</a>
+for a complete application in Go.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="background-jobs-and-long-running-work">Background jobs and long-running work<a href="#background-jobs-and-long-running-work" class="hash-link" aria-label="Direct link to Background jobs and long-running work" title="Direct link to Background jobs and long-running work" translate="no">​</a></h3>
+<p>To run a single unit of work durably, use a <a href="/standalone-activity" class="">Standalone Activity</a>: a top-level
+Activity Execution started directly by a Client, with no Workflow around it. It gives you retries
+with backoff, an Activity ID and Run ID you can cancel or query, and deduplication at submit time,
+without running a broker. This is Temporal&#x27;s <a href="/evaluate/features/job-queue" class="">job queue</a>, and
+Standalone Activities are Generally Available. Teams moving off Celery, Sidekiq, or a homegrown
+queue can start with the <a href="/guides/celery-to-standalone-activity" class="">Celery migration Guide</a>.</p>
+<p>Jobs that take longer than a broker&#x27;s poll timeout are where this matters most. A message queue
+with a five-minute visibility timeout hands the same message to a second consumer while the first
+is still working; Temporal tracks the Activity Execution itself, so a long job doesn&#x27;t get
+duplicated. Report progress with an
+<a href="/encyclopedia/detecting-activity-failures#activity-heartbeat" class="">Activity Heartbeat</a> so a job that
+dies mid-run is detected before its Start-To-Close Timeout expires, and resumes from its last
+reported checkpoint. See the <a href="/design-patterns/long-running-activity" class="">Long-Running Activity</a>
+pattern.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="polyglot-systems">Polyglot systems<a href="#polyglot-systems" class="hash-link" aria-label="Direct link to Polyglot systems" title="Direct link to Polyglot systems" translate="no">​</a></h3>
+<p>Temporal has eight SDKs — <a href="/develop/dotnet" class="">.NET</a>, <a href="/develop/go" class="">Go</a>, <a href="/develop/java" class="">Java</a>,
+<a href="/develop/php" class="">PHP</a>, <a href="/develop/python" class="">Python</a>, <a href="/develop/ruby" class="">Ruby</a>, <a href="/develop/rust" class="">Rust</a>, and
+<a href="/develop/typescript" class="">TypeScript</a> — and Workflows written in different languages can call each
+other, so teams keep the language they already use.</p>
+<p>The <a href="https://github.com/temporalio/temporal-polyglot" target="_blank" rel="noopener noreferrer" class="">polyglot sample</a> shows Workflow Executions in
+Go, Java, PHP, and TypeScript sending messages to each other, including how errors propagate across
+the language boundary. For calls between teams that don&#x27;t share a Namespace, deploy schedule, or
+database, <a href="/evaluate/features/nexus" class="">Temporal Nexus</a> puts a service contract between them.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="state-machines">State machines<a href="#state-machines" class="hash-link" aria-label="Direct link to State machines" title="Direct link to State machines" translate="no">​</a></h3>
+<p>A state machine changes a system&#x27;s behavior in response to changes in its state. Applying one to a
+real business process usually means a transition table, a persistence layer for the current state,
+and a job to detect rows that got stuck — none of which is the process you set out to model.</p>
+<p>In Temporal, the current state is the position of a running Workflow. Express transitions as
+ordinary control flow and hold state in local variables, and Temporal persists it for you. The
+<a href="/design-patterns/entity-workflow" class="">Entity Workflow</a> pattern is the general form, and
+<a href="/design-patterns/entity-lifecycle-patterns" class="">entity lifecycle patterns</a> covers the variants. For the
+longer argument, see the
+<a href="https://pages.temporal.io/download-state-machines-simplified.html" class="">State Machines Simplified whitepaper</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="find-an-implementation">Find an implementation<a href="#find-an-implementation" class="hash-link" aria-label="Direct link to Find an implementation" title="Direct link to Find an implementation" translate="no">​</a></h2>
+<div class="pattern-grid"><a href="/design-patterns" class="pattern-card"><div class="pattern-content"><h3>Design patterns</h3><p>Reusable Workflow and Activity techniques with runnable code across SDKs, grouped by problem domain.</p></div></a><a href="/guides" class="pattern-card"><div class="pattern-content"><h3>Guides</h3><p>Step-by-step walkthroughs for specific use cases, written and verified by Temporal staff.</p></div></a><a href="/ai" class="pattern-card"><div class="pattern-content"><h3>Durable AI</h3><p>Agents, processing pipelines, and model training on Temporal, with cookbook recipes and framework integrations.</p></div></a><a href="https://temporal.io/code-exchange" class="pattern-card"><div class="pattern-content"><h3>Code Exchange</h3><p>Community and Temporal-built sample applications you can run and adapt.</p></div></a></div>
+<div class="theme-admonition theme-admonition-tip alert alert--success admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_vXIg"><p>To write your first Workflow, follow a <a href="https://learn.temporal.io/getting_started/" class="">getting started tutorial</a>,
+then work through the <a href="https://learn.temporal.io/tutorials/" class="">project-based tutorials</a> and
+<a href="https://learn.temporal.io/examples/" class="">example applications</a>.</p></div></div></div>

@@ -1,0 +1,512 @@
+<div class="theme-doc-markdown markdown"><div class="agentDirective_FrVc" aria-hidden="true" data-nosnippet="true">For the complete documentation index, see <a href="/llms.txt">/llms.txt</a>.<!-- --> <!-- -->This page is also available as raw Markdown at <a href="/references/web-ui-configuration.md">/references/web-ui-configuration.md</a>. Append<!-- --> <code>.md</code> to any page URL to fetch its Markdown.</div><header class="header__dxZ"><h1>Temporal Web UI configuration reference</h1><span style="display:contents" data-temporal-island="LLMActions" data-props="{}"><div class="container_wVlJ" data-analytics-component="llm-actions"><div class="row_zY8S"><button class="button_X457" title="Copy page markdown for use with LLMs" data-analytics-id="copy-for-llm" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"></path></svg>Copy for LLM</button><a class="button_X457" href="/references/web-ui-configuration.md" target="_blank" rel="noopener noreferrer" title="View this page as Markdown" data-analytics-id="view-as-markdown" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M593.8 59.1H46.2C20.7 59.1 0 79.8 0 105.2v301.5c0 25.5 20.7 46.2 46.2 46.2h547.7c25.5 0 46.2-20.7 46.1-46.1V105.2c0-25.4-20.7-46.1-46.2-46.1zM338.5 360.6H277v-120l-61.5 76.9-61.5-76.9v120H92.3V151.4h61.5l61.5 76.9 61.5-76.9h61.5v209.2zm135.3 3.1L381.5 256H443V151.4h61.5V256H566z"></path></svg><span>View Markdown</span></a><div class="openIn_eFQp"><a class="iconLink_uwir" href="https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fweb-ui-configuration.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in ChatGPT" aria-label="Open in ChatGPT" data-analytics-id="open-in-chatgpt" data-analytics-action="click"><svg viewBox="0 0 24 24" fill="currentColor" role="img" class="icon_f_bf" aria-hidden="true"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"></path></svg></a><a class="iconLink_uwir" href="https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Freferences%2Fweb-ui-configuration.md%20and%20answer%20questions%20about%20the%20content." target="_blank" rel="noopener noreferrer" title="Open in Claude" aria-label="Open in Claude" data-analytics-id="open-in-claude" data-analytics-action="click"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" class="icon_f_bf" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"></path></svg></a></div></div></div></span></header><div class="theme-admonition theme-admonition-info alert alert--info admonition_WoCw"><div class="admonitionHeading_TMsN"><span class="admonitionIcon_Ibzs"><svg x="0px" y="0px" viewBox="0 0 193.826 193.826"><path fill="currentColor" d="M191.495,55.511L137.449,1.465c-1.951-1.953-5.119-1.953-7.07,0l-0.229,0.229c-3.314,3.313-5.14,7.72-5.14,12.406  c0,3.019,0.767,5.916,2.192,8.485l-56.55,48.533c-4.328-3.868-9.852-5.985-15.703-5.985c-6.305,0-12.232,2.455-16.689,6.913  l-0.339,0.339c-1.953,1.952-1.953,5.118,0,7.07l32.378,32.378l-31.534,31.533c-0.631,0.649-15.557,16.03-25.37,28.27  c-9.345,11.653-11.193,13.788-11.289,13.898c-1.735,1.976-1.639,4.956,0.218,6.822c0.973,0.977,2.256,1.471,3.543,1.471  c1.173,0,2.349-0.41,3.295-1.237c0.083-0.072,2.169-1.885,13.898-11.289c12.238-9.813,27.619-24.74,28.318-25.421l31.483-31.483  l30.644,30.644c0.976,0.977,2.256,1.465,3.535,1.465s2.56-0.488,3.535-1.465l0.339-0.339c4.458-4.457,6.913-10.385,6.913-16.689  c0-5.851-2.118-11.375-5.985-15.703l48.533-56.55c2.569,1.425,5.466,2.192,8.485,2.192c4.687,0,9.093-1.825,12.406-5.14l0.229-0.229  C193.448,60.629,193.448,57.463,191.495,55.511z"></path></svg></span>info</div><div class="admonitionContent_vXIg"><p>To set these keys with environment variables in the <code>temporalio/ui</code> Docker image, see the
+<a href="/references/web-ui-environment-variables" class="">Temporal Web UI environment variables reference</a>.</p></div></div>
+<p>The Temporal Web UI Server reads its configuration from YAML files in its configuration directory.
+It loads <code>base.yaml</code> first, then the file for the current environment, such as <code>development.yaml</code>.
+Values in the environment file override values in <code>base.yaml</code>.</p>
+<p>The configuration structs are defined in
+<a href="https://github.com/temporalio/ui-server/blob/main/server/config/config.go" target="_blank" rel="noopener noreferrer" class="">config.go</a> in the ui-server repository.
+For a complete example, see
+<a href="https://github.com/temporalio/ui-server/blob/main/config/development.yaml" target="_blank" rel="noopener noreferrer" class="">development.yaml</a>.</p>
+<p>Each key on this page lists its <strong>environment variable</strong> and its <strong>default</strong>.
+The default is the value the Web UI Server uses when no configuration file sets the key.
+The Docker image sets its own defaults through environment variables.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="server-settings">Server settings<a href="#server-settings" class="hash-link" aria-label="Direct link to Server settings" title="Direct link to Server settings" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="temporalgrpcaddress"><code>temporalGrpcAddress</code><a href="#temporalgrpcaddress" class="hash-link" aria-label="Direct link to temporalgrpcaddress" title="Direct link to temporalgrpcaddress" translate="no">​</a></h3>
+<p>Address of the <a href="/temporal-service/temporal-server#frontend-service" class="">Frontend Service</a> that the Web UI Server connects
+to.
+The Web UI Server doesn&#x27;t start without this value.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_address" class=""><code>TEMPORAL_ADDRESS</code></a></li>
+<li class="">Default: <code>127.0.0.1:7233</code>, set in <code>base.yaml</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="host"><code>host</code><a href="#host" class="hash-link" aria-label="Direct link to host" title="Direct link to host" translate="no">​</a></h3>
+<p>Network interface that the Web UI Server listens on.
+When empty, the Web UI Server listens on every interface.</p>
+<ul>
+<li class="">Environment variable: none</li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="port"><code>port</code><a href="#port" class="hash-link" aria-label="Direct link to port" title="Direct link to port" translate="no">​</a></h3>
+<p>Port that the Web UI Server listens on for the browser UI and the HTTP API.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_ui_port" class=""><code>TEMPORAL_UI_PORT</code></a></li>
+<li class="">Default: <code>8233</code>, set in <code>base.yaml</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="publicpath"><code>publicPath</code><a href="#publicpath" class="hash-link" aria-label="Direct link to publicpath" title="Direct link to publicpath" translate="no">​</a></h3>
+<p>Subpath to serve the Web UI from, such as <code>/custom-path</code>.
+Leave it empty to serve the Web UI from the root path.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_ui_public_path" class=""><code>TEMPORAL_UI_PUBLIC_PATH</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="enableui"><code>enableUi</code><a href="#enableui" class="hash-link" aria-label="Direct link to enableui" title="Direct link to enableui" translate="no">​</a></h3>
+<p>Set to <code>true</code> to serve the browser UI.
+When <code>false</code>, the Web UI Server serves only its APIs.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_ui_enabled" class=""><code>TEMPORAL_UI_ENABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uiassetpath"><code>uiAssetPath</code><a href="#uiassetpath" class="hash-link" aria-label="Direct link to uiassetpath" title="Direct link to uiassetpath" translate="no">​</a></h3>
+<p>Directory to serve the Web UI&#x27;s static files from, instead of the files built into the Web UI Server.</p>
+<ul>
+<li class="">Environment variable: none</li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="cloudui"><code>cloudUi</code><a href="#cloudui" class="hash-link" aria-label="Direct link to cloudui" title="Direct link to cloudui" translate="no">​</a></h3>
+<p>Set to <code>true</code> to use the Temporal Cloud version of the Web UI.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_cloud_ui" class=""><code>TEMPORAL_CLOUD_UI</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="refreshinterval"><code>refreshInterval</code><a href="#refreshinterval" class="hash-link" aria-label="Direct link to refreshinterval" title="Direct link to refreshinterval" translate="no">​</a></h3>
+<p>How often the Web UI Server reloads its configuration files, such as <code>1m</code>.
+Set it to <code>0s</code> to turn off reloading.
+Settings that the Web UI Server reads only at startup, such as <code>host</code>, <code>port</code>, and <code>publicPath</code>, still need a restart.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_config_refresh_interval" class=""><code>TEMPORAL_CONFIG_REFRESH_INTERVAL</code></a></li>
+<li class="">Default: <code>0s</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="forwardheaders"><code>forwardHeaders</code><a href="#forwardheaders" class="hash-link" aria-label="Direct link to forwardheaders" title="Direct link to forwardheaders" translate="no">​</a></h3>
+<p>List of HTTP headers that the Web UI Server forwards from HTTP API requests to the Temporal Service&#x27;s gRPC API.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">forwardHeaders</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> X</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">Forwarded</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">For</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;forwardHeaders:\n  - X-Forwarded-For\n&quot;,&quot;code&quot;:&quot;forwardHeaders:\n  - X-Forwarded-For&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_forward_headers" class=""><code>TEMPORAL_FORWARD_HEADERS</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hidelogs"><code>hideLogs</code><a href="#hidelogs" class="hash-link" aria-label="Direct link to hidelogs" title="Direct link to hidelogs" translate="no">​</a></h3>
+<p>Set to <code>true</code> to stop the Web UI Server from printing its logs to the console.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_hide_logs" class=""><code>TEMPORAL_HIDE_LOGS</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="distribution"><code>distribution</code><a href="#distribution" class="hash-link" aria-label="Direct link to distribution" title="Direct link to distribution" translate="no">​</a></h3>
+<p>How the Web UI was installed: <code>cli</code>, <code>docker</code>, <code>helm</code>, or <code>server</code>.
+When <a href="#notifyonnewversion" class=""><code>notifyOnNewVersion</code></a> is <code>true</code>, the Web UI Server uses this value to choose which release
+to check for updates.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_ui_distribution" class=""><code>TEMPORAL_UI_DISTRIBUTION</code></a></li>
+<li class="">Default: empty, which the Web UI Server treats as <code>server</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="distributionversion"><code>distributionVersion</code><a href="#distributionversion" class="hash-link" aria-label="Direct link to distributionversion" title="Direct link to distributionversion" translate="no">​</a></h3>
+<p>Version of the distribution that installed the Web UI, such as the Temporal CLI version.
+Only the <code>cli</code> distribution uses this value.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_ui_distribution_version" class=""><code>TEMPORAL_UI_DISTRIBUTION_VERSION</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="web-ui-behavior-settings">Web UI behavior settings<a href="#web-ui-behavior-settings" class="hash-link" aria-label="Direct link to Web UI behavior settings" title="Direct link to Web UI behavior settings" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="defaultnamespace"><code>defaultNamespace</code><a href="#defaultnamespace" class="hash-link" aria-label="Direct link to defaultnamespace" title="Direct link to defaultnamespace" translate="no">​</a></h3>
+<p><a href="/namespaces" class="">Namespace</a> that the Web UI opens first.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_default_namespace" class=""><code>TEMPORAL_DEFAULT_NAMESPACE</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="feedbackurl"><code>feedbackUrl</code><a href="#feedbackurl" class="hash-link" aria-label="Direct link to feedbackurl" title="Direct link to feedbackurl" translate="no">​</a></h3>
+<p>URL that the Feedback button in the Web UI opens.
+When empty, the button opens the Web UI&#x27;s GitHub issues page.</p>
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_feedback_url" class=""><code>TEMPORAL_FEEDBACK_URL</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="showtemporalsystemnamespace"><code>showTemporalSystemNamespace</code><a href="#showtemporalsystemnamespace" class="hash-link" aria-label="Direct link to showtemporalsystemnamespace" title="Direct link to showtemporalsystemnamespace" translate="no">​</a></h3>
+<p>Set to <code>true</code> to show the Temporal System Namespace in the Web UI.
+The System Namespace holds the Workflow Executions that the Temporal Service runs internally.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_show_temporal_system_namespace" class=""><code>TEMPORAL_SHOW_TEMPORAL_SYSTEM_NAMESPACE</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="disablenewsfetch"><code>disableNewsFetch</code><a href="#disablenewsfetch" class="hash-link" aria-label="Direct link to disablenewsfetch" title="Direct link to disablenewsfetch" translate="no">​</a></h3>
+<p>Set to <code>true</code> to stop the Web UI from requesting the news feed.
+The Web UI also hides the button that opens the news feed panel.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_disable_news_fetch" class=""><code>TEMPORAL_DISABLE_NEWS_FETCH</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="notifyonnewversion"><code>notifyOnNewVersion</code><a href="#notifyonnewversion" class="hash-link" aria-label="Direct link to notifyonnewversion" title="Direct link to notifyonnewversion" translate="no">​</a></h3>
+<p>Set to <code>true</code> to show a notice in the Web UI when a newer release is available.
+The Web UI Server checks the release that matches <a href="#distribution" class=""><code>distribution</code></a>.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_notify_on_new_version" class=""><code>TEMPORAL_NOTIFY_ON_NEW_VERSION</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="navcollapsedbydefault"><code>navCollapsedByDefault</code><a href="#navcollapsedbydefault" class="hash-link" aria-label="Direct link to navcollapsedbydefault" title="Direct link to navcollapsedbydefault" translate="no">​</a></h3>
+<p>Set to <code>true</code> to collapse the left navigation and the saved views navigation when the Web UI loads.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_nav_collapsed_by_default" class=""><code>TEMPORAL_NAV_COLLAPSED_BY_DEFAULT</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hideworkflowqueryerrors"><code>hideWorkflowQueryErrors</code><a href="#hideworkflowqueryerrors" class="hash-link" aria-label="Direct link to hideworkflowqueryerrors" title="Direct link to hideworkflowqueryerrors" translate="no">​</a></h3>
+<p>Set to <code>true</code> to hide server errors from Workflow Queries in the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_hide_workflow_query_errors" class=""><code>TEMPORAL_HIDE_WORKFLOW_QUERY_ERRORS</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="refreshworkflowcountsdisabled"><code>refreshWorkflowCountsDisabled</code><a href="#refreshworkflowcountsdisabled" class="hash-link" aria-label="Direct link to refreshworkflowcountsdisabled" title="Direct link to refreshworkflowcountsdisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to stop the Web UI from refreshing the Workflow status counts on the Workflows page.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_refresh_workflow_counts_disabled" class=""><code>TEMPORAL_REFRESH_WORKFLOW_COUNTS_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflow-and-activity-action-settings">Workflow and Activity action settings<a href="#workflow-and-activity-action-settings" class="hash-link" aria-label="Direct link to Workflow and Activity action settings" title="Direct link to Workflow and Activity action settings" translate="no">​</a></h2>
+<p>These keys disable actions in the Web UI that change Workflow Executions or Activities.
+Each key hides or disables the matching control in the Web UI.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="disablewriteactions"><code>disableWriteActions</code><a href="#disablewriteactions" class="hash-link" aria-label="Direct link to disablewriteactions" title="Direct link to disablewriteactions" translate="no">​</a></h3>
+<p>Set to <code>true</code> to disable every action in the Web UI that changes a Workflow Execution or Activity, including batch
+actions.
+This key overrides the other keys in this section.</p>
+<p>The Web UI Server also rejects write requests to its HTTP API.
+Workflow Queries still work.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_disable_write_actions" class=""><code>TEMPORAL_DISABLE_WRITE_ACTIONS</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowterminatedisabled"><code>workflowTerminateDisabled</code><a href="#workflowterminatedisabled" class="hash-link" aria-label="Direct link to workflowterminatedisabled" title="Direct link to workflowterminatedisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from terminating Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_terminate_disabled" class=""><code>TEMPORAL_WORKFLOW_TERMINATE_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowcanceldisabled"><code>workflowCancelDisabled</code><a href="#workflowcanceldisabled" class="hash-link" aria-label="Direct link to workflowcanceldisabled" title="Direct link to workflowcanceldisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from canceling Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_cancel_disabled" class=""><code>TEMPORAL_WORKFLOW_CANCEL_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowsignaldisabled"><code>workflowSignalDisabled</code><a href="#workflowsignaldisabled" class="hash-link" aria-label="Direct link to workflowsignaldisabled" title="Direct link to workflowsignaldisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from sending Signals to Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_signal_disabled" class=""><code>TEMPORAL_WORKFLOW_SIGNAL_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowupdatedisabled"><code>workflowUpdateDisabled</code><a href="#workflowupdatedisabled" class="hash-link" aria-label="Direct link to workflowupdatedisabled" title="Direct link to workflowupdatedisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from sending Updates to Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_update_disabled" class=""><code>TEMPORAL_WORKFLOW_UPDATE_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowresetdisabled"><code>workflowResetDisabled</code><a href="#workflowresetdisabled" class="hash-link" aria-label="Direct link to workflowresetdisabled" title="Direct link to workflowresetdisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from resetting Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_reset_disabled" class=""><code>TEMPORAL_WORKFLOW_RESET_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="workflowpausedisabled"><code>workflowPauseDisabled</code><a href="#workflowpausedisabled" class="hash-link" aria-label="Direct link to workflowpausedisabled" title="Direct link to workflowpausedisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from pausing Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_workflow_pause_disabled" class=""><code>TEMPORAL_WORKFLOW_PAUSE_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="batchactionsdisabled"><code>batchActionsDisabled</code><a href="#batchactionsdisabled" class="hash-link" aria-label="Direct link to batchactionsdisabled" title="Direct link to batchactionsdisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from running batch actions on multiple Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_batch_actions_disabled" class=""><code>TEMPORAL_BATCH_ACTIONS_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="startworkflowdisabled"><code>startWorkflowDisabled</code><a href="#startworkflowdisabled" class="hash-link" aria-label="Direct link to startworkflowdisabled" title="Direct link to startworkflowdisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to prevent users from starting Workflow Executions from the Web UI.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_start_workflow_disabled" class=""><code>TEMPORAL_START_WORKFLOW_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="activitycommandsdisabled"><code>activityCommandsDisabled</code><a href="#activitycommandsdisabled" class="hash-link" aria-label="Direct link to activitycommandsdisabled" title="Direct link to activitycommandsdisabled" translate="no">​</a></h3>
+<p>Set to <code>true</code> to hide the commands for pending Activities in the Web UI.
+These commands pause, unpause, and reset an Activity, and update its options.</p>
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_activity_commands_disabled" class=""><code>TEMPORAL_ACTIVITY_COMMANDS_DISABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cors">cors<a href="#cors" class="hash-link" aria-label="Direct link to cors" title="Direct link to cors" translate="no">​</a></h2>
+<p>The <code>cors</code> section controls which origins can call the Web UI Server APIs and how the Web UI Server sets its
+cross-site request forgery (CSRF) cookie.
+CORS stands for Cross-Origin Resource Sharing.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">cors</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">allowOrigins</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> http</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//localhost</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token number" style="color:rgb(247, 140, 108)">3000</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">unsafeAllowAllOrigins</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">cookieInsecure</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;cors:\n  allowOrigins:\n    - http://localhost:3000\n  unsafeAllowAllOrigins: false\n  cookieInsecure: false\n&quot;,&quot;code&quot;:&quot;cors:\n  allowOrigins:\n    - http://localhost:3000\n  unsafeAllowAllOrigins: false\n  cookieInsecure: false&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class=""><code>allowOrigins</code>: List of origins that can make cross-origin requests to the Web UI Server APIs.
+A value of <code>*</code> allows every origin.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_cors_origins" class=""><code>TEMPORAL_CORS_ORIGINS</code></a></li>
+<li class="">Default: empty, which allows no cross-origin requests</li>
+</ul>
+</li>
+<li class=""><code>unsafeAllowAllOrigins</code>: Set to <code>true</code> to accept cross-origin requests from any origin and ignore <code>allowOrigins</code>.
+Use it only for local development.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_cors_unsafe_allow_all_origins" class=""><code>TEMPORAL_CORS_UNSAFE_ALLOW_ALL_ORIGINS</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>cookieInsecure</code>: Set to <code>true</code> to send the CSRF cookie over connections the browser considers insecure, such as
+plain HTTP.
+Use it only when something other than HTTPS secures the connection, such as a VPN.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_csrf_cookie_insecure" class=""><code>TEMPORAL_CSRF_COOKIE_INSECURE</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="auth">auth<a href="#auth" class="hash-link" aria-label="Direct link to auth" title="Direct link to auth" translate="no">​</a></h2>
+<p>The <code>auth</code> section configures sign-in to the Web UI through an identity provider (IdP).
+It controls who can access the Web UI, not authorization against the Temporal Service.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">auth</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">enabled</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">true</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">providers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">label</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> sso</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">type</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> oidc</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">providerUrl</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> https</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//accounts.google.com</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">issuerUrl</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">clientId</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> xxxxx</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">xxxx.apps.googleusercontent.com</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">clientSecret</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> xxxxxxxxxxxxxxxxxxxx</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">callbackUrl</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> https</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//xxxx.com</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">8080/auth/sso/callback</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">      </span><span class="token key atrule">scopes</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> openid</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> profile</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> email</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;auth:\n  enabled: true\n  providers:\n    - label: sso\n      type: oidc\n      providerUrl: https://accounts.google.com\n      issuerUrl:\n      clientId: xxxxx-xxxx.apps.googleusercontent.com\n      clientSecret: xxxxxxxxxxxxxxxxxxxx\n      callbackUrl: https://xxxx.com:8080/auth/sso/callback\n      scopes:\n        - openid\n        - profile\n        - email\n&quot;,&quot;code&quot;:&quot;auth:\n  enabled: true\n  providers:\n    - label: sso\n      type: oidc\n      providerUrl: https://accounts.google.com\n      issuerUrl:\n      clientId: xxxxx-xxxx.apps.googleusercontent.com\n      clientSecret: xxxxxxxxxxxxxxxxxxxx\n      callbackUrl: https://xxxx.com:8080/auth/sso/callback\n      scopes:\n        - openid\n        - profile\n        - email&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class=""><code>enabled</code>: Set to <code>true</code> to require users to sign in to the Web UI.
+The other <code>auth</code> keys take effect only when this key is <code>true</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_enabled" class=""><code>TEMPORAL_AUTH_ENABLED</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>redirectToProvider</code>: Set to <code>true</code> to skip the Web UI sign-in page and send users who aren&#x27;t signed in directly to
+the IdP.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_redirect_to_provider" class=""><code>TEMPORAL_AUTH_REDIRECT_TO_PROVIDER</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>maxSessionDuration</code>: Longest a user session can last, such as <code>8h</code> or <code>168h</code>.
+After this duration, users must sign in again even if their tokens are still valid.
+When empty, sessions have no maximum duration.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_max_session_duration" class=""><code>TEMPORAL_MAX_SESSION_DURATION</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>providers</code>: List of IdPs.
+The Web UI Server uses only the first provider in the list.<!-- -->
+<ul>
+<li class="">Default: empty</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="providers">providers<a href="#providers" class="hash-link" aria-label="Direct link to providers" title="Direct link to providers" translate="no">​</a></h3>
+<p>Each provider takes the following keys.
+When <code>enabled</code> is <code>true</code>, the Web UI Server doesn&#x27;t start unless <code>providerUrl</code>, <code>clientId</code>, and <code>callbackUrl</code> are set.</p>
+<ul>
+<li class=""><code>label</code>: Label for the IdP.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_label" class=""><code>TEMPORAL_AUTH_LABEL</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>type</code>: Authentication type.
+Only <code>oidc</code> is supported.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_type" class=""><code>TEMPORAL_AUTH_TYPE</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>providerUrl</code>: IdP URL that the Web UI Server uses for OpenID Connect (OIDC) discovery, such as
+<code>https://accounts.google.com</code>.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_provider_url" class=""><code>TEMPORAL_AUTH_PROVIDER_URL</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>issuerUrl</code>: URL of the token issuer.
+Set it only when the issuer differs from <code>providerUrl</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_issuer_url" class=""><code>TEMPORAL_AUTH_ISSUER_URL</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>clientId</code>: OAuth client ID that the IdP issued for the Web UI.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_client_id" class=""><code>TEMPORAL_AUTH_CLIENT_ID</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>clientSecret</code>: OAuth client secret that the IdP issued for the Web UI.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_client_secret" class=""><code>TEMPORAL_AUTH_CLIENT_SECRET</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>callbackUrl</code>: URL that the IdP redirects users to after they sign in, such as
+<code>https://xxxx.com:8080/auth/sso/callback</code>.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_callback_url" class=""><code>TEMPORAL_AUTH_CALLBACK_URL</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>scopes</code>: List of OIDC scopes to request, such as <code>openid</code>, <code>profile</code>, and <code>email</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_auth_scopes" class=""><code>TEMPORAL_AUTH_SCOPES</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>options</code>: Map of query parameters that the Web UI Server adds to the redirect URL for the IdP.
+Use it for IdP-specific sign-in flows, such as the Auth0 <code>audience</code> and <code>organization</code> parameters.<!-- -->
+<ul>
+<li class="">Environment variable: none</li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>useIdTokenAsBearer</code>: Set to <code>true</code> to send the ID token instead of the access token as the bearer token in the
+<code>Authorization</code> header.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_use_id_token_as_bearer" class=""><code>TEMPORAL_AUTH_USE_ID_TOKEN_AS_BEARER</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>refreshTokenDuration</code>: Lifetime of the refresh tokens that the IdP issues, such as <code>24h</code>.
+Set it only when the IdP issues opaque refresh tokens, because the Web UI Server can&#x27;t read their expiration.
+For JSON Web Token (JWT) refresh tokens, the Web UI Server uses the token&#x27;s <code>exp</code> claim and ignores this value.
+When neither is available, the Web UI Server assumes a lifetime of 7 days.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_auth_refresh_token_duration" class=""><code>TEMPORAL_AUTH_REFRESH_TOKEN_DURATION</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tls">tls<a href="#tls" class="hash-link" aria-label="Direct link to tls" title="Direct link to tls" translate="no">​</a></h2>
+<p>The <code>tls</code> section configures Transport Layer Security (TLS) for the Web UI Server&#x27;s connection to the Frontend Service.
+It doesn&#x27;t configure TLS for the Web UI itself.
+To serve the Web UI over HTTPS, see <a href="#uiservertls" class=""><code>uiServerTLS</code></a>.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">tls</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">caFile</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ../ca.cert</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">certFile</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ../cluster.pem</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">keyFile</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ../cluster.key</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">caData</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">certData</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">keyData</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">enableHostVerification</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">true</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">serverName</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> tls</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">server</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;tls:\n  caFile: ../ca.cert\n  certFile: ../cluster.pem\n  keyFile: ../cluster.key\n  caData:\n  certData:\n  keyData:\n  enableHostVerification: true\n  serverName: tls-server\n&quot;,&quot;code&quot;:&quot;tls:\n  caFile: ../ca.cert\n  certFile: ../cluster.pem\n  keyFile: ../cluster.key\n  caData:\n  certData:\n  keyData:\n  enableHostVerification: true\n  serverName: tls-server&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class=""><code>caFile</code>: Path to the Certificate Authority (CA) certificate that verifies the Frontend Service&#x27;s certificate.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_ca" class=""><code>TEMPORAL_TLS_CA</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>certFile</code>: Path to the client certificate that the Web UI Server presents to the Frontend Service for mutual TLS
+(mTLS).<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_cert" class=""><code>TEMPORAL_TLS_CERT</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>keyFile</code>: Path to the private key for the certificate in <code>certFile</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_key" class=""><code>TEMPORAL_TLS_KEY</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>caData</code>: PEM data for the CA certificate.
+Use it instead of <code>caFile</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_ca_data" class=""><code>TEMPORAL_TLS_CA_DATA</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>certData</code>: PEM data for the client certificate.
+Use it instead of <code>certFile</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_cert_data" class=""><code>TEMPORAL_TLS_CERT_DATA</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>keyData</code>: PEM data for the private key.
+Use it instead of <code>keyFile</code>.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_key_data" class=""><code>TEMPORAL_TLS_KEY_DATA</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>enableHostVerification</code>: Set to <code>true</code> to verify that the Frontend Service&#x27;s certificate matches its hostname.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_tls_enable_host_verification" class=""><code>TEMPORAL_TLS_ENABLE_HOST_VERIFICATION</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>serverName</code>: Overrides the server name sent for Server Name Indication (SNI) and checked against the Frontend
+Service&#x27;s certificate.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_tls_server_name" class=""><code>TEMPORAL_TLS_SERVER_NAME</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="uiservertls">uiServerTLS<a href="#uiservertls" class="hash-link" aria-label="Direct link to uiServerTLS" title="Direct link to uiServerTLS" translate="no">​</a></h2>
+<p>The <code>uiServerTLS</code> section configures the Web UI Server to serve the Web UI over HTTPS.
+The Web UI Server starts in TLS mode only when you set both keys.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">uiServerTLS</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">certFile</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ../ui</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">server.pem</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">keyFile</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> ../ui</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">server.key</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;uiServerTLS:\n  certFile: ../ui-server.pem\n  keyFile: ../ui-server.key\n&quot;,&quot;code&quot;:&quot;uiServerTLS:\n  certFile: ../ui-server.pem\n  keyFile: ../ui-server.key&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class=""><code>certFile</code>: Path to the certificate that the Web UI Server presents to browsers.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_ui_server_tls_cert" class=""><code>TEMPORAL_UI_SERVER_TLS_CERT</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>keyFile</code>: Path to the private key for the certificate in <code>certFile</code>.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_ui_server_tls_key" class=""><code>TEMPORAL_UI_SERVER_TLS_KEY</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="codec">codec<a href="#codec" class="hash-link" aria-label="Direct link to codec" title="Direct link to codec" translate="no">​</a></h2>
+<p>The <code>codec</code> section configures how the Web UI sends payloads to a <a href="/codec-server" class="">Codec Server</a> for decoding.</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#bfc7d5"><span class="token key atrule">codec</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">endpoint</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> https</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//your</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">codec</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">server</span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain">endpoint</span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">passAccessToken</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">includeCredentials</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  </span><span class="token key atrule">defaultErrorMessage</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class="token-line" style="color:#bfc7d5"><span class="token plain">  defaultErrorLink</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><br/></div></code></pre><span style="display:contents" data-temporal-island="CodeControls" data-props="{&quot;metadata&quot;:{&quot;codeInput&quot;:&quot;codec:\n  endpoint: https://your-codec-server-endpoint\n  passAccessToken: false\n  includeCredentials: false\n  defaultErrorMessage:\n  defaultErrorLink:\n&quot;,&quot;code&quot;:&quot;codec:\n  endpoint: https://your-codec-server-endpoint\n  passAccessToken: false\n  includeCredentials: false\n  defaultErrorMessage:\n  defaultErrorLink:&quot;,&quot;className&quot;:&quot;language-yaml&quot;,&quot;language&quot;:&quot;yaml&quot;,&quot;lineClassNames&quot;:{}}}"></span></div></div>
+<ul>
+<li class=""><code>endpoint</code>: URL of the Codec Server.<!-- -->
+<ul>
+<li class="">Environment variable: <a href="/references/web-ui-environment-variables#temporal_codec_endpoint" class=""><code>TEMPORAL_CODEC_ENDPOINT</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>passAccessToken</code>: Set to <code>true</code> to send the user&#x27;s access token in the <code>Authorization</code> header of requests to the
+Codec Server.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_codec_pass_access_token" class=""><code>TEMPORAL_CODEC_PASS_ACCESS_TOKEN</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>includeCredentials</code>: Set to <code>true</code> to include browser credentials, such as cookies, in requests to the Codec Server.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_codec_include_credentials" class=""><code>TEMPORAL_CODEC_INCLUDE_CREDENTIALS</code></a></li>
+<li class="">Default: <code>false</code></li>
+</ul>
+</li>
+<li class=""><code>defaultErrorMessage</code>: Message that the Web UI shows in its error banner when it can&#x27;t reach the Codec Server.
+When empty, the Web UI shows its built-in message.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_codec_default_error_message" class=""><code>TEMPORAL_CODEC_DEFAULT_ERROR_MESSAGE</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+<li class=""><code>defaultErrorLink</code>: Link that the Web UI shows in its error banner when it can&#x27;t reach the Codec Server.
+When empty, the Web UI links to
+<a href="/production-deployment/data-encryption#set-your-codec-server-endpoints-with-web-ui-and-cli" class="">Set your Codec Server endpoints with Web UI and CLI</a>.<!-- -->
+<ul>
+<li class="">Environment variable:
+<a href="/references/web-ui-environment-variables#temporal_codec_default_error_link" class=""><code>TEMPORAL_CODEC_DEFAULT_ERROR_LINK</code></a></li>
+<li class="">Default: empty</li>
+</ul>
+</li>
+</ul></div>

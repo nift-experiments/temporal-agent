@@ -1,0 +1,311 @@
+# tcld account command reference
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Account operations
+
+`tcld account`: Account operations.
+
+Alias: `a`
+
+- [tcld account get](#get)
+- [tcld account list-regions](#list-regions)
+- [tcld account audit-log](#audit-log)
+
+### get
+
+`tcld account get`: Get account information.
+
+Alias: `g`
+
+### list-regions
+
+`tcld account list-regions`: Lists all regions where the account can provision namespaces.
+
+Alias: `l`
+
+### audit-log
+
+`tcld account audit-log`: audit log commands.
+
+Alias: `al`
+
+- [tcld account audit-log kinesis](#kinesis)
+- [tcld account audit-log pubsub](#pubsub)
+
+#### kinesis
+
+`tcld account audit-log kinesis`: Manage Kinesis audit log sink.
+
+Alias: `k`
+
+- [tcld account audit-log kinesis create](#create)
+- [tcld account audit-log kinesis validate](#validate)
+- [tcld account audit-log kinesis update](#update)
+- [tcld account audit-log kinesis get](#get)
+- [tcld account audit-log kinesis delete](#delete)
+- [tcld account audit-log kinesis list](#list)
+
+##### create
+
+`tcld account audit-log kinesis create`: Create a kinesis audit log sink.
+
+Alias: `c`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --role-name
+
+The role name to use to write to the sink
+
+Alias: `rn`
+
+###### --destination-uri
+
+The destination URI of the audit log sink
+
+Alias: `du`
+
+###### --region
+
+The region to use for the request
+
+Alias: `re`
+
+##### validate
+
+`tcld account audit-log kinesis validate`: Validate kinesis audit log sink.
+
+Alias: `v`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --role-name
+
+The role name to use to write to the sink
+
+Alias: `rn`
+
+###### --destination-uri
+
+The destination URI of the audit log sink
+
+Alias: `du`
+
+###### --region
+
+The region to use for the request
+
+Alias: `re`
+
+##### update
+
+`tcld account audit-log kinesis update`: Update a kinesis audit log sink.
+
+Alias: `u`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --enabled
+
+Whether the sink is enabled
+
+###### --resource-version
+
+The resource-version (etag) to update from, if not set the cli will use the latest (optional)
+
+Alias: `v`
+
+###### --role-name
+
+The role name to use to write to the sink
+
+Alias: `rn`
+
+###### --destination-uri
+
+The destination URI of the audit log sink
+
+Alias: `du`
+
+###### --region
+
+The region to use for the request
+
+Alias: `re`
+
+##### get
+
+`tcld account audit-log kinesis get`: Get audit log sink.
+
+Alias: `g`
+
+###### --sink-name
+
+Provide a name for the sink
+
+##### delete
+
+`tcld account audit-log kinesis delete`: Delete audit log sink.
+
+Alias: `d`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --resource-version
+
+The resource-version (etag) to update from, if not set the cli will use the latest (optional)
+
+Alias: `v`
+
+##### list
+
+`tcld account audit-log kinesis list`: List audit log sinks.
+
+Alias: `l`
+
+###### --page-size
+
+The page size for list operations
+
+###### --page-token
+
+The page token for list operations
+
+#### pubsub
+
+`tcld account audit-log pubsub`: Manage PubSub audit log sink.
+
+Alias: `ps`
+
+- [tcld account audit-log pubsub create](#create)
+- [tcld account audit-log pubsub validate](#validate)
+- [tcld account audit-log pubsub update](#update)
+- [tcld account audit-log pubsub get](#get)
+- [tcld account audit-log pubsub delete](#delete)
+- [tcld account audit-log pubsub list](#list)
+
+##### create
+
+`tcld account audit-log pubsub create`: Create a pubsub audit log sink.
+
+Alias: `c`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --service-account-email
+
+The service account email to impersonate to write to the sink
+
+Alias: `sae`
+
+###### --topic-name
+
+The topic name to write to the sink
+
+Alias: `tn`
+
+##### validate
+
+`tcld account audit-log pubsub validate`: Validate pubsub audit log sink.
+
+Alias: `v`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --service-account-email
+
+The service account email to impersonate to write to the sink
+
+Alias: `sae`
+
+###### --topic-name
+
+The topic name to write to the sink
+
+Alias: `tn`
+
+##### update
+
+`tcld account audit-log pubsub update`: Update a pubsub audit log sink.
+
+Alias: `u`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --enabled
+
+Whether the sink is enabled
+
+###### --resource-version
+
+The resource-version (etag) to update from, if not set the cli will use the latest (optional)
+
+Alias: `v`
+
+###### --service-account-email
+
+The service account email to impersonate to write to the sink
+
+Alias: `sae`
+
+###### --topic-name
+
+The topic name to write to the sink
+
+Alias: `tn`
+
+##### get
+
+`tcld account audit-log pubsub get`: Get audit log sink.
+
+Alias: `g`
+
+###### --sink-name
+
+Provide a name for the sink
+
+##### delete
+
+`tcld account audit-log pubsub delete`: Delete audit log sink.
+
+Alias: `d`
+
+###### --sink-name
+
+Provide a name for the sink
+
+###### --resource-version
+
+The resource-version (etag) to update from, if not set the cli will use the latest (optional)
+
+Alias: `v`
+
+##### list
+
+`tcld account audit-log pubsub list`: List audit log sinks.
+
+Alias: `l`
+
+###### --page-size
+
+The page size for list operations
+
+###### --page-token
+
+The page token for list operations

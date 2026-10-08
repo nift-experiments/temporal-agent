@@ -1,0 +1,432 @@
+# Configure the Temporal Proxy
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Configure Temporal Proxy routing, upstreams, TLS, authentication, and payload encryption.
+
+> **Pre-release**
+> Temporal Proxy is under active development and evolving quickly. Behavior and configuration can change between
+> releases. See the [temporal-proxy repository](https://github.com/temporalio/temporal-proxy) for the current status and
+> the definitive configuration schema.
+
+The proxy reads a single YAML file. Three sections are the core of it: the gateway listener (`hostPort`), `routing`, and
+the `upstreams` it forwards to.
+
+Everything else is optional.
+
+- `allowedServices` narrows which gRPC services the proxy forwards
+- `tls` and `auth` secure and admit inbound connections
+- `encryption` seals payloads
+- `extensionServers` declares the servers `auth` and `encryption` delegate to
+- `health` tunes the liveness check
+- `metrics` configures the Prometheus endpoint
+- `apiTranslations` overrides how the proxy reaches Temporal Cloud's control plane
+
+Values support `${VAR}` and `$VAR` environment variable expansion, and an upstream's `hostPort` can be a template that
+resolves per request (for example, `{{ .RemoteNamespace }}`).
+
+The example below is the proxy's
+[Temporal Cloud example](https://github.com/temporalio/temporal-proxy/tree/main/examples/cloud), which connects a Worker
+to Temporal Cloud with an API key. The Worker carries no Cloud configuration: it talks plaintext to `127.0.0.1:7233`,
+and the proxy adds TLS, the API key, and the Namespace rewrite on the way out.
+
+```yaml
+# Gateway: the local endpoint your Workers and Clients connect to (plaintext).
+hostPort: 127.0.0.1:7233
+
+routing:
+  default: cloud # Namespaced requests.
+  system: system # Namespace-less requests (for example GetSystemInfo on connect).
+
+upstreams:
+  # Namespaced traffic. The host is derived per request from the translated
+  # Namespace, so one entry serves any number of Namespaces.
+  - name: cloud
+    hostPort: '{{ .RemoteNamespace }}.tmprl.cloud:7233'
+    namespaces:
+      rules:
+        suffix: .$TEMPORAL_ACCOUNT # quickstart becomes quickstart.<account>
+    credentials:
+      static:
+        apiKey: $TEMPORAL_API_KEY
+
+  # Namespace-less calls have no Namespace to derive a host from, so they use a
+  # fixed endpoint. Any Namespace endpoint in the account answers them.
+  - name: system
+    hostPort: ${TEMPORAL_NAMESPACE}.${TEMPORAL_ACCOUNT}.tmprl.cloud:7233
+    credentials:
+      static:
+        apiKey: ${TEMPORAL_API_KEY}
+```
+
+Neither upstream declares a `tls` block, because the proxy dials over TLS by default. See
+[Configure TLS](#configure-tls).
+
+The [chart `values.yaml`](https://github.com/temporalio/helm-charts/tree/main/charts/temporal-proxy) and the
+[temporal-proxy repository](https://github.com/temporalio/temporal-proxy) hold the complete, current set of options.
+
+## Restrict forwarded services
+
+The top-level `allowedServices` list names the gRPC services the proxy forwards, by proto full name. Omit it and the
+proxy forwards `WorkflowService` and `OperatorService`, which is what an SDK Client, a Worker, the CLI, and the Web UI
+need.
+
+```yaml
+allowedServices:
+  - temporal.api.workflowservice.v1.WorkflowService
+  - temporal.api.operatorservice.v1.OperatorService
+  - grpc.reflection.v1.ServerReflection
+```
+
+| Service                                           | Backs                                                                           | In the default set |
+| ------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------ |
+| `temporal.api.workflowservice.v1.WorkflowService` | Every SDK Client, Worker, and the Web UI                                        | Yes                |
+| `temporal.api.operatorservice.v1.OperatorService` | `temporal operator` commands, and the Web UI's Search Attribute and Nexus views | Yes                |
+| `grpc.reflection.v1.ServerReflection`             | Service discovery for tools such as `grpcurl`                                   | No                 |
+
+Those three are the whole set to select from. A name the proxy cannot forward fails the configuration at startup rather
+than at the first request.
+
+A service you leave out is never forwarded. The gateway answers a call to one with `Unimplemented` and
+`unknown service "<name>"`, decided before any upstream work, so the proxy behaves as a server that does not implement
+it rather than passing the call through.
+
+Service discovery is opt-in, so name the reflection service only when you want tools such as `grpcurl` to probe the
+gateway. Allowing `grpc.reflection.v1.ServerReflection` also allows the superseded
+`grpc.reflection.v1alpha.ServerReflection`, because clients probe `v1` and fall back to it. The relation runs one way:
+allowing only the superseded spelling does not allow the current one.
+
+## Health checks 
+
+The gateway serves the standard gRPC health service and publishes an entry for every allowed service under its proto
+full name, alongside the usual empty service name. Each entry reports the same status, since the proxy's health is
+process-wide. A Client health check that names a service, such as the Go SDK's `CheckHealth`, therefore gets a status,
+and so does a per-service liveness probe. A service your configuration does not allow returns `NOT_FOUND` instead of
+claiming a status.
+
+Behind that status is a liveness check the proxy runs against itself. On each interval it calls
+`grpc.health.v1.Health/Watch` over an in-process connection, reads one message, and reports whether the exchange was
+answered at all. `Watch` is a streaming method, so the call travels the same interceptor chain every forwarded request
+goes through, and a stall in that chain shows up in the reported status instead of going unnoticed. The call never
+leaves the process, so the check behaves the same whether the gateway serves plaintext, TLS, or mutual TLS.
+
+What the check does not cover is anything below that chain: accepting on the real listener, and the TLS handshake above
+it. Those belong to whatever probes the proxy from outside. See
+[Probe the gateway](/production-deployment/temporal-proxy/deploy-kubernetes#probe-the-gateway) for the Kubernetes side.
+
+Tune the cadence under the top-level `health` block. Both fields are optional:
+
+```yaml
+health:
+  interval: 30s # How often the liveness check runs. Defaults to 30s.
+  timeout: 5s # Bounds one run. Defaults to 5s.
+```
+
+`timeout` must be positive and strictly shorter than `interval`, so a check always finishes before the next one begins.
+A configuration that breaks that rule fails at startup.
+
+## Route requests
+
+The `routing` section selects an upstream for each request:
+
+- `default` is the fallback when no rule matches. It is optional; omit it to reject unmatched requests with an error.
+- `system` is the upstream for Namespace-less requests, such as the SDK's `GetSystemInfo` and `GetClusterInfo` calls. It
+  is optional; when unset, those requests fall back to `default`.
+- `rules` is an ordered list, evaluated top to bottom. The first match wins.
+
+Every upstream named by `default`, `system`, or a rule must exist in `upstreams`. Upstream `name` and `hostPort` values
+must each be unique across the list: two upstreams sharing a name make a routing reference ambiguous, and two sharing an
+address is a copy-paste error rather than a useful configuration.
+
+```yaml
+routing:
+  default: local # Fallback when no rule matches.
+  system: cloud # Namespace-less requests.
+  rules:
+    - match:
+        namespace: 'prod-*'
+        metadata:
+          x-tier: gold
+      upstream: cloud
+    - match:
+        namespace: '*-test'
+      upstream: local
+```
+
+A rule matches when its Namespace matches and every metadata condition matches (AND logic). A `match` must set at least
+one of `namespace` or `metadata`; an empty match is a configuration error, since that is what `default` is for. Routing
+runs on the local Namespace, before translation.
+
+`namespace` is a string literal or a simple glob with a single leading or trailing `*`:
+
+| Pattern    | Matches                     |
+| ---------- | --------------------------- |
+| `payments` | exactly `payments`          |
+| `prod-*`   | names starting with `prod-` |
+| `*-test`   | names ending with `-test`   |
+| `*-test-*` | names containing `-test-`   |
+| `*`        | any Namespace               |
+
+A `*` in any other position, such as `a*b`, is invalid.
+
+`metadata` matches gRPC request metadata (headers). Keys are case-insensitive and do not support wildcards; values use
+the same glob syntax as `namespace`. A key matches when any of the request's values for it match.
+
+## Translate Namespaces
+
+Applications connected to the proxy use short, local Namespace names. Each upstream rewrites those names to the ones its
+Temporal Service expects, under `namespaces.rules`. The rewrite applies to requests and is reversed on responses, so
+callers only ever see the local name.
+
+```yaml
+upstreams:
+  - name: cloud
+    hostPort: '{{ .RemoteNamespace }}.tmprl.cloud:7233'
+    namespaces:
+      rules:
+        prefix: '' # Optional string prepended to the local name.
+        suffix: .acct # payments becomes payments.acct
+        overrides: # Explicit pairs that bypass prefix and suffix.
+          - local: billing
+            remote: payments.acct
+```
+
+- `prefix` and `suffix` wrap every local Namespace: the remote name is `prefix + local + suffix`, and responses are
+  unwrapped back to the local name.
+- `overrides` lists explicit `local` and `remote` pairs for names that do not follow the prefix and suffix convention.
+  An override takes precedence over the prefix and suffix rules. Each local name and each remote name may appear only
+  once.
+
+An upstream's `hostPort` and `tls.serverName` can be Go templates resolved per request, so one upstream can serve many
+Namespaces. Available variables:
+
+- `{{ .LocalNamespace }}`: the Namespace before translation.
+- `{{ .RemoteNamespace }}`: the Namespace after translation.
+- `{{ .Metadata.<key> }}` or `{{ index .Metadata "<key>" }}`: a request metadata value.
+
+Upstreams with a static `hostPort` connect eagerly at startup; templated ones connect lazily on first use.
+
+### Translate to a Temporal Cloud upstream
+
+Temporal Cloud takes a fully qualified `<name>.<account-id>`, so the proxy checks the names a Cloud upstream's rules
+produce:
+
+- `suffix` must be `.<account-id>`.
+- Each override's `remote` must be a complete Cloud Namespace identifier.
+
+A Namespace name runs 2 to 39 characters, starts with a letter, ends with a letter or number, and holds only lowercase
+letters, numbers, and `-`. An account identifier runs 5 to 20 characters. Both are checked at startup, so rules that
+cannot produce a valid Cloud name fail before the proxy serves anything.
+
+The proxy recognizes Cloud from the address: any `.tmprl.cloud` host, templated ones included. A `tls.serverName` on the
+Cloud domain counts too, since a private-link upstream reaches Cloud through a per-VPC hostname but still pins Cloud's
+certificate. When neither names the Cloud domain, declare it:
+
+```yaml
+upstreams:
+  - name: cloud
+    hostPort: my-vpc-endpoint.example.internal:7233
+    cloud: true # Declare Cloud for an address carrying no Cloud domain.
+    namespaces:
+      rules:
+        suffix: .acct
+```
+
+A templated `hostPort` resolves per request, so the name it produces cannot be checked at startup. The proxy logs a
+warning when a translated name is not shaped like a Cloud Namespace and forwards the request unchanged.
+
+## Answer the methods Cloud does not serve
+
+Temporal Cloud does not serve every `WorkflowService` method on a Namespace endpoint. `ListNamespaces` is one this
+affects, for example: Cloud pins a request to the endpoint's Namespace, and a `ListNamespaces` request names none, so the call
+can never succeed on a Namespace frontend. Cloud exposes the same capability as `CloudService.GetNamespaces` on its
+control plane.
+
+The proxy answers such a call from the control plane and converts the reply back into the response the caller expected.
+This needs no configuration. It follows from an upstream already being Temporal Cloud, and the control plane is reached
+at `saas-api.tmprl.cloud:443` with that upstream's own credentials, since one Temporal Cloud API key authorizes both.
+The connection opens on first use rather than at startup, so a control plane you cannot reach does not stop the proxy
+serving everything else.
+
+Only Namespace-less calls are affected, which means only the upstream that serves them, named by `routing.system` or
+falling back to `routing.default`. To get the untranslated failure back, route those requests at a Temporal Service that
+serves them.
+
+Override the control plane under `apiTranslations.cloudApi`, which takes the same keys as an upstream:
+
+```yaml
+apiTranslations:
+  cloudApi:
+    hostPort: saas-api.tmprl.cloud:443 # Defaults to Cloud's control plane.
+    credentials:
+      static:
+        apiKey: ${TEMPORAL_CLOUD_API_KEY}
+```
+
+Set `cloudApi` in two cases:
+
+- **The upstream authenticates with a client certificate.** Set an API key under `credentials`. The Cloud Ops API
+  accepts only API keys, so the proxy has no credential to inherit from the upstream, and it refuses translated calls
+  until you provide one.
+- **You need to reach a different Cloud environment.** Set `hostPort` to that environment's control plane. If the
+  address isn't a Cloud endpoint, the proxy reports it at startup but still accepts it, because test doubles and private
+  environments often use addresses outside the Cloud domain.
+
+TLS is not inherited from the upstream, since the control plane is a different host and the upstream's server name or
+client certificate would not apply. The dial default stands instead, verifying against the system root pool.
+
+## Authenticate and authorize inbound requests
+
+Inbound authentication runs on the gateway and is off by default: omit the top-level `auth` block to accept all
+requests. When present, `auth` must select exactly one authenticator: `staticToken`, `jwks`, or `external`. The gateway
+decides before the request is routed, so nothing reaches an upstream until the caller is admitted, and it strips the
+credential before forwarding upstream.
+
+Compare an inbound bearer token against a fixed value with `staticToken`:
+
+```yaml
+auth:
+  staticToken:
+    token: ${GATEWAY_TOKEN} # Required. The expected token value.
+    header: authorization # Header to read the token from.
+    scheme: Bearer # Scheme prefix to strip before comparing.
+```
+
+Or verify a JWT's signature and claims against a JWKS endpoint with `jwks`:
+
+```yaml
+auth:
+  jwks:
+    url: https://issuer.example.com/.well-known/jwks.json # Required. Absolute https URL.
+    audiences:
+      - temporal-proxy
+    issuer: https://issuer.example.com/
+    header: authorization
+    scheme: Bearer
+```
+
+`token` (for `staticToken`) and `url` (for `jwks`) are required; the remaining fields are optional.
+
+### Delegate the decision to an extension server
+
+For an identity system neither built-in authenticator covers, or for a decision that turns on more than who the caller
+is, point `auth.external` at an extension server you run. Declare the server under the top-level `extensionServers`
+block, the same way you would a
+[key management backend](/production-deployment/temporal-proxy/encrypt-payloads#plug-in-your-own-key-management-backend),
+and the proxy asks it about every stream it accepts, forwarding only the ones it is told to admit.
+
+```yaml
+extensionServers:
+  - name: authz
+    hostPort: 127.0.0.1:9444
+
+auth:
+  external:
+    name: authz # Required. Names an entry in extensionServers.
+    credentialHeaders:
+      - authorization
+```
+
+`name` must match a configured extension server. `credentialHeaders` names the metadata headers that carry the caller's
+credentials: the proxy lifts those into the request it sends the extension server and removes them from the stream it
+forwards upstream, so a credential the server consumes never reaches the Temporal Service.
+
+Declaring no headers does not hide the caller's credentials from the extension server, since the proxy forwards the
+caller's other metadata on the call either way. What you lose is the field naming them, so the server has to know which
+metadata to read and cannot tell a header the proxy vouches for from any other. Nothing is stripped before forwarding
+upstream either, so the caller's credential continues to the upstream alongside any credential configured for it.
+
+The server implements `api.auth.v1.AuthService`, one RPC defined in
+[`api/auth/v1`](https://github.com/temporalio/temporal-proxy/tree/main/api/auth/v1). Each request carries what the call
+is addressing and who is making it:
+
+| Field              | Carries                                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `target.full_name` | The gRPC full method being invoked, leading slash included. Always set.                                           |
+| `target.namespace` | The Temporal Namespace the request names.                                                                         |
+| `credentials`      | One entry per declared header the caller sent, each with the canonical header name and every value sent under it. |
+
+Both `target` fields come from the stream rather than from anything the caller claims, so a caller cannot forge either
+by sending a header. `target.namespace` is empty when the method names no Namespace, when the caller sent no message to
+read one from, or when the service is not one the proxy forwards. Empty means unknown rather than a Namespace called
+nothing, so match a Namespace-scoped rule against `full_name` as well. `credentials` is empty when you declared no
+headers or the caller sent none of them, which is an unauthenticated caller rather than a trusted one.
+
+Answer with a `decision`:
+
+- `DECISION_ALLOW` admits the caller and is the only value that does. A response left unfilled is
+  `DECISION_UNSPECIFIED`, which denies, so there is no way to admit a caller by omission.
+- `DECISION_DENY` refuses the caller, who is told `PERMISSION_DENIED`.
+- `reason` is optional and written for whoever operates the server. The proxy records it and keeps it out of what a
+  refused caller is told, so it can name internal systems or subjects.
+
+Return a gRPC error only for reaching no verdict at all, such as a backend the server cannot itself reach. The proxy
+denies either way, but an error keeps its status code, so `UNAVAILABLE` or `DEADLINE_EXCEEDED` tells a Worker to retry
+where a denial tells it not to bother. A server that cannot reach its own backend should report that rather than admit
+the caller.
+
+The [authorization example](https://github.com/temporalio/temporal-proxy/tree/main/examples/authz) maps a JWT to claims
+and then decides each call against them, the two steps Temporal Server splits across its `ClaimMapper` and `Authorizer`.
+It includes a Worker that cannot reach a second Namespace and an auditor that can read Workflow History but not start a
+Workflow.
+
+## Present credentials to upstreams
+
+Each upstream can present its own credential to the Temporal Service, set under `credentials`. `static` is the only
+variant today; it injects a fixed API key as a bearer header on every outbound request, which is how you connect to
+Temporal Cloud:
+
+```yaml
+upstreams:
+  - name: cloud
+    hostPort: my-ns.acct.tmprl.cloud:7233
+    credentials:
+      static:
+        apiKey: ${TEMPORAL_API_KEY} # Required.
+        header: authorization # Optional header override.
+        scheme: Bearer # Optional scheme override.
+```
+
+Credentials require TLS to the upstream. The proxy dials over TLS by default, so this is only an issue when you also set
+`insecure: true`. Credentials on a plaintext hop fail the configuration at startup rather than putting the key on the
+wire in the clear.
+
+## Configure TLS 
+
+TLS is configured in two independent places, both using the same keys: `ca`, `cert`, `key`, and `serverName`. `ca`,
+`cert`, and `key` are paths to PEM files on disk, not inline PEM content. On Kubernetes, let the chart mount them from a
+Secret and fill in the paths for you, as described in
+[Supply TLS material](/production-deployment/temporal-proxy/deploy-kubernetes#supply-tls-material).
+
+The two directions default differently, because a dialer can fall back on the system root pool and a listener has no
+certificate to fall back on.
+
+**Inbound, on the gateway.** The top-level `tls` block secures connections from your applications. Set `cert` and `key`
+for server TLS, and add `ca` to enforce mutual TLS, which requires each client to present a certificate signed by that
+CA. A gateway with no `tls` block serves plaintext, which is what local development usually handles.
+
+**Outbound, per upstream.** Each upstream dials over TLS whether or not it declares a `tls` block:
+
+- No `tls` block verifies the upstream against the system root certificate pool and presents no client certificate. This
+  is what Temporal Cloud with an API key needs.
+- `ca` alone verifies the upstream against a private trust anchor, still presenting no client certificate.
+- `cert` and `key` together select mutual TLS and require `ca`. They must be set as a pair.
+- `insecure: true` dials plaintext, for a local development Service that terminates no TLS.
+
+Set `serverName` when the host you dial does not match the common name or SAN on the server's certificate.
+
+`insecure` and a `tls` block cannot be set together because they are opposite, so the configuration fails at startup
+rather than silently picking one. The same rules govern every outbound hop, so an `extensionServers` entry and the
+`apiTranslations.cloudApi` block read exactly the same way.
+
+> **📝 Note:**
+> Version note
+>
+> v0.6.0 made TLS the default for everything the proxy dials. Before it, an upstream with no `tls` block connected in
+> plaintext. A `tls: {}` block still means what it always did, so configurations that declared one keep working, but an
+> upstream that relied on the old plaintext default now needs `insecure: true`.
+>
+
+For payload encryption (envelope encryption, cloud KMS, and custom key backends), see
+[Encrypt payloads](/production-deployment/temporal-proxy/encrypt-payloads).

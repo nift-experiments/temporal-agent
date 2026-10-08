@@ -1,0 +1,364 @@
+# Temporal Client - Rust SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+A [Temporal Client](/encyclopedia/temporal-client) lets your application communicate with the Temporal Service. Use it to start Workflow Executions, send Signals, run Queries, fetch Workflow results, and more.
+
+For [Standalone Activities](/standalone-activity), a Temporal Client can also start and manage Standalone Activities directly, without involving a Workflow.
+
+This page shows how to do the following using the Rust SDK and Temporal Client:
+
+- [Connect to a local development Temporal Service](#connect-to-development-service)
+- [Connect to Temporal Cloud](#connect-to-temporal-cloud)
+- [Start a Workflow Execution](#start-workflow-execution)
+- [Get Workflow results](#get-workflow-results)
+
+A Temporal Client can't be created and used inside Workflow code. However, using a Temporal Client inside an Activity is acceptable when you need to communicate with the Temporal Service.
+
+## Connect to development Temporal Service 
+
+In Rust, create a client by establishing a `Connection` and then constructing a `Client`.
+You can provide connection options directly in code or load them from environment variables.
+
+When you are running Temporal locally, the minimal setup is typically a local server address and the `default` Namespace.
+
+**Configuration File**
+
+You can use a TOML configuration file to set connection options for the Temporal Client.
+The configuration file supports multiple profiles, each with its own connection options.
+
+If you don't specify a configuration file path, the SDK looks in the default OS-specific location.
+Environment variables take precedence over values from the configuration file.
+
+For example, the following TOML file defines two profiles:
+
+```toml title="temporal.toml"
+# Default profile for local development
+[profile.default]
+address = "localhost:7233"
+namespace = "default"
+
+# Optional: Add custom gRPC headers
+[profile.default.grpc_meta]
+my-custom-header = "development-value"
+trace-id = "dev-trace-123"
+
+# Production profile for Temporal Cloud
+[profile.prod]
+address = "your-namespace.a1b2c.tmprl.cloud:7233"
+namespace = "your-namespace"
+api_key = "your-api-key-here"
+
+# TLS configuration for production
+[profile.prod.tls]
+client_cert_path = "/etc/temporal/certs/client.pem"
+client_key_path  = "/etc/temporal/certs/client.key"
+
+# Custom headers for production
+[profile.prod.grpc_meta]
+environment     = "production"
+service-version = "v1.2.3"
+```
+
+Load the configuration and connect with the `prod` profile as follows:
+
+```rust
+use temporalio_client::{
+    Client, ClientOptions, Connection,
+    envconfig::LoadClientConfigProfileOptions,
+};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let (conn_opts, client_opts) = ClientOptions::load_from_config(
+        LoadClientConfigProfileOptions::builder()
+            .config_file_profile("prod".to_owned())
+            .build(),
+    )?;
+    let connection = Connection::connect(conn_opts).await?;
+    let client = Client::new(connection, client_opts)?;
+
+    ...
+
+    Ok(())
+}
+```
+
+**Environment Variables**
+
+You can also configure the Temporal Client with environment variables using `envconfig`. This is useful for local development, CI, and production deployments.
+
+```rust
+use temporalio_client::{
+    Client, ClientOptions, Connection,
+};
+use temporalio_sdk::{Runtime, Worker, WorkerOptions};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let runtime = Runtime::from_current_tokio(Default::default())?;
+    let (conn_opts, client_opts) =
+        ClientOptions::load_from_config(Default::default())?;
+    let connection = Connection::connect(conn_opts).await?;
+    let client = Client::new(connection, client_opts)?;
+
+    let worker_options = WorkerOptions::new("hello-world")
+        .register_workflow::<HelloWorldWorkflow>()?
+        .register_activities(GreetingActivities)
+        .build();
+
+    let mut worker = Worker::new(&runtime, client, worker_options)?;
+    println!("Worker started on task queue: hello-world");
+    worker.run().await?;
+
+    Ok(())
+}
+```
+
+**Code**
+
+You can also specify connection options directly in code. This is convenient for local development and testing.
+
+```rust
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let (conn_opts, client_opts) =
+        ClientOptions::load_from_config(Default::default())?;
+    let connection = Connection::connect(conn_opts).await?;
+    let client = Client::new(connection, client_opts)?;
+
+    let wf_handle = client
+        .start_workflow(
+            GreetingsWorkflow::run,
+            (),
+            WorkflowStartOptions::new("my-task-queue", "greetings-workflow-10").build(),
+        )
+        .await?;
+}
+```
+
+## Connect to Temporal Cloud 
+
+You can connect to Temporal Cloud using either an API key or mTLS. Connection to Temporal Cloud or any secured Temporal Service requires additional connection options compared to connecting to an unsecured local development instance:
+
+- Your authentication credentials:
+    - For API key authentication, provide the API key.
+    - If you are using mTLS, provide the mTLS CA certificate and mTLS private key.
+- Your _Namespace_ and _Account ID_ combination in the format `<namespace_id>.<account_id>`
+- The recommended gRPC endpoint for your Namespace, such as `<namespace>.<account>.tmprl.cloud:7233`
+
+For more information about managing and generating client certificates for Temporal Cloud, see [How to manage certificates in Temporal Cloud](/cloud/certificates).
+
+You can provide these connection options using environment variables, a configuration file, or directly in code.
+
+**Configuration File**
+
+You can define a Temporal Cloud profile in `temporal.toml`:
+
+```toml
+[profile.api]
+address = "your-namespace.a1b2c.tmprl.cloud:7233"
+namespace = "your-namespace"
+api_key = "your-api-key-here"
+```
+
+If you want to use mTLS instead of an API key:
+
+```toml
+[profile.mtls]
+address = "your-namespace.a1b2c.tmprl.cloud:7233"
+namespace = "your-namespace"
+
+[profile.mtls.tls]
+client_cert_path = "/path/to/client.pem"
+client_key_path = "/path/to/client.key"
+```
+
+Then load the profile and connect:
+
+```rust
+use temporalio_client::{
+    Client, ClientOptions, Connection,
+    envconfig::LoadClientConfigProfileOptions,
+};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let (conn_opts, client_opts) = ClientOptions::load_from_config(
+        LoadClientConfigProfileOptions::builder()
+            .config_file_profile("api".to_owned())
+            .build(),
+    )?;
+
+    // Client setup
+    let connection = Connection::connect(conn_opts).await?;
+    let client = Client::new(connection, client_opts)?;
+
+    println!("Connected to Temporal Cloud!");
+    Ok(())
+}
+```
+
+**Environment Variables**
+
+The following environment variables are commonly used to connect to Temporal Cloud:
+
+* `TEMPORAL_NAMESPACE`
+* `TEMPORAL_ADDRESS`
+* `TEMPORAL_API_KEY`
+* `TEMPORAL_TLS_CLIENT_CERT_DATA` or `TEMPORAL_TLS_CLIENT_CERT_PATH`
+* `TEMPORAL_TLS_CLIENT_KEY_DATA` or `TEMPORAL_TLS_CLIENT_KEY_PATH`
+
+After setting the environment variables, load the configuration and connect:
+
+```rust
+use temporalio_client::{
+    Client, ClientOptions, Connection,
+    envconfig::LoadClientConfigProfileOptions,
+};
+use temporalio_sdk::{Runtime, Worker, WorkerOptions};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let runtime = Runtime::from_current_tokio(Default::default())?;
+    let (conn_opts, client_opts) =
+        ClientOptions::load_from_config(LoadClientConfigProfileOptions::default())?;
+    let connection = Connection::connect(conn_opts).await?;
+    let client = Client::new(connection, client_opts)?;
+
+    let worker_options = WorkerOptions::new("hello-world")
+        .register_workflow::<HelloWorldWorkflow>()?
+        .register_activities(GreetingActivities)
+        .build();
+
+    let mut worker = Worker::new(&runtime, client, worker_options)?;
+    println!("Worker started on task queue: hello-world");
+    worker.run().await?;
+
+    Ok(())
+}
+```
+
+**Code**
+
+You can also specify connection options directly in code for Temporal Cloud.
+
+```rust
+use std::str::FromStr;
+use temporalio_client::{Client, ClientOptions, Connection, ConnectionOptions, Url};
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let connection_options = ConnectionOptions::new(Url::from_str(
+        "https://your-namespace.a1b2c.tmprl.cloud:7233",
+    )?)
+        .api_key("your-api-key")
+        .build();
+
+    let connection = Connection::connect(connection_options).await?;
+    let _client = Client::new(
+        connection,
+        ClientOptions::new("your-namespace").build(),
+    )?;
+
+    println!("Connected to Temporal Cloud!");
+    Ok(())
+}
+```
+
+With the default features, an mTLS client certificate is read when `Connection::connect` creates the connection.
+The `dynamic-tls` feature provides `TlsOptions::client_cert_resolver` for rotating client certificates without
+restarting the Worker; see
+[Update certificates using Temporal Cloud UI/tcld](/cloud/certificates#manage-certificates) for the zero-downtime
+staging sequence.
+
+## Start a Workflow Execution 
+
+To start a Workflow Execution, supply:
+
+- the Workflow Type
+- the Workflow input
+- a [Task Queue](/task-queue) that a Worker is polling
+- a [Workflow Id](/workflow-execution/workflowid-runid#workflow-id)
+
+Starting a Workflow Execution creates the first [WorkflowExecutionStarted](/references/events#workflowexecutionstarted) Event in the Event History, followed by the first [WorkflowTaskScheduled](/references/events#workflowtaskscheduled) Event.
+
+In Rust, use `start_workflow()` to start a Workflow and return a handle.
+
+```rust
+let handle = client.start_workflow(
+    GreetingsWorkflow::run,
+    (),
+    WorkflowStartOptions::new(
+        "my-task-queue",
+        "greetings-workflow-10",
+    ).build()
+).await?;
+```
+
+### Set a Workflow's Task Queue 
+
+The only Workflow Option that you must set is the name of the [Task Queue](/task-queue).
+
+For a Workflow to make progress, at least one Worker must be polling the same Task Queue.
+
+In Rust, set the Task Queue in `WorkflowStartOptions`:
+
+```rust
+let handle = client
+    .start_workflow(
+        GreetingsWorkflow::run,
+        (),
+        WorkflowStartOptions::new(
+            "your-task-queue", 
+            "your-workflow-id"
+        ).build(),
+    ).await?;
+```
+
+### Set a Workflow Id 
+
+You must set a [Workflow Id](/workflow-execution/workflowid-runid#workflow-id).
+
+A Workflow Id should usually map to a business process or business entity identifier, such as an order identifier or
+customer identifier.
+
+In Rust, set the Workflow Id in `WorkflowStartOptions`:
+
+```rust
+let handle = client
+    .start_workflow(
+        GreetingsWorkflow::run,
+        (),
+        WorkflowStartOptions::new(
+            "your-task-queue", 
+            "your-workflow-id"
+        ).build(),
+    ).await?;
+```
+
+## Get Workflow results 
+
+If starting a Workflow succeeds, you get a Workflow handle.
+You can use that handle to wait for the result, describe the Workflow, or interact with it through Signals, Queries, and Updates.
+
+To get the result of a newly started Workflow:
+
+```rust
+let handle = client
+    .start_workflow(
+        GreetingsWorkflow::run,
+        (),
+        WorkflowStartOptions::new(
+            "your-task-queue", 
+            "your-workflow-id"
+        ).build(),
+    ).await?;
+
+let result = handle
+    .get_result(WorkflowGetResultOptions::default())
+    .await?;
+
+println!("Result: {:?}", result);
+```

@@ -1,0 +1,88 @@
+markdown_mdx 11.259s { compiled: 777 }
+errors [] warnings 2
+browser_bundle 1.828s
+errors [] warnings 0
+retained_components_server_bundle 1.841s
+Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+react_ssr_or_html_source 3.071s
+shell_and_dependencies 5.511s
+static_and_browser_publication 0.160s
+Inherited Markdown warnings docs/cloud/manage-access/permissions-reference.mdx 1
+Inherited Markdown warnings docs/demos/priority-fairness-walkthrough.mdx 1
+Inherited Markdown warnings docs/demos/standalone-activities.mdx 1
+Inherited Markdown warnings docs/develop/dotnet/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/client/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/dotnet/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/go/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/go/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/go/client/index.mdx 2
+Inherited Markdown warnings docs/develop/go/index.mdx 2
+Inherited Markdown warnings docs/develop/go/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/go/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/go/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/go/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/java/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/java/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/java/client/index.mdx 2
+Inherited Markdown warnings docs/develop/java/index.mdx 2
+Inherited Markdown warnings docs/develop/java/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/java/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/java/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/java/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/php/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/php/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/php/client/index.mdx 2
+Inherited Markdown warnings docs/develop/php/index.mdx 2
+Inherited Markdown warnings docs/develop/php/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/php/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/php/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/python/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/python/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/python/client/index.mdx 2
+Inherited Markdown warnings docs/develop/python/index.mdx 2
+Inherited Markdown warnings docs/develop/python/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/python/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/python/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/python/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/client/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/ruby/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/client/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/rust/workflows/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/activities/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/best-practices/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/client/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/nexus/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/platform/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/workers/index.mdx 2
+Inherited Markdown warnings docs/develop/typescript/workflows/index.mdx 2
+Inherited Markdown warnings docs/encyclopedia/architecture/how-temporal-works.mdx 1
+Inherited Markdown warnings docs/guides/index.mdx 1
+✓ 776 tracked files are up to date
+time taken: 0.05818 seconds
+nift_composition 0.079s
+complete 25.232s
+(node:59) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

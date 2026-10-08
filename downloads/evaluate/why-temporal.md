@@ -1,0 +1,132 @@
+# Why Temporal?
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Durable Execution runs your code to completion across crashes and outages, keeping retries, state recovery, and queue plumbing out of your business logic.
+
+A process crashes halfway through a payment. An API times out on the third of five calls. A step
+waits three days for a person to approve it. The usual answer is retry logic, a state table, a
+message queue, a scheduler, and a reconciliation job — code that has nothing to do with the problem
+you set out to solve, and that you have to test and operate forever.
+
+Temporal runs your application code as a _Durable Execution_. Once started, a
+[Workflow](/workflows) runs to completion, whether that takes seconds or months. When a
+[Worker](/workers) crashes, the Temporal Service hands the work to another Worker, which
+replays the [Event History](/encyclopedia/event-history) and resumes at the line where execution
+stopped, with local variables and progress intact.
+
+> **💡 Tip:**
+> See Temporal in action
+> Watch the following video to see how Temporal ensures an order-fulfillment system can recover from various failures, from process crashes to unreachable APIs.
+>
+> [Watch: Recovering an order-fulfillment system from failures with Temporal](https://www.youtube.com/watch?v=dNVmRfWsNkM)
+
+## What Temporal replaces
+
+Most of what Temporal gives you is code you no longer have to maintain.
+
+| Problem                        | Without Temporal                                                    | With Temporal                                                                                            |
+| ------------------------------ | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| A step fails                   | Retry loops and backoff in every call site                          | A [Retry Policy](/encyclopedia/retry-policies) enforced by the Temporal Service                          |
+| A process crashes mid-sequence | State table, checkpoint columns, recovery job                       | Event History and [Replay](/workflow-execution#replay)                                                   |
+| A step takes days              | Scheduler, polling job, timeout sweeper                             | A [Timer](/workflow-execution/timers-delays#timer) in Workflow code, durable across restarts             |
+| A step needs a human           | Callback endpoint plus a table row to correlate it                  | [Signals, Updates, and Queries](/evaluate/features/workflow-message-passing) on a running Workflow       |
+| A transaction half-completes   | Hand-written compensation and cleanup                               | The [Saga pattern](/design-patterns/saga-pattern) in ordinary control flow                               |
+| Background jobs                | A broker, workers, a dead-letter queue, a dashboard                 | [Standalone Activities](/standalone-activity) as a [job queue](/evaluate/features/job-queue)             |
+| "What is this thing doing?"    | Log aggregation and inference                                       | The [Web UI](/web-ui), the [CLI](/cli), and a durable record of every step                               |
+
+## Failure handling you don't write
+
+Temporal moves failure handling from your application into the platform. An
+[Activity](/activities) that calls an external service gets timeouts, retries with exponential
+backoff, and heartbeats from configuration rather than from code you wrote. A Workflow that
+orchestrates several Activities keeps its place across Worker restarts, deploys, and
+[Temporal Service](/temporal-service) upgrades.
+
+What you write is the business logic: call this service, wait for that approval, then charge the
+card. What you skip is the layer underneath it.
+
+## One programming model, from one job to a whole system
+
+The same Activity function runs at three scales, so an early decision doesn't lock you in:
+
+- **One job.** A [Standalone Activity](/standalone-activity) is a single Activity Execution started
+  directly by a Client, with no Workflow around it. It's Temporal's
+  [job queue](/evaluate/features/job-queue): durable retries, a Run ID you can cancel or query,
+  and deduplication at submit time, without running a broker. Teams moving off Celery, Sidekiq, or
+  a homegrown queue can start here — see the
+  [Celery migration guide](/guides/celery-to-standalone-activity).
+- **One process.** Wrap several Activities in a Workflow when you need ordering, state between
+  steps, or compensation. The Activity code doesn't change.
+- **Many teams.** [Temporal Nexus](/evaluate/features/nexus) connects Workflows across isolated
+  Namespaces through a service contract, so one team can call another team's process without
+  sharing a Namespace, a database, or a deploy schedule.
+
+The [Design Patterns](/design-patterns) library covers some common cases like, entity Workflows,
+fan-out, sliding windows, polling, early return, distributed transactions.
+
+## Deploy changes to code that's already running
+
+Long-running Workflows outlive the code that started them, which is the hardest part of operating
+one. [Worker Versioning](/worker-versioning) pins each Workflow Execution to the Worker Deployment
+Version it started on, so a running execution finishes on the code it began with while new
+executions go to the new version. You get gradual traffic ramps, verification before production
+traffic, and instant rollback. For most teams deploying Workflow code changes, this is the default
+approach.
+
+## Keep work moving under load
+
+A shared Task Queue eventually has a noisy neighbor: one tenant's bulk import starving everyone
+else, or a batch job crowding out interactive requests.
+[Task Queue Priority and Fairness](/develop/task-queue-priority-fairness) handles both in the
+platform. Priority dispatches urgent Tasks ahead of bulk work, and Fairness keeps one key, like a
+tenant, a customer, a model, from monopolizing a priority level. Both work on Temporal Cloud and
+self-hosted deployments, and Priority is on by default.
+
+## See and steer what's running
+
+Every Workflow Execution carries a complete, durable record of what happened, so debugging starts
+from evidence instead of reconstruction.
+
+- The [Web UI](/web-ui) shows the input, output, and Event History of any execution, including
+  which Activity failed and with what error.
+- The [Temporal CLI](/cli) starts, inspects, cancels, and terminates executions from a terminal or
+  a script.
+- [List Filters](/list-filter) and Search Attributes query executions by business data, so "every
+  order stuck awaiting fraud review" is one query.
+- [Workflow Pause](/encyclopedia/workflow/workflow-pause) holds a specific execution in place during
+  an incident or a dependency outage, without terminating it or losing state.
+- SDK and Temporal Service [metrics](/evaluate/features/observability) feed Prometheus, Datadog,
+  Elastic, and other OpenMetrics consumers for the aggregate view.
+
+## Durable AI agents
+
+Agent loops are long-running, stateful, and full of calls that fail: LLM requests that time out,
+tools that rate-limit, approvals that take a day. These are the failure modes Temporal already
+handles, which is why agents run on the same primitives as everything else. The loop is a
+Workflow, each model call and tool call is an Activity, and a crash resumes the conversation
+instead of restarting it.
+
+[Durable AI](/ai) covers the cookbook recipes, the design patterns for agent workloads, and
+integrations with the SDKs and frameworks teams build agents on. If instead you want a coding
+assistant to help you write Temporal code, see [Develop with AI](/with-ai).
+
+## Where your code runs
+
+Temporal has eight SDKs — [.NET](/develop/dotnet), [Go](/develop/go), [Java](/develop/java),
+[PHP](/develop/php), [Python](/develop/python), [Ruby](/develop/ruby), [Rust](/develop/rust), and
+[TypeScript](/develop/typescript) — and Workflows in different languages can call each other, so a
+polyglot organization doesn't have to standardize first. Your code runs in your own infrastructure: Workers execute Workflows and Activities and see
+your data, while the Temporal Service orchestrates and records.
+
+Run the Temporal Service yourself, or use [Temporal Cloud](/evaluate/cloud) and skip operating the
+database, the shards, and the multi-region failover. For Workers,
+[Serverless Workers](/evaluate/features/serverless-workers) run on AWS Lambda or GCP Cloud Run with
+no Worker process to keep alive and no idle compute to pay for.
+
+## Next steps
+
+- [Understanding Temporal](/evaluate/understanding-temporal): How the Temporal Service, Workers, Workflows, and Activities fit together to run your application code.
+- [Features](/evaluate/features): The development and production capabilities available through a Temporal SDK, from core primitives to observability.
+- [Use cases](/evaluate/use-cases-design-patterns): How organizations run Temporal in production, and the architectural design patterns behind those applications.

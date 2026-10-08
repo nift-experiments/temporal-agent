@@ -1,0 +1,533 @@
+# Namespaces
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> **ℹ️ Info:**
+> Temporal Cloud
+> This page covers namespace operations in **Temporal Cloud**.
+> For core namespace concepts, see [Temporal Namespace](/namespaces).
+> For open source Temporal, see [Managing Namespaces](/self-hosted-guide/namespaces).
+
+A Namespace is a unit of isolation within Temporal Cloud, providing security boundaries, Workflow management, unique
+identifiers, and gRPC endpoints in Temporal Cloud.
+
+- [Create a Namespace](#create-a-namespace)
+- [Access a Namespace](#access-namespaces)
+- [Manage Namespaces](#manage-namespaces)
+- [Delete a Namespace](#delete-a-namespace)
+- [Tag a Namespace](#tag-a-namespace)
+- [Add a Namespace description](#describe-a-namespace)
+
+## What is a Cloud Namespace Name? 
+
+A Cloud Namespace Name is a customer-supplied name for a [Namespace](/namespaces) in Temporal Cloud. Each Namespace
+Name, such as `accounting-production`, is unique within the scope of a customer's account. It cannot be changed after
+the Namespace is provisioned.
+
+Each Namespace Name must conform to the following rules:
+
+- A Namespace Name must contain at least 2 characters and no more than 39 characters.
+- A Namespace Name must begin with a letter, end with a letter or number, and contain only letters, numbers, and the
+  hyphen (-) character.
+- All letters in a Namespace Name must be lowercase.
+
+> **📝 Note:**
+> The Namespace Name alone is not sufficient to connect to or reference a Namespace. All Temporal Cloud operations — SDK connections, CLI commands, and API calls — require the full **Namespace ID**, which combines your Namespace Name with your Account ID:
+>
+> `<namespace-name>.<account-id>`
+>
+> For example: `accounting-production.123de`
+>
+> The full Namespace ID is shown in the Namespace list in the Temporal Cloud UI and in the output of the `namespace list` command. See [Cloud Namespace ID](#temporal-cloud-namespace-id) for details.
+
+## What is a Temporal Cloud Account ID? 
+
+A Temporal Cloud Account ID is a unique customer identifier assigned by Temporal Technologies. Each Id is a short string
+of numbers and letters like `f45a2`, at least five characters long. This account identifier is part of every Namespace ID
+in your account and is retained while you use Temporal Cloud.
+
+You can retrieve your Account ID from the [Temporal Cloud](https://cloud.temporal.io) Web UI or from the command line.
+Follow these steps.
+
+**Web UI**
+
+    Follow these steps to retrieve your Account ID:
+
+    1. Log into Temporal Cloud.
+    1. Select your account avatar at the top right of the page.
+       A profile dropdown menu appears.
+    1. Copy the Cloud Account ID from the menu.
+![Temporal Cloud user profile dropdown menu. The dropdown includes a Cloud Account ID and copy button, with role, profile and logout options, and links to community resources.](/img/cloud/cloud-guide/cloud-account-id.png)
+
+    In this example, the Account ID is `123de`.
+
+**Temporal CLI**
+
+    1. Use the Temporal Cloud extension to log into an account.
+
+       ```
+       temporal cloud login
+       ```
+
+       Complete the interactive login in the browser window that opens.
+
+    1. Return to the command line and list your Namespaces.
+
+       ```
+       temporal cloud namespace list
+       ```
+
+       Each Namespace uses an Account ID suffix, the same as in the Temporal Cloud Web UI Namespaces list.
+
+**tcld**
+
+    1. Use the `tcld` utility to log into an account.
+
+       ```
+       tcld login
+       ```
+
+       The `tcld` output presents a URL with an activation code at the end. Take note of this code. The utility blocks until the login/activation process completes.
+
+       ```
+       Login via this url: https://login.tmprl.cloud/activate?user_code=KTGC-ZPWQ
+       ```
+
+       A Web page automatically opens for authentication in your default browser.
+
+    1. Visit the browser.
+       Ensure the user code shown by the CLI utility matches the code shown in the Web browser.
+       Then, click Confirm in the browser to continue.
+       After confirmation, Web feedback lets you know that the CLI "device" is now connected.
+
+    1. Return to the command line.
+       Issue the following command.
+
+       ```
+       tcld namespace list
+       ```
+
+       The CLI tool returns a short JSON packet with your namespace information.
+       This is the same list found in the Temporal Cloud Web UI Namespaces list.
+       Like the browser version, each Namespace uses an Account ID suffix.
+
+       ```
+       {
+         "namespaces": [
+           "your-namespace.123de",
+           "another-namespace.123de"
+         ],
+         "nextPageToken": ""
+       }
+       ```
+
+    Each Namespace automatically appends an Account ID suffix to its customer-supplied identifier.
+    This five-character-or-longer string appears after the name, separated by a period.
+    In this Namespace listing sample, the Account ID is 123de.
+
+## What is a Cloud Namespace Id? 
+
+A Cloud Namespace Id is a globally unique identifier for a [Namespace](/namespaces) in Temporal Cloud. A Namespace Id is
+formed by concatenating the following:
+
+1. A [Namespace Name](#temporal-cloud-namespace-name)
+1. A period (.)
+1. The [Account ID](#temporal-cloud-account-id) to which the Namespace belongs
+
+For example, for the Account ID `123de` and Namespace Name `accounting-production`, the Namespace Id is
+`accounting-production.123de`.
+
+## What is a Cloud gRPC Endpoint? 
+
+Temporal Clients communicate between application code and a Temporal Server by sending and receiving messages via the
+gRPC protocol. gRPC is a Remote Procedure Call framework featuring low latency and high performance. gRPC provides
+Temporal with an efficient, language-agnostic communication framework.
+
+Every Temporal Namespace uses a gRPC endpoint for communication. When migrating to Temporal Cloud, you'll need to switch
+the gRPC endpoint in your code from your current hosting, whether self-hosted or locally-hosted, to Temporal Cloud.
+
+A gRPC endpoint appears on the detail page for each Cloud Namespace. Follow these steps to find it:
+
+1. Log into your account on [cloud.temporal.io](https://cloud.temporal.io/namespaces).
+2. Navigate to the Namespace list page from the left-side vertical navigation.
+3. Tap or click on the Namespace Name to select and open the page for the Namespace whose endpoint you want to retrieve.
+4. On the Namespace detail page, click on the "Connect" button in the top right corner of the page.
+5. Click the copy icon next to the gRPC address to copy it to your clipboard.
+
+See [How to access a Namespace in Temporal Cloud](/cloud/namespaces/#access-namespaces) for more information on
+different gRPC endpoint types and how to access them.
+
+## How to create a Namespace in Temporal Cloud 
+
+> **ℹ️ Info:**
+>
+> The user who creates a [Namespace](/namespaces) is automatically granted
+> [Namespace Admin](/cloud/manage-access/roles-and-permissions#namespace-level-permissions) permission for that Namespace.
+>
+> To create a Namespace, a user must have the Developer, Account Owner, or Global Admin account-level
+> [Role](/cloud/manage-access/roles-and-permissions#account-level-roles).
+>
+
+> **💡 Tip:**
+>
+> By default, each account starts with 10 Namespaces. This limit increases automatically when your existing Namespaces have scheduled or running Workflow Executions. For large-scale needs, open a [support ticket](/evaluate/cloud/support#support-ticket).
+>
+
+### Information needed to create a Namespace
+
+To create a Namespace in Temporal Cloud, gather the following information:
+
+- [Namespace Name](/cloud/namespaces#temporal-cloud-namespace-name), region, and Cloud Provider
+- Optional [Namespace description](#describe-a-namespace)
+- [Retention Period](/temporal-service/temporal-server#retention-period) for the
+  [Event History](/workflow-execution/event#event-history) of closed [Workflow Executions](/workflow-execution).
+- [CA certificate](/cloud/certificates#certificate-requirements) for the Namespace, if you are using mTLS
+  authentication.
+- [Codec Server endpoint](/production-deployment/data-encryption#set-your-codec-server-endpoints-with-web-ui-and-cli) to
+  show decoded payloads to users in the Event History for Workflow Executions in the Namespace. For details, see
+  [Securing your data](/production-deployment/data-encryption).
+- [Permissions](/cloud/manage-access/roles-and-permissions#namespace-level-permissions) for each user.
+
+**Web UI**
+
+### Create a Namespace using Temporal Cloud UI
+
+1. Gather the information listed earlier in
+   [Information needed to create a Namespace](#information-needed-to-create-a-namespace).
+1. Go to the Temporal Cloud UI and log in.
+1. On the left side of the window, click **Namespaces**.
+1. On the **Namespaces** page, click **Create Namespace** in the upper-right portion of the window.
+1. On the **Create Namespace** page in **Name**, enter the Namespace Name.
+1. Optional: In **Description**, enter a short purpose note (at most 255 printable ASCII characters plus whitespace).
+   This is free-text context, not a Tag. Do not include secrets, confidential data, or PII. Descriptions are not
+   encrypted.
+1. In **Cloud Provider**, select the cloud provider in which to host this Namespace.
+1. In **Region**, select the region in which to host this Namespace.
+1. In **Retention Period**, specify a value from 1 to 90 days. When choosing this value, consider your needs for Event
+   History versus the cost of maintaining that Event History. Typically, a development Namespace has a short retention
+   period and a production Namespace has a longer retention period. The retention period of a namespace can be changed
+   in the Temporal Cloud UI under the namespace's Settings tab or by using the Temporal CLI.
+1. Select your authentication method: [API keys](/cloud/api-keys) or [mTLS](/cloud/certificates).
+1. If using mTLS authentication, paste the CA certificate for this Namespace.
+1. Optional: In **Codec Server**, enter the HTTPS URL (including the port number) of your Codec Server endpoint. You may
+   also enable "Pass the user access token with your endpoint" and "Include cross-origin credentials." For details, see
+   [Hosting your Codec Server](/production-deployment/data-encryption#set-your-codec-server-endpoints-with-web-ui-and-cli).
+1. Click **Create Namespace**.
+
+**Temporal CLI**
+
+See the [`temporal cloud namespace create`](/cli/command-reference/cloud/namespace#create) command reference for details.
+
+**Cloud Operations API**
+
+Use the
+[`CreateNamespace` API](https://saas-api.tmprl.cloud/docs/httpapi.html#tag/namespaces/POST/cloud/namespaces)
+to create a Namespace. Pass an optional `description` on `spec`.
+
+```
+curl -sS -X POST "$BASE/cloud/namespaces" \
+  -H "$H_AUTH" -H "$H_VER" -H "Content-Type: application/json" \
+  -d '{
+    "spec": {
+      "name": "payments-prod",
+      "regions": ["aws-us-west-2"],
+      "retentionDays": 30,
+      "apiKeyAuth": { "enabled": true },
+      "description": "Finance data integrations for Elevate across AWS, OCI, GCP"
+    }
+  }'
+```
+
+For authentication headers and API versioning, see [Cloud Ops API](/ops).
+
+**tcld**
+
+See the [`tcld` namespace create](/cloud/tcld/namespace/#create) command reference for details.
+
+## What are some Namespace best practices? 
+
+For guidance on how many Namespaces to create, how to split workloads across services or domains, and when to isolate
+tenants or teams, see [Namespace best practices](/best-practices/managing-namespace).
+
+This page focuses on Temporal Cloud Namespace mechanics such as naming rules, provisioning, authentication, tagging,
+description, and accessing Namespace endpoints.
+
+## How to access a Namespace in Temporal Cloud 
+
+Temporal Cloud supports authentication to Namespaces using [API keys](/cloud/api-keys) or
+[mTLS](/cloud/certificates). A Namespace uses one method unless both are enabled.
+
+To change a Namespace from one method to the other, or to enable both methods on the same Namespace, contact
+[Support](/evaluate/cloud/support#support-ticket).
+
+> **⚠️ Caution:**
+>
+> Using both API key and mTLS authentication on the same Namespace is in
+> [pre-release](/evaluate/product-release-stages). These cases are not supported:
+>
+> - **API-key Namespaces cannot enable both methods.** If the Namespace already uses API keys, Temporal Cloud rejects the change. To move that Namespace to mTLS, switch it from API keys to mTLS in one change. API key clients stop authenticating as soon as you save. Confirm that mTLS clients connect before you switch. There is no period where the Namespace accepts both methods.
+> - **Both methods do not support High Availability.** A Namespace that uses both API key and mTLS cannot use [High Availability features](/cloud/high-availability). To enable High Availability, leave only one method enabled.
+>
+
+Connecting to your Namespace requires a specific endpoint that works for the given Namespace.
+There are two types of gRPC endpoints for accessing a Namespace in Temporal Cloud: a Namespace endpoint and a regional endpoint.
+
+- **Namespace endpoint** (`<namespace>.<account>.tmprl.cloud:7233`) — **Recommended**
+    - This endpoint is unique to each Namespace. It always connects to the Namespace, no matter which region(s) the Namespace is using.
+    - A Temporal Client that uses a Namespace endpoint doesn't have to be aware of which region the Namespace is in.
+    - For Namespaces with [High Availability](/cloud/high-availability), the Namespace endpoint automatically directs traffic to the active region, so Workers and Clients don't need to change endpoints during a failover.
+- Regional endpoint (`<region>.<cloud_provider>.api.temporal.io:7233`)
+    - Temporal Cloud has only one regional endpoint for each cloud region. The same regional endpoint can access any Namespace that is active in that region (or that has a [replica](/cloud/high-availability) in that region).
+    - A Temporal Client can use a regional endpoint to ensure connection to a Namespace always happens within that region. This can be useful in advanced [High Availability](/cloud/high-availability) setups where you want explicit control over which region handles requests.
+    - For a Namespace that uses both API keys and mTLS, use the regional endpoint for API key authentication. API keys cannot authenticate through that Namespace’s Namespace endpoint.
+    - When using mTLS to authenticate, the Temporal Client must set the `server_name` property to `<namespace endpoint value>` in its request to the value of the Namespace endpoint. This tells the client to expect a different SNI header during the TLS handshake, since the request to the regional endpoint is redirected to the specific Namespace.
+
+> **⚠️ Caution:**
+> Do not take dependencies on Temporal Cloud endpoint DNS resolution
+>
+> In general, the IP addresses that Temporal Cloud endpoints resolve to are subject to change without notice. Do not configure Workers, Temporal Clients, or firewalls against the specific IPs you observe for an endpoint at a point in time.
+>
+> Temporal Cloud guarantees the DNS resolution behavior of the Namespace Endpoint in two cases:
+>
+> 1. **Stable IPs enabled.** The Namespace Endpoint resolves to one of the [Stable IPs](/cloud/connectivity/ip-addresses) for the Namespace's active region.
+> 2. **High Availability features with Private Connectivity.** The Namespace Endpoint resolves to a regional intermediary (`<provider>-<region>.region.tmprl.cloud`) that you can override in a Route 53 private hosted zone or GCP private DNS zone to point at your VPC Endpoint. See [Connectivity for High Availability](/cloud/high-availability/ha-connectivity) for setup details.
+>
+
+### Configuring a Temporal Client with API keys or mTLS
+
+To use API keys to connect with the [Temporal CLI](/cli), [Client SDK](/develop), [tcld](/cloud/tcld),
+  [Cloud Ops API](/ops), and [Terraform](/cloud/terraform-provider), see
+  [Use API keys to authenticate](/cloud/api-keys#using-apikeys).
+
+To use mTLS to connect with the [Temporal CLI](/cli) and [Client SDK](/develop), see
+  [Configure Clients to use Client certificates](/cloud/certificates#configure-clients-to-use-client-certificates).
+
+### Accessing the Temporal Web UI
+
+For accessing the Temporal Web UI, use the HTTPS endpoint in the form:
+`https://cloud.temporal.io/namespaces/<namespace>.<account>`. For example:
+`https://cloud.temporal.io/namespaces/accounting-production.f45a2`.
+
+### Access Namespaces with encryption and private connectivity
+
+To ensure the security of your data, all traffic to and from your Namespace is encrypted with TLS 1.3. 
+
+For enhanced protection:
+- Set up [private connectivity](/cloud/connectivity#private-network-connectivity-for-namespaces) to the Namespace.
+- Set up your allow list for outgoing network requests from your Clients and Workers. You have two options:
+  - Use Temporal Cloud's [stable IPs configuration](/cloud/connectivity/ip-addresses) to get non-changing IP addresses for your Namespace endpoint, which you can then allowlist in your firewall rules.
+  - Allowlist the entire Cloud Provider IP address ranges for the region in which your Namespace is located:
+    - [AWS IP address ranges](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html)
+    - [GCP IP address ranges](https://cloud.google.com/compute/docs/faq#find_ip_range)
+
+## How to manage Namespaces in Temporal Cloud 
+
+### Manage Namespaces in Temporal Cloud using Temporal Cloud UI
+
+To list Namespaces:
+
+- On the left side of the window, select **Namespaces**.
+
+To edit a Namespace (including custom Search Attributes, certificates, certificate filters, Codec Server endpoint,
+permissions, and users), find the Namespace and do either of the following:
+
+- On the right end of the Namespace row, select the three vertical dots (⋮). Click **Edit**.
+- Select the Namespace name. In the top-right portion of the page, select **Edit**.
+
+On the **Edit** page, you can do the following:
+
+- Add a [custom Search Attribute](/search-attribute#custom-search-attribute).
+- [Manage CA certificates](/cloud/certificates).
+- [Manage certificate filters](/cloud/certificates#manage-certificate-filters-using-temporal-cloud-ui).
+- Set
+  [Codec Server endpoint](/production-deployment/data-encryption#set-your-codec-server-endpoints-with-web-ui-and-cli)
+  for all users on the Namespace. Each user on the Namespace has the option to
+  [override this setting](/production-deployment/data-encryption#web-ui) in their browser.
+- Manage [Namespace-level permissions](/cloud/manage-access/roles-and-permissions#namespace-level-permissions).
+- Add users.
+
+To add a user to a Namespace, scroll to the bottom of the page and select **Add User**.
+
+After you make changes, select **Save** in the top-right or bottom-left portion of the page.
+
+### Manage Namespaces in Temporal Cloud from the CLI
+
+To list Namespaces and get information about them, use the following commands:
+
+- [`temporal cloud namespace list`](/cli/command-reference/cloud/namespace#list) or [tcld namespace list](/cloud/tcld/namespace/#list)
+- [`temporal cloud namespace get`](/cli/command-reference/cloud/namespace#get) or [tcld namespace get](/cloud/tcld/namespace/#get)
+
+To manage certificates, use the [`temporal cloud namespace mtls cert-ca`](/cli/command-reference/cloud/namespace#mtls-cert-ca)
+or [tcld namespace accepted-client-ca](/cloud/tcld/namespace/#accepted-client-ca) commands.
+For more information, see [How to manage certificates in Temporal Cloud](/cloud/certificates).
+
+To manage certificate filters, use the [`temporal cloud namespace mtls cert-filter`](/cli/command-reference/cloud/namespace#mtls-cert-filter)
+or [tcld namespace certificate-filters](/cloud/tcld/namespace/#certificate-filters)
+commands. For more information, see
+[How to manage certificate filters in Temporal Cloud](/cloud/certificates#manage-certificate-filters).
+
+## How to delete a Namespace in Temporal Cloud 
+
+> **ℹ️ Info:**
+>
+> To delete a Namespace, a user must have Namespace Admin [permission](/cloud/manage-access/roles-and-permissions#namespace-level-permissions) for that
+> Namespace.
+>
+
+### Delete a Namespace using Temporal Cloud UI
+
+1. Go to the Temporal Cloud UI and log in.
+1. On the left side of the window, select **Namespaces**.
+1. On the **Namespaces** page, select a Namespace Name.
+1. On the Namespace page, select **Edit** in the upper-right portion of the window.
+1. On the **Edit** Namespace page, select **Delete Namespace** in the upper-right portion of the window.
+1. In the **Delete Namespace** dialog, type `DELETE` to confirm the deletion of that Namespace.
+1. Select **Delete**.
+
+After deleting a Temporal Cloud Namespace, the Temporal Service immediately removes the Namespace's Workflow Executions
+and Task Queues. Make sure all Workflows have been completed, canceled, or terminated before removing a Namespace. The
+Namespace removal is permanent.
+
+Closed Workflow Histories remain in Temporal storage until the user-defined retention period expires. This period
+reflects the policy in effect when the Workflow Execution was closed.
+
+For further questions or concerns, contact [Support](/evaluate/cloud/support#support-ticket).
+
+### Delete a Namespace from the CLI
+
+See the [`temporal cloud namespace delete`](/cli/command-reference/cloud/namespace#delete) or
+[tcld namespace delete](/cloud/tcld/namespace/#delete) command reference for details.
+
+### Namespace deletion protection 
+
+To prevent accidental Namespace deletion, Temporal Cloud provides a protection feature. When you enable Deletion
+Protection for your production environment Namespace, you ensure that critical data won't be deleted unintentionally.
+
+Follow these steps:
+
+- Visit the [Namespaces page](https://cloud.temporal.io/namespaces) on Temporal Cloud.
+- Open your Namespace details page.
+- Select the Edit button.
+- Scroll down to Security and click the disclosure button (downward-facing caret).
+- Enable **Deletion Protection**
+
+![Deletion Protection is enabled by toggling the switch](/img/cloud/namespace/deletion-protection.png)
+
+To enable or disable this feature from the CLI, use the following command. Set the value to `true` to
+enable or `false` to disable:
+
+**Temporal CLI**
+
+```
+temporal cloud namespace lifecycle set \
+    --namespace <namespace_id.account_id> \
+    --enable-delete-protection <Boolean>
+```
+
+**tcld**
+
+```
+tcld namespace lifecycle set \
+    --namespace <namespace_id.account_id> \
+    --enable-delete-protection <Boolean>
+```
+
+## How to tag a Namespace in Temporal Cloud 
+
+Tags are key-value metadata pairs that can be attached to namespaces in Temporal Cloud to help operators organize,
+track, and manage namespaces more easily.
+
+### Tag structure and limits
+
+- Each namespace can have a maximum of 10 tags
+- Each key must be unique for a given namespace (for example, a namespace cannot have both `team:foo` and `team:bar` tags)
+- Keys and values must be 1-63 characters in length
+- Allowed characters: lowercase letters (`a-z`), numbers (`0-9`), periods (`.`), underscores (`_`), hyphens (`-`), and
+  at signs (`@`)
+- Tags are not a secure storage mechanism and should not store PII or PHI
+- Tags will not change the behavior of the tagged resource
+- There is a soft limit of 1000 unique tag keys per account
+
+### Permissions
+
+- Only [**Account Admins** and **Account Owners**](/cloud/manage-access/roles-and-permissions#account-level-roles) can create and edit tags
+- All users with access to a namespace can view its tags
+
+### Temporal Cloud CLI
+
+See the [`temporal cloud namespace tag`](/cli/command-reference/cloud/namespace#tag) or
+[tcld namespace tags](/cloud/tcld/namespace/#tags) command reference for details.
+
+### Terraform
+
+See the
+[Terraform provider](https://github.com/temporalio/terraform-provider-temporalcloud/blob/main/docs/resources/namespace_tags.md)
+for details.
+
+### Web UI
+
+Tags can be viewed and managed through the Temporal Cloud web interface. When viewing a namespace, you'll see tags
+displayed and can add, edit, or remove them if you have the appropriate permissions.
+
+![Tags appear in namespace details](/img/cloud/tags/Namespace-DetailsWithTags.png)
+
+![Tags appear on the list of namespaces](/img/cloud/tags/Namespaces-IndexWithTags.png)
+
+![Where to add tags during namespace creation](/img/cloud/tags/CreateNamespace-AddNewTag.png)
+
+![After adding a tag during namespace creation](/img/cloud/tags/CreateNamespace-AddedTag.png)
+
+## How to add a Namespace description in Temporal Cloud 
+
+A Namespace description is an optional free-text purpose note. Use it to answer "what is this Namespace for?" when the
+name is not enough.
+
+Description is not a Tag. Description is a human-readable summary. Tags are structured key-value metadata for filtering,
+reporting, and automation. See [How to tag a Namespace](#tag-a-namespace).
+
+> **⚠️ Caution:**
+> Do not include sensitive or confidential information
+>
+> Namespace descriptions are visible to anyone with Namespace Read access through supported management tools. Descriptions are Cloud metadata, not Workflow payloads, and are not processed by a [Payload Codec](/payload-codec#payload-codec). Do not include secrets, credentials, confidential information, or personally identifiable information.
+>
+
+### Description structure and limits
+- A description is optional and can be added, changed, or removed after Namespace creation.
+- Descriptions can contain up to 255 characters total. Supported characters are printable ASCII and whitespace.
+- The Temporal Cloud UI can render a limited Markdown subset. The stored value is still the 255-character printable ASCII
+- A description does not affect Namespace runtime behavior.
+- A Temporal Cloud Namespace description is separate from the open source `NamespaceInfo.Description` field. The temporal operator namespace commands do not manage the Cloud description.
+
+### Permissions
+
+- Account Owners, Account Admins, and Namespace Admins can change a description.
+- Anyone with Namespace Read access can view it.
+
+**Web UI**
+
+When creating a Namespace, fill **Description** on the Create Namespace page.
+For an existing Namespace, open its overview and select Add description or the description edit control under the Namespace full name. Save an empty value to remove the description.
+
+**Cloud Operations API**
+
+Create: include `spec.description` when calling
+[`CreateNamespace`](https://saas-api.tmprl.cloud/docs/httpapi.html#tag/namespaces/POST/cloud/namespaces).
+
+Update: UpdateNamespace replaces the complete Namespace specification. Call [GetNamespace](https://saas-api.tmprl.cloud/docs/httpapi.html#tag/namespaces/GET/cloud/namespaces/%7Bnamespace%7D), preserve the returned spec and resourceVersion, change spec.description, and submit the complete specification to [UpdateNamespace](https://saas-api.tmprl.cloud/docs/httpapi.html#tag/namespaces/POST/cloud/namespaces/%7Bnamespace%7D). Omitting description from the updated specification clears the existing description.
+Read: `GET /cloud/namespaces/{namespace}` returns `spec.description`.
+
+Namespace descriptions require Cloud Operations API version v0.21.0 or later. See [Cloud Operations API](/ops).
+
+**Temporal CLI**
+
+See [`temporal cloud namespace create --description`](/cli/command-reference/cloud/namespace#create) and
+[`temporal cloud namespace description`](/cli/command-reference/cloud/namespace#description).
+
+```
+temporal cloud namespace description set \
+  --namespace payments-prod.account \
+  --value "Elevate project migration from AWS to GCP"
+```
+
+Pass an empty `--value` to clear the description.

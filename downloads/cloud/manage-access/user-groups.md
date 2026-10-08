@@ -1,0 +1,162 @@
+# Manage user groups
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Assign account-level roles and Namespace permissions to a group of users at once, and see how SCIM groups interact with them.
+
+## What are user groups?
+
+User groups can be used to help manage sets of users that should have the same
+access. Instead of separately assigning the same role to individual users, a user group can be
+created, assigned the desired roles, and then users added to the user group. This
+eases the toil of managing individual user permissions and can simplify access management. When
+a new role is needed, it can be added to the group once and all users' access will reflect the
+new role.
+
+User groups can be assigned both [account-level roles](/cloud/manage-access/users#account-level-roles) and [namespace-level permissions](/cloud/manage-access/users#namespace-level-permissions).
+
+One user can be assigned to many groups. In the event that a user's group memberships have multiple roles for the same resource, the user will have an effective role of the most permissive of the permissions. For example if `Group A` grants a read-only role to a namespace, but `Group B` grants a write role to a namespace then a user that belongs to both `Group A` and `Group B` would have the write role to the namespace.
+
+[Service accounts](/cloud/manage-access/service-accounts) cannot be assigned to user groups.
+
+Only users with the Account Owner or Global Admin account-level [role](/cloud/manage-access/users#account-level-roles) can manage user groups.
+
+## How SCIM groups work with user groups 
+
+[SCIM groups](/cloud/manage-access/scim) work similarly to user groups with respect to role assignment. Unlike a user group, the lifecycle of a SCIM group is fully managed by the SCIM integration which means:
+
+1. SCIM groups cannot be created except through the SCIM integration
+1. SCIM groups cannot be deleted except through the SCIM integration
+1. SCIM group membership is managed through the SCIM integration
+
+User groups and SCIM groups can be used simultaneously in a single Temporal Cloud account. One user may belong to multiple SCIM groups and to multiple user groups.
+
+Using user group and SCIM groups together can be useful when the groups defined in the identity provider (IDP) don't map cleanly to the access you need to grant in Temporal Cloud. Instead of having to update the IDP (which is often sensitive and time-consuming), you can use Temporal Cloud user groups to manage access.
+
+> **ℹ️ Info:**
+>
+> All user group administration requires an Account Owner or Global Admin account-level [role](/cloud/manage-access/users#account-level-roles).
+>
+
+## How to create a user group in your Temporal Cloud account 
+
+User group names must be 3-64 characters long and can only contain lowercase letters, numbers, hyphens, and underscores.
+
+**Web UI**
+
+1. Navigate to the [identities page](https://cloud.temporal.io/settings/identities)
+1. Click the Create Group button
+1. Name the group
+1. Assign an account-level role to the group (you can assign namespace-level permissions after the group is created)
+1. Click Save
+
+**Temporal CLI**
+
+Use the command that matches how the group is backed:
+
+- [`temporal cloud user-group create-cloud-group`](/cli/command-reference/cloud/user-group#create-cloud-group) for a group managed in Temporal Cloud
+- [`temporal cloud user-group create-google-group`](/cli/command-reference/cloud/user-group#create-google-group) for a group backed by a Google group
+- [`temporal cloud user-group create-scim-group`](/cli/command-reference/cloud/user-group#create-scim-group) for a group backed by SCIM
+
+**tcld**
+
+See the [`tcld` user-group create](/cloud/tcld/user-group/#create) command reference for details.
+
+**Terraform**
+
+See the [Terraform provider documentation](https://registry.terraform.io/providers/temporalio/temporalcloud/latest/docs/resources/group) for details.
+
+## How to assign roles to a user group 
+
+**Web UI**
+
+To edit the account role of a group:
+  1. Navigate to the [identities page](https://cloud.temporal.io/settings/identities)
+  1. Find the group to edit (You can filter the list of identities to only show groups to find the relevant group by clicking the Groups tab on the table)
+  1. Click Edit Group
+  1. Click the Account Role dropdown
+  1. Select a new account role
+  1. Click Save
+
+To add namespace permissions to a group:
+  1. Navigate to the [identities page](https://cloud.temporal.io/settings/identities)
+  1. Find the group to edit (You can filter the list of identities to only show groups to find the relevant group by clicking the Groups tab on the table)
+  1. Click Edit Group
+  1. Click Add Namespaces
+  1. Under Grant Access to a Namespace, search for the namespace you’d like to add permissions for
+  1. Select the namespace
+  1. Click the pencil to edit the permissions for the selected namespace
+  1. Click Save
+
+To edit or remove namespace permissions from a group:
+  1. Click Edit Group
+  1. Click the pencil on a permission to edit it, or the trash can to delete it
+  1. Click Save
+
+**Temporal CLI**
+
+Account-level roles and Namespace-level permissions are set separately:
+
+- [`temporal cloud user-group set-account-role`](/cli/command-reference/cloud/user-group#set-account-role)
+- [`temporal cloud user-group set-namespace-permissions`](/cli/command-reference/cloud/user-group#set-namespace-permissions)
+
+**tcld**
+
+See the [`tcld` user-group set-access](/cloud/tcld/user-group/#set-access) command reference for details.
+
+**Terraform**
+
+See the [Terraform provider documentation](https://registry.terraform.io/providers/temporalio/temporalcloud/latest/docs/resources/group) for details.
+
+## How to manage users in a group 
+
+**Web UI**
+
+To add users to the group:
+  1. Navigate to the [identities page](https://cloud.temporal.io/settings/identities)
+  1. Find the group to edit (You can filter the list of identities to only show groups to find the relevant group by clicking the Groups tab on the table)
+  1. Click Edit Group
+  1. Under Members, search for the user you’d like to add 
+  1. Select the user
+  1. Click Save
+To remove a user from the group:
+  1. Click Edit Group
+  1. Under Members, click the X next to the user you’d like to remove
+  1. Click Save
+
+**Temporal CLI**
+
+See the [`temporal cloud user-group members add`](/cli/command-reference/cloud/user-group#members-add),
+[`temporal cloud user-group members remove`](/cli/command-reference/cloud/user-group#members-remove), and
+[`temporal cloud user-group members list`](/cli/command-reference/cloud/user-group#members-list) command reference for details.
+
+**tcld**
+
+See the [`tcld` user-group add-users](/cloud/tcld/user-group/#add-users) and the [`tcld` user-group remove-users](/cloud/tcld/user-group/#remove-users) command reference for details.
+
+**Terraform**
+
+See the [Terraform provider documentation](https://registry.terraform.io/providers/temporalio/temporalcloud/latest/docs/resources/group) for details.
+
+## Delete a user group
+
+**Web UI**
+
+  1. Navigate to the [identities page](https://cloud.temporal.io/settings/identities)
+  1. Find the group to edit (You can filter the list of identities to only show groups to find the relevant group by clicking the Groups tab on the table)
+  1. Click the dropdown next to the edit button
+  1. Click Delete
+  1. Confirm by clicking Delete
+
+**Temporal CLI**
+
+See the [`temporal cloud user-group delete`](/cli/command-reference/cloud/user-group#delete) command reference for details.
+
+**tcld**
+
+See the [`tcld` user-group delete](/cloud/tcld/user-group/#delete) command reference for details.
+
+**Terraform**
+
+See the [Terraform provider documentation](https://registry.terraform.io/providers/temporalio/temporalcloud/latest/docs/resources/group) for details.

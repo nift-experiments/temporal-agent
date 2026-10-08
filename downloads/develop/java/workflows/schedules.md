@@ -1,0 +1,235 @@
+# Schedules - Java SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Schedule, Backfill, Delete, Describe, List, Pause, Trigger, Update, and set Cron and Start Delays for Workflow Executions in Java using Temporal's ScheduleClient.
+
+This page shows how to do the following:
+
+- [Schedule a Workflow](#schedule-a-workflow)
+  - [Create a Schedule](#create-schedule)
+  - [Backfill a Schedule](#backfill-schedule)
+  - [Delete a Schedule](#delete-schedule)
+  - [Describe a Schedule](#describe-schedule)
+  - [List a Schedule](#list-schedule)
+  - [Pause a Schedule](#pause-schedule)
+  - [Trigger a Schedule](#trigger-schedule)
+  - [Update a Schedule](#update-schedule)
+- [Set a Cron Schedule](#cron-schedule)
+- [Start Delay](#start-delay)
+
+## Schedule a Workflow 
+
+Scheduling Workflows is a crucial aspect of any automation process, especially when dealing with time-sensitive tasks. By scheduling a Workflow, you can automate repetitive tasks, reduce the need for manual intervention, and ensure timely execution of your business processes.
+
+Use any of the following actions to help Schedule a Workflow Execution and take control over your automation process.
+
+Schedule behavior is governed by the Schedule's [Overlap Policy](/schedule#overlap-policy).
+If a Workflow Execution started by a Schedule is [Paused](/cli/command-reference/workflow#pause), it remains open and counts as the running execution for overlap decisions.
+
+### Create a Schedule 
+
+The create action enables you to create a new Schedule. When you create a new Schedule, a unique Schedule ID is generated, which you can use to reference the Schedule in other Schedule commands.
+
+To create a Scheduled Workflow Execution in Java, use the `createSchedule()` method on the `ScheduleClient`. When you create the `ScheduleClient`, you can also use any custom Namespace instead of the default by setting the [`ScheduleClientOptions`](https://www.javadoc.io/doc/io.temporal/temporal-sdk/latest/io/temporal/client/schedules/ScheduleClientOptions.Builder.html). Schedules must be initialized with a Schedule ID.
+
+```java
+Schedule schedule =
+    Schedule.newBuilder()
+        .setAction(
+            ScheduleActionStartWorkflow.newBuilder()
+                .setWorkflowType(HelloSchedules.GreetingWorkflow.class)
+                .setArguments("World")
+                .setOptions(
+                    WorkflowOptions.newBuilder()
+                        .setWorkflowId("WorkflowId")
+                        .setTaskQueue("TaskQueue")
+                        .build())
+                .build())
+        .setSpec(ScheduleSpec.newBuilder()
+                .setIntervals(
+                    Collections.singletonList(new ScheduleIntervalSpec(Duration.ofSeconds(5)))
+                ).build()
+            )
+        .build();
+
+// Create a schedule on the server
+ScheduleClient scheduleClient = ScheduleClient
+    .newInstance(service, ScheduleClientOptions.newBuilder()
+        .setNamespace("custom_namespace")
+        .build()
+    );
+
+ScheduleHandle handle =
+    scheduleClient.createSchedule("ScheduleId", schedule, ScheduleOptions.newBuilder().build());
+```
+
+> **💡 Tip:**
+> Schedule Auto-Deletion
+>
+> Once a Schedule has completed creating all its Workflow Executions, the Temporal Service deletes it since it won’t fire again.
+> The Temporal Service doesn't guarantee when this removal will happen.
+>
+
+### Backfill a Schedule 
+
+The backfill action executes Actions ahead of their specified time range. This command is useful when you need to execute a missed or delayed Action, or when you want to test the Workflow before its scheduled time.
+
+To Backfill a Scheduled Workflow Execution in Java, use the `backfill()` method on the `ScheduleHandle`.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+
+Instant now = Instant.now();
+handle.backfill(
+    Arrays.asList(
+        new ScheduleBackfill(now.minusMillis(5500), now.minusMillis(2500)),
+        new ScheduleBackfill(now.minusMillis(2500), now)));
+```
+
+### Delete a Schedule 
+
+The delete action enables you to delete a Schedule. When you delete a Schedule, it does not affect any Workflows that were started by the Schedule.
+
+To delete a Scheduled Workflow Execution in Java, use the `delete()` method on the `Schedule Handle`.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+handle.delete();
+```
+
+### Describe a Schedule 
+
+The describe action shows the current Schedule configuration, including information about past, current, and future Workflow Runs. This command is helpful when you want to get a detailed view of the Schedule and its associated Workflow Runs.
+
+To describe a Scheduled Workflow Execution in Java, use the `describe()` method on the `ScheduleHandle`.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+ScheduleDescription description = handle.describe();
+```
+
+### List a Schedule 
+
+The list action lists all the available Schedules. This command is useful when you want to view a list of all the Schedules and their respective Schedule IDs.
+
+To list all schedules, use the `listSchedules()` asynchronous method on the `ScheduleClient`.
+If a schedule is added or deleted, it may not be available in the list immediately.
+
+```java
+Stream<ScheduleListDescription> scheduleStream = client.listSchedules();
+```
+
+### Pause a Schedule 
+
+The pause action enables you to pause and unpause a Schedule. When you pause a Schedule, all the future Workflow Runs associated with the Schedule are temporarily stopped. This command is useful when you want to temporarily halt a Workflow due to maintenance or any other reason.
+
+To pause a Scheduled Workflow Execution in Java, use the `pause()` method on the `ScheduleHandle`.
+You can pass a `note` to the `pause()` method to provide a reason for pausing the schedule.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+handle.pause("Pausing the schedule for now");
+```
+
+### Trigger a Schedule 
+
+The trigger action triggers an immediate action with a given Schedule. By default, this action is subject to the Overlap Policy of the Schedule. This command is helpful when you want to execute a Workflow outside of its scheduled time.
+
+To trigger a Scheduled Workflow Execution in Java, use the `trigger()` method on the `ScheduleHandle`.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+handle.trigger();
+```
+
+### Update a Schedule 
+
+The update action enables you to update an existing Schedule. This command is useful when you need to modify the Schedule's configuration, such as changing the start time, end time, or interval.
+
+Create a function that takes `ScheduleUpdateInput` and returns `ScheduleUpdate`.
+To update a Schedule, use a callback to build the update from the description.
+The following example updates the Schedule to set a limited number of actions.
+
+```java
+ScheduleHandle handle = client.getHandle("schedule-id")
+handle.update(
+    (ScheduleUpdateInput input) -> {
+      Schedule.Builder builder = Schedule.newBuilder(input.getDescription().getSchedule());
+      // Make the schedule paused to demonstrate how to unpause a schedule
+      builder.setState(
+          ScheduleState.newBuilder()
+              .setLimitedAction(true)
+              .setRemainingActions(10)
+              .build());
+      return new ScheduleUpdate(builder.build());
+    });
+```
+
+## Set a Cron Schedule 
+
+> **⚠️ Caution:**
+> Cron support is not recommended
+>
+> We recommend using [Schedules](/schedule) instead of Cron Jobs.
+> Schedules were built to provide a better developer experience, including more configuration options and the ability to update or pause running Schedules.
+>
+
+A [Temporal Cron Job](/cron-job) is the series of Workflow Executions that occur when a Cron Schedule is provided in the call to spawn a Workflow Execution.
+
+A Cron Schedule is provided as an option when the call to spawn a Workflow Execution is made.
+
+Set the Cron Schedule with the [`WorkflowStub`](https://www.javadoc.io/doc/io.temporal/temporal-sdk/latest/io/temporal/client/WorkflowStub.html) instance in the Client code using [`WorkflowOptions.Builder.setCronSchedule`](https://www.javadoc.io/doc/io.temporal/temporal-sdk/latest/io/temporal/client/WorkflowOptions.Builder.html).
+
+Setting `setCronSchedule` changes the Workflow Execution into a Temporal Cron Job.
+The default timezone for a Cron is UTC.
+
+- Type: `String`
+- Default: None
+
+```java
+//create Workflow stub for YourWorkflowInterface
+YourWorkflowInterface workflow1 =
+    YourWorker.yourclient.newWorkflowStub(
+        YourWorkflowInterface.class,
+        WorkflowOptions.newBuilder()
+                .setWorkflowId("YourWF")
+                .setTaskQueue(YourWorker.TASK_QUEUE)
+                // Set Cron Schedule
+                .setCronSchedule("* * * * *")
+                .build());
+```
+
+Temporal Workflow Schedule Cron strings follow this format:
+
+```
+┌───────────── minute (0 - 59)
+│ ┌───────────── hour (0 - 23)
+│ │ ┌───────────── day of the month (1 - 31)
+│ │ │ ┌───────────── month (1 - 12)
+│ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
+│ │ │ │ │
+* * * * *
+```
+
+For more details, see the [Cron Sample](https://github.com/temporalio/samples-java/blob/main/core/src/main/java/io/temporal/samples/hello/HelloCron.java)
+
+## Start Delay 
+
+Use the `StartDelay` to schedule a Workflow Execution at a specific one-time future point rather than on a recurring schedule.
+
+Create an instance of [`WorkflowStub`](https://www.javadoc.io/doc/io.temporal/temporal-sdk/latest/io/temporal/client/WorkflowStub.html) in the Client code and set `StartDelay` using `setStartDelay`.
+
+```java
+//create Workflow stub for YourWorkflowInterface
+YourWorkflowInterface workflow1 =
+    WorkerGreet.greetclient.newWorkflowStub(
+        GreetWorkflowInterface.class,
+        WorkflowOptions.newBuilder()
+                .setWorkflowId("YourWorkflow")
+                .setTaskQueue(WorkerGreet.TASK_QUEUE)
+                // Start the workflow in 12 hours
+                .setStartDelay(Duration.ofHours(12))
+                .build());
+```

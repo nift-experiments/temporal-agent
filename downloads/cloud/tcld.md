@@ -1,0 +1,85 @@
+# tcld command reference
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> The Temporal Cloud CLI (tcld) is a command-line tool for interacting with Temporal Cloud, offering commands for account management, login, namespace, and more. Install via Homebrew or build from source.
+
+The Temporal Cloud CLI (tcld) is a command-line tool that you can use to interact with Temporal Cloud.
+
+> **💡 Tip:**
+>
+> The Temporal CLI also manages Temporal Cloud through its
+> [Temporal Cloud extension](/cli/cloud), which adds `temporal cloud` commands for Namespaces, users, API keys, and Nexus
+> Endpoints. See the [`temporal cloud` command reference](/cli/command-reference/cloud) for the equivalent commands.
+>
+
+- [How to install tcld](#install-tcld)
+
+### tcld commands
+
+- [tcld account](/cloud/tcld/account)
+- [tcld apikey](/cloud/tcld/apikey)
+- [tcld connectivity-rule](/cloud/tcld/connectivity-rule)
+- [tcld feature](/cloud/tcld/feature)
+- [tcld generate-certificates](/cloud/tcld/generate-certificates)
+- [tcld login](/cloud/tcld/login)
+- [tcld logout](/cloud/tcld/logout)
+- [tcld migration](/cloud/tcld/migration)
+- [tcld namespace](/cloud/tcld/namespace)
+- [tcld nexus](/cloud/tcld/nexus)
+- [tcld request](/cloud/tcld/request)
+- [tcld service-account](/cloud/tcld/service-account)
+- [tcld user](/cloud/tcld/user)
+- [tcld user-group](/cloud/tcld/user-group)
+- [tcld version](/cloud/tcld/version)
+
+### Global modifiers
+
+#### --auto_confirm
+
+Automatically confirm all prompts.
+
+You can specify the value for this modifier by setting the AUTO_CONFIRM environment variable.
+The default value is `false`.
+
+## How to install tcld 
+
+You can install [tcld](/cloud/tcld) in two ways.
+
+### Install tcld by using Homebrew
+
+```bash
+brew install temporalio/brew/tcld
+```
+
+### Build tcld from source
+
+1. Verify that you have the minimum Go version listed in the tcld
+   [`go.mod`](https://github.com/temporalio/tcld/blob/main/go.mod) file.
+
+   ```bash
+   go version
+   ```
+
+   If that version of Go is not installed, follow the [Download and install](https://go.dev/doc/install) instructions on the Go website.
+
+1. Clone the tcld repository and run make.
+
+   ```bash
+   git clone https://github.com/temporalio/tcld.git
+   cd tcld
+   make
+   ```
+
+1. Copy the tcld executable to any directory that appears in the PATH environment variable, such as `/usr/local/bin`.
+
+   ```bash
+   cp tcld /usr/local/bin/tcld
+   ```
+
+1. Verify that tcld is installed.
+
+   ```bash
+   tcld version
+   ```

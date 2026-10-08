@@ -1,0 +1,42 @@
+# Activity Execution - Ruby SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Call an Activity from a Ruby Workflow with Temporalio::Workflow.execute_activity and set the required Schedule-To-Close or Start-To-Close Timeout.
+
+## Start an Activity Execution 
+
+Calls to spawn [Activity Executions](/activity-execution) are written within a [Workflow Definition](/workflow-definition).
+The call to spawn an Activity Execution generates the [ScheduleActivityTask](/references/commands#scheduleactivitytask) Command.
+This results in the set of three [Activity Task](/tasks#activity-task) related Events ([ActivityTaskScheduled](/references/events#activitytaskscheduled), [ActivityTaskStarted](/references/events#activitytaskstarted), and `ActivityTask[Closed]`) in your Workflow Execution Event History.
+
+The values passed to Activities through invocation parameters or returned through a result value are recorded in the Execution history.
+The entire Execution history is transferred from the Temporal Service to Workflow Workers when a Workflow state needs to recover.
+A large Execution history can thus adversely impact the performance of your Workflow.
+
+Therefore, be mindful of the amount of data you transfer through Activity invocation parameters or Return Values.
+Otherwise, no additional limitations exist on Activity implementations.
+
+To spawn an Activity Execution, use the `execute_activity` operation from within your Workflow Definition.
+
+```ruby
+class MyWorkflow < Temporalio::Workflow::Definition
+  # Customize the name
+  workflow_name :MyDifferentWorkflowName
+
+  def execute(name)
+    Temporalio::Workflow.execute_activity(
+      MyActivity,
+      { greeting: 'Hello', name: },
+      start_to_close_timeout: 100
+    )
+  end
+end
+```
+
+Activity Execution semantics rely on several parameters.
+The only required value that needs to be set is either a [Schedule-To-Close Timeout](/encyclopedia/detecting-activity-failures#schedule-to-close-timeout) or a [Start-To-Close Timeout](/encyclopedia/detecting-activity-failures#start-to-close-timeout).
+These values are set as keyword parameters.
+
+The Activity result is returned from the `execute_activity` call.

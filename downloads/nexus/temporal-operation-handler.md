@@ -1,0 +1,28 @@
+# Temporal Operation Handler
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> The Temporal Operation Handler is a single handler type that backs a Nexus Operation with a Workflow, an Update, or an Activity, and links every Execution back to the caller.
+
+> **Pre-release** — Go, Java, Python, TypeScript, .NET
+> APIs are experimental and may be subject to backwards-incompatible changes.
+
+Temporal has unified the Workflow handler and the synchronous Operation handler into a single handler, and added the ability to back an Operation with a [Standalone Activity](/nexus/standalone-activity).
+
+What runs behind an Operation remains private to the handler, so you can change it later without touching the contract or any caller.
+
+## The Nexus-aware Client
+
+The Operation handler receives a context, the Operation input, and a Client.
+
+That Client is not an ordinary Temporal Client.
+It propagates [bidirectional links](/nexus/execution-debugging#bi-directional-linking) and request IDs on every call, so caller-side and handler-side Executions are connected in the UI and in [Event History](/encyclopedia/event-history) without wiring anything.
+Constructing your own Client inside a handler works, but the Executions it starts are not linked back to the caller.
+
+It exposes two kinds of call:
+
+- **Async backings**, at most one per Operation invocation. These determine what the Operation *is*, and their result reaches the caller through the Nexus completion callback. Starting a Workflow, starting an Activity, and starting a Workflow Update are all async backings.
+- **Sync messaging**, as many as you need. Signals and Signal-with-Start take effect during the handler call and do not require an async backing.
+
+Deriving the backing Execution's ID from the Nexus request ID keeps a retried start request targeting the same Execution instead of creating a second one.

@@ -1,0 +1,135 @@
+# Standalone Nexus Operation
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> A Client can start a single Nexus Operation directly, without a caller Workflow, using the same Service and Worker setup.
+
+> **Pre-release** — Go, Java, Python, TypeScript, .NET
+> APIs are experimental and may be subject to backwards-incompatible changes.
+
+## What is a Standalone Nexus Operation? 
+
+A Standalone Nexus Operation is a top-level [Nexus Operation Execution](/nexus/operations) started
+directly by a [Client](/encyclopedia/architecture/temporal-sdks#temporal-client), without using a caller
+Workflow. Instead of calling a Nexus Operation from within a Workflow Definition, you execute it
+directly from a Nexus Client created from the Temporal SDK Client and bound to a
+[Nexus Endpoint](/nexus/endpoints) and Service.
+
+Standalone Nexus Operations use the same Service contract, Operation handlers, and Worker setup as
+Workflow-driven Operations — only the caller side differs. The same Operation can be executed as a
+Standalone Nexus Operation and as a Workflow-driven Nexus Operation with no handler code changes.
+
+If you need to orchestrate multiple Nexus Operations, call them from a [Workflow](/workflows). But if
+you just need to execute a single Nexus Operation across Namespace boundaries, use a Standalone
+Nexus Operation.
+
+### Get started with your SDK
+
+To make your first standalone Nexus call:
+
+1. Create a caller Namespace where durable Nexus Operations will be started.
+2. Import the Temporal SDK in your language of choice.
+3. Execute a Nexus Operation through your caller Namespace using the Temporal SDK Client.
+
+See the SDK guides below for details:
+
+- [Standalone Nexus Operations - Go](/develop/go/nexus/standalone-operations)
+- [Standalone Nexus Operations - Java](/develop/java/nexus/standalone-operations)
+- [Standalone Nexus Operations - Python](/develop/python/nexus/standalone-operations)
+- [Standalone Nexus Operations - TypeScript](/develop/typescript/nexus/standalone-operations)
+- [Standalone Nexus Operations - .NET](/develop/dotnet/nexus/standalone-operations)
+
+## Use cases
+
+### Make Nexus calls from anywhere
+
+Standalone Nexus Operations let you make Nexus calls from anywhere using the Temporal SDK Client.
+Any code that can construct a Temporal Client can durably hand off a Nexus Operation to Temporal, such as a UI backend or BFF, a non-Temporal microservice, an HTTP handler, or a script.
+You still get automatic retries, built-in rate limiting and circuit breaking, and full execution visibility: the reliability of Nexus without the overhead of a caller (proxy) Workflow.
+
+## Key features
+
+- Execute any Nexus Operation as a top-level primitive without the overhead of a caller Workflow
+- Same Service contract, Operation handlers, and Worker setup as Workflow-driven Operations
+- Supports both synchronous and asynchronous Nexus Operations
+- At-least-once execution with automatic retries by the Nexus Machinery
+- Get a handle to retrieve results, with the Operation token for asynchronous Operations
+- List and count Standalone Nexus Operation Executions using [List Filter](/list-filter) queries
+- Execute the same Operation from a Workflow or standalone with no handler code changes
+
+## Migrate a single-Operation caller Workflow to a Standalone Nexus Operation 
+
+A common pattern is a caller Workflow whose only purpose is to invoke a single Nexus Operation.
+When that's all the Workflow does, you can drop the caller Workflow entirely and call the
+Operation as a Standalone Nexus Operation. The handler Namespace's Service contract, Operation
+handlers, and Workers do not change — only the caller side does.
+
+Considerations when migrating:
+
+- If the caller Workflow does more than one Operation call, or has business logic between calls,
+  keep the Workflow. Standalone Nexus Operations are only a fit when a single top-level Operation
+  is all the Workflow did.
+- Pick a stable Operation ID if you previously relied on Workflow ID reuse semantics for
+  deduplication.
+- Update Visibility queries that filtered by caller Workflow attributes.
+
+For SDK-specific syntax, see the per-SDK guide — for example
+[Go: Standalone Nexus Operations](/develop/go/nexus/standalone-operations).
+
+## Observability 
+
+You can use [List Filters](/list-filter) to query Standalone Nexus Operation Executions by Endpoint,
+Service, Operation, status, and other attributes using the SDK.
+
+`CountNexusOperations` returns the total number of Standalone Nexus Operation Executions matching a
+filter. This is the total count of executions (running, completed, failed, etc.) — not the number of
+queued tasks.
+
+## Pre-release limitations
+
+Standalone Nexus Operations are at Pre-release. APIs are experimental and may be subject to
+backwards-incompatible changes.
+
+The following features are not supported yet:
+  - Delete and reset
+  - Batch `--query` support for cancel, terminate, and delete
+  - UI list-page operator actions
+  - HA / multi-region (global) namespaces using selective API forwarding
+
+## Temporal CLI support
+
+Standalone Nexus Operations require [Temporal CLI](/cli) v1.9.0 or higher, which includes the
+`temporal nexus operation` command family as a standard command group. All commands are Experimental.
+
+Install with Homebrew:
+
+```bash
+brew install temporal
+```
+
+Or see the [Temporal CLI install guide](/cli/setup-cli) for other platforms.
+
+Verify the installation:
+
+```bash
+temporal --version
+```
+
+Which should output v1.9.0 or higher.
+
+> **⚠️ Warning:**
+>
+> - If you see `unknown command "nexus operation"`, upgrade to Temporal CLI v1.9.0 or higher.
+> - If you see `Standalone Nexus Operations are disabled` when running commands against a local dev server, start the dev server using a matching CLI version. It enables Standalone Nexus Operations by default.
+> - If you don't see the Standalone Nexus Operations button in the Temporal UI, make sure the UI is running the latest release and has the `EnableStandaloneNexusOperations` feature flag enabled.
+>
+
+The `temporal nexus operation` subcommand supports Standalone Nexus Operations with commands
+including: `start`, `execute`, `result`, `list`, `count`, `describe`, `cancel`, and `terminate`.
+The Nexus Endpoint must already exist on the server — create it with
+[`temporal operator nexus endpoint create`](/cli/command-reference/operator#create-1).
+
+## Temporal Cloud support
+
+Standalone Nexus Operations in Temporal Cloud is available as a Pre-release feature.
