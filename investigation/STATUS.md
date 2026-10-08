@@ -77,3 +77,5 @@ Next T4: scale ordinary corpus and factor shared shells/navigation with authorit
 Source models remain distinct: maintained Markdown/MDX/sidebars and derived navigation vs maintained HTML/downloads/explicit navigation metadata. Both use retained sidebar/TOC islands with native document links; no Docusaurus page app or Nift core modification.
 
 Next T5: 17 cookbook routes, generated/special projections and remaining retained interactions; then T6 whole-site/browser acceptance, T7 initial benchmarks/lifecycle, T8 profiling, T9 final comparison/fresh clone. No whole-site acceptance or final performance claim yet. No exceptional blocker; full campaign remains active.
+
+T5 accepted: generated cookbook ownership, special publication, retained islands and portable deployment checked. T6–T9 remain.

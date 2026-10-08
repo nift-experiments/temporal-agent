@@ -1,0 +1,31 @@
+desktop theme switch {"theme":"dark","choice":"system"}
+desktop tabs click {"tabs":[{"label":"macOS","selected":"false"},{"label":"Linux","selected":"true"},{"label":"Windows","selected":"false"},{"label":"Docker","selected":"false"}]}
+desktop tabs keyboard {"focused":"Windows","selected":["Linux"]}
+desktop Markdown copy {"bytes":8099,"matchesPublication":true}
+desktop code copy {"copied":"brew install temporal"}
+desktop annotated code {"active":"true"}
+desktop SDK tabs {"selected":["Local + Prod with Cloud API key","Python","Python"]}
+desktop accordion open {"open":true,"text":"Earlier measurements\n\nJanuary 2026\n\nOperation\tp50\tp90\tp99\nStartWorkflowExecution\t14ms\t21ms\t69ms\nSignalWorkflowExecution\t11ms\t19ms\t46ms\nSignalWithStartWorkflowExecution\t19ms\t37ms\t95ms\n\nMarch 2024\n\nOperation\tp90\tp99\nStartWorkflowExecution\t24ms\t54ms\nSignalWorkflowExecution\t14ms\t40ms\nSignalWithStartWorkflowExecution\t24ms\t61ms"}
+desktop accordion closed {"open":false}
+desktop retry island {"numberInputsBefore":9,"numberInputsAfter":10,"canvas":1}
+desktop diagram zoom {"svgCount":1,"dialogs":1}
+desktop search local hit {"text":"Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"}
+desktop search navigate {"url":"http://127.0.0.1:4393/develop/python/workflows"}
+desktop assistant delegation {"calls":[null],"backend":"not exercised"}
+desktop feedback open {"text":"Feedback\nPowered by PushFeedback\nWas this page helpful?\nAdd a screenshot\nSend","widgets":1,"backend":"not exercised; form not submitted"}
+mobile theme switch {"theme":"dark","choice":"system"}
+mobile navigation open {"visible":true}
+mobile tabs click {"tabs":[{"label":"macOS","selected":"false"},{"label":"Linux","selected":"true"},{"label":"Windows","selected":"false"},{"label":"Docker","selected":"false"}]}
+mobile tabs keyboard {"focused":"Windows","selected":["Linux"]}
+mobile Markdown copy {"bytes":8099,"matchesPublication":true}
+mobile code copy {"copied":"brew install temporal"}
+mobile annotated code {"active":"true"}
+mobile SDK tabs {"selected":["Local + Prod with Cloud API key","Python","Python"]}
+mobile accordion open {"open":true,"text":"Earlier measurements\n\nJanuary 2026\n\nOperation\tp50\tp90\tp99\nStartWorkflowExecution\t14ms\t21ms\t69ms\nSignalWorkflowExecution\t11ms\t19ms\t46ms\nSignalWithStartWorkflowExecution\t19ms\t37ms\t95ms\n\nMarch 2024\n\nOperation\tp90\tp99\nStartWorkflowExecution\t24ms\t54ms\nSignalWorkflowExecution\t14ms\t40ms\nSignalWithStartWorkflowExecution\t24ms\t61ms"}
+mobile accordion closed {"open":false}
+mobile retry island {"numberInputsBefore":9,"numberInputsAfter":10,"canvas":1}
+mobile diagram zoom {"svgCount":0,"dialogs":0}
+mobile search local hit {"text":"Clear the query\nFilter by SDK\nGo\nJava\n.NET\nPHP\nPython\nRuby\nRust\nTypeScript\nDeveloper Guides\nWorkflows - Python SDK\nDeterministic fixture: start a Workflow with the Python SDK.\nAsk AI about \"workflow\"\nSee all 1 results\n↑\n↓\nNavigate\n↵\nSelect\nESC\nClose\n1 results found"}
+mobile search navigate {"url":"http://127.0.0.1:4393/develop/python/workflows"}
+mobile assistant delegation {"calls":[null],"backend":"not exercised"}
+mobile feedback open {"text":"Feedback\nPowered by PushFeedback\nWas this page helpful?\nSend","widgets":1,"backend":"not exercised; form not submitted"}

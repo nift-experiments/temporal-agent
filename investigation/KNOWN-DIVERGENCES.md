@@ -13,4 +13,4 @@ unresolved / blocking.
 A migration is not complete while any entry is unresolved or blocking.
 
 | T3-AWS | AWS JSON table | Upstream displays “Please reload the page to see this table.” | inherited upstream | pinned static/json/privatelink_services_aws.json has 3 column labels but 2 cells per row; retained validator rejects it | Preserve observed reference rather than repair unrelated upstream data | Preserved by retained component |
-| T3-DETAILS | Cloud SLO details | Native open/close without upstream height animation; content, open state, keyboard/native summary and styling retained | implementation difference | representative open/close fixture | Lightweight controller follows authorized static/vanilla-first architecture; reduced-motion fixture matches observable state | Verified |
+| T3-DETAILS | Cloud SLO details | T3 native controller lacked upstream height animation | resolved migration difference | T5 established interaction matrices, 31 cases per project | T5 now retains the original animated Details component with static rich HTML children | Resolved; original component retained |

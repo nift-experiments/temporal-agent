@@ -1,0 +1,225 @@
+markdown_mdx 10.331s { compiled: 794 }
+browser_bundle 0.000s
+errors [] warnings 0
+retained_components_server_bundle 1.823s
+Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+react_ssr_or_html_source 3.161s
+shell_and_dependencies 5.195s
+static_and_browser_publication 0.162s
+[markdown-pages] Generated 792 clean markdown files, 2 excluded, 124 transform warnings
+[markdown-pages] Generated root llms.txt (13945 bytes) and 24 section llms.txt files
+[markdown-pages] Generated llms-full.txt (778 pages, 7.5 MB, 10 excluded)
+rebuild causes:
+  ↳ dependency changed: .cache/shell/cookbook-agentic-loop-tool-call-claude-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-agentic-loop-tool-call-openai-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-ai-sdk-by-vercel-typescript.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-basic-openai-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-claim-check-pattern-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-guardrails-hard-rules-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-hello-world-durable-mcp-server.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-hello-world-litellm-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-hello-world-openai-responses-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-http-retry-enhancement-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-human-in-the-loop-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-index.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-multi-agent-adk-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-openai-agents-sdk-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-strands-agents-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-structured-output-openai-responses-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/cookbook-tool-call-openai-python.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC91c2VyLWludml0ZS5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9jbG91ZC9yZWZlcmVuY2VzL3JlZ2lvbnMvYXdzcmVnaW9ucy5tZA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9jbG91ZC9yZWZlcmVuY2VzL3JlZ2lvbnMvZ2NwcmVnaW9ucy5tZA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9jbG91ZC9yZWZlcmVuY2VzL3JlZ2lvbnMvcHJpdmF0ZS1zZXJ2aWNlLm1k.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL2dvL3dvcmtlci12ZXJzaW9uaW5nLWxlZ2FjeS5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL2phdmEvd29ya2VyLXZlcnNpb25pbmctbGVnYWN5Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL3B5dGhvbi93b3JrZmxvd3Mvd29ya2VyLXZlcnNpb25pbmctbGVnYWN5Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL3J1bi1hLWRldmVsb3BtZW50LXNlcnZlci5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL3R5cGVzY3JpcHQvaW5zdGFsbC10eXBlc2NyaXB0LXNkay5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9kZXZlbG9wL3R5cGVzY3JpcHQvd29ya2VyLXZlcnNpb25pbmctbGVnYWN5Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9lbmN5Y2xvcGVkaWEvd29ya2VyLXZlcnNpb25pbmctbGVnYWN5Lm1keA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/doc-ZG9jcy9ldmFsdWF0ZS9mZWF0dXJlcy9jbG91ZC12cy1zZWxmLWhvc3RlZC5tZHg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3M.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvY2xhaW0tY2hlY2s.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvY2xhdWRl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvYW50aHJvcGlj.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvYWdlbnRz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvYmVkcm9jaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvZ29vZ2xlLWFkaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvZ2VtaW5p.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvZm91bmRhdGlvbnM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3Mvb3BlbmFp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvbGl0ZWxsbQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvbWNw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvcHl0aG9u.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3Mvcy0z.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3Mvd29ya2Zsb3dz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2FpL2Nvb2tib29rL3RhZ3MvdHlwZXNjcmlwdA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L2Jsb2c.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3NlYXJjaA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3M.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29kZWMtc2VydmVy.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29uY2VwdHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29uZmlndXJhdGlvbg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29ubmVjdGl2aXR5.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29udGV4dC1wcm9wYWdhdGlvbg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY29udGludWUtYXMtbmV3.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY2FwYWNpdHktbW9kZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY2VydGlmaWNhdGVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY2hpbGQtd29ya2Zsb3dz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvY3VzdG9tLXJvbGVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYW1hem9uLWJlZHJvY2stYWdlbnQtY29yZQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWN0aW9ucw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWN0aXZpdGllcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWNjb3VudA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWdlbnQtZnJhbWV3b3Jrcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWktYWdlbnRz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWktZnJhbWV3b3Jrcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYWktc2Rr.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXBp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXBpLWtleXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXBpa2V5cw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXJjaGl0ZWN0dXJl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXN5bmMtb3BlcmF0aW9ucw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXV0aGVudGljYXRpb24.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXdz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYXdzLWxhbWJkYQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYmVzdC1wcmFjdGljZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvYmlsbGluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ28tc2Rr.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ29vZ2xlLWFkaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ29vZ2xlLWdlbmFp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ2Nw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ2NwLWNsb3VkLXJ1bg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ2V0dGluZy1zdGFydGVk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZ3B1LWNvbXB1dGluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGF0YS1jb252ZXJ0ZXJz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGV2ZWxvcG1lbnQtc2VydmVy.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGV2ZWxvcGVyLWd1aWRl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVidWdnaW5n.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVlcC1hZ2VudHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVwbG95.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVwbG95bWVudA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVwcmVjYXRlZA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGVzaWduLXBhdHRlcm5z.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZGlzYXN0ZXItcmVjb3Zlcnk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZHVyYWJsZS10aW1lcnM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZHVyYWJsZS1leGVjdXRpb24.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZW52aXJvbm1lbnQtdmFyaWFibGVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZW5hYmxlLW5leHVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZW5jcnlwdGlvbg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZXJyb3ItaGFuZGxpbmc.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZXJyb3Jz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZXZlbnQtaGlzdG9yeQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZXhwb3J0LXdvcmtmbG93LWhpc3Rvcnk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvZmFpbHVyZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mva3ViZXJuZXRlcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvaGVhcnRiZWF0.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvaGlnaC1hdmFpbGFiaWxpdHk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvaW50ZWdyYXRpb25z.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvaW50ZXJjZXB0b3Jz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvam9iLXF1ZXVl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvamF2YS1zZGs.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvb24tZGVtYW5kLWNhcGFjaXR5.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvb2JzZXJ2YWJpbGl0eQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvb3Blbm1ldHJpY3M.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvb3BlbmFpLWFnZW50cy1zZGs.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbG9nZ2luZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbG9naW4.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbG9ncw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbGFuZ2dyYXBo.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbGFuZ3NtaXRo.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbGltaXRz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbWV0cmljcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbWVzc2FnZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbWlncmF0aW9u.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbXVsdGktY2x1c3Rlci1yZXBsaWNhdGlvbg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbXVsdGl0ZW5hbmN5.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvbm90aWZpY2F0aW9u.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbmFtZXNwYWNlcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbmV0LXNkaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbmV4dXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvbmV4dXMtZW5kcG9pbnRz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2FnYS1wYXR0ZXJu.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2NoZWR1bGVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2Rr.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2V0dXA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2VhcmNoLWF0dHJpYnV0ZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2VjdXJpdHk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2VsZi1ob3N0aW5n.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2VydmVybGVzcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2VydmljZS1hY2NvdW50cw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2lkZS1lZmZlY3Rz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc2lnbmFscw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3ByaW5nLWFp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3ByaW5nLWJvb3Q.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3RhbmRhbG9uZS1hY3Rpdml0aWVz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3RyYW5kcy1hZ2VudHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3RyZWFtaW5n.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvc3VwcG9ydA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcGF0Y2hpbmc.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcGFyZW50LWNsb3NlLXBvbGljeQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcGVyZm9ybWFuY2U.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcGhwLXNkaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHJpY2luZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHJpb3JpdHktYW5kLWZhaXJuZXNz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHJvZHVjdGlvbg.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHJvamVjdHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHJvdmlzaW9uZWQtY2FwYWNpdHk.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcHl0aG9uLXNkaw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcXVlcmllcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvcm91dGluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmF0ZS1saW1pdGluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmV0cmllcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmV0cnktcG9saWNpZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVjb3ZlcnktcG9pbnQtb2JqZWN0aXZl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVjb3ZlcnktdGltZS1vYmplY3RpdmU.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVmZXJlbmNl.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVnaW9u.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVwbGF5.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcmVzb3VyY2UtcmVxdWlyZW1lbnRz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcnVieS1zZGs.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvcnVzdC1zZGs.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvd29ya2Vycw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3Mvd29ya2Zsb3dz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdG9tbA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGFza3M.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGFzay1xdWV1ZXM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGNsZA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtY2xp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtY2xpZW50.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtY2xvdWQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtc2Rrcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtc2VydmljZQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVtcG9yYWwtd2ViLXVp.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVycmFmb3Jt.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGVzdGluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGltZW91dHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdGltZXJz.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdHJ1cw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdHJvdWJsZXNob290aW5n.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdHlwZXNjcmlwdC1zZGs.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdWktZW5yaWNobWVudA.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdXBkYXRlcw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdXNlci1ncm91cHM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdXNlci1tYW5hZ2VtZW50.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdXNlcnM.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdmVyc2lvbmluZw.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-L3RhZ3MvdmlzaWJpbGl0eQ.prefix.html → 1 file
+  ↳ dependency changed: .cache/shell/special-LzQwNC5odG1s.prefix.html → 1 file
+affected files: cloud/get-started/users-invite/index, cloud/references/regions/awsregions/index, cloud/references/regions/gcpregions/index, cloud/references/regions/private-service/index, develop/go/worker-versioning-legacy/index  +193 more
+📦 198 files rebuilt successfully
+time taken: 0.073691 seconds
+nift_composition 0.097s
+complete 22.337s
+(node:59) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

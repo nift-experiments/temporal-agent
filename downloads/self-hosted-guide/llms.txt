@@ -1,0 +1,25 @@
+# Self-Hosted Service Guide
+
+> Deploy, configure, and operate a self-hosted Temporal Service.
+
+- [Self-hosted Temporal Service guide](https://docs.temporal.io/self-hosted-guide.md)
+- [Self-hosted Archival setup](https://docs.temporal.io/self-hosted-guide/archival.md)
+- [Self-hosted Temporal Service defaults](https://docs.temporal.io/self-hosted-guide/defaults.md)
+- [Deploying a Temporal Service](https://docs.temporal.io/self-hosted-guide/deployment.md)
+- [Embedding Temporal server as a Go library](https://docs.temporal.io/self-hosted-guide/embedded-server.md)
+- [Monitor Temporal Platform metrics](https://docs.temporal.io/self-hosted-guide/monitoring.md)
+- [Self-hosted Multi-Cluster Replication](https://docs.temporal.io/self-hosted-guide/multi-cluster-replication.md)
+- [Managing Namespaces](https://docs.temporal.io/self-hosted-guide/namespaces.md)
+- [Temporal Platform's production readiness checklist](https://docs.temporal.io/self-hosted-guide/production-checklist.md)
+- [Temporal Platform security features](https://docs.temporal.io/self-hosted-guide/security.md)
+- [Server frontend API reference](https://docs.temporal.io/self-hosted-guide/server-frontend-api-reference.md)
+- [Upgrade the Temporal Server](https://docs.temporal.io/self-hosted-guide/upgrade-server.md)
+- [Self-hosted Visibility feature setup](https://docs.temporal.io/self-hosted-guide/visibility.md)
+- [Manage custom Search Attributes](https://docs.temporal.io/self-hosted-guide/visibility/custom-search-attributes.md)
+- [Set up Dual Visibility](https://docs.temporal.io/self-hosted-guide/visibility/dual-visibility.md)
+- [Integrate Elasticsearch or OpenSearch](https://docs.temporal.io/self-hosted-guide/visibility/elasticsearch.md)
+- [Legacy standard Visibility configuration](https://docs.temporal.io/self-hosted-guide/visibility/legacy-standard.md)
+- [Migrate Visibility database](https://docs.temporal.io/self-hosted-guide/visibility/migrate.md)
+- [Set up MySQL Visibility store](https://docs.temporal.io/self-hosted-guide/visibility/mysql.md)
+- [Set up PostgreSQL Visibility store](https://docs.temporal.io/self-hosted-guide/visibility/postgresql.md)
+- [Set up SQLite Visibility store](https://docs.temporal.io/self-hosted-guide/visibility/sqlite.md)

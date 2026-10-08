@@ -357,3 +357,13 @@ Next T4: scale ordinary corpus and factor shared shells/navigation with authorit
 Source models remain distinct: maintained Markdown/MDX/sidebars and derived navigation vs maintained HTML/downloads/explicit navigation metadata. Both use retained sidebar/TOC islands with native document links; no Docusaurus page app or Nift core modification.
 
 Next T5: 17 cookbook routes, generated/special projections and remaining retained interactions; then T6 whole-site/browser acceptance, T7 initial benchmarks/lifecycle, T8 profiling, T9 final comparison/fresh clone. No whole-site acceptance or final performance claim yet. No exceptional blocker; full campaign remains active.
+
+## Active T5 work in progress
+
+T4 accepted at authored 55e1fb7 / rendered f0e2ecc (both pushed). Current working changes are T5, not an accepted checkpoint. Authored sources now cover 793 primary routes and full 962 HTML route structure including tag/search/404/blog families. Standalone original Markdown/LLM projection stage matches all 831 reference .md/.txt products bytewise (806 Markdown, 24 LLM text plus robots). Rich event-history children are converted once to HTML/step data for retained islands, details now retain the original animated component, and Markdown images retain zoom/NoZoom boundaries. These interaction additions and special families still need browser validation.
+
+Next: finalize portable deployment/sitemap accounting, generated cookbook ownership/update workflow and complete retained rich-child fixtures; then T5 acceptance and T6 full parity. No performance acceptance yet. No exceptional blocker.
+
+## T5 accepted
+
+All 962 HTML routes, 832 Markdown/text/sitemap products, and 1,130 retained non-framework assets verified against the pinned reference. Full representative browser parity: 132 states per project, zero differences/errors; 49 interaction cases per project. Portable redirect/Markdown/404 checks passed. See investigation/T5-SPECIAL-PUBLICATION.md and investigation/t5. Next: T6 whole-site parity, then T7 initial benchmarks and incremental correctness. No formal benchmark accepted yet.

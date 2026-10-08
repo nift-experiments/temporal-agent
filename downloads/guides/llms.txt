@@ -1,0 +1,15 @@
+# Guides
+
+> End-to-end walkthroughs that solve a specific problem with Temporal.
+
+- [Migrate a Celery task queue to a Temporal Standalone Activity](https://docs.temporal.io/guides/celery-to-standalone-activity.md)
+- [Build a durable agent on Amazon Bedrock AgentCore](https://docs.temporal.io/guides/durable-agent-on-agentcore.md)
+- [Build durable multiplayer game sessions with the actor model](https://docs.temporal.io/guides/durable-gaming-sessions.md)
+- [Build a customer loyalty program with Entity Workflows](https://docs.temporal.io/guides/entity-pattern-loyalty-points.md)
+- [Build a distributed lock and semaphore with Workflow IDs](https://docs.temporal.io/guides/lock-shared-resources.md)
+- [Rate-limit downstream APIs with separate Task Queues](https://docs.temporal.io/guides/rate-limit-downstream-apis.md)
+- [Pause a Workflow on failure and resume it after a fix](https://docs.temporal.io/guides/recover-without-restart.md)
+- [Build a human-in-the-loop document approval Workflow](https://docs.temporal.io/guides/reliable-document-approvals.md)
+- [Route GPU and high-memory Activities to dedicated Workers](https://docs.temporal.io/guides/route-specialized-workloads.md)
+- [Temporarily increase Namespace capacity on Temporal Cloud](https://docs.temporal.io/guides/temporary-rate-limit-increases.md)
+- [Run all of a Workflow's Activities on the same Worker](https://docs.temporal.io/guides/worker-execution-affinity.md)

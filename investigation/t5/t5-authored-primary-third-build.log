@@ -1,0 +1,23 @@
+markdown_mdx 9.677s { compiled: 794 }
+errors [] warnings 2
+browser_bundle 1.787s
+errors [] warnings 0
+retained_components_server_bundle 1.759s
+Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+TypeError: Cannot read properties of undefined (reading 'image')
+    at DocItemMetadata (/home/nick/Repositories/nift/nift-experiments/temporal/.cache/bundle/server/server.cjs:17836:23)
+    at Object.react_stack_bottom_frame (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:9808:18)
+    at renderWithHooks (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5062:19)
+    at renderElement (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:5497:23)
+    at retryNode (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6428:21)
+    at renderNodeDestructive (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6367:11)
+    at renderNode (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6905:18)
+    at renderChildrenArray (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6674:11)
+    at retryNode (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6441:13)
+    at renderNodeDestructive (/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/react-dom/cjs/react-dom-server-legacy.node.development.js:6367:11)

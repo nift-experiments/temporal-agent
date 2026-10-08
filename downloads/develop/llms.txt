@@ -1,0 +1,11 @@
+# Cross-SDK Development Guides
+
+> Development guidance that applies across SDKs (worker performance, safe deployments, plugins).
+
+- [Develop durable applications with Temporal SDKs](https://docs.temporal.io/develop.md)
+- [Environment configuration](https://docs.temporal.io/develop/environment-configuration.md)
+- [Plugins guide](https://docs.temporal.io/develop/plugins-guide.md)
+- [Run a development server](https://docs.temporal.io/develop/run-a-development-server.md)
+- [Safely deploying changes to Workflow code](https://docs.temporal.io/develop/safe-deployments.md)
+- [Task Queue Priority and Fairness](https://docs.temporal.io/develop/task-queue-priority-fairness.md)
+- [Worker tuning quick reference](https://docs.temporal.io/develop/worker-tuning-reference.md)

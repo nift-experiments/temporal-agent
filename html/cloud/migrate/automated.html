@@ -7,7 +7,7 @@ Temporal Cloud.</p>
 <p>When planning a migration it is highly recommended to migrate in the order of least-critical to most-critical Namespace.
 Ideally, the project will begin with Namespaces designated as &quot;testing&quot;, where downtime is an acceptable outcome of the
 testing process. From there, prioritize migrations based on order of least potential impact.</p>
-<p><img src="/assets/images/ns_migration_schedule-6803a223df36eecd3898b97ca4f6a935.png" alt="Temporal automated migration components" decoding="async" loading="lazy" class="image_OlVL" width="1202" height="201"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;Temporal automated migration components&quot;,&quot;src&quot;:&quot;/assets/images/ns_migration_schedule-6803a223df36eecd3898b97ca4f6a935.png&quot;,&quot;width&quot;:&quot;1202&quot;,&quot;height&quot;:&quot;201&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/ns_migration_schedule-6803a223df36eecd3898b97ca4f6a935.png" alt="Temporal automated migration components" decoding="async" loading="lazy" class="image_OlVL" width="1202" height="201"/></span></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="project-phases">Project phases<a href="#project-phases" class="hash-link" aria-label="Direct link to Project phases" title="Direct link to Project phases" translate="no">​</a></h3>
 <p>The migration process is separated into several phases, part of which involves coordinating with Temporal to create
 necessary cloud-side resources.</p>
@@ -116,7 +116,7 @@ only after receiving the endpoint from Temporal.</p>
 <p>The proxy provides API forwarding over a secure 2-way tunnel to Temporal Cloud. The self-hosted proxy will initiate an
 outbound connection (TCP 8233) to its cloud-side counterpart and establish the 2-way tunnel. If there are firewalls
 in-path, ensure that they permit this outbound connection.</p>
-<p><img src="/assets/images/auto-migration-components-120aa70337ac6299905b9a16ddb25464.png" alt="Temporal automated migration components" decoding="async" loading="lazy" class="image_OlVL" width="893" height="563"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;Temporal automated migration components&quot;,&quot;src&quot;:&quot;/assets/images/auto-migration-components-120aa70337ac6299905b9a16ddb25464.png&quot;,&quot;width&quot;:&quot;893&quot;,&quot;height&quot;:&quot;563&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/auto-migration-components-120aa70337ac6299905b9a16ddb25464.png" alt="Temporal automated migration components" decoding="async" loading="lazy" class="image_OlVL" width="893" height="563"/></span></p>
 <p>Use the following procedure to deploy the proxy:</p>
 <ol>
 <li class="">Obtain the latest Docker image from the

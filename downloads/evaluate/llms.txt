@@ -1,0 +1,28 @@
+# Evaluating Temporal
+
+> Background for deciding whether and how to adopt Temporal, including feature comparisons and use cases.
+
+- [Evaluate Temporal](https://docs.temporal.io/evaluate.md)
+- [Overview](https://docs.temporal.io/evaluate/cloud.md)
+- [Temporal Cloud Actions](https://docs.temporal.io/evaluate/cloud/actions.md)
+- [System limits](https://docs.temporal.io/evaluate/cloud/limits.md)
+- [Service regions](https://docs.temporal.io/evaluate/cloud/regions.md)
+- [Security model](https://docs.temporal.io/evaluate/cloud/security.md)
+- [Services, support, and training](https://docs.temporal.io/evaluate/cloud/support.md)
+- [Temporal development and production features](https://docs.temporal.io/evaluate/features.md)
+- [Cancellation and termination](https://docs.temporal.io/evaluate/features/cancellation-and-termination.md)
+- [Child Workflows](https://docs.temporal.io/evaluate/features/child-workflows.md)
+- [Temporal's production deployment features](https://docs.temporal.io/evaluate/features/cloud-vs-self-hosted-features.md)
+- [Core primitives](https://docs.temporal.io/evaluate/features/core-primitives.md)
+- [Data encryption](https://docs.temporal.io/evaluate/features/data-encryption.md)
+- [Job queues](https://docs.temporal.io/evaluate/features/job-queue.md)
+- [Temporal Nexus](https://docs.temporal.io/evaluate/features/nexus.md)
+- [Observability](https://docs.temporal.io/evaluate/features/observability.md)
+- [Schedules](https://docs.temporal.io/evaluate/features/schedules.md)
+- [Serverless Workers](https://docs.temporal.io/evaluate/features/serverless-workers.md)
+- [Timeouts and Retry Policies](https://docs.temporal.io/evaluate/features/timeouts-and-retries.md)
+- [Workflow message passing](https://docs.temporal.io/evaluate/features/workflow-message-passing.md)
+- [Temporal product release stages](https://docs.temporal.io/evaluate/product-release-stages.md)
+- [Understanding Temporal](https://docs.temporal.io/evaluate/understanding-temporal.md)
+- [Temporal use cases and design patterns](https://docs.temporal.io/evaluate/use-cases-design-patterns.md)
+- [Why Temporal?](https://docs.temporal.io/evaluate/why-temporal.md)

@@ -1,0 +1,598 @@
+{
+  "scope": "Local search, filter and simulator configuration interactions; remote transports intercepted",
+  "cases": [
+    {
+      "name": "desktop integration filter",
+      "text": "Integrations\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /integrations.md. Append .md to any page URL to fetch its Markdown.\nIntegrations\nCopy for LLM\nView Markdown\n\nBrowse integrations for Temporal SDKs and Temporal Cloud. Filter by SDK, tag, or search to find what you need.\n\nSDK\nGo\nJava\nPython\nRuby\nTypeScript\nLanguage-agnostic\nTAG\nAgent framework\nAgent observability\nFramework\nGovernance\nObservability\nTemporal Cloud\nDatadog (Cost Management)\n\nSend Temporal Cloud billing data to Datadog Cloud Cost Management for spend attribution by namespace and service type.\n\nOBSERVABILITY\nTEMPORAL CLOUD\nDatadog (Metrics)\n\nExport Temporal Cloud metrics to Datadog with a serverless integration and pre-built dashboard.\n\nOBSERVABILITY\nTEMPORAL CLOUD\nTags:IntegrationsAI FrameworksAgent FrameworksObservability\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nPriority and Fairness\nNext\nGlossary",
+      "links": [
+        [
+          "",
+          "/"
+        ],
+        [
+          "/llms.txt",
+          "/llms.txt"
+        ],
+        [
+          "/integrations.md",
+          "/integrations.md"
+        ],
+        [
+          "View Markdown",
+          "/integrations.md"
+        ],
+        [
+          "",
+          "https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fintegrations.md%20and%20answer%20questions%20about%20the%20content."
+        ],
+        [
+          "",
+          "https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fintegrations.md%20and%20answer%20questions%20about%20the%20content."
+        ],
+        [
+          "Datadog (Cost Management)Send Temporal Cloud billing data to Datadog Cloud Cost Management for spend attribution by namespace and service type.ObservabilityTemporal Cloud",
+          "https://docs.datadoghq.com/integrations/temporal-cloud-costs/"
+        ],
+        [
+          "Datadog (Metrics)Export Temporal Cloud metrics to Datadog with a serverless integration and pre-built dashboard.ObservabilityTemporal Cloud",
+          "https://docs.datadoghq.com/integrations/temporal-cloud-openmetrics/"
+        ],
+        [
+          "Integrations",
+          "/tags/integrations"
+        ],
+        [
+          "AI Frameworks",
+          "/tags/ai-frameworks"
+        ],
+        [
+          "Agent Frameworks",
+          "/tags/agent-frameworks"
+        ],
+        [
+          "Observability",
+          "/tags/observability"
+        ],
+        [
+          "View this page",
+          "https://github.com/temporalio/documentation/blob/main/docs/integrations.mdx"
+        ],
+        [
+          "PreviousPriority and Fairness",
+          "/demos/priority-fairness-walkthrough"
+        ],
+        [
+          "NextGlossary",
+          "/glossary"
+        ]
+      ]
+    },
+    {
+      "name": "desktop priority SDK section",
+      "active": "SDK Examples",
+      "text": "Interactive DemosPriority and Fairness\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /demos/priority-fairness-walkthrough.md. Append .md to any page URL to fetch its Markdown.\nTask Queue Priority and Fairness - Interactive Walkthrough\nCopy for LLM\nView Markdown\nPriority & Fairness\nOverview\nTry It\nHow It Works\nSDK Examples\n\nSet a priority key, fairness key, or both when starting Workflows or scheduling Activities. Priority and Fairness are enabled by default - no configuration required for Temporal Cloud or self-hosted clusters running Temporal 1.26+.\n\nHow to use Priority\nView examples →\nHow to use Fairness\nView examples →\nTags:Task QueuesPriority and Fairness\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nActivity retry simulator\nNext\nIntegrations"
+    },
+    {
+      "name": "desktop priority simulator section",
+      "active": "Try It",
+      "inputs": 2,
+      "buttons": [
+        "Copy for LLM",
+        "Overview",
+        "Try It",
+        "How It Works",
+        "SDK Examples",
+        "Run Simulation",
+        "+ Add",
+        "+ Task",
+        "How It Works"
+      ]
+    },
+    {
+      "name": "desktop search SDK filter",
+      "title": "Search results for \"workflow\"",
+      "checked": [
+        "Python"
+      ],
+      "note": "Showing Python and language-agnostic content",
+      "hits": [
+        [
+          "Workflows - Python SDKDeveloper Guides",
+          "http://127.0.0.1:4390/develop/python/workflows"
+        ]
+      ]
+    },
+    {
+      "name": "desktop search SDK clear",
+      "checked": 0
+    },
+    {
+      "name": "mobile integration filter",
+      "text": "Integrations\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /integrations.md. Append .md to any page URL to fetch its Markdown.\nIntegrations\nCopy for LLM\nView Markdown\n\nBrowse integrations for Temporal SDKs and Temporal Cloud. Filter by SDK, tag, or search to find what you need.\n\nSDK\nGo\nJava\nPython\nRuby\nTypeScript\nLanguage-agnostic\nTAG\nAgent framework\nAgent observability\nFramework\nGovernance\nObservability\nTemporal Cloud\nDatadog (Cost Management)\n\nSend Temporal Cloud billing data to Datadog Cloud Cost Management for spend attribution by namespace and service type.\n\nOBSERVABILITY\nTEMPORAL CLOUD\nDatadog (Metrics)\n\nExport Temporal Cloud metrics to Datadog with a serverless integration and pre-built dashboard.\n\nOBSERVABILITY\nTEMPORAL CLOUD\nTags:IntegrationsAI FrameworksAgent FrameworksObservability\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nPriority and Fairness\nNext\nGlossary",
+      "links": [
+        [
+          "",
+          "/"
+        ],
+        [
+          "/llms.txt",
+          "/llms.txt"
+        ],
+        [
+          "/integrations.md",
+          "/integrations.md"
+        ],
+        [
+          "View Markdown",
+          "/integrations.md"
+        ],
+        [
+          "",
+          "https://chatgpt.com/?prompt=Read%20https%3A%2F%2Fdocs.temporal.io%2Fintegrations.md%20and%20answer%20questions%20about%20the%20content."
+        ],
+        [
+          "",
+          "https://claude.ai/new?q=Read%20https%3A%2F%2Fdocs.temporal.io%2Fintegrations.md%20and%20answer%20questions%20about%20the%20content."
+        ],
+        [
+          "Datadog (Cost Management)Send Temporal Cloud billing data to Datadog Cloud Cost Management for spend attribution by namespace and service type.ObservabilityTemporal Cloud",
+          "https://docs.datadoghq.com/integrations/temporal-cloud-costs/"
+        ],
+        [
+          "Datadog (Metrics)Export Temporal Cloud metrics to Datadog with a serverless integration and pre-built dashboard.ObservabilityTemporal Cloud",
+          "https://docs.datadoghq.com/integrations/temporal-cloud-openmetrics/"
+        ],
+        [
+          "Integrations",
+          "/tags/integrations"
+        ],
+        [
+          "AI Frameworks",
+          "/tags/ai-frameworks"
+        ],
+        [
+          "Agent Frameworks",
+          "/tags/agent-frameworks"
+        ],
+        [
+          "Observability",
+          "/tags/observability"
+        ],
+        [
+          "View this page",
+          "https://github.com/temporalio/documentation/blob/main/docs/integrations.mdx"
+        ],
+        [
+          "PreviousPriority and Fairness",
+          "/demos/priority-fairness-walkthrough"
+        ],
+        [
+          "NextGlossary",
+          "/glossary"
+        ]
+      ]
+    },
+    {
+      "name": "mobile priority SDK section",
+      "active": "SDK Examples",
+      "text": "Interactive DemosPriority and Fairness\nFor the complete documentation index, see /llms.txt. This page is also available as raw Markdown at /demos/priority-fairness-walkthrough.md. Append .md to any page URL to fetch its Markdown.\nTask Queue Priority and Fairness - Interactive Walkthrough\nCopy for LLM\nView Markdown\nPriority & Fairness\nOverview\nTry It\nHow It Works\nSDK Examples\n\nSet a priority key, fairness key, or both when starting Workflows or scheduling Activities. Priority and Fairness are enabled by default - no configuration required for Temporal Cloud or self-hosted clusters running Temporal 1.26+.\n\nHow to use Priority\nView examples →\nHow to use Fairness\nView examples →\nTags:Task QueuesPriority and Fairness\n\nHelp us make Temporal better. View this page on GitHub.\n\nPrevious\nActivity retry simulator\nNext\nIntegrations"
+    },
+    {
+      "name": "mobile priority simulator section",
+      "active": "Try It",
+      "inputs": 2,
+      "buttons": [
+        "Copy for LLM",
+        "Overview",
+        "Try It",
+        "How It Works",
+        "SDK Examples",
+        "Run Simulation",
+        "+ Add",
+        "+ Task",
+        "How It Works"
+      ]
+    },
+    {
+      "name": "mobile search SDK filter",
+      "title": "Search results for \"workflow\"",
+      "checked": [
+        "Python"
+      ],
+      "note": "Showing Python and language-agnostic content",
+      "hits": [
+        [
+          "Workflows - Python SDKDeveloper Guides",
+          "http://127.0.0.1:4390/develop/python/workflows"
+        ]
+      ]
+    },
+    {
+      "name": "mobile search SDK clear",
+      "checked": 0
+    }
+  ],
+  "externalAttempts": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=Abx4Q8535Vw",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=SllSlxUwIOG",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.css",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/pushfeedback.esm.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://widget.kapa.ai/kapa-widget.bundle.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
+      "method": "GET",
+      "resource": "script"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://app.pushfeedback.com/api/v1/projects/6c1ptrxbky/",
+      "method": "GET",
+      "resource": "fetch"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap",
+      "method": "GET",
+      "resource": "stylesheet"
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+      "method": "GET",
+      "resource": "font"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=UNk1WneeD1p",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=Hfkz6OgW9yt",
+      "method": "POST",
+      "resource": "xhr"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    },
+    {
+      "url": "https://insights.algolia.io/1/events?X-Algolia-Application-Id=T5D6KNJCQS&X-Algolia-API-Key=4a2fa646f476d7756a7cdc599b625bec&X-Algolia-Agent=insights-js%20(2.17.3)%3B%20insights-js-browser-esm%20(2.17.3)%3B%20insights-middleware",
+      "method": "POST",
+      "resource": "ping"
+    }
+  ],
+  "errors": []
+}

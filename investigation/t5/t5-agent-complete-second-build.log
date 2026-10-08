@@ -1,0 +1,20 @@
+errors [] warnings 2
+browser_bundle 1.847s
+errors [] warnings 0
+retained_components_server_bundle 0.955s
+react_ssr_or_html_source 0.217s
+Error: EISDIR: illegal operation on a directory, read
+    at Object.readSync (node:fs:797:18)
+    at tryReadSync (node:fs:426:20)
+    at Object.readFileSync (node:fs:529:19)
+    at changed (/home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:2:243)
+    at /home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:10:1504
+    at stage (/home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:5:67)
+    at /home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:10:18
+    at Object.<anonymous> (/home/nick/Repositories/nift/nift-experiments/temporal-agent/tools/publish.cjs:13:566)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10) {
+  errno: -21,
+  code: 'EISDIR',
+  syscall: 'read'
+}

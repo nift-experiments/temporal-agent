@@ -1,0 +1,222 @@
+# Durable agent with tools using the OpenAI Agents SDK
+
+> For the complete documentation index, see [llms.txt](https://docs.temporal.io/llms.txt).
+> Any documentation page is available as raw Markdown by appending `.md` to its URL.
+
+> Build a durable AI agent with the OpenAI Agents SDK and Temporal that chooses tools to answer user questions.
+
+In this example, we show you how to build a durable agent using the [OpenAI Agents SDK Integration for Temporal](https://github.com/temporalio/sdk-python/tree/main/temporalio/contrib/openai_agents). The AI agent we build will have access to [tools](https://github.com/temporalio/sdk-python/tree/main/temporalio/contrib/openai_agents#tool-calling) (Temporal Activities) to answer user questions. The agent can determine which tools to use based on the user's input and execute them as needed.
+
+This recipe highlights key implementation patterns:
+
+- **Agent-based architecture**: Uses the OpenAI Agents SDK to create an agent that can reason about which tools to use and handles LLM invocation for you.
+- **Tool integration**: Temporal Activities can be used as tools by the agent. The integration offers the **activity_as_tool** helper function, which:
+  - Automatically generates OpenAI-compatible tool schemas from Activity function signatures
+  - Wraps Activities as agent tools that can be provided directly to the Agent
+  - Enables the agent to invoke Temporal Activities as tools, using Temporal's durable execution for tool calls
+- **Durable execution**: The agent's state and execution are managed by Temporal, providing reliability and observability
+- **Plugin configuration**: Uses the `OpenAIAgentsPlugin` to configure Temporal for OpenAI Agents SDK integration
+
+## Create the Activity
+
+We create Activities that serve as tools for the agent. These Activities can perform tasks like getting weather information or performing calculations.
+
+*File: activities/tools.py*
+
+<!--SNIPSTART:file activities/tools.py-->
+```python
+import math
+from dataclasses import dataclass
+
+from temporalio import activity
+
+# Temporal best practice: Create a data structure to hold the request parameters.
+@dataclass
+class Weather:
+    city: str
+    temperature_range: str
+    conditions: str
+
+@activity.defn
+async def get_weather(city: str) -> Weather:
+    """Get the weather for a given city."""
+    return Weather(city=city, temperature_range="14-20C", conditions="Sunny with wind.")
+
+@activity.defn
+async def calculate_circle_area(radius: float) -> float:
+    """Calculate the area of a circle given its radius."""
+    return math.pi * radius ** 2
+```
+<!--SNIPEND-->
+
+## Create the Workflow
+
+The Workflow creates an agent with specific instructions and tools. The agent can then process user input and decide which tools to use to answer questions. Since LLM invocation is an external API call, this typically would happen in a Temporal Activity. However, because of the Temporal integration with the OpenAI Agents SDK, this is handled for us and we do not need to implement the Activity ourselves.
+
+*File: workflows/hello_world_workflow.py*
+
+<!--SNIPSTART:file workflows/hello_world_workflow.py-->
+```python
+from datetime import timedelta
+
+from agents import Agent, Runner
+from temporalio import workflow
+from temporalio.contrib import openai_agents
+
+from activities.tools import calculate_circle_area, get_weather
+
+@workflow.defn
+class HelloWorldAgent:
+    @workflow.run
+    async def run(self, prompt: str) -> str:
+        agent = Agent(
+            name="Hello World Agent",
+            instructions="You are a helpful assistant that determines what tool to use based on the user's question.",
+            # Tools for the agent to use that are defined as activities
+            tools=[
+                openai_agents.workflow.activity_as_tool(
+                    get_weather, 
+                    start_to_close_timeout=timedelta(seconds=10)
+                ),
+                openai_agents.workflow.activity_as_tool(
+                    calculate_circle_area, 
+                    start_to_close_timeout=timedelta(seconds=10)
+                )
+            ]
+
+        )
+
+        result = await Runner.run(agent, prompt)
+        return result.final_output
+```
+<!--SNIPEND-->
+
+## Create the Worker
+
+Create the process for executing Activities and Workflows.
+We configure the Temporal client with the `OpenAIAgentsPlugin` to enable OpenAI Agents SDK integration.
+
+*File: worker.py*
+
+<!--SNIPSTART:file worker.py-->
+```python
+import asyncio
+from datetime import timedelta
+
+from temporalio.client import Client
+from temporalio.contrib.openai_agents import ModelActivityParameters, OpenAIAgentsPlugin
+from temporalio.worker import Worker
+
+from activities.tools import calculate_circle_area, get_weather
+from workflows.hello_world_workflow import HelloWorldAgent
+
+async def worker_main():
+    # Use the plugin to configure Temporal for use with OpenAI Agents SDK
+    client = await Client.connect(
+        "localhost:7233",
+        plugins=[
+            OpenAIAgentsPlugin(
+                model_params=ModelActivityParameters(
+                    start_to_close_timeout=timedelta(seconds=30)
+                )
+            ),
+        ],
+    )
+
+    worker = Worker(
+        client,
+        task_queue="hello-world-openai-agent-task-queue",
+        workflows=[HelloWorldAgent],
+        activities=[get_weather, calculate_circle_area],
+    )
+    await worker.run()
+
+if __name__ == "__main__":
+    asyncio.run(worker_main())
+```
+<!--SNIPEND-->
+
+## Create the Workflow Starter
+
+The starter script submits the agent Workflow to Temporal for execution, then waits for the result and prints it out.
+It uses the `OpenAIAgentsPlugin` to match the Worker configuration.
+
+*File: start_workflow.py*
+
+<!--SNIPSTART:file start_workflow.py-->
+```python
+import asyncio
+
+from temporalio.client import Client
+from temporalio.common import WorkflowIDConflictPolicy
+from temporalio.contrib.openai_agents import OpenAIAgentsPlugin
+
+from workflows.hello_world_workflow import HelloWorldAgent
+
+async def main():
+    client = await Client.connect(
+        "localhost:7233",
+        # Use the plugin to configure Temporal for use with OpenAI Agents SDK
+        plugins=[OpenAIAgentsPlugin()],
+    )
+
+    # Start workflow
+    print( 80 * "-" )
+
+    # Get user input
+    user_input = input("Enter a question: ")
+
+    # Submit the Hello World Agent workflow for execution
+    result = await client.execute_workflow(
+        HelloWorldAgent.run,
+        user_input,
+        id="my-workflow-id",
+        task_queue="hello-world-openai-agent-task-queue",
+        id_conflict_policy=WorkflowIDConflictPolicy.TERMINATE_EXISTING,
+    )
+    print(f"Result: {result}")
+
+    # End of workflow
+    print( 80 * "-" )
+    print("Workflow completed")
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+<!--SNIPEND-->
+
+## Running
+
+Start the Temporal Dev Server:
+
+```bash
+temporal server start-dev
+```
+
+Open a new terminal where you will run the agent worker. Set an OpenAI API key:
+
+```bash
+export OPENAI_API_KEY=sk...
+```
+
+Run the worker:
+
+```bash
+uv run worker.py
+```
+
+Start execution:
+
+```bash
+uv run start_workflow.py
+```
+
+## Example interactions
+
+Try asking the agent questions like:
+
+- "What's the weather in London?"
+- "Calculate the area of a circle with radius 5"
+- "What's the weather in Tokyo and calculate the area of a circle with radius 3"
+
+The agent will determine which tools to use and provide responses based on the available tools. Use the [OpenAI Traces dashboard](https://platform.openai.com/traces) to visualize and monitor your Workflows and tool calling.

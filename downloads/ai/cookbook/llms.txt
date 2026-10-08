@@ -1,0 +1,21 @@
+# AI Cookbook
+
+> Runnable examples for building AI and agent applications with Temporal.
+
+- [AI Cookbook](https://docs.temporal.io/ai/cookbook.md)
+- [Basic agentic loop with Claude and tool calling](https://docs.temporal.io/ai/cookbook/agentic-loop-tool-call-claude-python.md)
+- [Basic agentic loop with OpenAI and tool calling](https://docs.temporal.io/ai/cookbook/agentic-loop-tool-call-openai-python.md)
+- [Durable agent with tools using the AI SDK by Vercel](https://docs.temporal.io/ai/cookbook/ai-sdk-by-vercel-typescript.md)
+- [Deep research](https://docs.temporal.io/ai/cookbook/basic-openai-python.md)
+- [Claim check pattern with Temporal](https://docs.temporal.io/ai/cookbook/claim-check-pattern-python.md)
+- [Post-LLM guardrail with hard-rule overrides](https://docs.temporal.io/ai/cookbook/guardrails-hard-rules-python.md)
+- [Durable MCP weather server](https://docs.temporal.io/ai/cookbook/hello-world-durable-mcp-server.md)
+- [Hello world with LiteLLM](https://docs.temporal.io/ai/cookbook/hello-world-litellm-python.md)
+- [Hello world](https://docs.temporal.io/ai/cookbook/hello-world-openai-responses-python.md)
+- [Retry policy from HTTP responses](https://docs.temporal.io/ai/cookbook/http-retry-enhancement-python.md)
+- [Human-in-the-loop AI agent](https://docs.temporal.io/ai/cookbook/human-in-the-loop-python.md)
+- [Multi-Agent Orchestration — Google ADK + Temporal](https://docs.temporal.io/ai/cookbook/multi-agent-adk-python.md)
+- [Durable agent with tools using the OpenAI Agents SDK](https://docs.temporal.io/ai/cookbook/openai-agents-sdk-python.md)
+- [Durable agent with MCP and Activity-backed tools using the Strands Agents SDK](https://docs.temporal.io/ai/cookbook/strands-agents-python.md)
+- [Structured outputs with Temporal and OpenAI](https://docs.temporal.io/ai/cookbook/structured-output-openai-responses-python.md)
+- [Tool calling agent](https://docs.temporal.io/ai/cookbook/tool-call-openai-python.md)

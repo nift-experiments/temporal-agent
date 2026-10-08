@@ -22,7 +22,7 @@ See <a href="#cross-region-privatelink" class="">cross-region PrivateLink connec
 </li>
 <li class="">
 <p>Search for &quot;VPC&quot; in <em>Services</em> and select the option.</p>
-<p><img src="/assets/images/aws-console-40f582e91905cc8e9e2a57ed2b8306e5.png" alt="AWS console showing services, features, resources" decoding="async" loading="lazy" class="image_OlVL" width="1999" height="424"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;AWS console showing services, features, resources&quot;,&quot;src&quot;:&quot;/assets/images/aws-console-40f582e91905cc8e9e2a57ed2b8306e5.png&quot;,&quot;width&quot;:&quot;1999&quot;,&quot;height&quot;:&quot;424&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/aws-console-40f582e91905cc8e9e2a57ed2b8306e5.png" alt="AWS console showing services, features, resources" decoding="async" loading="lazy" class="image_OlVL" width="1999" height="424"/></span></p>
 </li>
 <li class="">
 <p>Select <em>Virtual private cloud</em> &gt; <em>Endpoints</em> from the left menu bar.</p>
@@ -44,7 +44,7 @@ Individual Namespaces do not use separate services.</p></div></div>
 <ol start="7">
 <li class="">
 <p>Confirm your service by clicking on the <em>Verify service</em> button. AWS should respond &quot;Service name verified.&quot;</p>
-<p><img src="/assets/images/service-settings-f78c196288b3c4d7f27def8902ddd994.png" alt="The service name field is filled out and the Verify service button is shown" decoding="async" loading="lazy" class="image_OlVL" width="1822" height="372"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;The service name field is filled out and the Verify service button is shown&quot;,&quot;src&quot;:&quot;/assets/images/service-settings-f78c196288b3c4d7f27def8902ddd994.png&quot;,&quot;width&quot;:&quot;1822&quot;,&quot;height&quot;:&quot;372&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/service-settings-f78c196288b3c4d7f27def8902ddd994.png" alt="The service name field is filled out and the Verify service button is shown" decoding="async" loading="lazy" class="image_OlVL" width="1822" height="372"/></span></p>
 </li>
 <li class="">
 <p>Select the VPC and subnets to peer with the Temporal Cloud service endpoint.</p>
@@ -57,7 +57,7 @@ The security group must accept TCP ingress traffic to port 7233 for gRPC communi
 <p>Click the <em>Create endpoint</em> button at the bottom of the screen.
 If successful, AWS reports &quot;Successfully created VPC endpoint.&quot; and lists the new endpoint.
 The new endpoint appears in the Endpoints list, along with its ID.</p>
-<p><img src="/assets/images/endpoint-created-3d5f6d905c2c07dc67809a20995c2d0c.png" alt="The created endpoint appears in the Endpoints list" decoding="async" loading="lazy" class="image_OlVL" width="1480" height="412"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;The created endpoint appears in the Endpoints list&quot;,&quot;src&quot;:&quot;/assets/images/endpoint-created-3d5f6d905c2c07dc67809a20995c2d0c.png&quot;,&quot;width&quot;:&quot;1480&quot;,&quot;height&quot;:&quot;412&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/endpoint-created-3d5f6d905c2c07dc67809a20995c2d0c.png" alt="The created endpoint appears in the Endpoints list" decoding="async" loading="lazy" class="image_OlVL" width="1480" height="412"/></span></p>
 </li>
 <li class="">
 <p>Click on the VPC endpoint ID in the Endpoints list to check its status.
@@ -66,7 +66,7 @@ This can take up to 10 minutes.</p>
 </li>
 <li class="">
 <p>Once the status is &quot;Available&quot;, the AWS PrivateLink is ready for use.</p>
-<p><img src="/assets/images/details-091226f9892c7224f3f64d10055067f5.png" alt="Highlighted DNS names section shows your hostname" decoding="async" loading="lazy" class="image_OlVL" width="1344" height="1190"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;Highlighted DNS names section shows your hostname&quot;,&quot;src&quot;:&quot;/assets/images/details-091226f9892c7224f3f64d10055067f5.png&quot;,&quot;width&quot;:&quot;1344&quot;,&quot;height&quot;:&quot;1190&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/details-091226f9892c7224f3f64d10055067f5.png" alt="Highlighted DNS names section shows your hostname" decoding="async" loading="lazy" class="image_OlVL" width="1344" height="1190"/></span></p>
 </li>
 </ol>
 <p>The next step is to <a href="#configuring-private-dns-for-aws-privatelink" class="">configure private DNS</a> so your clients can use the PrivateLink connection. For single-region Namespaces that don&#x27;t need per-Namespace DNS records, you can use <a href="#direct-vpce" class="">direct VPCE targeting</a> instead.</p>

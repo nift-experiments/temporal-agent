@@ -20,13 +20,13 @@ for(const button of document.querySelectorAll('button'))if(button.textContent.tr
 
 const updateThemeLabels=()=>{const choice=document.documentElement.dataset.themeChoice||'system';for(const b of document.querySelectorAll('[aria-label^=\"Switch between dark and light mode\"]'))b.setAttribute('aria-label','Switch between dark and light mode (currently '+(choice==='system'?'system mode':choice+' mode')+')');};updateThemeLabels();new MutationObserver(updateThemeLabels).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme-choice']});
 
-const desktopElement=document.querySelector('.theme-doc-toc-desktop');const desktopToc=desktopElement?.closest('[data-temporal-island=DesktopTOC]')||desktopElement;if(desktopToc){const marker=document.createComment('desktop toc');desktopToc.before(marker);const sync=()=>{if(matchMedia('(max-width:996px)').matches)desktopToc.remove();else if(!desktopToc.isConnected)marker.after(desktopToc);};sync();window.addEventListener('resize',sync);}
+const desktopElement=document.querySelector('.theme-doc-toc-desktop');const desktopToc=desktopElement?.closest('[data-temporal-island=DesktopTOC]')||desktopElement;if(desktopToc&&!document.querySelector('[data-has-toc]')){const marker=document.createComment('desktop toc');desktopToc.before(marker);const sync=()=>{if(matchMedia('(max-width:996px)').matches)desktopToc.remove();else if(!desktopToc.isConnected)marker.after(desktopToc);};sync();window.addEventListener('resize',sync);}
 
 for(const wrap of document.querySelectorAll('[data-temporal-tab-group]')){const stored=localStorage.getItem('docusaurus.tab.'+wrap.dataset.temporalTabGroup+namespace);const at=JSON.parse(wrap.dataset.temporalTabValues).indexOf(stored);const tab=wrap.querySelectorAll(':scope > .tabs-container > ul[role=tablist] > [role=tab]')[at];if(tab)selectTab(tab,false);}
 
 // Native details retain the server-rendered content; release the upstream collapsed
 // wrapper on toggle without serializing MDX children into a framework island.
-for(const details of document.querySelectorAll('main details')){const sync=()=>{details.dataset.collapsed=String(!details.open);const content=details.querySelector(':scope > div');if(content){content.style.height=details.open?'auto':'0px';content.style.overflow=details.open?'visible':'hidden';content.style.display=details.open?'block':'none';}};details.addEventListener('toggle',sync);sync();}
+for(const details of document.querySelectorAll('main details')){if(details.closest('[data-temporal-island=Details]'))continue;const sync=()=>{details.dataset.collapsed=String(!details.open);const content=details.querySelector(':scope > div');if(content){content.style.height=details.open?'auto':'0px';content.style.overflow=details.open?'visible':'hidden';content.style.display=details.open?'block':'none';}};details.addEventListener('toggle',sync);sync();}
 
 // Retain the pinned publication's active-sidebar positioning behavior.
 import activeSidebar from '@site/src/client/scrollSidebarToActivePage';

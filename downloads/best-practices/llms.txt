@@ -1,0 +1,17 @@
+# Best Practices
+
+> Recommended patterns for Temporal
+
+- [Best practices](https://docs.temporal.io/best-practices.md)
+- [Managing Temporal Cloud access control](https://docs.temporal.io/best-practices/cloud-access-control.md)
+- [Cost governance on Temporal Cloud](https://docs.temporal.io/best-practices/cost-governance.md)
+- [Workflow cost optimization](https://docs.temporal.io/best-practices/cost-optimization.md)
+- [Error handling](https://docs.temporal.io/best-practices/error-handling.md)
+- [Knowledge Hub](https://docs.temporal.io/best-practices/knowledge-hub.md)
+- [Managing Actions per Second (APS) limits in Temporal Cloud](https://docs.temporal.io/best-practices/managing-aps-limits.md)
+- [Namespace best practices](https://docs.temporal.io/best-practices/managing-namespace.md)
+- [Multi-tenant application patterns](https://docs.temporal.io/best-practices/multi-tenant-patterns.md)
+- [Pre-production testing](https://docs.temporal.io/best-practices/pre-production-testing.md)
+- [Security controls for Temporal Cloud](https://docs.temporal.io/best-practices/security-controls.md)
+- [Worker deployment and performance](https://docs.temporal.io/best-practices/worker.md)
+- [Alerting on Worker metrics](https://docs.temporal.io/best-practices/worker-alerting.md)

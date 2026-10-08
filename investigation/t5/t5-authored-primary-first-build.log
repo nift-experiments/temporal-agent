@@ -1,0 +1,17 @@
+markdown_mdx 9.740s { compiled: 794 }
+errors [] warnings 2
+browser_bundle 1.844s
+errors [] warnings 0
+retained_components_server_bundle 1.868s
+Invalid DOM property `fill-rule`. Did you mean `fillRule`?
+Invalid DOM property `clip-rule`. Did you mean `clipRule`?
+Invalid DOM property `stroke-width`. Did you mean `strokeWidth`?
+Invalid DOM property `stroke-linecap`. Did you mean `strokeLinecap`?
+Invalid DOM property `stroke-linejoin`. Did you mean `strokeLinejoin`?
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+<mdxAdmonitionTitle /> is using incorrect casing. Use PascalCase for React components, or lowercase for HTML elements.
+react_ssr_or_html_source 3.048s
+Error: Body marker missing cookbook-agentic-loop-tool-call-claude-python
+    at /home/nick/Repositories/nift/nift-experiments/temporal/tools/publish.cjs:10:730
+    at stage (/home/nick/Repositories/nift/nift-experiments/temporal/tools/publish.cjs:5:67)
+    at /home/nick/Repositories/nift/nift-experiments/temporal/tools/publish.cjs:10:18

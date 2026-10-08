@@ -35,7 +35,12 @@ and recovery handled by Temporal's Event History instead of custom orchestration
 Runnable, step-by-step recipes for building AI systems and agents with Temporal: tool calling, MCP, structured
 output, human-in-the-loop, and more.
 
-<!-- CookbookPreview (no recipes found) -->
+- [Hello world](/ai/cookbook/hello-world-openai-responses-python) — Call an LLM from a durable Temporal Workflow in Python using the OpenAI API library.
+- [Hello world with LiteLLM](/ai/cookbook/hello-world-litellm-python) — Integrate LiteLLM into a durable Temporal Workflow in Python to call and switch between LLM providers.
+- [Durable agent with tools using the AI SDK by Vercel](/ai/cookbook/ai-sdk-by-vercel-typescript) — Build a durable AI agent with the AI SDK by Vercel and Temporal that chooses tools to answer user questions.
+- [Structured outputs with Temporal and OpenAI](/ai/cookbook/structured-output-openai-responses-python) — Use Temporal and the OpenAI Responses API to reliably request output conforming to a specific data structure.
+
+[Browse all recipes](/ai/cookbook)
 
 ## Agent framework integrations
 

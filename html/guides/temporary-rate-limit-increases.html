@@ -59,7 +59,7 @@
 <li class="">Configure Worker scaling policies to handle the expected frequency of capacity adjustment requests.</li>
 </ol>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-diagram">Architecture diagram<a href="#architecture-diagram" class="hash-link" aria-label="Direct link to Architecture diagram" title="Direct link to Architecture diagram" translate="no">​</a></h2>
-<p><img src="/assets/images/orchestrate-temporary-rate-limit-increases-3d8967a70a75b3e332c3a994a8c3d69f.svg" alt="Architecture diagram for temporary rate limit increases" decoding="async" loading="lazy" class="image_OlVL" width="1464" height="1154"/></p>
+<p><span style="display:contents" data-temporal-island="MDXImage" data-props="{&quot;alt&quot;:&quot;Architecture diagram for temporary rate limit increases&quot;,&quot;src&quot;:&quot;/assets/images/orchestrate-temporary-rate-limit-increases-3d8967a70a75b3e332c3a994a8c3d69f.svg&quot;,&quot;width&quot;:&quot;1464&quot;,&quot;height&quot;:&quot;1154&quot;,&quot;noZoom&quot;:false}"><img src="/assets/images/orchestrate-temporary-rate-limit-increases-3d8967a70a75b3e332c3a994a8c3d69f.svg" alt="Architecture diagram for temporary rate limit increases" decoding="async" loading="lazy" class="image_OlVL" width="1464" height="1154"/></span></p>
 <p>The following diagram illustrates the flow of the requests to provision capacity and handle automatic cleanup after a 60 minute time-to-live.</p>
 <ol>
 <li class="">A client application sends a gRPC request to the <code>my-service</code> application with the requested limit and namespace.</li>
