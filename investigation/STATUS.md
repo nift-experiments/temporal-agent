@@ -59,3 +59,7 @@ T1 complete: unchanged production lifecycle repeated, 3984-file reference frozen
 ## T2 parity contract frozen
 
 126 reference states, 25 interaction observations across both viewports, 563 concrete redirect samples, Markdown negotiation/missing-route checks, and complete upstream OG validation are preserved under `investigation/t2`. Remote transport and inherited limitations are explicit in `investigation/PARITY-CONTRACT.md`. T2 complete; T3 architecture proof is next. No migrated corpus or performance claim yet.
+
+## T2 parity contract frozen
+
+126 reference states, 25 interaction observations across both viewports, 563 concrete redirect samples, Markdown negotiation/missing-route checks, and complete upstream OG validation are preserved under `investigation/t2`. Remote transport and inherited limitations are explicit in `investigation/PARITY-CONTRACT.md`. T2 complete; T3 architecture proof is next. No migrated corpus or performance claim yet.

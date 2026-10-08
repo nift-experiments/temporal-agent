@@ -18,3 +18,7 @@ PushFeedback public CDN resources resolved to 0.1.87 and Google Fonts Inter styl
 ### T2 frozen runtime test inputs
 
 PushFeedback public CDN resources resolved to 0.1.87 and Google Fonts Inter stylesheet/seven subsets are frozen and hashed in `t2/fixtures/remote-assets`. Algolia, Kapa, consent and feedback project responses are deterministic local fixtures. All telemetry/analytics/feedback submission/backend calls remain unexercised and never forwarded.
+
+### T2 frozen runtime test inputs
+
+PushFeedback public CDN resources resolved to 0.1.87 and Google Fonts Inter stylesheet/seven subsets are frozen and hashed in `t2/fixtures/remote-assets`. Algolia, Kapa, consent and feedback project responses are deterministic local fixtures. All telemetry/analytics/feedback submission/backend calls remain unexercised and never forwarded.

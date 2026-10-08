@@ -3,8 +3,8 @@
   "cases": [
     {
       "name": "desktop theme switch",
-      "theme": "dark",
-      "choice": "system"
+      "theme": "light",
+      "choice": "light"
     },
     {
       "name": "desktop tabs click",
@@ -82,8 +82,8 @@
     },
     {
       "name": "mobile theme switch",
-      "theme": "dark",
-      "choice": "system"
+      "theme": "light",
+      "choice": "light"
     },
     {
       "name": "mobile navigation open",
@@ -186,14 +186,14 @@
       "resource": "script"
     },
     {
-      "url": "https://consent.temporal.io/api/geo",
-      "method": "GET",
-      "resource": "fetch"
-    },
-    {
       "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
       "method": "GET",
       "resource": "script"
+    },
+    {
+      "url": "https://consent.temporal.io/api/geo",
+      "method": "GET",
+      "resource": "fetch"
     },
     {
       "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-a94be4c1.entry.js",
@@ -236,12 +236,12 @@
       "resource": "script"
     },
     {
-      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
       "method": "GET",
       "resource": "script"
     },
     {
-      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
       "method": "GET",
       "resource": "script"
     },
@@ -481,17 +481,17 @@
       "resource": "ping"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=emA06VcQ2Er",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=ILOzkqCFVAM",
       "method": "POST",
       "resource": "xhr"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=HXO6uOLVg4A",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=qkVb5BxjCJ5",
       "method": "POST",
       "resource": "xhr"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=41VyWuVbPb0",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=9dPrn1pDsDI",
       "method": "POST",
       "resource": "xhr"
     },
@@ -566,12 +566,12 @@
       "resource": "script"
     },
     {
-      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
       "method": "GET",
       "resource": "script"
     },
     {
-      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
       "method": "GET",
       "resource": "script"
     },
@@ -726,12 +726,12 @@
       "resource": "script"
     },
     {
-      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
+      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
       "method": "GET",
       "resource": "script"
     },
     {
-      "url": "https://cdn.jsdelivr.net/npm/pushfeedback@latest/dist/pushfeedback/p-ed68abdd.js",
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-TSXFPF2",
       "method": "GET",
       "resource": "script"
     },
@@ -866,17 +866,17 @@
       "resource": "ping"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=aIYiG5J92aM",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=O1CcHU3TFDV",
       "method": "POST",
       "resource": "xhr"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=sFmWzxCO6iK",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=qANXP0bH0LT",
       "method": "POST",
       "resource": "xhr"
     },
     {
-      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=8LoxQhQbkL7",
+      "url": "https://t5d6knjcqs-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(5.59.0)%3B%20Lite%20(5.59.0)%3B%20Browser%3B%20instantsearch.js%20(4.116.0)%3B%20react%20(19.2.8)%3B%20react-instantsearch%20(7.49.0)%3B%20react-instantsearch-core%20(7.49.0)%3B%20JS%20Helper%20(3.29.3)&x-algolia-api-key=4a2fa646f476d7756a7cdc599b625bec&x-algolia-application-id=T5D6KNJCQS&x-algolia-request-id=e3UpXugbAuW",
       "method": "POST",
       "resource": "xhr"
     },
