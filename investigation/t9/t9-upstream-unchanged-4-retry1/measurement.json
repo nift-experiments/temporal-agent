@@ -1,0 +1,43 @@
+{
+  "project": "upstream",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/yarn/node_modules/.bin/yarn",
+    "build"
+  ],
+  "timestamp_utc": "2026-10-08T19:45:33.133219+00:00",
+  "exit_code": 0,
+  "wall_seconds": 34.812116890912876,
+  "maximum_individual_descendant_rss_mib": 6948.890625,
+  "sampled_descendant_rss_sum_peak_mib": 7040.1015625,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": false,
+  "cookbook_pin": "2385cc030f9ca1cc67b05082f1990d20cfc3a38c",
+  "output": {
+    "files": 3984,
+    "bytes": 265647255
+  },
+  "observed_phase_markers_seconds": {
+    "prebuild": 0.1524224649183452,
+    "docusaurus_build": 4.370314317056909,
+    "postbuild": 34.76164722908288
+  },
+  "observed_phase_seconds": {
+    "command_start_to_prebuild_marker": 0.1524224649183452,
+    "prebuild_marker_to_build_marker": 4.217891852138564,
+    "build_marker_to_postbuild_marker": 30.391332912025973,
+    "postbuild_marker_to_exit": 0.05046966182999313
+  },
+  "phase_qualification": "CLI marker arrival observed from production log at roughly 50 ms polling resolution; includes Yarn transitions; not internal compiler instrumentation",
+  "og_stats": {
+    "generated": 0,
+    "cached": 793,
+    "overridden": 0,
+    "skipped": 1,
+    "renderMs": 0,
+    "outputBytes": 43666210
+  }
+}

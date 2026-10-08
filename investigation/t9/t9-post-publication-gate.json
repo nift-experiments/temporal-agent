@@ -1,0 +1,22 @@
+[
+  {
+    "project": "temporal",
+    "files": 2996,
+    "final_publication_equals_accepted_clean_clone": true,
+    "source_clean": true
+  },
+  {
+    "project": "temporal-agent",
+    "files": 2996,
+    "final_publication_equals_accepted_clean_clone": true,
+    "source_clean": true
+  },
+  {
+    "project": "upstream",
+    "files": 3984,
+    "reference_identical_files": 3983,
+    "operational_difference_only": [
+      ".og-image-stats.json"
+    ]
+  }
+]

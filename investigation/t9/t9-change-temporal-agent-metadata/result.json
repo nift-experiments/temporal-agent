@@ -1,0 +1,65 @@
+{
+  "project": "temporal-agent",
+  "case": "metadata",
+  "incremental_seconds": 1.4645813049282879,
+  "explicit_maintenance_seconds": 0.6794089849572629,
+  "whole_operation_seconds": 2.1439902898855507,
+  "files": 2997,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true,
+  "components": {
+    "sourceModel": "maintained HTML",
+    "force": false,
+    "stages": {
+      "browser_bundle": 3.8124000000010486e-05,
+      "retained_components_server_bundle": 0.02405374400000001,
+      "react_ssr_or_html_source": 0.419488981,
+      "shell_and_dependencies": 0.47294478300000004,
+      "static_and_browser_publication": 0.13072165900000005,
+      "markdown_downloads_or_static": 0.14188991699999998,
+      "sitemap": 0.042827054999999975,
+      "nift_composition": 0.07859602999999993,
+      "complete": 1.363718398
+    },
+    "files": 2997,
+    "bytes": 220596659,
+    "scope": "Complete maintained-HTML production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+  },
+  "measurement": {
+    "project": "temporal-agent",
+    "command": [
+      "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+      "tools/publish.cjs"
+    ],
+    "timestamp_utc": "2026-10-08T19:56:00.034113+00:00",
+    "exit_code": 0,
+    "wall_seconds": 1.4645813049282879,
+    "maximum_individual_descendant_rss_mib": 220.828125,
+    "sampled_descendant_rss_sum_peak_mib": 229.92578125,
+    "sample_period_target_seconds": 0.05,
+    "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+    "dependency_acquisition_outside_timing": true,
+    "os_caches": "uncontrolled",
+    "production_not_dev_hmr": true,
+    "force": false,
+    "components": {
+      "sourceModel": "maintained HTML",
+      "force": false,
+      "stages": {
+        "browser_bundle": 3.8124000000010486e-05,
+        "retained_components_server_bundle": 0.02405374400000001,
+        "react_ssr_or_html_source": 0.419488981,
+        "shell_and_dependencies": 0.47294478300000004,
+        "static_and_browser_publication": 0.13072165900000005,
+        "markdown_downloads_or_static": 0.14188991699999998,
+        "sitemap": 0.042827054999999975,
+        "nift_composition": 0.07859602999999993,
+        "complete": 1.363718398
+      },
+      "files": 2997,
+      "bytes": 220596659,
+      "scope": "Complete maintained-HTML production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+    }
+  }
+}

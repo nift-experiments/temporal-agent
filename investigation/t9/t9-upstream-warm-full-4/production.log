@@ -1,0 +1,44 @@
+yarn run v1.22.22
+$ node ./bin/sync-ai-cookbook.js
+[sync-ai-cookbook] cloning https://github.com/temporalio/ai-cookbook.git (main)
+Cloning into '/tmp/ai-cookbook-sync/repo'...
+[sync-ai-cookbook] skipped README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_openai_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_claude_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] wrote 16 file(s):
+  - agentic-loop-tool-call-claude-python.mdx ← agents/agentic_loop_tool_call_claude_python/README.md
+  - agentic-loop-tool-call-openai-python.mdx ← agents/agentic_loop_tool_call_openai_python/README.md
+  - ai-sdk-by-vercel-typescript.mdx ← agents/ai_sdk_by_vercel_typescript/README.md
+  - basic-openai-python.mdx ← deep_research/basic_openai_python/README.md
+  - claim-check-pattern-python.mdx ← foundations/claim_check_pattern_python/README.md
+  - guardrails-hard-rules-python.mdx ← agents/guardrails_hard_rules_python/README.md
+  - hello-world-durable-mcp-server.mdx ← mcp/hello_world_durable_mcp_server/README.md
+  - hello-world-litellm-python.mdx ← foundations/hello_world_litellm_python/README.md
+  - hello-world-openai-responses-python.mdx ← foundations/hello_world_openai_responses_python/README.md
+  - http-retry-enhancement-python.mdx ← foundations/http_retry_enhancement_python/README.md
+  - human-in-the-loop-python.mdx ← agents/human_in_the_loop_python/README.md
+  - multi-agent-adk-python.mdx ← agents/multi_agent_adk_python/README.md
+  - openai-agents-sdk-python.mdx ← agents/openai_agents_sdk_python/README.md
+  - strands-agents-python.mdx ← agents/strands_agents_python/README.md
+  - structured-output-openai-responses-python.mdx ← foundations/structured_output_openai_responses_python/README.md
+  - tool-call-openai-python.mdx ← agents/tool_call_openai_python/README.md
+$ node --max-old-space-size=7168 ./node_modules/@docusaurus/core/bin/docusaurus.mjs build
+[INFO] [en] Creating an optimized production build...
+[cookbook-index] init with docsDir: ai-cookbook
+[cookbook-index] resolved docsDir: /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/ai-cookbook
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[markdown-pages] Generated 792 clean markdown files, 2 excluded, 124 transform warnings
+[markdown-pages] Generated root llms.txt (13945 bytes) and 24 section llms.txt files
+[markdown-pages] Generated llms-full.txt (778 pages, 7.5 MB, 10 excluded)
+[og-image] 0 card(s) rendered, 793 served from cache, 0 page(s) kept a manual override, 1 page(s) skipped (not routed)
+(node:2071073) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+$ node ./bin/check-font-preload-hash.js
+[check-font-preload-hash] OK: preloaded font hashes match the build output.
+Done in 34.01s.

@@ -1,3 +1,7 @@
+# Temporal migration — T0–T9 complete
+
+Accepted and closed. Public clean-clone publication, final serialized benchmarks, incremental equality and restored parity pass. Both source models remain distinct; no Nift core/template changes. See [final report](investigation/FINAL-REPORT.md) and [migration-init review](investigation/MIGRATION-INIT-REVIEW.md). Future profiling/tooling ideas are separate work.
+
 # HANDOVER.md
 v0.0.8
 

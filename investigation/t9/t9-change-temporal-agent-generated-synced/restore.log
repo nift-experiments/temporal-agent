@@ -1,0 +1,14 @@
+browser_bundle 0.000s
+retained_components_server_bundle 0.022s
+react_ssr_or_html_source 0.361s
+shell_and_dependencies 0.163s
+static_and_browser_publication 0.141s
+markdown_downloads_or_static 0.142s
+sitemap 0.047s
+built ai/cookbook/basic-openai-python/index
+    ↳ dependency changed: .cache/rendered/cookbook-basic-openai-python.html
+    ↳ dependency changed: html/ai-cookbook/basic-openai-python.html
+📦 1 file rebuilt successfully
+time taken: 0.048774 seconds
+nift_composition 0.057s
+complete 0.981s

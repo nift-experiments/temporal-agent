@@ -1,3 +1,7 @@
+# Temporal migration — T0–T9 complete
+
+Accepted and closed. Public clean-clone publication, final serialized benchmarks, incremental equality and restored parity pass. Both source models remain distinct; no Nift core/template changes. See [final report](FINAL-REPORT.md) and [migration-init review](MIGRATION-INIT-REVIEW.md). Future profiling/tooling ideas are separate work.
+
 # STATUS.md
 
 Resumable migration state. A new agent should be able to read `AGENTS.md`,

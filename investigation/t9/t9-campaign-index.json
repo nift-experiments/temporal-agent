@@ -1,0 +1,434 @@
+{
+  "definitions": {
+    "warm-full": "Complete upstream production command; Nift --force recomputes conversion, bundles, body/shell/projections, and all Nift pages. Installed dependencies and OS caches retained.",
+    "fresh-app": "Delete application/compiler/publication caches (upstream includes OG cache); preserve installed dependencies and pinned external source clone. Nift maintained OG assets remain source inputs, not caches. OS caches uncontrolled.",
+    "unchanged": "Normal complete command with unchanged maintained inputs after prior publication; upstream still runs prebuild/build/postbuild."
+  },
+  "runs": [
+    {
+      "label": "t9-upstream-warm-full-1",
+      "project": "upstream",
+      "scenario": "warm-full",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 36.49338818597607
+    },
+    {
+      "label": "t9-temporal-warm-full-1",
+      "project": "temporal",
+      "scenario": "warm-full",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 25.934108790010214
+    },
+    {
+      "label": "t9-temporal-agent-warm-full-1",
+      "project": "temporal-agent",
+      "scenario": "warm-full",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 10.347962989937514
+    },
+    {
+      "label": "t9-temporal-warm-full-2",
+      "project": "temporal",
+      "scenario": "warm-full",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 25.731134185101837
+    },
+    {
+      "label": "t9-temporal-agent-warm-full-2",
+      "project": "temporal-agent",
+      "scenario": "warm-full",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 10.146901958156377
+    },
+    {
+      "label": "t9-upstream-warm-full-2",
+      "project": "upstream",
+      "scenario": "warm-full",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 33.67239540908486
+    },
+    {
+      "label": "t9-temporal-agent-warm-full-3",
+      "project": "temporal-agent",
+      "scenario": "warm-full",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 10.244118566159159
+    },
+    {
+      "label": "t9-upstream-warm-full-3",
+      "project": "upstream",
+      "scenario": "warm-full",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 35.28922865213826
+    },
+    {
+      "label": "t9-temporal-warm-full-3",
+      "project": "temporal",
+      "scenario": "warm-full",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 26.083934661000967
+    },
+    {
+      "label": "t9-upstream-warm-full-4",
+      "project": "upstream",
+      "scenario": "warm-full",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 34.15565218194388
+    },
+    {
+      "label": "t9-temporal-warm-full-4",
+      "project": "temporal",
+      "scenario": "warm-full",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 26.049934091046453
+    },
+    {
+      "label": "t9-temporal-agent-warm-full-4",
+      "project": "temporal-agent",
+      "scenario": "warm-full",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 10.398476270958781
+    },
+    {
+      "label": "t9-temporal-warm-full-5",
+      "project": "temporal",
+      "scenario": "warm-full",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 26.094090498052537
+    },
+    {
+      "label": "t9-temporal-agent-warm-full-5",
+      "project": "temporal-agent",
+      "scenario": "warm-full",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 10.498583565931767
+    },
+    {
+      "label": "t9-upstream-warm-full-5",
+      "project": "upstream",
+      "scenario": "warm-full",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 32.10252332687378
+    },
+    {
+      "label": "t9-upstream-fresh-app-1",
+      "project": "upstream",
+      "scenario": "fresh-app",
+      "sample": 1,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/.docusaurus",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/build",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/.cache"
+      ],
+      "wall_seconds": 289.6392484889366
+    },
+    {
+      "label": "t9-temporal-fresh-app-1",
+      "project": "temporal",
+      "scenario": "fresh-app",
+      "sample": 1,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.nift/public"
+      ],
+      "wall_seconds": 25.93947961507365
+    },
+    {
+      "label": "t9-temporal-agent-fresh-app-1",
+      "project": "temporal-agent",
+      "scenario": "fresh-app",
+      "sample": 1,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.nift/public"
+      ],
+      "wall_seconds": 10.3525121929124
+    },
+    {
+      "label": "t9-temporal-fresh-app-2",
+      "project": "temporal",
+      "scenario": "fresh-app",
+      "sample": 2,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.nift/public"
+      ],
+      "wall_seconds": 26.437300963094458
+    },
+    {
+      "label": "t9-temporal-agent-fresh-app-2",
+      "project": "temporal-agent",
+      "scenario": "fresh-app",
+      "sample": 2,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.nift/public"
+      ],
+      "wall_seconds": 10.610870936885476
+    },
+    {
+      "label": "t9-upstream-fresh-app-2",
+      "project": "upstream",
+      "scenario": "fresh-app",
+      "sample": 2,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/.docusaurus",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/build",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/.cache"
+      ],
+      "wall_seconds": 289.3834428039845
+    },
+    {
+      "label": "t9-temporal-agent-fresh-app-3",
+      "project": "temporal-agent",
+      "scenario": "fresh-app",
+      "sample": 3,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.nift/public"
+      ],
+      "wall_seconds": 10.44867330789566
+    },
+    {
+      "label": "t9-upstream-fresh-app-3",
+      "project": "upstream",
+      "scenario": "fresh-app",
+      "sample": 3,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/.docusaurus",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/build",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/.cache"
+      ],
+      "wall_seconds": 289.35290403990075
+    },
+    {
+      "label": "t9-temporal-fresh-app-3",
+      "project": "temporal",
+      "scenario": "fresh-app",
+      "sample": 3,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.nift/public"
+      ],
+      "wall_seconds": 26.04856038815342
+    },
+    {
+      "label": "t9-upstream-fresh-app-4",
+      "project": "upstream",
+      "scenario": "fresh-app",
+      "sample": 4,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/.docusaurus",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/build",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/.cache"
+      ],
+      "wall_seconds": 311.62409758009017
+    },
+    {
+      "label": "t9-temporal-fresh-app-4",
+      "project": "temporal",
+      "scenario": "fresh-app",
+      "sample": 4,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.nift/public"
+      ],
+      "wall_seconds": 29.08894784608856
+    },
+    {
+      "label": "t9-temporal-agent-fresh-app-4",
+      "project": "temporal-agent",
+      "scenario": "fresh-app",
+      "sample": 4,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.nift/public"
+      ],
+      "wall_seconds": 11.217799209058285
+    },
+    {
+      "label": "t9-temporal-fresh-app-5",
+      "project": "temporal",
+      "scenario": "fresh-app",
+      "sample": 5,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal/.nift/public"
+      ],
+      "wall_seconds": 29.026950192870572
+    },
+    {
+      "label": "t9-temporal-agent-fresh-app-5",
+      "project": "temporal-agent",
+      "scenario": "fresh-app",
+      "sample": 5,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.cache",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/public",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-agent/.nift/public"
+      ],
+      "wall_seconds": 15.730125253088772
+    },
+    {
+      "label": "t9-upstream-fresh-app-5",
+      "project": "upstream",
+      "scenario": "fresh-app",
+      "sample": 5,
+      "preparation_outside_timing": [
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/.docusaurus",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/build",
+        "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/node_modules/.cache"
+      ],
+      "wall_seconds": 341.44390037003905
+    },
+    {
+      "label": "t9-upstream-unchanged-1",
+      "project": "upstream",
+      "scenario": "unchanged",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 45.5770203480497
+    },
+    {
+      "label": "t9-temporal-unchanged-1",
+      "project": "temporal",
+      "scenario": "unchanged",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 2.174452539999038
+    },
+    {
+      "label": "t9-temporal-agent-unchanged-1",
+      "project": "temporal-agent",
+      "scenario": "unchanged",
+      "sample": 1,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.365099114831537
+    },
+    {
+      "label": "t9-temporal-unchanged-2",
+      "project": "temporal",
+      "scenario": "unchanged",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 2.173209050903097
+    },
+    {
+      "label": "t9-temporal-agent-unchanged-2",
+      "project": "temporal-agent",
+      "scenario": "unchanged",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.3160342250484973
+    },
+    {
+      "label": "t9-upstream-unchanged-2",
+      "project": "upstream",
+      "scenario": "unchanged",
+      "sample": 2,
+      "preparation_outside_timing": [],
+      "wall_seconds": 48.78878073114902
+    },
+    {
+      "label": "t9-temporal-agent-unchanged-3",
+      "project": "temporal-agent",
+      "scenario": "unchanged",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.5167237289715558
+    },
+    {
+      "label": "t9-upstream-unchanged-3",
+      "project": "upstream",
+      "scenario": "unchanged",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 44.636952890083194
+    },
+    {
+      "label": "t9-temporal-unchanged-3",
+      "project": "temporal",
+      "scenario": "unchanged",
+      "sample": 3,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.7674762569367886
+    },
+    {
+      "label": "t9-upstream-unchanged-4-retry1",
+      "project": "upstream",
+      "scenario": "unchanged",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 34.812116890912876
+    },
+    {
+      "label": "t9-temporal-unchanged-4",
+      "project": "temporal",
+      "scenario": "unchanged",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.5638956429902464
+    },
+    {
+      "label": "t9-temporal-agent-unchanged-4",
+      "project": "temporal-agent",
+      "scenario": "unchanged",
+      "sample": 4,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.0093962519895285
+    },
+    {
+      "label": "t9-temporal-unchanged-5",
+      "project": "temporal",
+      "scenario": "unchanged",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.6150632540229708
+    },
+    {
+      "label": "t9-temporal-agent-unchanged-5",
+      "project": "temporal-agent",
+      "scenario": "unchanged",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 1.1110823140479624
+    },
+    {
+      "label": "t9-upstream-unchanged-5",
+      "project": "upstream",
+      "scenario": "unchanged",
+      "sample": 5,
+      "preparation_outside_timing": [],
+      "wall_seconds": 35.741650141077116
+    }
+  ],
+  "source_commits": {
+    "upstream": "5d9703a237a9efc9a7da48ac09f79526823b8182",
+    "temporal": "756db298c972e4d31d9d3b75f0ceed0473168a93",
+    "temporal-agent": "5e80384aa5d95c18138b0ac58340a08a7055f34e"
+  }
+}

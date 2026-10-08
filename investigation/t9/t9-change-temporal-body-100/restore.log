@@ -1,0 +1,262 @@
+[sync-ai-cookbook] skipped README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_openai_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_claude_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] wrote 16 file(s):
+  - agentic-loop-tool-call-claude-python.mdx ← agents/agentic_loop_tool_call_claude_python/README.md
+  - agentic-loop-tool-call-openai-python.mdx ← agents/agentic_loop_tool_call_openai_python/README.md
+  - ai-sdk-by-vercel-typescript.mdx ← agents/ai_sdk_by_vercel_typescript/README.md
+  - basic-openai-python.mdx ← deep_research/basic_openai_python/README.md
+  - claim-check-pattern-python.mdx ← foundations/claim_check_pattern_python/README.md
+  - guardrails-hard-rules-python.mdx ← agents/guardrails_hard_rules_python/README.md
+  - hello-world-durable-mcp-server.mdx ← mcp/hello_world_durable_mcp_server/README.md
+  - hello-world-litellm-python.mdx ← foundations/hello_world_litellm_python/README.md
+  - hello-world-openai-responses-python.mdx ← foundations/hello_world_openai_responses_python/README.md
+  - http-retry-enhancement-python.mdx ← foundations/http_retry_enhancement_python/README.md
+  - human-in-the-loop-python.mdx ← agents/human_in_the_loop_python/README.md
+  - multi-agent-adk-python.mdx ← agents/multi_agent_adk_python/README.md
+  - openai-agents-sdk-python.mdx ← agents/openai_agents_sdk_python/README.md
+  - strands-agents-python.mdx ← agents/strands_agents_python/README.md
+  - structured-output-openai-responses-python.mdx ← foundations/structured_output_openai_responses_python/README.md
+  - tool-call-openai-python.mdx ← agents/tool_call_openai_python/README.md
+local_cookbook_inputs 0.082s
+[cookbook-index] init with docsDir: ai-cookbook
+[cookbook-index] resolved docsDir: /home/nick/Repositories/nift/nift-experiments/temporal/ai-cookbook
+markdown_mdx 2.889s { compiled: 100, cached: 694 }
+browser_bundle 0.000s
+errors [] warnings 0
+retained_components_server_bundle 2.473s
+react_ssr_or_html_source 0.567s
+shell_and_dependencies 0.204s
+static_and_browser_publication 0.128s
+[markdown-pages] Generated 792 clean markdown files, 2 excluded, 124 transform warnings
+[markdown-pages] Generated root llms.txt (13945 bytes) and 24 section llms.txt files
+[markdown-pages] Generated llms-full.txt (778 pages, 7.5 MB, 10 excluded)
+markdown_downloads_or_static 1.933s
+sitemap 0.042s
+rebuild causes:
+  ↳ dependency changed: .cache/rendered/cli.html → 1 file
+  ↳ dependency changed: .cache/rendered/diagram.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9haS9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy93b3JrZXItYWxlcnRpbmcubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy93b3JrZXIubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jb3N0LW9wdGltaXphdGlvbi5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jb3N0LWdvdmVybmFuY2UubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jbG91ZC1hY2Nlc3MtY29udHJvbC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9lcnJvci1oYW5kbGluZy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9rbm93bGVkZ2UtaHViLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tYW5hZ2luZy1hcHMtbGltaXRzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tYW5hZ2luZy1uYW1lc3BhY2UubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tdWx0aS10ZW5hbnQtcGF0dGVybnMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9wcmUtcHJvZHVjdGlvbi10ZXN0aW5nLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9zZWN1cml0eS1jb250cm9scy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9hd3MtZXhwb3J0LXMzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9hdWRpdC1sb2dzLWF3cy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9hdWRpdC1sb2dzLWdjcC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9hdWRpdC1sb2dzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9iaWxsaW5nLWFuZC11c2FnZS9hY3Rpb25zLXVzYWdlLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9iaWxsaW5nLWFuZC11c2FnZS9iaWxsaW5nLWFwaS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9iaWxsaW5nLWFuZC11c2FnZS9iaWxsaW5nLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9iaWxsaW5nLWFuZC11c2FnZS9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9jYXBhY2l0eS1tb2Rlcy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9jb25uZWN0aXZpdHkvZ2NwLWNvbm5lY3Rpdml0eS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9jb25uZWN0aXZpdHkvaW5kZXgubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9jb25uZWN0aXZpdHkvaXAtYWRkcmVzc2VzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9leHBvcnQubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nY3AtZXhwb3J0LWdjcy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC91c2VyLWludml0ZS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC9hcGkta2V5cy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC9jZXJ0aWZpY2F0ZXMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9nZXQtc3RhcnRlZC9uYW1lc3BhY2VzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9hcmNoaXRlY3R1cmUtcGF0dGVybnMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9lbmFibGUubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9mYWlsb3ZlcnMvaW5kZXgubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9mYWlsb3ZlcnMvbWFuYWdlLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9oYS1jb25uZWN0aXZpdHkubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9oaWdoLWF2YWlsYWJpbGl0eS9tb25pdG9yaW5nLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL2N1c3RvbS1yb2xlcy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL2luZGV4Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3Blcm1pc3Npb25zLXJlZmVyZW5jZS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3JvbGVzLWFuZC1wZXJtaXNzaW9ucy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3NhbWwubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3NjaW0ubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3NlcnZpY2UtYWNjb3VudHMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3VzZXItZ3JvdXBzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tYW5hZ2UtYWNjZXNzL3VzZXJzLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL29wZW5tZXRyaWNzL21ldHJpY3MtaW50ZWdyYXRpb25zLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL29wZW5tZXRyaWNzL21ldHJpY3MtcmVmZXJlbmNlLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL29wZW5tZXRyaWNzL2FwaS1yZWZlcmVuY2UubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL29wZW5tZXRyaWNzL2ZhcS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL29wZW5tZXRyaWNzL2luZGV4Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tZXRyaWNzL3Nkay1tZXRyaWNzLXNldHVwLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9taWdyYXRlL21hbnVhbC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9taWdyYXRlL21pZ3JhdGUtd2l0aGluLWNsb3VkLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9taWdyYXRlL2F1dG9tYXRlZC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9taWdyYXRlL2VzdGltYXRlLWFjdGlvbnMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9taWdyYXRlL2luZGV4Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9tb25pdG9yL2luZGV4Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9uZXh1cy9pbmRleC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9uZXh1cy9sYXRlbmN5LWF2YWlsYWJpbGl0eS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9uZXh1cy9saW1pdHMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9uZXh1cy9vYnNlcnZhYmlsaXR5Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbG91ZC9uZXh1cy9wcmljaW5nLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY29uZmlnLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvY29ubmVjdGl2aXR5Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvY3VzdG9tLXJvbGUubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvYWNjb3VudC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvYXBpa2V5Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvYXN5bmMtb3BlcmF0aW9uLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvaW5kZXgubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvbG9naW4ubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvbG9nb3V0Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvbmFtZXNwYWNlLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvbmV4dXMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvc2VydmljZS1hY2NvdW50Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvcHJvamVjdC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvcmVnaW9uLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvd2hvYW1pLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvdXNlci1ncm91cC5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvY2xvdWQvdXNlci5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvYWN0aXZpdHkubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvYmF0Y2gubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvZW52Lm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvaW5kZXgubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2Uvb3BlcmF0b3IubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvbmV4dXMubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2Uvc2NoZWR1bGUubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2Uvc2VydmVyLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2Uvd29ya2VyLm1keA.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY29tbWFuZC1yZWZlcmVuY2UvdGFzay1xdWV1ZS5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY2xpLWJhc2ljcy5tZHg.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvY2xvdWQubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/doc-ZG9jcy9jbGkvaW5kZXgubWR4.html → 1 file
+  ↳ dependency changed: .cache/rendered/generated-cli.html → 1 file
+  ↳ dependency changed: ai-cookbook/agentic-loop-tool-call-claude-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/agentic-loop-tool-call-openai-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/ai-sdk-by-vercel-typescript.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/basic-openai-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/claim-check-pattern-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/guardrails-hard-rules-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/hello-world-durable-mcp-server.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/hello-world-litellm-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/hello-world-openai-responses-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/http-retry-enhancement-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/human-in-the-loop-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/index.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/multi-agent-adk-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/openai-agents-sdk-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/strands-agents-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/structured-output-openai-responses-python.mdx → 1 file
+  ↳ dependency changed: ai-cookbook/tool-call-openai-python.mdx → 1 file
+  ↳ dependency changed: docs/ai/index.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/cloud-access-control.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/cost-governance.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/cost-optimization.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/error-handling.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/index.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/knowledge-hub.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/managing-aps-limits.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/managing-namespace.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/multi-tenant-patterns.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/pre-production-testing.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/security-controls.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/worker-alerting.mdx → 1 file
+  ↳ dependency changed: docs/best-practices/worker.mdx → 1 file
+  ↳ dependency changed: docs/cli/cli-basics.mdx → 1 file
+  ↳ dependency changed: docs/cli/cloud.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/activity.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/batch.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/account.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/apikey.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/async-operation.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/connectivity.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/custom-role.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/index.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/login.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/logout.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/namespace.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/nexus.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/project.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/region.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/service-account.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/user-group.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/user.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/cloud/whoami.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/config.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/env.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/index.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/nexus.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/operator.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/schedule.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/server.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/task-queue.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/worker.mdx → 1 file
+  ↳ dependency changed: docs/cli/command-reference/workflow.mdx → 1 file
+  ↳ dependency changed: docs/cli/index.mdx → 1 file
+  ↳ dependency changed: docs/cli/setup-cli.mdx → 1 file
+  ↳ dependency changed: docs/cloud/audit-logs-aws.mdx → 1 file
+  ↳ dependency changed: docs/cloud/audit-logs-gcp.mdx → 1 file
+  ↳ dependency changed: docs/cloud/audit-logs.mdx → 1 file
+  ↳ dependency changed: docs/cloud/aws-export-s3.mdx → 1 file
+  ↳ dependency changed: docs/cloud/billing-and-usage/actions-usage.mdx → 1 file
+  ↳ dependency changed: docs/cloud/billing-and-usage/billing-api.mdx → 1 file
+  ↳ dependency changed: docs/cloud/billing-and-usage/billing.mdx → 1 file
+  ↳ dependency changed: docs/cloud/billing-and-usage/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/capacity-modes.mdx → 1 file
+  ↳ dependency changed: docs/cloud/connectivity/aws-connectivity.mdx → 1 file
+  ↳ dependency changed: docs/cloud/connectivity/gcp-connectivity.mdx → 1 file
+  ↳ dependency changed: docs/cloud/connectivity/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/connectivity/ip-addresses.mdx → 1 file
+  ↳ dependency changed: docs/cloud/export.mdx → 1 file
+  ↳ dependency changed: docs/cloud/gcp-export-gcs.mdx → 1 file
+  ↳ dependency changed: docs/cloud/get-started/api-keys.mdx → 1 file
+  ↳ dependency changed: docs/cloud/get-started/certificates.mdx → 1 file
+  ↳ dependency changed: docs/cloud/get-started/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/get-started/namespaces.mdx → 1 file
+  ↳ dependency changed: docs/cloud/get-started/user-invite.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/architecture-patterns.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/enable.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/failovers/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/failovers/manage.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/ha-connectivity.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/high-availability/monitoring.mdx → 1 file
+  ↳ dependency changed: docs/cloud/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/custom-roles.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/permissions-reference.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/roles-and-permissions.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/saml.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/scim.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/service-accounts.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/user-groups.mdx → 1 file
+  ↳ dependency changed: docs/cloud/manage-access/users.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/openmetrics/api-reference.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/openmetrics/faq.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/openmetrics/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/openmetrics/metrics-integrations.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/openmetrics/metrics-reference.mdx → 1 file
+  ↳ dependency changed: docs/cloud/metrics/sdk-metrics-setup.mdx → 1 file
+  ↳ dependency changed: docs/cloud/migrate/automated.mdx → 1 file
+  ↳ dependency changed: docs/cloud/migrate/estimate-actions.mdx → 1 file
+  ↳ dependency changed: docs/cloud/migrate/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/migrate/manual.mdx → 1 file
+  ↳ dependency changed: docs/cloud/migrate/migrate-within-cloud.mdx → 1 file
+  ↳ dependency changed: docs/cloud/monitor/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/nexus/index.mdx → 1 file
+  ↳ dependency changed: docs/cloud/nexus/latency-availability.mdx → 1 file
+  ↳ dependency changed: docs/cloud/nexus/limits.mdx → 1 file
+  ↳ dependency changed: docs/cloud/nexus/observability.mdx → 1 file
+  ↳ dependency changed: docs/cloud/nexus/pricing.mdx → 1 file
+affected files: ai/index, best-practices/cloud-access-control/index, best-practices/cost-governance/index, best-practices/cost-optimization/index, best-practices/error-handling/index  +112 more
+📦 117 files rebuilt successfully
+time taken: 0.081696 seconds
+nift_composition 0.110s
+complete 8.752s
+(node:2099245) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,71 @@
+{
+  "project": "temporal",
+  "case": "body-100",
+  "incremental_seconds": 8.683748385170475,
+  "explicit_maintenance_seconds": 0,
+  "whole_operation_seconds": 8.683748385170475,
+  "files": 2996,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "observable_change_verified": true,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": false,
+    "stages": {
+      "local_cookbook_inputs": 0.072600786,
+      "source_catalogue_and_context": 0.255745181,
+      "markdown_mdx": 2.957855921,
+      "browser_bundle": 0.00010766300000022966,
+      "retained_components_server_bundle": 2.5200059710000007,
+      "react_ssr_or_html_source": 0.4189336789999998,
+      "shell_and_dependencies": 0.18597513399999935,
+      "static_and_browser_publication": 0.13110269799999968,
+      "markdown_downloads_or_static": 1.7614433910000007,
+      "sitemap": 0.037185851000000186,
+      "nift_composition": 0.11205442700000094,
+      "complete": 8.530394392
+    },
+    "files": 2996,
+    "bytes": 220929940,
+    "scope": "Complete production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+  },
+  "measurement": {
+    "project": "temporal",
+    "command": [
+      "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+      "tools/publish.cjs"
+    ],
+    "timestamp_utc": "2026-10-08T19:48:31.858588+00:00",
+    "exit_code": 0,
+    "wall_seconds": 8.683748385170475,
+    "maximum_individual_descendant_rss_mib": 891.0078125,
+    "sampled_descendant_rss_sum_peak_mib": 1393.62890625,
+    "sample_period_target_seconds": 0.05,
+    "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+    "dependency_acquisition_outside_timing": true,
+    "os_caches": "uncontrolled",
+    "production_not_dev_hmr": true,
+    "force": false,
+    "components": {
+      "sourceModel": "maintained Markdown/MDX",
+      "force": false,
+      "stages": {
+        "local_cookbook_inputs": 0.072600786,
+        "source_catalogue_and_context": 0.255745181,
+        "markdown_mdx": 2.957855921,
+        "browser_bundle": 0.00010766300000022966,
+        "retained_components_server_bundle": 2.5200059710000007,
+        "react_ssr_or_html_source": 0.4189336789999998,
+        "shell_and_dependencies": 0.18597513399999935,
+        "static_and_browser_publication": 0.13110269799999968,
+        "markdown_downloads_or_static": 1.7614433910000007,
+        "sitemap": 0.037185851000000186,
+        "nift_composition": 0.11205442700000094,
+        "complete": 8.530394392
+      },
+      "files": 2996,
+      "bytes": 220929940,
+      "scope": "Complete production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+    }
+  }
+}

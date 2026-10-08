@@ -1,0 +1,48 @@
+{
+  "project": "temporal",
+  "case": "route-rename",
+  "incremental_seconds": 29.75221199495718,
+  "files": 3000,
+  "independent_clean_forced_equal": true,
+  "differences": [],
+  "expected_behavior_verified": true,
+  "measurement": {
+    "project": "temporal",
+    "command": [
+      "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+      "tools/publish.cjs"
+    ],
+    "timestamp_utc": "2026-10-08T20:00:11.982375+00:00",
+    "exit_code": 0,
+    "wall_seconds": 29.75221199495718,
+    "maximum_individual_descendant_rss_mib": 990.46875,
+    "sampled_descendant_rss_sum_peak_mib": 1475.42578125,
+    "sample_period_target_seconds": 0.05,
+    "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+    "dependency_acquisition_outside_timing": true,
+    "os_caches": "uncontrolled",
+    "production_not_dev_hmr": true,
+    "force": false,
+    "components": {
+      "sourceModel": "maintained Markdown/MDX",
+      "force": false,
+      "stages": {
+        "local_cookbook_inputs": 0.07973489,
+        "source_catalogue_and_context": 0.268610019,
+        "markdown_mdx": 11.401983892,
+        "browser_bundle": 2.1553005020000002,
+        "retained_components_server_bundle": 2.140836473000001,
+        "react_ssr_or_html_source": 3.493625946000002,
+        "shell_and_dependencies": 7.419453517000002,
+        "static_and_browser_publication": 0.16416897799999788,
+        "markdown_downloads_or_static": 1.8977095289999997,
+        "sitemap": 0.049282866000001375,
+        "nift_composition": 0.4010183280000019,
+        "complete": 29.556518121
+      },
+      "files": 3000,
+      "bytes": 220944851,
+      "scope": "Complete production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+    }
+  }
+}

@@ -1,0 +1,216 @@
+# Temporal Docs migration experiment — final report
+
+T0–T9 complete. This is a pinned production migration with distinct authored and rendered source models, retained React islands and no Nift core changes. Publication parity is established before performance conclusions.
+
+## Source and publication contract
+
+Upstream: [temporalio/documentation](https://github.com/temporalio/documentation/tree/5d9703a237a9efc9a7da48ac09f79526823b8182), SHA `5d9703a237a9efc9a7da48ac09f79526823b8182`. Public cookbook input: SHA `2385cc030f9ca1cc67b05082f1990d20cfc3a38c`. Complete source archives, full history bundles, toolchains and immutable publication are retained locally in the sibling `temporal-baseline` workspace; their manifests and checkpoint evidence are committed. Large archives are not implied to be embedded in these repositories. The initial shallow/filtered metadata build was rejected; the accepted baseline used the preserved complete history.
+
+777 main documentation Markdown/MDX sources include one partial and yield 776 main routes. Seventeen cookbook routes bring primary documentation to 793. Tags/indexes plus blog/search/404 bring the publication to **962 HTML routes**. Ancillary products and assets are counted separately: **832 Markdown/text/sitemap products**, **1,130 retained non-framework assets**, **792 unique maintained OG cards** for 793 primary pages. Redirect configuration has 567 rules, not 567 additional pages.
+
+Upstream has 3,984 files including its framework artifacts and operational OG sidecar. Nift publications have the same required routes/content/ancillary/retained assets with a different runtime artifact set; identical total file count is not claimed.
+
+## Parity evidence
+
+All 962 route semantic projections and 4,544 highlighted code blocks match per project. Whole-site local references have no new missing targets; navbar active states match. Ancillary and retained assets are byte-identical. The representative browser contract covers 132 desktop/mobile dark/light/system states per migration and 49 interaction observations each: tabs, keyboard navigation, copy/download controls, mobile navigation/TOC, accordions, Mermaid, simulations, event-history walkthroughs, search, consent and feedback UI. No page errors or observation differences remain.
+
+All 32 representative screenshot comparisons have identical recorded geometry. Twenty-one are pixel-identical; eleven differ in only 21 pixels by a maximum channel delta of one, classified as rasterization noise. Exact pixel identity is not claimed. The pinned malformed AWS table fallback and inherited demo overflow remain visible rather than being repaired to flatter the migration.
+
+Portable deployment-gateway tests cover 563 concrete redirect samples (four regex rules lack a concrete fixture), Markdown negotiation/trailing-path behavior and missing-route handling. These are local gateway checks, not proof of a live Vercel deployment.
+
+Remote transports are fulfilled/blocked deterministically before browser navigation. Algolia local results, feedback UI and assistant delegation are checked against local fixtures; no live Algolia indexing/recrawl, feedback submission, telemetry, analytics, search uploads or private calls were performed. Backend functionality is outside the exercised contract.
+
+## Two source models
+
+```text
+Nift temporal:
+maintained Markdown/MDX/frontmatter + structured references
+  → pinned corpus compiler / retained component renderer
+  → transient HTML + derived navigation/downloads/LLM products
+  → Nift raw composition with explicit dependencies
+  → publication + retained browser islands
+
+Nift temporal-agent:
+maintained HTML + explicit metadata/navigation + pre-derived downloads/LLM views
+  → retained shell/island composition
+  → Nift raw composition with explicit dependencies
+  → publication + retained browser islands
+```
+
+The authored path uses the official pinned MDX/compiler behavior and actual Temporal components rather than reimplementing Docusaurus generally. Browser behavior retains React where appropriate; it is not a framework-free site. The rendered normal command reads maintained HTML and does not run Markdown conversion. Its installed dependency set remains broader than strictly required; dependency acquisition/footprint is not hidden inside publication speed claims.
+
+Both normal builds publish maintained OG bytes from `static/img/og`. Selective `node tools/refresh-og.cjs --route PATH` is an explicit maintenance workflow. Rendered component-source edits can use `node tools/refresh-islands.cjs --island Retry` to refresh initial markup; HTML/downloads/LLM indices remain maintained responsibilities. Upstream retains its own OG cache/generation model.
+
+Upstream prebuild re-clones the public cookbook on each invocation. The authored migration converts maintained pinned local cookbook inputs; updating that maintained snapshot is explicit maintenance. Its normal build does not reproduce the upstream network acquisition policy. Both this difference and OG ownership are intentional and disclosed.
+
+## First implementation and optimization
+
+| Initial warm full publication | Median seconds | Range seconds | Median max individual process/phase RSS, MiB |
+| --- | ---: | ---: | ---: |
+| Upstream Temporal Docusaurus | 37.87 | 35.15–40.64 | 6898.0 |
+| Nift `temporal` (authored-source) | 27.37 | 26.26–30.42 | 1141.6 |
+| Nift `temporal-agent` (rendered-source) | 11.43 | 9.91–13.02 | 844.9 |
+
+T7 preserved a faithful but wasteful routine iteration path. T8 added content-verified caches for MDX, bundles, bodies, shells and ancillary projections; force bypasses all of them. An included-reference test exposed a stale transitive TOC dependency on two real pages and was corrected. Eleven injected corruptions repair to independently built publication bytes. Rejected prototypes and profiling evidence are retained. Full recomputation still bears bookkeeping and shared-shell costs; final numbers are not selected by hiding slower forced work.
+
+## Final complete publication measurements
+
+Five serialized samples per implementation/scenario, rotating order. Values are medians [minimum–maximum], seconds.
+
+| Scenario | Upstream Temporal Docusaurus | Nift authored | Nift rendered |
+| --- | ---: | ---: | ---: |
+| Warm full publication | 34.16 [32.10–36.49] | 26.05 [25.73–26.09] | 10.35 [10.15–10.50] |
+| Fresh application state | 289.64 [289.35–341.44] | 26.44 [25.94–29.09] | 10.61 [10.35–15.73] |
+| Unchanged normal command | 44.64 [34.81–48.79] | 1.77 [1.56–2.17] | 1.32 [1.01–1.52] |
+
+| Warm-full publication artifacts | Files | Bytes (observed) |
+| --- | ---: | ---: |
+| Upstream Temporal Docusaurus | 3984 | 265647255 |
+| Nift `temporal` (authored-source) | 2996 | 220842371 |
+| Nift `temporal-agent` (rendered-source) | 2996 | 220532933 |
+
+**Warm full:** exact upstream `yarn build`; Nift `node tools/publish.cjs --force` recomputes conversion, browser/server bundles, bodies, shells/projections and every Nift page. Upstream retains warm OG caches. **Fresh application state:** upstream `.docusaurus`, `build`, `node_modules/.cache` removed; Nift `.cache`, `public`, `.nift/public` removed, outside timing. Installed dependencies and maintained source assets remain. Nift static OG files are source, not caches. OS caches are uncontrolled. **Unchanged:** each complete normal command with unchanged maintained inputs.
+
+The upstream command keeps prebuild, configured Faster options, production plugins, postbuild font check and `--max-old-space-size=7168`. No Docusaurus development-server/HMR result is inferred. Dependency acquisition is outside publication timing. An upstream unchanged attempt failed its public GitHub HTTP/2 cookbook fetch, then returned build success with an offline placeholder. It was rejected for wrong-corpus publication, preserved under `t9-upstream-unchanged-4`, and retried with the exact same command. Successful samples were not excluded for being slow. Tests/competing migration builds did not run alongside benchmark commands. Shared-host activity is not experimentally controlled. Upstream warm-full and unchanged use the same exact command in separate chronological cohorts; differences between their measured rows reflect observed cohort variation, not a different build algorithm.
+
+Toolchain: Node 24.21.0, Yarn 1.22.22, Docusaurus/Faster/MDX 3.10.2, React 19.2.8; Nift 4.9.0 snapshot SHA-256 `790bbce6325b0eadce6d98fbb27527ccd4c43fa082b23d1ca3667e54022bc862`. Hardware: i7-12700H, 20 logical CPUs, about 61 GiB RAM, Linux x64. Earlier diagnostic timings are not substituted for this final cohort.
+
+### Component costs
+
+Median seconds in the same cohort. Nift phase instrumentation includes actual stage work; complete command wall time also includes startup and unattributed input/verification preparation. Stage medians need not sum to the median command. These are **complete migration pipeline costs, not native Nift `@markup` performance**.
+
+#### Warm full
+
+| Phase | Nift authored | Nift rendered |
+| --- | ---: | ---: |
+| browser_bundle | 1.977 | 1.967 |
+| local_cookbook_inputs | 0.077 | — |
+| markdown_downloads_or_static | 1.671 | 0.110 |
+| markdown_mdx | 10.124 | — |
+| nift_composition | 0.330 | 0.318 |
+| react_ssr_or_html_source | 2.621 | 0.514 |
+| retained_components_server_bundle | 2.296 | 0.863 |
+| shell_and_dependencies | 6.152 | 6.120 |
+| sitemap | 0.041 | 0.038 |
+| source_catalogue_and_context | 0.241 | — |
+| static_and_browser_publication | 0.134 | 0.121 |
+
+Upstream approximate CLI phase boundaries (roughly 50 ms log polling, includes Yarn transitions; not internal compiler instrumentation): build_marker_to_postbuild_marker 28.893s, command_start_to_prebuild_marker 0.152s, postbuild_marker_to_exit 0.051s, prebuild_marker_to_build_marker 5.302s.
+
+#### Fresh application state
+
+| Phase | Nift authored | Nift rendered |
+| --- | ---: | ---: |
+| browser_bundle | 1.996 | 2.007 |
+| local_cookbook_inputs | 0.078 | — |
+| markdown_downloads_or_static | 1.672 | 0.107 |
+| markdown_mdx | 10.308 | — |
+| nift_composition | 0.336 | 0.334 |
+| react_ssr_or_html_source | 2.727 | 0.566 |
+| retained_components_server_bundle | 2.326 | 0.861 |
+| shell_and_dependencies | 6.340 | 6.398 |
+| sitemap | 0.040 | 0.038 |
+| source_catalogue_and_context | 0.243 | — |
+| static_and_browser_publication | 0.125 | 0.125 |
+
+Upstream approximate CLI phase boundaries (roughly 50 ms log polling, includes Yarn transitions; not internal compiler instrumentation): build_marker_to_postbuild_marker 286.220s, command_start_to_prebuild_marker 0.152s, postbuild_marker_to_exit 0.051s, prebuild_marker_to_build_marker 4.917s.
+
+#### Unchanged
+
+| Phase | Nift authored | Nift rendered |
+| --- | ---: | ---: |
+| browser_bundle | 0.000 | 0.000 |
+| local_cookbook_inputs | 0.094 | — |
+| markdown_downloads_or_static | 0.067 | 0.073 |
+| markdown_mdx | 0.252 | — |
+| nift_composition | 0.087 | 0.067 |
+| react_ssr_or_html_source | 0.095 | 0.479 |
+| retained_components_server_bundle | 0.299 | 0.028 |
+| shell_and_dependencies | 0.211 | 0.231 |
+| sitemap | 0.041 | 0.046 |
+| source_catalogue_and_context | 0.287 | — |
+| static_and_browser_publication | 0.120 | 0.185 |
+
+Upstream approximate CLI phase boundaries (roughly 50 ms log polling, includes Yarn transitions; not internal compiler instrumentation): build_marker_to_postbuild_marker 40.254s, command_start_to_prebuild_marker 0.203s, postbuild_marker_to_exit 0.050s, prebuild_marker_to_build_marker 4.789s.
+
+| Upstream OG plugin-reported render duration | Median seconds [range] |
+| --- | ---: |
+| Warm full | 0.000 [0.000–0.000] |
+| Fresh application state | 258.835 [257.222–305.664] |
+| Unchanged | 0.000 [0.000–0.000] |
+
+OG counters/render duration are retained per upstream sample in `t9-final-summary.json`. Warm cache hits remain a real upstream advantage. Fresh application deletion includes the upstream OG cache; Nift does not regenerate its maintained cards. Mermaid is browser behavior, so no invented server-generation timing is listed. Local search-visible publication outputs are included; a remote Algolia crawl/upload is not part of any measured command.
+
+### Changed-input and lifecycle costs
+
+Single representative final measurements, not five-sample medians; seconds. Each Nift edit is independently compared with forced recomputation and restored. Metadata/island rows include explicit selective maintenance in the whole-operation column. Route-add publication is measured after selective card setup; its combined card-maintenance-plus-publication time was not measured (shown as —). Rendered fixtures coordinate companion downloads/LLM products where applicable; they do not claim automatic derivation.
+
+| Change | Authored publication | Authored whole operation | Rendered publication | Rendered whole operation |
+| --- | ---: | ---: | ---: | ---: |
+| body-1 | 6.113 | 6.113 | 1.113 | 1.113 |
+| body-10 | 6.467 | 6.467 | 1.059 | 1.059 |
+| body-100 | 8.684 | 8.684 | 1.214 | 1.214 |
+| metadata | 4.086 | 4.936 | 1.465 | 2.144 |
+| shared-layout | 8.877 | 8.877 | 9.941 | 9.941 |
+| navigation | 19.462 | 19.462 | 11.156 | 11.156 |
+| diagram | 6.020 | 6.020 | 0.959 | 0.959 |
+| generated-synced | 5.706 | 5.706 | 1.059 | 1.059 |
+| search-visible | 5.707 | 5.707 | 1.059 | 1.059 |
+| island-source | 17.215 | 17.215 | 10.956 | 12.229 |
+| route-add | 29.386 | — | 11.709 | — |
+| route-rename | 29.752 | 29.752 | 11.403 | 11.403 |
+| route-delete | 30.054 | 30.054 | 11.302 | 11.302 |
+
+All 26 final changed-input/lifecycle checks pass complete publication equality against independent forced computation. Source include/region invalidation and corrupted transient repair were additionally established at T8. Route fixtures verify retirement of owned HTML/download/sitemap/LLM products and authored tags; arbitrary hardcoded source references are not promised to rewrite themselves. Shared navigation/runtime changes still fan out broadly.
+
+
+Initial T7 changed-input costs remain visible (single runs, seconds; rendered initial body fixtures changed HTML only, whereas final fixtures coordinate companion views):
+
+| Case | Initial authored | Final authored | Initial rendered | Final rendered |
+| --- | ---: | ---: | ---: | ---: |
+| body-1 | 23.016 | 6.113 | 7.238 | 1.113 |
+| body-10 | 22.901 | 6.467 | 7.033 | 1.059 |
+| body-100 | 23.216 | 8.684 | 7.119 | 1.214 |
+| shared-layout | 23.847 | 8.877 | 7.652 | 9.941 |
+| navigation | 26.186 | 19.462 | 9.367 | 11.156 |
+
+The largest optimization benefit is avoiding repeat routine transformation. Shared/runtime/route changes still fan out; any slower final case remains in these tables. Source-coordination and independent correctness take precedence over a uniformly favorable graph.
+
+Upstream representative production edits: body 40.249s, navigation 37.885s. The full upstream production lifecycle runs after these edits; these are not HMR timings. Two representative cases avoid repeating the same full-build behavior across every fixture.
+
+### Memory
+
+Median [range], MiB. Maximum individual descendant/process-or-phase RSS comes from child resource usage; it is **not simultaneous aggregate memory**. Separately sampled descendant-RSS sums count resident pages, can double-count shared pages and miss peaks between roughly 50 ms polls; they are **not PSS**.
+
+| Warm-full memory measurement | Upstream | Nift authored | Nift rendered |
+| --- | ---: | ---: | ---: |
+| Max individual process/phase RSS | 6945.71 [6895.61–6971.68] | 949.25 [943.87–963.26] | 773.18 [763.74–791.98] |
+| Sampled descendant resident-page sum peak | 7039.11 [6986.77–7063.38] | 1464.16 [1438.80–1494.47] | 851.88 [842.52–873.25] |
+
+Raw records retain both memory statistics for every scenario and changed-input publication run. Selective OG/island maintenance has separate wall timing; its RSS was not sampled as part of the subsequent publication command. The sampled monitor is outside the measured command tree. This warm-full cohort shows lower measured memory for both Nift pipelines. That result retains the metric qualifications and does not establish universal capacity requirements.
+
+## Reproducibility and maintenance
+
+Both public T8 code revisions reproduce through their normal command from fresh clones with independent frozen dependency installations and empty application state. Complete output byte manifests equal the accepted working publications, and clone/source trees are clean. Tested authored revision: `756db298c972e4d31d9d3b75f0ceed0473168a93`; rendered: `5e80384aa5d95c18138b0ac58340a08a7055f34e`. T9 adds reports/evidence/operational documentation; runtime code remains the tested checkpoint.
+
+Normal prerequisites and commands: Node 24.x (tested 24.21.0), Yarn 1.22.22, Nift 4.9.0 on PATH; `yarn install --frozen-lockfile --ignore-scripts --non-interactive`, then `yarn build`. Use `yarn build:force` for independent recomputation. Diagnostic evidence scripts refer to the preserved sibling baseline/reference; those paths are not normal-build dependencies.
+
+### Agents implement, humans direct
+
+**Preferred: Nift `temporal` (authored-source)** for ongoing maintenance of this corpus. It retains one authoritative Markdown/MDX/frontmatter/structured-reference model and derives companion views. The rendered project gives a simpler, faster body iteration path, but an agent must coordinate initial island markup, downloads, LLM indices, metadata and navigation. The strengthened fixtures demonstrate that ownership burden rather than making it disappear. Upstream Docusaurus remains a credible choice for its established ecosystem and conventional component tooling.
+
+### Humans and agents both edit
+
+**Preferred: Nift `temporal` (authored-source)**. Familiar authored organization and reviewable source changes make the source-consistency tradeoff more decisive. The project-side compiler/island/cache adapters still need a competent maintainer; Nift speed is not evidence that these adapters are free to own. Production iteration advantages do not establish faster editor feedback than Docusaurus dev/HMR, which was not measured.
+
+### Counterfactual and official evaluation
+
+Removing migration effort/incumbency does not change that source-model preference for either maintenance scenario. It removes a real adoption cost, not the authored/rendered consistency difference. The demonstrated parity, routine iteration and measured memory results justify Temporal **seriously evaluating a migration from Docusaurus to Nift with retained React islands**. They do not establish that Temporal should migrate unconditionally. An evaluation must include adapter/library upgrades, generated-source updates, live search/deployment contracts, editor/component workflows and Docusaurus ecosystem benefits; no live backend approval is implied.
+
+## Migration-init review and remaining targets
+
+The original generated guidance was useful: explicit source models/framework islands, immutable baseline, complete pipeline timing, profile/optimize/revalidate and fresh-checkout gates. It did not need replacement with an older playbook. Concrete proposed wording/scaffolding is in [MIGRATION-INIT-REVIEW.md](MIGRATION-INIT-REVIEW.md), for future Nift work only. Core/templates were not changed.
+
+Retain future targets separately: transitive dependency inventories, coarse route/catalogue invalidation, shared-shell/navigation fan-out, projection verification/transform overhead, retained React/compiler startup, asset hashing/copying, smaller rendered dependency installation, clearer adapter review/dependency inventories and explicit island/OG/projection maintenance workflows. These are honest production findings, not reasons to reopen this accepted experiment.
+
+Evidence: [T7 initial results](T7-INITIAL-PROFILING.md), [T8 optimization/parity](T8-OPTIMIZATION.md), [final raw summary](t9/t9-final-summary.json), [scenario definitions and run index](t9/t9-campaign-index.json), [public clone gate](t9/t9-clean-clones/result.json), and per-checkpoint SHA-256 manifests. The source/reference archive manifest is in `t1/preserved-source-manifest.json`.

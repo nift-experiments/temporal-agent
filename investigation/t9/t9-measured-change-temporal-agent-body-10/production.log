@@ -1,0 +1,41 @@
+browser_bundle 0.000s
+retained_components_server_bundle 0.021s
+react_ssr_or_html_source 0.366s
+shell_and_dependencies 0.175s
+static_and_browser_publication 0.148s
+markdown_downloads_or_static 0.137s
+sitemap 0.039s
+built ai/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9haS9pbmRleC5tZHg.html
+    ↳ dependency changed: html/ai/index.html
+built best-practices/cloud-access-control/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jbG91ZC1hY2Nlc3MtY29udHJvbC5tZHg.html
+    ↳ dependency changed: html/best-practices/cloud-access-control.html
+built best-practices/cost-governance/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jb3N0LWdvdmVybmFuY2UubWR4.html
+    ↳ dependency changed: html/best-practices/cost-governance.html
+built best-practices/cost-optimization/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9jb3N0LW9wdGltaXphdGlvbi5tZHg.html
+    ↳ dependency changed: html/best-practices/cost-optimization.html
+built best-practices/error-handling/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9lcnJvci1oYW5kbGluZy5tZHg.html
+    ↳ dependency changed: html/best-practices/error-handling.html
+built best-practices/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9pbmRleC5tZHg.html
+    ↳ dependency changed: html/best-practices/index.html
+built best-practices/knowledge-hub/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9rbm93bGVkZ2UtaHViLm1keA.html
+    ↳ dependency changed: html/best-practices/knowledge-hub.html
+built best-practices/managing-aps-limits/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tYW5hZ2luZy1hcHMtbGltaXRzLm1keA.html
+    ↳ dependency changed: html/best-practices/managing-aps-limits.html
+built best-practices/managing-namespace/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tYW5hZ2luZy1uYW1lc3BhY2UubWR4.html
+    ↳ dependency changed: html/best-practices/managing-namespace.html
+built best-practices/multi-tenant-patterns/index
+    ↳ dependency changed: .cache/rendered/doc-ZG9jcy9iZXN0LXByYWN0aWNlcy9tdWx0aS10ZW5hbnQtcGF0dGVybnMubWR4.html
+    ↳ dependency changed: html/best-practices/multi-tenant-patterns.html
+📦 10 files rebuilt successfully
+time taken: 0.047526 seconds
+nift_composition 0.057s
+complete 0.991s

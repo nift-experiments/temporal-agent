@@ -1,0 +1,36 @@
+{
+  "project": "temporal-agent",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs"
+  ],
+  "timestamp_utc": "2026-10-08T20:02:43.725252+00:00",
+  "exit_code": 0,
+  "wall_seconds": 11.302041961112991,
+  "maximum_individual_descendant_rss_mib": 770.81640625,
+  "sampled_descendant_rss_sum_peak_mib": 847.90625,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": false,
+  "components": {
+    "sourceModel": "maintained HTML",
+    "force": false,
+    "stages": {
+      "browser_bundle": 2.108096182,
+      "retained_components_server_bundle": 0.8991742709999999,
+      "react_ssr_or_html_source": 0.394719454,
+      "shell_and_dependencies": 7.019695861999999,
+      "static_and_browser_publication": 0.1349018329999999,
+      "markdown_downloads_or_static": 0.13403112200000034,
+      "sitemap": 0.03955783100000008,
+      "nift_composition": 0.3917108599999992,
+      "complete": 11.16619671
+    },
+    "files": 2997,
+    "bytes": 220570402,
+    "scope": "Complete maintained-HTML production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+  }
+}

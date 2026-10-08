@@ -1,0 +1,44 @@
+[sync-ai-cookbook] skipped README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_openai_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] skipped agents/agentic_loop_tool_call_claude_python/tools/README.md: missing front matter comment
+[sync-ai-cookbook] wrote 16 file(s):
+  - agentic-loop-tool-call-claude-python.mdx ← agents/agentic_loop_tool_call_claude_python/README.md
+  - agentic-loop-tool-call-openai-python.mdx ← agents/agentic_loop_tool_call_openai_python/README.md
+  - ai-sdk-by-vercel-typescript.mdx ← agents/ai_sdk_by_vercel_typescript/README.md
+  - basic-openai-python.mdx ← deep_research/basic_openai_python/README.md
+  - claim-check-pattern-python.mdx ← foundations/claim_check_pattern_python/README.md
+  - guardrails-hard-rules-python.mdx ← agents/guardrails_hard_rules_python/README.md
+  - hello-world-durable-mcp-server.mdx ← mcp/hello_world_durable_mcp_server/README.md
+  - hello-world-litellm-python.mdx ← foundations/hello_world_litellm_python/README.md
+  - hello-world-openai-responses-python.mdx ← foundations/hello_world_openai_responses_python/README.md
+  - http-retry-enhancement-python.mdx ← foundations/http_retry_enhancement_python/README.md
+  - human-in-the-loop-python.mdx ← agents/human_in_the_loop_python/README.md
+  - multi-agent-adk-python.mdx ← agents/multi_agent_adk_python/README.md
+  - openai-agents-sdk-python.mdx ← agents/openai_agents_sdk_python/README.md
+  - strands-agents-python.mdx ← agents/strands_agents_python/README.md
+  - structured-output-openai-responses-python.mdx ← foundations/structured_output_openai_responses_python/README.md
+  - tool-call-openai-python.mdx ← agents/tool_call_openai_python/README.md
+local_cookbook_inputs 0.086s
+[cookbook-index] init with docsDir: ai-cookbook
+[cookbook-index] resolved docsDir: /home/nick/Repositories/nift/nift-experiments/temporal/ai-cookbook
+markdown_mdx 10.693s { compiled: 794, cached: 0 }
+errors [] warnings 2
+browser_bundle 2.040s
+errors [] warnings 0
+retained_components_server_bundle 2.700s
+react_ssr_or_html_source 2.809s
+shell_and_dependencies 6.785s
+static_and_browser_publication 0.135s
+[markdown-pages] Generated 792 clean markdown files, 2 excluded, 124 transform warnings
+[markdown-pages] Generated root llms.txt (13945 bytes) and 24 section llms.txt files
+[markdown-pages] Generated llms-full.txt (778 pages, 7.5 MB, 10 excluded)
+markdown_downloads_or_static 1.686s
+sitemap 0.043s
+📦 962 files built successfully
+time taken: 0.317596 seconds
+nift_composition 0.348s
+complete 27.724s
+(node:2105716) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

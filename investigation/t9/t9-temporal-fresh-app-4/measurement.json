@@ -1,0 +1,40 @@
+{
+  "project": "temporal",
+  "command": [
+    "/home/nick/Repositories/nift/nift-experiments/temporal-baseline/toolchain/node-v24.21.0-linux-x64/bin/node",
+    "tools/publish.cjs",
+    "--force"
+  ],
+  "timestamp_utc": "2026-10-08T19:31:55.164379+00:00",
+  "exit_code": 0,
+  "wall_seconds": 29.08894784608856,
+  "maximum_individual_descendant_rss_mib": 946.046875,
+  "sampled_descendant_rss_sum_peak_mib": 1474.203125,
+  "sample_period_target_seconds": 0.05,
+  "rss_qualification": "ru_maxrss is maximum individual descendant process/phase; sampled sum is aggregate resident-page counts, includes shared-page double counting, is not PSS and may miss peaks",
+  "dependency_acquisition_outside_timing": true,
+  "os_caches": "uncontrolled",
+  "production_not_dev_hmr": true,
+  "force": true,
+  "components": {
+    "sourceModel": "maintained Markdown/MDX",
+    "force": true,
+    "stages": {
+      "local_cookbook_inputs": 0.07607405499999999,
+      "source_catalogue_and_context": 0.242738783,
+      "markdown_mdx": 11.229230046000001,
+      "browser_bundle": 2.2373369600000004,
+      "retained_components_server_bundle": 2.564975120000001,
+      "react_ssr_or_html_source": 3.370169371,
+      "shell_and_dependencies": 6.843432648999999,
+      "static_and_browser_publication": 0.12767339399999764,
+      "markdown_downloads_or_static": 1.724284367,
+      "sitemap": 0.039797613999999155,
+      "nift_composition": 0.3339634289999994,
+      "complete": 28.873342452
+    },
+    "files": 2996,
+    "bytes": 220842371,
+    "scope": "Complete production publication; Content-verified stage caches; complete publication including source preparation, retained components, static assets, projections and Nift composition"
+  }
+}

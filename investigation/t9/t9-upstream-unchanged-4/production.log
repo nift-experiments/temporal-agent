@@ -1,0 +1,28 @@
+yarn run v1.22.22
+$ node ./bin/sync-ai-cookbook.js
+[sync-ai-cookbook] cloning https://github.com/temporalio/ai-cookbook.git (main)
+Cloning into '/tmp/ai-cookbook-sync/repo'...
+fatal: unable to access 'https://github.com/temporalio/ai-cookbook.git/': Error in the HTTP2 framing layer
+[sync-ai-cookbook] WARNING: Could not fetch remote content: git clone --branch main https://github.com/temporalio/ai-cookbook.git /tmp/ai-cookbook-sync/repo failed with exit code 128
+[sync-ai-cookbook] Creating placeholder directory instead. Run yarn sync:ai-cookbook when online.
+[sync-ai-cookbook] created placeholder at ai-cookbook/recipes-not-synced.mdx
+$ node --max-old-space-size=7168 ./node_modules/@docusaurus/core/bin/docusaurus.mjs build
+[INFO] [en] Creating an optimized production build...
+[cookbook-index] init with docsDir: ai-cookbook
+[cookbook-index] resolved docsDir: /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/ai-cookbook
+Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[markdown-pages] Generated 793 clean markdown files, 2 excluded, 124 transform warnings
+[markdown-pages] Generated root llms.txt (13945 bytes) and 24 section llms.txt files
+[markdown-pages] Generated llms-full.txt (779 pages, 7.5 MB, 10 excluded)
+(node:2094215) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/src/constants/featureReleaseTypes.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/nick/Repositories/nift/nift-experiments/temporal-baseline/build-work/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[og-image] 1 card(s) rendered, 793 served from cache, 0 page(s) kept a manual override, 1 page(s) skipped (not routed)
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+$ node ./bin/check-font-preload-hash.js
+[check-font-preload-hash] OK: preloaded font hashes match the build output.
+Done in 52.81s.
